@@ -69,14 +69,7 @@ namespace Minerals
         {
             get
             {
-                if (false && this.size >= 1)
-                {
-                    return this.def as ThingDef_StaticMineralBig;
-                }
-                else
-                {
-                    return this.def as ThingDef_StaticMineral;
-                }
+                return this.def as ThingDef_StaticMineral;
             }
         }
 
@@ -179,14 +172,23 @@ namespace Minerals
 
         public static bool isRoofConditionOk(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
         {
-            if (myDef.mustBeUnderRoof && (!position.Roofed(map)))
+            if (myDef.mustBeUnderRoof && (! position.Roofed(map)))
             {
                 return false;
             }
-            else
+            if (myDef.mustBeUnderNaturalRoof && position.GetRoof(map).isNatural)
             {
-                return true;
+                return false;
             }
+            if (myDef.mustBeUnderThickRoof && position.GetRoof(map).isThickRoof)
+            {
+                return false;
+            }
+            if (myDef.mustBeUnroofed && position.Roofed(map))
+            {
+                return false;
+            }
+            return true;
         }
 
         // The distance a position is from a needed terrain type
@@ -326,9 +328,6 @@ namespace Minerals
                 }
             }
 
-
-            map.reachability.ClearCache();
-
         }
 
         // ======= Yeilding resources ======= //
@@ -464,6 +463,9 @@ namespace Minerals
 
         // If true, only grows under roofs
         public bool mustBeUnderRoof = true;
+        public bool mustBeUnderThickRoof = false;
+        public bool mustBeUnderNaturalRoof = true;
+        public bool mustBeUnroofed = false;
 
         // The maximum number of images that will be printed per square
         public int maxMeshCount = 1;
@@ -475,8 +477,6 @@ namespace Minerals
 
         // The amount of resource returned if the mineral is its maximum size
         public int maxMinedYeild = 10;
-
-        // The proportion grown at which this blocks pawns
     }
 
     /// <summary>
