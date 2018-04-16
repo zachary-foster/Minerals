@@ -69,7 +69,14 @@ namespace Minerals
         {
             get
             {
-                return this.def as ThingDef_StaticMineral;
+                if (false && this.size >= 1)
+                {
+                    return this.def as ThingDef_StaticMineralBig;
+                }
+                else
+                {
+                    return this.def as ThingDef_StaticMineral;
+                }
             }
         }
 
@@ -78,6 +85,12 @@ namespace Minerals
 
         public static bool CanSpawnAt(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
         {
+            // Check that location is in the map
+            if (! position.InBounds(map))
+            {
+                return false;
+            }
+
             // Check that the terrain is ok
             if (! IsTerrainOkAt(myDef, map, position))
             {
@@ -128,6 +141,10 @@ namespace Minerals
 
         public static bool IsTerrainOkAt(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
         {
+            if (! position.InBounds(map))
+            {
+                return false;
+            }
             TerrainDef terrain = map.terrainGrid.TerrainAt(position);
             return myDef.allowedTerrains.Any(terrain.defName.Contains);
         }
@@ -162,7 +179,7 @@ namespace Minerals
 
         public static bool isRoofConditionOk(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
         {
-            if (myDef.mustBeUnderoof && (!position.Roofed(map)))
+            if (myDef.mustBeUnderRoof && (!position.Roofed(map)))
             {
                 return false;
             }
@@ -223,6 +240,10 @@ namespace Minerals
             return output;
         }
 
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+        }
 
         // ======= Reproduction ======= //
 
@@ -230,7 +251,7 @@ namespace Minerals
 
         public bool TryFindReproductionDestination(int radius, Map map, out IntVec3 foundCell)
         {
-            Predicate<IntVec3> validator = (IntVec3 c) => this.Position.InHorDistOf(c, radius) && GenSight.LineOfSight(this.Position, c, map, true, null, 0, 0) && StaticMineral.IsTerrainOkAt(this.attributes, map, c);
+            Predicate<IntVec3> validator = (IntVec3 c) => this.Position.InHorDistOf(c, radius) && StaticMineral.CanSpawnAt(this.attributes, map, c);
             return CellFinder.TryFindRandomCellNear(this.Position, map, Mathf.CeilToInt(radius), validator, out foundCell);
         }
 
@@ -252,26 +273,25 @@ namespace Minerals
         {
             // Make a cluster center
             StaticMineral mineral = StaticMineral.TrySpawnAt(position, myDef, map);
-            mineral.size = Rand.Range(0.3f,0.8f);
+            mineral.size = Rand.Range(myDef.initialSizeMin,myDef.initialSizeMax);
 
             // Pick cluster size
             int clusterSize = (int)Rand.Range(myDef.minClusterSize, myDef.maxClusterSize);
 
             // Grow cluster 
-            GrowCluster(map, mineral, clusterSize);
+            GrowCluster(map, mineral, clusterSize, myDef);
         }
 
 
-        public static void GrowCluster(Map map, StaticMineral sourceMineral, int times)
+        public static void GrowCluster(Map map, StaticMineral sourceMineral, int times, ThingDef_StaticMineral myDef)
         {
             if (times > 0)
             {
                 StaticMineral newGrowth = sourceMineral.TryReproduce();
                 if (newGrowth != null)
                 {
-                    newGrowth.size = Rand.Range(0.95f, 1.05f) * sourceMineral.size;
-                    GrowCluster(map, newGrowth, times - 1);
-
+                    newGrowth.size = Rand.Range(1f - myDef.initialSizeVariation, 1f + myDef.initialSizeVariation) * sourceMineral.size;
+                    GrowCluster(map, newGrowth, times - 1, myDef);
                 }
 
             }
@@ -307,6 +327,8 @@ namespace Minerals
             }
 
 
+            map.reachability.ClearCache();
+
         }
 
         // ======= Yeilding resources ======= //
@@ -329,6 +351,15 @@ namespace Minerals
             }
             base.PreApplyDamage(dinfo, out absorbed);
         }
+
+
+        // ======= Behavior ======= //
+
+        public override bool BlocksPawn(Pawn p)
+        {
+            return this.size >= 0.8f;
+        }
+
             
         // ======= Appearance ======= //
 
@@ -342,19 +373,24 @@ namespace Minerals
             {
                 numToPrint = 1;
             }
-            float sizeToPrint = this.attributes.visualSizeRange.LerpThroughRange(this.size);
+            float baseSize = this.attributes.visualSizeRange.LerpThroughRange(this.size);
             Vector3 trueCenter = this.TrueCenter();
             for (int i = 0; i < numToPrint; i++)
             {
-
+                // Calculate location
                 Vector3 center = trueCenter;
                 center.y = this.attributes.Altitude;
                 center.x += Rand.Range(- this.attributes.visualSpread, this.attributes.visualSpread);
                 center.z += Rand.Range(- this.attributes.visualSpread, this.attributes.visualSpread);
+
+                // Calculate size
+                float thisSize = baseSize + (baseSize * Rand.Range(- this.attributes.visualSizeVariation, this.attributes.visualSizeVariation));
+
+                // Print image
                 Material matSingle = this.Graphic.MatSingle;
-                Vector2 thisSize = new Vector2(sizeToPrint, sizeToPrint);
+                Vector2 sizeVec = new Vector2(thisSize, thisSize);
                 Material mat = matSingle;
-                Printer_Plane.PrintPlane(layer, center, thisSize, mat, 0, Rand.Bool);
+                Printer_Plane.PrintPlane(layer, center, sizeVec, mat, 0, Rand.Bool);
             }
 //            if (this.attributes.graphicData.shadowData != null)
 //            {
@@ -406,6 +442,13 @@ namespace Minerals
         public int minClusterSize = 1;
         public int maxClusterSize = 10;
 
+        // The range of starting sizes of individuals in clusters
+        public float initialSizeMin = 0.3f;
+        public float initialSizeMax = 0.3f;
+
+        // How much initial sizes of individuals randomly vary
+        public float initialSizeVariation = 0.3f;
+
         // The biomes this can appear in
         public List<string> allowedBiomes = new List<string> {};
 
@@ -420,7 +463,7 @@ namespace Minerals
         public bool neededNearbyTerrainSizeEffect = true;
 
         // If true, only grows under roofs
-        public bool mustBeUnderoof = true;
+        public bool mustBeUnderRoof = true;
 
         // The maximum number of images that will be printed per square
         public int maxMeshCount = 1;
@@ -428,9 +471,21 @@ namespace Minerals
         // The size range of images printed
         public FloatRange visualSizeRange  = new FloatRange(0.3f, 1.0f);
         public float visualSpread = 0.5f;
+        public float visualSizeVariation = 0.1f;
 
         // The amount of resource returned if the mineral is its maximum size
         public int maxMinedYeild = 10;
+
+        // The proportion grown at which this blocks pawns
     }
 
+    /// <summary>
+    /// ThingDef_StaticMineral class.
+    /// </summary>
+    /// <author>zachary-foster</author>
+    /// <permission>No restrictions</permission>
+    public class ThingDef_StaticMineralBig : ThingDef_StaticMineral
+    {
+        public Traversability passibility = Traversability.Impassable; 
+    }
 }

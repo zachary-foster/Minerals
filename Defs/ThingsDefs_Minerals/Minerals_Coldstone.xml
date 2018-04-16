@@ -22,6 +22,7 @@
     <graphicData>
       <texPath>Things/Mineral/ColdstoneCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
+      <!-- <shaderType>CutoutPlant</shaderType> -->
     </graphicData>
     <selectable>true</selectable>
     <fillPercent>0.15</fillPercent>
