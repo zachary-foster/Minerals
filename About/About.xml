@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<ModMetaData>
+	<name>Minerals</name>
+	<author>zachary-foster</author>
+	<targetVersion>0.18.0</targetVersion>
+  <description>
+
+for RimWorld B18 Hardcore SK
+mod version 0.0.1
+
+&lt;size=24&gt;Description&lt;/size&gt;
+
+This mod adds various mineral-related content.
+For example, it provides an explaination how coldstone and glowstone are formed.
+
+&lt;size=24&gt;Things added:&lt;/size&gt;
+
+&lt;size=18&gt;Glowstone crystals&lt;/size&gt;
+
+An active deposit of glowstone. Grows in wet hot places deep underground, but rarely active on the surface. Thought to be realted in some way to the living deposits of coldstone in colder climates. They are prized by the native population for light sources, so there are few accessible deposits left in the more habitable parts of this rimworld.
+
+&lt;size=18&gt;Coldstone crystals&lt;/size&gt;
+
+An active deposit of coldstone. Grows very slowly on cold bright days, but evaporates in the heat. Only found in permanently frozen terrain. Some glitterworld exobiologists belive these to be a kind of living crytsal since they seem capable of reproduction and they stress the need to safeguard these rare organisms. People on this rimworld however, tend to dig them up and use them to stop meat from spoiling.
+
+&lt;size=18&gt;Salt crystals&lt;/size&gt;
+
+A deposit of salt formed by evaporation of nearbly salt water. Dissolves in the rain, but sun and heat speed their formation. Only persists in dry climates. Can be harvested to preserve food.
+
+&lt;size=24&gt;Plans:&lt;/size&gt;
+
+
+&lt;size=18&gt;Calcite crystals&lt;/size&gt;
+
+Calcium carbonate. A common mineral found underground, particulary in limestone. A little pretty, but not otherwise vert useful. Yeilds rubble when mined.
+
+&lt;size=18&gt;Quartz crystals&lt;/size&gt;
+
+Crystals of silicon dioxide, the same material glass is made of. A common mineral found underground. Yeilds glass batch when mined.
+
+&lt;size=18&gt;Amethyst crystals&lt;/size&gt;
+
+Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful purple. A common mineral found underground. Yeilds glass batch when mined.
+  </description></ModMetaData>

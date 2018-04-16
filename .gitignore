@@ -1,0 +1,6 @@
+bin
+obj
+Source/Minerals/bin
+Source/Minerals/obj
+**/*~
+

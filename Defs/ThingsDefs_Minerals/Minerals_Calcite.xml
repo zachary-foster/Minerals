@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<Defs>
+
+	<ThingDef ParentName="StaticMineralBase">
+		<defName>CalciteCrystal</defName>
+		<label>Calcite Crystal</label>
+		<description>Crystals of calcium carbonate. A common mineral found underground, particulary in limestone caves. Interesting, but not otherwise very useful. Yeilds rubble if mined.</description>
+		<graphicData>
+			<texPath>Things/Mineral/CalciteCrystal</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<coversFloor>false</coversFloor>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<pathCost>40</pathCost>
+		<building>
+			<isInert>true</isInert>
+		    <isNaturalRock>true</isNaturalRock>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>CrushedStone</mineableThing>
+			<mineableYield>20</mineableYield>
+			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<filthLeaving>RockRubble</filthLeaving>
+		<mineable>true</mineable>
+
+		<!--How far away it can spawn from an existing location-->
+		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+		<spawnRadius>1</spawnRadius>
+
+		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+		<minClusterProbability>0.01</minClusterProbability>
+		<maxClusterProbability>0.01</maxClusterProbability>
+
+		<!-- How  many squares each cluster will be -->
+		<minClusterSize>10</minClusterSize>
+		<maxClusterSize>50</maxClusterSize>
+
+		<!-- The biomes this can appear in. The default is all ones known to mod-->
+		<!--
+		<allowedBiomes>
+			<li>add_biomes_here</li>
+		</allowedBiomes>
+		-->
+
+		<!-- The terrains this can appear on. The default is rocky terrains-->
+		<!--
+		<allowedTerrains>
+			<li>add_terrains_here</li>
+		</allowedTerrains>
+		-->
+
+		<!-- The terrains this must be near to, but not necessarily on -->
+		<!--
+		<neededNearbyTerrains>
+			<li>add_terrains_here</li>
+		</neededNearbyTerrains>
+		-->
+
+		<!-- how far away it can be from needed nearby terrains-->
+		<neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
+
+		<!-- If true, growth rate and initial size depends on distance from needed terrains -->
+		<neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+
+		<!-- If true, only occurs under roofs -->
+		<mustBeUnderRoof>true</mustBeUnderRoof>
+
+		<!-- The maximum number of images that will be printed per square -->
+    	<maxMeshCount>15</maxMeshCount>
+
+		<!-- The size range -->
+        <visualSizeRange>
+        	<min>0.2</min>
+        	<max>0.9</max>
+      	</visualSizeRange>
+		<visualSpread>0.5</visualSpread>
+
+		<!-- The amount of resource returned if the mineral is its maximum size -->
+		<maxMinedYeild>20</maxMinedYeild>
+
+	</ThingDef>
+
+</Defs>

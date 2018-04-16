@@ -1,0 +1,27 @@
+﻿<Properties StartupItem="Minerals.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="staticCrystal.cs">
+    <Files>
+      <File FileName="coldstoneCrystal.cs" Line="61" Column="61" />
+      <File FileName="initialization.cs" Line="1" Column="1" />
+      <File FileName="thingDefOf.cs" Line="1" Column="1" />
+      <File FileName="harmonyPatching.cs" Line="1" Column="1" />
+      <File FileName="glowstoneCrystal.cs" Line="49" Column="49" />
+      <File FileName="saltCrystal.cs" Line="14" Column="14" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/Minerals_Coldstone.xml" Line="20" Column="20" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/Minerals_SaltCrystal.xml" Line="23" Column="23" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/Minerals_Glowstone.xml" Line="49" Column="49" />
+      <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="54" Column="54" />
+      <File FileName="../../../../Hardcore-SK/Mods/Core/Defs/ItemCollectionGeneratorDefs/ItemCollectionGenerators_Specific.xml" Line="31" Column="31" />
+      <File FileName="../../../../Hardcore-SK/Mods/Core_SK/Defs/ThingDefs/Events_Meteors.xml" Line="45" Column="45" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/StaticCrystalBase.xml" Line="30" Column="30" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/Minerals_Calcite.xml" Line="8" Column="8" />
+      <File FileName="staticCrystal.cs" Line="52" Column="52" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
