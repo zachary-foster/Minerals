@@ -50,6 +50,7 @@
     <Compile Include="glowstoneCrystal.cs" />
     <Compile Include="saltCrystal.cs" />
     <Compile Include="StaticMineral.cs" />
+    <Compile Include="DynamicMineral.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -70,6 +71,9 @@
     </None>
     <None Include="..\..\Defs\ThingsDefs_Minerals\StaticMineralBase.xml">
       <Link>xml\StaticMineralBase.xml</Link>
+    </None>
+    <None Include="..\..\Defs\ThingsDefs_Minerals\DynamicMineralBase.xml">
+      <Link>xml\DynamicMineralBase.xml</Link>
     </None>
   </ItemGroup>
 </Project>

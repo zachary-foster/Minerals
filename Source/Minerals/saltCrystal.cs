@@ -383,8 +383,8 @@ namespace Minerals
         public float reproduceProp = 0.001f; // How likly in a reproduction will be tried each long tick
         public float deathProp = 0.001f; //How likly it goes away for ever each long tick (only when 0% grown))
 
-        public float minClusterPorbability = 0.001f; 
-        public float maxClusterPorbability = 0.01f; 
+        public float minClusterPorbability = 0f; 
+        public float maxClusterPorbability = 0.001f; 
         public int minClusterSize = 10;
         public int maxClusterSize = 30;
 

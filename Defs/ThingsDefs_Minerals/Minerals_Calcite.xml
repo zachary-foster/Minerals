@@ -42,8 +42,8 @@
 		<spawnRadius>2</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>0.001</minClusterProbability>
-		<maxClusterProbability>0.01</maxClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
+		<maxClusterProbability>0.005</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -146,8 +146,8 @@
 		<spawnRadius>2</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>0.001</minClusterProbability>
-		<maxClusterProbability>0.01</maxClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
+		<maxClusterProbability>0.005</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -228,7 +228,7 @@
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
-		<maxClusterProbability>0.01</maxClusterProbability>
+		<maxClusterProbability>0.001</maxClusterProbability>
 	</ThingDef>
 
 	<ThingDef ParentName="QuartzCrystal">
@@ -249,7 +249,7 @@
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
-		<maxClusterProbability>0.005</maxClusterProbability>
+		<maxClusterProbability>0.001</maxClusterProbability>
 	</ThingDef>
 
 	<ThingDef ParentName="QuartzCrystal">
@@ -270,7 +270,7 @@
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
-		<maxClusterProbability>0.001</maxClusterProbability>
+		<maxClusterProbability>0.0002</maxClusterProbability>
 	</ThingDef>
 
 </Defs>
