@@ -88,7 +88,6 @@
 		<!-- Roof requirements -->
 		<mustBeUnderRoof>true</mustBeUnderRoof>
 		<mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-		<mustBeUnderNaturalRoof>true</mustBeUnderNaturalRoof>
 		<mustBeUnroofed>false</mustBeUnroofed>
 
 		<!-- The maximum number of images that will be printed per square -->

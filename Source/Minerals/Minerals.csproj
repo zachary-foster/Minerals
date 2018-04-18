@@ -59,5 +59,11 @@
     <None Include="..\..\Defs\ThingsDefs_Minerals\StaticMinerals.xml">
       <Link>xml\StaticMinerals.xml</Link>
     </None>
+    <None Include="..\..\Defs\ThingsDefs_Minerals\DynamicMineralBase.xml">
+      <Link>xml\DynamicMineralBase.xml</Link>
+    </None>
+    <None Include="..\..\Defs\ThingsDefs_Minerals\DynamicMinerals.xml">
+      <Link>xml\DynamicMinerals.xml</Link>
+    </None>
   </ItemGroup>
 </Project>

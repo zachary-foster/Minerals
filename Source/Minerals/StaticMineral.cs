@@ -65,7 +65,7 @@ namespace Minerals
         }
 
 
-        public ThingDef_StaticMineral attributes
+        public virtual ThingDef_StaticMineral attributes
         {
             get
             {
@@ -101,7 +101,6 @@ namespace Minerals
             {
                 return false;
             }
-            Log.Message("Minerals: isRoofConditionOk");
 
             // Look for stuff in the way
             List<Thing> list = map.thingGrid.ThingsListAt(position);
@@ -113,18 +112,15 @@ namespace Minerals
                     return false;
                 }
                 if (
-                    myDef.passability == Traversability.Impassable &&
-                    (
                         thing.def.category == ThingCategory.Pawn ||
                         thing.def.category == ThingCategory.Item ||
                         thing.def.category == ThingCategory.Building ||
                         thing.def.category == ThingCategory.Plant
-                    ))
+                    )
                 {
                     return false;
                 }
             }
-            Log.Message("Minerals: ok to spawn");
 
             return true;
         }
@@ -178,10 +174,10 @@ namespace Minerals
             {
                 return false;
             }
-            if (myDef.mustBeUnderNaturalRoof && position.GetRoof(map).isNatural)
-            {
-                return false;
-            }
+//            if (myDef.mustBeUnderNaturalRoof && position.GetRoof(map).isNatural)
+//            {
+//                return false;
+//            }
             if (myDef.mustBeUnderThickRoof && position.GetRoof(map).isThickRoof)
             {
                 return false;
@@ -239,7 +235,6 @@ namespace Minerals
 
         public static StaticMineral SpawnAt(IntVec3 dest, ThingDef_StaticMineral myDef, Map map)
         {
-            Log.Message("Minerals: spawning SpawnAt");
             StaticMineral output = (StaticMineral)GenSpawn.Spawn(myDef, dest, map);
             map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Things);
             return output;
@@ -325,10 +320,8 @@ namespace Minerals
             IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
             foreach (IntVec3 current in allCells)
             {
-                Log.Message("Minerals: trying to spawn");
                 if (current.InBounds(map) && StaticMineral.CanSpawnAt(myDef, map, current) && Rand.Range(0f, 1f) < spawnProbability)
                 {
-                    Log.Message("Minerals: spawning");
                     StaticMineral.SpawnCluster(map, current, myDef);
                 }
             }
@@ -469,7 +462,7 @@ namespace Minerals
         // If true, only grows under roofs
         public bool mustBeUnderRoof = true;
         public bool mustBeUnderThickRoof = false;
-        public bool mustBeUnderNaturalRoof = true;
+//        public bool mustBeUnderNaturalRoof = true;
         public bool mustBeUnroofed = false;
 
         // The maximum number of images that will be printed per square

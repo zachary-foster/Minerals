@@ -25,7 +25,6 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<pathCost>40</pathCost>
 		<building>
-			<isInert>true</isInert>
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>CrushedStone</mineableThing>
@@ -86,7 +85,6 @@
 		<!-- Roof requirements -->
 		<mustBeUnderRoof>true</mustBeUnderRoof>
 		<mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-		<mustBeUnderNaturalRoof>true</mustBeUnderNaturalRoof>
 		<mustBeUnroofed>false</mustBeUnroofed>
 
 		<!-- The maximum number of images that will be printed per square -->
@@ -129,7 +127,6 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<pathCost>40</pathCost>
 		<building>
-			<isInert>true</isInert>
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>GlassBatch</mineableThing>
@@ -190,7 +187,6 @@
 		<!-- Roof requirements -->
 		<mustBeUnderRoof>true</mustBeUnderRoof>
 		<mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-		<mustBeUnderNaturalRoof>true</mustBeUnderNaturalRoof>
 		<mustBeUnroofed>false</mustBeUnroofed>
 
 		<!-- The maximum number of images that will be printed per square -->
