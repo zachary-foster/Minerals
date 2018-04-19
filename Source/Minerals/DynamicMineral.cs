@@ -31,10 +31,19 @@ namespace Minerals
 
         public float growthRateFactor(growthRateModifier mod)
         {
+            // Growth rate factor not defined
             if (mod == null)
             {
                 return 1f;
             }
+
+            // Check that the growth rate modifier is in use
+            if (! mod.active)
+            {
+                return 1f;
+            }
+
+            // Get value the growth rate depends on
             float myValue = mod.value(this);
             
             // decays if too high or low

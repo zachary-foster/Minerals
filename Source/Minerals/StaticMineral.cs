@@ -136,6 +136,10 @@ namespace Minerals
             {
                 return false;
             }
+            if (myDef.allowedTerrains == null)
+            {
+                return true;
+            }
             TerrainDef terrain = map.terrainGrid.TerrainAt(position);
             return myDef.allowedTerrains.Any(terrain.defName.Contains);
         }
