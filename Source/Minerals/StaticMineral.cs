@@ -19,10 +19,10 @@ namespace Minerals
     {
 
         // ======= Private Variables ======= //
-        private float yieldPct = 0;
+        protected float yieldPct = 0;
 
         // The current size of the mineral
-        private float mySize = 0.05f;
+        protected float mySize = 0.05f;
         public float size
         {
             get
@@ -45,7 +45,7 @@ namespace Minerals
         }
 
 
-        private float? myDistFromNeededTerrain = null;
+        protected float? myDistFromNeededTerrain = null;
         public float distFromNeededTerrain
         {
             get

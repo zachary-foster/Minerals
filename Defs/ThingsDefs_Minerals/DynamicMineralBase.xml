@@ -24,6 +24,9 @@
         <reproduceProp>0.001</reproduceProp>
         <deathProb>0.001</deathProb>
 
+        <!-- Chance of spawning de novo each tick -->
+        <spawnProb>0.0001</spawnProb>
+
          <!-- Growth rate modifiers -->
 
         <tempGrowthRateModifer>

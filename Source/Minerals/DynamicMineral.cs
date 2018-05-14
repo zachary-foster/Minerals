@@ -29,7 +29,35 @@ namespace Minerals
 
         // ======= Growth rate factors ======= //
 
-        public float growthRateFactor(growthRateModifier mod)
+
+        public float getModValue(growthRateModifier mod) 
+        {
+            // If growth rate factor is not needed, do not calculate
+            if (mod == null | !mod.active)
+            {
+                return 0f;
+            }
+            else
+            {
+                return mod.value(this);
+            }
+        }
+
+        public static float getModValueAtPos(growthRateModifier mod, ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap) 
+        {
+            // If growth rate factor is not needed, do not calculate
+            if (mod == null | !mod.active)
+            {
+                return 0f;
+            }
+            else
+            {
+                return mod.value(myDef, aPosition, aMap);
+            }
+        }
+
+
+        public static float growthRateFactor(growthRateModifier mod, float myValue)
         {
             // Growth rate factor not defined
             if (mod == null)
@@ -42,10 +70,7 @@ namespace Minerals
             {
                 return 1f;
             }
-
-            // Get value the growth rate depends on
-            float myValue = mod.value(this);
-            
+                
             // decays if too high or low
             float stableRangeSize = mod.maxStable - mod.minStable;
             if (myValue > mod.maxStable) 
@@ -78,9 +103,17 @@ namespace Minerals
         {
             get
             {
-                return this.attributes.allRateModifiers.Select(mod => growthRateFactor(mod)).ToList();
+                return this.attributes.allRateModifiers.Select(mod => growthRateFactor(mod, getModValue(mod))).ToList();
             }
         }
+
+        public static List<float> allGrowthRateFactorsAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap) 
+        {
+
+            return myDef.allRateModifiers.Select(mod => growthRateFactor(mod, getModValueAtPos(mod, myDef, aPosition, aMap))).ToList();
+
+        }
+
 
 
         public float GrowthRate
@@ -109,6 +142,31 @@ namespace Minerals
             }
         }
 
+        public static float GrowthRateAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap) 
+        {
+            // Get growth rate factors
+            List<float> rateFactors = allGrowthRateFactorsAtPos(myDef, aPosition, aMap);
+            List<float> positiveFactors = rateFactors.FindAll(fac => fac >= 0);
+            List<float> negativeFactors = rateFactors.FindAll(fac => fac < 0);
+
+            // if any factors are negative, add them together and ignore positive factors
+            if (negativeFactors.Count > 0)
+            {
+                return negativeFactors.Sum();
+            }
+
+            // if all positive, multiply them
+            if (positiveFactors.Count > 0)
+            {
+                return positiveFactors.Aggregate(1f, (acc, val) => acc * val);
+            }
+
+            // If there are no growth rate factors, grow at full speed
+            return 1f;
+
+        }
+
+
         public float GrowthPerTick
         {
             get
@@ -124,12 +182,12 @@ namespace Minerals
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("Size: " + this.size);
             stringBuilder.AppendLine("Growth rate: " + this.GrowthRate);
-            stringBuilder.AppendLine("Temp factor: " + this.growthRateFactor(this.attributes.tempGrowthRateModifer));
-            stringBuilder.AppendLine("Rain factor: " + this.growthRateFactor(this.attributes.rainGrowthRateModifer));
-            stringBuilder.AppendLine("Light factor: " + this.growthRateFactor(this.attributes.lightGrowthRateModifer));
-            stringBuilder.AppendLine("Size factor: " + this.growthRateFactor(this.attributes.sizeGrowthRateModifer));
-            stringBuilder.AppendLine("Fertility factor: " + this.growthRateFactor(this.attributes.fertGrowthRateModifer));
-            stringBuilder.AppendLine("Distance factor: " + this.growthRateFactor(this.attributes.distGrowthRateModifer));
+            //stringBuilder.AppendLine("Temp factor: " + growthRateFactor(this.attributes.tempGrowthRateModifer, getModValue(this.attributes.tempGrowthRateModifer)));
+            //stringBuilder.AppendLine("Rain factor: " + growthRateFactor(this.attributes.rainGrowthRateModifer, getModValue(this.attributes.rainGrowthRateModifer)));
+            //stringBuilder.AppendLine("Light factor: " + growthRateFactor(this.attributes.lightGrowthRateModifer, getModValue(this.attributes.lightGrowthRateModifer)));
+            //stringBuilder.AppendLine("Size factor: " + growthRateFactor(this.attributes.sizeGrowthRateModifer, getModValue(this.attributes.sizeGrowthRateModifer)));
+            //stringBuilder.AppendLine("Fertility factor: " + growthRateFactor(this.attributes.fertGrowthRateModifer, getModValue(this.attributes.fertGrowthRateModifer)));
+            //stringBuilder.AppendLine("Distance factor: " + growthRateFactor(this.attributes.distGrowthRateModifer, getModValue(this.attributes.distGrowthRateModifer)));
             return stringBuilder.ToString().TrimEndNewlines();
         }
 
@@ -168,10 +226,14 @@ namespace Minerals
     /// <permission>No restrictions</permission>
     public class ThingDef_DynamicMineral : ThingDef_StaticMineral
     {
+        // The number of days it takes to grow at max growth speed
         public float growDays = 100f;
+
+
         public float minReproductionSize = 0.8f;
         public float reproduceProp = 0.001f;
         public float deathProb = 0.001f;
+        public float spawnProb = 0.0001f; // chance of spawning de novo each tick
         public tempGrowthRateModifier tempGrowthRateModifer;  // Temperature effects on growth rate
         public rainGrowthRateModifier rainGrowthRateModifer;  // Rain effects on growth rate
         public lightGrowthRateModifier lightGrowthRateModifer; // Light effects on growth rate
@@ -211,6 +273,7 @@ namespace Minerals
         public float belowMinDecayRate;  // How quickly it decays when below minStableFert
 
         public abstract float value(DynamicMineral aMineral);
+        public abstract float value(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap);
     }
 
     public class tempGrowthRateModifier : growthRateModifier
@@ -218,6 +281,11 @@ namespace Minerals
         public override float value(DynamicMineral aMineral)
         {
             return aMineral.Position.GetTemperature(aMineral.Map);
+        }
+
+        public override float value(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
+        {
+            return aPosition.GetTemperature(aMap);
         }
     }
 
@@ -227,6 +295,11 @@ namespace Minerals
         {
             return aMineral.Map.weatherManager.curWeather.rainRate;
         }
+
+        public override float value(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
+        {
+            return aMap.weatherManager.curWeather.rainRate;
+        }
     }
 
     public class lightGrowthRateModifier : growthRateModifier
@@ -234,6 +307,11 @@ namespace Minerals
         public override float value(DynamicMineral aMineral)
         {
             return aMineral.Map.glowGrid.GameGlowAt(aMineral.Position);
+        }
+
+        public override float value(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
+        {
+            return aMap.glowGrid.GameGlowAt(aPosition);
         }
     }
 
@@ -244,6 +322,11 @@ namespace Minerals
         {
             return aMineral.Map.fertilityGrid.FertilityAt(aMineral.Position);
         }
+
+        public override float value(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
+        {
+            return aMap.fertilityGrid.FertilityAt(aPosition);
+        }
     }
 
     public class distGrowthRateModifier : growthRateModifier
@@ -251,6 +334,11 @@ namespace Minerals
         public override float value(DynamicMineral aMineral)
         {
             return aMineral.distFromNeededTerrain;
+        }
+
+        public override float value(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
+        {
+            return StaticMineral.posDistFromNeededTerrain(myDef, aMap, aPosition);
         }
     }
 
@@ -261,5 +349,96 @@ namespace Minerals
         {
             return aMineral.size;
         }
+
+        public override float value(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
+        {
+            return 0.01f;
+        }
+    }
+
+
+
+    public class DynamicMineralWatcher : MapComponent
+    {
+
+        public static int ticksPerLook = 1000; // 100 is about once a second on 1x speed
+        public int tick_counter = 1;
+
+        public DynamicMineralWatcher(Map map) : base(map)
+        {
+        }
+
+        public override void MapComponentTick()
+        {
+            base.MapComponentTick();
+
+            // Run each class' watcher
+            tick_counter += 1;
+            if (tick_counter > ticksPerLook)
+            {
+                tick_counter = 1;
+                Look();
+            }
+        }
+
+        // The main function controlling what is done each time the map is looked at
+        public void Look()
+        {
+            SpawnDynamicMinerals();
+        }
+
+
+        public void SpawnDynamicMinerals() 
+        {
+            foreach (ThingDef_DynamicMineral mineralType in Verse.DefDatabase<ThingDef_DynamicMineral>.AllDefs)
+            {
+                // Check that the map type is ok
+                if (! StaticMineral.CanSpawnInBiome(mineralType, map))
+                {
+                    continue;
+                }
+
+               
+
+                // Get number of positions to check
+                float numToCheck = map.Area * mineralType.spawnProb;
+
+                if (numToCheck < 1 & Rand.Range(0f, 1f) > numToCheck)
+                {
+                    continue;
+                }
+                else
+                {
+                    numToCheck = 1;
+                }
+
+                //Log.Message("Trying to spawn " + mineralType.defName + " with prob of " + mineralType.spawnProb + " and " + numToCheck + " blocks");
+
+
+                // Try to spawn in a subset of positions
+                for (int i = 0; i < numToCheck; i++)
+                {
+                    // Pick a random location
+                    IntVec3 aPos = map.AllCells.RandomElement();
+
+                    //Log.Message("GrowthRateAtPos: " + DynamicMineral.GrowthRateAtPos(mineralType, aPos, map));
+
+                    // Dont always spawn if growth rate is not good
+                    if (Rand.Range(0f, 1f) > DynamicMineral.GrowthRateAtPos(mineralType, aPos, map))
+                    {
+                        continue;
+                    }
+
+                    // Try to spawn at that location
+                    StaticMineral.TrySpawnAt(aPos, mineralType, map);
+                    Log.Message(mineralType.defName + " spawned at " + aPos);
+
+                }
+                
+            }
+        }
     }
 }
+
+
+
