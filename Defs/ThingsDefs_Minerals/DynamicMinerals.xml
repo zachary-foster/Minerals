@@ -295,7 +295,7 @@
 	</ThingDef>
 		
 	<ThingDef ParentName="DynamicMineralBase">
-    	<defName>SaltCrystal</defName>
+    	<defName>ZF_SaltCrystal</defName>
     	<label>Salt Crystal</label>		
     	<description>A deposit of salt formed by evaporation of nearbly salt water. Grows quickly on hot sunny days, but dissolves in the rain. Only persists in dry climates. Can be harvested to preserve food.</description>
 		<altitudeLayer>Floor</altitudeLayer>
@@ -320,22 +320,28 @@
 
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-		<spawnRadius>3</spawnRadius>
+		<spawnRadius>2</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0.0001</minClusterProbability>
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
-		<minClusterSize>1</minClusterSize>
-		<maxClusterSize>10</maxClusterSize>
+		<minClusterSize>5</minClusterSize>
+		<maxClusterSize>20</maxClusterSize>
 
 		<!-- The range of starting sizes of individuals in clusters -->
 		<initialSizeMin>.3</initialSizeMin>
-		<initialSizeMax>.95</initialSizeMax>
+		<initialSizeMax>.5</initialSizeMax>
 
 		<!-- How much initial sizes of individuals randomly vary -->
-		<initialSizeVariation>.3</initialSizeVariation>
+		<initialSizeVariation>.2</initialSizeVariation>
+
+		<!-- Reproduction and death settings -->
+		<minReproductionSize>0.1</minReproductionSize>
+        <reproduceProp>0.02</reproduceProp>
+        <deathProb>0.5</deathProb>
+
 
 		<!-- The biomes this can appear in. The default is all ones known to mod-->
 		<allowedBiomes>
@@ -401,10 +407,10 @@
 		<maxMinedYeild>20</maxMinedYeild>
 
 		<!-- The number of days it takes to grow at max growth speed -->
-		<growDays>5</growDays>
+		<growDays>10</growDays>
 
 		<!-- Chance of spawning de novo each tick -->
-        <spawnProb>0.0001</spawnProb>
+        <spawnProb>0.003</spawnProb>
 		
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
@@ -412,7 +418,7 @@
         	<aboveMaxDecayRate>1</aboveMaxDecayRate> 
         	<maxStable>800</maxStable> 
         	<maxGrow>100</maxGrow> 
-        	<idealGrow>40</idealGrow>  
+        	<idealGrow>50</idealGrow>  
         	<minGrow>-10</minGrow>
         	<minStable>-99999</minStable>
         	<belowMinDecayRate>0</belowMinDecayRate>
@@ -422,7 +428,7 @@
         	<aboveMaxDecayRate>0</aboveMaxDecayRate> 
         	<maxStable>9999</maxStable> 
         	<maxGrow>3</maxGrow> 
-        	<idealGrow>0</idealGrow>  
+        	<idealGrow>1</idealGrow>  
         	<minGrow>-1</minGrow>
         	<minStable>-99999</minStable>
         	<belowMinDecayRate>0</belowMinDecayRate>
@@ -441,10 +447,10 @@
         	<active>true</active>
         	<aboveMaxDecayRate>5</aboveMaxDecayRate> 
         	<maxStable>0.1</maxStable> 
-        	<maxGrow>0.05</maxGrow> 
+        	<maxGrow>0.01</maxGrow> 
         	<idealGrow>0</idealGrow>  
         	<minGrow>-1</minGrow>
-        	<minStable>-99999</minStable>
+        	<minStable>-1.1</minStable>
         	<belowMinDecayRate>0</belowMinDecayRate>
         </rainGrowthRateModifer>
 

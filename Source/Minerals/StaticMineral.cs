@@ -160,7 +160,7 @@ namespace Minerals
                         TerrainDef terrain = map.terrainGrid.TerrainAt(checkedPosition);
                         if (myDef.neededNearbyTerrains.Any(terrain.defName.Contains))
                         {
-                            if (position.DistanceTo(checkedPosition) <= myDef.neededNearbyTerrainRadius) 
+                            if (position.DistanceTo(checkedPosition) < myDef.neededNearbyTerrainRadius) 
                             {
                                 return true;
                             }

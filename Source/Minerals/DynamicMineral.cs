@@ -180,14 +180,12 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Size: " + this.size);
-            stringBuilder.AppendLine("Growth rate: " + this.GrowthRate);
-            //stringBuilder.AppendLine("Temp factor: " + growthRateFactor(this.attributes.tempGrowthRateModifer, getModValue(this.attributes.tempGrowthRateModifer)));
-            //stringBuilder.AppendLine("Rain factor: " + growthRateFactor(this.attributes.rainGrowthRateModifer, getModValue(this.attributes.rainGrowthRateModifer)));
-            //stringBuilder.AppendLine("Light factor: " + growthRateFactor(this.attributes.lightGrowthRateModifer, getModValue(this.attributes.lightGrowthRateModifer)));
-            //stringBuilder.AppendLine("Size factor: " + growthRateFactor(this.attributes.sizeGrowthRateModifer, getModValue(this.attributes.sizeGrowthRateModifer)));
-            //stringBuilder.AppendLine("Fertility factor: " + growthRateFactor(this.attributes.fertGrowthRateModifer, getModValue(this.attributes.fertGrowthRateModifer)));
-            //stringBuilder.AppendLine("Distance factor: " + growthRateFactor(this.attributes.distGrowthRateModifer, getModValue(this.attributes.distGrowthRateModifer)));
+            stringBuilder.AppendLine("Size: " + this.size.ToStringPercent());
+            stringBuilder.AppendLine("Growth rate: " + this.GrowthRate.ToStringPercent());
+            foreach (growthRateModifier mod in this.attributes.allRateModifiers)
+            {
+                stringBuilder.AppendLine(mod.GetType().Name + ": " + growthRateFactor(mod, getModValue(mod)));
+            }
             return stringBuilder.ToString().TrimEndNewlines();
         }
 
@@ -422,6 +420,11 @@ namespace Minerals
                     IntVec3 aPos = map.AllCells.RandomElement();
 
                     //Log.Message("GrowthRateAtPos: " + DynamicMineral.GrowthRateAtPos(mineralType, aPos, map));
+                    // Dont try to place on invlaid terrain
+                    if (! StaticMineral.IsTerrainOkAt(mineralType, map, aPos))
+                    {
+                        continue;
+                    }
 
                     // Dont always spawn if growth rate is not good
                     if (Rand.Range(0f, 1f) > DynamicMineral.GrowthRateAtPos(mineralType, aPos, map))
