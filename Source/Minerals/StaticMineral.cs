@@ -364,6 +364,48 @@ namespace Minerals
             
         // ======= Appearance ======= //
 
+        public float GetSizeBasedOnNearest(Vector3 subcenter)
+        {
+            float distToTrueCenter = Vector3.Distance(this.TrueCenter(), subcenter);
+            float sizeOfNearest = 0;
+            float distToNearest = 1;
+            for (int xOffset = -1; xOffset <= 1; xOffset++)
+            {
+                for (int zOffset = -1; zOffset <= 1; zOffset++)
+                {
+                    if (xOffset == 0 & zOffset == 0)
+                    {
+                        continue;
+                    }
+                    IntVec3 checkedPosition = this.Position + new IntVec3(xOffset, 0, zOffset);
+                    if (checkedPosition.InBounds(this.Map))
+                    {
+                        List<Thing> list = this.Map.thingGrid.ThingsListAt(checkedPosition);
+                        foreach (Thing item in list)
+                        {
+                            if (item.def.defName == this.attributes.defName)
+                            {
+                                float distanceToPos = Vector3.Distance(item.TrueCenter(), subcenter);
+
+                                if (distToNearest > distanceToPos & distanceToPos <= 1) 
+                                {
+                                    distToNearest = distanceToPos;
+                                    sizeOfNearest = ((StaticMineral) item).size;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //float correctedSize = this.size + ((sizeOfNearest - this.size) / distToNearest) * (distToTrueCenter - 1);
+            float correctedSize = (1 - distToTrueCenter) * this.size + (1 - distToNearest) * sizeOfNearest;
+            Log.Message("this.size=" + this.size + " sizeOfNearest=" + sizeOfNearest + " distToNearest=" + distToNearest + " distToTrueCenter=" + distToTrueCenter);
+            Log.Message(this.size + " -> " + correctedSize + "  dist = " + distToNearest);
+
+            return this.attributes.visualSizeRange.LerpThroughRange(correctedSize);
+        }
+
         public override void Print(SectionLayer layer)
         {
 
@@ -374,8 +416,7 @@ namespace Minerals
             {
                 numToPrint = 1;
             }
-            float baseSize = this.attributes.visualSizeRange.LerpThroughRange(this.size);
-            Vector3 trueCenter = this.TrueCenter();
+           Vector3 trueCenter = this.TrueCenter();
             for (int i = 0; i < numToPrint; i++)
             {
                 // Calculate location
@@ -384,8 +425,15 @@ namespace Minerals
                 center.x += Rand.Range(- this.attributes.visualSpread, this.attributes.visualSpread);
                 center.z += Rand.Range(- this.attributes.visualSpread, this.attributes.visualSpread);
 
-                // Calculate size
-                float thisSize = baseSize + (baseSize * Rand.Range(- this.attributes.visualSizeVariation, this.attributes.visualSizeVariation));
+                // Adjust size for distance from center to other crystals
+                float thisSize = GetSizeBasedOnNearest(center);
+
+                // Add random variation
+                thisSize = thisSize + (thisSize * Rand.Range(- this.attributes.visualSizeVariation, this.attributes.visualSizeVariation));
+                if (thisSize <= 0)
+                {
+                    continue;
+                }
 
                 // Print image
                 Material matSingle = this.Graphic.MatSingle;
