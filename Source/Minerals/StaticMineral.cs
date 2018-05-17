@@ -318,18 +318,20 @@ namespace Minerals
 
             // Select probability of spawing for this map
             float spawnProbability = Rand.Range(myDef.minClusterProbability, myDef.maxClusterProbability);
-            Log.Message("Minerals: " + myDef.defName + " will be spawned at a probability of " + spawnProbability);
 
             // Find spots to spawn it
-            IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
-            foreach (IntVec3 current in allCells)
+            if (spawnProbability > 0)
             {
-                if (current.InBounds(map) && StaticMineral.CanSpawnAt(myDef, map, current) && Rand.Range(0f, 1f) < spawnProbability)
+                Log.Message("Minerals: " + myDef.defName + " will be spawned at a probability of " + spawnProbability);
+                IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
+                foreach (IntVec3 current in allCells)
                 {
-                    StaticMineral.SpawnCluster(map, current, myDef);
+                    if (current.InBounds(map) && StaticMineral.CanSpawnAt(myDef, map, current) && Rand.Range(0f, 1f) < spawnProbability)
+                    {
+                        StaticMineral.SpawnCluster(map, current, myDef);
+                    }
                 }
             }
-
         }
 
         // ======= Yeilding resources ======= //
@@ -399,7 +401,7 @@ namespace Minerals
             }
 
             //float correctedSize = this.size + ((sizeOfNearest - this.size) / distToNearest) * (distToTrueCenter - 1);
-            float correctedSize = (1 - distToTrueCenter) * this.size + (1 - distToNearest) * sizeOfNearest;
+            float correctedSize = (0.75f - distToTrueCenter) * this.size + (1 - distToNearest) * sizeOfNearest;
             Log.Message("this.size=" + this.size + " sizeOfNearest=" + sizeOfNearest + " distToNearest=" + distToNearest + " distToTrueCenter=" + distToTrueCenter);
             Log.Message(this.size + " -> " + correctedSize + "  dist = " + distToNearest);
 
@@ -416,7 +418,7 @@ namespace Minerals
             {
                 numToPrint = 1;
             }
-           Vector3 trueCenter = this.TrueCenter();
+            Vector3 trueCenter = this.TrueCenter();
             for (int i = 0; i < numToPrint; i++)
             {
                 // Calculate location
