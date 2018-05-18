@@ -338,8 +338,8 @@
 		<initialSizeVariation>.2</initialSizeVariation>
 
 		<!-- Reproduction and death settings -->
-		<minReproductionSize>0.1</minReproductionSize>
-        <reproduceProp>0.02</reproduceProp>
+		<minReproductionSize>0.2</minReproductionSize>
+        <reproduceProp>0.005</reproduceProp>
         <deathProb>0.5</deathProb>
 
 

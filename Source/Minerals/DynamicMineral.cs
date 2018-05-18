@@ -207,7 +207,8 @@ namespace Minerals
             // Try to die
             if (this.size <= 0 && Rand.Range(0f, 1f) < this.attributes.deathProb)
             {
-                base.TakeDamage(new DamageInfo(DamageDefOf.Rotting, 100000, -1, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
+                this.Destroy(DestroyMode.Vanish);
+                //base.TakeDamage(new DamageInfo(DamageDefOf.Rotting, 100000, -1, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
             }
         }
 

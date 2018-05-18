@@ -11,7 +11,7 @@
 			<texPath>Things/Mineral/CalciteCrystal</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>LowPlant</altitudeLayer>
 		<passability>Standable</passability>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
@@ -113,7 +113,7 @@
 			<drawSize>(1,1)</drawSize>
 			<color>(220,220,220)</color>
 		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>LowPlant</altitudeLayer>
 		<passability>Standable</passability>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>

@@ -7,7 +7,7 @@
 		<thingClass>Minerals.StaticMineral</thingClass>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>LowPlant</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.05</fillPercent>

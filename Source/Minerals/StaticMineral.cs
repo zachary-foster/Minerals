@@ -400,10 +400,9 @@ namespace Minerals
                 }
             }
 
-            //float correctedSize = this.size + ((sizeOfNearest - this.size) / distToNearest) * (distToTrueCenter - 1);
             float correctedSize = (0.75f - distToTrueCenter) * this.size + (1 - distToNearest) * sizeOfNearest;
-            Log.Message("this.size=" + this.size + " sizeOfNearest=" + sizeOfNearest + " distToNearest=" + distToNearest + " distToTrueCenter=" + distToTrueCenter);
-            Log.Message(this.size + " -> " + correctedSize + "  dist = " + distToNearest);
+            //Log.Message("this.size=" + this.size + " sizeOfNearest=" + sizeOfNearest + " distToNearest=" + distToNearest + " distToTrueCenter=" + distToTrueCenter);
+            //Log.Message(this.size + " -> " + correctedSize + "  dist = " + distToNearest);
 
             return this.attributes.visualSizeRange.LerpThroughRange(correctedSize);
         }
