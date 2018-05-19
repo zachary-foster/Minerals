@@ -47,6 +47,7 @@
     <Compile Include="initialization.cs" />
     <Compile Include="StaticMineral.cs" />
     <Compile Include="DynamicMineral.cs" />
+    <Compile Include="SaltCrystal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

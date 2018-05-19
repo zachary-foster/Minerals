@@ -295,6 +295,7 @@
 	</ThingDef>
 		
 	<ThingDef ParentName="DynamicMineralBase">
+		<thingClass>Minerals.SaltCrystal</thingClass>
     	<defName>ZF_SaltCrystal</defName>
     	<label>Salt Crystal</label>		
     	<description>A deposit of salt formed by evaporation of nearbly salt water. Grows quickly on hot sunny days, but dissolves in the rain. Only persists in dry climates. Can be harvested to preserve food.</description>
@@ -379,6 +380,7 @@
 			<li>Sand</li>
 			<li>Soil</li>
 			<li>RockyDirt</li>
+			<li>TKKN_SandBeachWetSalt</li>
 		</allowedTerrains>
 
 		<!-- how far away it can be from needed nearby terrains-->

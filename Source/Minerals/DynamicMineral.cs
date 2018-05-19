@@ -116,7 +116,7 @@ namespace Minerals
 
 
 
-        public float GrowthRate
+        public virtual float GrowthRate
         {
             get
             {
@@ -182,9 +182,12 @@ namespace Minerals
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("Size: " + this.size.ToStringPercent());
             stringBuilder.AppendLine("Growth rate: " + this.GrowthRate.ToStringPercent());
-            foreach (growthRateModifier mod in this.attributes.allRateModifiers)
+            if (DebugSettings.godMode)
             {
-                stringBuilder.AppendLine(mod.GetType().Name + ": " + growthRateFactor(mod, getModValue(mod)));
+                foreach (growthRateModifier mod in this.attributes.allRateModifiers)
+                {
+                    stringBuilder.AppendLine(mod.GetType().Name + ": " + growthRateFactor(mod, getModValue(mod)));
+                }
             }
             return stringBuilder.ToString().TrimEndNewlines();
         }
