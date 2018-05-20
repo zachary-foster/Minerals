@@ -6,7 +6,7 @@
     <label>Craft royal longSword</label>
     <description>Make a royal longsword.</description>
     <jobString>Crafting a royal longSword.</jobString>
-    <workAmount>30000</workAmount>
+    <workAmount>15000</workAmount>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Interact_Repair</soundWorking>
@@ -49,7 +49,8 @@
     </ingredients>
     <fixedIngredientFilter>
 		<categories>
-			<li>Metallic</li>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
 			<li>Leathers</li>
     	</categories>
     </fixedIngredientFilter>
