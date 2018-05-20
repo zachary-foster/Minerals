@@ -63,6 +63,7 @@
 			<li>TKKN_Oasis</li>
 			<li>TKKN_RedwoodForest</li>
 			<li>IceSheet</li>
+			<li>Savanna</li>
 		</allowedBiomes>
 
 		<!-- The terrains this can appear on. The default is rocky terrains-->
@@ -72,6 +73,7 @@
 			<li>Limestone_Rough</li>
 			<li>Sandstone_Rough</li>
 			<li>Slate_Rough</li>
+			<li>TKKN_LavaRock</li>
 			<li>Gravel</li>
 		</allowedTerrains>
 

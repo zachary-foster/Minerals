@@ -184,7 +184,7 @@
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>-0.01</minClusterProbability>
-		<maxClusterProbability>0.01</maxClusterProbability>
+		<maxClusterProbability>0.03</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -207,13 +207,17 @@
 		<allowedBiomes>
 			<li>IceSheet</li>
 			<li>Tundra</li>
+			<li>Desert</li>
 			<li>ExtremeDesert</li>
+			<li>BorealForest</li>
 			<li>TropicalSwampArchipelago</li>
 			<li>BorealArchipelago</li>
 			<li>TundraArchipelago</li>
 			<li>ColdBogArchipelago</li>
 			<li>DesertArchipelago</li>
 			<li>TKKN_VolcanicFlow</li>
+			<li>TKKN_Desert</li>
+			<li>TKKN_RedwoodForest</li>
 		</allowedBiomes>
 
 		<!-- The terrains this can appear on. The default is rocky terrains-->
@@ -223,6 +227,7 @@
 			<li>Limestone_Rough</li>
 			<li>Sandstone_Rough</li>
 			<li>Slate_Rough</li>
+			<li>TKKN_LavaRock</li>
 			<li>Gravel</li>
 		</allowedTerrains>
 
@@ -360,6 +365,7 @@
 			<li>TKKN_Desert</li>
 			<li>TKKN_Oasis</li>
 			<li>TKKN_RedwoodForest</li>
+			<li>Savanna</li>
 		</allowedBiomes>
 			
 		<!-- The terrains this must be near to, but not necessarily on -->
@@ -376,15 +382,17 @@
 			<li>Limestone_Rough</li>
 			<li>Sandstone_Rough</li>
 			<li>Slate_Rough</li>
+			<li>TKKN_LavaRock</li>
 			<li>Gravel</li>
 			<li>Sand</li>
 			<li>Soil</li>
 			<li>RockyDirt</li>
 			<li>TKKN_SandBeachWetSalt</li>
+			<li>TKKN_SaltField</li>
 		</allowedTerrains>
 
 		<!-- how far away it can be from needed nearby terrains-->
-		<neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
+		<neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
 
 		<!-- If true, growth rate and initial size depends on distance from needed terrains -->
 		<neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
@@ -411,7 +419,7 @@
 		<!-- The number of days it takes to grow at max growth speed -->
 		<growDays>10</growDays>
 
-		<!-- Chance of spawning de novo each tick -->
+		<!-- Chance of spawning de novo each check -->
         <spawnProb>0.003</spawnProb>
 		
 		<!-- Growth rate modifiers -->

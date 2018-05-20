@@ -203,6 +203,8 @@
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>15</maxMinedYeild>
 
+		<!-- Other resources it might drop -->
+		<roughGemDropChance>0.1</roughGemDropChance>
 	</ThingDef>
 
 
@@ -222,10 +224,14 @@
 			<Beauty>15</Beauty>
 		</statBases>
 
-		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+		<!-- For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>-0.01</minClusterProbability>
 		<maxClusterProbability>0.005</maxClusterProbability>
+
+		<!-- Other resources it might drop -->
+		<roughGemDropChance>0.2</roughGemDropChance>
 	</ThingDef>
+
 
 	<ThingDef ParentName="QuartzCrystal">
 		<defName>CitrineCrystal</defName>
@@ -246,7 +252,11 @@
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>-0.05</minClusterProbability>
 		<maxClusterProbability>0.005</maxClusterProbability>
+
+		<!-- Other resources it might drop -->
+		<roughGemDropChance>0.3</roughGemDropChance>
 	</ThingDef>
+
 
 	<ThingDef ParentName="QuartzCrystal">
 		<defName>PrasioliteCrystal</defName>
@@ -267,6 +277,9 @@
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>-0.1</minClusterProbability>
 		<maxClusterProbability>0.005</maxClusterProbability>
+
+		<!-- Other resources it might drop -->
+		<roughGemDropChance>0.5</roughGemDropChance>
 	</ThingDef>
 
 </Defs>
