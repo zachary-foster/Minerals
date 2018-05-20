@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+  <Verse.ThingDef ParentName="WeaponMedievalBase">
+    <defName>MeleeWeapon_RoyalLongSword</defName>
+    <label>Royal Longsword</label>
+    <description>The ancient weapon of kings, the longsword can be used for slashing or stabbing and is deadly in the right hands. This particular sword is adorned with precious jewels and gold.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/RoyalLongsword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractMelee</soundInteract>                        
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Bulk>9.0</Bulk>
+      <Mass>4.0</Mass>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+      <MeleeCounterParryBonus>0.85</MeleeCounterParryBonus>
+	  <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.09</MoveSpeed>
+      <WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
+      <MeleeCritChance>1</MeleeCritChance>
+      <MeleeParryChance>0.75</MeleeParryChance>
+      <SocialImpact>0.05</SocialImpact>
+      <DiplomacyPower>0.05</DiplomacyPower>
+      <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>MedievalMelee</li>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.18</armorPenetration>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.25</armorPenetration>
+                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.30</armorPenetration>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+    </recipeMaker>
+    <thingCategories>
+      <li>SharpMelee</li>
+      <li>HeavyMelee</li>
+    </thingCategories>
+  </Verse.ThingDef>
+  	
+	
+</Defs>
+

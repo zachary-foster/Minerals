@@ -69,5 +69,14 @@
     <None Include="..\..\Defs\ThingsDefs_Resources\Item_Resource_Gems.xml">
       <Link>xml\Item_Resource_Gems.xml</Link>
     </None>
+    <None Include="..\..\Defs\RecipeDefs\Recipe_Gems.xml">
+      <Link>xml\Recipe_Gems.xml</Link>
+    </None>
+    <None Include="..\..\Defs\RecipeDefs\Recipe_Weapons.xml">
+      <Link>xml\Recipe_Weapons.xml</Link>
+    </None>
+    <None Include="..\..\Defs\ThingDefs_Weapons\Weapons_Melee.xml">
+      <Link>xml\Weapons_Melee.xml</Link>
+    </None>
   </ItemGroup>
 </Project>

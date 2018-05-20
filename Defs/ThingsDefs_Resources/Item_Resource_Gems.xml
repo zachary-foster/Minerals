@@ -16,7 +16,7 @@
                 <soundDrop>Silver_Drop</soundDrop>
                 <useHitPoints>false</useHitPoints>
                 <statBases>
-                        <MarketValue>100</MarketValue>
+                        <MarketValue>50</MarketValue>
                         <DeteriorationRate>0</DeteriorationRate>
                         <Flammability>0</Flammability>
                         <Mass>0.2</Mass>
@@ -35,7 +35,7 @@
                 <label>Cut Gem</label>
                 <description>A cut gem. Generally used to decorate rich people and impress raiders.</description> 
                 <graphicData>
-                        <texPath>Things/Item/Resource/RoughGem</texPath>
+                        <texPath>Things/Item/Resource/CutGem</texPath>
                         <graphicClass>Graphic_StackCount</graphicClass>
                 </graphicData>
 				<altitudeLayer>ItemImportant</altitudeLayer>
@@ -43,17 +43,14 @@
                 <soundDrop>Silver_Drop</soundDrop>
                 <useHitPoints>false</useHitPoints>
                 <statBases>
-                        <MarketValue>500</MarketValue>
+                        <MarketValue>200</MarketValue>
                         <DeteriorationRate>0</DeteriorationRate>
                         <Flammability>0</Flammability>
-                        <Mass>0.1</Mass>
+                        <Mass>0.05</Mass>
                         <Beauty>10</Beauty>
                 </statBases>
-                <thingCategories>
-                        <li>PRS</li>
-                </thingCategories>
                 <stackLimit>50</stackLimit>
-                <smallVolume>true</smallVolume>
+                <smallVolume>false</smallVolume>
         </ThingDef>
 
 
