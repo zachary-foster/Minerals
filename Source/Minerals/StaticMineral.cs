@@ -484,7 +484,7 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("PercentGrowth: " + this.size);
+            stringBuilder.AppendLine("Size: " + this.size.ToStringPercent());
             return stringBuilder.ToString().TrimEndNewlines();
         }
 
