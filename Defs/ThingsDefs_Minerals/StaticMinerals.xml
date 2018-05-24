@@ -275,11 +275,114 @@
 		</statBases>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.1</minClusterProbability>
+		<minClusterProbability>-0.005</minClusterProbability>
 		<maxClusterProbability>0.005</maxClusterProbability>
 
 		<!-- Other resources it might drop -->
 		<roughGemDropChance>0.5</roughGemDropChance>
 	</ThingDef>
+
+
+	<ThingDef Name="Obsidian" ParentName="StaticMineralBase">
+		<defName>Obsidian</defName>
+		<label>Obsidian</label>
+		<description>A volcanic glass formed when lava cools quickly at the surface. Valued by the tribal inhabitants of this rimworld for making knifes, handaxes, and arrowheads.</description>
+		<graphicData>
+			<texPath>Things/Mineral/Obsidian</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<passability>Standable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<coversFloor>false</coversFloor>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<pathCost>50</pathCost>
+		<building>
+		    <isNaturalRock>true</isNaturalRock>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>ObsidianShard</mineableThing>
+			<mineableYield>20</mineableYield>
+			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<filthLeaving>RockRubble</filthLeaving>
+		<mineable>true</mineable>
+
+		<!--How far away it can spawn from an existing location-->
+		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+		<spawnRadius>1</spawnRadius>
+
+		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+		<minClusterProbability>-0.0</minClusterProbability>
+		<maxClusterProbability>0.002</maxClusterProbability>
+
+		<!-- How  many squares each cluster will be -->
+		<minClusterSize>3</minClusterSize>
+		<maxClusterSize>50</maxClusterSize>
+
+		<!-- The range of starting sizes of individuals in clusters -->
+		<initialSizeMin>.6</initialSizeMin>
+		<initialSizeMax>.8</initialSizeMax>
+
+		<!-- How much initial sizes of individuals randomly vary -->
+		<initialSizeVariation>.25</initialSizeVariation>
+
+		<!-- The biomes this can appear in. The default is all ones known to mod-->
+		<!--
+		<allowedBiomes>
+			<li>add_biomes_here</li>
+		</allowedBiomes>
+		-->
+
+		<!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+			<li>TKKN_LavaRock</li>
+		</allowedTerrains>
+
+		<!-- The terrains this must be near to, but not necessarily on -->
+		<!--
+		<neededNearbyTerrains>
+			<li>TKKN_LavaRock</li>
+		</neededNearbyTerrains>
+		-->
+
+		<!-- how far away it can be from needed nearby terrains-->
+		<neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
+
+		<!-- If true, growth rate and initial size depends on distance from needed terrains -->
+		<neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
+
+		<!-- Roof requirements -->
+		<mustBeUnderRoof>false</mustBeUnderRoof>
+		<mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+		<mustBeUnroofed>true</mustBeUnroofed>
+
+		<!-- The maximum number of images that will be printed per square -->
+    	<maxMeshCount>10</maxMeshCount>
+
+		<!-- The size range -->
+        <visualSizeRange>
+        	<min>0.2</min>
+        	<max>1.1</max>
+      	</visualSizeRange>
+		<visualSpread>0.5</visualSpread>
+      	<visualSizeVariation>0.5</visualSizeVariation>
+
+		<!-- The amount of resource returned if the mineral is its maximum size -->
+		<maxMinedYeild>10</maxMinedYeild>
+
+		<!-- Other resources it might drop -->
+		<roughGemDropChance>0.01</roughGemDropChance>
+	</ThingDef>
+
 
 </Defs>

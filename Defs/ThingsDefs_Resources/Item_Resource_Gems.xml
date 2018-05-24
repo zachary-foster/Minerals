@@ -54,4 +54,27 @@
         </ThingDef>
 
 
+        <ThingDef ParentName="StoneBlocksBase">
+                <defName>ObsidianShard</defName>
+                <label>Obsidian Shard</label>
+                <description>A chunk of obsidian small enough to carry. Valued by the tribal inhabitants of this rimworld for making knifes, handaxes, and arrowheads.</description> 
+                <graphicData>
+                        <texPath>Things/Item/Resource/ObsidianShard</texPath>
+                        <graphicClass>Graphic_StackCount</graphicClass>
+                </graphicData>
+				<altitudeLayer>ItemImportant</altitudeLayer>
+                <soundDrop>ChunkRock_Drop</soundDrop>
+                <useHitPoints>false</useHitPoints>
+                <statBases>
+                        <MarketValue>5</MarketValue>
+                        <DeteriorationRate>0</DeteriorationRate>
+                        <Flammability>0</Flammability>
+                        <Mass>1</Mass>
+                        <Beauty>10</Beauty>
+						<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+                </statBases>
+                <stackLimit>25</stackLimit>
+                <smallVolume>false</smallVolume>
+        </ThingDef>
+
 </Defs>
