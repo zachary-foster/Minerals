@@ -84,6 +84,10 @@ Gems are particular light and valuable, making them excellent for trading and at
 ![](readme_images/CuttingGems.jpg)
 
 
+## Installation
+
+You can download the current development version by clicking the green "clone or download" button near the top of this page. You can also download specific "stable" releases [here](https://github.com/zachary-foster/Minerals/releases), although they will probably not be updated too often. Once you have downloaded the mod, uncompress the file and up the foler in the `Mods` folder of you rimworld installation.
+
 ## To xml modders and potential contributers:
 
 This mod is set up so that new minerals, both static and dynamic, can be added and configured using only XML changes.
