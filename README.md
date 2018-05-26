@@ -79,16 +79,43 @@ A deposit of salt formed by evaporation of nearbly salt water. Grows quickly on 
 
 Some gem-quality crystals can be found when mining some minerals.
 These can be cut into gems to be used for some crafting recipes or sold to traders.
-Gems are particulary light and valuable, makign them excellent for trading and attracting raiders.  
+Gems are particular light and valuable, making them excellent for trading and attracting raiders.  
 
 ![](readme_images/CuttingGems.jpg)
 
 
+## To xml modders and potential contributers:
 
+This mod is set up so that new minerals, both static and dynamic, can be added and configured using only XML changes.
+Adding:
+
+```
+<ThingDef ParentName="StaticMineralBase">
+		<defName>MyNewMineral</defName>
+    ...
+</ThingDef>
+```
+
+or
+
+```
+<ThingDef ParentName="DynamicMineralBase">
+		<defName>MyNewMineral</defName>
+    ...
+</ThingDef>
+```
+
+to an XML file in `Defs/ThingDefs_Minerals` will cause a new mineral to be added to the game.
+
+To add a mineral: 
+
+* Copy the `ThingDef` for an existing mineral that is most similar to the one you want to make. Modify the XML how you want and add it to an XML file in `Defs/ThingDefs_Minerals`. Make sure to change the `defName`.
+* Create textures for the new mineral and add to them to `Textures/Things/Mineral` in the same format as the others there.
+* If you want to have you changes added to this mod for others to use, consider [forking](https://help.github.com/articles/fork-a-repo/) this repository and submitting a [pull request](https://help.github.com/articles/about-pull-requests/). I welcome contributions!
 
 ## Image sources used
 
-I based some of the textures off of images with licenses for non-comercial reuse.
+I based some of the textures off of images with licenses for non-commercial reuse.
 Here are the list of images used:
 
 * Rob Lavinsky, iRocks.com – CC-BY-SA-3.0 [link](https://commons.wikimedia.org/wiki/File:Elbaite-Quartz-Albite-164061.jpg)
