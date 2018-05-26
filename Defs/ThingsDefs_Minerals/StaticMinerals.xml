@@ -106,7 +106,7 @@
 	<ThingDef Name="QuartzCrystal" ParentName="StaticMineralBase">
 		<defName>QuartzCrystal</defName>
 		<label>Quartz Crystal</label>
-		<description>Crystals of silicon dioxide, the same material glass is made of. A common mineral found underground. Yeilds glass batch when mined.</description>
+		<description>Crystals of silicon dioxide, the same material glass is made of. A common mineral found underground. Yeilds glass batch when mined. Once in a while a gem-quality peice might be found.</description>
 		<graphicData>
 			<texPath>Things/Mineral/QuartzCrystal</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -211,7 +211,7 @@
 	<ThingDef ParentName="QuartzCrystal">
 		<defName>AmethystCrystal</defName>
 		<label>Amethyst Crystal</label>
-		<description>Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful purple. A common mineral found underground. Yeilds glass batch when mined.</description>
+		<description>Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful purple. A common mineral found underground. Yeilds glass batch when mined. Sometimes a gem-quality peice might be found.</description>
 		<graphicData>
 			<texPath>Things/Mineral/QuartzCrystal</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -236,7 +236,7 @@
 	<ThingDef ParentName="QuartzCrystal">
 		<defName>CitrineCrystal</defName>
 		<label>Citrine Crystal</label>
-		<description>Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful yellow. Rarely found. Yeilds glass batch when mined.</description>
+		<description>Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful yellow. Rarely found. Yeilds glass batch when mined. Often yeilds gem-quality peices due to its interesting color.</description>
 		<graphicData>
 			<texPath>Things/Mineral/QuartzCrystal</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -250,7 +250,7 @@
 		</statBases>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.05</minClusterProbability>
+		<minClusterProbability>-0.03</minClusterProbability>
 		<maxClusterProbability>0.005</maxClusterProbability>
 
 		<!-- Other resources it might drop -->
@@ -261,7 +261,7 @@
 	<ThingDef ParentName="QuartzCrystal">
 		<defName>PrasioliteCrystal</defName>
 		<label>Prasiolite Crystal</label>
-		<description>A very rare and beautiful green variety of quartz, silicon dioxide. Yeilds glass batch when mined.</description>
+		<description>A very rare and beautiful green variety of quartz, silicon dioxide. Yeilds glass batch when mined. Often yeilds gem-quality peices due to its interesting color.</description>
 		<graphicData>
 			<texPath>Things/Mineral/QuartzCrystal</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -275,7 +275,7 @@
 		</statBases>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.005</minClusterProbability>
+		<minClusterProbability>-0.05</minClusterProbability>
 		<maxClusterProbability>0.005</maxClusterProbability>
 
 		<!-- Other resources it might drop -->
@@ -322,12 +322,12 @@
 		<spawnRadius>1</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.0</minClusterProbability>
+		<minClusterProbability>-0.003</minClusterProbability>
 		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>3</minClusterSize>
-		<maxClusterSize>50</maxClusterSize>
+		<maxClusterSize>30</maxClusterSize>
 
 		<!-- The range of starting sizes of individuals in clusters -->
 		<initialSizeMin>.6</initialSizeMin>
@@ -422,7 +422,7 @@
 		<spawnRadius>4</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.0</minClusterProbability>
+		<minClusterProbability>-0.005</minClusterProbability>
 		<maxClusterProbability>0.003</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->

@@ -49,7 +49,7 @@ namespace Minerals
             StringBuilder stringBuilder = new StringBuilder(base.GetInspectString());
             if (this.Map.terrainGrid.TerrainAt(this.Position).defName == "WaterOceanShallow") // melts in water
             {
-                stringBuilder.AppendLine("\nMelting in water.");
+                stringBuilder.AppendLine("Dissolving in water.");
             }
             return stringBuilder.ToString().TrimEndNewlines();
         }

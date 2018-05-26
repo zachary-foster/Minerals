@@ -3,9 +3,9 @@
 	
   <RecipeDef>
     <defName>MakeRoyalLongSword</defName>
-    <label>Craft royal longSword</label>
-    <description>Make a royal longsword.</description>
-    <jobString>Crafting a royal longSword.</jobString>
+    <label>Craft Royal LongSword</label>
+    <description>Make a Royal Longsword.</description>
+    <jobString>Crafting a Royal LongSword.</jobString>
     <workAmount>15000</workAmount>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>

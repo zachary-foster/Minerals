@@ -158,7 +158,7 @@
     		</li>
     	</comps>
 		
-    	<description>An active deposit of glowstone. Grows in wet hot places deep underground, but rarely active on the surface. Thought to be realted in some way to the living deposits of coldstone in colder climates. They are prized by the native population for light sources, so there are few accessible deposits left in the more habitable parts of this rimworld.</description>
+    	<description>An active deposit of glowstone. Grows in wet hot places deep underground, but rarely active on the surface. Thought to be related in some way to the living deposits of coldstone in colder climates. They are prized by the native population for light sources, so there are few accessible deposits left in the more habitable parts of this rimworld.</description>
     	<statBases>
     		<MaxHitPoints>300</MaxHitPoints>
     		<Flammability>0</Flammability>
