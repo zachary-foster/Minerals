@@ -376,7 +376,7 @@
       	<visualSizeVariation>0.5</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>10</maxMinedYeild>
+		<maxMinedYeild>20</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
 		<roughGemDropChance>0</roughGemDropChance>

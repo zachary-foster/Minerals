@@ -81,5 +81,8 @@
     <None Include="..\..\Defs\Misc\StuffCategoryDefs\StuffCategories.xml">
       <Link>xml\StuffCategories.xml</Link>
     </None>
+    <None Include="..\..\Defs\CombatExtended\Ammo\Neolithic\Arrows.xml">
+      <Link>xml\Arrows.xml</Link>
+    </None>
   </ItemGroup>
 </Project>

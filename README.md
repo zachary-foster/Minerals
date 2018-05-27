@@ -86,6 +86,15 @@ Gems are particular light and valuable, making them excellent for trading and at
 ![](readme_images/CuttingGems.jpg)
 
 
+## New neolithic weapons
+
+Flint and obsidian can be used to make "tribal" tools like knives and handaxes.
+They have decent armor penetration, but are very brittle, so tools will get destroyed often when used for self defense.
+Flint and obsidian arrows are better than standard stone arrows but not a good as metal arrows.
+
+![](readme_images/NeolithicCrafting.jpg)
+
+
 ## Installation
 
 You can download the current development version by clicking the green "clone or download" button near the top of this page. You can also download specific "stable" releases [here](https://github.com/zachary-foster/Minerals/releases), although they will probably not be updated too often. Once you have downloaded the mod, uncompress the file and up the foler in the `Mods` folder of you rimworld installation.

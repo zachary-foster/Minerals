@@ -85,9 +85,6 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>InteractMelee</soundInteract>			
-    <stuffCategories>
-      <li>SharpStony</li>
-    </stuffCategories>
     <statBases>
       <WorkToMake>10000</WorkToMake>
       <Bulk>0.60</Bulk>
@@ -97,7 +94,7 @@
     </statBases>
     <equippedAngleOffset>-25</equippedAngleOffset>
     <equippedStatOffsets>
-      <MoveSpeed>-0.035</MoveSpeed>
+      <MoveSpeed>-0.02</MoveSpeed>
       <WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
       <CookSpeed>0.2</CookSpeed>
       <ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
@@ -156,9 +153,6 @@
              <texPath>Things/Weapons/Melee/TribalAxe</texPath>
              <graphicClass>Graphic_Single</graphicClass>
      </graphicData>
-     <stuffCategories>
-       <li>SharpStony</li>
-     </stuffCategories>
      <statBases>
              <WorkToMake>13000</WorkToMake>
              <Mass>3.5</Mass>
@@ -199,7 +193,7 @@
      </tools>
      <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
-      <WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
+      <WorkSpeedGlobal>-0.03</WorkSpeedGlobal>
       <PlantWorkSpeed>0.2</PlantWorkSpeed>
      </equippedStatOffsets>
   </ThingDef>

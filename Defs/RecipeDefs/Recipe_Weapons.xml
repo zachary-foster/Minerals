@@ -85,7 +85,7 @@
 				<li>SharpStony</li>
             </categories>
         </filter>
-        <count>10</count>
+        <count>5</count>
       </li>
       <li>
         <filter>
@@ -93,7 +93,7 @@
 				<li>Leathers</li>
             </categories>
         </filter>
-        <count>20</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -101,7 +101,7 @@
 				<li>Woody</li>
             </categories>
         </filter>
-        <count>20</count>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -127,7 +127,7 @@
     <label>Make Tribal Axe</label>
     <description>Make a Tribal Axe.</description>
     <jobString>Crafting a Tribal Axe.</jobString>
-    <workAmount>5000</workAmount>
+    <workAmount>4000</workAmount>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Interact_Repair</soundWorking>
@@ -141,7 +141,7 @@
 				<li>SharpStony</li>
             </categories>
         </filter>
-        <count>20</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -149,7 +149,7 @@
 				<li>Leathers</li>
             </categories>
         </filter>
-        <count>30</count>
+        <count>20</count>
       </li>
       <li>
         <filter>
@@ -157,7 +157,7 @@
 				<li>Woody</li>
             </categories>
         </filter>
-        <count>40</count>
+        <count>20</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
