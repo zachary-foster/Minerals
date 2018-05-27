@@ -1,12 +1,60 @@
 
 ## Minerals: A rimworld mod
 
+![](readme_images/banner.jpg)
+
 This mod adds various mineral-related content.
 For example, it adds various minable crystals underground, obsidian and flint for weapons, and living coldstone and glowstone crystals.
+
+
+## Dynamic minerals
+
+These spawn, grow, and shrink depending on conditions.
+
+### Coldstone
+
+An active deposit of coldstone. Grows slowly on cold bright days, but evaporates in the heat. Only found in permanently frozen terrain. Some glitterworld exobiologists belive these to be a kind of living crytsal since they seem capable of reproduction and they stress the need to safeguard these rare organisms. People on this rimworld however, tend to dig them up and use them to stop meat from spoiling.
+
+![](readme_images/Coldstone.jpg)
+
+### Glowstone
+
+An active deposit of glowstone. Grows in wet hot places deep underground, but rarely active on the surface. Thought to be related in some way to the living deposits of coldstone in colder climates. They are prized by the native population for light sources, so there are few accessible deposits left in the more habitable parts of this rimworld.
+
+![](readme_images/Glowstone.jpg)
+
+### Salt
+
+A deposit of salt formed by evaporation of nearbly salt water. Grows quickly on hot sunny days, but dissolves in the rain or incomming tides. Only persists in dry climates. Can be harvested to preserve food.
+
+![](readme_images/SaltWet.jpg)
+![](readme_images/SaltDry.jpg)
+
 
 ## Static minerals
 
 These are randomly spawned when a map is created and are never respawned in a given map.
+
+### Obsidian
+
+A volcanic glass formed when lava cools quickly at the surface. Valued by the tribal inhabitants of this rimworld for making knifes, handaxes, and arrowheads.
+It only occurs on basalt.
+
+![](readme_images/Obsidian.jpg)
+
+
+### Flint
+
+Formations of microcrystalline silicon dioxide found in sedimentary rocks. Valued by the tribal inhabitants of this rimworld for making knifes, handaxes, and arrowheads.
+
+![](readme_images/Flint.jpg)
+
+### Calcite
+
+Crystals of calcium carbonate. A common mineral found underground, particulary in limestone caves. Interesting, but not otherwise very useful. Yeilds rubble if mined.
+
+![](readme_images/Calcite.jpg)
+
 
 ### Quatrz
 
@@ -34,48 +82,6 @@ A very rare and beautiful green variety of quartz, silicon dioxide. Yeilds glass
 ![](readme_images/Prasiolite.jpg)
 
 
-### Obsidian
-
-A volcanic glass formed when lava cools quickly at the surface. Valued by the tribal inhabitants of this rimworld for making knifes, handaxes, and arrowheads.
-It only occurs on basalt.
-
-![](readme_images/Obsidian.jpg)
-
-
-### Flint
-
-Formations of microcrystalline silicon dioxide found in sedimentary rocks. Valued by the tribal inhabitants of this rimworld for making knifes, handaxes, and arrowheads.
-
-![](readme_images/Flint.jpg)
-
-### Calcite
-
-Crystals of calcium carbonate. A common mineral found underground, particulary in limestone caves. Interesting, but not otherwise very useful. Yeilds rubble if mined.
-
-![](readme_images/Calcite.jpg)
-
-## Dynamic minerals
-
-These spawn, grow, and shrink depending on conditions.
-
-### Coldstone
-
-An active deposit of coldstone. Grows slowly on cold bright days, but evaporates in the heat. Only found in permanently frozen terrain. Some glitterworld exobiologists belive these to be a kind of living crytsal since they seem capable of reproduction and they stress the need to safeguard these rare organisms. People on this rimworld however, tend to dig them up and use them to stop meat from spoiling.
-
-![](readme_images/Coldstone.jpg)
-
-### Glowstone
-
-An active deposit of glowstone. Grows in wet hot places deep underground, but rarely active on the surface. Thought to be related in some way to the living deposits of coldstone in colder climates. They are prized by the native population for light sources, so there are few accessible deposits left in the more habitable parts of this rimworld.
-
-![](readme_images/Glowstone.jpg)
-
-### Salt
-
-A deposit of salt formed by evaporation of nearbly salt water. Grows quickly on hot sunny days, but dissolves in the rain or incomming tides. Only persists in dry climates. Can be harvested to preserve food.
-
-![](readme_images/SaltWet.jpg)
-![](readme_images/SaltDry.jpg)
 
 
 ## Cutting gems
@@ -91,7 +97,7 @@ Gems are particularly light and valuable, making them excellent for trading and 
 
 Flint and obsidian can be used to make "tribal" tools like knives and handaxes.
 They have decent armor penetration, but are very brittle, so tools will get destroyed often when used for self defense.
-Flint and obsidian arrows are better than standard stone arrows but not a good as metal arrows.
+Flint and obsidian arrows are better than standard stone arrows but not as good as metal arrows.
 
 ![](readme_images/NeolithicCrafting.jpg)
 
