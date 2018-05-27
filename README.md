@@ -37,6 +37,7 @@ A very rare and beautiful green variety of quartz, silicon dioxide. Yeilds glass
 ### Obsidian
 
 A volcanic glass formed when lava cools quickly at the surface. Valued by the tribal inhabitants of this rimworld for making knifes, handaxes, and arrowheads.
+It only occurs on basalt.
 
 ![](readme_images/Obsidian.jpg)
 
@@ -81,12 +82,12 @@ A deposit of salt formed by evaporation of nearbly salt water. Grows quickly on 
 
 Some gem-quality crystals can be found when mining some minerals.
 These can be cut into gems to be used for some crafting recipes or sold to traders.
-Gems are particular light and valuable, making them excellent for trading and attracting raiders.  
+Gems are particularly light and valuable, making them excellent for trading and attracting raiders.  
 
 ![](readme_images/CuttingGems.jpg)
 
 
-## New neolithic weapons
+## Obsidian/Flint crafting
 
 Flint and obsidian can be used to make "tribal" tools like knives and handaxes.
 They have decent armor penetration, but are very brittle, so tools will get destroyed often when used for self defense.

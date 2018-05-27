@@ -22,8 +22,8 @@
     <defName>Projectile_Arrow_SharpStone</defName>
     <label>arrow (sharp stone)</label>
     <projectile>
-      <damageAmountBase>14</damageAmountBase>
-      <armorPenetration>0.2</armorPenetration>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetration>0.3</armorPenetration>
     </projectile>
   </ThingDef>
 

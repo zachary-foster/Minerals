@@ -13,7 +13,28 @@
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <costList>
+      <CutGem>5</CutGem>
+      <GoldBar>20</GoldBar>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
     <statBases>
+      <WorkToMake>15000</WorkToMake>
       <Bulk>9.0</Bulk>
       <Mass>4.0</Mass>
       <Weapon_Bulk>1.0</Weapon_Bulk>
@@ -67,30 +88,48 @@
                 <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
       </li>
     </tools>
-    <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
-    </recipeMaker>
     <thingCategories>
       <li>SharpMelee</li>
       <li>HeavyMelee</li>
     </thingCategories>
   </Verse.ThingDef>
   	
-  <Verse.ThingDef ParentName="WeaponMedievalBase">
+  <Verse.ThingDef ParentName="BaseMeleeWeapon">
     <defName>MeleeWeapon_TribalKnife</defName>
     <label>Tribal Knife</label>
-    <description>A knife made from crafted wood and sharp rock, like flint or obsidian, and bound with strips of animal hide. A useful tool and very sharp, but too brittle for defense.</description>
+    <description>A knife made from crafted wood and sharp rock, like flint or obsidian, and bound with strips of animal hide. A useful tool and very sharp, but too brittle to parry a blow.</description>
     <graphicData>
       <texPath>Things/Weapons/Melee/TribalKnife</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>InteractMelee</soundInteract>			
+    <stuffCategories>
+      <li>SharpStony</li>
+    </stuffCategories>
+    <costStuffCount>10</costStuffCount>
+    <costList>
+      <WoodPlank>10</WoodPlank>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+		 <li>CraftingSpot</li>
+      </recipeUsers>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
     <statBases>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <Bulk>0.60</Bulk>
       <Mass>0.30</Mass>
 	  <Weapon_Bulk>0.4</Weapon_Bulk>
 	  <MeleeCounterParryBonus>1.5</MeleeCounterParryBonus>
+	  <MaxHitPoints>100</MaxHitPoints>
     </statBases>
     <equippedAngleOffset>-25</equippedAngleOffset>
     <equippedStatOffsets>
@@ -103,9 +142,11 @@
     </equippedStatOffsets>
     <techLevel>Industrial</techLevel>
     <weaponTags>
-      <li>MidworldMelee</li>
+      <li>Neolithic</li>
+      <li>NeolithicMeleeBasic</li>
       <li>CE_OneHandedWeapon</li>
     </weaponTags>
+    <tradeability>Sellable</tradeability>			
     <tools>
       <li Class="CombatExtended.ToolCE">
         <label>handle</label>
@@ -145,20 +186,47 @@
     </thingCategories>
   </Verse.ThingDef>
 	
-  <ThingDef ParentName="BaseTool">
+  <ThingDef ParentName="BaseMeleeWeapon">
      <defName>MeleeWeapon_TribalAxe</defName>
-     <label>Handaxe</label>
+     <label>Tribal Handaxe</label>
      <description>A handaxe made of wood and sharp stone and bound with leather cords. Useful for cutting vegetation. A bit too fragil for effective defense.</description>
      <graphicData>
              <texPath>Things/Weapons/Melee/TribalAxe</texPath>
              <graphicClass>Graphic_Single</graphicClass>
      </graphicData>
+     <stuffCategories>
+     		 <li>SharpStony</li>
+     </stuffCategories>
+     <costStuffCount>15</costStuffCount>
+     <costList>
+     		<WoodPlank>15</WoodPlank>
+     </costList>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+		 <li>CraftingSpot</li>
+      </recipeUsers>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
      <statBases>
-             <WorkToMake>13000</WorkToMake>
+             <WorkToMake>8000</WorkToMake>
              <Mass>3.5</Mass>
              <Bulk>3.5</Bulk>
              <Weapon_Bulk>0.35</Weapon_Bulk>
+	  		 <MaxHitPoints>100</MaxHitPoints>
      </statBases>
+    <weaponTags>
+      <li>Neolithic</li>
+      <li>NeolithicMeleeBasic</li>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tradeability>Sellable</tradeability>			
      <tools>
        <li Class="CombatExtended.ToolCE">
              <label>handle</label>
@@ -197,5 +265,9 @@
       <PlantWorkSpeed>0.2</PlantWorkSpeed>
      </equippedStatOffsets>
   </ThingDef>
+  <thingCategories>
+     <li>SharpMelee</li>
+     <li>Tools</li>
+  </thingCategories>
 </Defs>
 

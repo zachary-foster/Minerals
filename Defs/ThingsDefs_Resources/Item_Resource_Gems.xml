@@ -27,6 +27,7 @@
                 </thingCategories>
                 <stackLimit>30</stackLimit>
                 <smallVolume>false</smallVolume>
+    			<tradeability>Sellable</tradeability>			
         </ThingDef>
 
 
@@ -49,12 +50,16 @@
                         <Mass>0.05</Mass>
                         <Beauty>10</Beauty>
                 </statBases>
+                <thingCategories>
+                        <li>PRS</li>
+                </thingCategories>
                 <stackLimit>50</stackLimit>
                 <smallVolume>false</smallVolume>
+    			<tradeability>Sellable</tradeability>			
         </ThingDef>
 
 
-        <ThingDef ParentName="StoneBlocksBase">
+        <ThingDef ParentName="ResourceBase">
                 <defName>ObsidianShard</defName>
                 <label>Obsidian Shard</label>
                 <description>A chunk of obsidian small enough to carry. Valued by the tribal inhabitants of this rimworld for making knifes, handaxes, and arrowheads.</description> 
@@ -72,7 +77,7 @@
                         <Beauty>1</Beauty>
 						<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
                 </statBases>
-                <stackLimit>50</stackLimit>
+                <stackLimit>75</stackLimit>
                 <thingCategories>
                         <li>SharpStony</li>
                 </thingCategories>
@@ -84,8 +89,8 @@
                                 <MarketValue>0.8</MarketValue>
                                 <Flammability>0</Flammability>
                                 <Beauty>2</Beauty>
-                                <WorkToMake>5</WorkToMake>
-                                <WorkToBuild>5</WorkToBuild>
+                                <WorkToMake>1.5</WorkToMake>
+                                <WorkToBuild>2</WorkToBuild>
                                 <DoorOpenSpeed>0.5</DoorOpenSpeed>
                                 <BedRestEffectiveness>0.8</BedRestEffectiveness>
                                 <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
@@ -105,7 +110,7 @@
         </ThingDef>
 
 
-        <ThingDef ParentName="StoneBlocksBase">
+        <ThingDef ParentName="ResourceBase">
                 <defName>FlintShard</defName>
                 <label>Flint Shard</label>
                 <description>A chunk of flint small enough to carry. Valued by the tribal inhabitants of this rimworld for making knifes, handaxes, and arrowheads.</description> 
@@ -123,7 +128,7 @@
                         <Beauty>1</Beauty>
 						<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
                 </statBases>
-                <stackLimit>50</stackLimit>
+                <stackLimit>75</stackLimit>
                 <thingCategories>
                         <li>SharpStony</li>
                 </thingCategories>
@@ -135,8 +140,8 @@
                                 <MarketValue>0.8</MarketValue>
                                 <Flammability>0</Flammability>
                                 <Beauty>2</Beauty>
-                                <WorkToMake>5</WorkToMake>
-                                <WorkToBuild>5</WorkToBuild>
+                                <WorkToMake>1.5</WorkToMake>
+                                <WorkToBuild>2</WorkToBuild>
                                 <DoorOpenSpeed>0.5</DoorOpenSpeed>
                                 <BedRestEffectiveness>0.8</BedRestEffectiveness>
                                 <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
