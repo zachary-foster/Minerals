@@ -25,6 +25,8 @@ Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful 
 
 Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful yellow. Rarely found. Yeilds glass batch when mined. Often yeilds gem-quality peices due to its interesting color.
 
+![](readme_images/Citrine.jpg)
+
 ### Prasiolite
 
 A very rare and beautiful green variety of quartz, silicon dioxide. Yeilds glass batch when mined. Often yeilds gem-quality peices due to its interesting color.

@@ -78,5 +78,8 @@
     <None Include="..\..\Defs\ThingDefs_Weapons\Weapons_Melee.xml">
       <Link>xml\Weapons_Melee.xml</Link>
     </None>
+    <None Include="..\..\Defs\Misc\StuffCategoryDefs\StuffCategories.xml">
+      <Link>xml\StuffCategories.xml</Link>
+    </None>
   </ItemGroup>
 </Project>
