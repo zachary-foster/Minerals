@@ -1,5 +1,5 @@
 
-## Minerals: A rimworld mod
+## Minerals: A rimworld mod for the [Hardcore SK project](https://github.com/skyarkhangel/Hardcore-SK)
 
 ![](readme_images/banner.jpg)
 
