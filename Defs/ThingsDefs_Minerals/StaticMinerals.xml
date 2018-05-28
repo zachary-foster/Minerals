@@ -322,7 +322,7 @@
 		<spawnRadius>1</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.003</minClusterProbability>
+		<minClusterProbability>-0.001</minClusterProbability>
 		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -423,7 +423,7 @@
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0.001</minClusterProbability>
-		<maxClusterProbability>0.004</maxClusterProbability>
+		<maxClusterProbability>0.005</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>

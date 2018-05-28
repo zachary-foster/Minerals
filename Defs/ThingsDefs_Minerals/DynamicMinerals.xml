@@ -466,4 +466,139 @@
 
 	</ThingDef>
 
+
+	<ThingDef ParentName="DynamicMineralBase">
+    	<defName>ZF_IceStalagmite</defName>
+    	<label>Ice Stalagmite</label>		
+    	<description>Spawn in caves when water drips down from the ceiling and freezes. Only grow when the temperature is just below freezing and melts when the temperature rises.</description>
+		<altitudeLayer>Floor</altitudeLayer>
+    	<statBases>
+    		<MaxHitPoints>100</MaxHitPoints>
+    		<Flammability>0</Flammability>
+    		<Beauty>3</Beauty>
+    	</statBases>
+    	<graphicData>
+    		<texPath>Things/Mineral/IceStalagmite</texPath>
+    		<graphicClass>Graphic_Random</graphicClass>
+    	</graphicData>
+		<building>
+		    <isNaturalRock>true</isNaturalRock>
+			<isResourceRock>true</isResourceRock>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+
+		<!--How far away it can spawn from an existing location-->
+		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+		<spawnRadius>3</spawnRadius>
+
+		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+		<minClusterProbability>0</minClusterProbability>
+		<maxClusterProbability>0.005</maxClusterProbability>
+
+		<!-- How  many squares each cluster will be -->
+		<minClusterSize>1</minClusterSize>
+		<maxClusterSize>10</maxClusterSize>
+
+		<!-- The range of starting sizes of individuals in clusters -->
+		<initialSizeMin>.2</initialSizeMin>
+		<initialSizeMax>1.0</initialSizeMax>
+
+		<!-- How much initial sizes of individuals randomly vary -->
+		<initialSizeVariation>.2</initialSizeVariation>
+
+		<!-- Reproduction and death settings -->
+		<minReproductionSize>0.3</minReproductionSize>
+        <reproduceProp>0.01</reproduceProp>
+        <deathProb>0.5</deathProb>
+
+
+		<!-- The biomes this can appear in. The default is all ones known to mod-->
+		<allowedBiomes>
+			<li>ExtremeDesert</li>
+			<li>Desert</li>
+			<li>BorealArchipelago</li>
+			<li>BorealForest</li>
+			<li>DesertArchipelago</li>
+			<li>TKKN_Desert</li>
+			<li>TKKN_Oasis</li>
+			<li>TKKN_RedwoodForest</li>
+			<li>IceSheet</li>
+			<li>Tundra</li>
+			<li>SeaIce</li>
+		</allowedBiomes>
+			
+		<!-- The terrains this must be near to, but not necessarily on -->
+		<neededNearbyTerrains>
+			<li>Granite_Rough</li>
+			<li>Marble_Rough</li>
+			<li>Limestone_Rough</li>
+			<li>Sandstone_Rough</li>
+			<li>Slate_Rough</li>
+			<li>TKKN_LavaRock</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>RockyDirt</li>
+		</neededNearbyTerrains>
+
+		<!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+			<li>Granite_Rough</li>
+			<li>Marble_Rough</li>
+			<li>Limestone_Rough</li>
+			<li>Sandstone_Rough</li>
+			<li>Slate_Rough</li>
+			<li>TKKN_LavaRock</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>RockyDirt</li>
+		</allowedTerrains>
+
+		<!-- how far away it can be from needed nearby terrains-->
+		<neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
+
+		<!-- If true, growth rate and initial size depends on distance from needed terrains -->
+		<neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
+
+		<!-- Roof requirements -->
+		<mustBeUnderRoof>true</mustBeUnderRoof>
+		<mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+		<mustBeUnroofed>false</mustBeUnroofed>
+
+		<!-- The maximum number of images that will be printed per square -->
+    	<maxMeshCount>8</maxMeshCount>
+
+		<!-- The size range -->
+        <visualSizeRange>
+        	<min>0.1</min>
+        	<max>1.1</max>
+      	</visualSizeRange>
+		<visualSpread>0.5</visualSpread>
+		<visualSizeVariation>0.2</visualSizeVariation>
+
+		<!-- The amount of resource returned if the mineral is its maximum size -->
+		<maxMinedYeild>0</maxMinedYeild>
+
+		<!-- The number of days it takes to grow at max growth speed -->
+		<growDays>7</growDays>
+
+		<!-- Chance of spawning de novo each check -->
+        <spawnProb>0.005</spawnProb>
+		
+		<!-- Growth rate modifiers -->
+        <tempGrowthRateModifer>
+        	<active>true</active>
+        	<aboveMaxDecayRate>1</aboveMaxDecayRate> 
+        	<maxStable>1</maxStable> 
+        	<maxGrow>0</maxGrow> 
+        	<idealGrow>-5</idealGrow>  
+        	<minGrow>-15</minGrow>
+        	<minStable>-30</minStable>
+        	<belowMinDecayRate>0</belowMinDecayRate>
+        </tempGrowthRateModifer>
+	</ThingDef>
+
+
 </Defs>

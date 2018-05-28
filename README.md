@@ -30,6 +30,11 @@ A deposit of salt formed by evaporation of nearbly salt water. Grows quickly on 
 ![](readme_images/SaltWet.jpg)
 ![](readme_images/SaltDry.jpg)
 
+### Ice Stalagmites
+
+Spawns in caves when water drips down from the ceiling and freezes. Only grow when the temperature is just below freezing and melts when the temperature rises.
+
+![](readme_images/IceStalagmite.jpg)
 
 ## Static minerals
 
