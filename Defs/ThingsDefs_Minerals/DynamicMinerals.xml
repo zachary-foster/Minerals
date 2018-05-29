@@ -470,10 +470,10 @@
 	<ThingDef ParentName="DynamicMineralBase">
     	<defName>ZF_IceStalagmite</defName>
     	<label>Ice Stalagmite</label>		
-    	<description>Spawn in caves when water drips down from the ceiling and freezes. Only grow when the temperature is just below freezing and melts when the temperature rises.</description>
+    	<description>Spawns in caves when water drips down from the ceiling and freezes. Only grow when the temperature is just below freezing and melts when the temperature rises.</description>
 		<altitudeLayer>Floor</altitudeLayer>
     	<statBases>
-    		<MaxHitPoints>100</MaxHitPoints>
+    		<MaxHitPoints>200</MaxHitPoints>
     		<Flammability>0</Flammability>
     		<Beauty>3</Beauty>
     	</statBases>
