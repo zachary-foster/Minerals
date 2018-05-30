@@ -1,22 +1,22 @@
 ﻿<Properties StartupItem="Minerals.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Defs/ThingsDefs_Resources/Item_Resource_Gems.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml">
     <Files>
-      <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="424" Column="424" />
+      <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="1" Column="1" />
       <File FileName="../../../../Hardcore-SK/Mods/Core/Defs/ItemCollectionGeneratorDefs/ItemCollectionGenerators_Specific.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" />
       <File FileName="initialization.cs" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="31" Column="31" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="38" Column="38" />
       <File FileName="StaticMineral.cs" Line="1" Column="1" />
       <File FileName="DynamicMineral.cs" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMineralBase.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="31" Column="31" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="22" Column="22" />
       <File FileName="harmonyPatching.cs" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Resources/Item_Resource_Gems.xml" Line="1" Column="1" />
-      <File FileName="SaltCrystal.cs" Line="53" Column="53" />
+      <File FileName="SaltCrystal.cs" Line="1" Column="1" />
       <File FileName="../../Defs/RecipeDefs/Recipe_Gems.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingDefs_Weapons/Weapons_Melee.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/Misc/StuffCategoryDefs/StuffCategories.xml" Line="22" Column="22" />
-      <File FileName="../../Defs/CombatExtended/Ammo/Neolithic/Arrows.xml" Line="46" Column="46" />
+      <File FileName="../../Defs/Misc/StuffCategoryDefs/StuffCategories.xml" Line="1" Column="1" />
+      <File FileName="../../Defs/CombatExtended/Ammo/Neolithic/Arrows.xml" Line="41" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

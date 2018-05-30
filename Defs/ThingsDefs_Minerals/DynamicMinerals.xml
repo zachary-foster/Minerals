@@ -5,7 +5,7 @@
 
 	<ThingDef ParentName="DynamicMineralBase">
     	<defName>ColdstoneCrystal</defName>
-    	<label>coldstone crystal</label>
+    	<label>Coldstone Crystal</label>
     	<comps>
     		<li Class="CompProperties_Glower">
     	    	<glowRadius>1</glowRadius>
