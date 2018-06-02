@@ -8,7 +8,7 @@
     	<label>Coldstone Crystal</label>
     	<comps>
     		<li Class="CompProperties_Glower">
-    	    	<glowRadius>1</glowRadius>
+    	    	<glowRadius>2</glowRadius>
     	    	<glowColor>(0,96,255,0)</glowColor>
     		</li>
     	</comps>
@@ -590,7 +590,7 @@
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
         	<active>true</active>
-        	<aboveMaxDecayRate>1</aboveMaxDecayRate> 
+        	<aboveMaxDecayRate>2</aboveMaxDecayRate> 
         	<maxStable>1</maxStable> 
         	<maxGrow>0</maxGrow> 
         	<idealGrow>-5</idealGrow>  

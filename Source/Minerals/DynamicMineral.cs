@@ -196,22 +196,19 @@ namespace Minerals
         public override void TickLong()
         {
             // Try to grow
-            this.size += this.GrowthPerTick * 2000; // dont know why 2000, just imitating what plants do
+            float GrowthThisTick = this.GrowthPerTick;
+            this.size += GrowthThisTick * 2000; // dont know why 2000, just imitating what plants do
 
             // Try to reproduce
-            if (this.size > this.attributes.minReproductionSize)
+            if (GrowthThisTick > 0 && this.size > this.attributes.minReproductionSize && Rand.Range(0f, 1f) < this.attributes.reproduceProp)
             {
-                if (Rand.Range(0f, 1f) < this.attributes.reproduceProp)
-                {
-                    this.TryReproduce();
-                }
+                this.TryReproduce();
             }
 
             // Try to die
             if (this.size <= 0 && Rand.Range(0f, 1f) < this.attributes.deathProb)
             {
                 this.Destroy(DestroyMode.Vanish);
-                //base.TakeDamage(new DamageInfo(DamageDefOf.Rotting, 100000, -1, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
             }
         }
 

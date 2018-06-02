@@ -1,23 +1,38 @@
-﻿<Properties StartupItem="Minerals.csproj">
+﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml">
     <Files>
       <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="1" Column="1" />
       <File FileName="../../../../Hardcore-SK/Mods/Core/Defs/ItemCollectionGeneratorDefs/ItemCollectionGenerators_Specific.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" />
       <File FileName="initialization.cs" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="38" Column="38" />
-      <File FileName="StaticMineral.cs" Line="1" Column="1" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="1" Column="1" />
+      <File FileName="StaticMineral.cs" Line="18" Column="36" />
       <File FileName="DynamicMineral.cs" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMineralBase.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="22" Column="22" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="24" Column="24" />
       <File FileName="harmonyPatching.cs" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Resources/Item_Resource_Gems.xml" Line="1" Column="1" />
       <File FileName="SaltCrystal.cs" Line="1" Column="1" />
       <File FileName="../../Defs/RecipeDefs/Recipe_Gems.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingDefs_Weapons/Weapons_Melee.xml" Line="1" Column="1" />
       <File FileName="../../Defs/Misc/StuffCategoryDefs/StuffCategories.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/CombatExtended/Ammo/Neolithic/Arrows.xml" Line="41" Column="41" />
+      <File FileName="../../Defs/CombatExtended/Ammo/Neolithic/Arrows.xml" Line="39" Column="16" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Minerals" expanded="True">
+            <Node name="Minerals" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="xml" expanded="True">
+                <Node name="StaticMinerals.xml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

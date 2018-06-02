@@ -22,7 +22,7 @@ namespace Minerals
         protected float yieldPct = 0;
 
         // The current size of the mineral
-        protected float mySize = 0.05f;
+        protected float mySize = 1f;
         public float size
         {
             get
@@ -240,6 +240,7 @@ namespace Minerals
         public static StaticMineral SpawnAt(IntVec3 dest, ThingDef_StaticMineral myDef, Map map)
         {
             StaticMineral output = (StaticMineral)GenSpawn.Spawn(myDef, dest, map);
+            output.size = 0.01f;
             map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Things);
             return output;
         }
