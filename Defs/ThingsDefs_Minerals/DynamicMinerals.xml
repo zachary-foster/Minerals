@@ -24,6 +24,8 @@
     		<graphicClass>Graphic_Random</graphicClass>
     	</graphicData>
 		<building>
+            <isInert>false</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>Coldstone</mineableThing>
@@ -107,12 +109,12 @@
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
         	<active>true</active>
-        	<aboveMaxDecayRate>1</aboveMaxDecayRate> 
+        	<aboveMaxDecayRate>5</aboveMaxDecayRate> 
         	<maxStable>5</maxStable> 
         	<maxGrow>0</maxGrow> 
-        	<idealGrow>-30</idealGrow>  
-        	<minGrow>-100</minGrow>
-        	<minStable>-99999</minStable>
+        	<idealGrow>-10</idealGrow>  
+        	<minGrow>-80</minGrow>
+        	<minStable>-100</minStable>
         	<belowMinDecayRate>0</belowMinDecayRate>
         </tempGrowthRateModifer>
         <lightGrowthRateModifer>
@@ -169,6 +171,8 @@
     		<graphicClass>Graphic_Random</graphicClass>
     	</graphicData>
 		<building>
+            <isInert>false</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>Glowstone</mineableThing>
@@ -315,6 +319,8 @@
     		<graphicClass>Graphic_Random</graphicClass>
     	</graphicData>
 		<building>
+            <isInert>false</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>Salt</mineableThing>
@@ -482,18 +488,20 @@
     		<graphicClass>Graphic_Random</graphicClass>
     	</graphicData>
 		<building>
+            <isInert>false</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
-			<mineableThing>Salt</mineableThing> <!-- the mine material stats are needed or meteorite system bugs -->
+			<mineableThing>Sand</mineableThing> <!-- the mine material stats are needed or meteorite system bugs -->
 			<mineableYield>0</mineableYield>
-			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+			<mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
 
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-		<spawnRadius>3</spawnRadius>
+		<spawnRadius>4</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -504,7 +512,7 @@
 		<maxClusterSize>10</maxClusterSize>
 
 		<!-- The range of starting sizes of individuals in clusters -->
-		<initialSizeMin>.2</initialSizeMin>
+		<initialSizeMin>.1</initialSizeMin>
 		<initialSizeMax>1.0</initialSizeMax>
 
 		<!-- How much initial sizes of individuals randomly vary -->
@@ -593,7 +601,7 @@
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
         	<active>true</active>
-        	<aboveMaxDecayRate>2</aboveMaxDecayRate> 
+        	<aboveMaxDecayRate>5</aboveMaxDecayRate> 
         	<maxStable>1</maxStable> 
         	<maxGrow>0</maxGrow> 
         	<idealGrow>-5</idealGrow>  
