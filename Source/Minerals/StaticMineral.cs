@@ -76,6 +76,33 @@ namespace Minerals
         // ======= Spawning conditions ======= //
 
 
+
+//        public override IntVec3 Position
+//        {
+//            get
+//            {
+//                return base.Position;
+//            }
+//            set
+//            {
+//                const int maxTrys = 10;
+//                for (int i = 0; i < maxTrys; i++)
+//                {
+//                    if (StaticMineral.PlaceIsBlocked(this.attributes, this.Map, value))
+//                    {
+//                        value = value.RandomAdjacentCell8Way();
+//                    }
+//                    else
+//                    {
+//                        break;
+//                    }
+//                }
+//                base.Position = value;
+//            }
+//        }
+
+
+
         public static bool CanSpawnAt(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
         {
             // Check that location is in the map
@@ -90,12 +117,6 @@ namespace Minerals
                 return false;
             }
 
-            // Check that it is near any needed terrains
-            if (! StaticMineral.isNearNeededTerrain(myDef, map, position))
-            {
-                return false;
-            }
-
             // Check that it is under a roof if it needs to be
             if (! StaticMineral.isRoofConditionOk(myDef, map, position))
             {
@@ -103,26 +124,36 @@ namespace Minerals
             }
 
             // Look for stuff in the way
-            List<Thing> list = map.thingGrid.ThingsListAt(position);
-            for (int i = 0; i < list.Count; i++)
+            if (StaticMineral.PlaceIsBlocked(myDef, map, position))
             {
-                Thing thing = list[i];
-                if (thing.def.BlockPlanting)
-                {
-                    return false;
-                }
-                if (
-                        thing.def.category == ThingCategory.Pawn ||
-                        thing.def.category == ThingCategory.Item ||
-                        thing.def.category == ThingCategory.Building ||
-                        thing.def.category == ThingCategory.Plant
-                    )
-                {
-                    return false;
-                }
+                return false;
+            }
+
+            // Check that it is near any needed terrains
+            if (! StaticMineral.isNearNeededTerrain(myDef, map, position))
+            {
+                return false;
             }
 
             return true;
+        }
+
+        public static bool PlaceIsBlocked(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
+        {
+            foreach (Thing thing in map.thingGrid.ThingsListAt(position))
+            {
+                if (
+                    thing.def.BlockPlanting ||
+                    thing.def.category == ThingCategory.Pawn ||
+                    thing.def.category == ThingCategory.Item ||
+                    thing.def.category == ThingCategory.Building ||
+                    thing.def.category == ThingCategory.Plant
+                )
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public static bool CanSpawnInBiome(ThingDef_StaticMineral myDef, Map map) 

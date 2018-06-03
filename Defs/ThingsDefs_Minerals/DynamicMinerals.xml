@@ -484,6 +484,9 @@
 		<building>
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
+			<mineableThing>Salt</mineableThing> <!-- the mine material stats are needed or meteorite system bugs -->
+			<mineableYield>0</mineableYield>
+			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
