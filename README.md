@@ -87,6 +87,11 @@ A very rare and beautiful green variety of quartz, silicon dioxide. Yeilds glass
 ![](readme_images/Prasiolite.jpg)
 
 
+### Pyrite
+
+Crystals of iron(II) disulfide. A common mineral found underground and often mistaken for gold or silver by the foolish. Interesting, but not otherwise very useful. Yeilds rubble if mined.
+
+![](readme_images/Pyrite.jpg)
 
 
 ## Cutting gems
@@ -161,3 +166,6 @@ Here are the list of images used:
 * https://commons.wikimedia.org/wiki/File:Egyptian_flint_knives,_predynastic._Wellcome_M0016545EB.jpg
 * https://commons.wikimedia.org/wiki/File:Native_tribes_of_South-East_Australia_Fig_14_-_Stone_axe.jpg
 *  https://github.com/Rikiki123456789/Rimworld/tree/ab7930661284c19e5dc4b9b01f2499bd88116378/CaveBiome/CaveBiome
+* https://commons.wikimedia.org/wiki/File:Pyrite-Tetrahedrite-Quartz-184642.jpg
+* https://commons.wikimedia.org/wiki/File:Pyrite-258273.jpg
+* https://commons.wikimedia.org/wiki/File:2780M-pyrite1.jpg
