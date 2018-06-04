@@ -75,6 +75,12 @@
 			<li>DeepIce</li>
 		</neededNearbyTerrains>
 
+		<!-- Controls how extra clusters are added near assocaited ore-->
+		<associatedOres>
+			<li>MineableColdstone</li>
+		</associatedOres>
+		<nearAssociatedOreBonus>100</nearAssociatedOreBonus>
+
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
 
@@ -244,6 +250,12 @@
 			<li>WaterOceanShallow</li>
 		</neededNearbyTerrains>
 
+		<!-- Controls how extra clusters are added near assocaited ore-->
+		<associatedOres>
+			<li>MineableGlowstone</li>
+		</associatedOres>
+		<nearAssociatedOreBonus>100</nearAssociatedOreBonus>
+
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
 
@@ -396,6 +408,12 @@
 			<li>TKKN_SandBeachWetSalt</li>
 			<li>TKKN_SaltField</li>
 		</allowedTerrains>
+
+		<!-- Controls how extra clusters are added near assocaited ore-->
+		<associatedOres>
+			<li>MineableSalt</li>
+		</associatedOres>
+		<nearAssociatedOreBonus>20</nearAssociatedOreBonus>
 
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
@@ -566,6 +584,14 @@
 			<li>Soil</li>
 			<li>RockyDirt</li>
 		</allowedTerrains>
+
+		<!-- Controls how extra clusters are added near assocaited ore-->
+		<associatedOres>
+			<li>Water</li>
+			<li>ShallowWater</li>
+			<li>DeepWater</li>
+		</associatedOres>
+		<nearAssociatedOreBonus>10</nearAssociatedOreBonus>
 
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>

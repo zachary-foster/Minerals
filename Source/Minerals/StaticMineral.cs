@@ -156,6 +156,27 @@ namespace Minerals
             return false;
         }
 
+        public static bool PosIsAssociatedOre(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
+        {
+            TerrainDef terrain = map.terrainGrid.TerrainAt(position);
+            if (myDef.associatedOres.Any(terrain.defName.Contains))
+            {
+                return true;
+            }
+
+            foreach (Thing thing in map.thingGrid.ThingsListAt(position))
+            {
+                if (
+                    myDef.associatedOres.Any(thing.def.defName.Contains)
+                )
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+       
         public static bool CanSpawnInBiome(ThingDef_StaticMineral myDef, Map map) 
         {
             return myDef.allowedBiomes.Any(map.Biome.defName.Contains);
@@ -285,16 +306,16 @@ namespace Minerals
 
 
 
-        public bool TryFindReproductionDestination(int radius, Map map, out IntVec3 foundCell)
+        public static bool TryFindReproductionDestination(Map map,  IntVec3 position, ThingDef_StaticMineral myDef, out IntVec3 foundCell)
         {
-            Predicate<IntVec3> validator = (IntVec3 c) => this.Position.InHorDistOf(c, radius) && StaticMineral.CanSpawnAt(this.attributes, map, c);
-            return CellFinder.TryFindRandomCellNear(this.Position, map, Mathf.CeilToInt(radius), validator, out foundCell);
+            Predicate<IntVec3> validator = (IntVec3 c) => position.InHorDistOf(c, myDef.spawnRadius) && StaticMineral.CanSpawnAt(myDef, map, c);
+            return CellFinder.TryFindRandomCellNear(position, map, Mathf.CeilToInt(myDef.spawnRadius), validator, out foundCell);
         }
 
         public StaticMineral TryReproduce()
         {
             IntVec3 dest;
-            if (! this.TryFindReproductionDestination(this.attributes.spawnRadius, this.Map, out dest))
+            if (! StaticMineral.TryFindReproductionDestination(this.Map, this.Position, this.attributes, out dest))
             {
                 return null;
             }
@@ -358,12 +379,25 @@ namespace Minerals
                 IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
                 foreach (IntVec3 current in allCells)
                 {
+                    // Randomly spawn some clusters
                     if (current.InBounds(map) && StaticMineral.CanSpawnAt(myDef, map, current) && Rand.Range(0f, 1f) < spawnProbability)
                     {
                         StaticMineral.SpawnCluster(map, current, myDef);
                     }
+
+                    // Spawn near their assocaited ore
+                    if (StaticMineral.PosIsAssociatedOre(myDef, map, current))
+                    {
+                        IntVec3 dest;
+                        if (StaticMineral.TryFindReproductionDestination(map, current, myDef, out dest) && Rand.Range(0f, 1f) < spawnProbability * myDef.nearAssociatedOreBonus)
+                        {
+                            StaticMineral.SpawnCluster(map, dest, myDef);
+                        }
+                    }
                 }
             }
+
+
         }
 
         // ======= Yeilding resources ======= //
@@ -564,6 +598,10 @@ namespace Minerals
         // The terrains this must be near to, but not necessarily on, and how far away it can be
         public List<string> neededNearbyTerrains = new List<string> {};
         public float neededNearbyTerrainRadius = 3f;
+
+        // Controls how extra clusters are added near assocaited ore
+        public List<string> associatedOres = new List<string> {};
+        public float nearAssociatedOreBonus = 3f;
 
         // If true, growth rate and initial size depends on distance from needed terrains
         public bool neededNearbyTerrainSizeEffect = true;

@@ -77,6 +77,12 @@
 		</neededNearbyTerrains>
 		-->
 
+		<!-- Controls how extra clusters are added near assocaited ore-->
+		<associatedOres>
+			<li>Limestone</li>
+		</associatedOres>
+		<nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
 
@@ -175,7 +181,6 @@
 			<li>Limestone_Rough</li>
 			<li>Sandstone_Rough</li>
 			<li>Slate_Rough</li>
-			<li>TKKN_LavaRock</li>
 		</allowedTerrains>
 
 		<!-- The terrains this must be near to, but not necessarily on -->
@@ -185,8 +190,16 @@
 			<li>Limestone_Rough</li>
 			<li>Sandstone_Rough</li>
 			<li>Slate_Rough</li>
-			<li>TKKN_LavaRock</li>
 		</neededNearbyTerrains>
+
+		<!-- Controls how extra clusters are added near assocaited ore-->
+		<associatedOres>
+			<li>QuartzCrystal</li>
+			<li>AmethystCrystal</li>
+			<li>CitrineCrystal</li>
+			<li>PrasioliteCrystal</li>
+		</associatedOres>
+		<nearAssociatedOreBonus>10</nearAssociatedOreBonus>
 
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
@@ -306,6 +319,13 @@
 			<li>add_terrains_here</li>
 		</neededNearbyTerrains>
 		-->
+
+		<!-- Controls how extra clusters are added near assocaited ore-->
+		<associatedOres>
+			<li>GoldPyriteCrystal</li>
+			<li>SilverPyriteCrystal</li>
+		</associatedOres>
+		<nearAssociatedOreBonus>10</nearAssociatedOreBonus>
 
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>

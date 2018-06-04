@@ -420,6 +420,16 @@ namespace Minerals
                     // Pick a random location
                     IntVec3 aPos = map.AllCells.RandomElement();
 
+                    // If it is an associated ore, find a position nearby
+                    if (StaticMineral.PosIsAssociatedOre(mineralType, map, aPos))
+                    {
+                        IntVec3 dest;
+                        if (StaticMineral.TryFindReproductionDestination(map, aPos, mineralType, out dest))
+                        {
+                            aPos = dest;
+                        }
+                    }
+
                     //Log.Message("GrowthRateAtPos: " + DynamicMineral.GrowthRateAtPos(mineralType, aPos, map));
                     // Dont try to place on invlaid terrain
                     if (! StaticMineral.IsTerrainOkAt(mineralType, map, aPos))

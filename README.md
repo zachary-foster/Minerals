@@ -169,3 +169,4 @@ Here are the list of images used:
 * https://commons.wikimedia.org/wiki/File:Pyrite-Tetrahedrite-Quartz-184642.jpg
 * https://commons.wikimedia.org/wiki/File:Pyrite-258273.jpg
 * https://commons.wikimedia.org/wiki/File:2780M-pyrite1.jpg
+* https://it.wikipedia.org/wiki/File:Una_mazza_Maquahuitl.jpg
