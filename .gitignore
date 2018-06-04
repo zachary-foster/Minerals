@@ -5,3 +5,4 @@ Source/Minerals/obj
 **/*~
 *.Rproj
 .Rproj.user
+*.html

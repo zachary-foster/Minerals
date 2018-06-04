@@ -1,8 +1,21 @@
 ## Current version
 
-* New mineral: ice stalagmites
-* Flint is more common
+### Bug fixes:
+
+* Minerals falling as meteorites are now full grown and not stacked.
 * A few bugs with sharp stone arrows are fixed
-* Tribal tools take less work to make
 * Now dynamic minerals only reproduce when growing
-* Minerals falling as meteorites are now full grown. Still have not figured out how to make them not stack.
+* Missing stuff icon added for sharp stones
+
+### Changes
+
+* Flint is more common
+* Tribal tools take less work to make
+* Coldstone melts faster and it a bit more common
+
+### Improvements
+
+* New mineral: ice stalagmites
+* New mineral: pyrite
+* New weapon: Macuahuitl
+* Minerals are more likely to spawn near associated ores
