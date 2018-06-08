@@ -448,10 +448,10 @@ namespace Minerals
 
         // ======= Behavior ======= //
 
-        public override bool BlocksPawn(Pawn p)
-        {
-            return this.size >= 0.8f;
-        }
+//        public override bool BlocksPawn(Pawn p)
+//        {
+//            return this.size >= 0.8f;
+//        }
 
             
         // ======= Appearance ======= //
