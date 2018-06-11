@@ -93,6 +93,11 @@ Crystals of iron(II) disulfide. A common mineral found underground and often mis
 
 ![](readme_images/Pyrite.jpg)
 
+### Tourmaline group
+
+Boron silicates with many chemical variations. The more attractive varieties are often used for gemstones and are therefore only found in regions difficult to access or live in. Found in granite and marble.
+
+![](readme_images/TourmalineGroup.jpg)
 
 ## Cutting gems
 
@@ -170,3 +175,11 @@ Here are the list of images used:
 * https://commons.wikimedia.org/wiki/File:Pyrite-258273.jpg
 * https://commons.wikimedia.org/wiki/File:2780M-pyrite1.jpg
 * https://it.wikipedia.org/wiki/File:Una_mazza_Maquahuitl.jpg
+* https://commons.wikimedia.org/wiki/File:Elbaite-Lepidolite-Quartz-gem7-x1a.jpg
+* https://www.flickr.com/photos/jsjgeology/31997092221
+* https://commons.wikimedia.org/wiki/File:Schorl-181669.jpg
+* https://commons.wikimedia.org/wiki/File:Quartz-Schorl-k-142a.jpg
+* https://www.flickr.com/photos/orbitaljoe/5030069066
+* https://commons.wikimedia.org/wiki/File:Tourmaline-164039.jpg
+* https://commons.wikimedia.org/wiki/File:Tourmaline-34580.jpg
+* https://commons.wikimedia.org/wiki/File:Elbaite-Lepidolite-Quartz-gem7-x1a.jpg

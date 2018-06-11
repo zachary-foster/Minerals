@@ -1,3 +1,12 @@
+## Current 
+
+### Aditions:
+
+* 7 new minerals: Tourmaline group
+
+### Changes
+
+* Increased gem drop rate a bit
 ## v0.3.1
 
 ### Bug fixes:

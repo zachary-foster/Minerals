@@ -494,7 +494,7 @@
 	<ThingDef ParentName="DynamicMineralBase">
     	<defName>ZF_IceStalagmite</defName>
     	<label>Ice Stalagmite</label>		
-    	<description>Spawns in caves when water drips down from the ceiling and freezes. Only grow when the temperature is just below freezing and melts when the temperature rises.</description>
+    	<description>These form when water drips down from the ceiling and freezes. They only grow when the temperature is just below freezing and they melt when the temperature rises.</description>
 		<altitudeLayer>Floor</altitudeLayer>
     	<statBases>
     		<MaxHitPoints>200</MaxHitPoints>
@@ -522,7 +522,7 @@
 		<spawnRadius>4</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>0</minClusterProbability>
+		<minClusterProbability>-0.005</minClusterProbability>
 		<maxClusterProbability>0.005</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
