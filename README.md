@@ -36,6 +36,12 @@ Spawns in caves when water drips down from the ceiling and freezes. Only grow wh
 
 ![](readme_images/IceStalagmite.jpg)
 
+### Sulfur
+
+A deposit of elemental sulfur formed by volcanic gases. This deposit seems to be actively growing.
+
+![](readme_images/Sulfur.jpg)
+
 ## Static minerals
 
 These are randomly spawned when a map is created and are never respawned in a given map.
@@ -56,40 +62,40 @@ Formations of microcrystalline silicon dioxide found in sedimentary rocks. Value
 
 ### Calcite
 
-Crystals of calcium carbonate. A common mineral found underground, particulary in limestone caves. Interesting, but not otherwise very useful. Yeilds rubble if mined.
+Crystals of calcium carbonate. A common mineral found underground, particularly in limestone caves. Interesting, but not otherwise very useful. Yields rubble if mined.
 
 ![](readme_images/Calcite.jpg)
 
 
 ### Quatrz
 
-Crystals of silicon dioxide, the same material glass is made of. A common mineral found underground. Yeilds glass batch when mined. Once in a while a gem-quality peice might be found.
+Crystals of silicon dioxide, the same material glass is made of. A common mineral found underground. Yields glass batch when mined. Once in a while a gem-quality piece might be found.
 
 ![](readme_images/Quartz.jpg)
 
 ### Amethyst
 
-Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful purple. A common mineral found underground. Yeilds glass batch when mined. Sometimes a gem-quality peice might be found.
+Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful purple. A common mineral found underground. Yields glass batch when mined. Sometimes a gem-quality piece might be found.
 
 ![](readme_images/Amethyst.jpg)
 
 
 ### Citrine
 
-Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful yellow. Rarely found. Yeilds glass batch when mined. Often yeilds gem-quality peices due to its interesting color.
+Crystals of silicon dioxide. Impurities of iron make these crystals a beautiful yellow. Rarely found. Yields glass batch when mined. Often yields gem-quality pieces due to its interesting color.
 
 ![](readme_images/Citrine.jpg)
 
 ### Prasiolite
 
-A very rare and beautiful green variety of quartz, silicon dioxide. Yeilds glass batch when mined. Often yeilds gem-quality peices due to its interesting color.
+A very rare and beautiful green variety of quartz, silicon dioxide. Yields glass batch when mined. Often yields gem-quality pieces due to its interesting color.
 
 ![](readme_images/Prasiolite.jpg)
 
 
 ### Pyrite
 
-Crystals of iron(II) disulfide. A common mineral found underground and often mistaken for gold or silver by the foolish. Interesting, but not otherwise very useful. Yeilds rubble if mined.
+Crystals of iron(II) disulfide. A common mineral found underground and often mistaken for gold or silver by the foolish. Interesting, but not otherwise very useful. Yields rubble if mined.
 
 ![](readme_images/Pyrite.jpg)
 
@@ -98,6 +104,12 @@ Crystals of iron(II) disulfide. A common mineral found underground and often mis
 Boron silicates with many chemical variations. The more attractive varieties are often used for gemstones and are therefore only found in regions difficult to access or live in. Found in granite and marble.
 
 ![](readme_images/TourmalineGroup.jpg)
+
+### Large sulfur 
+
+Elemental sulfur crystals formed by volcanic gasses. These ones are quite large and the geologic conditions that created them have ceased long ago.
+
+![](readme_images/LargeSulfur.jpg)
 
 ## Cutting gems
 
@@ -119,7 +131,7 @@ Flint and obsidian arrows are better than standard stone arrows but not as good 
 
 ## Installation
 
-You can download the current development version by clicking the green "clone or download" button near the top of this page. You can also download specific "stable" releases [here](https://github.com/zachary-foster/Minerals/releases), although they will probably not be updated too often. Once you have downloaded the mod, uncompress the file and up the foler in the `Mods` folder of you rimworld installation.
+You can download the current development version by clicking the green "clone or download" button near the top of this page. You can also download specific "stable" releases [here](https://github.com/zachary-foster/Minerals/releases), although they will probably not be updated too often. Once you have downloaded the mod, uncompress the file and up the folder in the `Mods` folder of you rimworld installation.
 
 ## To xml modders and potential contributers:
 

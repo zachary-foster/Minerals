@@ -11,6 +11,8 @@
 * Mineral spread now makes the more common in center of spot instead of uniformily distributed.
 * "neededNearbyTerrains"" now can be used with "things" like buildingd and steam geysers.
 * increased rough gem and gem value 
+* Made flint less pretty
+* Increased sharp steon stack coutn to 150
 
 ## v0.3.1
 

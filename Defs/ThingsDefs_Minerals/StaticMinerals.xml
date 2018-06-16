@@ -495,12 +495,14 @@
 
 		<!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>TKKN_LavaRock</li>
+			<li>TKKN_LavaRock_Rough</li>
+			<li>TKKN_LavaRock_RoughHewn</li>
 		</allowedTerrains>
 
 		<!-- The terrains this must be near to, but not necessarily on -->
 		<neededNearbyTerrains>
-			<li>TKKN_LavaRock</li>
+			<li>TKKN_LavaRock_Rough</li>
+			<li>TKKN_LavaRock_RoughHewn</li>
 		</neededNearbyTerrains>
 
 		<!-- how far away it can be from needed nearby terrains-->
@@ -549,7 +551,7 @@
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<Flammability>0</Flammability>
-			<Beauty>10</Beauty>
+			<Beauty>1</Beauty>
 		</statBases>
 		<selectable>true</selectable>
 		<neverMultiSelect>true</neverMultiSelect>
@@ -749,7 +751,7 @@
 		<maxMinedYeild>10</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0</roughGemDropChance>
+		<roughGemDropChance>0.1</roughGemDropChance>
 	</ThingDef>
 
 

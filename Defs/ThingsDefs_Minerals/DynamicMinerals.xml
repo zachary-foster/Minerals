@@ -13,7 +13,7 @@
     		</li>
     	</comps>
 		
-    	<description>An active deposit of coldstone. Grows very slowly on cold bright days, but evaporates in the heat. Only found in permanently frozen terrain. Some glitterworld exobiologists belive these to be a kind of living crytsal since they seem capable of reproduction and they stress the need to safeguard these rare organisms. People on this rimworld however, tend to dig them up and use them to stop meat from spoiling.</description>
+    	<description>An active deposit of coldstone. Grows slowly on cold bright days, but evaporates in the heat. Only found in permanently frozen terrain. Some glitterworld exobiologists belive these to be a kind of living crytsal since they seem capable of reproduction and they stress the need to safeguard these rare organisms. People on this rimworld however, tend to dig them up and use them to stop meat from spoiling.</description>
     	<statBases>
     		<MaxHitPoints>400</MaxHitPoints>
     		<Flammability>0</Flammability>
@@ -319,7 +319,7 @@
 		<thingClass>Minerals.SaltCrystal</thingClass>
     	<defName>ZF_SaltCrystal</defName>
     	<label>Salt Crystal</label>		
-    	<description>A deposit of salt formed by evaporation of nearbly salt water. Grows quickly on hot sunny days, but dissolves in the rain. Only persists in dry climates. Can be harvested to preserve food.</description>
+    	<description>A deposit of salt formed by evaporation of nearbly salt water. Grows quickly on hot sunny days, but dissolves in the rain or incomming tides. Only persists in dry climates. Can be harvested to preserve food.</description>
 		<altitudeLayer>Floor</altitudeLayer>
     	<statBases>
     		<MaxHitPoints>300</MaxHitPoints>
@@ -494,7 +494,7 @@
 	<ThingDef ParentName="DynamicMineralBase">
     	<defName>ZF_IceStalagmite</defName>
     	<label>Ice Stalagmite</label>		
-    	<description>These form when water drips down from the ceiling and freezes. They only grow when the temperature is just below freezing and they melt when the temperature rises.</description>
+    	<description>Spawns in caves when water drips down from the ceiling and freezes. Only grow when the temperature is just below freezing and melts when the temperature rises.</description>
 		<altitudeLayer>Floor</altitudeLayer>
     	<statBases>
     		<MaxHitPoints>200</MaxHitPoints>
@@ -671,7 +671,7 @@
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0.0001</minClusterProbability>
-		<maxClusterProbability>0.002</maxClusterProbability>
+		<maxClusterProbability>0.003</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>3</minClusterSize>
@@ -727,7 +727,7 @@
 		</neededNearbyTerrains>
 
 		<!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
+<!--		<allowedTerrains>
 			<li>Granite_Rough</li>
 			<li>Marble_Rough</li>
 			<li>Limestone_Rough</li>
@@ -737,18 +737,18 @@
 			<li>TKKN_LavaRock_Rough</li>
 			<li>TKKN_LavaRock_RoughHewn</li>
 			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
 			<li>RockyDirt</li>
 		</allowedTerrains>
-
+-->
 		<!-- Controls how extra clusters are added near assocaited ore-->
 		<associatedOres>
-			<li>TKKN_Lava</li>
-			<li>TKKN_LavaDeep</li>
 			<li>BigSulfurCrystal</li>
 			<li>SteamGeyser</li>
 			<li>TKKN_SteamVent</li>
 		</associatedOres>
-		<nearAssociatedOreBonus>20</nearAssociatedOreBonus>
+		<nearAssociatedOreBonus>50</nearAssociatedOreBonus>
 
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
@@ -776,7 +776,7 @@
 		<maxMinedYeild>10</maxMinedYeild>
 
 		<!-- The number of days it takes to grow at max growth speed -->
-		<growDays>20</growDays>
+		<growDays>30</growDays>
 
 		<!-- Chance of spawning de novo each check -->
         <spawnProb>0.002</spawnProb>
@@ -796,10 +796,10 @@
         	<active>true</active>
         	<aboveMaxDecayRate>0</aboveMaxDecayRate> 
         	<maxStable>10</maxStable> 
-        	<maxGrow>6</maxGrow> 
-        	<idealGrow>1</idealGrow>  
-        	<minGrow>0</minGrow>
-        	<minStable>-1</minStable>
+        	<maxGrow>4</maxGrow> 
+        	<idealGrow>0</idealGrow>  
+        	<minGrow>-1</minGrow>
+        	<minStable>-2</minStable>
         	<belowMinDecayRate>0</belowMinDecayRate>
         </distGrowthRateModifer>
 	</ThingDef>

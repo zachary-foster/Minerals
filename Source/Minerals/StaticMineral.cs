@@ -272,6 +272,18 @@ namespace Minerals
                                 output = distanceToPos;
                             }
                         }
+                        foreach (Thing thing in map.thingGrid.ThingsListAt(checkedPosition))
+                        {
+                            if (myDef.neededNearbyTerrains.Any(thing.def.defName.Equals))
+                            {
+                                float distanceToPos = position.DistanceTo(checkedPosition);
+                                if (output < 0 || output > distanceToPos) 
+                                {
+                                    output = distanceToPos;
+                                }
+                            }
+                        }
+
                     }
                 }
             }

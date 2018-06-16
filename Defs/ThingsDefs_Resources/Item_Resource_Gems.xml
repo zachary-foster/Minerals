@@ -34,7 +34,7 @@
         <ThingDef ParentName="ResourceBase">
                 <defName>CutGem</defName>
                 <label>Cut Gem</label>
-                <description>A cut gem. Generally used to decorate rich people and impress raiders.</description> 
+                <description>A cut gem. Generally used to decorate rich people and impress potential raiders.</description> 
                 <graphicData>
                         <texPath>Things/Item/Resource/CutGem</texPath>
                         <graphicClass>Graphic_StackCount</graphicClass>
@@ -77,7 +77,7 @@
                         <Beauty>1</Beauty>
 						<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
                 </statBases>
-                <stackLimit>75</stackLimit>
+                <stackLimit>150</stackLimit>
                 <thingCategories>
                         <li>SharpStony</li>
                 </thingCategories>
@@ -128,7 +128,7 @@
                         <Beauty>1</Beauty>
 						<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
                 </statBases>
-                <stackLimit>75</stackLimit>
+                <stackLimit>150</stackLimit>
                 <thingCategories>
                         <li>SharpStony</li>
                 </thingCategories>
