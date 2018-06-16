@@ -16,7 +16,7 @@
                 <soundDrop>Silver_Drop</soundDrop>
                 <useHitPoints>false</useHitPoints>
                 <statBases>
-                        <MarketValue>50</MarketValue>
+                        <MarketValue>100</MarketValue>
                         <DeteriorationRate>0</DeteriorationRate>
                         <Flammability>0</Flammability>
                         <Mass>0.2</Mass>
@@ -44,7 +44,7 @@
                 <soundDrop>Silver_Drop</soundDrop>
                 <useHitPoints>false</useHitPoints>
                 <statBases>
-                        <MarketValue>200</MarketValue>
+                        <MarketValue>250</MarketValue>
                         <DeteriorationRate>0</DeteriorationRate>
                         <Flammability>0</Flammability>
                         <Mass>0.05</Mass>

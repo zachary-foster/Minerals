@@ -3,10 +3,15 @@
 ### Aditions:
 
 * 7 new minerals: Tourmaline group
+* 2 new minerals: growning sulfur and larger static sulfur
 
 ### Changes
 
 * Increased gem drop rate a bit
+* Mineral spread now makes the more common in center of spot instead of uniformily distributed.
+* "neededNearbyTerrains"" now can be used with "things" like buildingd and steam geysers.
+* increased rough gem and gem value 
+
 ## v0.3.1
 
 ### Bug fixes:

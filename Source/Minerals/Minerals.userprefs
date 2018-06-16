@@ -1,4 +1,4 @@
-﻿<Properties>
+﻿<Properties StartupItem="Minerals.csproj">
   <MonoDevelop.Ide.Workbench ActiveDocument="StaticMineral.cs">
     <Files>
       <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="1" Column="1" />
@@ -6,10 +6,10 @@
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" />
       <File FileName="initialization.cs" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="1" Column="1" />
-      <File FileName="StaticMineral.cs" Line="18" Column="38" />
+      <File FileName="StaticMineral.cs" Line="1" Column="1" />
       <File FileName="DynamicMineral.cs" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMineralBase.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="1" Column="1" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="24" Column="24" />
       <File FileName="harmonyPatching.cs" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Resources/Item_Resource_Gems.xml" Line="1" Column="1" />
       <File FileName="SaltCrystal.cs" Line="1" Column="1" />

@@ -102,7 +102,7 @@
         	<min>0.3</min>
         	<max>1.0</max>
       	</visualSizeRange>
-      	<visualSpread>0.45</visualSpread>
+      	<visualClustering>1.05</visualClustering>
       	<visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->

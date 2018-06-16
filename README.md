@@ -183,3 +183,7 @@ Here are the list of images used:
 * https://commons.wikimedia.org/wiki/File:Tourmaline-164039.jpg
 * https://commons.wikimedia.org/wiki/File:Tourmaline-34580.jpg
 * https://commons.wikimedia.org/wiki/File:Elbaite-Lepidolite-Quartz-gem7-x1a.jpg
+* https://commons.wikimedia.org/wiki/File:Sulfur-es67a.jpg
+* https://commons.wikimedia.org/wiki/File:Sulfur-20edd1ea.jpg
+* https://fr.m.wikipedia.org/wiki/Fichier:Sulfur_(16_S).jpg
+* https://www.flickr.com/photos/jsjgeology/17541066095

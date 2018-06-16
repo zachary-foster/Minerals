@@ -159,7 +159,7 @@ namespace Minerals
         public static bool PosIsAssociatedOre(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
         {
             TerrainDef terrain = map.terrainGrid.TerrainAt(position);
-            if (myDef.associatedOres.Any(terrain.defName.Contains))
+            if (myDef.associatedOres.Any(terrain.defName.Equals))
             {
                 return true;
             }
@@ -167,7 +167,7 @@ namespace Minerals
             foreach (Thing thing in map.thingGrid.ThingsListAt(position))
             {
                 if (
-                    myDef.associatedOres.Any(thing.def.defName.Contains)
+                    myDef.associatedOres.Any(thing.def.defName.Equals)
                 )
                 {
                     return true;
@@ -179,7 +179,7 @@ namespace Minerals
        
         public static bool CanSpawnInBiome(ThingDef_StaticMineral myDef, Map map) 
         {
-            return myDef.allowedBiomes.Any(map.Biome.defName.Contains);
+            return myDef.allowedBiomes.Any(map.Biome.defName.Equals);
         }
 
         public static bool IsTerrainOkAt(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
@@ -193,7 +193,7 @@ namespace Minerals
                 return true;
             }
             TerrainDef terrain = map.terrainGrid.TerrainAt(position);
-            return myDef.allowedTerrains.Any(terrain.defName.Contains);
+            return myDef.allowedTerrains.Any(terrain.defName.Equals);
         }
                    
         public static bool isNearNeededTerrain(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
@@ -210,13 +210,18 @@ namespace Minerals
                     if (checkedPosition.InBounds(map))
                     {
                         TerrainDef terrain = map.terrainGrid.TerrainAt(checkedPosition);
-                        if (myDef.neededNearbyTerrains.Any(terrain.defName.Contains))
+                        if (myDef.neededNearbyTerrains.Any(terrain.defName.Equals) && position.DistanceTo(checkedPosition) < myDef.neededNearbyTerrainRadius)
                         {
-                            if (position.DistanceTo(checkedPosition) < myDef.neededNearbyTerrainRadius) 
+                            return true;
+                        }
+                        foreach (Thing thing in map.thingGrid.ThingsListAt(checkedPosition))
+                        {
+                            if (myDef.neededNearbyTerrains.Any(thing.def.defName.Equals) && position.DistanceTo(checkedPosition) < myDef.neededNearbyTerrainRadius)
                             {
                                 return true;
                             }
                         }
+
                     }
                 }
             }
@@ -259,7 +264,7 @@ namespace Minerals
                     if (checkedPosition.InBounds(map))
                     {
                         TerrainDef terrain = map.terrainGrid.TerrainAt(checkedPosition);
-                        if (myDef.neededNearbyTerrains.Any(terrain.defName.Contains))
+                        if (myDef.neededNearbyTerrains.Any(terrain.defName.Equals))
                         {
                             float distanceToPos = position.DistanceTo(checkedPosition);
                             if (output < 0 || output > distanceToPos) 
@@ -497,6 +502,12 @@ namespace Minerals
             return this.attributes.visualSizeRange.LerpThroughRange(correctedSize);
         }
 
+        public static float randPos(float spread)
+        {
+            float pos = Rand.Range(- 0.5f, 0.5f) * spread;
+            return (float) Math.Pow(Math.Abs(pos), spread) * Math.Sign(pos);
+        }
+
         public override void Print(SectionLayer layer)
         {
 
@@ -513,8 +524,8 @@ namespace Minerals
                 // Calculate location
                 Vector3 center = trueCenter;
                 center.y = this.attributes.Altitude;
-                center.x += Rand.Range(- this.attributes.visualSpread, this.attributes.visualSpread);
-                center.z += Rand.Range(- this.attributes.visualSpread, this.attributes.visualSpread);
+                center.x += randPos(this.attributes.visualClustering);
+                center.z += randPos(this.attributes.visualClustering);
 
                 // Adjust size for distance from center to other crystals
                 float thisSize = GetSizeBasedOnNearest(center);
@@ -617,7 +628,7 @@ namespace Minerals
 
         // The size range of images printed
         public FloatRange visualSizeRange  = new FloatRange(0.3f, 1.0f);
-        public float visualSpread = 0.5f;
+        public float visualClustering = 0.5f;
         public float visualSizeVariation = 0.1f;
 
         // The amount of resource returned if the mineral is its maximum size
