@@ -1,18 +1,29 @@
-## Current 
+## v0.4.0 
 
 ### Aditions:
 
-* 7 new minerals: Tourmaline group
+* 7 new static minerals: Tourmaline group
 * 2 new minerals: growning sulfur and larger static sulfur
+* 4 nnew static minerals: Corundum group
+* 6 new static minerals: Beryl group
+* 2 new static minerals: Magnetite and lodestone
+* 1 new static minerals: Diamonds
 
 ### Changes
 
 * Increased gem drop rate a bit
 * Mineral spread now makes the more common in center of spot instead of uniformily distributed.
-* "neededNearbyTerrains"" now can be used with "things" like buildingd and steam geysers.
+* "neededNearbyTerrains" now can be used with "things" like buildingd and steam geysers.
 * increased rough gem and gem value 
 * Made flint less pretty
-* Increased sharp steon stack coutn to 150
+* Increased sharp stone stack count to 150
+* Quartz is now outside of caves as well
+* increased yield of flint nodules and obsidian
+* Lot of other small adjustments 
+
+### Bug fixes:
+
+* Ice stalagmites dont drop sand anymore
 
 ## v0.3.1
 

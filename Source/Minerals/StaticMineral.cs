@@ -419,7 +419,7 @@ namespace Minerals
 
         // ======= Yeilding resources ======= //
 
-        public void incPctYeild(int amount, Pawn miner)
+        public virtual void incPctYeild(int amount, Pawn miner)
         {
             this.yieldPct += (float)Mathf.Min(amount, this.HitPoints) / (float)base.MaxHitPoints * miner.GetStatValue(StatDefOf.MiningYield, true);
         }

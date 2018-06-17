@@ -17,7 +17,7 @@
     	<statBases>
     		<MaxHitPoints>400</MaxHitPoints>
     		<Flammability>0</Flammability>
-    		<Beauty>10</Beauty>
+    		<Beauty>15</Beauty>
     	</statBases>
     	<graphicData>
     		<texPath>Things/Mineral/ColdstoneCrystal</texPath>
@@ -40,7 +40,7 @@
 		<spawnRadius>2</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.01</minClusterProbability>
+		<minClusterProbability>-0.005</minClusterProbability>
 		<maxClusterProbability>0.005</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -237,7 +237,7 @@
 			<li>Limestone_Rough</li>
 			<li>Sandstone_Rough</li>
 			<li>Slate_Rough</li>
-			<li>TKKN_LavaRock</li>
+			<li>TKKN_LavaRock_Rough</li>
 			<li>Gravel</li>
 		</allowedTerrains>
 
@@ -400,7 +400,7 @@
 			<li>Limestone_Rough</li>
 			<li>Sandstone_Rough</li>
 			<li>Slate_Rough</li>
-			<li>TKKN_LavaRock</li>
+			<li>TKKN_LavaRock_Rough</li>
 			<li>Gravel</li>
 			<li>Sand</li>
 			<li>Soil</li>
@@ -492,6 +492,7 @@
 
 
 	<ThingDef ParentName="DynamicMineralBase">
+		<thingClass>Minerals.IceStalagmite</thingClass>
     	<defName>ZF_IceStalagmite</defName>
     	<label>Ice Stalagmite</label>		
     	<description>Spawns in caves when water drips down from the ceiling and freezes. Only grow when the temperature is just below freezing and melts when the temperature rises.</description>
@@ -510,9 +511,9 @@
             <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
-			<mineableThing>Sand</mineableThing> <!-- the mine material stats are needed or meteorite system bugs -->
-			<mineableYield>0</mineableYield>
-			<mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
+			<mineableThing>FilthDirt</mineableThing> <!-- the mine material stats are needed or meteorite system bugs -->
+			<mineableYield>3</mineableYield>
+			<mineableNonMinedEfficiency>0.5</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
@@ -578,7 +579,8 @@
 			<li>Limestone_Rough</li>
 			<li>Sandstone_Rough</li>
 			<li>Slate_Rough</li>
-			<li>TKKN_LavaRock</li>
+			<li>TKKN_LavaRock_Rough</li>
+			<li>TKKN_LavaRock_RoughHewn</li>
 			<li>Gravel</li>
 			<li>Sand</li>
 			<li>Soil</li>
@@ -616,7 +618,7 @@
 		<visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>0</maxMinedYeild>
+		<maxMinedYeild>3</maxMinedYeild>
 
 		<!-- The number of days it takes to grow at max growth speed -->
 		<growDays>7</growDays>
@@ -670,7 +672,7 @@
 		<spawnRadius>1</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>0.0001</minClusterProbability>
+		<minClusterProbability>0.001</minClusterProbability>
 		<maxClusterProbability>0.003</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -686,7 +688,7 @@
 
 		<!-- Reproduction and death settings -->
 		<minReproductionSize>0.7</minReproductionSize>
-        <reproduceProp>0.002</reproduceProp>
+        <reproduceProp>0.001</reproduceProp>
         <deathProb>0.5</deathProb>
 
 
@@ -727,7 +729,7 @@
 		</neededNearbyTerrains>
 
 		<!-- The terrains this can appear on. The default is rocky terrains-->
-<!--		<allowedTerrains>
+		<allowedTerrains>
 			<li>Granite_Rough</li>
 			<li>Marble_Rough</li>
 			<li>Limestone_Rough</li>
@@ -736,12 +738,12 @@
 			<li>TKKN_LavaRock</li>
 			<li>TKKN_LavaRock_Rough</li>
 			<li>TKKN_LavaRock_RoughHewn</li>
-			<li>Gravel</li>
+			<li>Gravesl</li>
 			<li>Sand</li>
 			<li>Soil</li>
 			<li>RockyDirt</li>
 		</allowedTerrains>
--->
+
 		<!-- Controls how extra clusters are added near assocaited ore-->
 		<associatedOres>
 			<li>BigSulfurCrystal</li>
@@ -779,7 +781,7 @@
 		<growDays>30</growDays>
 
 		<!-- Chance of spawning de novo each check -->
-        <spawnProb>0.002</spawnProb>
+        <spawnProb>0.001</spawnProb>
 		
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>

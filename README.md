@@ -111,6 +111,34 @@ Elemental sulfur crystals formed by volcanic gasses. These ones are quite large 
 
 ![](readme_images/LargeSulfur.jpg)
 
+### Corundum group
+
+Crystals of aluminium oxide embedded in rock. One of the hardest minerals and often cut into gems.
+
+![](readme_images/CorundumGroup.jpg)
+
+
+### Beryl group
+
+Crystals of beryl, a type of beryllium aluminium silicate, a rare mineral often used for gemstones.
+
+![](readme_images/BerylGroup.jpg)
+
+
+### Diamonds
+
+Crystals of pure carbon. The hardest known substance and a valuable gemstone.
+
+![](readme_images/Diamond.jpg)
+
+
+### Magnetite and lodestone
+
+Formations of iron(II,III) oxide, a common iron ore in sedimentary and igenous rocks. There is a rare magnetized variety known as lodestone.
+
+![](readme_images/Magnetite.jpg)
+
+
 ## Cutting gems
 
 Some gem-quality crystals can be found when mining some minerals.
@@ -199,3 +227,15 @@ Here are the list of images used:
 * https://commons.wikimedia.org/wiki/File:Sulfur-20edd1ea.jpg
 * https://fr.m.wikipedia.org/wiki/Fichier:Sulfur_(16_S).jpg
 * https://www.flickr.com/photos/jsjgeology/17541066095
+* https://commons.wikimedia.org/wiki/File:Corundum-275089.jpg
+* https://commons.wikimedia.org/wiki/File:Corundum-215245.jpg
+* https://commons.wikimedia.org/wiki/File:Corundum-tmix07-151a.jpg
+* https://commons.wikimedia.org/wiki/File:Corundum-190228.jpg
+* https://commons.wikimedia.org/wiki/File:Corundum-119783.jpg
+* https://commons.wikimedia.org/wiki/File:Beryl-Quartz-Emerald-Zambia-85mm_0872.jpg
+* https://commons.wikimedia.org/wiki/File:Gachala_Emerald_3526711557_849c4c7367.jpg
+* https://commons.wikimedia.org/wiki/File:Diamant_sur_kimberlite_(R%C3%A9publique_d%27Afrique_du_Sud).JPG
+* https://commons.wikimedia.org/wiki/File:Diamond-21988.jpg
+* https://commons.wikimedia.org/wiki/File:Diamond-dimd5b.jpg  
+* https://www.flickr.com/photos/jsjgeology/17440851983
+* https://commons.wikimedia.org/wiki/File:Diamond-dimd5a.jpg
