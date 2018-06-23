@@ -4,16 +4,22 @@
 
 * 7 new static minerals: Tourmaline group
 * 2 new minerals: growning sulfur and larger static sulfur
-* 4 nnew static minerals: Corundum group
+* 4 new static minerals: Corundum group
 * 6 new static minerals: Beryl group
 * 2 new static minerals: Magnetite and lodestone
 * 1 new static minerals: Diamonds
+* 2 new static minerals: Malachite and Azurite
+* 1 new static minerals: Uraninite
+* 1 new static minerals: Cassiterite
+
+### Improvements:
+
+* New print method now uses normal distributions, so clusters look more natural
+* "neededNearbyTerrains" now can be used with "things" like buildingd and steam geysers.
 
 ### Changes
 
 * Increased gem drop rate a bit
-* Mineral spread now makes the more common in center of spot instead of uniformily distributed.
-* "neededNearbyTerrains" now can be used with "things" like buildingd and steam geysers.
 * increased rough gem and gem value 
 * Made flint less pretty
 * Increased sharp stone stack count to 150
