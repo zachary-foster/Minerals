@@ -239,3 +239,4 @@ Here are the list of images used:
 * https://commons.wikimedia.org/wiki/File:Diamond-dimd5b.jpg  
 * https://www.flickr.com/photos/jsjgeology/17440851983
 * https://commons.wikimedia.org/wiki/File:Diamond-dimd5a.jpg
+* https://vi.wikipedia.org/wiki/T%E1%BA%ADp_tin:Pitchblende_schlema-alberoda.JPG

@@ -100,7 +100,8 @@
         	<min>0.2</min>
         	<max>1.0</max>
       	</visualSizeRange>
-		<visualClustering>0.5</visualClustering>
+      	<visualClustering>0.5</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+      	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
 		<visualSizeVariation>0.3</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
@@ -275,7 +276,8 @@
         	<min>0.2</min>
         	<max>1.0</max>
       	</visualSizeRange>
-		<visualClustering>1</visualClustering>
+      	<visualClustering>0.5</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+      	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
 		<visualSizeVariation>0.3</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
@@ -434,7 +436,8 @@
         	<min>0.05</min>
         	<max>0.4</max>
       	</visualSizeRange>
-		<visualClustering>1</visualClustering>
+      	<visualClustering>0.5</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+      	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
 		<visualSizeVariation>0.1</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
@@ -614,7 +617,8 @@
         	<min>0.1</min>
         	<max>1.1</max>
       	</visualSizeRange>
-		<visualClustering>1.1</visualClustering>
+      	<visualClustering>0.5</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+      	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
 		<visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
@@ -771,7 +775,8 @@
         	<min>0.1</min>
         	<max>0.3</max>
       	</visualSizeRange>
-		<visualClustering>1.2</visualClustering>
+      	<visualClustering>0.5</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+      	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
 		<visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->

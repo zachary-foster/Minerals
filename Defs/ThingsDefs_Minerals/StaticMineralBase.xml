@@ -101,8 +101,9 @@
         	<min>0.3</min>
         	<max>1.0</max>
       	</visualSizeRange>
-      	<visualClustering>1.05</visualClustering>
-      	<visualSizeVariation>0.2</visualSizeVariation>
+      	<visualClustering>0.5</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+      	<visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+      	<visualSizeVariation>0.2</visualSizeVariation> <!-- 0 = all images in cluster are same size -->
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>20</maxMinedYeild>

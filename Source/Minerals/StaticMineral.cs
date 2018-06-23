@@ -514,10 +514,10 @@ namespace Minerals
             return this.attributes.visualSizeRange.LerpThroughRange(correctedSize);
         }
 
-        public static float randPos(float spread)
+        public static float randPos(float clustering, float spread)
         {
-            float pos = Rand.Range(- 0.5f, 0.5f) * spread;
-            return (float) Math.Pow(Math.Abs(pos), spread) * Math.Sign(pos);
+            // Weighted average of normal and uniform distribution
+            return (Rand.Gaussian(0, 0.2f) * clustering + Rand.Range(-0.5f, 0.5f) * (1 - clustering)) * spread;
         }
 
         public override void Print(SectionLayer layer)
@@ -536,8 +536,8 @@ namespace Minerals
                 // Calculate location
                 Vector3 center = trueCenter;
                 center.y = this.attributes.Altitude;
-                center.x += randPos(this.attributes.visualClustering);
-                center.z += randPos(this.attributes.visualClustering);
+                center.x += randPos(this.attributes.visualClustering, this.attributes.visualSpread);
+                center.z += randPos(this.attributes.visualClustering, this.attributes.visualSpread);
 
                 // Adjust size for distance from center to other crystals
                 float thisSize = GetSizeBasedOnNearest(center);
@@ -641,6 +641,7 @@ namespace Minerals
         // The size range of images printed
         public FloatRange visualSizeRange  = new FloatRange(0.3f, 1.0f);
         public float visualClustering = 0.5f;
+        public float visualSpread = 1.2f;
         public float visualSizeVariation = 0.1f;
 
         // The amount of resource returned if the mineral is its maximum size
