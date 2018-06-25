@@ -151,6 +151,12 @@ Formations of tin oxide, a common ore of tin. Occasionally used for gem stones.
 ![](readme_images/Cassiterite.jpg)
 
 
+### Uraninite
+
+Formations of uranium oxide, a major uranium ore. Often assocaited with silver.
+
+![](readme_images/Uraninite.jpg)
+
 ## Cutting gems
 
 Some gem-quality crystals can be found when mining some minerals.
