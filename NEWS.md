@@ -16,6 +16,7 @@
 
 * New print method now uses normal distributions, so clusters look more natural
 * "neededNearbyTerrains" now can be used with "things" like buildingd and steam geysers.
+* Minerals can now stack on eachother
 
 ### Changes
 
@@ -25,7 +26,7 @@
 * Increased sharp stone stack count to 150
 * Quartz is now outside of caves as well
 * increased yield of flint nodules and obsidian
-* Lot of other small adjustments 
+* Lots of other small adjustments 
 
 ### Bug fixes:
 

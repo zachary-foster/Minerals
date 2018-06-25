@@ -1,7 +1,7 @@
 
 ## Minerals: A rimworld mod for the [Hardcore SK project](https://github.com/skyarkhangel/Hardcore-SK)
 
-![](readme_images/banner.jpg)
+![](About/Preview.jpg)
 
 This mod adds various mineral-related content.
 For example, it adds various minable crystals underground, obsidian and flint for weapons, and living coldstone and glowstone crystals.
@@ -137,6 +137,18 @@ Crystals of pure carbon. The hardest known substance and a valuable gemstone.
 Formations of iron(II,III) oxide, a common iron ore in sedimentary and igenous rocks. There is a rare magnetized variety known as lodestone.
 
 ![](readme_images/Magnetite.jpg)
+
+### Azurite and Malachite
+
+Deposits of copper carbonate hydroxide, occasionally used for gemstones. Often found near eachother, copper ore, calcite, and limestone rock.
+
+![](readme_images/Azurite.jpg)
+
+### Cassiterite
+
+Formations of tin oxide, a common ore of tin. Occasionally used for gem stones.
+
+![](readme_images/Cassiterite.jpg)
 
 
 ## Cutting gems

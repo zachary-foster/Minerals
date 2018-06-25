@@ -123,7 +123,7 @@
 			<drawSize>(1,1)</drawSize>
 			<color>(255,227,187)</color>
 		</graphicData>
-		<altitudeLayer>LowPlant</altitudeLayer>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
 		<coversFloor>false</coversFloor>
@@ -1182,7 +1182,7 @@
 			<drawSize>(1,1)</drawSize>
 			<color>(100,100,100)</color>
 		</graphicData>
-		<altitudeLayer>Floor</altitudeLayer>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
 		<coversFloor>false</coversFloor>
@@ -1405,7 +1405,7 @@
 			<drawSize>(1,1)</drawSize>
 			<color>(220,220,220)</color>
 		</graphicData>
-		<altitudeLayer>Filth</altitudeLayer>
+		<altitudeLayer>Floor</altitudeLayer>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
 		<coversFloor>false</coversFloor>
@@ -1590,7 +1590,7 @@
 			<drawSize>(1,1)</drawSize>
 			<color>(255, 255, 255)</color>
 		</graphicData>
-		<altitudeLayer>Filth</altitudeLayer>
+		<altitudeLayer>Floor</altitudeLayer>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
 		<coversFloor>false</coversFloor>
@@ -2017,7 +2017,13 @@
 			<drawSize>(1,1)</drawSize>
 			<color>(127,120,102)</color>
 		</graphicData>
-		<altitudeLayer>Floor</altitudeLayer>
+    	<comps>
+    		<li Class="CompProperties_Glower">
+    	    	<glowRadius>1</glowRadius>
+    	    	<glowColor>(21,255,0,0)</glowColor>
+    		</li>
+    	</comps>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
 		<coversFloor>false</coversFloor>
@@ -2137,6 +2143,7 @@
 			<drawSize>(1,1)</drawSize>
 			<color>(86,177,129)</color>
 		</graphicData>
+    	<comps></comps>
 		<building>
             <isInert>true</isInert>
             <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -2216,6 +2223,7 @@
 			<drawSize>(1,1)</drawSize>
 			<color>(100,118,177)</color>
 		</graphicData>
+    	<comps></comps>
 		<building>
             <isInert>true</isInert>
             <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>

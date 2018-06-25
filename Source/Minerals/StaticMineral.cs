@@ -142,16 +142,38 @@ namespace Minerals
         {
             foreach (Thing thing in map.thingGrid.ThingsListAt(position))
             {
-                if (
-                    thing.def.BlockPlanting ||
-                    thing.def.category == ThingCategory.Pawn ||
+                // Blocked by pawns, items, and plants
+                if (thing.def.category == ThingCategory.Pawn ||
                     thing.def.category == ThingCategory.Item ||
-                    thing.def.category == ThingCategory.Building ||
-                    thing.def.category == ThingCategory.Plant
-                )
+                    thing.def.category == ThingCategory.Plant)
                 {
                     return true;
                 }
+
+                // Blocked by buildings, except low minerals
+                if (thing.def.category == ThingCategory.Building)
+                {
+                    if (thing is StaticMineral && thing.def.defName != myDef.defName)
+                    {
+//                        Log.Message("Trying to spawn on mineral " + thing.def.defName);
+                    }
+                    else
+                    {
+                        return true;
+                    }
+//                    if (!(thing is StaticMineral && (thing.def.altitudeLayer == AltitudeLayer.Floor || thing.def.altitudeLayer == AltitudeLayer.FloorEmplacement || myDef.altitudeLayer == AltitudeLayer.Floor || myDef.altitudeLayer == AltitudeLayer.FloorEmplacement)))
+//                    {
+//                        return true;
+//                    }
+
+                }
+
+                // Blocked by impassible things, inlcuding assocaited minerals
+                if (thing.def.passability == Traversability.Impassable)
+                {
+                    return true;
+                }
+
             }
             return false;
         }
@@ -308,7 +330,10 @@ namespace Minerals
 
         public static StaticMineral SpawnAt(IntVec3 dest, ThingDef_StaticMineral myDef, Map map)
         {
+            ThingCategory originalDef = myDef.category;
+            myDef.category = ThingCategory.Attachment; // Hack to allow them to spawn on other minerals
             StaticMineral output = (StaticMineral)GenSpawn.Spawn(myDef, dest, map);
+            myDef.category = originalDef;
             output.size = 0.01f;
             map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Things);
             return output;
@@ -412,6 +437,10 @@ namespace Minerals
                         }
                     }
                 }
+            }
+            else
+            {
+                Log.Message("Minerals: " + myDef.defName + " will not be spawned in this map.");
             }
 
 
@@ -524,7 +553,7 @@ namespace Minerals
         {
 
             Rand.PushState();
-            Rand.Seed = this.Position.GetHashCode();
+            Rand.Seed = this.Position.GetHashCode() + this.attributes.defName.GetHashCode();
             int numToPrint = Mathf.CeilToInt(this.size * (float)this.attributes.maxMeshCount);
             if (numToPrint < 1)
             {
