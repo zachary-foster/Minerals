@@ -606,6 +606,12 @@ namespace Minerals
             return stringBuilder.ToString().TrimEndNewlines();
         }
 
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look<float>(ref this.mySize, "mySize", 0, false);
+        }
+
 
     }       
 
