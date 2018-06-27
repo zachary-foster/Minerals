@@ -1,3 +1,10 @@
+## v0.4.3
+
+### Bug fixes:
+
+* Save/load no longer makes all minerals go to 100%
+
+
 ## v0.4.2 
 
 ### Aditions:
