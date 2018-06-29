@@ -20,6 +20,7 @@ namespace Minerals
 
         // ======= Private Variables ======= //
         protected float yieldPct = 0;
+        public static float globalMineralAbundance = 0.6f;
 
         // The current size of the mineral
         protected float mySize = 1f;
@@ -412,7 +413,7 @@ namespace Minerals
             }
 
             // Select probability of spawing for this map
-            float spawnProbability = Rand.Range(myDef.minClusterProbability, myDef.maxClusterProbability);
+            float spawnProbability = Rand.Range(myDef.minClusterProbability, myDef.maxClusterProbability) * StaticMineral.globalMineralAbundance;
 
             // Find spots to spawn it
             if (spawnProbability > 0)

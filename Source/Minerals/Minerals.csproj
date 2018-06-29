@@ -82,5 +82,8 @@
     <None Include="..\..\Defs\CombatExtended\Ammo\Neolithic\Arrows.xml">
       <Link>xml\Arrows.xml</Link>
     </None>
+    <None Include="..\..\Patches\Ammo.xml">
+      <Link>xml\Ammo.xml</Link>
+    </None>
   </ItemGroup>
 </Project>
