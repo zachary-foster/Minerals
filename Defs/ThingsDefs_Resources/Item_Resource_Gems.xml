@@ -66,7 +66,7 @@
                 <graphicData>
                         <texPath>Things/Item/Resource/ObsidianShard</texPath>
                         <graphicClass>Graphic_StackCount</graphicClass>
-                </graphicData>
+               </graphicData>
                 <soundDrop>ChunkRock_Drop</soundDrop>
                 <useHitPoints>false</useHitPoints>
                 <statBases>
@@ -155,6 +155,58 @@
                   		</statOffsets>
                         <categories>
                                 <li>SharpStony</li>
+                        </categories>
+                        <commonality>0.05</commonality>
+                </stuffProps>
+        </ThingDef>
+
+
+
+       <ThingDef ParentName="ResourceBase">
+                <defName>SnowBlocks</defName>
+                <label>Snow Blocks</label>
+                <description>Hunks of compacted snow.</description> 
+                <graphicData>
+                        <texPath>Things/Item/Resource/SnowBlocks</texPath>
+                        <graphicClass>Graphic_StackCount</graphicClass>
+ 						<drawSize>(0.5,0.5)</drawSize>
+                </graphicData>
+                <soundDrop>ChunkRock_Drop</soundDrop>
+                <useHitPoints>false</useHitPoints>
+                <statBases>
+                        <MarketValue>0.1</MarketValue>
+                        <DeteriorationRate>0</DeteriorationRate>
+                        <Flammability>0</Flammability>
+                        <Mass>1</Mass>
+                        <Beauty>0</Beauty>
+                </statBases>
+                <stackLimit>75</stackLimit>
+                <thingCategories>
+                        <li>FrozenBuildingMaterial</li>
+                </thingCategories>
+                <techLevel>Neolithic</techLevel>
+                <stuffProps>
+                        <stuffAdjective>snow</stuffAdjective>
+                        <statFactors>
+                                <MaxHitPoints>0.1</MaxHitPoints>
+                                <MarketValue>0.5</MarketValue>
+                                <Flammability>0</Flammability>
+                                <Beauty>1</Beauty>
+                                <WorkToMake>0.5</WorkToMake>
+                                <WorkToBuild>0.5</WorkToBuild>
+                                <DoorOpenSpeed>0.5</DoorOpenSpeed>
+                                <BedRestEffectiveness>0.5</BedRestEffectiveness>
+                                <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
+                                <MeleePenetrationFactor>0.3</MeleePenetrationFactor>
+                                <Mass>0.5</Mass>
+                        </statFactors>
+                  		<statOffsets>
+                        	<WorkToMake>50</WorkToMake>
+                        	<WorkToBuild>50</WorkToBuild>
+                        	<Beauty>1</Beauty>
+                  		</statOffsets>
+                        <categories>
+                                <li>FrozenBuildingMaterial</li>
                         </categories>
                         <commonality>0.05</commonality>
                 </stuffProps>

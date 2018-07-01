@@ -19,6 +19,7 @@
 		<filthLeaving>RockRubble</filthLeaving>
 		<drawerType>MapMeshOnly</drawerType>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -108,7 +109,8 @@
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>20</maxMinedYeild>
 
-
+		<!-- Can spawn on items, pawns, and plants-->
+		<canSpawnOnThings>false</canSpawnOnThings>
 	</ThingDef>
     
 </Defs>

@@ -143,14 +143,16 @@ namespace Minerals
         {
             foreach (Thing thing in map.thingGrid.ThingsListAt(position))
             {
-                // Blocked by pawns, items, and plants
-                if (thing.def.category == ThingCategory.Pawn ||
-                    thing.def.category == ThingCategory.Item ||
-                    thing.def.category == ThingCategory.Plant)
-                {
-                    return true;
+                if (! myDef.canSpawnOnThings) {
+                    // Blocked by pawns, items, and plants
+                    if (thing.def.category == ThingCategory.Pawn ||
+                        thing.def.category == ThingCategory.Item ||
+                        thing.def.category == ThingCategory.Plant)
+                    {
+                        return true;
+                    }
                 }
-
+                    
                 // Blocked by buildings, except low minerals
                 if (thing.def.category == ThingCategory.Building)
                 {
@@ -202,7 +204,14 @@ namespace Minerals
        
         public static bool CanSpawnInBiome(ThingDef_StaticMineral myDef, Map map) 
         {
-            return myDef.allowedBiomes.Any(map.Biome.defName.Equals);
+            if (myDef.allowedBiomes == null || myDef.allowedBiomes.Count == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return myDef.allowedBiomes.Any(map.Biome.defName.Equals);
+            }
         }
 
         public static bool IsTerrainOkAt(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
@@ -211,7 +220,7 @@ namespace Minerals
             {
                 return false;
             }
-            if (myDef.allowedTerrains == null)
+            if (myDef.allowedTerrains == null || myDef.allowedTerrains.Count == 0)
             {
                 return true;
             }
@@ -221,7 +230,7 @@ namespace Minerals
                    
         public static bool isNearNeededTerrain(ThingDef_StaticMineral myDef, Map map, IntVec3 position)
         {
-            if (myDef.neededNearbyTerrains.Count == 0)
+            if (myDef.neededNearbyTerrains == null || myDef.neededNearbyTerrains.Count == 0)
             {
                 return true;
             }
@@ -610,7 +619,7 @@ namespace Minerals
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look<float>(ref this.mySize, "mySize", 0, false);
+            Scribe_Values.Look<float>(ref this.mySize, "mySize", 1, false);
         }
 
 
@@ -685,6 +694,9 @@ namespace Minerals
 
         // Other resources it might drop
         public float roughGemDropChance = 0f;
+
+        // If it can spawn on other things
+        public bool canSpawnOnThings = false;
     }
 
     /// <summary>

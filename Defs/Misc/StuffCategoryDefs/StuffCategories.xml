@@ -12,4 +12,16 @@
     <iconPath>UI/Icons/ThingCategories/SharpStony</iconPath>
   </ThingCategoryDef>
 
+  <StuffCategoryDef>
+    <defName>FrozenBuildingMaterial</defName>
+    <label>Frozen</label>
+  </StuffCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>FrozenBuildingMaterial</defName>
+    <label>Frozen</label>
+    <parent>Resources</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/SnowBlocks</iconPath>
+  </ThingCategoryDef>
 </Defs>

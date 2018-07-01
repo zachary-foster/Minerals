@@ -14,7 +14,7 @@
     	</comps>
 		
     	<description>An active deposit of coldstone. Grows slowly on cold bright days, but evaporates in the heat. Only found in permanently frozen terrain. Some glitterworld exobiologists belive these to be a kind of living crytsal since they seem capable of reproduction and they stress the need to safeguard these rare organisms. People on this rimworld however, tend to dig them up and use them to stop meat from spoiling.</description>
-		<altitudeLayer>LowPlant</altitudeLayer>
+		<altitudeLayer>Filth</altitudeLayer>
     	<statBases>
     		<MaxHitPoints>400</MaxHitPoints>
     		<Flammability>0</Flammability>
@@ -24,6 +24,7 @@
     		<texPath>Things/Mineral/ColdstoneCrystal</texPath>
     		<graphicClass>Graphic_Random</graphicClass>
     	</graphicData>
+		<hideAtSnowDepth>2</hideAtSnowDepth>
 		<building>
             <isInert>false</isInert>
             <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -60,12 +61,15 @@
 			<li>IceSheet</li>
 			<li>Tundra</li>
 			<li>SeaIce</li>
+			<li>BorealArchipelago</li>
+			<li>TundraArchipelago</li>
+			<li>ColdBogArchipelago</li>
+			<li>BorealForest</li>
+			<li>TKKN_RedwoodForest</li>
 		</allowedBiomes>
 
 		<!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>Gravel</li>
-			<li>RockyDirt</li>
 		</allowedTerrains>
 
 		<!-- The terrains this must be near to, but not necessarily on -->
@@ -77,13 +81,15 @@
 			<li>IceShallow</li>
 			<li>DeepIce</li>
 			<li>IceDeep</li>
+			<li>ZF_SnowDrift</li>
 		</neededNearbyTerrains>
 
 		<!-- Controls how extra clusters are added near assocaited ore-->
 		<associatedOres>
 			<li>MineableColdstone</li>
+			<li>ZF_SnowDrift</li>
 		</associatedOres>
-		<nearAssociatedOreBonus>100</nearAssociatedOreBonus>
+		<nearAssociatedOreBonus>30</nearAssociatedOreBonus>
 
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
@@ -115,7 +121,7 @@
 		<growDays>15</growDays>
 
 		<!-- Chance of spawning de novo each tick -->
-        <spawnProb>0.0001</spawnProb>
+        <spawnProb>0.00002</spawnProb>
 		
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
@@ -151,8 +157,8 @@
         <fertGrowthRateModifer>
         	<active>true</active>
         	<aboveMaxDecayRate>1</aboveMaxDecayRate> 
-        	<maxStable>0.9</maxStable> 
-        	<maxGrow>0.8</maxGrow> 
+        	<maxStable>1.5</maxStable> 
+        	<maxGrow>1</maxGrow> 
         	<idealGrow>0.5</idealGrow>  
         	<minGrow>0.1</minGrow>
         	<minStable>0.05</minStable>
@@ -456,6 +462,9 @@
 		<!-- Chance of spawning de novo each check -->
         <spawnProb>0.003</spawnProb>
 		
+		<!-- Can spawn on items, pawns, and plants-->
+		<canSpawnOnThings>true</canSpawnOnThings>
+
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
         	<active>true</active>
@@ -510,12 +519,13 @@
     	<statBases>
     		<MaxHitPoints>200</MaxHitPoints>
     		<Flammability>0</Flammability>
-    		<Beauty>3</Beauty>
+    		<Beauty>6</Beauty>
     	</statBases>
     	<graphicData>
     		<texPath>Things/Mineral/IceStalagmite</texPath>
     		<graphicClass>Graphic_Random</graphicClass>
     	</graphicData>
+		<hideAtSnowDepth>2</hideAtSnowDepth>
 		<building>
             <isInert>false</isInert>
             <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -530,10 +540,10 @@
 
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-		<spawnRadius>4</spawnRadius>
+		<spawnRadius>3</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.005</minClusterProbability>
+		<minClusterProbability>-0.003</minClusterProbability>
 		<maxClusterProbability>0.005</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -548,9 +558,9 @@
 		<initialSizeVariation>.2</initialSizeVariation>
 
 		<!-- Reproduction and death settings -->
-		<minReproductionSize>0.3</minReproductionSize>
+		<minReproductionSize>0.1</minReproductionSize>
         <reproduceProp>0.01</reproduceProp>
-        <deathProb>0.5</deathProb>
+        <deathProb>0.1</deathProb>
 
 
 		<!-- The biomes this can appear in. The default is all ones known to mod-->
@@ -580,6 +590,12 @@
 			<li>Sand</li>
 			<li>Soil</li>
 			<li>RockyDirt</li>
+			<li>Ice</li>
+			<li>SeaIce</li>
+			<li>ShallowIce</li>
+			<li>IceShallow</li>
+			<li>DeepIce</li>
+			<li>IceDeep</li>
 		</neededNearbyTerrains>
 
 		<!-- The terrains this can appear on. The default is rocky terrains-->
@@ -595,6 +611,12 @@
 			<li>Sand</li>
 			<li>Soil</li>
 			<li>RockyDirt</li>
+			<li>Ice</li>
+			<li>SeaIce</li>
+			<li>ShallowIce</li>
+			<li>IceShallow</li>
+			<li>DeepIce</li>
+			<li>IceDeep</li>
 		</allowedTerrains>
 
 		<!-- Controls how extra clusters are added near assocaited ore-->
@@ -612,7 +634,7 @@
 			<li>DeepIce</li>
 			<li>IceDeep</li>
 		</associatedOres>
-		<nearAssociatedOreBonus>30</nearAssociatedOreBonus>
+		<nearAssociatedOreBonus>50</nearAssociatedOreBonus>
 
 		<!-- how far away it can be from needed nearby terrains-->
 		<neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
@@ -626,34 +648,37 @@
 		<mustBeUnroofed>false</mustBeUnroofed>
 
 		<!-- The maximum number of images that will be printed per square -->
-    	<maxMeshCount>8</maxMeshCount>
+    	<maxMeshCount>10</maxMeshCount>
 
 		<!-- The size range -->
         <visualSizeRange>
-        	<min>0.1</min>
-        	<max>1.1</max>
+        	<min>0.2</min>
+        	<max>1.0</max>
       	</visualSizeRange>
-      	<visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+      	<visualClustering>0.25</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
       	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-		<visualSizeVariation>0.2</visualSizeVariation>
+		<visualSizeVariation>0.3</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>3</maxMinedYeild>
 
 		<!-- The number of days it takes to grow at max growth speed -->
-		<growDays>7</growDays>
+		<growDays>5</growDays>
 
 		<!-- Chance of spawning de novo each check -->
-        <spawnProb>0.005</spawnProb>
+        <spawnProb>0.05</spawnProb>
 		
+		<!-- Can spawn on items, pawns, and plants-->
+		<canSpawnOnThings>true</canSpawnOnThings>
+
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
         	<active>true</active>
-        	<aboveMaxDecayRate>5</aboveMaxDecayRate> 
-        	<maxStable>1</maxStable> 
-        	<maxGrow>0</maxGrow> 
+        	<aboveMaxDecayRate>6</aboveMaxDecayRate> 
+        	<maxStable>5</maxStable> 
+        	<maxGrow>2</maxGrow> 
         	<idealGrow>-5</idealGrow>  
-        	<minGrow>-15</minGrow>
+        	<minGrow>-25</minGrow>
         	<minStable>-30</minStable>
         	<belowMinDecayRate>0</belowMinDecayRate>
         </tempGrowthRateModifer>
@@ -675,6 +700,7 @@
     		<graphicClass>Graphic_Random</graphicClass>
 			<color>(228,169,35)</color>
     	</graphicData>
+		<hideAtSnowDepth>0.4</hideAtSnowDepth>
 		<building>
             <isInert>false</isInert>
             <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -696,7 +722,7 @@
 		<maxClusterProbability>0.003</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
-		<minClusterSize>3</minClusterSize>
+		<minClusterSize>1</minClusterSize>
 		<maxClusterSize>10</maxClusterSize>
 
 		<!-- The range of starting sizes of individuals in clusters -->
@@ -707,7 +733,7 @@
 		<initialSizeVariation>.3</initialSizeVariation>
 
 		<!-- Reproduction and death settings -->
-		<minReproductionSize>0.7</minReproductionSize>
+		<minReproductionSize>0.8</minReproductionSize>
         <reproduceProp>0.001</reproduceProp>
         <deathProb>0.5</deathProb>
 
@@ -766,14 +792,13 @@
 
 		<!-- Controls how extra clusters are added near assocaited ore-->
 		<associatedOres>
-			<li>BigSulfurCrystal</li>
 			<li>SteamGeyser</li>
 			<li>TKKN_SteamVent</li>
 		</associatedOres>
 		<nearAssociatedOreBonus>50</nearAssociatedOreBonus>
 
 		<!-- how far away it can be from needed nearby terrains-->
-		<neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
+		<neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
 
 		<!-- If true, growth rate and initial size depends on distance from needed terrains -->
 		<neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
@@ -802,8 +827,11 @@
 		<growDays>30</growDays>
 
 		<!-- Chance of spawning de novo each check -->
-        <spawnProb>0.001</spawnProb>
+        <spawnProb>0.003</spawnProb>
 		
+		<!-- Can spawn on items, pawns, and plants-->
+		<canSpawnOnThings>true</canSpawnOnThings>
+
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
         	<active>true</active>
@@ -825,6 +853,136 @@
         	<minStable>-2</minStable>
         	<belowMinDecayRate>0</belowMinDecayRate>
         </distGrowthRateModifer>
+	</ThingDef>
+
+
+	<ThingDef ParentName="DynamicMineralBase">
+		<thingClass>Minerals.SnowDrift</thingClass>
+    	<defName>ZF_SnowDrift</defName>
+    	<label>Snow Drift</label>		
+    	<description>A wind-blown pile of snow. Hard to walk through, but pretty in a way. </description>
+		<altitudeLayer>Zone</altitudeLayer>
+		<pathCost>200</pathCost>
+    	<statBases>
+    		<MaxHitPoints>200</MaxHitPoints>
+    		<Flammability>0</Flammability>
+    		<Beauty>3</Beauty>
+    	</statBases>
+    	<graphicData>
+    		<texPath>Things/Mineral/SnowDrift</texPath>
+    		<graphicClass>Graphic_Random</graphicClass>
+    		<allowFlip>false</allowFlip>
+    		<shaderType>Transparent</shaderType>
+    		<damageData>
+        		<enabled>false</enabled> <!--  no damage marks -->
+      		</damageData>
+    	</graphicData>
+		<hideAtSnowDepth>2</hideAtSnowDepth>
+		<building>
+            <isInert>false</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+		    <isNaturalRock>true</isNaturalRock>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>SnowBlocks</mineableThing> <!-- the mine material stats are needed or meteorite system bugs -->
+			<mineableYield>25</mineableYield>
+			<mineableNonMinedEfficiency>0.0</mineableNonMinedEfficiency>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<filthLeaving></filthLeaving>
+
+		<!--How far away it can spawn from an existing location-->
+		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+		<spawnRadius>2</spawnRadius>
+
+		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+		<minClusterProbability>-0.001</minClusterProbability>
+		<maxClusterProbability>0.01</maxClusterProbability>
+
+		<!-- How  many squares each cluster will be -->
+		<minClusterSize>1</minClusterSize>
+		<maxClusterSize>10</maxClusterSize>
+
+		<!-- The range of starting sizes of individuals in clusters -->
+		<initialSizeMin>.5</initialSizeMin>
+		<initialSizeMax>1.0</initialSizeMax>
+
+		<!-- How much initial sizes of individuals randomly vary -->
+		<initialSizeVariation>.3</initialSizeVariation>
+
+		<!-- Reproduction and death settings -->
+		<minReproductionSize>.5</minReproductionSize>
+        <reproduceProp>0.02</reproduceProp>
+        <deathProb>0.8</deathProb>
+
+		<!-- The biomes this can appear in. The default is all ones known to mod-->
+		<allowedBiomes>
+		</allowedBiomes>
+			
+		<!-- The terrains this must be near to, but not necessarily on -->
+		<neededNearbyTerrains>
+		</neededNearbyTerrains>
+
+		<!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+		</allowedTerrains>
+
+        <!-- how far away it can be from needed nearby terrains-->
+		<neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
+
+		<!-- If true, growth rate and initial size depends on distance from needed terrains -->
+		<neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
+
+		<!-- Roof requirements -->
+		<mustBeUnderRoof>false</mustBeUnderRoof>
+		<mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+		<mustBeUnroofed>true</mustBeUnroofed>
+
+		<!-- The maximum number of images that will be printed per square -->
+    	<maxMeshCount>1</maxMeshCount>
+
+		<!-- The size range -->
+        <visualSizeRange>
+        	<min>0.5</min>
+        	<max>2.5</max>
+      	</visualSizeRange>
+      	<visualClustering>0.5</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+      	<visualSpread>1.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+		<visualSizeVariation>0.3</visualSizeVariation>
+
+		<!-- The amount of resource returned if the mineral is its maximum size -->
+		<maxMinedYeild>25</maxMinedYeild>
+
+		<!-- The number of days it takes to grow at max growth speed -->
+		<growDays>1</growDays>
+
+		<!-- Chance of spawning de novo each check -->
+        <spawnProb>0.1</spawnProb>
+		
+		<!-- Can spawn on items, pawns, and plants-->
+		<canSpawnOnThings>true</canSpawnOnThings>
+
+		<!-- Growth rate modifiers -->
+        <tempGrowthRateModifer>
+        	<active>true</active>
+        	<aboveMaxDecayRate>5</aboveMaxDecayRate> 
+        	<maxStable>1</maxStable> 
+        	<maxGrow>0</maxGrow> 
+        	<idealGrow>-10</idealGrow>  
+        	<minGrow>-100</minGrow>
+        	<minStable>-101</minStable>
+        	<belowMinDecayRate>0</belowMinDecayRate>
+        </tempGrowthRateModifer>
+        <rainGrowthRateModifer>
+        	<active>true</active>
+        	<aboveMaxDecayRate>0</aboveMaxDecayRate> 
+        	<maxStable>6</maxStable> 
+        	<maxGrow>5</maxGrow> 
+        	<idealGrow>2</idealGrow>  
+        	<minGrow>0.2</minGrow>
+        	<minStable>0.1</minStable>
+        	<belowMinDecayRate>1</belowMinDecayRate>
+        </rainGrowthRateModifer>
 	</ThingDef>
 
 

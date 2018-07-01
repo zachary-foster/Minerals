@@ -267,6 +267,7 @@
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
+		<hideAtSnowDepth>0.9</hideAtSnowDepth>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>

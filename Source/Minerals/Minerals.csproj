@@ -49,6 +49,7 @@
     <Compile Include="DynamicMineral.cs" />
     <Compile Include="SaltCrystal.cs" />
     <Compile Include="IceStalagmite.cs" />
+    <Compile Include="SnowDrift.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

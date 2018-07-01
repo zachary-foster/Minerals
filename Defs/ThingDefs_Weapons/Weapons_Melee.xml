@@ -12,7 +12,7 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>80</costStuffCount>
+		<costStuffCount>60</costStuffCount>
 		<costList>
 			<CutGem>5</CutGem>
 			<GoldBar>15</GoldBar>
@@ -34,20 +34,20 @@
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
-			<Bulk>1.5</Bulk>
-			<Mass>1.0</Mass>
-			<Weapon_Bulk>0.3</Weapon_Bulk>
+			<Bulk>1.0</Bulk>
+			<Mass>0.8</Mass>
+			<Weapon_Bulk>0.4</Weapon_Bulk>
 			<MeleeCounterParryBonus>2</MeleeCounterParryBonus>
 			<MaxHitPoints>120</MaxHitPoints>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
     	<equippedStatOffsets>
-    	    <MoveSpeed>-0.02</MoveSpeed>
+    	    <MoveSpeed>-0.04</MoveSpeed>
     	    <WorkSpeedGlobal>-0.03</WorkSpeedGlobal>
     	    <CookSpeed>0.2</CookSpeed>
     	    <ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
-    	    <MeleeCritChance>0.75</MeleeCritChance>
-    	    <MeleeDodgeChance>0.75</MeleeDodgeChance>
+    	    <MeleeCritChance>0.8</MeleeCritChance>
+    	    <MeleeDodgeChance>0.8</MeleeDodgeChance>
 			<SocialImpact>0.03</SocialImpact>
 			<DiplomacyPower>0.03</DiplomacyPower>
 		</equippedStatOffsets>
@@ -63,7 +63,7 @@
 	          <capacities>
 	            <li>Blunt</li>
 	          </capacities>
-	          <power>8</power>
+	          <power>7</power>
 	          <cooldownTime>1.2</cooldownTime>
 	  		<armorPenetration>0.1</armorPenetration>
 	  		<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
@@ -73,7 +73,7 @@
 	          <capacities>
 	            <li>Cut</li>
 	          </capacities>
-	          <power>12</power>
+	          <power>13</power>
 	          <cooldownTime>1.0</cooldownTime>
 	  		<armorPenetration>0.15</armorPenetration>
 	  		<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
@@ -83,7 +83,7 @@
 	          <capacities>
 	            <li>Stab</li>
 	          </capacities>
-	          <power>15</power>
+	          <power>16</power>
 	          <cooldownTime>1.0</cooldownTime>
 	  		<armorPenetration>0.2</armorPenetration>
 	  		<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
@@ -137,7 +137,7 @@
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
 		<costList>
-			<CutGem>10</CutGem>
+			<CutGem>8</CutGem>
 			<GoldBar>20</GoldBar>
 		</costList>
 		<recipeMaker>
@@ -233,13 +233,13 @@
 	    <z>0</z>
 	  </aimedWeaponPositionOffset>
 	  <firstHandPosition>
-	    <x>-0.3691824</x>
+	    <x>-0.36</x>
 	    <y>0.005</y>
-	    <z>0.06918238</z>
+	    <z>0.07</z>
 	  </firstHandPosition>
 	  <secondHandPosition>
-	    <x>-0.3522013</x>
-	    <y>-0.005</y>
+	    <x>0</x>
+	    <y>0</y>
 	    <z>0</z>
 	  </secondHandPosition>
 	</WeaponExtensionDef>
@@ -259,7 +259,7 @@
 		</stuffCategories>
 		<costStuffCount>130</costStuffCount>
 		<costList>
-			<CutGem>15</CutGem>
+			<CutGem>12</CutGem>
 			<GoldBar>30</GoldBar>
 		</costList>
 		<recipeMaker>
@@ -291,9 +291,9 @@
 			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 			<MeleeCritChance>1</MeleeCritChance>
 			<MeleeParryChance>0.6</MeleeParryChance>
-			<SocialImpact>0.05</SocialImpact>
-			<DiplomacyPower>0.05</DiplomacyPower>
-			<MentalBreakThreshold>-0.01</MentalBreakThreshold>
+			<SocialImpact>0.03</SocialImpact>
+			<DiplomacyPower>0.03</DiplomacyPower>
+			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<techLevel>Industrial</techLevel>
 		<weaponTags>
@@ -344,9 +344,9 @@
 	  <weapon>MeleeWeapon_RoyalBattleAxe</weapon>
 	  <attackAngleOffset IsNull="True" />
 	  <weaponPositionOffset>
-	    <x>0.02515723</x>
+	    <x>0.05</x>
 	    <y>0</y>
-	    <z>0.081761</z>
+	    <z>0.1</z>
 	  </weaponPositionOffset>
 	  <aimedWeaponPositionOffset>
 	    <x>0</x>
@@ -354,14 +354,14 @@
 	    <z>0</z>
 	  </aimedWeaponPositionOffset>
 	  <firstHandPosition>
-	    <x>-0.2012579</x>
+	    <x>-0.13</x>
 	    <y>0.005</y>
-	    <z>-0.1761006</z>
+	    <z>-0.1</z>
 	  </firstHandPosition>
 	  <secondHandPosition>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>0</z>
+	    <x>-0.36</x>
+	    <y>0.005</y>
+	    <z>-0.3</z>
 	  </secondHandPosition>
 	</WeaponExtensionDef>
 
@@ -578,7 +578,7 @@
 	  <firstHandPosition>
 	    <x>-0.01257862</x>
 	    <y>0.005</y>
-	    <z>-0.1572327</z>
+	    <z>-0.05</z>
 	  </firstHandPosition>
 	  <secondHandPosition>
 	    <x>0</x>

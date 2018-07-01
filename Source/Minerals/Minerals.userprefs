@@ -1,24 +1,31 @@
 ﻿<Properties StartupItem="Minerals.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Defs/ThingDefs_Weapons/Weapons_Melee.xml">
     <Files>
-      <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="1" Column="1" />
-      <File FileName="../../../../Hardcore-SK/Mods/Core/Defs/ItemCollectionGeneratorDefs/ItemCollectionGenerators_Specific.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" />
-      <File FileName="initialization.cs" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="26" Column="26" />
-      <File FileName="StaticMineral.cs" Line="23" Column="23" />
-      <File FileName="DynamicMineral.cs" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMineralBase.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="1" Column="1" />
-      <File FileName="harmonyPatching.cs" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Resources/Item_Resource_Gems.xml" Line="1" Column="1" />
-      <File FileName="SaltCrystal.cs" Line="1" Column="1" />
-      <File FileName="../../Defs/RecipeDefs/Recipe_Gems.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingDefs_Weapons/Weapons_Melee.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/Misc/StuffCategoryDefs/StuffCategories.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/CombatExtended/Ammo/Neolithic/Arrows.xml" Line="1" Column="1" />
-      <File FileName="IceStalagmite.cs" Line="1" Column="1" />
+      <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../../../../Hardcore-SK/Mods/Core/Defs/ItemCollectionGeneratorDefs/ItemCollectionGenerators_Specific.xml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="initialization.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="32" Column="32" NotebookId="1" />
+      <File FileName="StaticMineral.cs" Line="57" Column="57" NotebookId="1" />
+      <File FileName="DynamicMineral.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMineralBase.xml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="3" Column="3" NotebookId="1" />
+      <File FileName="harmonyPatching.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../../Defs/ThingsDefs_Resources/Item_Resource_Gems.xml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="SaltCrystal.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../../Defs/RecipeDefs/Recipe_Gems.xml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../../Defs/ThingDefs_Weapons/Weapons_Melee.xml" Line="24" Column="24" NotebookId="1" />
+      <File FileName="../../Defs/Misc/StuffCategoryDefs/StuffCategories.xml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../../Defs/CombatExtended/Ammo/Neolithic/Arrows.xml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="IceStalagmite.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="3065" Y="24" Width="1015" Height="1896">
+        <Files>
+          <File FileName="../../../../Hardcore-SK/Mods/Core_SK/Defs/ThingDefs_Weapons/Weapons_Melee_Medieval.xml" Line="58" Column="58" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
