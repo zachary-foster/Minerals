@@ -200,7 +200,7 @@ namespace Minerals
             this.size += GrowthThisTick * 2000; // dont know why 2000, just imitating what plants do
 
             // Try to reproduce
-            if (GrowthThisTick > 0 && this.size > this.attributes.minReproductionSize && Rand.Range(0f, 1f) < this.attributes.reproduceProp)
+            if (GrowthThisTick > 0 && this.size > this.attributes.minReproductionSize && Rand.Range(0f, 1f) < this.attributes.reproduceProp * this.GrowthRate)
             {
                 this.TryReproduce();
             }
@@ -445,7 +445,7 @@ namespace Minerals
 
                     // Try to spawn at that location
                     StaticMineral.TrySpawnAt(aPos, mineralType, map);
-                    Log.Message(mineralType.defName + " spawned at " + aPos);
+                    // Log.Message(mineralType.defName + " spawned at " + aPos);
 
                 }
                 

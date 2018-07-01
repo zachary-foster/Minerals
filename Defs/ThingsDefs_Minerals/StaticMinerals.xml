@@ -727,7 +727,7 @@
 
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-		<spawnRadius>2</spawnRadius>
+		<spawnRadius>1</spawnRadius>
 
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>-0.001</minClusterProbability>
