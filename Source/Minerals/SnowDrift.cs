@@ -21,7 +21,23 @@ namespace Minerals
             float rate = 0f;
             float baseRate = DynamicMineral.GrowthRateAtPos(myDef, aPosition, aMap);
             if (baseRate < 0) {
-                return Math.Abs(baseRate);
+                // Melt faster in water
+                if (aMap.terrainGrid.TerrainAt(aPosition).defName.Contains("Water"))
+                {
+                    if (aMap.terrainGrid.TerrainAt(aPosition).defName.Contains("Moving"))
+                    {
+
+                        return Math.Abs(baseRate) * 20; // melt even faster in moving water
+                    }
+                    else
+                    {
+                        return Math.Abs(baseRate) * 5;
+                    }
+                }
+                else
+                {
+                    return Math.Abs(baseRate);
+                }
             } else {
                 rate = aPosition.GetSnowDepth(aMap);
             }
@@ -54,7 +70,7 @@ namespace Minerals
                 if (thing is Plant && thing.def.altitudeLayer == AltitudeLayer.Building)
                 {
 
-                    rate = rate * (1 - ((Plant) thing).Growth);
+                    rate = rate * (1 - ((Plant) thing).Growth) * 0.5f;
                 }
 
             }
@@ -75,7 +91,7 @@ namespace Minerals
                 rate = rate * 5;
             }
 
-            return rate - 0.05f;
+            return rate;
         }
 
         public override float GrowthRate

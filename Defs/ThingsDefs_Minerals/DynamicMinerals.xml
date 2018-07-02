@@ -57,7 +57,7 @@
 		<initialSizeVariation>.4</initialSizeVariation>
 
 		<!-- Reproduction and death settings -->
-		<minReproductionSize>0.7</minReproductionSize>
+		<minReproductionSize>0.5</minReproductionSize>
         <reproduceProp>0.001</reproduceProp>
         <deathProb>0.5</deathProb>
 
@@ -126,13 +126,13 @@
 		<growDays>15</growDays>
 
 		<!-- Chance of spawning de novo each tick -->
-        <spawnProb>0.0001</spawnProb>
+        <spawnProb>0.0002</spawnProb>
 		
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
         	<active>true</active>
         	<aboveMaxDecayRate>5</aboveMaxDecayRate> 
-        	<maxStable>5</maxStable> 
+        	<maxStable>3</maxStable> 
         	<maxGrow>0</maxGrow> 
         	<idealGrow>-10</idealGrow>  
         	<minGrow>-80</minGrow>
@@ -145,7 +145,7 @@
         	<maxStable>99999</maxStable> 
         	<maxGrow>999</maxGrow> 
         	<idealGrow>1</idealGrow>  
-        	<minGrow>0.7</minGrow>
+        	<minGrow>0.6</minGrow>
         	<minStable>-99999</minStable>
         	<belowMinDecayRate>0</belowMinDecayRate>
         </lightGrowthRateModifer>
@@ -420,18 +420,6 @@
 
 		<!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>Granite_Rough</li>
-			<li>Marble_Rough</li>
-			<li>Limestone_Rough</li>
-			<li>Sandstone_Rough</li>
-			<li>Slate_Rough</li>
-			<li>TKKN_LavaRock_Rough</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>RockyDirt</li>
-			<li>TKKN_SandBeachWetSalt</li>
-			<li>TKKN_SaltField</li>
 		</allowedTerrains>
 
 		<!-- Controls how extra clusters are added near assocaited ore-->
@@ -568,8 +556,8 @@
 		<initialSizeVariation>.2</initialSizeVariation>
 
 		<!-- Reproduction and death settings -->
-		<minReproductionSize>0.8</minReproductionSize>
-        <reproduceProp>0.005</reproduceProp>
+		<minReproductionSize>0.9</minReproductionSize>
+        <reproduceProp>0.001</reproduceProp>
         <deathProb>0.1</deathProb>
 
 
@@ -673,10 +661,10 @@
 		<maxMinedYeild>3</maxMinedYeild>
 
 		<!-- The number of days it takes to grow at max growth speed -->
-		<growDays>5</growDays>
+		<growDays>10</growDays>
 
 		<!-- Chance of spawning de novo each check -->
-        <spawnProb>0.2</spawnProb>
+        <spawnProb>0.25</spawnProb>
 		
 		<!-- Can spawn on items, pawns, and plants-->
 		<canSpawnOnThings>true</canSpawnOnThings>
@@ -686,11 +674,11 @@
         	<active>true</active>
         	<aboveMaxDecayRate>6</aboveMaxDecayRate> 
         	<maxStable>5</maxStable> 
-        	<maxGrow>2</maxGrow> 
-        	<idealGrow>-5</idealGrow>  
-        	<minGrow>-25</minGrow>
-        	<minStable>-30</minStable>
-        	<belowMinDecayRate>0</belowMinDecayRate>
+        	<maxGrow>0</maxGrow> 
+        	<idealGrow>-3</idealGrow>  
+        	<minGrow>-15</minGrow>
+        	<minStable>-20</minStable>
+        	<belowMinDecayRate>0.1</belowMinDecayRate>
         </tempGrowthRateModifer>
 	</ThingDef>
 
@@ -786,18 +774,6 @@
 
 		<!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>Granite_Rough</li>
-			<li>Marble_Rough</li>
-			<li>Limestone_Rough</li>
-			<li>Sandstone_Rough</li>
-			<li>Slate_Rough</li>
-			<li>TKKN_LavaRock</li>
-			<li>TKKN_LavaRock_Rough</li>
-			<li>TKKN_LavaRock_RoughHewn</li>
-			<li>Gravesl</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>RockyDirt</li>
 		</allowedTerrains>
 
 		<!-- Controls how extra clusters are added near assocaited ore-->
@@ -837,7 +813,7 @@
 		<growDays>30</growDays>
 
 		<!-- Chance of spawning de novo each check -->
-        <spawnProb>0.003</spawnProb>
+        <spawnProb>0.005</spawnProb>
 		
 		<!-- Can spawn on items, pawns, and plants-->
 		<canSpawnOnThings>true</canSpawnOnThings>
@@ -911,7 +887,7 @@
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
-		<maxClusterSize>20</maxClusterSize>
+		<maxClusterSize>40</maxClusterSize>
 
 		<!-- The range of starting sizes of individuals in clusters -->
 		<initialSizeMin>.5</initialSizeMin>
@@ -921,8 +897,8 @@
 		<initialSizeVariation>.3</initialSizeVariation>
 
 		<!-- Reproduction and death settings -->
-		<minReproductionSize>.5</minReproductionSize>
-        <reproduceProp>0.02</reproduceProp>
+		<minReproductionSize>.8</minReproductionSize>
+        <reproduceProp>0.03</reproduceProp>
         <deathProb>0.8</deathProb>
 
 		<!-- The biomes this can appear in. The default is all ones known to mod-->
@@ -958,7 +934,7 @@
       	</visualSizeRange>
       	<visualClustering>0.7</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
       	<visualSpread>1.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-		<visualSizeVariation>0.3</visualSizeVariation>
+		<visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>25</maxMinedYeild>
@@ -967,7 +943,7 @@
 		<growDays>0.5</growDays>
 
 		<!-- Chance of spawning de novo each check -->
-        <spawnProb>0.2</spawnProb>
+        <spawnProb>0.25</spawnProb>
 		
 		<!-- Can spawn on items, pawns, and plants-->
 		<canSpawnOnThings>true</canSpawnOnThings>
@@ -975,13 +951,13 @@
 		<!-- Growth rate modifiers -->
         <tempGrowthRateModifer>
         	<active>true</active>
-        	<aboveMaxDecayRate>2</aboveMaxDecayRate> 
+        	<aboveMaxDecayRate>1.5</aboveMaxDecayRate> 
         	<maxStable>2</maxStable> 
         	<maxGrow>1</maxGrow> 
-        	<idealGrow>-3</idealGrow>  
-        	<minGrow>-50</minGrow>
-        	<minStable>-60</minStable>
-        	<belowMinDecayRate>1</belowMinDecayRate>
+        	<idealGrow>-1</idealGrow>  
+        	<minGrow>-80</minGrow>
+        	<minStable>-90</minStable>
+        	<belowMinDecayRate>0</belowMinDecayRate>
         </tempGrowthRateModifer>
         <rainGrowthRateModifer>
         	<active>true</active>
@@ -991,8 +967,18 @@
         	<idealGrow>2</idealGrow>  
         	<minGrow>0.2</minGrow>
         	<minStable>0.1</minStable>
-        	<belowMinDecayRate>2</belowMinDecayRate>
+        	<belowMinDecayRate>5</belowMinDecayRate>
         </rainGrowthRateModifer>
+        <fertGrowthRateModifer>
+        	<active>true</active>
+        	<aboveMaxDecayRate>0</aboveMaxDecayRate> 
+        	<maxStable>6</maxStable> 
+        	<maxGrow>5</maxGrow> 
+        	<idealGrow>1.2</idealGrow>  
+        	<minGrow>-1</minGrow>
+        	<minStable>-2</minStable>
+        	<belowMinDecayRate>0</belowMinDecayRate>
+        </fertGrowthRateModifer>
 	</ThingDef>
 
 

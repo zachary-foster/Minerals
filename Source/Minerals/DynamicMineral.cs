@@ -430,13 +430,6 @@ namespace Minerals
                         }
                     }
 
-                    //Log.Message("GrowthRateAtPos: " + DynamicMineral.GrowthRateAtPos(mineralType, aPos, map));
-                    // Dont try to place on invlaid terrain
-                    if (! StaticMineral.IsTerrainOkAt(mineralType, map, aPos))
-                    {
-                        continue;
-                    }
-
                     // Dont always spawn if growth rate is not good
                     if (Rand.Range(0f, 1f) > DynamicMineral.GrowthRateAtPos(mineralType, aPos, map))
                     {
@@ -445,7 +438,6 @@ namespace Minerals
 
                     // Try to spawn at that location
                     StaticMineral.TrySpawnAt(aPos, mineralType, map);
-                    // Log.Message(mineralType.defName + " spawned at " + aPos);
 
                 }
                 

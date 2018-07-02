@@ -50,6 +50,7 @@
     <Compile Include="SaltCrystal.cs" />
     <Compile Include="IceStalagmite.cs" />
     <Compile Include="SnowDrift.cs" />
+    <Compile Include="FrozenResource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

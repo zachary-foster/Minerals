@@ -161,8 +161,20 @@
         </ThingDef>
 
 
+       <ThingDef Name="FrozenResource" ParentName="ResourceBase" Class="Minerals.ThingDef_FrozenResource" Abstract="True">
+				<thingClass>Minerals.FrozenResource</thingClass>
+                <useHitPoints>true</useHitPoints>
+                <stackLimit>75</stackLimit>
+                <thingCategories>
+                        <li>FrozenBuildingMaterial</li>
+                </thingCategories>
+                <techLevel>Neolithic</techLevel>
+                <soundDrop>ChunkRock_Drop</soundDrop>
+                <tickerType>Rare</tickerType>
+       </ThingDef>
 
-       <ThingDef ParentName="ResourceBase">
+
+       <ThingDef ParentName="FrozenResource">
                 <defName>SnowBlocks</defName>
                 <label>Snow Blocks</label>
                 <description>Hunks of compacted snow.</description> 
@@ -171,20 +183,15 @@
                         <graphicClass>Graphic_StackCount</graphicClass>
  						<drawSize>(0.5,0.5)</drawSize>
                 </graphicData>
-                <soundDrop>ChunkRock_Drop</soundDrop>
-                <useHitPoints>false</useHitPoints>
                 <statBases>
+                    	<MaxHitPoints>50</MaxHitPoints>
                         <MarketValue>0.1</MarketValue>
                         <DeteriorationRate>0</DeteriorationRate>
                         <Flammability>0</Flammability>
                         <Mass>1</Mass>
                         <Beauty>0</Beauty>
+                        <DeteriorationRate>10</DeteriorationRate>
                 </statBases>
-                <stackLimit>75</stackLimit>
-                <thingCategories>
-                        <li>FrozenBuildingMaterial</li>
-                </thingCategories>
-                <techLevel>Neolithic</techLevel>
                 <stuffProps>
                         <stuffAdjective>snow</stuffAdjective>
                         <statFactors>
@@ -212,6 +219,99 @@
                 </stuffProps>
         </ThingDef>
 
+
+       <ThingDef ParentName="FrozenResource">
+                <defName>IceBlocks</defName>
+                <label>Ice Blocks</label>
+                <description>Blocks of ice.</description> 
+                <graphicData>
+                        <texPath>Things/Item/Resource/IceBlock</texPath>
+                        <graphicClass>Graphic_StackCount</graphicClass>
+ 						<drawSize>(0.6,0.6)</drawSize>
+						<color>(250,250,250)</color>
+                </graphicData>
+                <statBases>
+                    	<MaxHitPoints>100</MaxHitPoints>
+                        <MarketValue>0.2</MarketValue>
+                        <DeteriorationRate>0</DeteriorationRate>
+                        <Flammability>0</Flammability>
+                        <Mass>1</Mass>
+                        <Beauty>1</Beauty>
+                        <DeteriorationRate>10</DeteriorationRate>
+                </statBases>
+                <stuffProps>
+                        <stuffAdjective>ice</stuffAdjective>
+                        <statFactors>
+                                <MaxHitPoints>0.3</MaxHitPoints>
+                                <MarketValue>0.5</MarketValue>
+                                <Flammability>0</Flammability>
+                                <Beauty>2</Beauty>
+                                <WorkToMake>0.5</WorkToMake>
+                                <WorkToBuild>0.8</WorkToBuild>
+                                <DoorOpenSpeed>0.5</DoorOpenSpeed>
+                                <BedRestEffectiveness>0.5</BedRestEffectiveness>
+                                <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
+                                <MeleePenetrationFactor>0.5</MeleePenetrationFactor>
+                                <Mass>1</Mass>
+                        </statFactors>
+                  		<statOffsets>
+                        	<WorkToMake>80</WorkToMake>
+                        	<WorkToBuild>80</WorkToBuild>
+                        	<Beauty>2</Beauty>
+                  		</statOffsets>
+                        <categories>
+                                <li>FrozenBuildingMaterial</li>
+                        </categories>
+                        <commonality>0.05</commonality>
+                </stuffProps>
+        </ThingDef>
+
+
+       <ThingDef ParentName="FrozenResource">
+                <defName>PykreteBlocks</defName>
+                <label>Pykrete Blocks</label>
+                <description>Blocks of ice.</description> 
+                <graphicData>
+                        <texPath>Things/Item/Resource/IceBlock</texPath>
+                        <graphicClass>Graphic_StackCount</graphicClass>
+ 						<drawSize>(0.6,0.6)</drawSize>
+						<color>(134,108,70)</color>
+                </graphicData>
+                <statBases>
+                    	<MaxHitPoints>200</MaxHitPoints>
+                        <MarketValue>0.3</MarketValue>
+                        <DeteriorationRate>0</DeteriorationRate>
+                        <Flammability>0</Flammability>
+                        <Mass>1</Mass>
+                        <Beauty>0</Beauty>
+                        <DeteriorationRate>10</DeteriorationRate>
+                </statBases>
+                <stuffProps>
+                        <stuffAdjective>ice</stuffAdjective>
+                        <statFactors>
+                                <MaxHitPoints>0.6</MaxHitPoints>
+                                <MarketValue>0.5</MarketValue>
+                                <Flammability>0</Flammability>
+                                <Beauty>0</Beauty>
+                                <WorkToMake>0.8</WorkToMake>
+                                <WorkToBuild>0.9</WorkToBuild>
+                                <DoorOpenSpeed>0.5</DoorOpenSpeed>
+                                <BedRestEffectiveness>0.5</BedRestEffectiveness>
+                                <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
+                                <MeleePenetrationFactor>0.5</MeleePenetrationFactor>
+                                <Mass>1</Mass>
+                        </statFactors>
+                  		<statOffsets>
+                        	<WorkToMake>100</WorkToMake>
+                        	<WorkToBuild>100</WorkToBuild>
+                        	<Beauty>0</Beauty>
+                  		</statOffsets>
+                        <categories>
+                                <li>FrozenBuildingMaterial</li>
+                        </categories>
+                        <commonality>0.05</commonality>
+                </stuffProps>
+        </ThingDef>
 
 
 </Defs>
