@@ -1,5 +1,5 @@
 ﻿<Properties StartupItem="Minerals.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="harmonyPatching.cs">
     <Files>
       <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="1" Column="1" NotebookId="2" />
       <File FileName="../../../../Hardcore-SK/Mods/Core/Defs/ItemCollectionGeneratorDefs/ItemCollectionGenerators_Specific.xml" Line="1" Column="1" NotebookId="2" />
@@ -16,9 +16,7 @@
       <File FileName="../../Defs/ThingDefs_Weapons/Weapons_Melee.xml" Line="1" Column="1" NotebookId="2" />
       <File FileName="../../Defs/Misc/StuffCategoryDefs/StuffCategories.xml" Line="1" Column="1" NotebookId="2" />
       <File FileName="../../Defs/CombatExtended/Ammo/Neolithic/Arrows.xml" Line="1" Column="1" NotebookId="2" />
-      <File FileName="IceStalagmite.cs" Line="17" Column="17" NotebookId="2" />
-      <File FileName="SnowDrift.cs" Line="22" Column="22" NotebookId="2" />
-      <File FileName="FrozenResource.cs" Line="1" Column="1" NotebookId="2" />
+      <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" NotebookId="2" />
     </Files>
     <FloatingWindows>
       <FloatingWindow WindowId="1" X="3065" Y="24" Width="1015" Height="1896">
@@ -35,7 +33,9 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/media/zachary/external_ssd/files/personal/projects/Hardcore-SK/Mods/Core_SK/Defs/ThingDefs_Weapons/Weapons_Melee_Medieval.xml" line="16" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
