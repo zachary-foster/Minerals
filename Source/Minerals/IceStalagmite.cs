@@ -21,7 +21,7 @@ namespace Minerals
             Predicate<IntVec3> validator = (IntVec3 c) => c.Roofed(map);
             IntVec3 unused;
 
-            if (! position.Roofed(map) && CellFinder.TryFindRandomCellNear(position, map, 1, validator, out unused))
+            if (CellFinder.TryFindRandomCellNear(position, map, 1, validator, out unused))
             {
                 return true;
             }

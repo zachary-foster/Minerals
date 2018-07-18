@@ -407,54 +407,6 @@ namespace Minerals
         }
 
 
-        // ======= Map initialization ======= //
-
-
-        public static void InitNewMap(Map map, ThingDef_StaticMineral myDef)
-        {
-            // Print to log
-
-            // Check that it is a valid biome
-            if (! StaticMineral.CanSpawnInBiome(myDef, map))
-            {
-                Log.Message("Minerals: " + myDef.defName + " cannot be added to this biome");
-                return;
-            }
-
-            // Select probability of spawing for this map
-            float spawnProbability = Rand.Range(myDef.minClusterProbability, myDef.maxClusterProbability) * StaticMineral.globalMineralAbundance;
-
-            // Find spots to spawn it
-            if (spawnProbability > 0)
-            {
-                Log.Message("Minerals: " + myDef.defName + " will be spawned at a probability of " + spawnProbability);
-                IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
-                foreach (IntVec3 current in allCells)
-                {
-                    // Randomly spawn some clusters
-                    if (current.InBounds(map) && StaticMineral.CanSpawnAt(myDef, map, current) && Rand.Range(0f, 1f) < spawnProbability)
-                    {
-                        StaticMineral.SpawnCluster(map, current, myDef);
-                    }
-
-                    // Spawn near their assocaited ore
-                    if (StaticMineral.PosIsAssociatedOre(myDef, map, current))
-                    {
-                        IntVec3 dest;
-                        if (StaticMineral.TryFindReproductionDestination(map, current, myDef, out dest) && Rand.Range(0f, 1f) < spawnProbability * myDef.nearAssociatedOreBonus)
-                        {
-                            StaticMineral.SpawnCluster(map, dest, myDef);
-                        }
-                    }
-                }
-            }
-            else
-            {
-                Log.Message("Minerals: " + myDef.defName + " will not be spawned in this map.");
-            }
-
-
-        }
 
         // ======= Yeilding resources ======= //
 
@@ -697,6 +649,55 @@ namespace Minerals
 
         // If it can spawn on other things
         public bool canSpawnOnThings = false;
+
+        // ======= Map initialization ======= //
+
+
+        public virtual void InitNewMap(Map map, float scaling = 1)
+        {
+            // Print to log
+
+            // Check that it is a valid biome
+            if (! StaticMineral.CanSpawnInBiome(this, map))
+            {
+                Log.Message("Minerals: " + this.defName + " cannot be added to this biome");
+                return;
+            }
+
+            // Select probability of spawing for this map
+            float spawnProbability = Rand.Range(this.minClusterProbability, this.maxClusterProbability) * StaticMineral.globalMineralAbundance * scaling;
+
+            // Find spots to spawn it
+            if (spawnProbability > 0)
+            {
+                Log.Message("Minerals: " + this.defName + " will be spawned at a probability of " + spawnProbability);
+                IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
+                foreach (IntVec3 current in allCells)
+                {
+                    // Randomly spawn some clusters
+                    if (current.InBounds(map) && StaticMineral.CanSpawnAt(this, map, current) && Rand.Range(0f, 1f) < spawnProbability)
+                    {
+                        StaticMineral.SpawnCluster(map, current, this);
+                    }
+
+                    // Spawn near their assocaited ore
+                    if (StaticMineral.PosIsAssociatedOre(this, map, current))
+                    {
+                        IntVec3 dest;
+                        if (StaticMineral.TryFindReproductionDestination(map, current, this, out dest) && Rand.Range(0f, 1f) < spawnProbability * this.nearAssociatedOreBonus)
+                        {
+                            StaticMineral.SpawnCluster(map, dest, this);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Log.Message("Minerals: " + this.defName + " will not be spawned in this map.");
+            }
+
+
+        }
     }
 
     /// <summary>

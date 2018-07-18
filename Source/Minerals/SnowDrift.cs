@@ -27,11 +27,11 @@ namespace Minerals
                     if (aMap.terrainGrid.TerrainAt(aPosition).defName.Contains("Moving"))
                     {
 
-                        return Math.Abs(baseRate) * 20; // melt even faster in moving water
+                        return Math.Abs(baseRate) * 30; // melt even faster in moving water
                     }
                     else
                     {
-                        return Math.Abs(baseRate) * 5;
+                        return Math.Abs(baseRate) * 10;
                     }
                 }
                 else
@@ -106,8 +106,41 @@ namespace Minerals
         {
             return DynamicMineral.GrowthRateAtPos(myDef, aPosition, aMap) * grothRateFactor(myDef, aPosition, aMap);
         }
+            
+    }  
 
-    }       
+
+
+    /// <summary>
+    /// ThingDef_SnowDrift class.
+    /// </summary>
+    /// <author>zachary-foster</author>
+    /// <permission>No restrictions</permission>
+    public class ThingDef_SnowDrift : ThingDef_DynamicMineral
+    {
+        public override void InitNewMap(Map map, float scaling = 1)
+        {
+            float snowProb = 1f;
+            const float minTemp = 10f;
+
+            // Only spawn snow if it is cold out
+            if (map.mapTemperature.SeasonalTemp < minTemp)
+            {
+                snowProb = snowProb * (float)Math.Sqrt(minTemp - map.mapTemperature.SeasonalTemp) / 5;
+            }
+            else
+            {
+                snowProb = 0f;
+            }
+
+            // Scale by rain amount
+            snowProb = snowProb * map.TileInfo.rainfall / 1000;
+
+            Log.Message("Minerals: snow scaling due to temp/precip: " + snowProb);
+            base.InitNewMap(map, snowProb);
+        }
+    }
+
 
 }
 

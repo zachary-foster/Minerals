@@ -278,7 +278,7 @@
 						<color>(134,108,70)</color>
                 </graphicData>
                 <statBases>
-                    	<MaxHitPoints>200</MaxHitPoints>
+                    	<MaxHitPoints>300</MaxHitPoints>
                         <MarketValue>0.3</MarketValue>
                         <DeteriorationRate>0</DeteriorationRate>
                         <Flammability>0</Flammability>
@@ -287,13 +287,13 @@
                         <DeteriorationRate>10</DeteriorationRate>
                 </statBases>
                 <stuffProps>
-                        <stuffAdjective>ice</stuffAdjective>
+                        <stuffAdjective>pykrete</stuffAdjective>
                         <statFactors>
-                                <MaxHitPoints>0.6</MaxHitPoints>
+                                <MaxHitPoints>1.0</MaxHitPoints>
                                 <MarketValue>0.5</MarketValue>
                                 <Flammability>0</Flammability>
                                 <Beauty>0</Beauty>
-                                <WorkToMake>0.8</WorkToMake>
+                                <WorkToMake>1.0</WorkToMake>
                                 <WorkToBuild>0.9</WorkToBuild>
                                 <DoorOpenSpeed>0.5</DoorOpenSpeed>
                                 <BedRestEffectiveness>0.5</BedRestEffectiveness>
@@ -313,5 +313,45 @@
                 </stuffProps>
         </ThingDef>
 
+        <ThingDef ParentName="WallBase">
+				<thingClass>Minerals.FrozenResource</thingClass>
+                <defName>FrozenWall</defName>
+                <label>Frozen Wall</label>
+                <description>An impassable wall made of frozen material. It will melt when above freezing. It is capable of holding up a roof.</description>
+                <graphicData>
+                  <texPath>Things/Building/Linked/Wall</texPath>
+                  <graphicClass>Graphic_Appearances</graphicClass>
+                  <linkType>CornerFiller</linkType>
+                  <linkFlags>
+                        <li>Wall</li>
+                        <li>Rock</li>
+                  </linkFlags>
+                  <damageData>
+                        <cornerTL>Damage/Corner</cornerTL>
+                        <cornerTR>Damage/Corner</cornerTR>
+                        <cornerBL>Damage/Corner</cornerBL>
+                        <cornerBR>Damage/Corner</cornerBR>
+                        <edgeTop>Damage/Edge</edgeTop>
+                        <edgeBot>Damage/Edge</edgeBot>
+                        <edgeLeft>Damage/Edge</edgeLeft>
+                        <edgeRight>Damage/Edge</edgeRight>
+                  </damageData>
+                </graphicData>
+				<filthLeaving></filthLeaving>
+    			<tickerType>Rare</tickerType>
+                <blueprintGraphicData>
+                  <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+                </blueprintGraphicData>
+                <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+                <statBases>
+                        <MaxHitPoints>300</MaxHitPoints>
+                        <WorkToBuild>200</WorkToBuild>
+                        <Flammability>0.0</Flammability>
+                </statBases>
+                <stuffCategories>
+                        <li>FrozenBuildingMaterial</li>
+                </stuffCategories>
+                <costStuffCount>6</costStuffCount>
+        </ThingDef>
 
 </Defs>

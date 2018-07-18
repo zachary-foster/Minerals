@@ -33,15 +33,22 @@ namespace Minerals
             float temp = this.Position.GetTemperature(this.Map);
             if (temp > 0)
             {
-                float meltDamage = temp / 10;
-                base.TakeDamage(new DamageInfo(DamageDefOf.Rotting, (int) meltDamage, -1, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
+                float meltDamage = temp / 20;
+                if (meltDamage < 1 & Rand.Range(0f, 1f) < meltDamage)
+                {
+                    base.TakeDamage(new DamageInfo(DamageDefOf.Rotting, 1, -1, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
+                }
+                else
+                {
+                    base.TakeDamage(new DamageInfo(DamageDefOf.Rotting, (int) Math.Floor(meltDamage), -1, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
+
+                }
             }
 
             base.TickRare();
         }
 
     }       
-
 
 
     /// <summary>
@@ -53,5 +60,4 @@ namespace Minerals
     {
 
     }
-
 }
