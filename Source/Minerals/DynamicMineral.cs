@@ -27,92 +27,6 @@ namespace Minerals
         }
 
 
-        // ======= Growth rate factors ======= //
-
-
-        public float getModValue(growthRateModifier mod) 
-        {
-            // If growth rate factor is not needed, do not calculate
-            if (mod == null | !mod.active)
-            {
-                return 0f;
-            }
-            else
-            {
-                return mod.value(this);
-            }
-        }
-
-        public static float getModValueAtPos(growthRateModifier mod, ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap) 
-        {
-            // If growth rate factor is not needed, do not calculate
-            if (mod == null | !mod.active)
-            {
-                return 0f;
-            }
-            else
-            {
-                return mod.value(myDef, aPosition, aMap);
-            }
-        }
-
-
-        public static float growthRateFactor(growthRateModifier mod, float myValue)
-        {
-            // Growth rate factor not defined
-            if (mod == null)
-            {
-                return 1f;
-            }
-
-            // Check that the growth rate modifier is in use
-            if (! mod.active)
-            {
-                return 1f;
-            }
-                
-            // decays if too high or low
-            float stableRangeSize = mod.maxStable - mod.minStable;
-            if (myValue > mod.maxStable) 
-            {
-                return - mod.aboveMaxDecayRate * (myValue - mod.maxStable) / stableRangeSize;
-            } 
-            if (myValue < mod.minStable) 
-            {
-                return - mod.belowMinDecayRate * (mod.minStable - myValue) / stableRangeSize;
-            }
-            
-            // does not grow if too high or low
-            if (myValue < mod.minGrow || myValue > mod.maxGrow) 
-            {
-                return 0f;
-            } 
-            
-            // slowed growth if too high or low
-            if (myValue < mod.idealGrow)
-            {
-                return 1f - ((mod.idealGrow - myValue) / (mod.idealGrow - mod.minGrow));
-            }
-            else 
-            {
-                return 1f - ((myValue - mod.idealGrow) / (mod.maxGrow - mod.idealGrow));
-            }
-        }
-
-        public List<float> allGrowthRateFactors 
-        {
-            get
-            {
-                return this.attributes.allRateModifiers.Select(mod => growthRateFactor(mod, getModValue(mod))).ToList();
-            }
-        }
-
-        public static List<float> allGrowthRateFactorsAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap) 
-        {
-
-            return myDef.allRateModifiers.Select(mod => growthRateFactor(mod, getModValueAtPos(mod, myDef, aPosition, aMap))).ToList();
-
-        }
 
 
 
@@ -142,29 +56,6 @@ namespace Minerals
             }
         }
 
-        public static float GrowthRateAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap) 
-        {
-            // Get growth rate factors
-            List<float> rateFactors = allGrowthRateFactorsAtPos(myDef, aPosition, aMap);
-            List<float> positiveFactors = rateFactors.FindAll(fac => fac >= 0);
-            List<float> negativeFactors = rateFactors.FindAll(fac => fac < 0);
-
-            // if any factors are negative, add them together and ignore positive factors
-            if (negativeFactors.Count > 0)
-            {
-                return negativeFactors.Sum();
-            }
-
-            // if all positive, multiply them
-            if (positiveFactors.Count > 0)
-            {
-                return positiveFactors.Aggregate(1f, (acc, val) => acc * val);
-            }
-
-            // If there are no growth rate factors, grow at full speed
-            return 1f;
-
-        }
 
 
         public float GrowthPerTick
@@ -186,7 +77,7 @@ namespace Minerals
             {
                 foreach (growthRateModifier mod in this.attributes.allRateModifiers)
                 {
-                    stringBuilder.AppendLine(mod.GetType().Name + ": " + growthRateFactor(mod, getModValue(mod)));
+                    stringBuilder.AppendLine(mod.GetType().Name + ": " + this.attributes.growthRateFactor(mod, this.getModValue(mod)));
                 }
             }
             return stringBuilder.ToString().TrimEndNewlines();
@@ -202,7 +93,7 @@ namespace Minerals
             // Try to reproduce
             if (GrowthThisTick > 0 && this.size > this.attributes.minReproductionSize && Rand.Range(0f, 1f) < this.attributes.reproduceProp * this.GrowthRate)
             {
-                this.TryReproduce();
+                this.attributes.TryReproduce(this.Map, this.Position);
             }
 
             // Try to die
@@ -211,6 +102,28 @@ namespace Minerals
                 this.Destroy(DestroyMode.Vanish);
             }
         }
+
+        public virtual float getModValue(growthRateModifier mod) 
+        {
+            // If growth rate factor is not needed, do not calculate
+            if (mod == null | !mod.active)
+            {
+                return 0f;
+            }
+            else
+            {
+                return mod.value(this);
+            }
+        }
+
+        public List<float> allGrowthRateFactors 
+        {
+            get
+            {
+                return this.attributes.allRateModifiers.Select(mod => this.attributes.growthRateFactor(mod, getModValue(mod))).ToList();
+            }
+        }
+
 
     }       
 
@@ -257,6 +170,98 @@ namespace Minerals
                 return output;
             }
         }
+
+        // ======= Growth rate factors ======= //
+
+        public virtual float growthRateFactor(growthRateModifier mod, float myValue)
+        {
+            // Growth rate factor not defined
+            if (mod == null)
+            {
+                return 1f;
+            }
+
+            // Check that the growth rate modifier is in use
+            if (! mod.active)
+            {
+                return 1f;
+            }
+
+            // decays if too high or low
+            float stableRangeSize = mod.maxStable - mod.minStable;
+            if (myValue > mod.maxStable) 
+            {
+                return - mod.aboveMaxDecayRate * (myValue - mod.maxStable) / stableRangeSize;
+            } 
+            if (myValue < mod.minStable) 
+            {
+                return - mod.belowMinDecayRate * (mod.minStable - myValue) / stableRangeSize;
+            }
+
+            // does not grow if too high or low
+            if (myValue < mod.minGrow || myValue > mod.maxGrow) 
+            {
+                return 0f;
+            } 
+
+            // slowed growth if too high or low
+            if (myValue < mod.idealGrow)
+            {
+                return 1f - ((mod.idealGrow - myValue) / (mod.idealGrow - mod.minGrow));
+            }
+            else 
+            {
+                return 1f - ((myValue - mod.idealGrow) / (mod.maxGrow - mod.idealGrow));
+            }
+        }
+
+
+        public virtual float getModValueAtPos(growthRateModifier mod, IntVec3 aPosition, Map aMap) 
+        {
+            // If growth rate factor is not needed, do not calculate
+            if (mod == null | !mod.active)
+            {
+                return 0f;
+            }
+            else
+            {
+                return mod.value(this, aPosition, aMap);
+            }
+        }
+
+
+
+        public virtual List<float> allGrowthRateFactorsAtPos(IntVec3 aPosition, Map aMap) 
+        {
+
+            return this.allRateModifiers.Select(mod => this.growthRateFactor(mod, this.getModValueAtPos(mod, aPosition, aMap))).ToList();
+
+        }
+
+        public virtual float GrowthRateAtPos(Map aMap, IntVec3 aPosition) 
+        {
+            // Get growth rate factors
+            List<float> rateFactors = allGrowthRateFactorsAtPos(aPosition, aMap);
+            List<float> positiveFactors = rateFactors.FindAll(fac => fac >= 0);
+            List<float> negativeFactors = rateFactors.FindAll(fac => fac < 0);
+
+            // if any factors are negative, add them together and ignore positive factors
+            if (negativeFactors.Count > 0)
+            {
+                return negativeFactors.Sum();
+            }
+
+            // if all positive, multiply them
+            if (positiveFactors.Count > 0)
+            {
+                return positiveFactors.Aggregate(1f, (acc, val) => acc * val);
+            }
+
+            // If there are no growth rate factors, grow at full speed
+            return 1f;
+
+        }
+           
     }
 
 
@@ -337,7 +342,7 @@ namespace Minerals
 
         public override float value(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
         {
-            return StaticMineral.posDistFromNeededTerrain(myDef, aMap, aPosition);
+            return myDef.posDistFromNeededTerrain(aMap, aPosition);
         }
     }
 
@@ -392,7 +397,7 @@ namespace Minerals
             foreach (ThingDef_DynamicMineral mineralType in Verse.DefDatabase<ThingDef_DynamicMineral>.AllDefs)
             {
                 // Check that the map type is ok
-                if (! StaticMineral.CanSpawnInBiome(mineralType, map))
+                if (! mineralType.CanSpawnInBiome(map))
                 {
                     continue;
                 }
@@ -421,23 +426,23 @@ namespace Minerals
                     IntVec3 aPos = map.AllCells.RandomElement();
 
                     // If it is an associated ore, find a position nearby
-                    if (StaticMineral.PosIsAssociatedOre(mineralType, map, aPos))
+                    if (mineralType.PosIsAssociatedOre(map, aPos))
                     {
                         IntVec3 dest;
-                        if (StaticMineral.TryFindReproductionDestination(map, aPos, mineralType, out dest))
+                        if (mineralType.TryFindReproductionDestination(map, aPos, out dest))
                         {
                             aPos = dest;
                         }
                     }
 
                     // Dont always spawn if growth rate is not good
-                    if (Rand.Range(0f, 1f) > DynamicMineral.GrowthRateAtPos(mineralType, aPos, map))
+                    if (Rand.Range(0f, 1f) > mineralType.GrowthRateAtPos(map, aPos))
                     {
                         continue;
                     }
 
                     // Try to spawn at that location
-                    StaticMineral.TrySpawnAt(aPos, mineralType, map);
+                    mineralType.TrySpawnAt(aPos, map);
 
                 }
                 

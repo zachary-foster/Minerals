@@ -15,34 +15,15 @@ namespace Minerals
     /// <permission>No restrictions</permission>
     public class SaltCrystal : DynamicMineral
     {
-        public static float GrowthRateBonus(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
-        {
-            float bonus = 1f;
-            TerrainDef terrain = aMap.terrainGrid.TerrainAt(aPosition);
-
-            if (terrain.defName == "TKKN_SandBeachWetSalt") // Grows faster on wet sand
-            {
-                bonus = bonus * 3;
-            } else if (terrain.defName == "WaterOceanShallow") // melts in water
-            {
-                bonus = Math.Abs(bonus) * -1;
-            }
-
-            return bonus;
-        }
 
         public override float GrowthRate
         {
             get
             {
-                return base.GrowthRate * GrowthRateBonus(this.attributes, this.Position, this.Map);
+                return base.GrowthRate * ThingDef_SaltCrystal.GrowthRateBonus(this.Position, this.Map);
             }
         }
 
-        public new static float GrowthRateAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap) 
-        {
-            return DynamicMineral.GrowthRateAtPos(myDef, aPosition, aMap) * GrowthRateBonus(myDef, aPosition, aMap);
-        }
 
         public override string GetInspectString()
         {
@@ -56,7 +37,34 @@ namespace Minerals
 
      }       
         
+
+    /// <summary>
+    /// ThingDef_StaticMineral class.
+    /// </summary>
+    /// <author>zachary-foster</author>
+    /// <permission>No restrictions</permission>
+    public class ThingDef_SaltCrystal : ThingDef_DynamicMineral
+    {
+        public static float GrowthRateBonus(IntVec3 aPosition, Map aMap)
+        {
+            float bonus = 1f;
+            TerrainDef terrain = aMap.terrainGrid.TerrainAt(aPosition);
+    
+            if (terrain.defName == "TKKN_SandBeachWetSalt") // Grows faster on wet sand
+            {
+                bonus = bonus * 3;
+            } else if (terrain.defName == "WaterOceanShallow") // melts in water
+            {
+                bonus = Math.Abs(bonus) * -1;
+            }
+    
+            return bonus;
+        }
+    
+        public override float GrowthRateAtPos(Map aMap, IntVec3 aPosition) 
+        {
+            return base.GrowthRateAtPos(aMap, aPosition) * ThingDef_SaltCrystal.GrowthRateBonus(aPosition, aMap);
+        }
+    }
+    
 }
-
-
-

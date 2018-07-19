@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 
 <Defs>
@@ -25,6 +25,9 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>2</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.5</perMapProbability>
+		
 		<!-- For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0.001</minClusterProbability>
 		<maxClusterProbability>0.01</maxClusterProbability>

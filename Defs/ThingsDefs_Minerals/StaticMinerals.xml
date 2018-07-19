@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 
 <Defs>
@@ -41,9 +41,12 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>2</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.3</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.005</minClusterProbability>
-		<maxClusterProbability>0.005</maxClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
+		<maxClusterProbability>0.003</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -154,9 +157,12 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>2</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.3</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.003</minClusterProbability>
-		<maxClusterProbability>0.003</maxClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
+		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -244,9 +250,12 @@
 			<Beauty>15</Beauty>
 		</statBases>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.2</perMapProbability>
+		
 		<!-- For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.01</minClusterProbability>
-		<maxClusterProbability>0.004</maxClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
+		<maxClusterProbability>0.003</maxClusterProbability>
 
 		<!-- Roof requirements -->
 		<mustBeUnderRoof>true</mustBeUnderRoof>
@@ -254,7 +263,7 @@
 		<mustBeUnroofed>false</mustBeUnroofed>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0.5</roughGemDropChance>
+		<roughGemDropChance>0.8</roughGemDropChance>
 	</ThingDef>
 
 
@@ -298,8 +307,11 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>1</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.3</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.001</minClusterProbability>
+		<minClusterProbability>0.001</minClusterProbability>
 		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -402,6 +414,9 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>6</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0.001</minClusterProbability>
 		<maxClusterProbability>0.004</maxClusterProbability>
@@ -509,9 +524,12 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>2</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.2</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.002</minClusterProbability>
-		<maxClusterProbability>0.003</maxClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
+		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -605,8 +623,11 @@
 			<Beauty>10</Beauty>
 		</statBases>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.005</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- Other resources it might drop -->
@@ -630,8 +651,11 @@
 			<Beauty>20</Beauty>
 		</statBases>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.01</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- The maximum number of images that will be printed per square -->
@@ -667,8 +691,11 @@
 			<Beauty>20</Beauty>
 		</statBases>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.01</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- The maximum number of images that will be printed per square -->
@@ -729,8 +756,11 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>1</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.3</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.001</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -818,8 +848,11 @@
 			<deconstructible>false</deconstructible>
 		</building>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.002</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -861,9 +894,12 @@
 			<color>(92,68,53)</color>
 		</graphicData>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.3</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>0.003</minClusterProbability>
-		<maxClusterProbability>0.003</maxClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
+		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -952,8 +988,11 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>10</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.005</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -1006,7 +1045,7 @@
         	<max>0.2</max>
       	</visualSizeRange>
       	<visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-      	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+      	<visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
       	<visualSizeVariation>0.1</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
@@ -1029,8 +1068,11 @@
 			<color>(131,156,199)</color>
 		</graphicData>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.005</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- Other resources it might drop -->
@@ -1078,8 +1120,11 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>10</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.005</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -1139,7 +1184,7 @@
         	<max>0.2</max>
       	</visualSizeRange>
       	<visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-      	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+      	<visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
       	<visualSizeVariation>0.1</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
@@ -1160,8 +1205,11 @@
 			<color>(255, 255, 255)</color>
 		</graphicData>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.005</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- Other resources it might drop -->
@@ -1208,8 +1256,11 @@
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
 		<spawnRadius>15</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.01</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
@@ -1279,7 +1330,7 @@
         	<max>0.15</max>
       	</visualSizeRange>
       	<visualClustering>0.2</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-      	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+      	<visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
       	<visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
@@ -1334,11 +1385,14 @@
 
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-		<spawnRadius>6</spawnRadius>
+		<spawnRadius>1</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.2</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.005</minClusterProbability>
-		<maxClusterProbability>0.003</maxClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
+		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -1448,10 +1502,13 @@
 			
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-		<spawnRadius>2</spawnRadius>
+		<spawnRadius>1</spawnRadius>
 
+		<!-- The probability that this mineral type will be spawned at all on a given map -->
+		<perMapProbability>0.1</perMapProbability>
+		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-		<minClusterProbability>-0.002</minClusterProbability>
+		<minClusterProbability>0</minClusterProbability>
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
