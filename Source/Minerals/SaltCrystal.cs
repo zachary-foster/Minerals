@@ -20,7 +20,7 @@ namespace Minerals
         {
             get
             {
-                return base.GrowthRate * ThingDef_SaltCrystal.GrowthRateBonus(this.Position, this.Map);
+                return base.GrowthRate * ThingDef_SaltCrystal.GrowthRateBonus(Position, Map);
             }
         }
 
@@ -28,7 +28,7 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder(base.GetInspectString());
-            if (this.Map.terrainGrid.TerrainAt(this.Position).defName == "WaterOceanShallow") // melts in water
+            if (Map.terrainGrid.TerrainAt(Position).defName == "WaterOceanShallow") // melts in water
             {
                 stringBuilder.AppendLine("Dissolving in water.");
             }

@@ -35,7 +35,7 @@ namespace Minerals
             get
             {
                 // Get growth rate factors
-                List<float> rateFactors = this.allGrowthRateFactors;
+                List<float> rateFactors = allGrowthRateFactors;
                 List<float> positiveFactors = rateFactors.FindAll(fac => fac >= 0);
                 List<float> negativeFactors = rateFactors.FindAll(fac => fac < 0);
 
@@ -62,8 +62,8 @@ namespace Minerals
         {
             get
             {
-                float growthPerTick = (1f / (GenDate.TicksPerDay * this.attributes.growDays));
-                return growthPerTick * this.GrowthRate;
+                float growthPerTick = (1f / (GenDate.TicksPerDay * attributes.growDays));
+                return growthPerTick * GrowthRate;
             }
         }
 
@@ -71,13 +71,13 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Size: " + this.size.ToStringPercent());
-            stringBuilder.AppendLine("Growth rate: " + this.GrowthRate.ToStringPercent());
+            stringBuilder.AppendLine("Size: " + size.ToStringPercent());
+            stringBuilder.AppendLine("Growth rate: " + GrowthRate.ToStringPercent());
             if (DebugSettings.godMode)
             {
-                foreach (growthRateModifier mod in this.attributes.allRateModifiers)
+                foreach (growthRateModifier mod in attributes.allRateModifiers)
                 {
-                    stringBuilder.AppendLine(mod.GetType().Name + ": " + this.attributes.growthRateFactor(mod, this.getModValue(mod)));
+                    stringBuilder.AppendLine(mod.GetType().Name + ": " + attributes.growthRateFactor(mod, getModValue(mod)));
                 }
             }
             return stringBuilder.ToString().TrimEndNewlines();
@@ -87,19 +87,19 @@ namespace Minerals
         public override void TickLong()
         {
             // Try to grow
-            float GrowthThisTick = this.GrowthPerTick;
-            this.size += GrowthThisTick * 2000; // dont know why 2000, just imitating what plants do
+            float GrowthThisTick = GrowthPerTick;
+            size += GrowthThisTick * 2000; // dont know why 2000, just imitating what plants do
 
             // Try to reproduce
-            if (GrowthThisTick > 0 && this.size > this.attributes.minReproductionSize && Rand.Range(0f, 1f) < this.attributes.reproduceProp * this.GrowthRate)
+            if (GrowthThisTick > 0 && size > attributes.minReproductionSize && Rand.Range(0f, 1f) < attributes.reproduceProp * GrowthRate)
             {
-                this.attributes.TryReproduce(this.Map, this.Position);
+                attributes.TryReproduce(Map, Position);
             }
 
             // Try to die
-            if (this.size <= 0 && Rand.Range(0f, 1f) < this.attributes.deathProb)
+            if (size <= 0 && Rand.Range(0f, 1f) < attributes.deathProb)
             {
-                this.Destroy(DestroyMode.Vanish);
+                Destroy(DestroyMode.Vanish);
             }
         }
 
@@ -120,7 +120,7 @@ namespace Minerals
         {
             get
             {
-                return this.attributes.allRateModifiers.Select(mod => this.attributes.growthRateFactor(mod, getModValue(mod))).ToList();
+                return attributes.allRateModifiers.Select(mod => attributes.growthRateFactor(mod, getModValue(mod))).ToList();
             }
         }
 
@@ -234,7 +234,7 @@ namespace Minerals
         public virtual List<float> allGrowthRateFactorsAtPos(IntVec3 aPosition, Map aMap) 
         {
 
-            return this.allRateModifiers.Select(mod => this.growthRateFactor(mod, this.getModValueAtPos(mod, aPosition, aMap))).ToList();
+            return allRateModifiers.Select(mod => growthRateFactor(mod, getModValueAtPos(mod, aPosition, aMap))).ToList();
 
         }
 
@@ -394,7 +394,7 @@ namespace Minerals
 
         public void SpawnDynamicMinerals() 
         {
-            foreach (ThingDef_DynamicMineral mineralType in Verse.DefDatabase<ThingDef_DynamicMineral>.AllDefs)
+            foreach (ThingDef_DynamicMineral mineralType in DefDatabase<ThingDef_DynamicMineral>.AllDefs)
             {
                 // Check that the map type is ok
                 if (! mineralType.CanSpawnInBiome(map))

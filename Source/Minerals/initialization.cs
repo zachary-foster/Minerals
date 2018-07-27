@@ -20,7 +20,7 @@ namespace Minerals
 
         public static void initStaticMinerals(Map map)
         {
-            foreach (ThingDef_StaticMineral mineralType in Verse.DefDatabase<ThingDef_StaticMineral>.AllDefs)
+            foreach (ThingDef_StaticMineral mineralType in DefDatabase<ThingDef_StaticMineral>.AllDefs)
             {
                 mineralType.InitNewMap(map);
             }

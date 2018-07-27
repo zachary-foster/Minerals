@@ -53,7 +53,7 @@ namespace Minerals
             {
                 if (myDistFromNeededTerrain == null) // not yet set
                 {
-                    myDistFromNeededTerrain = attributes.posDistFromNeededTerrain(this.Map, this.Position);
+                    myDistFromNeededTerrain = attributes.posDistFromNeededTerrain(Map, Position);
                 }
 
                 return (float)myDistFromNeededTerrain;
@@ -70,7 +70,7 @@ namespace Minerals
         {
             get
             {
-                return this.def as ThingDef_StaticMineral;
+                return def as ThingDef_StaticMineral;
             }
         }
 
@@ -112,14 +112,14 @@ namespace Minerals
 
         public virtual void incPctYeild(int amount, Pawn miner)
         {
-            this.yieldPct += (float)Mathf.Min(amount, this.HitPoints) / (float)base.MaxHitPoints * miner.GetStatValue(StatDefOf.MiningYield, true);
+            yieldPct += (float)Mathf.Min(amount, HitPoints) / (float)MaxHitPoints * miner.GetStatValue(StatDefOf.MiningYield, true);
         }
 
         // hackish solution since I cant override Mineable.DestroyMined
         public override void PreApplyDamage(DamageInfo dinfo, out bool absorbed)
         {
             // Drop gems
-            float dropChance = this.size * this.attributes.roughGemDropChance * ((float) Math.Min(dinfo.Amount, this.HitPoints) / (float) this.MaxHitPoints);
+            float dropChance = size * attributes.roughGemDropChance * ((float) Math.Min(dinfo.Amount, HitPoints) / (float) MaxHitPoints);
             // Log.Message("this.size: " + this.size);
             // Log.Message("this.attributes.roughGemDropChance: " + this.attributes.roughGemDropChance);
             // Log.Message("dinfo.Amount: " + dinfo.Amount);
@@ -128,17 +128,17 @@ namespace Minerals
             // Log.Message("dropChance: " + dropChance);
             if (Rand.Range(0f, 1f) < dropChance)
             {
-                Thing thing = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("RoughGem", true), null);
+                Thing thing = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("RoughGem"), null);
                 thing.stackCount = 1;
-                GenPlace.TryPlaceThing(thing, base.Position, this.Map, ThingPlaceMode.Near, null);
+                GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
             }
 
             // 
-            if (this.def.building.mineableThing != null && this.def.building.mineableYieldWasteable && dinfo.Def == DamageDefOf.Mining && dinfo.Instigator != null && dinfo.Instigator is Pawn)
+            if (def.building.mineableThing != null && def.building.mineableYieldWasteable && dinfo.Def == DamageDefOf.Mining && dinfo.Instigator != null && dinfo.Instigator is Pawn)
             {
-                this.incPctYeild(dinfo.Amount, (Pawn)dinfo.Instigator);
+                incPctYeild(dinfo.Amount, (Pawn)dinfo.Instigator);
             }
-            if (this.size < this.yieldPct)
+            if (size < yieldPct)
             {
                 dinfo.SetAmount(0);
             }
@@ -172,13 +172,13 @@ namespace Minerals
                     {
                         continue;
                     }
-                    IntVec3 checkedPosition = this.Position + new IntVec3(xOffset, 0, zOffset);
-                    if (checkedPosition.InBounds(this.Map))
+                    IntVec3 checkedPosition = Position + new IntVec3(xOffset, 0, zOffset);
+                    if (checkedPosition.InBounds(Map))
                     {
-                        List<Thing> list = this.Map.thingGrid.ThingsListAt(checkedPosition);
+                        List<Thing> list = Map.thingGrid.ThingsListAt(checkedPosition);
                         foreach (Thing item in list)
                         {
-                            if (item.def.defName == this.attributes.defName)
+                            if (item.def.defName == attributes.defName)
                             {
                                 float distanceToPos = Vector3.Distance(item.TrueCenter(), subcenter);
 
@@ -193,11 +193,11 @@ namespace Minerals
                 }
             }
 
-            float correctedSize = (0.75f - distToTrueCenter) * this.size + (1 - distToNearest) * sizeOfNearest;
+            float correctedSize = (0.75f - distToTrueCenter) * size + (1 - distToNearest) * sizeOfNearest;
             //Log.Message("this.size=" + this.size + " sizeOfNearest=" + sizeOfNearest + " distToNearest=" + distToNearest + " distToTrueCenter=" + distToTrueCenter);
             //Log.Message(this.size + " -> " + correctedSize + "  dist = " + distToNearest);
 
-            return this.attributes.visualSizeRange.LerpThroughRange(correctedSize);
+            return attributes.visualSizeRange.LerpThroughRange(correctedSize);
         }
 
         public static float randPos(float clustering, float spread)
@@ -210,8 +210,8 @@ namespace Minerals
         {
 
             Rand.PushState();
-            Rand.Seed = this.Position.GetHashCode() + this.attributes.defName.GetHashCode();
-            int numToPrint = Mathf.CeilToInt(this.size * (float)this.attributes.maxMeshCount);
+            Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
+            int numToPrint = Mathf.CeilToInt(size * (float)attributes.maxMeshCount);
             if (numToPrint < 1)
             {
                 numToPrint = 1;
@@ -221,22 +221,22 @@ namespace Minerals
             {
                 // Calculate location
                 Vector3 center = trueCenter;
-                center.y = this.attributes.Altitude;
-                center.x += randPos(this.attributes.visualClustering, this.attributes.visualSpread);
-                center.z += randPos(this.attributes.visualClustering, this.attributes.visualSpread);
+                center.y = attributes.Altitude;
+                center.x += randPos(attributes.visualClustering, attributes.visualSpread);
+                center.z += randPos(attributes.visualClustering, attributes.visualSpread);
 
                 // Adjust size for distance from center to other crystals
                 float thisSize = GetSizeBasedOnNearest(center);
 
                 // Add random variation
-                thisSize = thisSize + (thisSize * Rand.Range(- this.attributes.visualSizeVariation, this.attributes.visualSizeVariation));
+                thisSize = thisSize + (thisSize * Rand.Range(- attributes.visualSizeVariation, attributes.visualSizeVariation));
                 if (thisSize <= 0)
                 {
                     continue;
                 }
 
                 // Print image
-                Material matSingle = this.Graphic.MatSingle;
+                Material matSingle = Graphic.MatSingle;
                 Vector2 sizeVec = new Vector2(thisSize, thisSize);
                 Material mat = matSingle;
                 Printer_Plane.PrintPlane(layer, center, sizeVec, mat, 0, Rand.Bool);
@@ -259,14 +259,14 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Size: " + this.size.ToStringPercent());
+            stringBuilder.AppendLine("Size: " + size.ToStringPercent());
             return stringBuilder.ToString().TrimEndNewlines();
         }
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look<float>(ref this.mySize, "mySize", 1, false);
+            Scribe_Values.Look<float>(ref mySize, "mySize", 1);
         }
 
 
@@ -293,7 +293,7 @@ namespace Minerals
         public float perMapProbability = 0.5f; 
 
         // For a given map, the minimum/maximum probablility a cluster will spawn for every possible location
-        public float minClusterProbability = 0f; 
+        public float minClusterProbability; 
         public float maxClusterProbability = 0.001f;
 
         // How  many squares each cluster will be
@@ -308,17 +308,17 @@ namespace Minerals
         public float initialSizeVariation = 0.3f;
 
         // The biomes this can appear in
-        public List<string> allowedBiomes = new List<string> {};
+        public List<string> allowedBiomes;
 
         // The terrains this can appear on
-        public List<string> allowedTerrains = new List<string> {};
+        public List<string> allowedTerrains;
 
         // The terrains this must be near to, but not necessarily on, and how far away it can be
-        public List<string> neededNearbyTerrains = new List<string> {};
+        public List<string> neededNearbyTerrains;
         public float neededNearbyTerrainRadius = 3f;
 
         // Controls how extra clusters are added near assocaited ore
-        public List<string> associatedOres = new List<string> {};
+        public List<string> associatedOres;
         public float nearAssociatedOreBonus = 3f;
 
         // If true, growth rate and initial size depends on distance from needed terrains
@@ -355,24 +355,24 @@ namespace Minerals
         public StaticMineral TryReproduce(Map map, IntVec3 position)
         {
             IntVec3 dest;
-            if (! this.TryFindReproductionDestination(map, position, out dest))
+            if (! TryFindReproductionDestination(map, position, out dest))
             {
                 return null;
             }
-            return this.TrySpawnAt(dest, map);
+            return TrySpawnAt(dest, map);
         }
 
 
         public virtual void SpawnCluster(Map map, IntVec3 position)
         {
             // Make a cluster center
-            StaticMineral mineral = this.TrySpawnAt(position, map);
+            StaticMineral mineral = TrySpawnAt(position, map);
             if (mineral != null)
             {            
-                mineral.size = Rand.Range(this.initialSizeMin, this.initialSizeMax);
+                mineral.size = Rand.Range(initialSizeMin, initialSizeMax);
 
                 // Pick cluster size
-                int clusterSize = (int)Rand.Range(this.minClusterSize, this.maxClusterSize);
+                int clusterSize = Rand.Range(minClusterSize, maxClusterSize);
 
                 // Grow cluster 
                 GrowCluster(map, mineral, clusterSize);
@@ -388,7 +388,7 @@ namespace Minerals
                 StaticMineral newGrowth = sourceMineral.attributes.TryReproduce(map, sourceMineral.Position);
                 if (newGrowth != null)
                 {
-                    newGrowth.size = Rand.Range(1f - this.initialSizeVariation, 1f + this.initialSizeVariation) * sourceMineral.size;
+                    newGrowth.size = Rand.Range(1f - initialSizeVariation, 1f + initialSizeVariation) * sourceMineral.size;
                     GrowCluster(map, newGrowth, times - 1);
                 }
 
@@ -402,44 +402,56 @@ namespace Minerals
 
         public virtual bool CanSpawnAt(Map map, IntVec3 position)
         {
+            Log.Message("CanSpawnAt: " + position + " " + map);
             // Check that location is in the map
             if (! position.InBounds(map))
             {
                 return false;
             }
 
+            Log.Message("CanSpawnAt: location is in the map " + position);
             // Check that the terrain is ok
             if (! IsTerrainOkAt(map, position))
             {
                 return false;
             }
+            Log.Message("CanSpawnAt: terrain is ok " + position);
 
             // Check that it is under a roof if it needs to be
-            if (! this.isRoofConditionOk(map, position))
+            if (! isRoofConditionOk(map, position))
             {
                 return false;
             }
+            Log.Message("CanSpawnAt: roof is ok " + position);
 
             // Look for stuff in the way
-            if (this.PlaceIsBlocked(map, position))
+            if (PlaceIsBlocked(map, position))
             {
                 return false;
             }
+            Log.Message("CanSpawnAt: not plocked " + position);
 
             // Check that it is near any needed terrains
-            if (! this.isNearNeededTerrain(map, position))
+            if (! isNearNeededTerrain(map, position))
             {
                 return false;
             }
+            Log.Message("CanSpawnAt: can spawn " + position);
 
             return true;
         }
 
         public virtual bool PlaceIsBlocked(Map map, IntVec3 position)
         {
+//            Log.Message("PlaceIsBlocked: base");
             foreach (Thing thing in map.thingGrid.ThingsListAt(position))
             {
-                if (! this.canSpawnOnThings) {
+                if (thing == null || thing.def == null)
+                {
+                    continue;
+                }
+
+                if (! canSpawnOnThings) {
                     // Blocked by pawns, items, and plants
                     if (thing.def.category == ThingCategory.Pawn ||
                         thing.def.category == ThingCategory.Item ||
@@ -452,7 +464,7 @@ namespace Minerals
                 // Blocked by buildings, except low minerals
                 if (thing.def.category == ThingCategory.Building)
                 {
-                    if (thing is StaticMineral && thing.def.defName != this.defName)
+                    if (thing is StaticMineral && thing.def.defName != defName)
                     {
                         //                        Log.Message("Trying to spawn on mineral " + thing.def.defName);
                     }
@@ -479,17 +491,25 @@ namespace Minerals
 
         public virtual bool PosIsAssociatedOre(Map map, IntVec3 position)
         {
+            if (associatedOres == null || associatedOres.Count == 0)
+            {
+                return false;
+            }
+
             TerrainDef terrain = map.terrainGrid.TerrainAt(position);
-            if (this.associatedOres.Any(terrain.defName.Equals))
+            if (associatedOres.Any(terrain.defName.Equals))
             {
                 return true;
             }
 
             foreach (Thing thing in map.thingGrid.ThingsListAt(position))
             {
-                if (
-                    this.associatedOres.Any(thing.def.defName.Equals)
-                )
+                if (thing == null || thing.def == null)
+                {
+                    continue;
+                }
+             
+                if (associatedOres.Any(thing.def.defName.Equals))
                 {
                     return true;
                 }
@@ -500,13 +520,13 @@ namespace Minerals
 
         public virtual bool CanSpawnInBiome(Map map) 
         {
-            if (this.allowedBiomes == null || this.allowedBiomes.Count == 0)
+            if (allowedBiomes == null || allowedBiomes.Count == 0)
             {
                 return true;
             }
             else
             {
-                return this.allowedBiomes.Any(map.Biome.defName.Equals);
+                return allowedBiomes.Any(map.Biome.defName.Equals);
             }
         }
 
@@ -516,35 +536,36 @@ namespace Minerals
             {
                 return false;
             }
-            if (this.allowedTerrains == null || this.allowedTerrains.Count == 0)
+            if (allowedTerrains == null || allowedTerrains.Count == 0)
             {
                 return true;
             }
             TerrainDef terrain = map.terrainGrid.TerrainAt(position);
-            return this.allowedTerrains.Any(terrain.defName.Equals);
+            return allowedTerrains.Any(terrain.defName.Equals);
         }
 
         public virtual bool isNearNeededTerrain(Map map, IntVec3 position)
         {
-            if (this.neededNearbyTerrains == null || this.neededNearbyTerrains.Count == 0)
+            if (neededNearbyTerrains == null || neededNearbyTerrains.Count == 0)
             {
                 return true;
             }
-            for (int xOffset = -(int)Math.Ceiling(this.neededNearbyTerrainRadius); xOffset <= (int)Math.Ceiling(this.neededNearbyTerrainRadius); xOffset++)
+
+            for (int xOffset = -(int)Math.Ceiling(neededNearbyTerrainRadius); xOffset <= (int)Math.Ceiling(neededNearbyTerrainRadius); xOffset++)
             {
-                for (int zOffset = -(int)Math.Ceiling(this.neededNearbyTerrainRadius); zOffset <= (int)Math.Ceiling(this.neededNearbyTerrainRadius); zOffset++)
+                for (int zOffset = -(int)Math.Ceiling(neededNearbyTerrainRadius); zOffset <= (int)Math.Ceiling(neededNearbyTerrainRadius); zOffset++)
                 {
                     IntVec3 checkedPosition = position + new IntVec3(xOffset, 0, zOffset);
                     if (checkedPosition.InBounds(map))
                     {
                         TerrainDef terrain = map.terrainGrid.TerrainAt(checkedPosition);
-                        if (this.neededNearbyTerrains.Any(terrain.defName.Equals) && position.DistanceTo(checkedPosition) < this.neededNearbyTerrainRadius)
+                        if (neededNearbyTerrains.Any(terrain.defName.Equals) && position.DistanceTo(checkedPosition) < neededNearbyTerrainRadius)
                         {
                             return true;
                         }
                         foreach (Thing thing in map.thingGrid.ThingsListAt(checkedPosition))
                         {
-                            if (this.neededNearbyTerrains.Any(thing.def.defName.Equals) && position.DistanceTo(checkedPosition) < this.neededNearbyTerrainRadius)
+                            if (neededNearbyTerrains.Any(thing.def.defName.Equals) && position.DistanceTo(checkedPosition) < neededNearbyTerrainRadius)
                             {
                                 return true;
                             }
@@ -562,17 +583,22 @@ namespace Minerals
         // A little slower than `isNearNeededTerrain` because all squares are checked
         public virtual float posDistFromNeededTerrain(Map map, IntVec3 position)
         {
+            if (neededNearbyTerrains == null || neededNearbyTerrains.Count == 0)
+            {
+                return 0;
+            }
+
             float output = -1;
 
-            for (int xOffset = -(int)Math.Ceiling(this.neededNearbyTerrainRadius); xOffset <= (int)Math.Ceiling(this.neededNearbyTerrainRadius); xOffset++)
+            for (int xOffset = -(int)Math.Ceiling(neededNearbyTerrainRadius); xOffset <= (int)Math.Ceiling(neededNearbyTerrainRadius); xOffset++)
             {
-                for (int zOffset = -(int)Math.Ceiling(this.neededNearbyTerrainRadius); zOffset <= (int)Math.Ceiling(this.neededNearbyTerrainRadius); zOffset++)
+                for (int zOffset = -(int)Math.Ceiling(neededNearbyTerrainRadius); zOffset <= (int)Math.Ceiling(neededNearbyTerrainRadius); zOffset++)
                 {
                     IntVec3 checkedPosition = position + new IntVec3(xOffset, 0, zOffset);
                     if (checkedPosition.InBounds(map))
                     {
                         TerrainDef terrain = map.terrainGrid.TerrainAt(checkedPosition);
-                        if (this.neededNearbyTerrains.Any(terrain.defName.Equals))
+                        if (neededNearbyTerrains.Any(terrain.defName.Equals))
                         {
                             float distanceToPos = position.DistanceTo(checkedPosition);
                             if (output < 0 || output > distanceToPos) 
@@ -582,7 +608,7 @@ namespace Minerals
                         }
                         foreach (Thing thing in map.thingGrid.ThingsListAt(checkedPosition))
                         {
-                            if (this.neededNearbyTerrains.Any(thing.def.defName.Equals))
+                            if (neededNearbyTerrains.Any(thing.def.defName.Equals))
                             {
                                 float distanceToPos = position.DistanceTo(checkedPosition);
                                 if (output < 0 || output > distanceToPos) 
@@ -604,9 +630,9 @@ namespace Minerals
 
         public virtual StaticMineral TrySpawnAt(IntVec3 dest, Map map)
         {
-            if (this.CanSpawnAt(map, dest))
+            if (CanSpawnAt(map, dest))
             {
-                return this.SpawnAt(map, dest);
+                return SpawnAt(map, dest);
             }
             else
             {
@@ -616,10 +642,10 @@ namespace Minerals
 
         public virtual StaticMineral SpawnAt(Map map, IntVec3 dest)
         {
-            ThingCategory originalDef = this.category;
-            this.category = ThingCategory.Attachment; // Hack to allow them to spawn on other minerals
+            ThingCategory originalDef = category;
+            category = ThingCategory.Attachment; // Hack to allow them to spawn on other minerals
             StaticMineral output = (StaticMineral)GenSpawn.Spawn(this, dest, map);
-            this.category = originalDef;
+            category = originalDef;
             output.size = 0.01f;
             map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Things);
             return output;
@@ -632,14 +658,14 @@ namespace Minerals
 
         public virtual bool TryFindReproductionDestination(Map map,  IntVec3 position, out IntVec3 foundCell)
         {
-            if (! position.InBounds(map))
+            if (( ! position.InBounds(map) ) || position.DistanceToEdge(map) <= Mathf.CeilToInt(spawnRadius))
             {
                 foundCell = position;
                 return false;
             }
-
-            Predicate<IntVec3> validator = (IntVec3 c) => c.InBounds(map) && position.InHorDistOf(c, this.spawnRadius) && this.CanSpawnAt(map, c);
-            return CellFinder.TryFindRandomCellNear(position, map, Mathf.CeilToInt(this.spawnRadius), validator, out foundCell);
+            Log.Message("TryFindReproductionDestination: " + position + " " + map + "  " + Mathf.CeilToInt(this.spawnRadius));
+            Predicate<IntVec3> validator = c => c.InBounds(map) && CanSpawnAt(map, c);
+            return CellFinder.TryFindRandomCellNear(position, map, Mathf.CeilToInt(spawnRadius), validator, out foundCell);
         }
 
 
@@ -647,15 +673,15 @@ namespace Minerals
 
         public virtual bool isRoofConditionOk(Map map, IntVec3 position)
         {
-            if (this.mustBeUnderRoof && (! position.Roofed(map)))
+            if (mustBeUnderRoof && (! position.Roofed(map)))
             {
                 return false;
             }
-            if (this.mustBeUnderThickRoof && position.GetRoof(map).isThickRoof)
+            if (mustBeUnderThickRoof && position.GetRoof(map).isThickRoof)
             {
                 return false;
             }
-            if (this.mustBeUnroofed && position.Roofed(map))
+            if (mustBeUnroofed && position.Roofed(map))
             {
                 return false;
             }
@@ -676,43 +702,48 @@ namespace Minerals
             // Print to log
 
             // Check that it is a valid biome
-            if (! this.CanSpawnInBiome(map))
+            if (! CanSpawnInBiome(map))
             {
-                Log.Message("Minerals: " + this.defName + " cannot be added to this biome");
+                Log.Message("Minerals: " + defName + " cannot be added to this biome");
                 return;
             }
 
             // Select probability of spawing for this map
-            float spawnProbability = Rand.Range(this.minClusterProbability, this.maxClusterProbability) * StaticMineral.globalMineralAbundance * scaling;
+            float spawnProbability = Rand.Range(minClusterProbability, maxClusterProbability) * StaticMineral.globalMineralAbundance * scaling;
 
             // Find spots to spawn it
             if (Rand.Range(0f, 1f) <= perMapProbability && spawnProbability > 0)
             {
-                Log.Message("Minerals: " + this.defName + " will be spawned at a probability of " + spawnProbability);
+                Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
                 IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
                 foreach (IntVec3 current in allCells)
                 {
-                    // Randomly spawn some clusters
-                    if (current.InBounds(map) && Rand.Range(0f, 1f) < spawnProbability && this.CanSpawnAt(map, current))
+                    if (!current.InBounds(map))
                     {
-                        this.SpawnCluster(map, current);
+                        continue;
+                    }
+
+                    // Randomly spawn some clusters
+                    if (Rand.Range(0f, 1f) < spawnProbability && CanSpawnAt(map, current))
+                    {
+                        SpawnCluster(map, current);
                     }
 
                     // Spawn near their assocaited ore
-                    if (this.PosIsAssociatedOre(map, current))
+                    if (PosIsAssociatedOre(map, current))
                     {
 
-                        if (Rand.Range(0f, 1f) < spawnProbability * this.nearAssociatedOreBonus)
+                        if (Rand.Range(0f, 1f) < spawnProbability * nearAssociatedOreBonus)
                         {
 
-                            if (this.CanSpawnAt(map, current))
+                            if (CanSpawnAt(map, current))
                             {
-                                this.SpawnCluster(map, current);
+                                SpawnCluster(map, current);
                             } else {
                                 IntVec3 dest;
-                                if (current.InBounds(map) && this.TryFindReproductionDestination(map, current, out dest))
+                                if (current.InBounds(map) && TryFindReproductionDestination(map, current, out dest))
                                 {
-                                    this.SpawnCluster(map, dest);
+                                    SpawnCluster(map, dest);
                                 }
                             }
                         }
@@ -727,14 +758,5 @@ namespace Minerals
 
         }
     }
-
-    /// <summary>
-    /// ThingDef_StaticMineral class.
-    /// </summary>
-    /// <author>zachary-foster</author>
-    /// <permission>No restrictions</permission>
-    public class ThingDef_StaticMineralBig : ThingDef_StaticMineral
-    {
-        public Traversability passibility = Traversability.Impassable; 
-    }
+        
 }

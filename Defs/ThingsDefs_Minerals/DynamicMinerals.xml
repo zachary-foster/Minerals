@@ -14,7 +14,7 @@
     	</comps>
 		
     	<description>An active deposit of coldstone. Grows slowly on cold bright days, but evaporates in the heat. Only found in permanently frozen terrain. Some glitterworld exobiologists belive these to be a kind of living crytsal since they seem capable of reproduction and they stress the need to safeguard these rare organisms. People on this rimworld however, tend to dig them up and use them to stop meat from spoiling.</description>
-		<altitudeLayer>Filth</altitudeLayer>
+		<altitudeLayer>LowPlant</altitudeLayer>
     	<statBases>
     		<MaxHitPoints>400</MaxHitPoints>
     		<Flammability>0</Flammability>

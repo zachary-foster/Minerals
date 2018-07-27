@@ -308,7 +308,7 @@
 		<spawnRadius>1</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.3</perMapProbability>
+		<perMapProbability>0.7</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0.001</minClusterProbability>
@@ -624,7 +624,7 @@
 		</statBases>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.1</perMapProbability>
+		<perMapProbability>0.2</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -652,7 +652,7 @@
 		</statBases>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.1</perMapProbability>
+		<perMapProbability>0.2</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -692,7 +692,7 @@
 		</statBases>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.1</perMapProbability>
+		<perMapProbability>0.2</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -989,7 +989,7 @@
 		<spawnRadius>10</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.1</perMapProbability>
+		<perMapProbability>0.2</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -1069,7 +1069,7 @@
 		</graphicData>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.1</perMapProbability>
+		<perMapProbability>0.2</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -1121,7 +1121,7 @@
 		<spawnRadius>10</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.1</perMapProbability>
+		<perMapProbability>0.2</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -1206,7 +1206,7 @@
 		</graphicData>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.1</perMapProbability>
+		<perMapProbability>0.2</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -1388,7 +1388,7 @@
 		<spawnRadius>1</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.2</perMapProbability>
+		<perMapProbability>0.3</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -1505,7 +1505,7 @@
 		<spawnRadius>1</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.1</perMapProbability>
+		<perMapProbability>0.2</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
