@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Minerals.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="StaticMineral.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml">
     <Files>
       <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="1" Column="1" />
       <File FileName="../../../../Hardcore-SK/Mods/Core/Defs/ItemCollectionGeneratorDefs/ItemCollectionGenerators_Specific.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" />
       <File FileName="initialization.cs" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="1" Column="1" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="25" Column="25" />
       <File FileName="StaticMineral.cs" Line="10" Column="10" />
       <File FileName="DynamicMineral.cs" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMineralBase.xml" Line="1" Column="1" />

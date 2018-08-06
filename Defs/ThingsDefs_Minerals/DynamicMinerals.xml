@@ -42,7 +42,7 @@
 		<spawnRadius>2</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.5</perMapProbability>
+		<perMapProbability>0.7</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -378,7 +378,7 @@
 		<spawnRadius>2</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.5</perMapProbability>
+		<perMapProbability>0.0</perMapProbability> <!-- 0 because NPS tides seem to be changing costline after spawning -->
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0.001</minClusterProbability>
@@ -397,8 +397,8 @@
 
 		<!-- Reproduction and death settings -->
 		<minReproductionSize>0.2</minReproductionSize>
-        <reproduceProp>0.005</reproduceProp>
-        <deathProb>0.5</deathProb>
+    <reproduceProp>0.005</reproduceProp>
+    <deathProb>0.5</deathProb>
 
 
 		<!-- The biomes this can appear in. The default is all ones known to mod-->
@@ -461,7 +461,7 @@
 		<visualSizeVariation>0.1</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>20</maxMinedYeild>
+		<maxMinedYeild>30</maxMinedYeild>
 
 		<!-- The number of days it takes to grow at max growth speed -->
 		<growDays>10</growDays>
@@ -644,7 +644,7 @@
 		<visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>10</maxMinedYeild>
+		<maxMinedYeild>30</maxMinedYeild>
 
 		<!-- The number of days it takes to grow at max growth speed -->
 		<growDays>30</growDays>

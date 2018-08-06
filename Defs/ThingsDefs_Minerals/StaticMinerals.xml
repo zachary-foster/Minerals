@@ -42,7 +42,7 @@
 		<spawnRadius>2</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.3</perMapProbability>
+		<perMapProbability>0.4</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -113,7 +113,7 @@
 		<maxMinedYeild>20</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0.0</roughGemDropChance>
+		<roughGemDropChance>0.2</roughGemDropChance>
 	</ThingDef>
 
 
@@ -158,11 +158,11 @@
 		<spawnRadius>2</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.3</perMapProbability>
+		<perMapProbability>0.7</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
-		<maxClusterProbability>0.002</maxClusterProbability>
+		<maxClusterProbability>0.003</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -218,19 +218,19 @@
     	<maxMeshCount>40</maxMeshCount>
 
 		<!-- The size range -->
-        <visualSizeRange>
-        	<min>0.05</min>
-        	<max>0.5</max>
-      	</visualSizeRange>
-      	<visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-      	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-      	<visualSizeVariation>0.4</visualSizeVariation>
+     <visualSizeRange>
+     	<min>0.05</min>
+     	<max>0.5</max>
+     </visualSizeRange>
+     <visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+     <visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+     <visualSizeVariation>0.4</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>15</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0.3</roughGemDropChance>
+		<roughGemDropChance>0.5</roughGemDropChance>
 	</ThingDef>
 
 
@@ -263,7 +263,7 @@
 		<mustBeUnroofed>false</mustBeUnroofed>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0.8</roughGemDropChance>
+		<roughGemDropChance>1.0</roughGemDropChance>
 	</ThingDef>
 
 
@@ -308,19 +308,19 @@
 		<spawnRadius>1</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.7</perMapProbability>
+		<perMapProbability>0.6</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0.001</minClusterProbability>
-		<maxClusterProbability>0.002</maxClusterProbability>
+		<maxClusterProbability>0.003</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
-		<minClusterSize>3</minClusterSize>
-		<maxClusterSize>30</maxClusterSize>
+		<minClusterSize>5</minClusterSize>
+		<maxClusterSize>50</maxClusterSize>
 
 		<!-- The range of starting sizes of individuals in clusters -->
-		<initialSizeMin>.6</initialSizeMin>
-		<initialSizeMax>.8</initialSizeMax>
+		<initialSizeMin>.7</initialSizeMin>
+		<initialSizeMax>.9</initialSizeMax>
 
 		<!-- How much initial sizes of individuals randomly vary -->
 		<initialSizeVariation>.25</initialSizeVariation>
@@ -364,14 +364,14 @@
         	<max>1.3</max>
       	</visualSizeRange>
       	<visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-      	<visualSpread>2.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+      	<visualSpread>2.2</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
       	<visualSizeVariation>0.5</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>30</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0</roughGemDropChance>
+		<roughGemDropChance>0.1</roughGemDropChance>
 	</ThingDef>
 
 
@@ -480,7 +480,7 @@
 		<maxMinedYeild>20</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0</roughGemDropChance>
+		<roughGemDropChance>0.1</roughGemDropChance>
 	</ThingDef>
 
 
@@ -540,7 +540,7 @@
 		<initialSizeMax>.7</initialSizeMax>
 
 		<!-- How much initial sizes of individuals randomly vary -->
-		<initialSizeVariation>.3</initialSizeVariation>
+		<initialSizeVariation>0.5</initialSizeVariation>
 
 		<!-- The biomes this can appear in. The default is all ones known to mod-->
 		<!--
@@ -631,7 +631,7 @@
 		<maxClusterProbability>0.002</maxClusterProbability>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0.5</roughGemDropChance>
+		<roughGemDropChance>0.8</roughGemDropChance>
 	</ThingDef>
 		
 
@@ -671,7 +671,7 @@
       	<visualSizeVariation>0.5</visualSizeVariation>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>1.5</roughGemDropChance>
+		<roughGemDropChance>2.0</roughGemDropChance>
 	</ThingDef>
 
 
@@ -711,7 +711,7 @@
       	<visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>1.5</roughGemDropChance>
+		<roughGemDropChance>2.0</roughGemDropChance>
 	</ThingDef>
 		
 
@@ -816,13 +816,13 @@
     	<maxMeshCount>40</maxMeshCount>
 
 		<!-- The size range -->
-        <visualSizeRange>
-        	<min>0.2</min>
-        	<max>0.5</max>
-      	</visualSizeRange>
-      	<visualClustering>0.4</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-      	<visualSpread>1.6</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-      	<visualSizeVariation>0.3</visualSizeVariation>
+    <visualSizeRange>
+    	<min>0.2</min>
+    	<max>0.5</max>
+    </visualSizeRange>
+    <visualClustering>0.4</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.6</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.3</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>20</maxMinedYeild>
@@ -849,7 +849,7 @@
 		</building>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.1</perMapProbability>
+		<perMapProbability>0.3</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -941,10 +941,10 @@
 		<nearAssociatedOreBonus>20</nearAssociatedOreBonus>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>20</maxMinedYeild>
+		<maxMinedYeild>30</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0.2</roughGemDropChance>
+		<roughGemDropChance>0.3</roughGemDropChance>
 	</ThingDef>
 
 
@@ -971,9 +971,9 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<pathCost>1</pathCost>
 		<building>
-            <isInert>true</isInert>
-            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-		    <isNaturalRock>true</isNaturalRock>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+		  <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>CrushedStone</mineableThing>
 			<mineableYield>5</mineableYield>
@@ -986,7 +986,7 @@
 
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-		<spawnRadius>10</spawnRadius>
+		<spawnRadius>5</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
 		<perMapProbability>0.2</perMapProbability>
@@ -1037,22 +1037,22 @@
 		<mustBeUnroofed>false</mustBeUnroofed>
 
 		<!-- The maximum number of images that will be printed per square -->
-    	<maxMeshCount>15</maxMeshCount>
+    <maxMeshCount>15</maxMeshCount>
 
 		<!-- The size range -->
-        <visualSizeRange>
-        	<min>0.1</min>
-        	<max>0.2</max>
-      	</visualSizeRange>
-      	<visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-      	<visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-      	<visualSizeVariation>0.1</visualSizeVariation>
+    <visualSizeRange>
+    	<min>0.1</min>
+    	<max>0.2</max>
+    </visualSizeRange>
+    <visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.1</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>5</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>2.0</roughGemDropChance>
+		<roughGemDropChance>3.0</roughGemDropChance>
 	</ThingDef>
 
 
@@ -1076,7 +1076,7 @@
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>2.0</roughGemDropChance>
+		<roughGemDropChance>3.0</roughGemDropChance>
 	</ThingDef>
 
 
@@ -1118,7 +1118,7 @@
 
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-		<spawnRadius>10</spawnRadius>
+		<spawnRadius>5</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
 		<perMapProbability>0.2</perMapProbability>
@@ -1179,20 +1179,21 @@
     	<maxMeshCount>15</maxMeshCount>
 
 		<!-- The size range -->
-        <visualSizeRange>
-        	<min>0.1</min>
-        	<max>0.2</max>
-      	</visualSizeRange>
-      	<visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-      	<visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-      	<visualSizeVariation>0.1</visualSizeVariation>
+    <visualSizeRange>
+    	<min>0.1</min>
+    	<max>0.2</max>
+    </visualSizeRange>
+    <visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.1</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>5</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>2.0</roughGemDropChance>
+		<roughGemDropChance>3.0</roughGemDropChance>
 	</ThingDef>
+	
 
 	<ThingDef ParentName="EmeraldCrystal">
 		<defName>BerylCrystal</defName>
@@ -1213,7 +1214,7 @@
 		<maxClusterProbability>0.001</maxClusterProbability>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>2.0</roughGemDropChance>
+		<roughGemDropChance>3.0</roughGemDropChance>
 	</ThingDef>
 
 
@@ -1254,7 +1255,7 @@
 
 		<!--How far away it can spawn from an existing location-->
 		<!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-		<spawnRadius>15</spawnRadius>
+		<spawnRadius>7</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
 		<perMapProbability>0.1</perMapProbability>
@@ -1322,22 +1323,22 @@
 		<mustBeUnroofed>false</mustBeUnroofed>
 
 		<!-- The maximum number of images that will be printed per square -->
-    	<maxMeshCount>15</maxMeshCount>
+    <maxMeshCount>15</maxMeshCount>
 
 		<!-- The size range -->
-        <visualSizeRange>
-        	<min>0.05</min>
-        	<max>0.15</max>
-      	</visualSizeRange>
-      	<visualClustering>0.2</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-      	<visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-      	<visualSizeVariation>0.2</visualSizeVariation>
+    <visualSizeRange>
+    	<min>0.05</min>
+    	<max>0.15</max>
+    </visualSizeRange>
+    <visualClustering>0.2</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.5</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>5</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>7.0</roughGemDropChance>
+		<roughGemDropChance>10.0</roughGemDropChance>
 	</ThingDef>
 
 
@@ -1370,9 +1371,9 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<pathCost>10</pathCost>
 		<building>
-            <isInert>true</isInert>
-            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-		    <isNaturalRock>true</isNaturalRock>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+		  <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>Uranium</mineableThing>
 			<mineableYield>20</mineableYield>
