@@ -30,7 +30,7 @@ namespace Minerals
             StringBuilder stringBuilder = new StringBuilder(base.GetInspectString());
             if (Map.terrainGrid.TerrainAt(Position).defName == "WaterOceanShallow") // melts in water
             {
-                stringBuilder.AppendLine("Dissolving in water.");
+                stringBuilder.AppendLine("\nDissolving in water.");
             }
             return stringBuilder.ToString().TrimEndNewlines();
         }
@@ -45,6 +45,11 @@ namespace Minerals
     /// <permission>No restrictions</permission>
     public class ThingDef_SaltCrystal : ThingDef_DynamicMineral
     {
+
+        public static bool IsInWater(IntVec3 aPosition, Map aMap) {
+            return aPosition.GetTerrain(aMap).defName.Contains("water");
+        }
+
         public static float GrowthRateBonus(IntVec3 aPosition, Map aMap)
         {
             float bonus = 1f;
@@ -53,7 +58,7 @@ namespace Minerals
             if (terrain.defName == "TKKN_SandBeachWetSalt") // Grows faster on wet sand
             {
                 bonus = bonus * 3;
-            } else if (terrain.defName == "WaterOceanShallow") // melts in water
+            } else if (IsInWater(aPosition, aMap)) // melts in water
             {
                 bonus = Math.Abs(bonus) * -1;
             }

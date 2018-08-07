@@ -244,6 +244,8 @@ variations. This red variety often yeilds high quality gemstones.
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF.png)
 
+![](readme_images/RubelliteCrystal.jpg)
+
 ### Indicolite Crystal
 
 A type of tourmaline, a boron silicate mineral with many chemical

@@ -8,6 +8,9 @@ This version splits the mod into a few different mods:
 
 ** It might be save-game compatible if you update and use all three mods on the old save, otherwise it will not be save-game compatible. **
  
+* Less mineral abundance overall
+* Generally increased drop amounts
+* Lots of other adjustments
 
 ## v0.4.3
 

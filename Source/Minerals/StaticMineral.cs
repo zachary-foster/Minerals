@@ -402,41 +402,41 @@ namespace Minerals
 
         public virtual bool CanSpawnAt(Map map, IntVec3 position)
         {
-            Log.Message("CanSpawnAt: " + position + " " + map);
+//            Log.Message("CanSpawnAt: " + position + " " + map);
             // Check that location is in the map
             if (! position.InBounds(map))
             {
                 return false;
             }
 
-            Log.Message("CanSpawnAt: location is in the map " + position);
+//            Log.Message("CanSpawnAt: location is in the map " + position);
             // Check that the terrain is ok
             if (! IsTerrainOkAt(map, position))
             {
                 return false;
             }
-            Log.Message("CanSpawnAt: terrain is ok " + position);
+//            Log.Message("CanSpawnAt: terrain is ok " + position);
 
             // Check that it is under a roof if it needs to be
             if (! isRoofConditionOk(map, position))
             {
                 return false;
             }
-            Log.Message("CanSpawnAt: roof is ok " + position);
+//            Log.Message("CanSpawnAt: roof is ok " + position);
 
             // Look for stuff in the way
             if (PlaceIsBlocked(map, position))
             {
                 return false;
             }
-            Log.Message("CanSpawnAt: not plocked " + position);
+//            Log.Message("CanSpawnAt: not plocked " + position);
 
             // Check that it is near any needed terrains
             if (! isNearNeededTerrain(map, position))
             {
                 return false;
             }
-            Log.Message("CanSpawnAt: can spawn " + position);
+//            Log.Message("CanSpawnAt: can spawn " + position);
 
             return true;
         }
@@ -663,7 +663,7 @@ namespace Minerals
                 foundCell = position;
                 return false;
             }
-            Log.Message("TryFindReproductionDestination: " + position + " " + map + "  " + Mathf.CeilToInt(this.spawnRadius));
+//            Log.Message("TryFindReproductionDestination: " + position + " " + map + "  " + Mathf.CeilToInt(this.spawnRadius));
             Predicate<IntVec3> validator = c => c.InBounds(map) && CanSpawnAt(map, c);
             return CellFinder.TryFindRandomCellNear(position, map, Mathf.CeilToInt(spawnRadius), validator, out foundCell);
         }
