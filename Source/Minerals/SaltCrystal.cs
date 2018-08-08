@@ -28,7 +28,7 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder(base.GetInspectString());
-            if (Map.terrainGrid.TerrainAt(Position).defName == "WaterOceanShallow") // melts in water
+            if (ThingDef_SaltCrystal.IsInWater(this.Position, this.Map)) // melts in water
             {
                 stringBuilder.AppendLine("\nDissolving in water.");
             }
@@ -47,7 +47,8 @@ namespace Minerals
     {
 
         public static bool IsInWater(IntVec3 aPosition, Map aMap) {
-            return aPosition.GetTerrain(aMap).defName.Contains("water");
+            TerrainDef terrain = aMap.terrainGrid.TerrainAt(aPosition);
+            return terrain.defName.Contains("Water") || terrain.defName.Contains("water");
         }
 
         public static float GrowthRateBonus(IntVec3 aPosition, Map aMap)
