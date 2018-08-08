@@ -145,7 +145,7 @@
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>GlassBatch</mineableThing>
-			<mineableYield>15</mineableYield>
+			<mineableYield>25</mineableYield>
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
@@ -158,11 +158,11 @@
 		<spawnRadius>2</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.7</perMapProbability>
+		<perMapProbability>0.6</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
-		<maxClusterProbability>0.002</maxClusterProbability>
+		<maxClusterProbability>0.0015</maxClusterProbability>
 
 		<!-- How  many squares each cluster will be -->
 		<minClusterSize>1</minClusterSize>
@@ -227,7 +227,7 @@
      <visualSizeVariation>0.4</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>15</maxMinedYeild>
+		<maxMinedYeild>25</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
 		<roughGemDropChance>0.5</roughGemDropChance>
@@ -295,7 +295,7 @@
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>ObsidianShard</mineableThing>
-			<mineableYield>30</mineableYield>
+			<mineableYield>40</mineableYield>
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
@@ -368,7 +368,7 @@
       	<visualSizeVariation>0.5</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>30</maxMinedYeild>
+		<maxMinedYeild>40</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
 		<roughGemDropChance>0.1</roughGemDropChance>
@@ -402,7 +402,7 @@
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>FlintShard</mineableThing>
-			<mineableYield>20</mineableYield>
+			<mineableYield>25</mineableYield>
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
@@ -477,7 +477,7 @@
       	<visualSizeVariation>0.2</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>20</maxMinedYeild>
+		<maxMinedYeild>25</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
 		<roughGemDropChance>0.1</roughGemDropChance>
@@ -603,7 +603,7 @@
 		<maxMinedYeild>10</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
-		<roughGemDropChance>0.1</roughGemDropChance>
+		<roughGemDropChance>0.5</roughGemDropChance>
 	</ThingDef>
 
 
@@ -744,7 +744,7 @@
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>Steel</mineableThing>
-			<mineableYield>20</mineableYield>
+			<mineableYield>30</mineableYield>
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
@@ -757,7 +757,7 @@
 		<spawnRadius>1</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.3</perMapProbability>
+		<perMapProbability>0.25</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -825,7 +825,7 @@
     <visualSizeVariation>0.3</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>20</maxMinedYeild>
+		<maxMinedYeild>30</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
 		<roughGemDropChance>0</roughGemDropChance>
@@ -842,14 +842,14 @@
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>MagneticMaterial</mineableThing>
-			<mineableYield>10</mineableYield>
+			<mineableYield>20</mineableYield>
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.3</perMapProbability>
+		<perMapProbability>0.2</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -867,7 +867,7 @@
 		<nearAssociatedOreBonus>10</nearAssociatedOreBonus>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>10</maxMinedYeild>
+		<maxMinedYeild>20</maxMinedYeild>
 
 	</ThingDef>
 
@@ -882,7 +882,7 @@
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>Tin</mineableThing>
-			<mineableYield>20</mineableYield>
+			<mineableYield>30</mineableYield>
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
@@ -895,7 +895,7 @@
 		</graphicData>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.3</perMapProbability>
+		<perMapProbability>0.25</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -1376,7 +1376,7 @@
 		  <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>Uranium</mineableThing>
-			<mineableYield>20</mineableYield>
+			<mineableYield>30</mineableYield>
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
@@ -1389,7 +1389,7 @@
 		<spawnRadius>1</spawnRadius>
 
 		<!-- The probability that this mineral type will be spawned at all on a given map -->
-		<perMapProbability>0.3</perMapProbability>
+		<perMapProbability>0.25</perMapProbability>
 		
 		<!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
 		<minClusterProbability>0</minClusterProbability>
@@ -1464,7 +1464,7 @@
       	<visualSizeVariation>0.3</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>20</maxMinedYeild>
+		<maxMinedYeild>30</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
 		<roughGemDropChance>0</roughGemDropChance>
@@ -1488,7 +1488,7 @@
 		    <isNaturalRock>true</isNaturalRock>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>Copper</mineableThing>
-			<mineableYield>10</mineableYield>
+			<mineableYield>30</mineableYield>
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
@@ -1552,7 +1552,7 @@
 		<mustBeUnroofed>false</mustBeUnroofed>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
-		<maxMinedYeild>10</maxMinedYeild>
+		<maxMinedYeild>30</maxMinedYeild>
 
 		<!-- Other resources it might drop -->
 		<roughGemDropChance>0.2</roughGemDropChance>
