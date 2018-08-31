@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<Defs>
+
+<ThingDef Name="WeatheredRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_WeatheredRock" Abstract="True">
+    <thingClass>Minerals.WeatheredRock</thingClass>
+    <drawerType>MapMeshOnly</drawerType>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <filthLeaving>RockRubble</filthLeaving>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <saveCompressible>true</saveCompressible>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <mineable>true</mineable>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <isNaturalRock>true</isNaturalRock>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <deconstructible>false</deconstructible>
+    </building>
+	</ThingDef>
+
+</Defs>

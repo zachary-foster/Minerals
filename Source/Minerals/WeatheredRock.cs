@@ -15,6 +15,13 @@ namespace Minerals
 	/// <permission>No restrictions</permission>
 	public class WeatheredRock : StaticMineral
 	{
+        public new ThingDef_WeatheredRock attributes
+        {
+            get
+            {
+                return base.attributes as ThingDef_WeatheredRock;
+            }
+        }
 
 
 	}       
@@ -27,6 +34,7 @@ namespace Minerals
 	/// <permission>No restrictions</permission>
 	public class ThingDef_WeatheredRock : ThingDef_StaticMineral
 	{
+        // Things this mineral replaces when a map is initialized
 		public List<string> ThingsToReplace; 
 
 		public override void InitNewMap(Map map, float scaling = 1)
