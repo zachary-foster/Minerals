@@ -489,32 +489,37 @@ namespace Minerals
             return false;
         }
 
+		public static bool PosHasThing(Map map, IntVec3 position, List<string> things)
+		{
+			if (things == null || things.Count == 0)
+			{
+				return false;
+			}
+
+			TerrainDef terrain = map.terrainGrid.TerrainAt(position);
+			if (things.Any(terrain.defName.Equals))
+			{
+				return true;
+			}
+
+			foreach (Thing thing in map.thingGrid.ThingsListAt(position))
+			{
+				if (thing == null || thing.def == null)
+				{
+					continue;
+				}
+
+				if (things.Any(thing.def.defName.Equals))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+
         public virtual bool PosIsAssociatedOre(Map map, IntVec3 position)
         {
-            if (associatedOres == null || associatedOres.Count == 0)
-            {
-                return false;
-            }
-
-            TerrainDef terrain = map.terrainGrid.TerrainAt(position);
-            if (associatedOres.Any(terrain.defName.Equals))
-            {
-                return true;
-            }
-
-            foreach (Thing thing in map.thingGrid.ThingsListAt(position))
-            {
-                if (thing == null || thing.def == null)
-                {
-                    continue;
-                }
-             
-                if (associatedOres.Any(thing.def.defName.Equals))
-                {
-                    return true;
-                }
-            }
-            return false;
+			return PosHasThing(map, position, associatedOres);
         }
 
 

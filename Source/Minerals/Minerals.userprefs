@@ -1,10 +1,10 @@
 ﻿<Properties StartupItem="Minerals.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SaltCrystal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatheredRock.cs">
     <Files>
       <File FileName="../../../../Hardcore-SK/Mods/WorkTab/About/About.xml" Line="1" Column="1" />
       <File FileName="../../../../Hardcore-SK/Mods/Core/Defs/ItemCollectionGeneratorDefs/ItemCollectionGenerators_Specific.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" />
-      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="31" Column="31" />
+      <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMineralBase.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Resources/Item_Resource_Gems.xml" Line="1" Column="1" />
       <File FileName="../../Defs/RecipeDefs/Recipe_Gems.xml" Line="1" Column="1" />
@@ -12,7 +12,16 @@
       <File FileName="../../Defs/Misc/StuffCategoryDefs/StuffCategories.xml" Line="1" Column="1" />
       <File FileName="../../Defs/CombatExtended/Ammo/Neolithic/Arrows.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="1" Column="1" />
-      <File FileName="SaltCrystal.cs" Line="61" Column="61" />
+      <File FileName="SaltCrystal.cs" Line="1" Column="1" />
+      <File FileName="harmonyPatching.cs" Line="1" Column="1" />
+      <File FileName="DynamicMineral.cs" Line="1" Column="1" />
+      <File FileName="WeatheredRock.cs" Line="2" Column="2" />
+      <File FileName="StaticMineral.cs" Line="1" Column="1" />
+      <File FileName="../../../../Hardcore-SK/Mods/Core_SK/Defs/ThingDefs_Buildings/Buildings_Walls.xml" Line="1" Column="1" />
+      <File FileName="../../../../Hardcore-SK/Mods/Core_SK/Defs/ThingDefs_Buildings/Buildings.xml" Line="1" Column="1" />
+      <File FileName="../../../../Hardcore-SK/Mods/Core_SK/Defs/ThingDefs/Minerable_SK.xml" Line="1" Column="1" />
+      <File FileName="../../../../Hardcore-SK/Mods/Core_SK/Defs/ThingDefs/Various_Stone.xml" Line="1" Column="1" />
+      <File FileName="SolidRock.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
