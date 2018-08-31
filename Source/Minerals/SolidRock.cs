@@ -15,6 +15,13 @@ namespace Minerals
 	/// <permission>No restrictions</permission>
 	public class SolidRock : StaticMineral
 	{
+        public new ThingDef_SolidRock attributes
+        {
+            get
+            {
+                return base.attributes as ThingDef_SolidRock;
+            }
+        }
 
 
 	}       
@@ -29,45 +36,58 @@ namespace Minerals
 	{
 		public List<string> ThingsToReplace; 
 
-		public override void InitNewMap(Map map, float scaling = 1)
-		{
-			// Print to log
-			Log.Message("Minerals: " + defName + " will replace roofed " + ThingsToReplace + ".");
+        public virtual Thing ThingToReplaceAtPos(Map map, IntVec3 position)
+        {
+            foreach (Thing thing in map.thingGrid.ThingsListAt(position))
+            {
+                if (thing == null || thing.def == null)
+                {
+                    continue;
+                }
 
-			// Find spots to spawn it
-			IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
-			foreach (IntVec3 current in allCells)
-			{
-				if (!current.InBounds(map))
-				{
-					continue;
-				}
+                if (ThingsToReplace.Any(thing.def.defName.Equals))
+                {
+                    return(thing);
+                }
+            }
+            return(null);
+        }
 
-				if (! current.Roofed(map))
-				{
-					continue;
-				}
+        public override void InitNewMap(Map map, float scaling = 1)
+        {
+            // Print to log
+            Log.Message("Minerals: " + defName + " will replace unroofed " + ThingsToReplace + ".");
 
-				// Replace unroofed rock
-				foreach (Thing thing in map.thingGrid.ThingsListAt(current))
-				{
-					if (thing == null || thing.def == null)
-					{
-						continue;
-					}
+            // Find spots to spawn it
+            IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
+            foreach (IntVec3 current in allCells)
+            {
+                if (!current.InBounds(map))
+                {
+                    continue;
+                }
 
-					if (ThingsToReplace.Any(thing.def.defName.Equals))
-					{
-						thing.Destroy();
-						SpawnAt(map, current);
-					}
-				}
-			}
+                if (map.roofGrid.RoofAt(current) == null || map.roofGrid.RoofAt(current).isThickRoof == false)
+                {
+                    continue;
+                }
 
-			// Call parent function for standard spawning
-			base.InitNewMap(map, scaling);
-		}
+                // Replace rock under mountains
+                Thing ToReplace = ThingToReplaceAtPos(map, current);
+                if (ToReplace != null)
+                {
+//                    Log.Message("Minerals: spawning " + defName + " at " + current + " on " + ToReplace.def.defName);
 
-	}
+                    ToReplace.Destroy();
+                    StaticMineral ToSpawn = SpawnAt(map, current, Rand.Range(initialSizeMin, initialSizeMax));
+                }
+            }
+
+
+            // Call parent function for standard spawning
+            base.InitNewMap(map, scaling);
+        }
+
+    }
 
 }

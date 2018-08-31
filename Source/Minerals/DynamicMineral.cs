@@ -442,7 +442,7 @@ namespace Minerals
                     }
 
                     // Try to spawn at that location
-                    mineralType.TrySpawnAt(aPos, map);
+                    mineralType.TrySpawnAt(aPos, map, 0.01f);
 
                 }
                 

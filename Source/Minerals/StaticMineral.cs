@@ -359,18 +359,16 @@ namespace Minerals
             {
                 return null;
             }
-            return TrySpawnAt(dest, map);
+            return TrySpawnAt(dest, map, 0.01f);
         }
 
 
         public virtual void SpawnCluster(Map map, IntVec3 position)
         {
             // Make a cluster center
-            StaticMineral mineral = TrySpawnAt(position, map);
+            StaticMineral mineral = TrySpawnAt(position, map, Rand.Range(initialSizeMin, initialSizeMax));
             if (mineral != null)
             {            
-                mineral.size = Rand.Range(initialSizeMin, initialSizeMax);
-
                 // Pick cluster size
                 int clusterSize = Rand.Range(minClusterSize, maxClusterSize);
 
@@ -633,11 +631,11 @@ namespace Minerals
         // ======= Spawning individuals ======= //
 
 
-        public virtual StaticMineral TrySpawnAt(IntVec3 dest, Map map)
+        public virtual StaticMineral TrySpawnAt(IntVec3 dest, Map map, float size)
         {
             if (CanSpawnAt(map, dest))
             {
-                return SpawnAt(map, dest);
+                return SpawnAt(map, dest, size);
             }
             else
             {
@@ -645,13 +643,13 @@ namespace Minerals
             }
         }
 
-        public virtual StaticMineral SpawnAt(Map map, IntVec3 dest)
+        public virtual StaticMineral SpawnAt(Map map, IntVec3 dest, float size)
         {
             ThingCategory originalDef = category;
             category = ThingCategory.Attachment; // Hack to allow them to spawn on other minerals
             StaticMineral output = (StaticMineral)GenSpawn.Spawn(this, dest, map);
             category = originalDef;
-            output.size = 0.01f;
+            output.size = size;
             map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Things);
             return output;
         }

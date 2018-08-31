@@ -37,6 +37,23 @@ namespace Minerals
         // Things this mineral replaces when a map is initialized
 		public List<string> ThingsToReplace; 
 
+        public virtual Thing ThingToReplaceAtPos(Map map, IntVec3 position)
+        {
+            foreach (Thing thing in map.thingGrid.ThingsListAt(position))
+            {
+                if (thing == null || thing.def == null)
+                {
+                    continue;
+                }
+
+                if (ThingsToReplace.Any(thing.def.defName.Equals))
+                {
+                    return(thing);
+                }
+            }
+            return(null);
+        }
+
 		public override void InitNewMap(Map map, float scaling = 1)
 		{
 			// Print to log
@@ -51,25 +68,20 @@ namespace Minerals
 					continue;
 				}
 
-				if (current.Roofed(map))
+                if (map.roofGrid.RoofAt(current) != null && map.roofGrid.RoofAt(current).isThickRoof)
 				{
 					continue;
 				}
 
 				// Replace unroofed rock
-				foreach (Thing thing in map.thingGrid.ThingsListAt(current))
-				{
-					if (thing == null || thing.def == null)
-					{
-						continue;
-					}
+                Thing ToReplace = ThingToReplaceAtPos(map, current);
+                if (ToReplace != null)
+                {
+//                    Log.Message("Minerals: spawning " + defName + " at " + current + " on " + ToReplace.def.defName);
 
-					if (ThingsToReplace.Any(thing.def.defName.Equals))
-					{
-						thing.Destroy();
-						SpawnAt(map, current);
-					}
-				}
+                    ToReplace.Destroy();
+                    SpawnAt(map, current, Rand.Range(initialSizeMin, initialSizeMax));
+                }
 			}
 
 			// Call parent function for standard spawning
