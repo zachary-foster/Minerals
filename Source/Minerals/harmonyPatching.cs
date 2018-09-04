@@ -21,7 +21,7 @@ namespace Minerals
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.Minerals");
 
             // find the FillTab method of the class RimWorld.ITab_Pawn_Character
-            MethodInfo targetmethod = AccessTools.Method(typeof(GenStep_Plants),"Generate");
+            MethodInfo targetmethod = AccessTools.Method(typeof(GenStep_RockChunks),"Generate");
 
             // find the static method to call before (i.e. Prefix) the targetmethod
             HarmonyMethod postfixmethod = new HarmonyMethod(typeof(HarmonyPatches).GetMethod("initNewMap"));
@@ -29,7 +29,7 @@ namespace Minerals
             harmony.Patch(targetmethod, null, postfixmethod) ;
         }
 
-        public static void initNewMap(GenStep_Plants __instance, Map map) {
+        public static void initNewMap(GenStep_RockChunks __instance, Map map) {
             mapBuilder.initAll(map);
         }
     }

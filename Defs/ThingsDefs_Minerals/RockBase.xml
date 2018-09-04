@@ -29,6 +29,7 @@
       <isNaturalRock>true</isNaturalRock>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
     </building>
 	</ThingDef>
 
@@ -58,6 +59,7 @@
       <isNaturalRock>true</isNaturalRock>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
     </building>
 	</ThingDef>
 	

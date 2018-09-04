@@ -12,10 +12,10 @@
       <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="1" Column="1" />
       <File FileName="SaltCrystal.cs" Line="1" Column="1" />
       <File FileName="harmonyPatching.cs" Line="1" Column="1" />
-      <File FileName="DynamicMineral.cs" Line="1" Column="1" />
+      <File FileName="DynamicMineral.cs" Line="37" Column="37" />
       <File FileName="WeatheredRock.cs" Line="1" Column="1" />
-      <File FileName="StaticMineral.cs" Line="1" Column="1" />
-      <File FileName="SolidRock.cs" Line="3" Column="3" />
+      <File FileName="StaticMineral.cs" Line="9" Column="9" />
+      <File FileName="SolidRock.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

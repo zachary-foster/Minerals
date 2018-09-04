@@ -30,6 +30,7 @@
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
 		</building>
 
 		<!--How far away it can spawn from an existing location-->
@@ -96,8 +97,8 @@
     	<min>1.5</min>
     	<max>2.5</max>
     </visualSizeRange>
-    <visualClustering>0.5</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>1.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualClustering>0.8</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>0.8</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.3</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
@@ -140,6 +141,7 @@
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
 		</building>
 
 		<!--How far away it can spawn from an existing location-->
@@ -207,7 +209,7 @@
     	<max>2.5</max>
     </visualSizeRange>
     <visualClustering>0.8</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>1.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSpread>0.8</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.3</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
@@ -326,7 +328,7 @@
       	</visualSizeRange>
       	<visualClustering>0.3</visualClustering> <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
       	<visualSpread>2.0</visualSpread> <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-      	<visualSizeVariation>0.4</visualSizeVariation>
+      	<visualSizeVariation>0.6</visualSizeVariation>
 
 		<!-- The amount of resource returned if the mineral is its maximum size -->
 		<maxMinedYeild>1</maxMinedYeild>

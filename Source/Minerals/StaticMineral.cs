@@ -647,10 +647,12 @@ namespace Minerals
         {
             ThingCategory originalDef = category;
             category = ThingCategory.Attachment; // Hack to allow them to spawn on other minerals
-            StaticMineral output = (StaticMineral)GenSpawn.Spawn(this, dest, map);
+            //StaticMineral output = (StaticMineral)GenSpawn.Spawn(this, dest, map);
+            StaticMineral output = (StaticMineral)ThingMaker.MakeThing(this);
+            GenSpawn.Spawn(output, dest, map);
             category = originalDef;
             output.size = size;
-            map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Things);
+            map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Buildings);
             return output;
         }
             

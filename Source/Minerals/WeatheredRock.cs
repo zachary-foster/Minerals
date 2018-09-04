@@ -60,6 +60,7 @@ namespace Minerals
 			Log.Message("Minerals: " + defName + " will replace unroofed " + ThingsToReplace + ".");
 
 			// Find spots to spawn it
+            map.regionAndRoomUpdater.Enabled = false;
 			IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
 			foreach (IntVec3 current in allCells)
 			{
@@ -79,10 +80,15 @@ namespace Minerals
                 {
 //                    Log.Message("Minerals: spawning " + defName + " at " + current + " on " + ToReplace.def.defName);
 
-                    ToReplace.Destroy();
-                    SpawnAt(map, current, Rand.Range(initialSizeMin, initialSizeMax));
+                    ToReplace.Destroy(DestroyMode.Vanish);
+                    StaticMineral spawned = SpawnAt(map, current, Rand.Range(initialSizeMin, initialSizeMax));
+                    map.edificeGrid.Register(spawned);
                 }
 			}
+
+            map.regionAndRoomUpdater.Enabled = true;
+
+
 
 			// Call parent function for standard spawning
 			base.InitNewMap(map, scaling);
