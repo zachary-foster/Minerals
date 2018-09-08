@@ -1,3 +1,13 @@
+## v0.6.0
+
+### Bug fixes:
+
+* Neolithic traders and visitors now buy/sell obsidian and flint.
+* Neolithic visitors now buy/sell rough gems.
+* Outlander and Exotic visitors now buy/sell rough gems and cut gems.
+* Various treaders now buy/sell rough gems and cut gems.
+
+
 ## v0.5.0
 
 This version splits the mod into a few different mods:
