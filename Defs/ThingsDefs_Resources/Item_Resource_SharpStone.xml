@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+  
+  
   <ThingDef ParentName="ResourceBase">
     <defName>ObsidianShard</defName>
     <label>Obsidian Shard</label>
@@ -49,6 +51,8 @@
       <commonality>0.05</commonality>
     </stuffProps>
   </ThingDef>
+  
+  
   <ThingDef ParentName="ResourceBase">
     <defName>FlintShard</defName>
     <label>Flint Shard</label>
@@ -98,4 +102,6 @@
       <commonality>0.05</commonality>
     </stuffProps>
   </ThingDef>
+  
+  
 </Defs>

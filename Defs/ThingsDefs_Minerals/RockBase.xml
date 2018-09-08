@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+  
+  
   <ThingDef Name="WeatheredRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_WeatheredRock" Abstract="True">
     <thingClass>Minerals.WeatheredRock</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -29,6 +31,8 @@
       <isEdifice>true</isEdifice>
     </building>
   </ThingDef>
+  
+  
   <ThingDef Name="SolidRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_SolidRock" Abstract="True">
     <thingClass>Minerals.SolidRock</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -58,4 +62,6 @@
       <isEdifice>true</isEdifice>
     </building>
   </ThingDef>
+  
+  
 </Defs>

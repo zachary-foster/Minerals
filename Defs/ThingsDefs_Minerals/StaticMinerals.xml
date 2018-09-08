@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+  
+  
   <ThingDef ParentName="StaticMineralBase">
     <defName>CalciteCrystal</defName>
     <label>Calcite Crystal</label>
