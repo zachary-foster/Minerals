@@ -1,5 +1,5 @@
 ﻿<Properties StartupItem="Minerals.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SolidRock.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatheredRock.cs">
     <Files>
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="1" Column="1" />
@@ -11,11 +11,11 @@
       <File FileName="../../Defs/CombatExtended/Ammo/Neolithic/Arrows.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/DynamicMinerals.xml" Line="1" Column="1" />
       <File FileName="SaltCrystal.cs" Line="1" Column="1" />
-      <File FileName="harmonyPatching.cs" Line="1" Column="1" />
-      <File FileName="DynamicMineral.cs" Line="37" Column="37" />
-      <File FileName="WeatheredRock.cs" Line="1" Column="1" />
-      <File FileName="StaticMineral.cs" Line="9" Column="9" />
-      <File FileName="SolidRock.cs" Line="1" Column="1" />
+      <File FileName="harmonyPatching.cs" Line="10" Column="10" />
+      <File FileName="DynamicMineral.cs" Line="57" Column="57" />
+      <File FileName="WeatheredRock.cs" Line="21" Column="21" />
+      <File FileName="StaticMineral.cs" Line="47" Column="47" />
+      <File FileName="SolidRock.cs" Line="21" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
