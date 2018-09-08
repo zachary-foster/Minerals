@@ -1,10 +1,9 @@
+<?xml version="1.0"?>
 <Defs>
-  
   <StuffCategoryDef>
     <defName>SharpStony</defName>
     <label>sharpstony</label>
   </StuffCategoryDef>
-
   <ThingCategoryDef>
     <defName>SharpStony</defName>
     <label>Sharp Stony</label>
@@ -12,5 +11,4 @@
     <resourceReadoutRoot>true</resourceReadoutRoot>
     <iconPath>UI/Icons/ThingCategories/SharpStony</iconPath>
   </ThingCategoryDef>
-
 </Defs>
