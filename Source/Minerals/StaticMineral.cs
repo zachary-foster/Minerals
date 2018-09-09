@@ -118,20 +118,19 @@ namespace Minerals
         // hackish solution since I cant override Mineable.DestroyMined
         public override void PreApplyDamage(DamageInfo dinfo, out bool absorbed)
         {
-            // Drop gems
-            float dropChance = size * attributes.roughGemDropChance * ((float) Math.Min(dinfo.Amount, HitPoints) / (float) MaxHitPoints);
-            // Log.Message("this.size: " + this.size);
-            // Log.Message("this.attributes.roughGemDropChance: " + this.attributes.roughGemDropChance);
-            // Log.Message("dinfo.Amount: " + dinfo.Amount);
-            // Log.Message("this.HitPoints: " + this.HitPoints);
-            // Log.Message("this.MaxHitPoints: " + this.MaxHitPoints);
-            // Log.Message("dropChance: " + dropChance);
-            if (Rand.Range(0f, 1f) < dropChance)
+            // Drop resources
+            foreach (RandomResourceDrop toDrop in attributes.randomlyDropResources)
             {
-                Thing thing = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("RoughGem"), null);
-                thing.stackCount = 1;
-                GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
+                float dropChance = size * toDrop.DropProbability * ((float) Math.Min(dinfo.Amount, HitPoints) / (float) MaxHitPoints);
+                if (Rand.Range(0f, 1f) < dropChance)
+                {
+                    Thing thing = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName), null);
+                    thing.stackCount = 1;
+                    GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
+                }
+
             }
+
 
             // 
             if (def.building.mineableThing != null && def.building.mineableYieldWasteable && dinfo.Def == DamageDefOf.Mining && dinfo.Instigator != null && dinfo.Instigator is Pawn)
@@ -274,6 +273,16 @@ namespace Minerals
 
 
 
+    /// <summary>
+    /// ThingDef_StaticMineral class.
+    /// </summary>
+    /// <author>zachary-foster</author>
+    /// <permission>No restrictions</permission>
+    public class RandomResourceDrop
+    {
+        public string ResourceDefName;
+        public float DropProbability;
+    }
 
 
 
@@ -343,7 +352,7 @@ namespace Minerals
         public int maxMinedYeild = 10;
 
         // Other resources it might drop
-        public float roughGemDropChance = 0f;
+        public List<RandomResourceDrop> randomlyDropResources;
 
         // If it can spawn on other things
         public bool canSpawnOnThings = false;

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+  
+  <ThingDef Name="WeatheredOre" ParentName="WeatheredRockBase" Abstract="True">
+    <defName>WeatheredOre</defName>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>0</perMapProbability>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>1</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>1.5</min>
+      <max>1.8</max>
+    </visualSizeRange>
+    <visualClustering>0.8</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>0.4</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.2</visualSizeVariation>
+  </ThingDef>
+
+
+  <ThingDef Name="SolidOre" ParentName="SolidRockBase" Abstract="True">
+    <defName>SolidOre</defName>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>0</perMapProbability>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>1</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>1.5</min>
+      <max>1.8</max>
+    </visualSizeRange>
+    <visualClustering>1.0</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>0.2</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.1</visualSizeVariation>
+  </ThingDef>
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreSteel</defName>
+    <label>Weathered Iron Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreSteel</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2800</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Steel</mineableThing>
+      <mineableYield>35</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Sulfur</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableSteel</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreSteel</defName>
+    <label>Solid Iron Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreSteel</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2800</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Steel</mineableThing>
+      <mineableYield>35</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Sulfur</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableSteel</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+  
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreSilver</defName>
+    <label>Weathered Silver Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreSilver</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3500</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Silver</mineableThing>
+      <mineableYield>250</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Gold</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableSilver</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreSilver</defName>
+    <label>Solid Silver Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreSilver</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>4000</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Silver</mineableThing>
+      <mineableYield>300</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Gold</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableSilver</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreGold</defName>
+    <label>Weathered Gold Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreGold</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>4500</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Gold</mineableThing>
+      <mineableYield>50</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Silver</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableGold</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreGold</defName>
+    <label>Solid Gold Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreGold</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Gold</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Silver</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableGold</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+</Defs>

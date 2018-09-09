@@ -150,7 +150,17 @@
       <minStable>0.05</minStable>
       <belowMinDecayRate>1</belowMinDecayRate>
     </fertGrowthRateModifer>
+    
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
+  
+  
   <ThingDef ParentName="DynamicMineralBase">
     <defName>GlowstoneCrystal</defName>
     <label>Glowstone Crystal</label>
@@ -300,7 +310,17 @@
       <minStable>-99999</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
     </sizeGrowthRateModifer>
+    
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
+  
+  
   <ThingDef ParentName="DynamicMineralBase">
     <thingClass>Minerals.SaltCrystal</thingClass>
     <defName>ZF_SaltCrystal</defName>
@@ -462,7 +482,18 @@
       <minStable>-1.1</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
     </rainGrowthRateModifer>
+    
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0</DropProbability>
+      </li>
+    </randomlyDropResources>
+
   </ThingDef>
+  
+  
   <ThingDef ParentName="DynamicMineralBase">
     <defName>SulfurCrystal</defName>
     <label>Sulfur Crystals</label>
@@ -602,5 +633,16 @@
       <minStable>-2</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
     </distGrowthRateModifer>
+    
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0</DropProbability>
+      </li>
+    </randomlyDropResources>
+    
   </ThingDef>
+  
+  
 </Defs>

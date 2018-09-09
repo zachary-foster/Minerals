@@ -97,7 +97,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>20</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>0.2</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -199,7 +204,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>25</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>0.5</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -228,7 +238,12 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>1.0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>1.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -322,7 +337,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>40</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>0.1</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.2</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -417,7 +437,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>25</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>0.1</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.2</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -525,7 +550,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>10</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>0.5</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>1.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -550,7 +580,12 @@
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.002</maxClusterProbability>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>1.0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>2.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -587,7 +622,12 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.5</visualSizeVariation>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>3.0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>4.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -624,7 +664,12 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>4.0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>5.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -725,7 +770,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>30</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -760,6 +810,13 @@
     <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>20</maxMinedYeild>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -827,7 +884,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>30</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>0.3</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>1.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -921,7 +983,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>5</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>4.0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>7.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -941,7 +1008,12 @@
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.001</maxClusterProbability>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>4.0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>7.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -1041,7 +1113,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>5</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>4.0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>5.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -1061,7 +1138,12 @@
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.001</maxClusterProbability>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>4.0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>5.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -1170,7 +1252,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>5</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>15.0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>15.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -1284,7 +1371,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>30</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>0</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
@@ -1362,7 +1454,12 @@
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>30</maxMinedYeild>
     <!-- Other resources it might drop -->
-    <roughGemDropChance>0.5</roughGemDropChance>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>1.0</DropProbability>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
 
 
