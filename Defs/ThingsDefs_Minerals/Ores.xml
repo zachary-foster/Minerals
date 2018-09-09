@@ -10,8 +10,8 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.5</min>
-      <max>1.8</max>
+      <min>1.6</min>
+      <max>2.2</max>
     </visualSizeRange>
     <visualClustering>0.8</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -29,8 +29,8 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.5</min>
-      <max>1.8</max>
+      <min>1.6</min>
+      <max>2.0</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -289,4 +289,546 @@
     
   </ThingDef>
 
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreNitre</defName>
+    <label>Weathered Nitre Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Rock/WeatheredSandstone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(200,200,200)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Nitre. Major uses of potassium nitrate are in fertilizers, tree stump removal, rocket propellants and fireworks. It is one of the major components of gunpowder.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Nitre</mineableThing>
+      <mineableYield>70</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableNitre</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreNitre</defName>
+    <label>Solid Nitre Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Rock/WeatheredSandstone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(200,200,200)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2500</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Nitre. Major uses of potassium nitrate are in fertilizers, tree stump removal, rocket propellants and fireworks. It is one of the major components of gunpowder.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Nitre</mineableThing>
+      <mineableYield>90</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableNitre</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+  
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreLead</defName>
+    <label>Weathered Anglesite Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreLead</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+    </statBases>
+   <description>Deposits of Anglesite. Anglesite is the ore form of Lead. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and has a relatively low melting point.</description>
+   <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Anglesite</mineableThing>
+      <mineableYield>70</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableLead</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreLead</defName>
+    <label>Solid Anglesite Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreLead</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>7000</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Anglesite. Anglesite is the ore form of Lead. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and has a relatively low melting point.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Anglesite</mineableThing>
+      <mineableYield>90</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableLead</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+  
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreCoal</defName>
+    <label>Weathered Coal Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Rock/WeatheredSlate</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(40,40,40)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Coal Ore. Coal is useful as a reaction agent in metal alloy production.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Coal</mineableThing>
+      <mineableYield>70</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Sulfur</ResourceDefName>
+        <DropProbability>3</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableCoal</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreCoal</defName>
+    <label>Solid Coal Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Rock/WeatheredSlate</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(40,40,40)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2800</MaxHitPoints>
+    </statBases>
+    <description>Deposits of Coal Ore. Coal is useful as a reaction agent in metal alloy production.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Coal</mineableThing>
+      <mineableYield>90</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Sulfur</ResourceDefName>
+        <DropProbability>3</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableCoal</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+  
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreNickel</defName>
+    <label>Weathered Nickel Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreNickel</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>9000</MaxHitPoints>
+    </statBases>
+    <description>Lateritic nickel ore deposits are surficial, weathered rinds formed on ultramafic rocks. Nickel Ore contains Nickel and small amounts of Cobalt.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Nickel</mineableThing>
+      <mineableYield>40</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineablePlasteel</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreNickel</defName>
+    <label>Solid Nickel Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreNickel</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>12000</MaxHitPoints>
+    </statBases>
+    <description>Lateritic nickel ore deposits are surficial, weathered rinds formed on ultramafic rocks. Nickel Ore contains Nickel and small amounts of Cobalt.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Nickel</mineableThing>
+      <mineableYield>70</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineablePlasteel</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreTin</defName>
+    <label>Weathered Tin Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreTin</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>9000</MaxHitPoints>
+    </statBases>
+    <description>Lateritic Tin ore deposits are surficial, weathered rinds formed on ultramafic rocks. Tin Ore contains Tin and small amounts of Cobalt.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Tin</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableTin</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreTin</defName>
+    <label>Solid Tin Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreTin</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>12000</MaxHitPoints>
+    </statBases>
+    <description>Lateritic Tin ore deposits are surficial, weathered rinds formed on ultramafic rocks. Tin Ore contains Tin and small amounts of Cobalt.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Tin</mineableThing>
+      <mineableYield>80</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableTin</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+  
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreCopper</defName>
+    <label>Weathered Copper Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreCopper</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1700</MaxHitPoints>
+    </statBases>
+    <description>Lateritic Copper ore deposits are surficial, weathered rinds formed on ultramafic rocks. Copper Ore contains Copper and small amounts of Cobalt.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Copper</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableCopper</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreCopper</defName>
+    <label>Solid Copper Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreCopper</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+    </statBases>
+    <description>Lateritic Copper ore deposits are surficial, weathered rinds formed on ultramafic rocks. Copper Ore contains Copper and small amounts of Cobalt.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Copper</mineableThing>
+      <mineableYield>90</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableCopper</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreAluminum</defName>
+    <label>Weathered Aluminum Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreAluminum</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+    </statBases>
+    <description>Lateritic Aluminium ore deposits are surficial, weathered rinds formed on ultramafic rocks. Aluminium Ore contains Aluminium and small amounts of Cobalt.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Aluminium</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableAluminium</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreAluminum</defName>
+    <label>Solid Aluminum Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreAluminum</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>6000</MaxHitPoints>
+    </statBases>
+    <description>Lateritic Aluminium ore deposits are surficial, weathered rinds formed on ultramafic rocks. Aluminium Ore contains Aluminium and small amounts of Cobalt.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Aluminium</mineableThing>
+      <mineableYield>90</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableAluminium</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+  
+  
 </Defs>

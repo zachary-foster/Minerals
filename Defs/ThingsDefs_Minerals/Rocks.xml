@@ -78,8 +78,8 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.5</min>
-      <max>1.8</max>
+      <min>1.6</min>
+      <max>1.9</max>
     </visualSizeRange>
     <visualClustering>0.8</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -207,7 +207,7 @@
     <label>Sandstone Rocks</label>
     <description>Deposits of sandstone, a sedimentary rock made of cemented silica and feldspar grains that eroded from another rock long ago.</description>
     <graphicData>
-      <texPath>Things/Rock/PassableBasalt</texPath>
+      <texPath>Things/Rock/PassableSandstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(126,104,94)</color>
@@ -217,7 +217,7 @@
     <fillPercent>0.5</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
+      <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -244,7 +244,7 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0.03</minClusterProbability>
-    <maxClusterProbability>0.05</maxClusterProbability>
+    <maxClusterProbability>0.07</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>3</maxClusterSize>
@@ -275,17 +275,17 @@
     <associatedOres>
       <li>WeatheredSandstone</li>
     </associatedOres>
-    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>7</maxMeshCount>
+    <maxMeshCount>6</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.2</min>
-      <max>1.5</max>
+      <min>0.4</min>
+      <max>1.7</max>
     </visualSizeRange>
     <visualClustering>0.5</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -618,7 +618,7 @@
     <label>Weathered Granite</label>
     <description>Granite.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <texPath>Things/Rock/WeatheredGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(105,95,97)</color>
@@ -689,8 +689,8 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.5</min>
-      <max>1.8</max>
+      <min>1.6</min>
+      <max>2.0</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -790,7 +790,7 @@
     <!-- The size range -->
     <visualSizeRange>
       <min>1.7</min>
-      <max>1.8</max>
+      <max>2.0</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -818,7 +818,7 @@
     <label>Granite Bolders</label>
     <description>Granite.</description>
     <graphicData>
-      <texPath>Things/Rock/PassableBasalt</texPath>
+      <texPath>Things/Rock/PassableGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
@@ -931,7 +931,7 @@
     <label>Weathered Marble</label>
     <description>Marble.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <texPath>Things/Rock/WeatheredGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(132,135,132)</color>
@@ -1131,7 +1131,7 @@
     <label>Passable Marble</label>
     <description>Marble.</description>
     <graphicData>
-      <texPath>Things/Rock/PassableBasalt</texPath>
+      <texPath>Things/Rock/PassableGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(132,135,132)</color>
@@ -1555,7 +1555,7 @@
     <label>Weathered Slate</label>
     <description>Slate.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <texPath>Things/Rock/WeatheredSlate</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(70,70,70)</color>
@@ -1626,8 +1626,8 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.5</min>
-      <max>1.8</max>
+      <min>1.8</min>
+      <max>2.2</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -1655,7 +1655,7 @@
     <label>Solid Slate</label>
     <description>A solid wall of Slate.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <texPath>Things/Rock/WeatheredSlate</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(70,70,70)</color>
@@ -1726,8 +1726,8 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.7</min>
-      <max>1.8</max>
+      <min>1.8</min>
+      <max>2.1</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
