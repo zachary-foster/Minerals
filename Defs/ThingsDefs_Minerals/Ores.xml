@@ -831,4 +831,591 @@
   </ThingDef>
   
   
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreJade</defName>
+    <label>Weathered Jade Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreJade</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+    </statBases>
+    <description>Rock containing bits of jade.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Jade</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>1</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableJade</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreJade</defName>
+    <label>Solid Jade Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreJade</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>7000</MaxHitPoints>
+    </statBases>
+    <description>Rock containing bits of jade.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Jade</mineableThing>
+      <mineableYield>90</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>1</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableJade</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreTitanium</defName>
+    <label>Weathered Ilmenite Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreTitanium</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>10000</MaxHitPoints>
+    </statBases>
+    <description>Ilmenite is the ore of Titanium. Titanium is a very durable metal and is often used in alloys to produce metals much stronger than steel.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Ilmenite</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableTitanium</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreTitanium</defName>
+    <label>Solid Titanium Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreTitanium</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>15000</MaxHitPoints>
+    </statBases>
+    <description>Ilmenite is the ore of Titanium. Titanium is a very durable metal and is often used in alloys to produce metals much stronger than steel.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Ilmenite</mineableThing>
+      <mineableYield>90</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableTitanium</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreManganese</defName>
+    <label>Weathered Pyrolusite Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreManganese</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3500</MaxHitPoints>
+    </statBases>
+    <description>Pyrolusite is the ore of Maganese. Maganese is a metal with high magnetism.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Pyrolusite</mineableThing>
+      <mineableYield>40</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableManganese</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreManganese</defName>
+    <label>Solid Pyrolusite Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreManganese</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+    </statBases>
+    <description>Pyrolusite is the ore of Maganese. Maganese is a metal with high magnetism.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Pyrolusite</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableManganese</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreTungsten</defName>
+    <label>Weathered Wolframite Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreTungsten</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>15000</MaxHitPoints>
+    </statBases>
+    <description>Wolframite is the ore of Tungsten. Tungsten is a strong and quite dense material with a high melting temperature used for electric filaments and armor-piercing ammunition, as well as hard tungsten carbide machine tools.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Wolframite</mineableThing>
+      <mineableYield>40</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableTungsten</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreTungsten</defName>
+    <label>Solid Wolframite Ore Deposits</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreTungsten</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>25000</MaxHitPoints>
+    </statBases>
+    <description>Wolframite is the ore of Tungsten. Tungsten is a strong and quite dense material with a high melting temperature used for electric filaments and armor-piercing ammunition, as well as hard tungsten carbide machine tools.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Wolframite</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableTungsten</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreGlowstone</defName>
+    <label>Weathered Glowstone Deposit</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreGlowstone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+		  <Beauty>20</Beauty>
+      <MaxHitPoints>3000</MaxHitPoints>
+    </statBases>
+    <description>Rock containing bits of a strange glowing gem.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Glowstone</mineableThing>
+      <mineableYield>40</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableGlowstone</li>
+    </ThingsToReplace
+    
+    <comps>
+		  <li Class="CompProperties_Glower">
+			  <glowRadius>2</glowRadius>
+			  <glowColor>(113,187,252,0)</glowColor>
+		  </li>
+	  </comps>
+
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreGlowstone</defName>
+    <label>Solid Glowstone Deposit</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreGlowstone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+	  	<Beauty>20</Beauty>
+      <MaxHitPoints>4000</MaxHitPoints>
+    </statBases>
+    <description>Rock containing bits of a strange glowing gem.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Glowstone</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableGlowstone</li>
+    </ThingsToReplace>
+    
+    <comps>
+		  <li Class="CompProperties_Glower">
+			  <glowRadius>4</glowRadius>
+			  <glowColor>(113,187,252,0)</glowColor>
+		  </li>
+	  </comps>
+
+    
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreColdstone</defName>
+    <label>Weathered Coldstone Deposit</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreColdstone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+		  <Beauty>2</Beauty>
+      <MaxHitPoints>3000</MaxHitPoints>
+    </statBases>
+    <description>Rock containing bits of a strangely cold gem.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Coldstone</mineableThing>
+      <mineableYield>40</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableColdstone</li>
+    </ThingsToReplace
+    
+  	<comps>
+  		<li Class="SK.CompProperties_ColdPusher">
+  			<ConstantPush>true</ConstantPush>
+  			<ColdPerSecond>-10</ColdPerSecond>
+  			<ColdPushMinTemperature>16</ColdPushMinTemperature>
+  		</li>
+  		<li Class="CompProperties_Glower">
+  			<glowRadius>2</glowRadius>
+  			<glowColor>(0,96,255,0)</glowColor>
+  		</li>
+  	</comps>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreColdstone</defName>
+    <label>Solid Coldstone Deposit</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreColdstone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+	  	<Beauty>2</Beauty>
+      <MaxHitPoints>4000</MaxHitPoints>
+    </statBases>
+    <description>Rock containing bits of a strangely cold gem.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Coldstone</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableColdstone</li>
+    </ThingsToReplace>
+    
+    <comps>
+    	<li Class="SK.CompProperties_ColdPusher">
+    		<ConstantPush>true</ConstantPush>
+    		<ColdPerSecond>-10</ColdPerSecond>
+    		<ColdPushMinTemperature>16</ColdPushMinTemperature>
+    	</li>
+    	<li Class="CompProperties_Glower">
+    		<glowRadius>4</glowRadius>
+    		<glowColor>(0,96,255,0)</glowColor>
+    	</li>
+    </comps>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreSalt</defName>
+    <label>Weathered Salt Deposit</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreSalt</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+		  <Beauty>2</Beauty>
+      <MaxHitPoints>800</MaxHitPoints>
+    </statBases>
+    <description>Salt compacted over time..</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Salt</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableSalt</li>
+    </ThingsToReplace
+
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreSalt</defName>
+    <label>Solid Salt Deposit</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreSalt</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+	  	<Beauty>2</Beauty>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <description>Salt compacted over time..</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Salt</mineableThing>
+      <mineableYield>100</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableSalt</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
 </Defs>
