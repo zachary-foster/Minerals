@@ -18,6 +18,11 @@
     <visualSpread>0.4</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>0.8</initialSizeMin>
+    <initialSizeMax>1.0</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.2</initialSizeVariation>
   </ThingDef>
 
 
@@ -37,6 +42,11 @@
     <visualSpread>0.2</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.1</visualSizeVariation>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>0.8</initialSizeMin>
+    <initialSizeMax>1.0</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.2</initialSizeVariation>
   </ThingDef>
 
   <ThingDef ParentName="WeatheredOre">
@@ -332,7 +342,7 @@
     <defName>SolidOreNitre</defName>
     <label>Solid Nitre Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Rock/WeatheredSandstone</texPath>
+      <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(200,200,200)</color>
@@ -1147,7 +1157,7 @@
     <defName>WeatheredOreGlowstone</defName>
     <label>Weathered Glowstone Deposit</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreGlowstone</texPath>
+      <texPath>Things/Mineral/GlowstoneCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
@@ -1177,7 +1187,7 @@
 
     <ThingsToReplace>
       <li>MineableGlowstone</li>
-    </ThingsToReplace
+    </ThingsToReplace>
     
     <comps>
 		  <li Class="CompProperties_Glower">
@@ -1186,6 +1196,18 @@
 		  </li>
 	  </comps>
 
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>15</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>0.5</min>
+      <max>1.3</max>
+    </visualSizeRange>
+    <visualClustering>0.5</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.5</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.2</visualSizeVariation>
     
   </ThingDef>
 
@@ -1194,7 +1216,7 @@
     <defName>SolidOreGlowstone</defName>
     <label>Solid Glowstone Deposit</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreGlowstone</texPath>
+      <texPath>Things/Mineral/GlowstoneCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
@@ -1233,6 +1255,18 @@
 		  </li>
 	  </comps>
 
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>15</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>0.8</min>
+      <max>1.3</max>
+    </visualSizeRange>
+    <visualClustering>0.5</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.3</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.2</visualSizeVariation>
     
   </ThingDef>
 
@@ -1242,7 +1276,7 @@
     <defName>WeatheredOreColdstone</defName>
     <label>Weathered Coldstone Deposit</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreColdstone</texPath>
+      <texPath>Things/Mineral/ColdstoneCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
@@ -1272,7 +1306,7 @@
 
     <ThingsToReplace>
       <li>MineableColdstone</li>
-    </ThingsToReplace
+    </ThingsToReplace>
     
   	<comps>
   		<li Class="SK.CompProperties_ColdPusher">
@@ -1286,6 +1320,19 @@
   		</li>
   	</comps>
     
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>15</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>0.3</min>
+      <max>1.5</max>
+    </visualSizeRange>
+    <visualClustering>0.5</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.3</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.2</visualSizeVariation>
+    
   </ThingDef>
 
 
@@ -1293,7 +1340,7 @@
     <defName>SolidOreColdstone</defName>
     <label>Solid Coldstone Deposit</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreColdstone</texPath>
+      <texPath>Things/Mineral/ColdstoneCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
@@ -1337,6 +1384,19 @@
     	</li>
     </comps>
     
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>15</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>0.6</min>
+      <max>1.6</max>
+    </visualSizeRange>
+    <visualClustering>0.5</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.3</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.2</visualSizeVariation>
+    
   </ThingDef>
 
 
@@ -1344,9 +1404,10 @@
     <defName>WeatheredOreSalt</defName>
     <label>Weathered Salt Deposit</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreSalt</texPath>
+      <texPath>Things/Rock/WeatheredSandstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(230,230,230)</color>
     </graphicData>
     <statBases>
 		  <Beauty>2</Beauty>
@@ -1368,13 +1429,13 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <DropProbability>3</DropProbability>
       </li>
     </randomlyDropResources>
 
     <ThingsToReplace>
       <li>MineableSalt</li>
-    </ThingsToReplace
+    </ThingsToReplace>
 
   </ThingDef>
 
@@ -1383,12 +1444,12 @@
     <defName>SolidOreSalt</defName>
     <label>Solid Salt Deposit</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreSalt</texPath>
+      <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(230,230,230)</color>
     </graphicData>
     <statBases>
-	  	<Beauty>2</Beauty>
       <MaxHitPoints>1000</MaxHitPoints>
     </statBases>
     <description>Salt compacted over time..</description>
@@ -1407,12 +1468,210 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <DropProbability>3</DropProbability>
       </li>
     </randomlyDropResources>
 
     <ThingsToReplace>
       <li>MineableSalt</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreTech</defName>
+    <label>Weathered compacted machinery</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreTech</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+		  <Beauty>-4</Beauty>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Component</mineableThing>
+      <mineableYield>2</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>AluminiumBar</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Mechanism</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>ElectronicComponents</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableComponents</li>
+    </ThingsToReplace>
+
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreTech</defName>
+    <label>Solid compacted machinery</label>
+    <graphicData>
+      <texPath>Things/Ore/SolidOreTech</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2500</MaxHitPoints>
+    </statBases>
+    <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
+     <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Component</mineableThing>
+      <mineableYield>3</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>AluminiumBar</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Plasteel</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>RobotParts</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Mechanism</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>AdvMechanism</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Electronics</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>ElectronicComponents</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Microchips</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableComponents</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreAmber</defName>
+    <label>Weathered Amber Deposit</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreGold</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+		  <Beauty>2</Beauty>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>TKKN_Amber</mineableThing>
+      <mineableYield>40</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>1</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>TKKN_MinableAmber</li>
+    </ThingsToReplace>
+
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreAmber</defName>
+    <label>Solid Amber Deposit</label>
+    <graphicData>
+      <texPath>Things/Ore/WeatheredOreGold</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1600</MaxHitPoints>
+    </statBases>
+    <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>TKKN_Amber</mineableThing>
+      <mineableYield>60</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>3</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>TKKN_MinableAmber</li>
     </ThingsToReplace>
     
   </ThingDef>

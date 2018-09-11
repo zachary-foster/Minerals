@@ -640,3 +640,6 @@ non-commercial reuse. Here are the list of images used:
 -   <https://commons.wikimedia.org/wiki/File:Diamond-dimd5a.jpg>
 -   <https://vi.wikipedia.org/wiki/T%E1%BA%ADp_tin:Pitchblende_schlema-alberoda.JPG>
 -   <https://www.flickr.com/photos/jahansell/5379933134>
+- http://www.geograph.ie/photo/3466167 © Copyright Richard Webb and licensed for reuse under Creative Commons Licence.
+- https://www.flickr.com/photos/spelio/43795122372/in/photostream/
+- https://commons.wikimedia.org/wiki/File:Deritend_Car_Park.jpg
