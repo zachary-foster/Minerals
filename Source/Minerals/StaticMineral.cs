@@ -207,7 +207,7 @@ namespace Minerals
 
         public override void Print(SectionLayer layer)
         {
-			if (this.attributes.graphicData.graphicClass.Name != "Graphic_Random") {
+            if (this.attributes.graphicData.graphicClass.Name != "Graphic_Random" || this.attributes.graphicData.linkType == LinkDrawerType.CornerFiller) {
 				base.Print(layer);
 			} else {
 				Rand.PushState();

@@ -56,8 +56,6 @@ namespace Minerals
 
 		public override void InitNewMap(Map map, float scaling = 1)
 		{
-			// Print to log
-			Log.Message("Minerals: " + defName + " will replace unroofed " + ThingsToReplace + ".");
 
 			// Find spots to spawn it
             map.regionAndRoomUpdater.Enabled = false;
