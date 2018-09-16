@@ -115,7 +115,7 @@ namespace Minerals
             yieldPct += (float)Mathf.Min(amount, HitPoints) / (float)MaxHitPoints * miner.GetStatValue(StatDefOf.MiningYield, true);
         }
 
-        // hackish solution since I cant override Mineable.DestroyMined
+
         public override void PreApplyDamage(DamageInfo dinfo, out bool absorbed)
         {
             // Drop resources
@@ -125,7 +125,7 @@ namespace Minerals
                 if (Rand.Range(0f, 1f) < dropChance)
                 {
                     Thing thing = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName), null);
-                    thing.stackCount = 1;
+                    thing.stackCount = toDrop.CountPerDrop;
                     GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
                 }
 
@@ -207,51 +207,55 @@ namespace Minerals
 
         public override void Print(SectionLayer layer)
         {
+			if (this.attributes.graphicData.graphicClass.Name != "Graphic_Random") {
+				base.Print(layer);
+			} else {
+				Rand.PushState();
+				Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
+				int numToPrint = Mathf.CeilToInt(size * (float)attributes.maxMeshCount);
+				if (numToPrint < 1)
+				{
+					numToPrint = 1;
+				}
+				Vector3 trueCenter = this.TrueCenter();
+				for (int i = 0; i < numToPrint; i++)
+				{
+					// Calculate location
+					Vector3 center = trueCenter;
+					center.y = attributes.Altitude;
+					center.x += randPos(attributes.visualClustering, attributes.visualSpread);
+					center.z += randPos(attributes.visualClustering, attributes.visualSpread);
 
-            Rand.PushState();
-            Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
-            int numToPrint = Mathf.CeilToInt(size * (float)attributes.maxMeshCount);
-            if (numToPrint < 1)
-            {
-                numToPrint = 1;
-            }
-            Vector3 trueCenter = this.TrueCenter();
-            for (int i = 0; i < numToPrint; i++)
-            {
-                // Calculate location
-                Vector3 center = trueCenter;
-                center.y = attributes.Altitude;
-                center.x += randPos(attributes.visualClustering, attributes.visualSpread);
-                center.z += randPos(attributes.visualClustering, attributes.visualSpread);
+					// Adjust size for distance from center to other crystals
+					float thisSize = GetSizeBasedOnNearest(center);
 
-                // Adjust size for distance from center to other crystals
-                float thisSize = GetSizeBasedOnNearest(center);
+					// Add random variation
+					thisSize = thisSize + (thisSize * Rand.Range(- attributes.visualSizeVariation, attributes.visualSizeVariation));
+					if (thisSize <= 0)
+					{
+						continue;
+					}
 
-                // Add random variation
-                thisSize = thisSize + (thisSize * Rand.Range(- attributes.visualSizeVariation, attributes.visualSizeVariation));
-                if (thisSize <= 0)
-                {
-                    continue;
-                }
+					// Print image
+					Material matSingle = Graphic.MatSingle;
+					Vector2 sizeVec = new Vector2(thisSize, thisSize);
+					Material mat = matSingle;
+					Printer_Plane.PrintPlane(layer, center, sizeVec, mat, 0, Rand.Bool);
+				}
+				//            if (this.attributes.graphicData.shadowData != null)
+				//            {
+				//                Vector3 center2 = a + this.attributes.graphicData.shadowData.offset * num2;
+				//                if (flag)
+				//                {
+				//                    center2.z = this.Position.ToVector3Shifted().z + this.attributes.graphicData.shadowData.offset.z;
+				//                }
+				//                center2.y -= 0.046875f;
+				//                Vector3 volume = this.attributes.graphicData.shadowData.volume * num2;
+				//                Printer_Shadow.PrintShadow(layer, center2, volume, Rot4.North);
+				//            }
+				Rand.PopState();
+			}
 
-                // Print image
-                Material matSingle = Graphic.MatSingle;
-                Vector2 sizeVec = new Vector2(thisSize, thisSize);
-                Material mat = matSingle;
-                Printer_Plane.PrintPlane(layer, center, sizeVec, mat, 0, Rand.Bool);
-            }
-//            if (this.attributes.graphicData.shadowData != null)
-//            {
-//                Vector3 center2 = a + this.attributes.graphicData.shadowData.offset * num2;
-//                if (flag)
-//                {
-//                    center2.z = this.Position.ToVector3Shifted().z + this.attributes.graphicData.shadowData.offset.z;
-//                }
-//                center2.y -= 0.046875f;
-//                Vector3 volume = this.attributes.graphicData.shadowData.volume * num2;
-//                Printer_Shadow.PrintShadow(layer, center2, volume, Rot4.North);
-//            }
-            Rand.PopState();
         }
 
 
@@ -282,6 +286,7 @@ namespace Minerals
     {
         public string ResourceDefName;
         public float DropProbability;
+        public int CountPerDrop = 1;
     }
 
 

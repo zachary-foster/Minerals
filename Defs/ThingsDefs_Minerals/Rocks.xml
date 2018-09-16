@@ -5,7 +5,7 @@
   <ThingDef Name="WeatheredSandstone" ParentName="WeatheredRockBase">
     <defName>WeatheredSandstone</defName>
     <label>Weathered Sandstone</label>
-    <description>Sand.</description>
+    <description>Impassable rocks of compacted sand, sculpted by weather and time into flowing shapes.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredSandstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -15,7 +15,7 @@
     <statBases>
       <MaxHitPoints>900</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>3</Beauty>
+      <Beauty>4</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -53,14 +53,18 @@
 		</allowedBiomes>
 		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
 		<allowedTerrains>
 			<li>Sandstone_Rough</li>
 			<li>WaterOceanShallow</li>
 			<li>WaterShallow</li>
-		</allowedTerrains>
-		-->
-    <allowedTerrains>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>WaterShallow</li>
+			<li>WaterShallow</li>
+			<li>WaterShallow</li>
+			<li>WaterShallow</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -96,7 +100,17 @@
       </li>
       <li>
         <ResourceDefName>Sand</ResourceDefName>
-        <DropProbability>20</DropProbability>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -111,10 +125,24 @@
     <label>Solid Sandstone</label>
     <description>A solid wall of sandstone, a sedimentary rock made of cemented silica and feldspar grains.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(4,4)</drawSize>
+			<texPath>Things/Rock/HewnRockWall/HewnRockWallAtlasA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
       <color>(126,104,94)</color>
+      <drawSize>(.8,.8)</drawSize>
     </graphicData>
     <statBases>
       <MaxHitPoints>1200</MaxHitPoints>
@@ -200,7 +228,17 @@
       </li>
       <li>
         <ResourceDefName>Sand</ResourceDefName>
-        <DropProbability>20</DropProbability>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -213,7 +251,7 @@
   <ThingDef Name="PassableSandstone" ParentName="StaticMineralBase">
     <defName>PassableSandstone</defName>
     <label>Sandstone Rocks</label>
-    <description>Deposits of sandstone, a sedimentary rock made of cemented silica and feldspar grains that eroded from another rock long ago.</description>
+    <description>Impassable rocks of compacted sand, sculpted by weather and time into flowing shapes.</description>
     <graphicData>
       <texPath>Things/Rock/PassableSandstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -310,8 +348,18 @@
         <DropProbability>0.01</DropProbability>
       </li>
       <li>
+        <ResourceDefName>Sand</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <DropProbability>5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -320,7 +368,7 @@
   <ThingDef Name="WeatheredBasalt" ParentName="WeatheredRockBase">
     <defName>WeatheredBasalt</defName>
     <label>Weathered Basalt</label>
-    <description>Basalt.</description>
+    <description>A wall of weathered basalt, the most common igneous rock.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -413,6 +461,11 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>10</DropProbability>
       </li>
+      <li>
+        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -424,7 +477,7 @@
   <ThingDef Name="SolidBasalt" ParentName="SolidRockBase">
     <defName>SolidBasalt</defName>
     <label>Solid Basalt</label>
-    <description>A solid wall of basalt.</description>
+    <description>A solid wall of basalt, composed of deep layers of ancient lava flows.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -527,7 +580,7 @@
   <ThingDef Name="PassableBasalt" ParentName="StaticMineralBase">
     <defName>PassableBasalt</defName>
     <label>Ancient lava flow</label>
-    <description>A weathered lava flow.</description>
+    <description>A weathered lava flow. This was once a river of molted rock, but has since cooled and shattered.</description>
     <graphicData>
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -569,8 +622,8 @@
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>30</maxClusterSize>
+    <minClusterSize>5</minClusterSize>
+    <maxClusterSize>40</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.2</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -597,6 +650,7 @@
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>TKKN_LavaRock_Rough</li>
+      <li>TKKN_LavaRock_RoughHewn</li>
       <li>WeatheredBasalt</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
@@ -605,9 +659,9 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>TKKN_LavaRock_RoughHewn</li>
     </associatedOres>
-    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -636,6 +690,11 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>15</DropProbability>
       </li>
+      <li>
+        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
     </randomlyDropResources>
   </ThingDef>
   
@@ -643,7 +702,7 @@
   <ThingDef Name="WeatheredGranite" ParentName="WeatheredRockBase">
     <defName>WeatheredGranite</defName>
     <label>Weathered Granite</label>
-    <description>Granite.</description>
+    <description>Large masses of eroded granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -651,7 +710,7 @@
       <color>(105,95,97)</color>
     </graphicData>
     <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
+      <MaxHitPoints>1700</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-1</Beauty>
     </statBases>
@@ -661,7 +720,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -730,7 +789,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.08</DropProbability>
+        <DropProbability>0.1</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -747,7 +806,7 @@
   <ThingDef Name="SolidGranite" ParentName="SolidRockBase">
     <defName>SolidGranite</defName>
     <label>Solid Granite</label>
-    <description>A solid wall of granite.</description>
+    <description>Large masses of solid granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -755,7 +814,7 @@
       <color>(105,95,97)</color>
     </graphicData>
     <statBases>
-      <MaxHitPoints>1800</MaxHitPoints>
+      <MaxHitPoints>2000</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-2</Beauty>
     </statBases>
@@ -765,7 +824,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -851,7 +910,7 @@
   <ThingDef Name="PassableGranite" ParentName="StaticMineralBase">
     <defName>PassableGranite</defName>
     <label>Granite Bolders</label>
-    <description>Granite.</description>
+    <description>Granite Bolders. These are small enough to climb over and make great cover in a gunfight.</description>
     <graphicData>
       <texPath>Things/Rock/PassableGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -876,7 +935,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -894,7 +953,7 @@
     <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>5</maxClusterSize>
+    <maxClusterSize>3</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.8</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -907,16 +966,19 @@
 		</allowedBiomes>
 		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
 		<allowedTerrains>
-			<li>TKKN_LavaRock_Rough</li>
-			<li>TKKN_LavaRock_RoughHewn</li>
-			<li>ShallowWater</li>
-			<li>WaterShallow</li>
+			<li>Granite_Rough</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>SoilRich</li>
+			<li>MarshyTerrain</li>
+			<li>Marsh</li>
+			<li>Soil</li>
+			<li>Mud</li>
 			<li>WaterOceanShallow</li>
-		</allowedTerrains>
-		-->
-    <allowedTerrains>
+			<li>WaterShallow</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -926,14 +988,14 @@
       <li>Granite</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>14</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>15</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>Granite_Rough</li>
     </associatedOres>
-    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -969,7 +1031,7 @@
   <ThingDef Name="WeatheredMarble" ParentName="WeatheredRockBase">
     <defName>WeatheredMarble</defName>
     <label>Weathered Marble</label>
-    <description>Marble.</description>
+    <description>Eroded Marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it a popular building material.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -977,9 +1039,9 @@
       <color>(132,135,132)</color>
     </graphicData>
     <statBases>
-      <MaxHitPoints>1300</MaxHitPoints>
+      <MaxHitPoints>1200</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -987,7 +1049,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkMarble</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -1073,7 +1135,7 @@
   <ThingDef Name="SolidMarble" ParentName="SolidRockBase">
     <defName>SolidMarble</defName>
     <label>Solid Marble</label>
-    <description>A solid wall of Marble.</description>
+    <description>Solid Marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it a popular building material.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -1081,7 +1143,7 @@
       <color>(132,135,132)</color>
     </graphicData>
     <statBases>
-      <MaxHitPoints>1600</MaxHitPoints>
+      <MaxHitPoints>1500</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>1</Beauty>
     </statBases>
@@ -1091,7 +1153,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkMarble</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -1176,8 +1238,8 @@
   
   <ThingDef Name="PassableMarble" ParentName="StaticMineralBase">
     <defName>PassableMarble</defName>
-    <label>Passable Marble</label>
-    <description>Marble.</description>
+    <label>Marble Boulders</label>
+    <description>Large boulders of marble. Good for building material and cover in one of gunfights that occur so frequently on this rimworld.</description>
     <graphicData>
       <texPath>Things/Rock/PassableGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -1189,7 +1251,7 @@
     <fillPercent>0.6</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>800</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>1</Beauty>
     </statBases>
@@ -1206,7 +1268,7 @@
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
     </building>
     <filthLeaving>RockRubble</filthLeaving>
     <mineable>true</mineable>
@@ -1295,7 +1357,7 @@
   <ThingDef Name="WeatheredLimestone" ParentName="WeatheredRockBase">
     <defName>WeatheredLimestone</defName>
     <label>Weathered Limestone</label>
-    <description>Limestone.</description>
+    <description>Impassable masses of eroded limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -1399,7 +1461,7 @@
   <ThingDef Name="SolidLimestone" ParentName="SolidRockBase">
     <defName>SolidLimestone</defName>
     <label>Solid Limestone</label>
-    <description>A solid wall of Limestone.</description>
+    <description>A wall of solid limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material.</description>
     <graphicData>
       <texPath>Things/Rock/SolidLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -1417,7 +1479,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkLimestone</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -1486,11 +1548,16 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.03</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -1502,8 +1569,8 @@
   
   <ThingDef Name="PassableLimestone" ParentName="StaticMineralBase">
     <defName>PassableLimestone</defName>
-    <label>Passable Limestone</label>
-    <description>Limestone.</description>
+    <label>Eroded limestone</label>
+    <description>A shelf of eroded limestone. Large cracks worn by centuries of rain make traveling over this terrain difficult.</description>
     <graphicData>
       <texPath>Things/Rock/PassableLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -1545,8 +1612,8 @@
     <minClusterProbability>0.02</minClusterProbability>
     <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>5</maxClusterSize>
+    <minClusterSize>5</minClusterSize>
+    <maxClusterSize>20</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.3</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>
@@ -1559,16 +1626,10 @@
 		</allowedBiomes>
 		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
 		<allowedTerrains>
-			<li>TKKN_LavaRock_Rough</li>
-			<li>TKKN_LavaRock_RoughHewn</li>
-			<li>ShallowWater</li>
+			<li>Limestone_Rough</li>
 			<li>WaterShallow</li>
 			<li>WaterOceanShallow</li>
-		</allowedTerrains>
-		-->
-    <allowedTerrains>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -1582,23 +1643,23 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>Limestone_Rough</li>
+      <li>WeatheredLimestone</li>
     </associatedOres>
-    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
+    <mustBeUnroofed>true</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>4</maxMeshCount>
+    <maxMeshCount>5</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.5</min>
       <max>1.0</max>
     </visualSizeRange>
-    <visualClustering>0.1</visualClustering>
+    <visualClustering>0.2</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>1.0</visualSpread>
+    <visualSpread>0.9</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->
@@ -1612,6 +1673,11 @@
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -1712,6 +1778,11 @@
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -1816,6 +1887,11 @@
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -1936,6 +2012,11 @@
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>

@@ -477,8 +477,8 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableYield>10</mineableYield>
+      <mineableThing>RoughGem</mineableThing>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -552,14 +552,18 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.4</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>10</maxMinedYeild>
+    <maxMinedYeild>1</maxMinedYeild>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>1.0</DropProbability>
       </li>
-    </randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5.0</DropProbability>
+      </li>
+   </randomlyDropResources>
   </ThingDef>
 
 
@@ -588,6 +592,10 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>2.0</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5.0</DropProbability>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -631,6 +639,10 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>4.0</DropProbability>
       </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5.0</DropProbability>
+      </li>
     </randomlyDropResources>
   </ThingDef>
 
@@ -671,6 +683,10 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>5.0</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>5.0</DropProbability>
       </li>
     </randomlyDropResources>

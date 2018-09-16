@@ -49,6 +49,7 @@
     <initialSizeVariation>.2</initialSizeVariation>
   </ThingDef>
 
+
   <ThingDef ParentName="WeatheredOre">
     <defName>WeatheredOreSteel</defName>
     <label>Weathered Iron Ore Deposits</label>
@@ -76,7 +77,8 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>Sulfur</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -118,7 +120,8 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>Sulfur</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -160,7 +163,8 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -202,7 +206,8 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -243,7 +248,8 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>30</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -285,7 +291,8 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>30</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -1181,7 +1188,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <DropProbability>5</DropProbability>
       </li>
     </randomlyDropResources>
 
@@ -1240,7 +1247,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <DropProbability>5</DropProbability>
       </li>
     </randomlyDropResources>
 
@@ -1300,7 +1307,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <DropProbability>5</DropProbability>
       </li>
     </randomlyDropResources>
 
@@ -1364,7 +1371,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <DropProbability>5</DropProbability>
       </li>
     </randomlyDropResources>
 
@@ -1507,7 +1514,8 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Mechanism</ResourceDefName>
@@ -1516,6 +1524,10 @@
       <li>
         <ResourceDefName>ElectronicComponents</ResourceDefName>
         <DropProbability>0.3</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Component</ResourceDefName>
+        <DropProbability>1</DropProbability>
       </li>
     </randomlyDropResources>
 
@@ -1537,11 +1549,11 @@
     <statBases>
       <MaxHitPoints>2500</MaxHitPoints>
     </statBases>
-    <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
+    <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
      <building>
       <isResourceRock>true</isResourceRock>
       <mineableThing>Component</mineableThing>
-      <mineableYield>3</mineableYield>
+      <mineableYield>2</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
@@ -1553,11 +1565,13 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>RobotParts</ResourceDefName>
@@ -1582,6 +1596,10 @@
       <li>
         <ResourceDefName>Microchips</ResourceDefName>
         <DropProbability>0.05</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Component</ResourceDefName>
+        <DropProbability>1</DropProbability>
       </li>
     </randomlyDropResources>
 
