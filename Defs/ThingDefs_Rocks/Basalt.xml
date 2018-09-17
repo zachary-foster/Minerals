@@ -320,11 +320,6 @@
         <DropProbability>0.01</DropProbability>
       </li>
       <li>
-        <ResourceDefName>Sand</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>5</DropProbability>
       </li>
@@ -340,12 +335,144 @@
     </ThingsToReplace>
   </ThingDef>
  
+
+
+  <ThingDef Name="LargePassableBasalt" ParentName="StaticMineralBase">
+    <defName>LargePassableBasalt</defName>
+    <label>Basalt boulders</label>
+    <description>Basalt boulders. These are small enough to be climbed over and provide good cover in the many gunfights that occur in this rimworld.</description>
+    <graphicData>
+      <texPath>Things/Rock/PassableBasalt</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(50,50,50)</color>
+    </graphicData>
+    <altitudeLayer>SmallWire</altitudeLayer>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>false</coversFloor>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>80</pathCost>
+    <building>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>TKKN_ChunkLava</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
+      <mineableYield>1</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+    <!--How far away it can spawn from an existing location-->
+    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+    <spawnRadius>1</spawnRadius>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>1</perMapProbability>
+    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0.05</minClusterProbability>
+    <maxClusterProbability>0.1</maxClusterProbability>
+    <!-- How  many squares each cluster will be -->
+    <minClusterSize>1</minClusterSize>
+    <maxClusterSize>3</maxClusterSize>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>0.7</initialSizeMin>
+    <initialSizeMax>1.0</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.2</initialSizeVariation>
+    <!-- The biomes this can appear in. The default is all ones known to mod-->
+    <!--
+		<allowedBiomes>
+			<li>add_biomes_here</li>
+		</allowedBiomes>
+		-->
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+			<li>TKKN_LavaRock_Rough</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+			<li>MarshyTerrain</li>
+			<li>Marsh</li>
+			<li>Mud</li>
+      <li>SavannaSoil</li>
+      <li>WaterShallow</li>
+      <li>WaterMovingShallow</li>
+			<li>WaterOceanShallow</li>
+      <li>WaterDeep</li>
+      <li>WaterMovingDeep</li>
+			<li>WaterOceanDeep</li>
+			<li>Ice</li>
+			<li>TKKN_SaltField</li>
+		</allowedTerrains>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <neededNearbyTerrains>
+      <li>WeatheredBasalt</li>
+      <li>SolidBasalt</li>
+    </neededNearbyTerrains>
+    <!-- how far away it can be from needed nearby terrains-->
+    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
+    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
+    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+    <!-- Controls how extra clusters are added near assocaited ore-->
+    <associatedOres>
+      <li>WeatheredBasalt</li>
+    </associatedOres>
+    <nearAssociatedOreBonus>4</nearAssociatedOreBonus>
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>3</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>0.7</min>
+      <max>1.1</max>
+    </visualSizeRange>
+    <visualClustering>0.6</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.5</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.3</visualSizeVariation>
+    <!-- The amount of resource returned if the mineral is its maximum size -->
+    <maxMinedYeild>1</maxMinedYeild>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+  </ThingDef>
+
   
   
   <ThingDef Name="PassableBasalt" ParentName="StaticMineralBase">
     <defName>PassableBasalt</defName>
     <label>Ancient lava flow</label>
-    <description>A weathered lava flow. This was once a river of molted rock, but has since cooled and shattered.</description>
+    <description>A weathered lava flow. This was once a river of molted rock, but has since cooled and shattered. Very difficult to walk over but provides little cover in a gunfight.</description>
     <graphicData>
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -357,20 +484,20 @@
     <fillPercent>0.3</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
+      <MaxHitPoints>600</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-1</Beauty>
     </statBases>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <pathCost>50</pathCost>
+    <pathCost>80</pathCost>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>TKKN_ChunkLava</mineableThing>
-      <mineableDropChance>0.1</mineableDropChance>
+      <mineableDropChance>0.15</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -385,10 +512,10 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.02</maxClusterProbability>
+    <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>10</minClusterSize>
-    <maxClusterSize>80</maxClusterSize>
+    <maxClusterSize>100</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.4</initialSizeMin>
     <initialSizeMax>0.9</initialSizeMax>
@@ -403,19 +530,19 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
 			<li>TKKN_LavaRock_Rough</li>
+      <li>TKKN_LavaRock_RoughHewn</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
 			<li>Soil</li>
 			<li>MarshyTerrain</li>
 			<li>Marsh</li>
-			<li>Soil</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
 			<li>Mud</li>
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
-      <li>WaterShallow</li>
-      <li>WaterMovingShallow</li>
-			<li>WaterOceanShallow</li>
+			<li>TKKN_SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -424,28 +551,29 @@
       <li>WeatheredBasalt</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>15</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
+      <li>WeatheredBasalt</li>
       <li>TKKN_LavaRock_RoughHewn</li>
     </associatedOres>
-    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>30</maxMeshCount>
+    <maxMeshCount>40</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.2</min>
+      <min>0.3</min>
       <max>0.6</max>
     </visualSizeRange>
-    <visualClustering>0.3</visualClustering>
+    <visualClustering>0.5</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>1.5</visualSpread>
+    <visualSpread>2.1</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.3</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->
@@ -454,7 +582,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
+        <DropProbability>0.02</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>

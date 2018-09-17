@@ -12,7 +12,7 @@
     </graphicData>
     <altitudeLayer>LowPlant</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.1</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -118,7 +118,7 @@
     </graphicData>
     <altitudeLayer>LowPlant</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.1</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -259,7 +259,7 @@
     <hideAtSnowDepth>0.9</hideAtSnowDepth>
     <altitudeLayer>LowPlant</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.3</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
@@ -361,7 +361,7 @@
     </graphicData>
     <altitudeLayer>Floor</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.01</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
@@ -462,7 +462,7 @@
     </graphicData>
     <altitudeLayer>LowPlant</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.1</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>700</MaxHitPoints>
@@ -705,7 +705,7 @@
     </graphicData>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.05</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
@@ -925,7 +925,7 @@
     </graphicData>
     <altitudeLayer>Floor</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.01</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
@@ -1049,7 +1049,7 @@
     </graphicData>
     <altitudeLayer>Floor</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.01</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
@@ -1178,7 +1178,7 @@
     </graphicData>
     <altitudeLayer>Floor</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.01</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
@@ -1299,7 +1299,7 @@
     </comps>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.05</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>

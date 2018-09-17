@@ -14,7 +14,7 @@
     <statBases>
       <MaxHitPoints>1200</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -118,7 +118,7 @@
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>-1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -312,21 +312,11 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>Sand</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <DropProbability>0.05</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <DropProbability>15</DropProbability>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -383,7 +373,7 @@
     <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <maxClusterSize>4</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.7</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>
@@ -397,7 +387,7 @@
 		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>Marble_Rough</li>
+			<li>Granite_Rough</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
@@ -405,13 +395,15 @@
 			<li>SoilRich</li>
 			<li>MarshyTerrain</li>
 			<li>Marsh</li>
-			<li>Soil</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
 			<li>Mud</li>
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
 			<li>WaterOceanShallow</li>
       <li>WaterMovingShallow</li>
 			<li>WaterShallow</li>
+			<li>Ice</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>

@@ -20,6 +20,7 @@
       <texPath>Things/Mineral/ColdstoneCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
+    <fillPercent>0.2</fillPercent>
     <hideAtSnowDepth>2</hideAtSnowDepth>
     <building>
       <isInert>false</isInert>
@@ -181,6 +182,7 @@
       <texPath>Things/Mineral/GlowstoneCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
+    <fillPercent>0.3</fillPercent>
     <building>
       <isInert>false</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -336,6 +338,7 @@
       <texPath>Things/Mineral/SaltCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
+    <fillPercent>0.01</fillPercent>
     <building>
       <isInert>false</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -509,6 +512,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <color>(228,169,35)</color>
     </graphicData>
+    <fillPercent>0.01</fillPercent>
     <hideAtSnowDepth>0.4</hideAtSnowDepth>
     <building>
       <isInert>false</isInert>

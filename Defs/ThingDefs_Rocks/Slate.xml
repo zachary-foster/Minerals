@@ -14,7 +14,7 @@
     <statBases>
       <MaxHitPoints>1200</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>4</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -123,7 +123,7 @@
     <statBases>
       <MaxHitPoints>1800</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-2</Beauty>
+      <Beauty>-1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -245,7 +245,7 @@
     <statBases>
       <MaxHitPoints>1800</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-2</Beauty>
+      <Beauty>-1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -325,17 +325,12 @@
         <DropProbability>0.01</DropProbability>
       </li>
       <li>
-        <ResourceDefName>Sand</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>5</DropProbability>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
+        <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -356,7 +351,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(70,70,70)</color>
     </graphicData>
-    <altitudeLayer>SmallWire</altitudeLayer>
+    <altitudeLayer>Zone</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.2</fillPercent>
     <coversFloor>false</coversFloor>
@@ -388,11 +383,11 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.01</minClusterProbability>
-    <maxClusterProbability>0.02</maxClusterProbability>
+    <minClusterProbability>0.02</minClusterProbability>
+    <maxClusterProbability>0.05</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>4</maxClusterSize>
+    <maxClusterSize>1</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.3</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>
@@ -405,20 +400,23 @@
 		</allowedBiomes>
 		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
-		<allowedTerrains>
-			<li>TKKN_LavaRock_Rough</li>
-			<li>TKKN_LavaRock_RoughHewn</li>
-			<li>ShallowWater</li>
-			<li>WaterShallow</li>
-			<li>WaterOceanShallow</li>
-		</allowedTerrains>
-		-->
     <allowedTerrains>
+      <li>Slate_Rough</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>MarshyTerrain</li>
+			<li>Marsh</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+			<li>Mud</li>
+      <li>SavannaSoil</li>
+      <li>MarginalSoil</li>
+			<li>TKKN_SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Slate_Rough</li>
       <li>WeatheredSlate</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
@@ -429,7 +427,7 @@
     <associatedOres>
       <li>WeatheredSlate</li>
     </associatedOres>
-    <nearAssociatedOreBonus>8</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -443,7 +441,7 @@
     </visualSizeRange>
     <visualClustering>0.6</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>1.8</visualSpread>
+    <visualSpread>1.9</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.3</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->

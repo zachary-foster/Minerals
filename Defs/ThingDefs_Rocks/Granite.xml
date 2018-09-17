@@ -14,7 +14,7 @@
     <statBases>
       <MaxHitPoints>1700</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -312,21 +312,11 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>Sand</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <DropProbability>0.05</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <DropProbability>10</DropProbability>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -405,13 +395,16 @@
 			<li>SoilRich</li>
 			<li>MarshyTerrain</li>
 			<li>Marsh</li>
-			<li>Soil</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
 			<li>Mud</li>
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
 			<li>WaterOceanShallow</li>
       <li>WaterMovingShallow</li>
 			<li>WaterShallow</li>
+			<li>Ice</li>
+			<li>TKKN_SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
