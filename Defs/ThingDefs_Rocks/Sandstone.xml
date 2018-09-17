@@ -402,8 +402,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.05</minClusterProbability>
-    <maxClusterProbability>0.08</maxClusterProbability>
+    <minClusterProbability>0.02</minClusterProbability>
+    <maxClusterProbability>0.06</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>1</maxClusterSize>
@@ -422,11 +422,8 @@
 		<allowedTerrains>
 			<li>Sandstone_Rough</li>
 			<li>RockySoil</li>
-			<li>Gravel</li>
 			<li>Sand</li>
-			<li>Soil</li>
 			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
 			<li>TKKN_SaltField</li>
@@ -436,14 +433,14 @@
       <li>WeatheredSandstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>WeatheredSandstone</li>
     </associatedOres>
-    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
