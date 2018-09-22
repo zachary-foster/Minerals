@@ -61,26 +61,8 @@ namespace Minerals
     /// <permission>No restrictions</permission>
     public class ThingDef_HewnRock : ThingDef_StaticMineral
     {
-        public List<string> ThingsToReplace; 
 
-        public virtual Thing ThingToReplaceAtPos(Map map, IntVec3 position)
-        {
-            foreach (Thing thing in map.thingGrid.ThingsListAt(position))
-            {
-                if (thing == null || thing.def == null)
-                {
-                    continue;
-                }
-
-                if (ThingsToReplace.Any(thing.def.defName.Equals))
-                {
-                    return(thing);
-                }
-            }
-            return(null);
-        }
-
-        public override void InitNewMap(Map map, float scaling = 1)
+        public override void ReplaceThings(Map map, float scaling = 1)
         {
 
             // Find spots to spawn it
@@ -110,10 +92,6 @@ namespace Minerals
                 }
             }
             map.regionAndRoomUpdater.Enabled = true;
-
-
-            // Call parent function for standard spawning
-            base.InitNewMap(map, scaling);
         }
 
 

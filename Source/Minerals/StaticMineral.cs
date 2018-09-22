@@ -343,6 +343,7 @@ namespace Minerals
         public bool mustBeUnderThickRoof = false;
 //        public bool mustBeUnderNaturalRoof = true;
         public bool mustBeUnroofed = false;
+        public bool mustBeNotUnderThickRoof = false;
 
         // The maximum number of images that will be printed per square
         public int maxMeshCount = 1;
@@ -362,6 +363,8 @@ namespace Minerals
         // If it can spawn on other things
         public bool canSpawnOnThings = false;
 
+        // Things this mineral replaces when a map is initialized
+        public List<string> ThingsToReplace; 
 
         // ======= Spawning clusters ======= //
 
@@ -408,6 +411,26 @@ namespace Minerals
         }
 
 
+        public virtual Thing ThingToReplaceAtPos(Map map, IntVec3 position)
+        {
+            if (ThingsToReplace == null || ThingsToReplace.Count == 0)
+            {
+                return(null);
+            }
+            foreach (Thing thing in map.thingGrid.ThingsListAt(position))
+            {
+                if (thing == null || thing.def == null)
+                {
+                    continue;
+                }
+
+                if (ThingsToReplace.Any(thing.def.defName.Equals))
+                {
+                    return(thing);
+                }
+            }
+            return(null);
+        }
 
         // ======= Spawning conditions ======= //
 
@@ -473,12 +496,13 @@ namespace Minerals
                     }
                 }
 
-                // Blocked by buildings, except low minerals
+                // Blocked by buildings, except low minerals (NOT REALLY)
                 if (thing.def.category == ThingCategory.Building)
                 {
                     if (thing is StaticMineral && thing.def.defName != defName)
                     {
                         //                        Log.Message("Trying to spawn on mineral " + thing.def.defName);
+                        return true;
                     }
                     else
                     {
@@ -718,7 +742,13 @@ namespace Minerals
 
         public virtual void InitNewMap(Map map, float scaling = 1)
         {
-            // Print to log
+            ReplaceThings(map, scaling);
+            InitialSpawn(map, scaling);
+        }
+
+
+        public virtual void InitialSpawn(Map map, float scaling = 1)
+        {
 
             // Check that it is a valid biome
             if (! CanSpawnInBiome(map))
@@ -771,11 +801,69 @@ namespace Minerals
             }
             else
             {
-//                Log.Message("Minerals: " + this.defName + " will not be spawned in this map.");
+                //                Log.Message("Minerals: " + this.defName + " will not be spawned in this map.");
+            }
+
+        }
+
+
+        public virtual void ReplaceThings(Map map, float scaling = 1)
+        {
+            if (ThingsToReplace == null || ThingsToReplace.Count == 0)
+            {
+                return;
             }
 
 
+            // Find spots to spawn it
+            map.regionAndRoomUpdater.Enabled = false;
+            IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
+            foreach (IntVec3 current in allCells)
+            {
+                if (!current.InBounds(map))
+                {
+                    continue;
+                }
+
+                // roof filters
+                if (map.roofGrid.RoofAt(current) != null)
+                {
+
+                    if (mustBeUnderThickRoof && (! map.roofGrid.RoofAt(current).isThickRoof))
+                    {
+                        continue;
+                    }
+
+                    if (mustBeNotUnderThickRoof && map.roofGrid.RoofAt(current).isThickRoof)
+                    {
+                        continue;
+                    }
+
+                    if (mustBeUnderRoof && (! map.roofGrid.Roofed(current)))
+                    {
+                        continue;
+                    }
+
+                    if (mustBeUnroofed && map.roofGrid.Roofed(current))
+                    {
+                        continue;
+                    }
+
+                }
+                    
+                Thing ToReplace = ThingToReplaceAtPos(map, current);
+                if (ToReplace != null)
+                {
+
+                    ToReplace.Destroy(DestroyMode.Vanish);
+                    StaticMineral spawned = SpawnAt(map, current, Rand.Range(initialSizeMin, initialSizeMax));
+                    map.edificeGrid.Register(spawned);
+                }
+            }
+            map.regionAndRoomUpdater.Enabled = true;
+
         }
+
     }
         
 }

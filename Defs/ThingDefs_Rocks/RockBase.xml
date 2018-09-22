@@ -2,8 +2,7 @@
 <Defs>
   
   
-  <ThingDef Name="WeatheredRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_WeatheredRock" Abstract="True">
-    <thingClass>Minerals.WeatheredRock</thingClass>
+  <ThingDef Name="WeatheredRockBase" ParentName="StaticMineralBase" Abstract="True">
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <filthLeaving>RockRubble</filthLeaving>
@@ -30,6 +29,12 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
+    
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <mustBeNotUnderThickRoof>true</mustBeNotUnderThickRoof>
   </ThingDef>
   
   
@@ -61,6 +66,12 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
+    
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
   </ThingDef>
   
   
@@ -92,6 +103,12 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
+    
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
   </ThingDef>
   
   

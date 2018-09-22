@@ -6,7 +6,7 @@
     <label>Weathered Slate</label>
     <description>Slate.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredSlate</texPath>
+      <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(70,70,70)</color>
@@ -31,15 +31,15 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>1</spawnRadius>
+    <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
+    <maxClusterProbability>0.001</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <maxClusterSize>3</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>1</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -72,7 +72,8 @@
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>true</mustBeUnroofed>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <mustBeNotUnderThickRoof>true</mustBeNotUnderThickRoof>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
@@ -115,7 +116,7 @@
     <label>Solid Slate</label>
     <description>A solid wall of Slate.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredSlate</texPath>
+      <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(70,70,70)</color>
@@ -339,8 +340,118 @@
       <li>Slate</li>
     </ThingsToReplace>
   </ThingDef>
- 
- 
+
+  
+  <ThingDef Name="SlateForest" ParentName="WeatheredRockBase">
+    <defName>SlateForest</defName>
+    <label>Slate stone forest</label>
+    <description>Pillars of soild slate sculpted by rain. This rare formation is quite beautiful.</description>
+    <graphicData>
+      <texPath>Things/Rock/WeatheredSlate</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <color>(70,70,70)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkSlate</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
+      <mineableYield>1</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+    <!--How far away it can spawn from an existing location-->
+    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+    <spawnRadius>5</spawnRadius>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>0.5</perMapProbability>
+    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0</minClusterProbability>
+    <maxClusterProbability>0.0002</maxClusterProbability>
+    <!-- How  many squares each cluster will be -->
+    <minClusterSize>50</minClusterSize>
+    <maxClusterSize>150</maxClusterSize>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>.8</initialSizeMin>
+    <initialSizeMax>1</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.1</initialSizeVariation>
+    <!-- The biomes this can appear in. The default is all ones known to mod-->
+    <!--
+		<allowedBiomes>
+			<li>add_biomes_here</li>
+		</allowedBiomes>
+		-->
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+    <!--
+		<allowedTerrains>
+			<li>Slate_Rough</li>
+			<li>WaterOceanShallow</li>
+			<li>WaterShallow</li>
+		</allowedTerrains>
+		-->
+    <allowedTerrains>
+		</allowedTerrains>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <neededNearbyTerrains>
+      <li>Slate_Rough</li>
+    </neededNearbyTerrains>
+    <!-- how far away it can be from needed nearby terrains-->
+    <neededNearbyTerrainRadius>20</neededNearbyTerrainRadius>
+    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
+    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
+    <nearAssociatedOreBonus>1</nearAssociatedOreBonus>
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+    <mustBeUnroofed>true</mustBeUnroofed>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>1</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>1.8</min>
+      <max>2.0</max>
+    </visualSizeRange>
+    <visualClustering>1.0</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>0.3</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.2</visualSizeVariation>
+    <!-- The amount of resource returned if the mineral is its maximum size -->
+    <maxMinedYeild>1</maxMinedYeild>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>Slate</li>
+    </ThingsToReplace>
+  </ThingDef>
+
+
   <ThingDef Name="PassableSlate" ParentName="StaticMineralBase">
     <defName>PassableSlate</defName>
     <label>Slate rubble pile</label>
@@ -418,6 +529,8 @@
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>WeatheredSlate</li>
+      <li>SlateForest</li>
+      <li>Slate_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
@@ -426,6 +539,7 @@
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>WeatheredSlate</li>
+      <li>SlateForest</li>
     </associatedOres>
     <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -463,6 +577,5 @@
       </li>
     </randomlyDropResources>
   </ThingDef>
-
   
 </Defs>

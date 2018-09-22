@@ -32,15 +32,15 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>1</spawnRadius>
+    <spawnRadius>5</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0</perMapProbability>
+    <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <maxClusterSize>3</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>1</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -55,29 +55,31 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
 			<li>Sandstone_Rough</li>
-			<li>WaterOceanShallow</li>
-			<li>WaterShallow</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
 			<li>Soil</li>
-			<li>WaterShallow</li>
-			<li>WaterShallow</li>
-			<li>WaterShallow</li>
-			<li>WaterShallow</li>
+			<li>SoilRich</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+      <li>SavannaSoil</li>
+      <li>MarginalSoil</li>
+			<li>Ice</li>
+			<li>TKKN_SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Sandstone</li>
+      <li>Sandstone_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>true</mustBeUnroofed>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <mustBeNotUnderThickRoof>true</mustBeNotUnderThickRoof>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
@@ -149,15 +151,15 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>1</spawnRadius>
+    <spawnRadius>5</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0</maxClusterProbability>
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <maxClusterSize>3</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>1</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -170,18 +172,29 @@
 		</allowedBiomes>
 		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
 		<allowedTerrains>
 			<li>Sandstone_Rough</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>SoilRich</li>
+			<li>MarshyTerrain</li>
+			<li>Marsh</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+			<li>Mud</li>
+      <li>SavannaSoil</li>
+      <li>MarginalSoil</li>
 			<li>WaterOceanShallow</li>
+      <li>WaterMovingShallow</li>
 			<li>WaterShallow</li>
-		</allowedTerrains>
-		-->
-    <allowedTerrains>
+			<li>Ice</li>
+			<li>TKKN_SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Sandstone</li>
+      <li>Sandstone_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -571,7 +584,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>25</maxMeshCount>
+    <maxMeshCount>20</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>

@@ -1,4 +1,4 @@
-﻿<Properties>
+﻿<Properties StartupItem="Minerals.csproj">
   <MonoDevelop.Ide.Workbench ActiveDocument="StaticMineral.cs">
     <Files>
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" />
@@ -14,21 +14,11 @@
       <File FileName="harmonyPatching.cs" Line="1" Column="1" />
       <File FileName="DynamicMineral.cs" Line="1" Column="1" />
       <File FileName="WeatheredRock.cs" Line="1" Column="1" />
-      <File FileName="StaticMineral.cs" Line="6" Column="1" />
+      <File FileName="StaticMineral.cs" Line="73" Column="73" />
       <File FileName="SolidRock.cs" Line="1" Column="1" />
+      <File FileName="HewnRock.cs" Line="1" Column="1" />
+      <File FileName="initialization.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Minerals" expanded="True">
-            <Node name="Minerals" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="StaticMineral.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
