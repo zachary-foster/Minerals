@@ -97,5 +97,7 @@
     <maxMinedYeild>20</maxMinedYeild>
     <!-- Can spawn on items, pawns, and plants-->
     <canSpawnOnThings>false</canSpawnOnThings>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 </Defs>

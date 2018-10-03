@@ -207,11 +207,11 @@ namespace Minerals
 
         public override void Print(SectionLayer layer)
         {
+			Rand.PushState();
+			Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
             if (this.attributes.graphicData.graphicClass.Name != "Graphic_Random" || this.attributes.graphicData.linkType == LinkDrawerType.CornerFiller) {
 				base.Print(layer);
 			} else {
-				Rand.PushState();
-				Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
 				int numToPrint = Mathf.CeilToInt(size * (float)attributes.maxMeshCount);
 				if (numToPrint < 1)
 				{
@@ -253,8 +253,8 @@ namespace Minerals
 				//                Vector3 volume = this.attributes.graphicData.shadowData.volume * num2;
 				//                Printer_Shadow.PrintShadow(layer, center2, volume, Rot4.North);
 				//            }
-				Rand.PopState();
 			}
+			Rand.PopState();
 
         }
 
@@ -273,6 +273,69 @@ namespace Minerals
         }
 
 
+        public override Graphic Graphic
+        {
+            get
+            {
+                // Get paths to textures
+                string textureName = System.IO.Path.GetFileName(this.attributes.graphicData.texPath);
+                List<Graphic> textures = new List<Graphic> { };
+                List<string> versions = new List<string> { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
+                foreach (string letter in versions)
+                {
+                    string a_path = System.IO.Path.Combine(this.attributes.graphicData.texPath, textureName + letter);
+
+                    if (ContentFinder<Texture2D>.Get(a_path, false) != null)
+                    {
+                        Graphic graphic = GraphicDatabase.Get<Graphic_Single>(a_path, ShaderDatabase.ShaderFromType(attributes.graphicData.shaderType));
+                        textures.Add(graphic);
+                    }
+                }
+
+                // Pick a random path 
+                //Rand.PushState();
+                //Rand.Seed = Position.GetHashCode();
+                Graphic printedTexture = textures.RandomElement();
+                //Rand.PopState();
+
+                // get graphic
+                //Graphic printedTexture = GraphicDatabase.Get<Graphic_Single>(printedTexturePath, ShaderDatabase.ShaderFromType(attributes.graphicData.shaderType));
+
+                // conver to corner filler if needed
+                printedTexture = GraphicDatabase.Get<Graphic_Single>(printedTexture.path, printedTexture.Shader, printedTexture.drawSize, DrawColor, DrawColorTwo, printedTexture.data);
+                if (attributes.graphicData.linkType == LinkDrawerType.CornerFiller)
+                {
+                     return new Graphic_LinkedCornerFiller(printedTexture);
+                }
+                else
+                {
+                    return  printedTexture;
+
+                }
+
+                //return printedTexture.GetColoredVersion(printedTexture.Shader, DrawColor, DrawColorTwo);
+            }
+        }
+
+        public override Color DrawColor {
+            get
+            {
+                if (this.attributes.coloredByTerrain)
+                {
+                    TerrainDef terrain = this.Position.GetTerrain(this.Map);
+                    return terrain.graphic.Color;
+                }
+                return base.DrawColor;
+            }
+        }
+
+        public override Color DrawColorTwo
+        {
+            get
+            {
+                return base.DrawColorTwo;
+            }
+        }
     }       
 
 
@@ -365,6 +428,9 @@ namespace Minerals
 
         // Things this mineral replaces when a map is initialized
         public List<string> ThingsToReplace; 
+
+        // If the primary color is based on the stone below it
+        public bool coloredByTerrain = false;
 
         // ======= Spawning clusters ======= //
 

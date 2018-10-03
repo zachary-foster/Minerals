@@ -69,11 +69,6 @@
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
-    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
-    <mustBeNotUnderThickRoof>true</mustBeNotUnderThickRoof>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
@@ -179,10 +174,6 @@
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
-    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
@@ -296,10 +287,6 @@
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
-    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
@@ -341,7 +328,7 @@
   <ThingDef Name="LargePassableBasalt" ParentName="StaticMineralBase">
     <defName>LargePassableBasalt</defName>
     <label>Basalt boulders</label>
-    <description>Basalt boulders. These are small enough to be climbed over and provide good cover in the many gunfights that occur in this rimworld.</description>
+    <description>Basalt boulders. These are small enough to be climbed over and provide decent cover in the many gunfights that occur in this rimworld.</description>
     <graphicData>
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>

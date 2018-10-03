@@ -75,8 +75,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="HewnRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_HewnRock" Abstract="True">
-    <thingClass>Minerals.HewnRock</thingClass>
+  <ThingDef Name="HewnRockBase" ParentName="StaticMineralBase" Abstract="True">
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <filthLeaving>RockRubble</filthLeaving>

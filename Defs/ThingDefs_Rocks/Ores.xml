@@ -1,62 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  
-  <ThingDef Name="WeatheredOre" ParentName="WeatheredRockBase" Abstract="True">
-    <defName>WeatheredOre</defName>
-    <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0</perMapProbability>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.6</min>
-      <max>2.2</max>
-    </visualSizeRange>
-    <visualClustering>0.8</visualClustering>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.4</visualSpread>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.2</visualSizeVariation>
-    <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>0.8</initialSizeMin>
-    <initialSizeMax>1.0</initialSizeMax>
-    <!-- How much initial sizes of individuals randomly vary -->
-    <initialSizeVariation>.2</initialSizeVariation>
-  </ThingDef>
-
-
-  <ThingDef Name="SolidOre" ParentName="SolidRockBase" Abstract="True">
-    <defName>SolidOre</defName>
-    <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0</perMapProbability>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.6</min>
-      <max>2.0</max>
-    </visualSizeRange>
-    <visualClustering>1.0</visualClustering>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.2</visualSpread>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.1</visualSizeVariation>
-    <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>0.8</initialSizeMin>
-    <initialSizeMax>1.0</initialSizeMax>
-    <!-- How much initial sizes of individuals randomly vary -->
-    <initialSizeVariation>.2</initialSizeVariation>
-  </ThingDef>
-
 
   <ThingDef ParentName="WeatheredOre">
     <defName>WeatheredOreSteel</defName>
     <label>Weathered Iron Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreSteel</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(200,0,0)</color>
+      <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>2800</MaxHitPoints>
@@ -97,9 +52,11 @@
     <defName>SolidOreSteel</defName>
     <label>Solid Iron Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreSteel</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>2800</MaxHitPoints>
@@ -140,9 +97,11 @@
     <defName>WeatheredOreSilver</defName>
     <label>Weathered Silver Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreSilver</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(147,144,134)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>3500</MaxHitPoints>
@@ -183,9 +142,11 @@
     <defName>SolidOreSilver</defName>
     <label>Solid Silver Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreSilver</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(147,144,134)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>4000</MaxHitPoints>
@@ -225,9 +186,11 @@
     <defName>WeatheredOreGold</defName>
     <label>Weathered Gold Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreGold</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(187,173,25)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>4500</MaxHitPoints>
@@ -268,9 +231,11 @@
     <defName>SolidOreGold</defName>
     <label>Solid Gold Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreGold</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(187,173,25)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
@@ -345,7 +310,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="WeatheredOre">
     <defName>SolidOreNitre</defName>
     <label>Solid Nitre Ore Deposits</label>
     <graphicData>
@@ -387,9 +352,11 @@
     <defName>WeatheredOreLead</defName>
     <label>Weathered Anglesite Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreLead</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
@@ -425,9 +392,11 @@
     <defName>SolidOreLead</defName>
     <label>Solid Anglesite Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreLead</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>7000</MaxHitPoints>
@@ -501,7 +470,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="WeatheredOre">
     <defName>SolidOreCoal</defName>
     <label>Solid Coal Ore Deposits</label>
     <graphicData>
@@ -548,9 +517,11 @@
     <defName>WeatheredOreNickel</defName>
     <label>Weathered Nickel Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreNickel</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>9000</MaxHitPoints>
@@ -586,9 +557,11 @@
     <defName>SolidOreNickel</defName>
     <label>Solid Nickel Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreNickel</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>12000</MaxHitPoints>
@@ -624,9 +597,11 @@
     <defName>WeatheredOreTin</defName>
     <label>Weathered Tin Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreTin</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+	    <colorTwo>(160,178,181)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>9000</MaxHitPoints>
@@ -662,9 +637,11 @@
     <defName>SolidOreTin</defName>
     <label>Solid Tin Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreTin</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+	    <colorTwo>(160,178,181)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>12000</MaxHitPoints>
@@ -700,9 +677,11 @@
     <defName>WeatheredOreCopper</defName>
     <label>Weathered Copper Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreCopper</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(160,115,45)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>1700</MaxHitPoints>
@@ -738,9 +717,11 @@
     <defName>SolidOreCopper</defName>
     <label>Solid Copper Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreCopper</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(160,115,45)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>2000</MaxHitPoints>
@@ -776,9 +757,11 @@
     <defName>WeatheredOreAluminum</defName>
     <label>Weathered Aluminum Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreAluminum</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(175,175,165)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
@@ -814,9 +797,11 @@
     <defName>SolidOreAluminum</defName>
     <label>Solid Aluminum Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreAluminum</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(175,175,165)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>6000</MaxHitPoints>
@@ -852,9 +837,11 @@
     <defName>WeatheredOreJade</defName>
     <label>Weathered Jade Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreJade</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(30,173,25)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
@@ -894,9 +881,11 @@
     <defName>SolidOreJade</defName>
     <label>Solid Jade Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreJade</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(30,173,25)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>7000</MaxHitPoints>
@@ -936,9 +925,11 @@
     <defName>WeatheredOreTitanium</defName>
     <label>Weathered Ilmenite Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreTitanium</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+	    <colorTwo>(160,178,181)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>10000</MaxHitPoints>
@@ -974,9 +965,11 @@
     <defName>SolidOreTitanium</defName>
     <label>Solid Titanium Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreTitanium</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+	    <colorTwo>(160,178,181)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>15000</MaxHitPoints>
@@ -1012,9 +1005,11 @@
     <defName>WeatheredOreManganese</defName>
     <label>Weathered Pyrolusite Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreManganese</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>3500</MaxHitPoints>
@@ -1050,9 +1045,11 @@
     <defName>SolidOreManganese</defName>
     <label>Solid Pyrolusite Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreManganese</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
@@ -1088,9 +1085,11 @@
     <defName>WeatheredOreTungsten</defName>
     <label>Weathered Wolframite Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreTungsten</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>15000</MaxHitPoints>
@@ -1126,9 +1125,11 @@
     <defName>SolidOreTungsten</defName>
     <label>Solid Wolframite Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreTungsten</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>25000</MaxHitPoints>
@@ -1219,7 +1220,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="WeatheredOre">
     <defName>SolidOreGlowstone</defName>
     <label>Solid Glowstone Deposit</label>
     <graphicData>
@@ -1343,7 +1344,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="WeatheredOre">
     <defName>SolidOreColdstone</defName>
     <label>Solid Coldstone Deposit</label>
     <graphicData>
@@ -1447,7 +1448,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="WeatheredOre">
     <defName>SolidOreSalt</defName>
     <label>Solid Salt Deposit</label>
     <graphicData>
@@ -1490,7 +1491,7 @@
     <defName>WeatheredOreTech</defName>
     <label>Weathered compacted machinery</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreTech</texPath>
+      <texPath>Things/Ore/SolidOreTech</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
@@ -1538,7 +1539,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="WeatheredOre">
     <defName>SolidOreTech</defName>
     <label>Solid compacted machinery</label>
     <graphicData>
@@ -1614,7 +1615,7 @@
     <defName>WeatheredOreAmber</defName>
     <label>Weathered Amber Deposit</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreGold</texPath>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
@@ -1657,7 +1658,7 @@
     <defName>SolidOreAmber</defName>
     <label>Solid Amber Deposit</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreGold</texPath>
+      <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>

@@ -69,11 +69,6 @@
     <neededNearbyTerrainRadius>5</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
-    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
-    <mustBeNotUnderThickRoof>true</mustBeNotUnderThickRoof>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
@@ -173,11 +168,7 @@
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
-    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
+    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect> 
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
@@ -291,10 +282,6 @@
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
-    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->

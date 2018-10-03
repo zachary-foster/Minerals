@@ -50,7 +50,6 @@
     <Compile Include="DynamicMineral.cs" />
     <Compile Include="SaltCrystal.cs" />
     <Compile Include="SolidRock.cs" />
-    <Compile Include="HewnRock.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
