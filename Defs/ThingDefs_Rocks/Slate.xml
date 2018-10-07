@@ -221,6 +221,8 @@
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
+        <li>Rock</li>
+        <li>MapEdge</li>
 			</linkFlags>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -361,7 +363,7 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>5</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.5</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.0002</maxClusterProbability>

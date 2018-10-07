@@ -99,7 +99,7 @@
       <li>Limestone</li>
     </ThingsToReplace>
   </ThingDef>
-  
+
   
   <ThingDef Name="SolidLimestone" ParentName="SolidRockBase">
     <defName>SolidLimestone</defName>
@@ -216,6 +216,8 @@
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
+        <li>Rock</li>
+        <li>MapEdge</li>
 			</linkFlags>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -401,12 +403,11 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Limestone_Rough</li>
       <li>WeatheredLimestone</li>
       <li>SolidLimestone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->

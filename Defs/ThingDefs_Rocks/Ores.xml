@@ -307,6 +307,8 @@
       <li>MineableNitre</li>
     </ThingsToReplace>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -346,6 +348,8 @@
       <li>MineableNitre</li>
     </ThingsToReplace>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
   
   <ThingDef ParentName="WeatheredOre">
@@ -467,6 +471,8 @@
       <li>MineableCoal</li>
     </ThingsToReplace>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -510,6 +516,8 @@
       <li>MineableCoal</li>
     </ThingsToReplace>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
   
 
@@ -1217,6 +1225,8 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -1276,6 +1286,8 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -1341,6 +1353,8 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -1405,6 +1419,8 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -1445,6 +1461,8 @@
       <li>MineableSalt</li>
     </ThingsToReplace>
 
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -1484,6 +1502,8 @@
       <li>MineableSalt</li>
     </ThingsToReplace>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -1491,7 +1511,7 @@
     <defName>WeatheredOreTech</defName>
     <label>Weathered compacted machinery</label>
     <graphicData>
-      <texPath>Things/Ore/SolidOreTech</texPath>
+      <texPath>Things/Ore/WeatheredOreTech</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
@@ -1536,6 +1556,8 @@
       <li>MineableComponents</li>
     </ThingsToReplace>
 
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -1608,6 +1630,8 @@
       <li>MineableComponents</li>
     </ThingsToReplace>
     
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
