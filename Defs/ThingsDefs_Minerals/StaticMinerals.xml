@@ -448,7 +448,7 @@
       </li>
     </randomlyDropResources>
     <!-- If the primary color is based on the stone below it -->
-    <coloredByTerrain>true</coloredByTerrain>
+    <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
 
 
@@ -577,8 +577,24 @@
       <texPath>Things/Mineral/TourmalineCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
-      <color>(192,110,0)</color>
+      <color>(87,39,29)</color>
+      <colorTwo>(251,229,172)</colorTwo>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColors>
+      <li>(87,39,29)</li>
+      <li>(62,22,10)</li>
+      <li>(35,35,27)</li>
+      <li>(137,23,6)</li>
+      <li>(93,26,7)</li>
+      <li>(136,57,24)</li>
+      <li>(119,34,27)</li>
+      <li>(73,45,34)</li>
+      <li>(79,42,30)</li>
+    </randomColors>
+    
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -611,8 +627,25 @@
       <texPath>Things/Mineral/TourmalineCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
-      <color>(198,65,112)</color>
+      <color>(228,156,160)</color>
+      <colorTwo>(71,6,14)</colorTwo>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColors>
+      <li>(228,156,160)</li>
+      <li>(132,29,48)</li>
+      <li>(62,22,10)</li>
+      <li>(113,49,50)</li>
+      <li>(198,118,127)</li>
+      <li>(195,103,114)</li>
+      <li>(165,94,98)</li>
+      <li>(212,141,145)</li>
+      <li>(233,195,192)</li>
+      <li>(212,172,172)</li>
+    </randomColors>
+    
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -657,8 +690,24 @@
       <texPath>Things/Mineral/TourmalineCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
-      <color>(44,147,143)</color>
+      <color>(45,102,113)</color>
+      <colorTwo>(7,95,231)</colorTwo>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColors>
+      <li>(45,102,113)</li>
+      <li>(20,147,167)</li>
+      <li>(37,156,203)</li>
+      <li>(28,142,135)</li>
+      <li>(0,50,43)</li>
+      <li>(0,32,59)</li>
+      <li>(47,145,158)</li>
+      <li>(16,93,104)</li>
+      <li>(37,169,119)</li>
+    </randomColors>
+    
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -685,7 +734,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>5.0</DropProbability>
+        <DropProbability>6.0</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
