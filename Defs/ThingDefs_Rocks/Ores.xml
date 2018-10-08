@@ -10,7 +10,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(200,0,0)</color>
+      <color>(105,95,97)</color>
       <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
     <statBases>
@@ -56,6 +56,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
     <statBases>
@@ -101,6 +102,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(147,144,134)</colorTwo>
     </graphicData>
     <statBases>
@@ -146,6 +148,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(147,144,134)</colorTwo>
     </graphicData>
     <statBases>
@@ -190,6 +193,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(187,173,25)</colorTwo>
     </graphicData>
     <statBases>
@@ -235,6 +239,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(187,173,25)</colorTwo>
     </graphicData>
     <statBases>
@@ -312,7 +317,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="SolidOre">
     <defName>SolidOreNitre</defName>
     <label>Solid Nitre Ore Deposits</label>
     <graphicData>
@@ -328,7 +333,7 @@
     <building>
       <isResourceRock>true</isResourceRock>
       <mineableThing>Nitre</mineableThing>
-      <mineableYield>90</mineableYield>
+      <mineableYield>100</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
@@ -360,6 +365,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
     <statBases>
@@ -400,6 +406,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
     <statBases>
@@ -438,7 +445,7 @@
       <texPath>Things/Rock/WeatheredSlate</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(40,40,40)</color>
+      <color>(30,20,20)</color>
     </graphicData>
     <statBases>
       <MaxHitPoints>1800</MaxHitPoints>
@@ -455,7 +462,11 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
-
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>1.7</min>
+      <max>2.0</max>
+    </visualSizeRange>
     <randomlyDropResources>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -476,14 +487,14 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="SolidOre">
     <defName>SolidOreCoal</defName>
     <label>Solid Coal Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Rock/WeatheredSlate</texPath>
+      <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(40,40,40)</color>
+      <color>(30,20,20)</color>
     </graphicData>
     <statBases>
       <MaxHitPoints>2800</MaxHitPoints>
@@ -529,6 +540,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
@@ -569,6 +581,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
@@ -609,6 +622,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
 	    <colorTwo>(160,178,181)</colorTwo>
     </graphicData>
     <statBases>
@@ -649,6 +663,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
 	    <colorTwo>(160,178,181)</colorTwo>
     </graphicData>
     <statBases>
@@ -689,6 +704,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(160,115,45)</colorTwo>
     </graphicData>
     <statBases>
@@ -729,6 +745,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(160,115,45)</colorTwo>
     </graphicData>
     <statBases>
@@ -769,6 +786,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(175,175,165)</colorTwo>
     </graphicData>
     <statBases>
@@ -809,6 +827,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(175,175,165)</colorTwo>
     </graphicData>
     <statBases>
@@ -849,6 +868,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(30,173,25)</colorTwo>
     </graphicData>
     <statBases>
@@ -893,6 +913,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(30,173,25)</colorTwo>
     </graphicData>
     <statBases>
@@ -937,6 +958,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
 	    <colorTwo>(160,178,181)</colorTwo>
     </graphicData>
     <statBases>
@@ -977,6 +999,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
 	    <colorTwo>(160,178,181)</colorTwo>
     </graphicData>
     <statBases>
@@ -1017,6 +1040,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
@@ -1057,6 +1081,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
@@ -1097,6 +1122,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
@@ -1137,6 +1163,7 @@
       <texPath>Things/Ore/WeatheredOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
       <colorTwo>(88,115,175)</colorTwo>
     </graphicData>
     <statBases>
@@ -1230,7 +1257,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="SolidOre">
     <defName>SolidOreGlowstone</defName>
     <label>Solid Glowstone Deposit</label>
     <graphicData>
@@ -1358,7 +1385,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="SolidOre">
     <defName>SolidOreColdstone</defName>
     <label>Solid Coldstone Deposit</label>
     <graphicData>
@@ -1466,7 +1493,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="SolidOre">
     <defName>SolidOreSalt</defName>
     <label>Solid Salt Deposit</label>
     <graphicData>
@@ -1561,7 +1588,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="SolidOre">
     <defName>SolidOreTech</defName>
     <label>Solid compacted machinery</label>
     <graphicData>
@@ -1715,6 +1742,88 @@
 
     <ThingsToReplace>
       <li>TKKN_MinableAmber</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+  
+
+  <ThingDef ParentName="WeatheredOre">
+    <defName>WeatheredOreUranium</defName>
+    <label>Weathered Uranium Deposits</label>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
+      <colorTwo>(70,70,70)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+    </statBases>
+    <description>Rock containing bits of uranium.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Uranium</mineableThing>
+      <mineableYield>35</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableUranium</li>
+    </ThingsToReplace>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre">
+    <defName>SolidOreUranium</defName>
+    <label>Solid Uranium Deposits</label>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(105,95,97)</color>
+      <colorTwo>(70,70,70)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+    </statBases>
+    <description>Rock containing bits of uranium.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Uranium</mineableThing>
+      <mineableYield>40</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <ThingsToReplace>
+      <li>MineableUranium</li>
     </ThingsToReplace>
     
   </ThingDef>

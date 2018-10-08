@@ -38,13 +38,16 @@
       <li>Tundra</li>
       <li>ExtremeDesert</li>
       <li>TropicalSwampArchipelago</li>
+      <li>TropicalSwamp</li>
       <li>BorealArchipelago</li>
       <li>TundraArchipelago</li>
       <li>ColdBogArchipelago</li>
+      <li>ColdBog</li>
       <li>DesertArchipelago</li>
       <li>TKKN_VolcanicFlow</li>
       <li>AridShrubland</li>
       <li>TemperateForest</li>
+      <li>TemperateSwamp</li>
       <li>ExtremeDesert</li>
       <li>Desert</li>
       <li>TropicalRainforest</li>

@@ -447,6 +447,8 @@
         <DropProbability>0.2</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>true</coloredByTerrain>
   </ThingDef>
 
 
@@ -1261,7 +1263,7 @@
     <maxMeshCount>12</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.05</min>
+      <min>0.08</min>
       <max>0.15</max>
     </visualSizeRange>
     <visualClustering>0.2</visualClustering>

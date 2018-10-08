@@ -368,13 +368,13 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.005</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
+    <minClusterProbability>0.002</minClusterProbability>
+    <maxClusterProbability>0.005</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>5</maxClusterSize>
+    <maxClusterSize>4</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.7</initialSizeMin>
+    <initialSizeMin>.8</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
@@ -423,8 +423,8 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.0</min>
-      <max>1.3</max>
+      <min>1.1</min>
+      <max>1.4</max>
     </visualSizeRange>
     <visualClustering>0.2</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->

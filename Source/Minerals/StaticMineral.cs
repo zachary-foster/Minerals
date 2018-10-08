@@ -158,7 +158,7 @@ namespace Minerals
             
         // ======= Appearance ======= //
 
-        public float GetSizeBasedOnNearest(Vector3 subcenter)
+        public float GetSizeBasedOnNearest(Vector3 subcenter, float baseSize)
         {
             float distToTrueCenter = Vector3.Distance(this.TrueCenter(), subcenter);
             float sizeOfNearest = 0;
@@ -192,7 +192,7 @@ namespace Minerals
                 }
             }
 
-            float correctedSize = (0.75f - distToTrueCenter) * size + (1 - distToNearest) * sizeOfNearest;
+            float correctedSize = (0.75f - distToTrueCenter) * baseSize + (1 - distToNearest) * sizeOfNearest;
             //Log.Message("this.size=" + this.size + " sizeOfNearest=" + sizeOfNearest + " distToNearest=" + distToNearest + " distToTrueCenter=" + distToTrueCenter);
             //Log.Message(this.size + " -> " + correctedSize + "  dist = " + distToNearest);
 
@@ -205,14 +205,61 @@ namespace Minerals
             return (Rand.Gaussian(0, 0.2f) * clustering + Rand.Range(-0.5f, 0.5f) * (1 - clustering)) * spread;
         }
 
+        public virtual float submersibleFactor()
+        {
+            // Check if is on dry land
+            TerrainDef myTerrain = Map.terrainGrid.TerrainAt(Position);
+            if (!(myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("water")))
+            {
+                return 1f;
+            }
+
+            // count number of dry cells aroud it
+            float dryCount = 0;
+            float spotsChecked = 0;
+            for (int xOffset = -attributes.submergedRadius; xOffset <= attributes.submergedRadius; xOffset++)
+            {
+                for (int zOffset = -attributes.submergedRadius; zOffset <= attributes.submergedRadius; zOffset++)
+                {
+                    spotsChecked = spotsChecked + 1;
+                    IntVec3 checkedPosition = Position + new IntVec3(xOffset, 0, zOffset);
+                    if (checkedPosition.InBounds(Map))
+                    {
+                        TerrainDef terrain = Map.terrainGrid.TerrainAt(checkedPosition);
+                        if (!(terrain.defName.Contains("Water") || terrain.defName.Contains("water")))
+                        {
+                            dryCount = dryCount + 1;
+                        }
+                    }
+                }
+            }
+
+            // calculate 
+            float propDry = dryCount / spotsChecked;
+            return attributes.submergedSize + (1 - attributes.submergedSize) * propDry;
+        }
+
         public override void Print(SectionLayer layer)
         {
 			Rand.PushState();
 			Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
+            // get print size
+            float effectiveSize = size;
+            if (attributes.submergedSize < 1)
+            {
+                effectiveSize = effectiveSize * submersibleFactor();
+            }
+
+            if (effectiveSize <= 0)
+            {
+                Rand.PopState();
+                return;
+            }
+ 
             if (this.attributes.graphicData.graphicClass.Name != "Graphic_Random" || this.attributes.graphicData.linkType == LinkDrawerType.CornerFiller) {
 				base.Print(layer);
 			} else {
-				int numToPrint = Mathf.CeilToInt(size * (float)attributes.maxMeshCount);
+                int numToPrint = Mathf.CeilToInt(effectiveSize * (float)attributes.maxMeshCount);
 				if (numToPrint < 1)
 				{
 					numToPrint = 1;
@@ -227,7 +274,7 @@ namespace Minerals
 					center.z += randPos(attributes.visualClustering, attributes.visualSpread);
 
 					// Adjust size for distance from center to other crystals
-					float thisSize = GetSizeBasedOnNearest(center);
+                    float thisSize = GetSizeBasedOnNearest(center, effectiveSize);
 
 					// Add random variation
 					thisSize = thisSize + (thisSize * Rand.Range(- attributes.visualSizeVariation, attributes.visualSizeVariation));
@@ -323,8 +370,21 @@ namespace Minerals
                 if (this.attributes.coloredByTerrain)
                 {
                     TerrainDef terrain = this.Position.GetTerrain(this.Map);
-                    return terrain.graphic.Color;
+                    if (terrain.graphic.Color == Color.white)
+                    {
+                        return base.DrawColor;
+                    }
+                    else
+                    {
+                        return terrain.graphic.Color;
+                    }
                 }
+
+                if (this.attributes.randomColors != null && this.attributes.randomColors.Count > 0)
+                {
+                    return this.attributes.randomColors.RandomElement();
+                }
+
                 return base.DrawColor;
             }
         }
@@ -431,6 +491,13 @@ namespace Minerals
 
         // If the primary color is based on the stone below it
         public bool coloredByTerrain = false;
+
+        // If defined, randomly pick colors from this set
+        public List<Color> randomColors;
+
+        // If smaller than 1, it looks smaller in water
+        public float submergedSize = 1;
+        public int submergedRadius = 2;
 
         // ======= Spawning clusters ======= //
 

@@ -494,6 +494,9 @@
       </li>
     </randomlyDropResources>
 
+    <!-- If smaller than 1, it looks smaller in water -->
+    <submergedSize>0</submergedSize>
+    <submergedRadius>2</submergedRadius>
   </ThingDef>
   
   

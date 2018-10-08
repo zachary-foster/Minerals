@@ -481,6 +481,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    
+    <!-- If smaller than 1, it looks smaller in water -->
+    <submergedSize>.3</submergedSize>
+    <submergedRadius>3</submergedRadius>
   </ThingDef>
   
   
@@ -606,6 +610,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    
+    <!-- If smaller than 1, it looks smaller in water -->
+    <submergedSize>.3</submergedSize>
+    <submergedRadius>2</submergedRadius>
   </ThingDef>
   
 </Defs>
