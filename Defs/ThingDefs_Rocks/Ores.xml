@@ -1234,7 +1234,7 @@
     
     <comps>
 		  <li Class="CompProperties_Glower">
-			  <glowRadius>2</glowRadius>
+			  <glowRadius>4</glowRadius>
 			  <glowColor>(113,187,252,0)</glowColor>
 		  </li>
 	  </comps>
@@ -1285,7 +1285,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>6</DropProbability>
       </li>
     </randomlyDropResources>
 
@@ -1538,7 +1538,7 @@
     <defName>WeatheredOreTech</defName>
     <label>Weathered compacted machinery</label>
     <graphicData>
-      <texPath>Things/Ore/WeatheredOreTech</texPath>
+      <texPath>Things/Ore/CompactedTech</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>

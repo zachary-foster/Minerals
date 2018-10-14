@@ -4,13 +4,14 @@
   <ThingDef Name="RiverRock" ParentName="StaticMineralBase">
     <defName>RiverRock</defName>
     <label>Rounded river rocks</label>
-    <description>A pile a rounded river rocks. These have long tumbled down this river from distant lands. Who knows what might be buried within them.</description>
+    <description>A pile a rounded river rocks. These have been worn round during their long slow tumble from distant lands.</description>
     <graphicData>
       <texPath>Things/Rock/RiverRock</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(50,50,50)</color>
     </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.3</fillPercent>
@@ -40,20 +41,20 @@
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>3</spawnRadius>
+    <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.02</minClusterProbability>
-    <maxClusterProbability>0.05</maxClusterProbability>
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>10</minClusterSize>
-    <maxClusterSize>50</maxClusterSize>
+    <minClusterSize>20</minClusterSize>
+    <maxClusterSize>80</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.4</initialSizeMin>
     <initialSizeMax>0.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
-    <initialSizeVariation>.2</initialSizeVariation>
+    <initialSizeVariation>.3</initialSizeVariation>
     <!-- The biomes this can appear in. The default is all ones known to mod-->
     <!--
 		<allowedBiomes>
@@ -83,11 +84,10 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-			<li>WaterOceanShallow</li>
       <li>WaterMovingShallow</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>6</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>5</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
@@ -95,7 +95,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>30</maxMeshCount>
+    <maxMeshCount>20</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>
@@ -146,7 +146,7 @@
     </randomlyDropResources>
     
     <!-- If defined, randomly pick colors from this set -->
-    <randomColors>
+    <randomColorsOne>
       <li>(105,95,97)</li>
       <li>(107,90,97)</li>
       <li>(115,95,110)</li>
@@ -162,14 +162,181 @@
       <li>(126,104,94)</li>
       <li>(50,50,50)</li>
       <li>(200,200,200)</li>
-    </randomColors>
+    </randomColorsOne>
+    
+    <!-- If true, then the probability of each color is randomly chosen for each map, so each map has distinctive colors.   -->
+    <seedRandomColorByMap>true</seedRandomColorByMap>
     
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
     <submergedRadius>2</submergedRadius>
-
     
   </ThingDef>
   
+
+  <ThingDef Name="BeachRock" ParentName="StaticMineralBase">
+    <defName>BeachRock</defName>
+    <label>Rounded beach rocks</label>
+    <description>A pile a rounded river rocks. The ocean has worn them round by eons of slow grinding in the surf.</description>
+    <graphicData>
+      <texPath>Things/Rock/RiverRock</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(50,50,50)</color>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <altitudeLayer>SmallWire</altitudeLayer>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.3</fillPercent>
+    <coversFloor>false</coversFloor>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>80</pathCost>
+    <building>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>0.15</mineableDropChance>
+      <mineableYield>40</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
+    <hideAtSnowDepth>0.7</hideAtSnowDepth>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+    <!--How far away it can spawn from an existing location-->
+    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+    <spawnRadius>1</spawnRadius>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>1</perMapProbability>
+    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0.005</minClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
+    <!-- How  many squares each cluster will be -->
+    <minClusterSize>5</minClusterSize>
+    <maxClusterSize>50</maxClusterSize>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>0.4</initialSizeMin>
+    <initialSizeMax>0.9</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.3</initialSizeVariation>
+    <!-- The biomes this can appear in. The default is all ones known to mod-->
+    <!--
+		<allowedBiomes>
+			<li>add_biomes_here</li>
+		</allowedBiomes>
+		-->
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+			<li>Granite_Rough</li>
+			<li>Limestone_Rough</li>
+			<li>Marble_Rough</li>
+			<li>Slate_Rough</li>
+      <li>TKKN_LavaRock_Rough</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>TKKN_SandBeachWetSalt</li>
+		</allowedTerrains>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <neededNearbyTerrains>
+			<li>WaterOceanShallow</li>
+    </neededNearbyTerrains>
+    <!-- how far away it can be from needed nearby terrains-->
+    <neededNearbyTerrainRadius>6</neededNearbyTerrainRadius>
+    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
+    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>25</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>0.15</min>
+      <max>0.3</max>
+    </visualSizeRange>
+    <visualClustering>0.3</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>2.2</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.4</visualSizeVariation>
+    <!-- The amount of resource returned if the mineral is its maximum size -->
+    <maxMinedYeild>1</maxMinedYeild>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>FlintShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Gold</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Silver</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>20</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Jade</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+    
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(105,95,97)</li>
+      <li>(107,90,97)</li>
+      <li>(115,95,110)</li>
+      <li>(158,153,135)</li>
+      <li>(158,155,130)</li>
+      <li>(152,153,135)</li>
+      <li>(158,180,155)</li>
+      <li>(132,135,132)</li>
+      <li>(132,135,132)</li>
+      <li>(132,115,122)</li>
+      <li>(130,110,122)</li>
+      <li>(70,70,70)</li>
+      <li>(126,104,94)</li>
+      <li>(50,50,50)</li>
+      <li>(200,200,200)</li>
+    </randomColorsOne>
+    
+    <!-- If true, then the probability of each color is randomly chosen for each map, so each map has distinctive colors.   -->
+    <seedRandomColorByMap>true</seedRandomColorByMap>
+    
+    <!-- If smaller than 1, it looks smaller in water -->
+    <submergedSize>0</submergedSize>
+    <submergedRadius>2</submergedRadius>
+    
+  </ThingDef>
+
   
+
 </Defs>

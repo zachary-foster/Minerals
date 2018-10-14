@@ -364,6 +364,14 @@ namespace Minerals
             }
         }
 
+        public virtual float RandomColorProb(Color colorUsed) {
+            Rand.PushState();
+            Rand.Seed = Map.GetHashCode() + colorUsed.GetHashCode();
+            float output = Rand.Range(0.1f, 1f);
+            Rand.PopState();
+            return output * output * output;
+        }
+
         public override Color DrawColor {
             get
             {
@@ -380,9 +388,17 @@ namespace Minerals
                     }
                 }
 
-                if (this.attributes.randomColors != null && this.attributes.randomColors.Count > 0)
+                if (this.attributes.randomColorsOne != null && this.attributes.randomColorsOne.Count > 0)
                 {
-                    return this.attributes.randomColors.RandomElement();
+                    if (attributes.seedRandomColorByMap)
+                    {
+                        return this.attributes.randomColorsOne.RandomElementByWeight(RandomColorProb);
+                    }
+                    else
+                    {
+                        return this.attributes.randomColorsOne.RandomElement();
+                    }
+          
                 }
 
                 return base.DrawColor;
@@ -393,6 +409,19 @@ namespace Minerals
         {
             get
             {
+                if (this.attributes.randomColorsTwo != null && this.attributes.randomColorsTwo.Count > 0)
+                {
+                    if (attributes.seedRandomColorByMap)
+                    {
+                        return this.attributes.randomColorsTwo.RandomElementByWeight(RandomColorProb);
+                    }
+                    else
+                    {
+                        return this.attributes.randomColorsTwo.RandomElement();
+                    }
+
+                }
+
                 return base.DrawColorTwo;
             }
         }
@@ -493,7 +522,10 @@ namespace Minerals
         public bool coloredByTerrain = false;
 
         // If defined, randomly pick colors from this set
-        public List<Color> randomColors;
+        public List<Color> randomColorsOne;
+        public List<Color> randomColorsTwo;
+        // If true, then the probability of each color is randomly chosen for each map, so each map has distinctive colors.
+        public bool seedRandomColorByMap = false;
 
         // If smaller than 1, it looks smaller in water
         public float submergedSize = 1;

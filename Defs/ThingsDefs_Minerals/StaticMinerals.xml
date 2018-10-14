@@ -9,7 +9,26 @@
     <graphicData>
       <texPath>Things/Mineral/CalciteCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(211,213,212)</li>
+      <li>(216,216,216)</li>
+      <li>(202,202,202)</li>
+      <li>(206,206,206)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(211,213,212)</li>
+      <li>(216,200,180)</li>
+      <li>(218,203,190)</li>
+      <li>(216,200,180)</li>
+      <li>(202,200,190)</li>
+      <li>(206,200,200)</li>
+      <li>(205,175,150)</li>
+      <li>(215,195,160)</li>
+    </randomColorsTwo>
+
     <altitudeLayer>LowPlant</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.1</fillPercent>
@@ -42,7 +61,7 @@
     <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <maxClusterProbability>0.004</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>30</maxClusterSize>
@@ -83,11 +102,11 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>20</maxMeshCount>
+    <maxMeshCount>22</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>
-      <max>0.7</max>
+      <max>0.5</max>
     </visualSizeRange>
     <visualClustering>0.5</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -115,6 +134,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(220,220,220)</color>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <altitudeLayer>LowPlant</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
@@ -145,10 +165,10 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.6</perMapProbability>
+    <perMapProbability>0.7</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.0015</maxClusterProbability>
+    <maxClusterProbability>0.002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>15</maxClusterSize>
@@ -221,7 +241,9 @@
       <texPath>Things/Mineral/QuartzCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
-      <color>(184, 164, 219)</color>
+      <color>(220,220,220)</color>
+      <colorTwo>(130, 100, 170)</colorTwo>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -430,12 +452,12 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.4</min>
-      <max>0.8</max>
+      <min>0.5</min>
+      <max>0.9</max>
     </visualSizeRange>
-    <visualClustering>0.1</visualClustering>
+    <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>1</visualSpread>
+    <visualSpread>0.8</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->
@@ -583,7 +605,7 @@
     </graphicData>
     
     <!-- If defined, randomly pick colors from this set -->
-    <randomColors>
+    <randomColorsOne>
       <li>(87,39,29)</li>
       <li>(62,22,10)</li>
       <li>(35,35,27)</li>
@@ -593,7 +615,7 @@
       <li>(119,34,27)</li>
       <li>(73,45,34)</li>
       <li>(79,42,30)</li>
-    </randomColors>
+    </randomColorsOne>
     
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -633,7 +655,7 @@
     </graphicData>
     
     <!-- If defined, randomly pick colors from this set -->
-    <randomColors>
+    <randomColorsOne>
       <li>(228,156,160)</li>
       <li>(132,29,48)</li>
       <li>(62,22,10)</li>
@@ -644,7 +666,7 @@
       <li>(212,141,145)</li>
       <li>(233,195,192)</li>
       <li>(212,172,172)</li>
-    </randomColors>
+    </randomColorsOne>
     
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -696,7 +718,7 @@
     </graphicData>
     
     <!-- If defined, randomly pick colors from this set -->
-    <randomColors>
+    <randomColorsOne>
       <li>(45,102,113)</li>
       <li>(20,147,167)</li>
       <li>(37,156,203)</li>
@@ -706,7 +728,7 @@
       <li>(47,145,158)</li>
       <li>(16,93,104)</li>
       <li>(37,169,119)</li>
-    </randomColors>
+    </randomColorsOne>
     
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -753,6 +775,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(100,100,100)</color>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
@@ -911,6 +934,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(92,68,53)</color>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.25</perMapProbability>
