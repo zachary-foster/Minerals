@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="WeatheredLimestone" ParentName="WeatheredRockBase">
+  <ThingDef Name="WeatheredLimestone" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredLimestone</defName>
     <label>Weathered Limestone</label>
     <description>Impassable masses of eroded limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material.</description>
@@ -101,7 +101,7 @@
   </ThingDef>
 
   
-  <ThingDef Name="SolidLimestone" ParentName="SolidRockBase">
+  <ThingDef Name="SolidLimestone" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidLimestone</defName>
     <label>Solid Limestone</label>
     <description>A wall of solid limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material.</description>
@@ -206,7 +206,7 @@
   </ThingDef>
   
 
-  <ThingDef Name="HewnLimestone" ParentName="HewnRockBase">
+  <ThingDef Name="HewnLimestone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>HewnLimestone</defName>
     <label>Hewn Limestone</label>
     <description>A wall of hewn limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material.</description>
@@ -326,7 +326,7 @@
   </ThingDef>
  
 
-  <ThingDef Name="LargePassableLimestone" ParentName="StaticMineralBase">
+  <ThingDef Name="LargePassableLimestone" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>LargePassableLimestone</defName>
     <label>Limestone boulders</label>
     <description>An outcropping of eroded limestone. These dont slow down movement much and provide some cover.</description>
@@ -360,7 +360,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->

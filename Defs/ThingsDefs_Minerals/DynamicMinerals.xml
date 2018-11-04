@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <ThingDef ParentName="DynamicMineralBase">
+  <ThingDef ParentName="DynamicMineralBase" Class="Minerals.ThingDef_DynamicMineral">
     <defName>ColdstoneCrystal</defName>
     <label>Coldstone Crystal</label>
     <comps>
@@ -162,7 +162,7 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="DynamicMineralBase">
+  <ThingDef ParentName="DynamicMineralBase" Class="Minerals.ThingDef_DynamicMineral">
     <defName>GlowstoneCrystal</defName>
     <label>Glowstone Crystal</label>
     <comps>
@@ -272,7 +272,7 @@
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>
-      <max>1.0</max>
+      <max>1.1</max>
     </visualSizeRange>
     <visualClustering>0.5</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -323,7 +323,7 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="DynamicMineralBase">
+  <ThingDef ParentName="DynamicMineralBase" Class="Minerals.ThingDef_DynamicMineral">
     <thingClass>Minerals.SaltCrystal</thingClass>
     <defName>ZF_SaltCrystal</defName>
     <label>Salt Crystal</label>
@@ -500,7 +500,7 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="DynamicMineralBase">
+  <ThingDef ParentName="DynamicMineralBase" Class="Minerals.ThingDef_DynamicMineral">
     <defName>SulfurCrystal</defName>
     <label>Sulfur Crystals</label>
     <description>A deposit of elemental sulfur formed by volcanic gases. This deposit seems to be actively growing.</description>

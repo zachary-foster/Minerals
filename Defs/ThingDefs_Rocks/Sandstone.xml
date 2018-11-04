@@ -2,7 +2,7 @@
 <Defs>
   
   
-  <ThingDef Name="WeatheredSandstone" ParentName="WeatheredRockBase">
+  <ThingDef Name="WeatheredSandstone" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredSandstone</defName>
     <label>Weathered Sandstone</label>
     <description>Impassable rocks of compacted sand, sculpted by weather and time into flowing shapes.</description>
@@ -117,7 +117,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidSandstone" ParentName="SolidRockBase">
+  <ThingDef Name="SolidSandstone" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidSandstone</defName>
     <label>Solid Sandstone</label>
     <description>A solid wall of sandstone, a sedimentary rock made of cemented silica and feldspar grains.</description>
@@ -237,7 +237,7 @@
   </ThingDef>
 
   
-  <ThingDef Name="HewnSandstone" ParentName="HewnRockBase">
+  <ThingDef Name="HewnSandstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>HewnSandstone</defName>
     <label>Hewn Sandstone</label>
     <description>A hewn wall of sandstone, a sedimentary rock made of cemented silica and feldspar grains.</description>
@@ -362,7 +362,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="PassableSandstone" ParentName="StaticMineralBase">
+  <ThingDef Name="PassableSandstone" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>PassableSandstone</defName>
     <label>Sandstone Rocks</label>
     <description>Impassable rocks of compacted sand, sculpted by weather and time into flowing shapes.</description>
@@ -396,7 +396,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -488,7 +488,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SmallPassableSandstone" ParentName="StaticMineralBase">
+  <ThingDef Name="SmallPassableSandstone" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>SmallPassableSandstone</defName>
     <label>Sandstone Rocks</label>
     <description>Fragmented sandstone rocks. These are slow to move over and provide little cover. </description>
@@ -522,7 +522,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->

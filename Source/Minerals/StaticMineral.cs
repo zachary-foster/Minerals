@@ -20,7 +20,6 @@ namespace Minerals
 
         // ======= Private Variables ======= //
         protected float yieldPct = 0;
-        public static float globalMineralAbundance = 1f;
 
         // The current size of the mineral
         protected float mySize = 1f;
@@ -552,7 +551,7 @@ namespace Minerals
             if (mineral != null)
             {            
                 // Pick cluster size
-                int clusterSize = Rand.Range(minClusterSize, maxClusterSize);
+                int clusterSize = (int) (Rand.Range(minClusterSize, maxClusterSize) * MineralsMain.Settings.clusterFactor);
 
                 // Grow cluster 
                 GrowCluster(map, mineral, clusterSize);
@@ -923,10 +922,10 @@ namespace Minerals
             }
 
             // Select probability of spawing for this map
-            float spawnProbability = Rand.Range(minClusterProbability, maxClusterProbability) * StaticMineral.globalMineralAbundance * scaling;
+            float spawnProbability = Rand.Range(minClusterProbability, maxClusterProbability) * scaling * MineralsMain.Settings.abundanceFactor;
 
             // Find spots to spawn it
-            if (Rand.Range(0f, 1f) <= perMapProbability && spawnProbability > 0)
+            if (Rand.Range(0f, 1f) <= perMapProbability * MineralsMain.Settings.occuranceFactor && spawnProbability > 0)
             {
                 Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
                 IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
@@ -974,7 +973,7 @@ namespace Minerals
 
         public virtual void ReplaceThings(Map map, float scaling = 1)
         {
-            if (ThingsToReplace == null || ThingsToReplace.Count == 0)
+            if (ThingsToReplace == null || ThingsToReplace.Count == 0 || MineralsMain.Settings.replaceRockWalls == false)
             {
                 return;
             }

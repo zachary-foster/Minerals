@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<abundanceFactor>Mineral Abundance</abundanceFactor>
+	<occuranceFactor>Mineral Diversity</occuranceFactor>
+	<clusterFactor>Mineral Cluster Size</clusterFactor>
+	<growthFactor>Dynamic Mineral Growth Rate</growthFactor>
+	<reproductionFactor>Dynamic Mineral Reproduction Rate</reproductionFactor>
+	<spawningFactor>Dynamic Mineral Spawning Rate</spawningFactor>
+	<replaceRockWalls>Replace Vanilla Rock Walls</replaceRockWalls>
+</LanguageData>

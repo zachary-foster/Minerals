@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="WeatheredBasalt" ParentName="WeatheredRockBase">
+  <ThingDef Name="WeatheredBasalt" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredBasalt</defName>
     <label>Weathered Basalt</label>
     <description>A wall of weathered basalt, the most common igneous rock.</description>
@@ -21,9 +21,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>TKKN_ChunkLava</mineableThing>
+      <mineableThing>CrushedStone</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
-      <mineableYield>1</mineableYield>
+      <mineableYield>10</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -90,8 +90,8 @@
         <DropProbability>0.05</DropProbability>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
       </li>
       <li>
         <ResourceDefName>ObsidianShard</ResourceDefName>
@@ -106,7 +106,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidBasalt" ParentName="SolidRockBase">
+  <ThingDef Name="SolidBasalt" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidBasalt</defName>
     <label>Solid Basalt</label>
     <description>A solid wall of basalt, composed of deep layers of ancient lava flows.</description>
@@ -126,9 +126,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>TKKN_ChunkLava</mineableThing>
+      <mineableThing>CrushedStone</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
-      <mineableYield>1</mineableYield>
+      <mineableYield>10</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -195,8 +195,8 @@
         <DropProbability>0.05</DropProbability>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -206,7 +206,7 @@
   </ThingDef>
   
 
-  <ThingDef Name="HewnBasalt" ParentName="HewnRockBase">
+  <ThingDef Name="HewnBasalt" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>HewnBasalt</defName>
     <label>Hewn Basalt</label>
     <description>A hewn wall of basalt, composed of deep layers of ancient lava flows.</description>
@@ -241,9 +241,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>TKKN_ChunkLava</mineableThing>
+      <mineableThing>CrushedStone</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
-      <mineableYield>1</mineableYield>
+      <mineableYield>10</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -310,8 +310,8 @@
         <DropProbability>0.01</DropProbability>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
@@ -327,7 +327,7 @@
  
 
 
-  <ThingDef Name="LargePassableBasalt" ParentName="StaticMineralBase">
+  <ThingDef Name="LargePassableBasalt" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>LargePassableBasalt</defName>
     <label>Basalt boulders</label>
     <description>Basalt boulders. These are small enough to be climbed over and provide decent cover in the many gunfights that occur in this rimworld.</description>
@@ -354,14 +354,14 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>TKKN_ChunkLava</mineableThing>
+      <mineableThing>CrushedStone</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
-      <mineableYield>1</mineableYield>
+      <mineableYield>15</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -446,8 +446,8 @@
         <DropProbability>0.03</DropProbability>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
       </li>
       <li>
         <ResourceDefName>ObsidianShard</ResourceDefName>
@@ -463,7 +463,7 @@
 
   
   
-  <ThingDef Name="PassableBasalt" ParentName="StaticMineralBase">
+  <ThingDef Name="PassableBasalt" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>PassableBasalt</defName>
     <label>Ancient lava flow</label>
     <description>A weathered lava flow. This was once a river of molted rock, but has since cooled and shattered. Very difficult to walk over but provides little cover in a gunfight.</description>
@@ -490,14 +490,14 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>TKKN_ChunkLava</mineableThing>
+      <mineableThing>CrushedStone</mineableThing>
       <mineableDropChance>0.15</mineableDropChance>
-      <mineableYield>1</mineableYield>
+      <mineableYield>15</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -580,8 +580,8 @@
         <DropProbability>0.02</DropProbability>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
       </li>
       <li>
         <ResourceDefName>ObsidianShard</ResourceDefName>

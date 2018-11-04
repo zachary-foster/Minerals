@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="WeatheredSlate" ParentName="WeatheredRockBase">
+  <ThingDef Name="WeatheredSlate" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredSlate</defName>
     <label>Weathered Slate</label>
     <description>Slate.</description>
@@ -106,7 +106,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidSlate" ParentName="SolidRockBase">
+  <ThingDef Name="SolidSlate" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidSlate</defName>
     <label>Solid Slate</label>
     <description>A solid wall of Slate.</description>
@@ -211,7 +211,7 @@
   </ThingDef>
   
 
-  <ThingDef Name="HewnSlate" ParentName="HewnRockBase">
+  <ThingDef Name="HewnSlate" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>HewnSlate</defName>
     <label>Hewn Slate</label>
     <description>A hewn wall of Slate.</description>
@@ -331,7 +331,7 @@
   </ThingDef>
 
   
-  <ThingDef Name="SlateForest" ParentName="WeatheredRockBase">
+  <ThingDef Name="SlateForest" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>SlateForest</defName>
     <label>Slate stone forest</label>
     <description>Pillars of soild slate sculpted by rain. This rare formation is quite beautiful.</description>
@@ -441,7 +441,7 @@
   </ThingDef>
 
 
-  <ThingDef Name="PassableSlate" ParentName="StaticMineralBase">
+  <ThingDef Name="PassableSlate" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>PassableSlate</defName>
     <label>Slate rubble pile</label>
     <description>A pile or large slate rocks. Some of these naturally rectangular stones can be used for building without stonecutting.</description>
@@ -475,7 +475,7 @@
       <deconstructible>false</deconstructible>
       <mineableDropChance>0.1</mineableDropChance>
     </building>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->

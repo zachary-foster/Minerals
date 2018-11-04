@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="RiverRock" ParentName="StaticMineralBase">
+  <ThingDef Name="RiverRock" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>RiverRock</defName>
     <label>Rounded river rocks</label>
     <description>A pile a rounded river rocks. These have been worn round during their long slow tumble from distant lands.</description>
@@ -37,7 +37,7 @@
       <deconstructible>false</deconstructible>
     </building>
     <hideAtSnowDepth>0.7</hideAtSnowDepth>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -174,7 +174,7 @@
   </ThingDef>
   
 
-  <ThingDef Name="BeachRock" ParentName="StaticMineralBase">
+  <ThingDef Name="BeachRock" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>BeachRock</defName>
     <label>Rounded beach rocks</label>
     <description>A pile a rounded river rocks. The ocean has worn them round by eons of slow grinding in the surf.</description>
@@ -210,7 +210,7 @@
       <deconstructible>false</deconstructible>
     </building>
     <hideAtSnowDepth>0.7</hideAtSnowDepth>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->

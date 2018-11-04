@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="WeatheredGranite" ParentName="WeatheredRockBase">
+  <ThingDef Name="WeatheredGranite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredGranite</defName>
     <label>Weathered Granite</label>
     <description>Large masses of eroded granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
@@ -101,7 +101,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidGranite" ParentName="SolidRockBase">
+  <ThingDef Name="SolidGranite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidGranite</defName>
     <label>Solid Granite</label>
     <description>Large masses of solid granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
@@ -201,7 +201,7 @@
   </ThingDef>
   
 
-  <ThingDef Name="HewnGranite" ParentName="HewnRockBase">
+  <ThingDef Name="HewnGranite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>HewnGranite</defName>
     <label>Hewn Granite</label>
     <description>Hewn wall of solid granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
@@ -317,7 +317,7 @@
  
   
   
-  <ThingDef Name="PassableGranite" ParentName="StaticMineralBase">
+  <ThingDef Name="PassableGranite" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>PassableGranite</defName>
     <label>Granite Bolders</label>
     <description>Granite Bolders. These are small enough to climb over and make great cover in a gunfight.</description>
@@ -351,7 +351,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->

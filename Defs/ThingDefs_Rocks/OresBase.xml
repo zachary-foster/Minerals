@@ -2,7 +2,7 @@
 <Defs>
   
   
-  <ThingDef Name="WeatheredOre" ParentName="WeatheredRockBase" Abstract="True">
+  <ThingDef Name="WeatheredOre" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <defName>WeatheredOre</defName>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0</perMapProbability>
@@ -28,7 +28,7 @@
   </ThingDef>
 
 
-  <ThingDef Name="SolidOre" ParentName="SolidRockBase" Abstract="True">
+  <ThingDef Name="SolidOre" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock" Abstract="True">
     <defName>SolidOre</defName>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0</perMapProbability>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="WeatheredMarble" ParentName="WeatheredRockBase">
+  <ThingDef Name="WeatheredMarble" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredMarble</defName>
     <label>Weathered Marble</label>
     <description>Eroded Marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it a popular building material.</description>
@@ -101,7 +101,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidMarble" ParentName="SolidRockBase">
+  <ThingDef Name="SolidMarble" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidMarble</defName>
     <label>Solid Marble</label>
     <description>Solid Marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it a popular building material.</description>
@@ -201,7 +201,7 @@
   </ThingDef>
   
 
-  <ThingDef Name="HewnMarble" ParentName="HewnRockBase">
+  <ThingDef Name="HewnMarble" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>HewnMarble</defName>
     <label>Hewn Marble</label>
     <description>Hewn marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it a popular building material.</description>
@@ -317,7 +317,7 @@
  
   
   
-  <ThingDef Name="PassableMarble" ParentName="StaticMineralBase">
+  <ThingDef Name="PassableMarble" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>PassableMarble</defName>
     <label>Marble Boulders</label>
     <description>Large boulders of marble. Good for building material and cover in one of gunfights that occur so frequently on this rimworld.</description>
@@ -351,7 +351,7 @@
       <deconstructible>false</deconstructible>
       <mineableDropChance>0.3</mineableDropChance>
     </building>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->

@@ -2,10 +2,10 @@
 <Defs>
   
   
-  <ThingDef Name="WeatheredRockBase" ParentName="StaticMineralBase" Abstract="True">
+  <ThingDef Name="WeatheredRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
@@ -42,7 +42,7 @@
     <thingClass>Minerals.SolidRock</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
@@ -75,10 +75,10 @@
   </ThingDef>
   
   
-  <ThingDef Name="HewnRockBase" ParentName="StaticMineralBase" Abstract="True">
+  <ThingDef Name="HewnRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <blockWind>true</blockWind>

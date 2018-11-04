@@ -34,6 +34,8 @@ namespace Minerals
         {
             get
             {
+                float output = 1f; // If there are no growth rate factors, grow at full speed
+
                 // Get growth rate factors
                 List<float> rateFactors = allGrowthRateFactors;
                 List<float> positiveFactors = rateFactors.FindAll(fac => fac >= 0);
@@ -42,17 +44,17 @@ namespace Minerals
                 // if any factors are negative, add them together and ignore positive factors
                 if (negativeFactors.Count > 0)
                 {
-                    return negativeFactors.Sum();
+                    output = negativeFactors.Sum();
                 }
 
                 // if all positive, multiply them
                 if (positiveFactors.Count > 0)
                 {
-                    return positiveFactors.Aggregate(1f, (acc, val) => acc * val);
+                    output = positiveFactors.Aggregate(1f, (acc, val) => acc * val);
                 }
 
-                // If there are no growth rate factors, grow at full speed
-                return 1f;
+
+                return output * MineralsMain.Settings.growthFactor;
             }
         }
 
@@ -91,7 +93,7 @@ namespace Minerals
             size += GrowthThisTick * 2000; // dont know why 2000, just imitating what plants do
 
             // Try to reproduce
-            if (GrowthThisTick > 0 && size > attributes.minReproductionSize && Rand.Range(0f, 1f) < attributes.reproduceProp * GrowthRate)
+            if (GrowthThisTick > 0 && size > attributes.minReproductionSize && Rand.Range(0f, 1f) < attributes.reproduceProp * GrowthRate * MineralsMain.Settings.reproductionFactor)
             {
                 attributes.TryReproduce(Map, Position);
             }
@@ -405,7 +407,7 @@ namespace Minerals
                
 
                 // Get number of positions to check
-                float numToCheck = map.Area * mineralType.spawnProb;
+                float numToCheck = map.Area * mineralType.spawnProb * MineralsMain.Settings.spawningFactor;
 
                 if (numToCheck < 1 & Rand.Range(0f, 1f) > numToCheck)
                 {

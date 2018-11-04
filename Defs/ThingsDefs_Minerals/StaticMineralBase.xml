@@ -13,7 +13,7 @@
     <pathCost>60</pathCost>
     <mineable>true</mineable>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>RockRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
     <drawerType>MapMeshOnly</drawerType>
     <scatterableOnMapGen>false</scatterableOnMapGen>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>

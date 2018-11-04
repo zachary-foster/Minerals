@@ -2,7 +2,7 @@
 <Defs>
   
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreSteel</defName>
     <label>Weathered Iron Ore Deposits</label>
     <graphicData>
@@ -48,7 +48,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreSteel</defName>
     <label>Solid Iron Ore Deposits</label>
     <graphicData>
@@ -94,7 +94,7 @@
   </ThingDef>
 
   
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreSilver</defName>
     <label>Weathered Silver Ore Deposits</label>
     <graphicData>
@@ -140,7 +140,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreSilver</defName>
     <label>Solid Silver Ore Deposits</label>
     <graphicData>
@@ -185,7 +185,7 @@
     
   </ThingDef>
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreGold</defName>
     <label>Weathered Gold Ore Deposits</label>
     <graphicData>
@@ -231,7 +231,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreGold</defName>
     <label>Solid Gold Ore Deposits</label>
     <graphicData>
@@ -276,7 +276,7 @@
     
   </ThingDef>
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreNitre</defName>
     <label>Weathered Nitre Ore Deposits</label>
     <graphicData>
@@ -317,7 +317,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreNitre</defName>
     <label>Solid Nitre Ore Deposits</label>
     <graphicData>
@@ -357,7 +357,7 @@
     <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
   
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreLead</defName>
     <label>Weathered Anglesite Deposits</label>
     <graphicData>
@@ -398,7 +398,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreLead</defName>
     <label>Solid Anglesite Deposits</label>
     <graphicData>
@@ -438,7 +438,7 @@
     
   </ThingDef>
   
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreCoal</defName>
     <label>Weathered Coal Ore Deposits</label>
     <graphicData>
@@ -487,7 +487,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreCoal</defName>
     <label>Solid Coal Ore Deposits</label>
     <graphicData>
@@ -532,7 +532,7 @@
   </ThingDef>
   
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreNickel</defName>
     <label>Weathered Nickel Ore Deposits</label>
     <graphicData>
@@ -573,7 +573,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreNickel</defName>
     <label>Solid Nickel Ore Deposits</label>
     <graphicData>
@@ -614,7 +614,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreTin</defName>
     <label>Weathered Tin Ore Deposits</label>
     <graphicData>
@@ -655,7 +655,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreTin</defName>
     <label>Solid Tin Ore Deposits</label>
     <graphicData>
@@ -696,7 +696,7 @@
   </ThingDef>
   
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreCopper</defName>
     <label>Weathered Copper Ore Deposits</label>
     <graphicData>
@@ -737,7 +737,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreCopper</defName>
     <label>Solid Copper Ore Deposits</label>
     <graphicData>
@@ -778,7 +778,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreAluminum</defName>
     <label>Weathered Aluminum Ore Deposits</label>
     <graphicData>
@@ -819,7 +819,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreAluminum</defName>
     <label>Solid Aluminum Ore Deposits</label>
     <graphicData>
@@ -860,7 +860,7 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreJade</defName>
     <label>Weathered Jade Deposits</label>
     <graphicData>
@@ -905,7 +905,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreJade</defName>
     <label>Solid Jade Deposits</label>
     <graphicData>
@@ -950,7 +950,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreTitanium</defName>
     <label>Weathered Ilmenite Ore Deposits</label>
     <graphicData>
@@ -991,7 +991,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreTitanium</defName>
     <label>Solid Titanium Deposits</label>
     <graphicData>
@@ -1032,7 +1032,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreManganese</defName>
     <label>Weathered Pyrolusite Ore Deposits</label>
     <graphicData>
@@ -1073,7 +1073,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreManganese</defName>
     <label>Solid Pyrolusite Ore Deposits</label>
     <graphicData>
@@ -1114,7 +1114,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreTungsten</defName>
     <label>Weathered Wolframite Ore Deposits</label>
     <graphicData>
@@ -1155,7 +1155,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreTungsten</defName>
     <label>Solid Wolframite Ore Deposits</label>
     <graphicData>
@@ -1196,7 +1196,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreGlowstone</defName>
     <label>Weathered Glowstone Deposit</label>
     <graphicData>
@@ -1257,7 +1257,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreGlowstone</defName>
     <label>Solid Glowstone Deposit</label>
     <graphicData>
@@ -1319,7 +1319,7 @@
 
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreColdstone</defName>
     <label>Weathered Coldstone Deposit</label>
     <graphicData>
@@ -1385,7 +1385,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreColdstone</defName>
     <label>Solid Coldstone Deposit</label>
     <graphicData>
@@ -1451,7 +1451,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreSalt</defName>
     <label>Weathered Salt Deposit</label>
     <graphicData>
@@ -1493,7 +1493,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreSalt</defName>
     <label>Solid Salt Deposit</label>
     <graphicData>
@@ -1534,7 +1534,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreTech</defName>
     <label>Weathered compacted machinery</label>
     <graphicData>
@@ -1580,7 +1580,7 @@
     </randomlyDropResources>
 
     <ThingsToReplace>
-      <li>MineableComponents</li>
+      <li>MineableComponentsIndustrial</li>
     </ThingsToReplace>
 
     <!-- If the primary color is based on the stone below it -->
@@ -1588,7 +1588,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreTech</defName>
     <label>Solid compacted machinery</label>
     <graphicData>
@@ -1654,7 +1654,7 @@
     </randomlyDropResources>
 
     <ThingsToReplace>
-      <li>MineableComponents</li>
+      <li>MineableComponentsIndustrial</li>
     </ThingsToReplace>
     
     <!-- If the primary color is based on the stone below it -->
@@ -1662,7 +1662,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreAmber</defName>
     <label>Weathered Amber Deposit</label>
     <graphicData>
@@ -1677,8 +1677,8 @@
     <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>TKKN_Amber</mineableThing>
-      <mineableYield>40</mineableYield>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableYield>15</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
@@ -1693,8 +1693,8 @@
         <DropProbability>1</DropProbability>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>TKKN_Amber</ResourceDefName>
+        <DropProbability>40</DropProbability>
       </li>
     </randomlyDropResources>
 
@@ -1705,7 +1705,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreAmber</defName>
     <label>Solid Amber Deposit</label>
     <graphicData>
@@ -1719,8 +1719,8 @@
     <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>TKKN_Amber</mineableThing>
-      <mineableYield>60</mineableYield>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableYield>15</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
@@ -1735,8 +1735,8 @@
         <DropProbability>3</DropProbability>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>TKKN_Amber</ResourceDefName>
+        <DropProbability>60</DropProbability>
       </li>
     </randomlyDropResources>
 
@@ -1747,7 +1747,7 @@
   </ThingDef>
   
 
-  <ThingDef ParentName="WeatheredOre">
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredOreUranium</defName>
     <label>Weathered Uranium Deposits</label>
     <graphicData>
@@ -1788,7 +1788,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidOreUranium</defName>
     <label>Solid Uranium Deposits</label>
     <graphicData>
