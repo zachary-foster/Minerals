@@ -1,5 +1,5 @@
 ﻿<Properties StartupItem="Minerals.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="StaticMineral.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMineralBase.xml" Line="1" Column="1" />
       <File FileName="../../Defs/ThingsDefs_Minerals/StaticMinerals.xml" Line="1" Column="1" />
@@ -13,7 +13,7 @@
       <File FileName="SaltCrystal.cs" Line="1" Column="1" />
       <File FileName="harmonyPatching.cs" Line="1" Column="1" />
       <File FileName="DynamicMineral.cs" Line="1" Column="1" />
-      <File FileName="StaticMineral.cs" Line="60" Column="60" />
+      <File FileName="StaticMineral.cs" Line="18" Column="18" />
       <File FileName="SolidRock.cs" Line="1" Column="1" />
       <File FileName="initialization.cs" Line="1" Column="1" />
     </Files>

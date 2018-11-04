@@ -110,13 +110,13 @@ namespace Minerals
 
         // ======= Yeilding resources ======= //
 
-        public virtual void incPctYeild(int amount, Pawn miner)
+        public virtual void incPctYeild(float amount, Pawn miner)
         {
             yieldPct += (float)Mathf.Min(amount, HitPoints) / (float)MaxHitPoints * miner.GetStatValue(StatDefOf.MiningYield, true);
         }
 
 
-        public override void PreApplyDamage(DamageInfo dinfo, out bool absorbed)
+        public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
             // Drop resources
             foreach (RandomResourceDrop toDrop in attributes.randomlyDropResources)
@@ -141,7 +141,7 @@ namespace Minerals
             {
                 dinfo.SetAmount(0);
             }
-            base.PreApplyDamage(dinfo, out absorbed);
+            base.PreApplyDamage(ref dinfo, out absorbed);
 
 
         }
@@ -334,7 +334,7 @@ namespace Minerals
 
                     if (ContentFinder<Texture2D>.Get(a_path, false) != null)
                     {
-                        Graphic graphic = GraphicDatabase.Get<Graphic_Single>(a_path, ShaderDatabase.ShaderFromType(attributes.graphicData.shaderType));
+                        Graphic graphic = GraphicDatabase.Get<Graphic_Single>(a_path, attributes.graphicData.shaderType.Shader);
                         textures.Add(graphic);
                     }
                 }

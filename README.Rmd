@@ -42,14 +42,6 @@ Gems are particularly light and valuable, making them excellent for trading and 
 ![](readme_images/CuttingGems.jpg)
 
 
-## Obsidian/Flint crafting
-
-Flint and obsidian can be used to make "tribal" tools like knives and handaxes.
-They have decent armor penetration, but are very brittle, so tools will get destroyed often when used for self defense.
-Flint and obsidian arrows are better than standard stone arrows but not as good as metal arrows.
-
-![](readme_images/NeolithicCrafting.jpg)
-
 
 ## Installation
 

@@ -29,16 +29,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\home\zachary\.steam\steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\..\..\..\..\..\home\zachary\.steam\steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="0Harmony">
       <HintPath>..\..\..\..\Hardcore-SK\Mods\Core_SK\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\home\zachary\.steam\steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -73,18 +72,6 @@
     </None>
     <None Include="..\..\Defs\RecipeDefs\Recipe_Gems.xml">
       <Link>xml\Recipe_Gems.xml</Link>
-    </None>
-    <None Include="..\..\Defs\ThingDefs_Weapons\Weapons_Melee.xml">
-      <Link>xml\Weapons_Melee.xml</Link>
-    </None>
-    <None Include="..\..\Defs\Misc\StuffCategoryDefs\StuffCategories.xml">
-      <Link>xml\StuffCategories.xml</Link>
-    </None>
-    <None Include="..\..\Defs\CombatExtended\Ammo\Neolithic\Arrows.xml">
-      <Link>xml\Arrows.xml</Link>
-    </None>
-    <None Include="..\..\Patches\Ammo.xml">
-      <Link>xml\Ammo.xml</Link>
     </None>
   </ItemGroup>
 </Project>

@@ -13,17 +13,6 @@
           <max>3</max>
         </countRange>
       </li>
-      <li Class="StockGenerator_Category">
-        <categoryDef>SharpStony</categoryDef>
-        <thingDefCountRange>
-          <min>1</min>
-          <max>2</max>
-        </thingDefCountRange>
-        <totalPriceRange>
-          <min>-200</min>
-          <max>1000</max>
-        </totalPriceRange>
-      </li>
 	  </value>
 	</Operation>
 
@@ -37,17 +26,6 @@
           <min>-3</min>
           <max>3</max>
         </countRange>
-      </li>
-      <li Class="StockGenerator_Category">
-        <categoryDef>SharpStony</categoryDef>
-        <thingDefCountRange>
-          <min>1</min>
-          <max>1</max>
-        </thingDefCountRange>
-        <totalPriceRange>
-          <min>-300</min>
-          <max>500</max>
-        </totalPriceRange>
       </li>
 	  </value>
 	</Operation>
@@ -97,17 +75,6 @@
           <min>-10</min>
           <max>10</max>
         </countRange>
-      </li>
-      <li Class="StockGenerator_Category">
-        <categoryDef>SharpStony</categoryDef>
-        <thingDefCountRange>
-          <min>1</min>
-          <max>1</max>
-        </thingDefCountRange>
-        <totalPriceRange>
-          <min>-30</min>
-          <max>30</max>
-        </totalPriceRange>
       </li>
 	  </value>
 	</Operation>
