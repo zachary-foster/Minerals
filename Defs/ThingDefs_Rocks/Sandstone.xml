@@ -23,7 +23,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSandstone</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.5</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -137,7 +137,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSandstone</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.5</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -273,7 +273,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSandstone</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.5</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -374,7 +374,7 @@
     </graphicData>
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.3</fillPercent>
+    <fillPercent>0.2</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
@@ -500,7 +500,7 @@
     </graphicData>
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.2</fillPercent>
+    <fillPercent>0.1</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
