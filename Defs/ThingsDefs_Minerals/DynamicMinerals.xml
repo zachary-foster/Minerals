@@ -22,17 +22,6 @@
     </graphicData>
     <fillPercent>0.2</fillPercent>
     <hideAtSnowDepth>2</hideAtSnowDepth>
-    <building>
-      <isInert>false</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Coldstone</mineableThing>
-      <mineableYield>25</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
@@ -155,8 +144,9 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0</DropProbability>
+        <ResourceDefName>Coldstone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -183,17 +173,6 @@
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <fillPercent>0.3</fillPercent>
-    <building>
-      <isInert>false</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Glowstone</mineableThing>
-      <mineableYield>25</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>3</spawnRadius>
@@ -316,8 +295,9 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0</DropProbability>
+        <ResourceDefName>Glowstone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -339,17 +319,6 @@
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <fillPercent>0.01</fillPercent>
-    <building>
-      <isInert>false</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Salt</mineableThing>
-      <mineableYield>20</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
@@ -489,8 +458,9 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0</DropProbability>
+        <ResourceDefName>Salt</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -517,17 +487,6 @@
     </graphicData>
     <fillPercent>0.01</fillPercent>
     <hideAtSnowDepth>0.4</hideAtSnowDepth>
-    <building>
-      <isInert>false</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Sulfur</mineableThing>
-      <mineableYield>30</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
@@ -644,8 +603,9 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0</DropProbability>
+        <ResourceDefName>Sulfur</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     

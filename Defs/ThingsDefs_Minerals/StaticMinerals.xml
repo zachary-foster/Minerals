@@ -41,17 +41,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>40</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableYield>20</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
@@ -148,17 +137,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>40</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>GlassBatch</mineableThing>
-      <mineableYield>25</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
@@ -229,6 +207,11 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.5</DropProbability>
       </li>
+      <li>
+        <ResourceDefName>GlassBatch</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
     </randomlyDropResources>
   </ThingDef>
 
@@ -264,6 +247,11 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>1.0</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>GlassBatch</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -308,17 +296,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>30</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>RoughGem</mineableThing>
-      <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
@@ -393,7 +370,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1.0</DropProbability>
+        <DropProbability>2.0</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -601,17 +578,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>20</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Steel</mineableThing>
-      <mineableYield>30</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
@@ -681,6 +647,11 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.1</DropProbability>
       </li>
+      <li>
+        <ResourceDefName>Steel</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
     </randomlyDropResources>
   </ThingDef>
 
@@ -689,17 +660,6 @@
     <defName>LodestoneCrystal</defName>
     <label>Lodestone</label>
     <description>Formations of iron(II,III) oxide, a common iron ore in sedimentary and igenous rocks. This particular one seems to be the rare magnetized variety known as lodestone.</description>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>MagneticMaterial</mineableThing>
-      <mineableYield>20</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
@@ -722,6 +682,11 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.5</DropProbability>
       </li>
+      <li>
+        <ResourceDefName>MagneticMaterial</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
     </randomlyDropResources>
   </ThingDef>
 
@@ -730,17 +695,6 @@
     <defName>CassiteriteCrystal</defName>
     <label>Cassiterite Crystals</label>
     <description>Formations of tin oxide, a common ore of tin. Occasionally used for gem stones.</description>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Tin</mineableThing>
-      <mineableYield>30</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <graphicData>
       <texPath>Things/Mineral/PyriteCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -796,6 +750,11 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>1.0</DropProbability>
       </li>
+      <li>
+        <ResourceDefName>Tin</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
     </randomlyDropResources>
   </ThingDef>
 
@@ -822,17 +781,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>1</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableYield>5</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
@@ -946,17 +894,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>1</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableYield>5</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
@@ -1075,17 +1012,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>1</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableYield>5</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
@@ -1197,17 +1123,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>10</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Uranium</mineableThing>
-      <mineableYield>30</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
@@ -1282,7 +1197,12 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0</DropProbability>
+        <DropProbability>0.5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Uranium</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -1300,17 +1220,6 @@
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Copper</mineableThing>
-      <mineableYield>30</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <statBases>
@@ -1366,7 +1275,12 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1.0</DropProbability>
+        <DropProbability>1.5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>Copper</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>

@@ -4,6 +4,18 @@
   
   <ThingDef Name="WeatheredOre" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <defName>WeatheredOre</defName>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>1</mineableDropChance>
+      <mineableYield>10</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0</perMapProbability>
     <!-- The maximum number of images that will be printed per square -->
@@ -30,6 +42,18 @@
 
   <ThingDef Name="SolidOre" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock" Abstract="True">
     <defName>SolidOre</defName>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>1</mineableDropChance>
+      <mineableYield>10</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0</perMapProbability>
     <!-- The maximum number of images that will be printed per square -->

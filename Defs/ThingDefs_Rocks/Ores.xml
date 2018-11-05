@@ -17,17 +17,6 @@
       <MaxHitPoints>2800</MaxHitPoints>
     </statBases>
     <description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Steel</mineableThing>
-      <mineableYield>35</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
@@ -36,8 +25,9 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <ResourceDefName>Steel</ResourceDefName>
+        <DropProbability>7</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -63,17 +53,6 @@
       <MaxHitPoints>2800</MaxHitPoints>
     </statBases>
     <description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Steel</mineableThing>
-      <mineableYield>35</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
@@ -82,8 +61,9 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <ResourceDefName>Steel</ResourceDefName>
+        <DropProbability>9</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -109,17 +89,6 @@
       <MaxHitPoints>3500</MaxHitPoints>
     </statBases>
     <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Silver</mineableThing>
-      <mineableYield>250</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
@@ -128,8 +97,9 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <ResourceDefName>Silver</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>50</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -155,17 +125,6 @@
       <MaxHitPoints>4000</MaxHitPoints>
     </statBases>
     <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Silver</mineableThing>
-      <mineableYield>300</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
@@ -174,8 +133,9 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <ResourceDefName>Silver</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>50</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -200,17 +160,6 @@
       <MaxHitPoints>4500</MaxHitPoints>
     </statBases>
     <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Gold</mineableThing>
-      <mineableYield>50</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
@@ -219,8 +168,9 @@
         <CountPerDrop>30</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <ResourceDefName>Gold</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -246,17 +196,6 @@
       <MaxHitPoints>5000</MaxHitPoints>
     </statBases>
     <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Gold</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
@@ -265,8 +204,9 @@
         <CountPerDrop>30</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <ResourceDefName>Gold</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -289,22 +229,12 @@
       <MaxHitPoints>1800</MaxHitPoints>
     </statBases>
     <description>Deposits of Nitre. Major uses of potassium nitrate are in fertilizers, tree stump removal, rocket propellants and fireworks. It is one of the major components of gunpowder.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Nitre</mineableThing>
-      <mineableYield>70</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>Nitre</ResourceDefName>
+        <DropProbability>7</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -330,22 +260,12 @@
       <MaxHitPoints>2500</MaxHitPoints>
     </statBases>
     <description>Deposits of Nitre. Major uses of potassium nitrate are in fertilizers, tree stump removal, rocket propellants and fireworks. It is one of the major components of gunpowder.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Nitre</mineableThing>
-      <mineableYield>100</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>Nitre</ResourceDefName>
+        <DropProbability>10</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -372,22 +292,12 @@
       <MaxHitPoints>5000</MaxHitPoints>
     </statBases>
    <description>Deposits of Anglesite. Anglesite is the ore form of Lead. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and has a relatively low melting point.</description>
-   <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Anglesite</mineableThing>
-      <mineableYield>70</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>Anglesite</ResourceDefName>
+        <DropProbability>7</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -413,22 +323,12 @@
       <MaxHitPoints>7000</MaxHitPoints>
     </statBases>
     <description>Deposits of Anglesite. Anglesite is the ore form of Lead. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and has a relatively low melting point.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Anglesite</mineableThing>
-      <mineableYield>90</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>Anglesite</ResourceDefName>
+        <DropProbability>9</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -451,26 +351,18 @@
       <MaxHitPoints>1800</MaxHitPoints>
     </statBases>
     <description>Deposits of Coal Ore. Coal is useful as a reaction agent in metal alloy production.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Coal</mineableThing>
-      <mineableYield>70</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
+
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.7</min>
-      <max>2.0</max>
+      <min>1.8</min>
+      <max>2.1</max>
     </visualSizeRange>
+
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>Coal</ResourceDefName>
+        <DropProbability>7</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Sulfur</ResourceDefName>
@@ -500,22 +392,12 @@
       <MaxHitPoints>2800</MaxHitPoints>
     </statBases>
     <description>Deposits of Coal Ore. Coal is useful as a reaction agent in metal alloy production.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Coal</mineableThing>
-      <mineableYield>90</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>Coal</ResourceDefName>
+        <DropProbability>9</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Sulfur</ResourceDefName>
@@ -547,22 +429,12 @@
       <MaxHitPoints>9000</MaxHitPoints>
     </statBases>
     <description>Lateritic nickel ore deposits are surficial, weathered rinds formed on ultramafic rocks. Nickel Ore contains Nickel and small amounts of Cobalt.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Nickel</mineableThing>
-      <mineableYield>40</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Nickel</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -588,22 +460,12 @@
       <MaxHitPoints>12000</MaxHitPoints>
     </statBases>
     <description>Lateritic nickel ore deposits are surficial, weathered rinds formed on ultramafic rocks. Nickel Ore contains Nickel and small amounts of Cobalt.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Nickel</mineableThing>
-      <mineableYield>70</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Nickel</ResourceDefName>
+        <DropProbability>7</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -629,22 +491,12 @@
       <MaxHitPoints>9000</MaxHitPoints>
     </statBases>
     <description>Lateritic Tin ore deposits are surficial, weathered rinds formed on ultramafic rocks. Tin Ore contains Tin and small amounts of Cobalt.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Tin</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Tin</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -670,22 +522,12 @@
       <MaxHitPoints>12000</MaxHitPoints>
     </statBases>
     <description>Lateritic Tin ore deposits are surficial, weathered rinds formed on ultramafic rocks. Tin Ore contains Tin and small amounts of Cobalt.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Tin</mineableThing>
-      <mineableYield>80</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Tin</ResourceDefName>
+        <DropProbability>8</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -711,22 +553,12 @@
       <MaxHitPoints>1700</MaxHitPoints>
     </statBases>
     <description>Lateritic Copper ore deposits are surficial, weathered rinds formed on ultramafic rocks. Copper Ore contains Copper and small amounts of Cobalt.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Copper</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Copper</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -752,22 +584,12 @@
       <MaxHitPoints>2000</MaxHitPoints>
     </statBases>
     <description>Lateritic Copper ore deposits are surficial, weathered rinds formed on ultramafic rocks. Copper Ore contains Copper and small amounts of Cobalt.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Copper</mineableThing>
-      <mineableYield>90</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Copper</ResourceDefName>
+        <DropProbability>9</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -793,22 +615,12 @@
       <MaxHitPoints>5000</MaxHitPoints>
     </statBases>
     <description>Lateritic Aluminium ore deposits are surficial, weathered rinds formed on ultramafic rocks. Aluminium Ore contains Aluminium and small amounts of Cobalt.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Aluminium</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Aluminium</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -834,22 +646,12 @@
       <MaxHitPoints>6000</MaxHitPoints>
     </statBases>
     <description>Lateritic Aluminium ore deposits are surficial, weathered rinds formed on ultramafic rocks. Aluminium Ore contains Aluminium and small amounts of Cobalt.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Aluminium</mineableThing>
-      <mineableYield>90</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Aluminium</ResourceDefName>
+        <DropProbability>9</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -875,22 +677,12 @@
       <MaxHitPoints>5000</MaxHitPoints>
     </statBases>
     <description>Rock containing bits of jade.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Jade</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Jade</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
@@ -920,22 +712,12 @@
       <MaxHitPoints>7000</MaxHitPoints>
     </statBases>
     <description>Rock containing bits of jade.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Jade</mineableThing>
-      <mineableYield>90</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Jade</ResourceDefName>
+        <DropProbability>9</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
@@ -965,22 +747,12 @@
       <MaxHitPoints>10000</MaxHitPoints>
     </statBases>
     <description>Ilmenite is the ore of Titanium. Titanium is a very durable metal and is often used in alloys to produce metals much stronger than steel.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Ilmenite</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Ilmenite</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1006,22 +778,12 @@
       <MaxHitPoints>15000</MaxHitPoints>
     </statBases>
     <description>Ilmenite is the ore of Titanium. Titanium is a very durable metal and is often used in alloys to produce metals much stronger than steel.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Ilmenite</mineableThing>
-      <mineableYield>90</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Ilmenite</ResourceDefName>
+        <DropProbability>9</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1047,22 +809,12 @@
       <MaxHitPoints>3500</MaxHitPoints>
     </statBases>
     <description>Pyrolusite is the ore of Maganese. Maganese is a metal with high magnetism.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Pyrolusite</mineableThing>
-      <mineableYield>40</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Pyrolusite</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1088,22 +840,12 @@
       <MaxHitPoints>5000</MaxHitPoints>
     </statBases>
     <description>Pyrolusite is the ore of Maganese. Maganese is a metal with high magnetism.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Pyrolusite</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Pyrolusite</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1129,22 +871,12 @@
       <MaxHitPoints>15000</MaxHitPoints>
     </statBases>
     <description>Wolframite is the ore of Tungsten. Tungsten is a strong and quite dense material with a high melting temperature used for electric filaments and armor-piercing ammunition, as well as hard tungsten carbide machine tools.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Wolframite</mineableThing>
-      <mineableYield>40</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Wolframite</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1170,22 +902,12 @@
       <MaxHitPoints>25000</MaxHitPoints>
     </statBases>
     <description>Wolframite is the ore of Tungsten. Tungsten is a strong and quite dense material with a high melting temperature used for electric filaments and armor-piercing ammunition, as well as hard tungsten carbide machine tools.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Wolframite</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Wolframite</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1209,22 +931,12 @@
       <MaxHitPoints>3000</MaxHitPoints>
     </statBases>
     <description>Rock containing bits of a strange glowing gem.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Glowstone</mineableThing>
-      <mineableYield>40</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>Glowstone</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1234,7 +946,7 @@
     
     <comps>
 		  <li Class="CompProperties_Glower">
-			  <glowRadius>4</glowRadius>
+			  <glowRadius>5</glowRadius>
 			  <glowColor>(113,187,252,0)</glowColor>
 		  </li>
 	  </comps>
@@ -1270,22 +982,12 @@
       <MaxHitPoints>4000</MaxHitPoints>
     </statBases>
     <description>Rock containing bits of a strange glowing gem.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Glowstone</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
+        <ResourceDefName>Glowstone</ResourceDefName>
         <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1295,7 +997,7 @@
     
     <comps>
 		  <li Class="CompProperties_Glower">
-			  <glowRadius>4</glowRadius>
+			  <glowRadius>6</glowRadius>
 			  <glowColor>(113,187,252,0)</glowColor>
 		  </li>
 	  </comps>
@@ -1332,22 +1034,12 @@
       <MaxHitPoints>3000</MaxHitPoints>
     </statBases>
     <description>Rock containing bits of a strangely cold gem.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Coldstone</mineableThing>
-      <mineableYield>40</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>Coldstone</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1362,7 +1054,7 @@
   			<ColdPushMinTemperature>16</ColdPushMinTemperature>
   		</li>
   		<li Class="CompProperties_Glower">
-  			<glowRadius>2</glowRadius>
+  			<glowRadius>3</glowRadius>
   			<glowColor>(0,96,255,0)</glowColor>
   		</li>
   	</comps>
@@ -1398,22 +1090,12 @@
       <MaxHitPoints>4000</MaxHitPoints>
     </statBases>
     <description>Rock containing bits of a strangely cold gem.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Coldstone</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <ResourceDefName>Coldstone</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1428,7 +1110,7 @@
     		<ColdPushMinTemperature>16</ColdPushMinTemperature>
     	</li>
     	<li Class="CompProperties_Glower">
-    		<glowRadius>4</glowRadius>
+    		<glowRadius>5</glowRadius>
     		<glowColor>(0,96,255,0)</glowColor>
     	</li>
     </comps>
@@ -1465,22 +1147,12 @@
       <MaxHitPoints>800</MaxHitPoints>
     </statBases>
     <description>Salt compacted over time..</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Salt</mineableThing>
-      <mineableYield>60</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>3</DropProbability>
+        <ResourceDefName>Salt</ResourceDefName>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1506,22 +1178,12 @@
       <MaxHitPoints>1000</MaxHitPoints>
     </statBases>
     <description>Salt compacted over time..</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Salt</mineableThing>
-      <mineableYield>100</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>3</DropProbability>
+        <ResourceDefName>Salt</ResourceDefName>
+        <DropProbability>10</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1549,7 +1211,7 @@
     <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>Component</mineableThing>
+      <mineableThing>ComponentIndustrial</mineableThing>
       <mineableYield>2</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -1574,7 +1236,7 @@
         <DropProbability>0.3</DropProbability>
       </li>
       <li>
-        <ResourceDefName>Component</ResourceDefName>
+        <ResourceDefName>ComponentIndustrial</ResourceDefName>
         <DropProbability>1</DropProbability>
       </li>
     </randomlyDropResources>
@@ -1602,7 +1264,7 @@
     <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
      <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>Component</mineableThing>
+      <mineableThing>ComponentIndustrial</mineableThing>
       <mineableYield>2</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -1648,7 +1310,7 @@
         <DropProbability>0.05</DropProbability>
       </li>
       <li>
-        <ResourceDefName>Component</ResourceDefName>
+        <ResourceDefName>ComponentIndustrial</ResourceDefName>
         <DropProbability>1</DropProbability>
       </li>
     </randomlyDropResources>
@@ -1675,17 +1337,6 @@
       <MaxHitPoints>1000</MaxHitPoints>
     </statBases>
     <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableYield>15</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
@@ -1694,7 +1345,8 @@
       </li>
       <li>
         <ResourceDefName>TKKN_Amber</ResourceDefName>
-        <DropProbability>40</DropProbability>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1717,17 +1369,6 @@
       <MaxHitPoints>1600</MaxHitPoints>
     </statBases>
     <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableYield>15</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
@@ -1736,7 +1377,8 @@
       </li>
       <li>
         <ResourceDefName>TKKN_Amber</ResourceDefName>
-        <DropProbability>60</DropProbability>
+        <DropProbability>6</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1762,22 +1404,12 @@
       <MaxHitPoints>3000</MaxHitPoints>
     </statBases>
     <description>Rock containing bits of uranium.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Uranium</mineableThing>
-      <mineableYield>35</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Uranium</ResourceDefName>
+        <DropProbability>7</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -1803,22 +1435,12 @@
       <MaxHitPoints>5000</MaxHitPoints>
     </statBases>
     <description>Rock containing bits of uranium.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>Uranium</mineableThing>
-      <mineableYield>40</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
 
     <randomlyDropResources>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>15</DropProbability>
+        <ResourceDefName>Uranium</ResourceDefName>
+        <DropProbability>9</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
 

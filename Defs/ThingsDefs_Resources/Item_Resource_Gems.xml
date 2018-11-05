@@ -5,7 +5,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>RoughGem</defName>
     <label>Rough Gem</label>
-    <description>Uncut precious crystal. Can be found when mining some rare minerals.</description>
+    <description>Uncut precious crystal. Can be found when mining.</description>
     <graphicData>
       <texPath>Things/Item/Resource/RoughGem</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -42,7 +42,7 @@
     <soundDrop>Silver_Drop</soundDrop>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <MarketValue>250</MarketValue>
+      <MarketValue>300</MarketValue>
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0</Flammability>
       <Mass>0.05</Mass>

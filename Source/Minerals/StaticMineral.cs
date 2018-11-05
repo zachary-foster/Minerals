@@ -123,9 +123,14 @@ namespace Minerals
                 float dropChance = size * toDrop.DropProbability * ((float) Math.Min(dinfo.Amount, HitPoints) / (float) MaxHitPoints);
                 if (Rand.Range(0f, 1f) < dropChance)
                 {
-                    Thing thing = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName), null);
-                    thing.stackCount = toDrop.CountPerDrop;
-                    GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
+                    ThingDef myThingDef = DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName, false);
+                    if (myThingDef != null)
+                    {
+                        Thing thing = ThingMaker.MakeThing(myThingDef, null);
+                        thing.stackCount = toDrop.CountPerDrop;
+                        GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
+                    }
+
                 }
 
             }
@@ -136,10 +141,10 @@ namespace Minerals
             {
                 incPctYeild(dinfo.Amount, (Pawn)dinfo.Instigator);
             }
-            if (size < yieldPct)
-            {
-                dinfo.SetAmount(0);
-            }
+//            if (size < yieldPct)
+//            {
+//                dinfo.SetAmount(0);
+//            }
             base.PreApplyDamage(ref dinfo, out absorbed);
 
 

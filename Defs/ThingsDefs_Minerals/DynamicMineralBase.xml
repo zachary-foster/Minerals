@@ -32,5 +32,16 @@
       <minStable>-99999</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
     </tempGrowthRateModifer>
+    <building>
+      <isInert>false</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Filth_RubbleRock</mineableThing>
+      <mineableYield>1</mineableYield>
+      <mineableNonMinedEfficiency>1</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
   </ThingDef>
 </Defs>

@@ -491,7 +491,7 @@
   <ThingDef Name="SmallPassableSandstone" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>SmallPassableSandstone</defName>
     <label>Sandstone Rocks</label>
-    <description>Fragmented sandstone rocks. These are slow to move over and provide little cover. </description>
+    <description>Fragmented sandstone rocks. These are slow to move over and provide little cover.</description>
     <graphicData>
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>

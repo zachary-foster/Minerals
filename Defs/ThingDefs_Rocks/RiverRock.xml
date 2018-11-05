@@ -24,18 +24,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>80</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.15</mineableDropChance>
-      <mineableYield>40</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <hideAtSnowDepth>0.7</hideAtSnowDepth>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
@@ -197,18 +185,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>80</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.15</mineableDropChance>
-      <mineableYield>40</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
     <hideAtSnowDepth>0.7</hideAtSnowDepth>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>

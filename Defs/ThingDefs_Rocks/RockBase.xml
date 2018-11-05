@@ -24,8 +24,14 @@
     </statBases>
     <building>
       <isInert>true</isInert>
-      <isNaturalRock>true</isNaturalRock>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>0.1</mineableDropChance>
+      <mineableYield>10</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
@@ -61,8 +67,14 @@
     </statBases>
     <building>
       <isInert>true</isInert>
-      <isNaturalRock>true</isNaturalRock>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>0.1</mineableDropChance>
+      <mineableYield>10</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
@@ -97,8 +109,14 @@
     </statBases>
     <building>
       <isInert>true</isInert>
-      <isNaturalRock>true</isNaturalRock>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>0.1</mineableDropChance>
+      <mineableYield>10</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>

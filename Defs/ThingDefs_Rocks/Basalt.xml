@@ -21,9 +21,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
+      <mineableThing>TKKN_ChunkLava</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
-      <mineableYield>10</mineableYield>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -90,8 +90,8 @@
         <DropProbability>0.05</DropProbability>
       </li>
       <li>
-        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
       </li>
       <li>
         <ResourceDefName>ObsidianShard</ResourceDefName>
@@ -126,9 +126,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
+      <mineableThing>TKKN_ChunkLava</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
-      <mineableYield>10</mineableYield>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -195,8 +195,8 @@
         <DropProbability>0.05</DropProbability>
       </li>
       <li>
-        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -241,9 +241,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
+      <mineableThing>TKKN_ChunkLava</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
-      <mineableYield>10</mineableYield>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -310,8 +310,8 @@
         <DropProbability>0.01</DropProbability>
       </li>
       <li>
-        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>5</DropProbability>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
@@ -354,9 +354,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
+      <mineableThing>TKKN_ChunkLava</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
-      <mineableYield>15</mineableYield>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -446,8 +446,8 @@
         <DropProbability>0.03</DropProbability>
       </li>
       <li>
-        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
       </li>
       <li>
         <ResourceDefName>ObsidianShard</ResourceDefName>
@@ -490,9 +490,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
+      <mineableThing>TKKN_ChunkLava</mineableThing>
       <mineableDropChance>0.15</mineableDropChance>
-      <mineableYield>15</mineableYield>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -580,8 +580,8 @@
         <DropProbability>0.02</DropProbability>
       </li>
       <li>
-        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>15</DropProbability>
       </li>
       <li>
         <ResourceDefName>ObsidianShard</ResourceDefName>
