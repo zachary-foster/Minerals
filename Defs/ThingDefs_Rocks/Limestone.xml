@@ -324,12 +324,140 @@
       <li>Limestone</li>
     </ThingsToReplace>
   </ThingDef>
+  
  
+  <ThingDef Name="BoulderLimestone" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>BoulderLimestone</defName>
+    <label>Limestone Boulders</label>
+    <description>Limestone boulders. These can be climbed over with some difficulty and provide good cover.</description>
+    <graphicData>
+      <texPath>Things/Rock/BoulderGranite</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(158,153,135)</color>
+    </graphicData>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.6</fillPercent>
+    <coversFloor>false</coversFloor>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>100</pathCost>
+    <passability>PassThroughOnly</passability>
+    <building>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkLimestone</mineableThing>
+      <mineableDropChance>0.5</mineableDropChance>
+      <mineableYield>1</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
+    <mineable>true</mineable>
+    <!--How far away it can spawn from an existing location-->
+    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+    <spawnRadius>1</spawnRadius>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>1</perMapProbability>
+    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0.005</minClusterProbability>
+    <maxClusterProbability>0.01</maxClusterProbability>
+    <!-- How  many squares each cluster will be -->
+    <minClusterSize>1</minClusterSize>
+    <maxClusterSize>3</maxClusterSize>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>.8</initialSizeMin>
+    <initialSizeMax>1.0</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.5</initialSizeVariation>
+    <!-- The biomes this can appear in. The default is all ones known to mod-->
+    <!--
+		<allowedBiomes>
+			<li>add_biomes_here</li>
+		</allowedBiomes>
+		-->
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+			<li>Limestone_Rough</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>SoilRich</li>
+			<li>MarshyTerrain</li>
+			<li>Marsh</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+			<li>Mud</li>
+      <li>SavannaSoil</li>
+      <li>MarginalSoil</li>
+			<li>WaterOceanShallow</li>
+      <li>WaterMovingShallow</li>
+			<li>WaterShallow</li>
+			<li>Ice</li>
+			<li>TKKN_SaltField</li>
+		</allowedTerrains>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <neededNearbyTerrains>
+      <li>Limestone_Rough</li>
+      <li>WeatheredLimestone</li>
+      <li>SolidLimestone</li>
+      <li>Limestone</li>
+    </neededNearbyTerrains>
+    <!-- how far away it can be from needed nearby terrains-->
+    <neededNearbyTerrainRadius>15</neededNearbyTerrainRadius>
+    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
+    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+    <!-- Controls how extra clusters are added near assocaited ore-->
+    <associatedOres>
+      <li>Limestone_Rough</li>
+    </associatedOres>
+    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>1</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>1.0</min>
+      <max>1.3</max>
+    </visualSizeRange>
+    <visualClustering>0.2</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>0.8</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.1</visualSizeVariation>
+    <!-- The amount of resource returned if the mineral is its maximum size -->
+    <maxMinedYeild>1</maxMinedYeild>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+    </randomlyDropResources>
+  </ThingDef>
 
-  <ThingDef Name="LargePassableLimestone" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>LargePassableLimestone</defName>
-    <label>Limestone boulders</label>
-    <description>An outcropping of eroded limestone. These dont slow down movement much and provide some cover.</description>
+
+  <ThingDef Name="PassableLimestone" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>PassableLimestone</defName>
+    <label>Limestone outcropping</label>
+    <description>An outcropping of limestone that is easily walked over and provides little cover.</description>
     <graphicData>
       <texPath>Things/Rock/PassableLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -368,8 +496,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.002</minClusterProbability>
-    <maxClusterProbability>0.005</maxClusterProbability>
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>4</maxClusterSize>
@@ -408,12 +536,12 @@
       <li>SolidLimestone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>5</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>WeatheredLimestone</li>
+      <li>Limestone</li>
     </associatedOres>
     <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -421,11 +549,11 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>true</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
+    <maxMeshCount>3</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.1</min>
-      <max>1.4</max>
+      <min>0.7</min>
+      <max>1.0</max>
     </visualSizeRange>
     <visualClustering>0.2</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->

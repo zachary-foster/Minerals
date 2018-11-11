@@ -37,6 +37,11 @@ namespace Minerals
         public override void ReplaceThings(Map map, float scaling = 1)
         {
 
+            if (ThingsToReplace == null || ThingsToReplace.Count == 0 || MineralsMain.Settings.replaceRockWalls == false)
+            {
+                return;
+            }
+
             // Find spots to spawn it
             map.regionAndRoomUpdater.Enabled = false;
             IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);

@@ -63,7 +63,7 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>TKKN_LavaRock</li>
+      <li>LavaRock</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -101,7 +101,7 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>TKKN_LavaRock</li>
+      <li>LavaRock</li>
     </ThingsToReplace>
   </ThingDef>
   
@@ -168,7 +168,7 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>TKKN_LavaRock</li>
+      <li>LavaRock</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -201,7 +201,7 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>TKKN_LavaRock</li>
+      <li>LavaRock</li>
     </ThingsToReplace>
   </ThingDef>
   
@@ -321,16 +321,143 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>TKKN_LavaRock</li>
+      <li>LavaRock</li>
     </ThingsToReplace>
   </ThingDef>
  
-
-
-  <ThingDef Name="LargePassableBasalt" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>LargePassableBasalt</defName>
+  <ThingDef Name="BoulderBasalt" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>BoulderBasalt</defName>
     <label>Basalt boulders</label>
-    <description>Basalt boulders. These are small enough to be climbed over and provide decent cover in the many gunfights that occur in this rimworld.</description>
+    <description>Basalt boulders. These can be climbed over with some difficulty and provide good cover.</description>
+    <graphicData>
+      <texPath>Things/Rock/BoulderGranite</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(50,50,50)</color>
+    </graphicData>
+    <altitudeLayer>SmallWire</altitudeLayer>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.6</fillPercent>
+    <coversFloor>false</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>100</pathCost>
+    <passability>PassThroughOnly</passability>
+    <building>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>0.5</mineableDropChance>
+      <mineableYield>20</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
+    <mineable>true</mineable>
+    <!--How far away it can spawn from an existing location-->
+    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+    <spawnRadius>1</spawnRadius>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>1.0</perMapProbability>
+    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0.03</minClusterProbability>
+    <maxClusterProbability>0.1</maxClusterProbability>
+    <!-- How  many squares each cluster will be -->
+    <minClusterSize>1</minClusterSize>
+    <maxClusterSize>3</maxClusterSize>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>0.7</initialSizeMin>
+    <initialSizeMax>1.0</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.2</initialSizeVariation>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+			<li>LavaRock_Rough</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+			<li>MarshyTerrain</li>
+			<li>Marsh</li>
+			<li>Mud</li>
+      <li>SavannaSoil</li>
+      <li>WaterShallow</li>
+      <li>WaterMovingShallow</li>
+			<li>WaterOceanShallow</li>
+      <li>WaterDeep</li>
+      <li>WaterMovingDeep</li>
+			<li>WaterOceanDeep</li>
+			<li>Ice</li>
+			<li>TKKN_SaltField</li>
+		</allowedTerrains>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <neededNearbyTerrains>
+			<li>LavaRock_Rough</li>
+      <li>WeatheredBasalt</li>
+      <li>SolidBasalt</li>
+    </neededNearbyTerrains>
+    <!-- how far away it can be from needed nearby terrains-->
+    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
+    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
+    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+    <!-- Controls how extra clusters are added near assocaited ore-->
+    <associatedOres>
+      <li>WeatheredBasalt</li>
+    </associatedOres>
+    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>1</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>0.9</min>
+      <max>1.2</max>
+    </visualSizeRange>
+    <visualClustering>0.6</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>1.0</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.1</visualSizeVariation>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>TKKN_ChunkLava</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+    
+    <!-- If smaller than 1, it looks smaller in water -->
+    <submergedSize>1</submergedSize>
+    <submergedRadius>4</submergedRadius>
+  </ThingDef>
+
+
+  <ThingDef Name="PassableBasalt" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>PassableBasalt</defName>
+    <label>Basalt outcropping</label>
+    <description>An outcropping of basalt that is easily walked over and provides little cover.</description>
     <graphicData>
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -339,7 +466,7 @@
     </graphicData>
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>0.3</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
@@ -348,7 +475,7 @@
     </statBases>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <pathCost>80</pathCost>
+    <pathCost>20</pathCost>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -387,7 +514,7 @@
 		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>TKKN_LavaRock_Rough</li>
+			<li>LavaRock_Rough</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
@@ -409,18 +536,19 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
+			<li>LavaRock_Rough</li>
       <li>WeatheredBasalt</li>
       <li>SolidBasalt</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>WeatheredBasalt</li>
+      <li>LavaRock_Rough</li>
     </associatedOres>
-    <nearAssociatedOreBonus>4</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -463,8 +591,8 @@
 
   
   
-  <ThingDef Name="PassableBasalt" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>PassableBasalt</defName>
+  <ThingDef Name="LavaFlowBasalt" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>LavaFlowBasalt</defName>
     <label>Ancient lava flow</label>
     <description>A weathered lava flow. This was once a river of molted rock, but has since cooled and shattered. Very difficult to walk over but provides little cover in a gunfight.</description>
     <graphicData>
@@ -478,7 +606,7 @@
     <fillPercent>0.3</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
-      <MaxHitPoints>600</MaxHitPoints>
+      <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-1</Beauty>
     </statBases>
@@ -523,8 +651,8 @@
 		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>TKKN_LavaRock_Rough</li>
-      <li>TKKN_LavaRock_RoughHewn</li>
+			<li>LavaRock_Rough</li>
+      <li>LavaRock_RoughHewn</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
@@ -540,8 +668,8 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>TKKN_LavaRock_Rough</li>
-      <li>TKKN_LavaRock_RoughHewn</li>
+      <li>LavaRock_Rough</li>
+      <li>LavaRock_RoughHewn</li>
       <li>WeatheredBasalt</li>
       <li>PassableBasalt</li>
     </neededNearbyTerrains>
@@ -552,7 +680,7 @@
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>WeatheredBasalt</li>
-      <li>TKKN_LavaRock_RoughHewn</li>
+      <li>LavaRock_RoughHewn</li>
     </associatedOres>
     <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
     <!-- Roof requirements -->

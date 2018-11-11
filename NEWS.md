@@ -1,3 +1,8 @@
+## v1.0.0
+
+Major update that replaces rock walls and adds other rock-related content.
+Compatible with Rimworld 1.0
+
 ## v0.6.0
 
 ### Bug fixes:
