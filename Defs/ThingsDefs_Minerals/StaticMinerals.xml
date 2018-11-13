@@ -50,7 +50,7 @@
     <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.004</maxClusterProbability>
+    <maxClusterProbability>0.005</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>30</maxClusterSize>
@@ -305,15 +305,15 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>10</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.3</initialSizeMin>
-    <initialSizeMax>.7</initialSizeMax>
+    <initialSizeMin>.5</initialSizeMin>
+    <initialSizeMax>.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
-    <initialSizeVariation>0.5</initialSizeVariation>
+    <initialSizeVariation>0.4</initialSizeVariation>
     <!-- The biomes this can appear in. The default is all ones known to mod-->
     <!--
 		<allowedBiomes>
@@ -415,7 +415,7 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -466,7 +466,7 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>35</maxMeshCount>
     <!-- The size range -->
@@ -528,7 +528,7 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>10</maxMeshCount>
     <!-- The size range -->
@@ -664,7 +664,7 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.001</maxClusterProbability>
+    <maxClusterProbability>0.002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>5</maxClusterSize>
@@ -706,7 +706,7 @@
     <perMapProbability>0.25</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>7</maxClusterSize>
@@ -808,12 +808,12 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Marble_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>Marble_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
@@ -908,8 +908,8 @@
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>10</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.1</initialSizeMin>
-    <initialSizeMax>.7</initialSizeMax>
+    <initialSizeMin>.4</initialSizeMin>
+    <initialSizeMax>.8</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.1</initialSizeVariation>
     <!-- The biomes this can appear in. The default is all ones known to mod-->
@@ -1039,12 +1039,12 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Granite_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>Granite_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
     </neededNearbyTerrains>
     <!-- The biomes this can appear in. The default is all ones known to mod-->
     <allowedBiomes>
@@ -1058,9 +1058,9 @@
       <li>TundraArchipelago</li>
       <li>ColdBogArchipelago</li>
       <li>DesertArchipelago</li>
-      <li>TKKN_VolcanicFlow</li>
-      <li>TKKN_Desert</li>
-      <li>TKKN_RedwoodForest</li>
+      <li>VolcanicFlow</li>
+      <li>DesertSaltFields</li>
+      <li>RedwoodForest</li>
     </allowedBiomes>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
@@ -1154,7 +1154,7 @@
       <li>Slate_Rough</li>
       <li>Marble_Rough</li>
       <li>Granite_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -1163,7 +1163,7 @@
       <li>Slate_Rough</li>
       <li>Marble_Rough</li>
       <li>Granite_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
     </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>

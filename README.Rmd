@@ -33,14 +33,126 @@ These are randomly spawned when a map is created and are never respawned in a gi
 print_minerals("Defs/ThingsDefs_Minerals/StaticMinerals.xml")
 ```
 
-## Cutting gems
 
-Some gem-quality crystals can be found when mining some minerals.
-These can be cut into gems to be used for some crafting recipes or sold to traders.
-Gems are particularly light and valuable, making them excellent for trading and attracting raiders.  
+## Rocks
 
-![](readme_images/CuttingGems.jpg)
+The minerals mod enhances the aesthetic and practical aspects of rocks, including walls and passable obstacles like boulders.
+Unlike the vanilla rock walls, these rocks might drop other resources like rubble, sand, gems, obsidian, and flint, depending on the type.
+Each type of rock (limestone, granite, etc) has distinct advantages and disadvantages.
+Below are how each type might affect gameplay, in order of hit points.
 
+### Sandstone
+
+Hit points / time to mine: **lowest**
+Chunk drop rate: **highest**
+Always drops: crushed rock, sand
+Often drops: flint (MineralsCraft mod)
+Rarely drops: Rough gems
+Landscape: few rocks and little cover
+Beauty: **highest**
+
+Sandstone is a soft sedamentary rock, so is quite easy to work with and mine.
+Since sandstone erodes faster than other rocks, sandstone landscapes tend to be less rocky overall and provide less cover.
+Unlike other rock type, mining sandstone yeilds sand along with crushed rock.
+
+
+### Slate
+
+Hit points / time to mine: low
+Chunk drop rate: medium
+Always drops: crushed rock
+Often drops: slate blocks, flint (MineralsCraft mod)
+Rarely drops: Rough gems
+Landscape: not rocky and little cover
+Beauty: medium
+
+Slate is a fine-grained metamorphic rock formed from compacted volcanic ash or silt.
+It forms in regular layers that are rectangular enough to be used for buildings without stoneworking.
+
+
+### Limestone
+
+Hit points / time to mine: medium
+Chunk drop rate: high
+Always drops: crushed rock
+Often drops: flint (MineralsCraft mod)
+Rarely drops: Rough gems
+Landscape: somewhat rocky and some cover
+Beauty: low
+
+Limestone is a hard sedamentary rock.
+Its uniformaity and medium hardness makes limestone a good building material.
+
+
+### Marble
+
+Hit points / time to mine: high
+Chunk drop rate: medium
+Always drops: crushed rock
+Often drops: Rough gems
+Landscape: somewhat rocky and lots of cover
+Beauty: high
+
+Marble is a metamorphic rock of metled and recrystallized limestone.
+It is often used in decorative applications but is also quite hard.
+
+
+### Basalt
+
+Hit points / time to mine: high
+Chunk drop rate: low
+Always drops: crushed rock
+Often drops: obsidian (MineralsCraft mod)
+Rarely drops: Rough gems
+Landscape: very rocky and some cover
+Beauty: **lowest**
+
+Basalt is the most common igneous rock and is often associated with recent volcanic activlity.
+Recent lava flows can make basalt landscapes variable, very rocky, and difficult to build on.
+
+
+### Granite
+
+Hit points / time to mine: **highest**
+Chunk drop rate: **lowest**
+Always drops: crushed rock
+Often drops: Rough gems
+Landscape: somewhat rocky and lots of cover
+Beauty: medium
+
+Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form.
+It is very strong, but difficult to quarry.
+
+
+### Rock types
+
+There are three sizes of rocks, which vary in how they restrict movement and provide cover.
+
+
+#### Weathered rock walls
+
+These replace the vanilla rock walls that are unroofed when the map spawns.
+They have lower hit points than rocks under a mountain.
+
+
+#### Solid rock walls
+
+These replace the vanilla rock walls that are roofed when the map spawns.
+
+
+#### Hewn rock walls
+
+These replace the vanilla rock walls that are on the inside of the mountain.
+They are only seen when mining.
+
+#### Boulders
+
+Large rocks that can be climbed over, but cannot be stood on.
+They provide very good cover.
+
+#### Rocks 
+
+Low numerous rocks that slow movement a little.
 
 
 ## Installation

@@ -5,7 +5,7 @@
   <ThingDef Name="WeatheredSandstone" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>WeatheredSandstone</defName>
     <label>Weathered Sandstone</label>
-    <description>Impassable rocks of compacted sand, sculpted by weather and time into flowing shapes.</description>
+    <description>An impassable mass of compacted sand, sculpted by weather and time into flowing shapes.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredSandstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -23,7 +23,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSandstone</mineableThing>
-      <mineableDropChance>0.5</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -65,14 +65,14 @@
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
 			<li>Ice</li>
-			<li>TKKN_SaltField</li>
+			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>Sandstone_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- The maximum number of images that will be printed per square -->
@@ -129,7 +129,7 @@
     </graphicData>
     <statBases>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -185,7 +185,7 @@
       <li>WaterMovingShallow</li>
 			<li>WaterShallow</li>
 			<li>Ice</li>
-			<li>TKKN_SaltField</li>
+			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -265,7 +265,7 @@
     <statBases>
       <MaxHitPoints>1200</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -364,8 +364,8 @@
   
   <ThingDef Name="PassableSandstone" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>PassableSandstone</defName>
-    <label>Sandstone Rocks</label>
-    <description>Impassable rocks of compacted sand, sculpted by weather and time into flowing shapes.</description>
+    <label>Sandstone rocks</label>
+    <description>Sandstone rocks, sculpted by weather and time into flowing shapes.</description>
     <graphicData>
       <texPath>Things/Rock/PassableSandstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -428,7 +428,7 @@
 			<li>PoorSoil</li>
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
-			<li>TKKN_SaltField</li>
+			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -483,8 +483,13 @@
     </randomlyDropResources>
     
     <!-- If smaller than 1, it looks smaller in water -->
-    <submergedSize>.3</submergedSize>
+    <submergedSize>0</submergedSize>
     <submergedRadius>3</submergedRadius>
+    
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>ChunkSandstone</li>
+    </ThingsToReplace>
   </ThingDef>
   
   
@@ -505,11 +510,11 @@
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>-1</Beauty>
     </statBases>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <pathCost>50</pathCost>
+    <pathCost>40</pathCost>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -530,8 +535,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.05</minClusterProbability>
-    <maxClusterProbability>0.09</maxClusterProbability>
+    <minClusterProbability>0.04</minClusterProbability>
+    <maxClusterProbability>0.07</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>4</maxClusterSize>
@@ -557,7 +562,7 @@
 			<li>MarginalSoil</li>
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
-			<li>TKKN_SaltField</li>
+			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -612,7 +617,7 @@
     </randomlyDropResources>
     
     <!-- If smaller than 1, it looks smaller in water -->
-    <submergedSize>.3</submergedSize>
+    <submergedSize>0</submergedSize>
     <submergedRadius>2</submergedRadius>
   </ThingDef>
   

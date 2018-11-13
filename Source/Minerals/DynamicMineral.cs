@@ -75,6 +75,11 @@ namespace Minerals
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("Size: " + size.ToStringPercent());
             stringBuilder.AppendLine("Growth rate: " + GrowthRate.ToStringPercent());
+            float propSubmerged = 1 - submersibleFactor();
+            if (propSubmerged > 0)
+            {
+                stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
+            }
             if (DebugSettings.godMode)
             {
                 foreach (growthRateModifier mod in attributes.allRateModifiers)
@@ -103,7 +108,15 @@ namespace Minerals
             {
                 Destroy(DestroyMode.Vanish);
             }
+
+            // Refresh appearance
+            if (attributes.fastGraphicRefresh)
+            {
+                DirtyMapMesh(Map);
+            }
+
         }
+            
 
         public virtual float getModValue(growthRateModifier mod) 
         {
@@ -154,6 +167,7 @@ namespace Minerals
         public fertGrowthRateModifier fertGrowthRateModifer;  // Fertility effects on growth rate
         public distGrowthRateModifier distGrowthRateModifer;  // Distance to needed terrain effects on growth rate
         public sizeGrowthRateModifier sizeGrowthRateModifer;  // Current size effects on growth rate
+        public bool fastGraphicRefresh = false; // If true, the graphics are regenerated more often
 
 
         public List<growthRateModifier> allRateModifiers 

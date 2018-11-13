@@ -43,5 +43,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
+    <!-- If true, the graphics are regenerated more often -->
+    <fastGraphicRefresh>false</fastGraphicRefresh>
   </ThingDef>
 </Defs>

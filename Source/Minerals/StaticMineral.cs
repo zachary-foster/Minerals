@@ -211,6 +211,12 @@ namespace Minerals
 
         public virtual float submersibleFactor()
         {
+            // Check that it is submersible
+            if (attributes.submergedSize >= 1)
+            {
+                return 1f;
+            }
+
             // Check if is on dry land
             TerrainDef myTerrain = Map.terrainGrid.TerrainAt(Position);
             if (!(myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("water")))
@@ -314,6 +320,11 @@ namespace Minerals
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("Size: " + size.ToStringPercent());
+            float propSubmerged = 1 - submersibleFactor();
+            if (propSubmerged > 0)
+            {
+                stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
+            }
             return stringBuilder.ToString().TrimEndNewlines();
         }
 

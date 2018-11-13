@@ -14,7 +14,7 @@
     <statBases>
       <MaxHitPoints>1700</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -22,7 +22,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.2</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -104,7 +104,7 @@
   <ThingDef Name="SolidGranite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
     <defName>SolidGranite</defName>
     <label>Solid Granite</label>
-    <description>Large masses of solid granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
+    <description>A solid wall of granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -114,7 +114,7 @@
     <statBases>
       <MaxHitPoints>2000</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-2</Beauty>
+      <Beauty>-1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -122,7 +122,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.2</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -229,7 +229,7 @@
     <statBases>
       <MaxHitPoints>2000</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-2</Beauty>
+      <Beauty>-1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -327,7 +327,6 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
     </graphicData>
-    <altitudeLayer>LowPlant</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.6</fillPercent>
     <coversFloor>false</coversFloor>
@@ -346,7 +345,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.5</mineableDropChance>
+      <mineableDropChance>0.4</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -385,6 +384,7 @@
 			<li>Soil</li>
 			<li>SoilRich</li>
 			<li>MarshyTerrain</li>
+			<li>MossyTerrain</li>
 			<li>Marsh</li>
 			<li>PoorSoil</li>
 			<li>MarginalSoil</li>
@@ -395,7 +395,7 @@
       <li>WaterMovingShallow</li>
 			<li>WaterShallow</li>
 			<li>Ice</li>
-			<li>TKKN_SaltField</li>
+			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -410,9 +410,9 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>Granite_Rough</li>
+      <li>WeatheredGranite</li>
     </associatedOres>
-    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -421,12 +421,12 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.0</min>
+      <min>1.1</min>
       <max>1.3</max>
     </visualSizeRange>
     <visualClustering>0.2</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.8</visualSpread>
+    <visualSpread>0.7</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.1</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->
@@ -442,13 +442,22 @@
         <DropProbability>10</DropProbability>
       </li>
     </randomlyDropResources>
+    
+    <!-- If smaller than 1, it looks smaller in water -->
+    <submergedSize>0.5</submergedSize>
+    <submergedRadius>4</submergedRadius>
+    
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>ChunkGranite</li>
+    </ThingsToReplace>
   </ThingDef>
   
 
   <ThingDef Name="PassableGranite" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>PassableGranite</defName>
-    <label>Granite outcropping</label>
-    <description>An outcropping of granite that is easily walked over and provides little cover.</description>
+    <label>Granite rocks</label>
+    <description>Granite rocks that are easily walked over and provide little cover.</description>
     <graphicData>
       <texPath>Things/Rock/PassableLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -462,7 +471,7 @@
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
@@ -473,7 +482,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.2</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -487,11 +496,11 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.005</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>3</maxClusterSize>
+    <maxClusterSize>4</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.7</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -513,6 +522,7 @@
 			<li>PoorSoil</li>
 			<li>MarginalSoil</li>
 			<li>MarshyTerrain</li>
+			<li>MossyTerrain</li>
 			<li>Marsh</li>
 			<li>Mud</li>
       <li>SavannaSoil</li>
@@ -523,23 +533,26 @@
       <li>WaterMovingDeep</li>
 			<li>WaterOceanDeep</li>
 			<li>Ice</li>
-			<li>TKKN_SaltField</li>
+			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
+      <li>BoulderGranite</li>
 			<li>Granite_Rough</li>
       <li>WeatheredGranite</li>
       <li>SolidGranite</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>Granite_Rough</li>
+      <li>BoulderGranite</li>
+      <li>WeatheredGranite</li>
+      <li>Granite</li>
     </associatedOres>
-    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -551,9 +564,9 @@
       <min>0.5</min>
       <max>0.7</max>
     </visualSizeRange>
-    <visualClustering>0.6</visualClustering>
+    <visualClustering>0.2</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>1.5</visualSpread>
+    <visualSpread>1.2</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.3</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->
@@ -571,7 +584,7 @@
     </randomlyDropResources>
     
     <!-- If smaller than 1, it looks smaller in water -->
-    <submergedSize>.5</submergedSize>
+    <submergedSize>0</submergedSize>
     <submergedRadius>4</submergedRadius>
   </ThingDef>
 

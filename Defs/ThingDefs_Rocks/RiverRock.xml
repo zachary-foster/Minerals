@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="RiverRock" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
+  <ThingDef Name="RiverRock" ParentName="DynamicMineralBase" Class="Minerals.ThingDef_RiverRock">
+    <thingClass>Minerals.RiverRock</thingClass>
     <defName>RiverRock</defName>
     <label>Rounded river rocks</label>
     <description>A pile a rounded river rocks. These have been worn round during their long slow tumble from distant lands.</description>
@@ -19,7 +20,7 @@
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>3</Beauty>
     </statBases>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
@@ -159,10 +160,24 @@
     <submergedSize>0</submergedSize>
     <submergedRadius>2</submergedRadius>
     
+    <!-- Reproduction and death settings -->
+    <minReproductionSize>0.5</minReproductionSize>
+    <reproduceProp>0.01</reproduceProp>
+    <deathProb>1</deathProb>
+    <!-- The number of days it takes to grow at max growth speed -->
+    <growDays>30</growDays>
+    <!-- Chance of spawning de novo each check -->
+    <spawnProb>0.005</spawnProb>
+    <!-- Can spawn on items, pawns, and plants-->
+    <canSpawnOnThings>false</canSpawnOnThings>
+    <!-- If true, the graphics are regenerated more often -->
+    <fastGraphicRefresh>true</fastGraphicRefresh>
+    
   </ThingDef>
   
 
-  <ThingDef Name="BeachRock" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
+  <ThingDef Name="BeachRock" ParentName="DynamicMineralBase" Class="Minerals.ThingDef_RiverRock">
+    <thingClass>Minerals.RiverRock</thingClass>
     <defName>BeachRock</defName>
     <label>Rounded beach rocks</label>
     <description>A pile a rounded river rocks. The ocean has worn them round by eons of slow grinding in the surf.</description>
@@ -180,7 +195,7 @@
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>3</Beauty>
     </statBases>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
@@ -194,8 +209,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.005</minClusterProbability>
-    <maxClusterProbability>0.02</maxClusterProbability>
+    <minClusterProbability>0</minClusterProbability>
+    <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
     <maxClusterSize>50</maxClusterSize>
@@ -204,12 +219,6 @@
     <initialSizeMax>0.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
 			<li>Granite_Rough</li>
@@ -311,6 +320,18 @@
     <submergedSize>0</submergedSize>
     <submergedRadius>2</submergedRadius>
     
+    <!-- Reproduction and death settings -->
+    <minReproductionSize>0.5</minReproductionSize>
+    <reproduceProp>0.01</reproduceProp>
+    <deathProb>1</deathProb>
+    <!-- The number of days it takes to grow at max growth speed -->
+    <growDays>30</growDays>
+    <!-- Chance of spawning de novo each check -->
+    <spawnProb>0.005</spawnProb>
+    <!-- Can spawn on items, pawns, and plants-->
+    <canSpawnOnThings>false</canSpawnOnThings>
+    <!-- If true, the graphics are regenerated more often -->
+    <fastGraphicRefresh>true</fastGraphicRefresh>
   </ThingDef>
 
   

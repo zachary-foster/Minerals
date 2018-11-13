@@ -51,7 +51,7 @@
       <li>TundraArchipelago</li>
       <li>ColdBogArchipelago</li>
       <li>BorealForest</li>
-      <li>TKKN_RedwoodForest</li>
+      <li>RedwoodForest</li>
     </allowedBiomes>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
@@ -209,9 +209,9 @@
       <li>TundraArchipelago</li>
       <li>ColdBogArchipelago</li>
       <li>DesertArchipelago</li>
-      <li>TKKN_VolcanicFlow</li>
-      <li>TKKN_Desert</li>
-      <li>TKKN_RedwoodForest</li>
+      <li>VolcanicFlow</li>
+      <li>DesertSaltFields</li>
+      <li>RedwoodForest</li>
     </allowedBiomes>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
@@ -220,7 +220,7 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
       <li>Gravel</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
@@ -323,10 +323,10 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.5</perMapProbability>
+    <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.002</minClusterProbability>
-    <maxClusterProbability>0.005</maxClusterProbability>
+    <minClusterProbability>0.003</minClusterProbability>
+    <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
     <maxClusterSize>20</maxClusterSize>
@@ -351,22 +351,22 @@
       <li>DesertArchipelago</li>
       <li>TemperateArchipelago</li>
       <li>TropicalArchipelago</li>
-      <li>TKKN_VolcanicFlow</li>
-      <li>TKKN_Desert</li>
-      <li>TKKN_Oasis</li>
-      <li>TKKN_RedwoodForest</li>
+      <li>VolcanicFlow</li>
+      <li>DesertSaltFields</li>
+      <li>Oasis</li>
+      <li>RedwoodForest</li>
       <li>Savanna</li>
     </allowedBiomes>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>WaterOceanDeep</li>
       <li>WaterOceanShallow</li>
-      <li>TKKN_SaltField</li>
+      <li>SaltField</li>
     </neededNearbyTerrains>
     <!-- The terrains this can appear on.-->
     <allowedTerrains>
-      <li>TKKN_SaltField</li>
-      <li>TKKN_SandBeachWetSalt</li>
+      <li>SaltField</li>
+      <li>SandBeachWetSalt</li>
       <li>Sand</li>
       <li>Soil</li>
       <li>SoilRich</li>
@@ -377,7 +377,7 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
       <li>Gravel</li>
     </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
@@ -466,7 +466,11 @@
 
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
-    <submergedRadius>2</submergedRadius>
+    <submergedRadius>1</submergedRadius>
+    
+    <!-- If true, the graphics are regenerated more often -->
+    <fastGraphicRefresh>true</fastGraphicRefresh>
+    
   </ThingDef>
   
   
@@ -516,7 +520,7 @@
       <li>TundraArchipelago</li>
       <li>ColdBogArchipelago</li>
       <li>DesertArchipelago</li>
-      <li>TKKN_VolcanicFlow</li>
+      <li>VolcanicFlow</li>
       <li>AridShrubland</li>
       <li>TemperateForest</li>
       <li>ExtremeDesert</li>
@@ -527,27 +531,41 @@
       <li>DesertArchipelago</li>
       <li>TemperateArchipelago</li>
       <li>TropicalArchipelago</li>
-      <li>TKKN_VolcanicFlow</li>
-      <li>TKKN_Desert</li>
-      <li>TKKN_Oasis</li>
-      <li>TKKN_RedwoodForest</li>
+      <li>VolcanicFlow</li>
+      <li>DesertSaltFields</li>
+      <li>Oasis</li>
+      <li>RedwoodForest</li>
       <li>IceSheet</li>
       <li>Savanna</li>
     </allowedBiomes>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>TKKN_Lava</li>
-      <li>TKKN_LavaDeep</li>
+      <li>Lava</li>
+      <li>LavaDeep</li>
       <li>SteamGeyser</li>
-      <li>TKKN_SteamVent</li>
+      <li>SteamVent</li>
     </neededNearbyTerrains>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
+      <li>SaltField</li>
+      <li>SandBeachWetSalt</li>
+      <li>Sand</li>
+      <li>Soil</li>
+      <li>SoilRich</li>
+      <li>SavannaSoil</li>
+      <li>MarginalSoil</li>
+      <li>Granite_Rough</li>
+      <li>Marble_Rough</li>
+      <li>Limestone_Rough</li>
+      <li>Sandstone_Rough</li>
+      <li>Slate_Rough</li>
+      <li>LavaRock_Rough</li>
+      <li>Gravel</li>
 		</allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>SteamGeyser</li>
-      <li>TKKN_SteamVent</li>
+      <li>SteamVent</li>
     </associatedOres>
     <nearAssociatedOreBonus>50</nearAssociatedOreBonus>
     <!-- how far away it can be from needed nearby terrains-->

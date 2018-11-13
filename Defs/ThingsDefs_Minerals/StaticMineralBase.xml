@@ -56,10 +56,10 @@
       <li>DesertArchipelago</li>
       <li>TemperateArchipelago</li>
       <li>TropicalArchipelago</li>
-      <li>TKKN_VolcanicFlow</li>
-      <li>TKKN_Desert</li>
-      <li>TKKN_Oasis</li>
-      <li>TKKN_RedwoodForest</li>
+      <li>VolcanicFlow</li>
+      <li>DesertSaltFields</li>
+      <li>Oasis</li>
+      <li>RedwoodForest</li>
       <li>IceSheet</li>
       <li>Savanna</li>
     </allowedBiomes>
@@ -70,7 +70,7 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>TKKN_LavaRock</li>
+      <li>LavaRock_Rough</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on. If empty, it does not need to be near any -->
     <neededNearbyTerrains>

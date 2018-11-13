@@ -56,12 +56,12 @@ namespace Minerals
             float bonus = 1f;
             TerrainDef terrain = aMap.terrainGrid.TerrainAt(aPosition);
     
-            if (terrain.defName == "TKKN_SandBeachWetSalt") // Grows faster on wet sand
+            if (terrain.defName == "SandBeachWetSalt") // Grows faster on wet sand
             {
                 bonus = bonus * 3;
             } else if (IsInWater(aPosition, aMap)) // melts in water
             {
-                bonus = Math.Abs(bonus) * -1;
+                bonus = Math.Abs(bonus) * -3;
             }
     
             return bonus;
