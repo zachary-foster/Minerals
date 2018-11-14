@@ -345,7 +345,7 @@ namespace Minerals
                 List<string> versions = new List<string> { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
                 foreach (string letter in versions)
                 {
-                    string a_path = System.IO.Path.Combine(this.attributes.graphicData.texPath, textureName + letter);
+                    string a_path = this.attributes.graphicData.texPath + "/" + textureName + letter;
 
                     if (ContentFinder<Texture2D>.Get(a_path, false) != null)
                     {
