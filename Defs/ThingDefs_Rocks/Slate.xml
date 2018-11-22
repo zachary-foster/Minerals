@@ -73,8 +73,8 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>2.1</min>
-      <max>2.2</max>
+      <min>1.8</min>
+      <max>2.0</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -401,7 +401,7 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>5</spawnRadius>
+    <spawnRadius>6</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
@@ -409,7 +409,7 @@
     <maxClusterProbability>0.0002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>50</minClusterSize>
-    <maxClusterSize>150</maxClusterSize>
+    <maxClusterSize>100</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.8</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -433,7 +433,7 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Slate_Rough</li>
+      <li>WeatheredSlate</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>20</neededNearbyTerrainRadius>
@@ -505,7 +505,7 @@
     </graphicData>
     <altitudeLayer>Zone</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.2</fillPercent>
+    <fillPercent>0.1</fillPercent>
     <hideAtSnowDepth>.7</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>

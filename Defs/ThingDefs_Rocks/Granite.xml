@@ -12,7 +12,7 @@
       <color>(105,95,97)</color>
     </graphicData>
     <statBases>
-      <MaxHitPoints>1700</MaxHitPoints>
+      <MaxHitPoints>1800</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>1</Beauty>
     </statBases>
@@ -243,7 +243,7 @@
       <color>(105,95,97)</color>
     </graphicData>
     <statBases>
-      <MaxHitPoints>2000</MaxHitPoints>
+      <MaxHitPoints>2200</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-1</Beauty>
     </statBases>
@@ -344,8 +344,8 @@
   
   <ThingDef Name="BoulderGranite" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>BoulderGranite</defName>
-    <label>Granite Boulders</label>
-    <description>Granite boulders. These can be climbed over with some difficulty and provide good cover.</description>
+    <label>Granite Boulder</label>
+    <description>Granite boulder. These can be climbed over with some difficulty and provide good cover.</description>
     <graphicData>
       <texPath>Things/Rock/BoulderGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -354,9 +354,10 @@
     </graphicData>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.6</fillPercent>
+    <hideAtSnowDepth>2</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>
-      <MaxHitPoints>1200</MaxHitPoints>
+      <MaxHitPoints>1300</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -503,7 +504,7 @@
     <hideAtSnowDepth>.9</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
+      <MaxHitPoints>900</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>

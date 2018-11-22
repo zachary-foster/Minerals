@@ -398,7 +398,7 @@
     </graphicData>
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.2</fillPercent>
+    <fillPercent>0.3</fillPercent>
     <hideAtSnowDepth>.9</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>

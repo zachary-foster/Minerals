@@ -54,7 +54,7 @@ namespace Minerals
                 }
 
 
-                return output * MineralsMain.Settings.growthFactor;
+                return output * MineralsMain.Settings.mineralGrowthSetting;
             }
         }
 
@@ -99,7 +99,7 @@ namespace Minerals
             size += GrowthThisTick * 2000; // 1 long tick = 2000
 
             // Try to reproduce
-            if (GrowthThisTick > 0 && size > attributes.minReproductionSize && Rand.Range(0f, 1f) < attributes.reproduceProp * GrowthRate * MineralsMain.Settings.reproductionFactor)
+            if (GrowthThisTick > 0 && size > attributes.minReproductionSize && Rand.Range(0f, 1f) < attributes.reproduceProp * GrowthRate * MineralsMain.Settings.mineralReproductionSetting)
             {
                 attributes.TryReproduce(Map, Position);
             }
@@ -108,7 +108,6 @@ namespace Minerals
             float apparentSize = printSize();
             if (attributes.fastGraphicRefresh && Math.Abs(sizeWhenLastPrinted - apparentSize) > 0.1f)
             {
-                Log.Message("refresh");
                 sizeWhenLastPrinted = apparentSize;
                 base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things);
             }
@@ -427,7 +426,7 @@ namespace Minerals
                 }
 
                 // Get number of positions to check
-                float numToCheck = map.Area * mineralType.spawnProb * MineralsMain.Settings.spawningFactor;
+                float numToCheck = map.Area * mineralType.spawnProb * MineralsMain.Settings.mineralSpawningSetting;
 
                 if (numToCheck < 1 & Rand.Range(0f, 1f) > numToCheck)
                 {

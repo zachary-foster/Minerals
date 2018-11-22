@@ -581,7 +581,7 @@ namespace Minerals
             if (mineral != null)
             {            
                 // Pick cluster size
-                int clusterSize = (int) (Rand.Range(minClusterSize, maxClusterSize) * MineralsMain.Settings.clusterFactor);
+                int clusterSize = Rand.Range(minClusterSize, maxClusterSize);
 
                 // Grow cluster 
                 GrowCluster(map, mineral, clusterSize);
@@ -885,6 +885,7 @@ namespace Minerals
             category = originalDef;
             output.size = size;
             map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Buildings);
+            Log.Message("Spawned " + defName + " at " + dest);
             return output;
         }
             
@@ -940,6 +941,37 @@ namespace Minerals
             InitialSpawn(map, scaling);
         }
 
+        public virtual float abundanceSettingFactor()
+        {
+            float factor = 1f;
+            if (tags.Contains("crystal"))
+            {
+                factor = factor * MineralsMain.Settings.crystalAbundanceSetting;
+            }
+            if (tags.Contains("boulder"))
+            {
+                factor = factor * MineralsMain.Settings.boulderAbundanceSetting;
+            }
+            if (tags.Contains("small_rock"))
+            {
+                factor = factor * MineralsMain.Settings.rocksAbundanceSetting;
+            }
+            if (tags.Contains("wall") && MineralsMain.Settings.replaceWallsSetting == false)
+            {
+                factor = 0f;
+            }
+            return factor;
+        }
+
+        public virtual float diversitySettingFactor()
+        {
+            float factor = 1f;
+            if (tags.Contains("crystal"))
+            {
+                factor = factor * MineralsMain.Settings.crystalDiversitySetting;
+            }
+            return factor;
+        }
 
         public virtual void InitialSpawn(Map map, float scaling = 1)
         {
@@ -952,10 +984,10 @@ namespace Minerals
             }
 
             // Select probability of spawing for this map
-            float spawnProbability = Rand.Range(minClusterProbability, maxClusterProbability) * scaling * MineralsMain.Settings.abundanceFactor;
+            float spawnProbability = Rand.Range(minClusterProbability, maxClusterProbability) * scaling * abundanceSettingFactor();
 
             // Find spots to spawn it
-            if (Rand.Range(0f, 1f) <= perMapProbability * MineralsMain.Settings.occuranceFactor && spawnProbability > 0)
+            if (Rand.Range(0f, 1f) <= perMapProbability * diversitySettingFactor() && spawnProbability > 0)
             {
                 Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
                 IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
@@ -1000,10 +1032,24 @@ namespace Minerals
 
         }
 
+        public virtual bool allowReplaceSetting()
+        {
+            bool output = true;
+            if (tags.Contains("wall") && MineralsMain.Settings.replaceWallsSetting == false)
+            {
+                output = false;
+            }
+            if (tags.Contains("boulder") && MineralsMain.Settings.replaceChunksSetting == false)
+            {
+                output = false;
+            }
+            return output;
+        }
+
 
         public virtual void ReplaceThings(Map map, float scaling = 1)
         {
-            if (ThingsToReplace == null || ThingsToReplace.Count == 0 || MineralsMain.Settings.replaceRockWalls == false)
+            if (ThingsToReplace == null || ThingsToReplace.Count == 0 || allowReplaceSetting() == false)
             {
                 return;
             }

@@ -39,7 +39,16 @@ namespace Minerals
     
         public override float GrowthRateAtPos(Map aMap, IntVec3 aPosition) 
         {
-            return 1f;
+            TerrainDef myTerrain = aMap.terrainGrid.TerrainAt(aPosition);
+            if (myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("water"))
+            {
+                return 1f;
+            }
+            else
+            {
+                return 0f;
+            }
+
         }
 
     }

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<abundanceFactor>Mineral Abundance</abundanceFactor>
-	<occuranceFactor>Mineral Diversity</occuranceFactor>
-	<clusterFactor>Mineral Cluster Size</clusterFactor>
-	<growthFactor>Dynamic Mineral Growth Rate</growthFactor>
-	<reproductionFactor>Dynamic Mineral Reproduction Rate</reproductionFactor>
-	<spawningFactor>Dynamic Mineral Spawning Rate</spawningFactor>
-	<replaceRockWalls>Replace Vanilla Rock Walls</replaceRockWalls>
+	<crystalAbundanceSetting>Crystal Abundance</crystalAbundanceSetting>
+	<crystalDiversitySetting>Crystal Diversity</crystalDiversitySetting>
+	<boulderAbundanceSetting>Boulder Abundance</boulderAbundanceSetting>
+	<rocksAbundanceSetting>Small rock Abundance</rocksAbundanceSetting>
+	<mineralGrowthSetting>Mineral Growth Rate</mineralGrowthSetting>
+	<mineralReproductionSetting>Mineral Reproduction Rate</mineralReproductionSetting>
+	<mineralSpawningSetting>Mineral Spawning Rate</mineralSpawningSetting>
+	<replaceWallsSetting>Replace Rock Walls</replaceWallsSetting>
+	<replaceChunksSetting>Replace Chunks</replaceChunksSetting>
 </LanguageData>

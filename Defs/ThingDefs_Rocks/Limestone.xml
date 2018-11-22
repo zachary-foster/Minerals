@@ -327,8 +327,8 @@
  
   <ThingDef Name="BoulderLimestone" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>BoulderLimestone</defName>
-    <label>Limestone Boulders</label>
-    <description>Limestone boulders. These can be climbed over with some difficulty and provide good cover.</description>
+    <label>Limestone boulder</label>
+    <description>Limestone boulder. These can be climbed over with some difficulty and provide good cover.</description>
     <graphicData>
       <texPath>Things/Rock/BoulderGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -338,6 +338,7 @@
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.6</fillPercent>
     <coversFloor>false</coversFloor>
+    <hideAtSnowDepth>2</hideAtSnowDepth>
     <statBases>
       <MaxHitPoints>900</MaxHitPoints>
       <Flammability>0</Flammability>

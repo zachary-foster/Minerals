@@ -43,6 +43,7 @@
       <li>rock</li>
       <li>ore</li>
       <li>weathered</li>
+      <li>wall</li>
     </tags>
     
   </ThingDef>
@@ -89,6 +90,7 @@
       <li>rock</li>
       <li>ore</li>
       <li>solid</li>
+      <li>wall</li>
     </tags>
     
   </ThingDef>

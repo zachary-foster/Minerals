@@ -15,8 +15,9 @@
     <drawerType>MapMeshOnly</drawerType>
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.3</fillPercent>
+    <fillPercent>0.1</fillPercent>
     <coversFloor>false</coversFloor>
+    <hideAtSnowDepth>0.7</hideAtSnowDepth>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -25,7 +26,6 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>80</pathCost>
-    <hideAtSnowDepth>0.7</hideAtSnowDepth>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
@@ -162,7 +162,7 @@
     
     <!-- Reproduction and death settings -->
     <minReproductionSize>0.5</minReproductionSize>
-    <reproduceProp>0.01</reproduceProp>
+    <reproduceProp>0.001</reproduceProp>
     <deathProb>1</deathProb>
     <!-- The number of days it takes to grow at max growth speed -->
     <growDays>30</growDays>
@@ -186,7 +186,7 @@
     <thingClass>Minerals.RiverRock</thingClass>
     <defName>BeachRock</defName>
     <label>Rounded beach rocks</label>
-    <description>A pile a rounded river rocks. The ocean has worn them round by eons of slow grinding in the surf.</description>
+    <description>A pile a rounded river rocks. The ocean has worn them round by grinding them together in the surf.</description>
     <graphicData>
       <texPath>Things/Rock/RiverRock</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -196,7 +196,7 @@
     <drawerType>MapMeshOnly</drawerType>
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.3</fillPercent>
+    <fillPercent>0.1</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
@@ -328,7 +328,7 @@
     
     <!-- Reproduction and death settings -->
     <minReproductionSize>0.5</minReproductionSize>
-    <reproduceProp>0.01</reproduceProp>
+    <reproduceProp>0.001</reproduceProp>
     <deathProb>1</deathProb>
     <!-- The number of days it takes to grow at max growth speed -->
     <growDays>30</growDays>

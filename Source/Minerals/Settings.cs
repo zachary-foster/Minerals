@@ -8,42 +8,30 @@ namespace Minerals
 {
     public class MineralsSettings : ModSettings
     {
-        public float abundanceFactor = 1f;
-        public static readonly float minAbundanceFactor = 0f;
-        public static readonly float maxAbundanceFactor = 10f;
+        public static float maxSetting = 15f;
 
-        public float occuranceFactor = 1f;
-        public static readonly float minOccuranceFactor = 0f;
-        public static readonly float maxOccuranceFactor = 10f;
-
-        public float clusterFactor = 1f;
-        public static readonly float minClusterFactor = 0f;
-        public static readonly float maxClusterFactor = 10f;
-
-        public float growthFactor = 1f;
-        public static readonly float minGrowthFactor = 0f;
-        public static readonly float maxGrowthFactor = 10f;
-
-        public float reproductionFactor = 1f;
-        public static readonly float minReproductionFactor = 0f;
-        public static readonly float maxReproductionFactor = 10f;
-
-        public float spawningFactor = 1f;
-        public static readonly float minSpawningFactor = 0f;
-        public static readonly float maxSpawningFactor = 10f;
-
-        public bool replaceRockWalls = true;
+        public float crystalAbundanceSetting = 1f;
+        public float crystalDiversitySetting = 1f;
+        public float boulderAbundanceSetting = 1f;
+        public float rocksAbundanceSetting = 1f;
+        public float mineralGrowthSetting = 1f;
+        public float mineralReproductionSetting = 1f;
+        public float mineralSpawningSetting = 1f;
+        public bool replaceWallsSetting = true;
+        public bool replaceChunksSetting = true;
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look(ref replaceRockWalls, "replaceRockWalls", true);
-            Scribe_Values.Look(ref abundanceFactor, "abundanceFactor", 1f);
-            Scribe_Values.Look(ref occuranceFactor, "occuranceFactor", 1f);
-            Scribe_Values.Look(ref clusterFactor, "clusterFactor", 1f);
-            Scribe_Values.Look(ref growthFactor, "growthFactor", 1f);
-            Scribe_Values.Look(ref reproductionFactor, "reproductionFactor", 1f);
-            Scribe_Values.Look(ref spawningFactor, "spawningFactor", 1f);
+            Scribe_Values.Look(ref crystalAbundanceSetting, "crystalAbundanceSetting", 1f);
+            Scribe_Values.Look(ref crystalDiversitySetting, "crystalDiversitySetting", 1f);
+            Scribe_Values.Look(ref boulderAbundanceSetting, "boulderAbundanceSetting", 1f);
+            Scribe_Values.Look(ref rocksAbundanceSetting, "rocksAbundanceSetting", 1f);
+            Scribe_Values.Look(ref mineralGrowthSetting, "mineralGrowthSetting", 1f);
+            Scribe_Values.Look(ref mineralReproductionSetting, "mineralReproductionSetting", 1f);
+            Scribe_Values.Look(ref mineralSpawningSetting, "mineralSpawningSetting", 1f);
+            Scribe_Values.Look(ref replaceWallsSetting, "replaceWallsSetting", true);
+            Scribe_Values.Look(ref replaceChunksSetting, "replaceChunksSetting", true);
         }
 
 
@@ -55,37 +43,46 @@ namespace Minerals
 
             list.Gap(12f);
 
-            list.Label("abundanceFactor".Translate() + ": " + Math.Round(abundanceFactor, 3), -1f);
-            abundanceFactor = list.Slider(abundanceFactor, minAbundanceFactor, maxAbundanceFactor);
+            list.Label("crystalAbundanceSetting".Translate() + ": " + Math.Round(crystalAbundanceSetting * 100, 3) + "%", -1f);
+            crystalAbundanceSetting = list.Slider(crystalAbundanceSetting, 0, maxSetting);
 
             list.Gap(12f);
 
-            list.Label("occuranceFactor".Translate() + ": " + Math.Round(occuranceFactor, 3), -1f);
-            occuranceFactor = list.Slider(occuranceFactor, minOccuranceFactor, maxOccuranceFactor);
+            list.Label("crystalDiversitySetting".Translate() + ": " + Math.Round(crystalDiversitySetting * 100, 3) + "%", -1f);
+            crystalDiversitySetting = list.Slider(crystalDiversitySetting, 0, maxSetting);
 
             list.Gap(12f);
 
-            list.Label("clusterFactor".Translate() + ": " + Math.Round(clusterFactor, 3), -1f);
-            clusterFactor = list.Slider(clusterFactor, minClusterFactor, maxClusterFactor);
+            list.Label("boulderAbundanceSetting".Translate() + ": " + Math.Round(boulderAbundanceSetting * 100, 3) + "%", -1f);
+            boulderAbundanceSetting = list.Slider(boulderAbundanceSetting, 0, maxSetting);
 
             list.Gap(12f);
 
-            list.Label("growthFactor".Translate() + ": " + Math.Round(growthFactor, 3), -1f);
-            growthFactor = list.Slider(growthFactor, minGrowthFactor, maxGrowthFactor);
+            list.Label("rocksAbundanceSetting".Translate() + ": " + Math.Round(rocksAbundanceSetting * 100, 3) + "%", -1f);
+            rocksAbundanceSetting = list.Slider(rocksAbundanceSetting, 0, maxSetting);
 
             list.Gap(12f);
 
-            list.Label("reproductionFactor".Translate() + ": " + Math.Round(reproductionFactor, 3), -1f);
-            reproductionFactor = list.Slider(reproductionFactor, minReproductionFactor, maxReproductionFactor);
+            list.Label("mineralGrowthSetting".Translate() + ": " + Math.Round(mineralGrowthSetting * 100, 3) + "%", -1f);
+            mineralGrowthSetting = list.Slider(mineralGrowthSetting, 0, maxSetting);
 
             list.Gap(12f);
 
-            list.Label("spawningFactor".Translate() + ": " + Math.Round(spawningFactor, 3), -1f);
-            spawningFactor = list.Slider(spawningFactor, minSpawningFactor, maxSpawningFactor);
+            list.Label("mineralReproductionSetting".Translate() + ": " + Math.Round(mineralReproductionSetting * 100, 3) + "%", -1f);
+            mineralReproductionSetting = list.Slider(mineralReproductionSetting, 0, maxSetting);
 
             list.Gap(12f);
 
-            list.CheckboxLabeled("replaceRockWalls".Translate(), ref replaceRockWalls);
+            list.Label("mineralSpawningSetting".Translate() + ": " + Math.Round(mineralSpawningSetting * 100, 3) + "%", -1f);
+            mineralSpawningSetting = list.Slider(mineralSpawningSetting, 0, maxSetting);
+
+            list.Gap(12f);
+
+            list.CheckboxLabeled("replaceWallsSetting".Translate(), ref replaceWallsSetting);
+
+            list.Gap(12f);
+
+            list.CheckboxLabeled("replaceChunksSetting".Translate(), ref replaceChunksSetting);
 
             list.End();
         }

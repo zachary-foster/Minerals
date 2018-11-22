@@ -37,7 +37,7 @@ namespace Minerals
         public override void ReplaceThings(Map map, float scaling = 1)
         {
 
-            if (ThingsToReplace == null || ThingsToReplace.Count == 0 || MineralsMain.Settings.replaceRockWalls == false)
+            if (ThingsToReplace == null || ThingsToReplace.Count == 0 || allowReplaceSetting() == false)
             {
                 return;
             }
