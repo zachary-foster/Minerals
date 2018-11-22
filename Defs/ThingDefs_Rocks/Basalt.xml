@@ -103,6 +103,14 @@
     <ThingsToReplace>
       <li>LavaRock</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>weathered</li>
+    </tags>
+    
   </ThingDef>
   
   
@@ -203,6 +211,14 @@
     <ThingsToReplace>
       <li>LavaRock</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>solid</li>
+    </tags>
+    
   </ThingDef>
   
 
@@ -311,6 +327,14 @@
     <ThingsToReplace>
       <li>LavaRock</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>hewn</li>
+    </tags>
+    
   </ThingDef>
  
   <ThingDef Name="BoulderBasalt" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
@@ -325,6 +349,7 @@
     </graphicData>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.6</fillPercent>
+    <hideAtSnowDepth>2</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
@@ -356,7 +381,7 @@
     <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0.0</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
+    <maxClusterProbability>0.008</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>4</maxClusterSize>
@@ -440,6 +465,14 @@
     <ThingsToReplace>
       <li>ChunkLava</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>boulder</li>
+    </tags>
+    
   </ThingDef>
 
 
@@ -456,6 +489,7 @@
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.3</fillPercent>
+    <hideAtSnowDepth>.9</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
@@ -577,6 +611,14 @@
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>.5</submergedSize>
     <submergedRadius>4</submergedRadius>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>small_rock</li>
+    </tags>
+    
   </ThingDef>
 
   
@@ -594,6 +636,7 @@
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.2</fillPercent>
+    <hideAtSnowDepth>.7</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -624,7 +667,7 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <maxClusterProbability>0.0025</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>10</minClusterSize>
     <maxClusterSize>200</maxClusterSize>
@@ -713,6 +756,14 @@
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
     <submergedRadius>2</submergedRadius>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>small_rock</li>
+    </tags>
+    
   </ThingDef>
   
 </Defs>

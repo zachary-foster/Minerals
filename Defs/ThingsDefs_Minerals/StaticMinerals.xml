@@ -97,10 +97,10 @@
       <min>0.2</min>
       <max>0.6</max>
     </visualSizeRange>
-    <visualClustering>0.5</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>2.0</visualSpread>
+    <visualClustering>0.5</visualClustering>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSpread>2.0</visualSpread>
     <visualSizeVariation>0.2</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>20</maxMinedYeild>
@@ -111,6 +111,10 @@
         <DropProbability>0.5</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -184,7 +188,7 @@
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderRoof>true</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
@@ -213,6 +217,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -254,6 +262,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -377,6 +389,10 @@
         <DropProbability>5.0</DropProbability>
       </li>
    </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -427,6 +443,10 @@
         <DropProbability>5.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -490,6 +510,10 @@
         <DropProbability>5.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -552,6 +576,10 @@
         <DropProbability>5.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -624,7 +652,7 @@
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderRoof>true</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
@@ -653,6 +681,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -688,6 +720,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -756,6 +792,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -844,6 +884,10 @@
         <DropProbability>7.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -963,6 +1007,10 @@
         <DropProbability>5.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -1176,7 +1224,7 @@
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderRoof>true</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
@@ -1205,6 +1253,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 
@@ -1283,6 +1335,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
 
 

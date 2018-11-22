@@ -3,7 +3,7 @@
   
   
   <ThingDef Name="WeatheredRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawerType>MapMeshOnly</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <altitudeLayer>Building</altitudeLayer>
@@ -19,6 +19,7 @@
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>true</blockLight>
     <mineable>true</mineable>
+    <hideAtSnowDepth>2</hideAtSnowDepth>
     <statBases>
       <Flammability>0</Flammability>
     </statBases>
@@ -46,7 +47,7 @@
   
   <ThingDef Name="SolidRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_SolidRock" Abstract="True">
     <thingClass>Minerals.SolidRock</thingClass>
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawerType>MapMeshOnly</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <altitudeLayer>Building</altitudeLayer>
@@ -62,6 +63,7 @@
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>true</blockLight>
     <mineable>true</mineable>
+    <hideAtSnowDepth>2</hideAtSnowDepth>
     <statBases>
       <Flammability>0</Flammability>
     </statBases>
@@ -88,7 +90,7 @@
   
   
   <ThingDef Name="HewnRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawerType>MapMeshOnly</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <altitudeLayer>Building</altitudeLayer>
@@ -104,6 +106,7 @@
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>true</blockLight>
     <mineable>true</mineable>
+    <hideAtSnowDepth>2</hideAtSnowDepth>
     <statBases>
       <Flammability>0</Flammability>
     </statBases>

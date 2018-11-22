@@ -12,7 +12,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(50,50,50)</color>
     </graphicData>
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawerType>MapMeshOnly</drawerType>
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.3</fillPercent>
@@ -56,7 +56,7 @@
 			<li>Limestone_Rough</li>
 			<li>Marble_Rough</li>
 			<li>Slate_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
@@ -68,15 +68,15 @@
 			<li>Mud</li>
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
-			<li>TKKN_SaltField</li>
-			<li>TKKN_SandBeachWetSalt</li>
+			<li>SaltField</li>
+			<li>SandBeachWetSalt</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>WaterMovingShallow</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>5</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
@@ -158,7 +158,7 @@
     
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
-    <submergedRadius>2</submergedRadius>
+    <submergedRadius>1</submergedRadius>
     
     <!-- Reproduction and death settings -->
     <minReproductionSize>0.5</minReproductionSize>
@@ -172,6 +172,12 @@
     <canSpawnOnThings>false</canSpawnOnThings>
     <!-- If true, the graphics are regenerated more often -->
     <fastGraphicRefresh>true</fastGraphicRefresh>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>small_rock</li>
+    </tags>
     
   </ThingDef>
   
@@ -187,7 +193,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(50,50,50)</color>
     </graphicData>
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawerType>MapMeshOnly</drawerType>
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.3</fillPercent>
@@ -225,18 +231,18 @@
 			<li>Limestone_Rough</li>
 			<li>Marble_Rough</li>
 			<li>Slate_Rough</li>
-      <li>TKKN_LavaRock_Rough</li>
+      <li>LavaRock_Rough</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
-			<li>TKKN_SandBeachWetSalt</li>
+			<li>SandBeachWetSalt</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
 			<li>WaterOceanShallow</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>6</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>5</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
@@ -318,7 +324,7 @@
     
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
-    <submergedRadius>2</submergedRadius>
+    <submergedRadius>1</submergedRadius>
     
     <!-- Reproduction and death settings -->
     <minReproductionSize>0.5</minReproductionSize>
@@ -327,11 +333,18 @@
     <!-- The number of days it takes to grow at max growth speed -->
     <growDays>30</growDays>
     <!-- Chance of spawning de novo each check -->
-    <spawnProb>0.005</spawnProb>
+    <spawnProb>0.01</spawnProb>
     <!-- Can spawn on items, pawns, and plants-->
     <canSpawnOnThings>false</canSpawnOnThings>
     <!-- If true, the graphics are regenerated more often -->
     <fastGraphicRefresh>true</fastGraphicRefresh>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>small_rock</li>
+    </tags>
+    
   </ThingDef>
 
   

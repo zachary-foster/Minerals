@@ -30,7 +30,7 @@ namespace Minerals
             StringBuilder stringBuilder = new StringBuilder(base.GetInspectString());
             if (ThingDef_SaltCrystal.IsInWater(this.Position, this.Map)) // melts in water
             {
-                stringBuilder.AppendLine("\nDissolving in water.");
+                stringBuilder.AppendLine("Dissolving in water.");
             }
             return stringBuilder.ToString().TrimEndNewlines();
         }

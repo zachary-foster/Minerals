@@ -115,5 +115,8 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
+    
   </ThingDef>
+  
+  
 </Defs>

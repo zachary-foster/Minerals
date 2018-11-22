@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+  
   <ThingDef ParentName="DynamicMineralBase" Class="Minerals.ThingDef_DynamicMineral">
     <defName>ColdstoneCrystal</defName>
     <label>Coldstone Crystal</label>
@@ -149,6 +150,11 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+      <li>fictional</li>
+    </tags>
   </ThingDef>
   
   
@@ -300,6 +306,11 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+      <li>fictional</li>
+    </tags>
   </ThingDef>
   
   
@@ -336,7 +347,7 @@
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- Reproduction and death settings -->
-    <minReproductionSize>0.3</minReproductionSize>
+    <minReproductionSize>0.7</minReproductionSize>
     <reproduceProp>0.01</reproduceProp>
     <deathProb>0.2</deathProb>
     <!-- The biomes this can appear in. The default is all ones known to mod-->
@@ -410,7 +421,7 @@
     <!-- The number of days it takes to grow at max growth speed -->
     <growDays>7</growDays>
     <!-- Chance of spawning de novo each check -->
-    <spawnProb>0.003</spawnProb>
+    <spawnProb>0.01</spawnProb>
     <!-- Can spawn on items, pawns, and plants-->
     <canSpawnOnThings>true</canSpawnOnThings>
     <!-- Growth rate modifiers -->
@@ -471,6 +482,10 @@
     <!-- If true, the graphics are regenerated more often -->
     <fastGraphicRefresh>true</fastGraphicRefresh>
     
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
   </ThingDef>
   
   
@@ -626,6 +641,11 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>crystal</li>
+    </tags>
     
   </ThingDef>
   

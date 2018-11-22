@@ -20,6 +20,7 @@ namespace Minerals
 
         // ======= Private Variables ======= //
         protected float yieldPct = 0;
+        protected float sizeWhenLastPrinted = 0f;
 
         // The current size of the mineral
         protected float mySize = 1f;
@@ -249,16 +250,23 @@ namespace Minerals
             return attributes.submergedSize + (1 - attributes.submergedSize) * propDry;
         }
 
-        public override void Print(SectionLayer layer)
+        public virtual float printSize()
         {
-			Rand.PushState();
-			Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
-            // get print size
             float effectiveSize = size;
             if (attributes.submergedSize < 1)
             {
                 effectiveSize = effectiveSize * submersibleFactor();
             }
+
+            return effectiveSize;
+        }
+
+        public override void Print(SectionLayer layer)
+        {
+			Rand.PushState();
+			Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
+            // get print size
+            float effectiveSize = printSize();
 
             if (effectiveSize <= 0)
             {
@@ -319,11 +327,14 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Size: " + size.ToStringPercent());
-            float propSubmerged = 1 - submersibleFactor();
-            if (propSubmerged > 0)
+            if (DebugSettings.godMode)
             {
-                stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
+                stringBuilder.AppendLine("Size: " + size.ToStringPercent());
+                float propSubmerged = 1 - submersibleFactor();
+                if (propSubmerged > 0)
+                {
+                    stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
+                }
             }
             return stringBuilder.ToString().TrimEndNewlines();
         }
@@ -545,6 +556,9 @@ namespace Minerals
         // If smaller than 1, it looks smaller in water
         public float submergedSize = 1;
         public int submergedRadius = 2;
+
+        // Tags which determine how some options behave
+        public List<string> tags;
 
         // ======= Spawning clusters ======= //
 
@@ -887,7 +901,7 @@ namespace Minerals
                 return false;
             }
 //            Log.Message("TryFindReproductionDestination: " + position + " " + map + "  " + Mathf.CeilToInt(this.spawnRadius));
-            Predicate<IntVec3> validator = c => c.InBounds(map) && CanSpawnAt(map, c);
+            Predicate<IntVec3> validator = c => CanSpawnAt(map, c);
             return CellFinder.TryFindRandomCellNear(position, map, Mathf.CeilToInt(spawnRadius), validator, out foundCell);
         }
 

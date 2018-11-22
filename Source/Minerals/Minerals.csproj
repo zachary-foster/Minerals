@@ -73,8 +73,5 @@
     <None Include="..\..\Defs\ThingsDefs_Resources\Item_Resource_Gems.xml">
       <Link>xml\Item_Resource_Gems.xml</Link>
     </None>
-    <None Include="..\..\Defs\RecipeDefs\Recipe_Gems.xml">
-      <Link>xml\Recipe_Gems.xml</Link>
-    </None>
   </ItemGroup>
 </Project>

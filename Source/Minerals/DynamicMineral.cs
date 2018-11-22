@@ -73,15 +73,15 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Size: " + size.ToStringPercent());
-            stringBuilder.AppendLine("Growth rate: " + GrowthRate.ToStringPercent());
-            float propSubmerged = 1 - submersibleFactor();
-            if (propSubmerged > 0)
-            {
-                stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
-            }
             if (DebugSettings.godMode)
             {
+                stringBuilder.AppendLine("Size: " + size.ToStringPercent());
+                stringBuilder.AppendLine("Growth rate: " + GrowthRate.ToStringPercent());
+                float propSubmerged = 1 - submersibleFactor();
+                if (propSubmerged > 0)
+                {
+                    stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
+                }
                 foreach (growthRateModifier mod in attributes.allRateModifiers)
                 {
                     stringBuilder.AppendLine(mod.GetType().Name + ": " + attributes.growthRateFactor(mod, getModValue(mod)));
@@ -93,14 +93,24 @@ namespace Minerals
 
         public override void TickLong()
         {
+
             // Try to grow
             float GrowthThisTick = GrowthPerTick;
-            size += GrowthThisTick * 2000; // dont know why 2000, just imitating what plants do
+            size += GrowthThisTick * 2000; // 1 long tick = 2000
 
             // Try to reproduce
             if (GrowthThisTick > 0 && size > attributes.minReproductionSize && Rand.Range(0f, 1f) < attributes.reproduceProp * GrowthRate * MineralsMain.Settings.reproductionFactor)
             {
                 attributes.TryReproduce(Map, Position);
+            }
+
+            // Refresh appearance if apparent size has changed
+            float apparentSize = printSize();
+            if (attributes.fastGraphicRefresh && Math.Abs(sizeWhenLastPrinted - apparentSize) > 0.1f)
+            {
+                Log.Message("refresh");
+                sizeWhenLastPrinted = apparentSize;
+                base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things);
             }
 
             // Try to die
@@ -109,11 +119,6 @@ namespace Minerals
                 Destroy(DestroyMode.Vanish);
             }
 
-            // Refresh appearance
-            if (attributes.fastGraphicRefresh)
-            {
-                DirtyMapMesh(Map);
-            }
 
         }
             
@@ -390,8 +395,6 @@ namespace Minerals
 
         public override void MapComponentTick()
         {
-            base.MapComponentTick();
-
             // Run each class' watcher
             tick_counter += 1;
             if (tick_counter > ticksPerLook)
@@ -404,7 +407,10 @@ namespace Minerals
         // The main function controlling what is done each time the map is looked at
         public void Look()
         {
+//            var watch = System.Diagnostics.Stopwatch.StartNew();
             SpawnDynamicMinerals();
+//            watch.Stop();
+//            Log.Message("SpawnDynamicMinerals() took: " + watch.ElapsedMilliseconds);
         }
 
 
@@ -412,13 +418,13 @@ namespace Minerals
         {
             foreach (ThingDef_DynamicMineral mineralType in DefDatabase<ThingDef_DynamicMineral>.AllDefs)
             {
+                //var watch = System.Diagnostics.Stopwatch.StartNew();
+                             
                 // Check that the map type is ok
                 if (! mineralType.CanSpawnInBiome(map))
                 {
                     continue;
                 }
-
-               
 
                 // Get number of positions to check
                 float numToCheck = map.Area * mineralType.spawnProb * MineralsMain.Settings.spawningFactor;
@@ -438,18 +444,10 @@ namespace Minerals
                 // Try to spawn in a subset of positions
                 for (int i = 0; i < numToCheck; i++)
                 {
-                    // Pick a random location
-                    IntVec3 aPos = map.AllCells.RandomElement();
 
-                    // If it is an associated ore, find a position nearby
-                    if (mineralType.PosIsAssociatedOre(map, aPos))
-                    {
-                        IntVec3 dest;
-                        if (mineralType.TryFindReproductionDestination(map, aPos, out dest))
-                        {
-                            aPos = dest;
-                        }
-                    }
+                    // Pick a random location
+//                    IntVec3 aPos = map.AllCells.RandomElement(); // too slow
+                    IntVec3 aPos = CellIndicesUtility.IndexToCell(Rand.RangeInclusive(0, map.Area - 1), map.Size.x);
 
                     // Dont always spawn if growth rate is not good
                     if (Rand.Range(0f, 1f) > mineralType.GrowthRateAtPos(map, aPos))
@@ -457,11 +455,26 @@ namespace Minerals
                         continue;
                     }
 
+//                    // If it is an associated ore, find a position nearby
+//                    if (mineralType.PosIsAssociatedOre(map, aPos))
+//                    {
+//                        IntVec3 dest;
+//                        if (mineralType.TryFindReproductionDestination(map, aPos, out dest))
+//                        {
+//                            aPos = dest;
+//                        }
+//                    }
+
+
                     // Try to spawn at that location
+                    //Log.Message("Trying to spawn " + mineralType.defName);
                     mineralType.TrySpawnAt(aPos, map, 0.01f);
 
                 }
-                
+
+                //watch.Stop();
+                //Log.Message("Spawning " + mineralType.defName + " took: " + watch.ElapsedMilliseconds);
+
             }
         }
     }

@@ -108,6 +108,14 @@
     <ThingsToReplace>
       <li>Slate</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>weathered</li>
+    </tags>
+    
   </ThingDef>
   
   
@@ -218,6 +226,14 @@
     <ThingsToReplace>
       <li>Slate</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>solid</li>
+    </tags>
+    
   </ThingDef>
   
 
@@ -263,6 +279,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
+      <smoothedThing>SmoothedSlate</smoothedThing>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -343,6 +360,14 @@
     <ThingsToReplace>
       <li>Slate</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>hewn</li>
+    </tags>
+    
   </ThingDef>
 
   
@@ -458,6 +483,13 @@
     <ThingsToReplace>
       <li>Slate</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+    </tags>
+    
   </ThingDef>
 
 
@@ -474,6 +506,7 @@
     <altitudeLayer>Zone</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.2</fillPercent>
+    <hideAtSnowDepth>.7</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -596,6 +629,14 @@
     <ThingsToReplace>
       <li>ChunkSlate</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>small_rock</li>
+    </tags>
+    
   </ThingDef>
   
 </Defs>

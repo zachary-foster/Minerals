@@ -114,6 +114,14 @@
     <ThingsToReplace>
       <li>Sandstone</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>weathered</li>
+    </tags>
+    
   </ThingDef>
   
   
@@ -234,6 +242,14 @@
     <ThingsToReplace>
       <li>Sandstone</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>solid</li>
+    </tags>
+    
   </ThingDef>
 
   
@@ -359,6 +375,14 @@
     <ThingsToReplace>
       <li>Sandstone</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>hewn</li>
+    </tags>
+    
   </ThingDef>
   
   
@@ -375,6 +399,7 @@
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.2</fillPercent>
+    <hideAtSnowDepth>.9</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
@@ -395,6 +420,7 @@
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
+      <smoothedThing>SmoothedSandstone</smoothedThing>
     </building>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
@@ -490,6 +516,14 @@
     <ThingsToReplace>
       <li>ChunkSandstone</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>small_rock</li>
+    </tags>
+    
   </ThingDef>
   
   
@@ -506,6 +540,7 @@
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.1</fillPercent>
+    <hideAtSnowDepth>.7</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
@@ -619,6 +654,14 @@
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
     <submergedRadius>2</submergedRadius>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>small_rock</li>
+    </tags>
+    
   </ThingDef>
   
 </Defs>

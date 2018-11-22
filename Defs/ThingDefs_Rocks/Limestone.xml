@@ -98,6 +98,14 @@
     <ThingsToReplace>
       <li>Limestone</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>weathered</li>
+    </tags>
+    
   </ThingDef>
 
   
@@ -190,6 +198,14 @@
     <ThingsToReplace>
       <li>Limestone</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>solid</li>
+    </tags>
+    
   </ThingDef>
   
 
@@ -235,6 +251,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
+      <smoothedThing>SmoothedLimestone</smoothedThing>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -297,6 +314,14 @@
     <ThingsToReplace>
       <li>Limestone</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>hewn</li>
+    </tags>
+    
   </ThingDef>
   
  
@@ -342,8 +367,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.005</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
+    <minClusterProbability>0.003</minClusterProbability>
+    <maxClusterProbability>0.009</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>2</maxClusterSize>
@@ -436,6 +461,14 @@
     <ThingsToReplace>
       <li>ChunkLimestone</li>
     </ThingsToReplace>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>boulder</li>
+    </tags>
+    
   </ThingDef>
 
 
@@ -452,6 +485,7 @@
     <altitudeLayer>SmallWire</altitudeLayer>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.25</fillPercent>
+    <hideAtSnowDepth>.7</hideAtSnowDepth>
     <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>900</MaxHitPoints>
@@ -482,10 +516,10 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0.01</minClusterProbability>
-    <maxClusterProbability>0.02</maxClusterProbability>
+    <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>4</maxClusterSize>
+    <maxClusterSize>3</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.5</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -532,7 +566,7 @@
       <li>WeatheredLimestone</li>
       <li>Limestone</li>
     </associatedOres>
-    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -571,6 +605,14 @@
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
     <submergedRadius>4</submergedRadius>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>small_rock</li>
+    </tags>
+    
   </ThingDef>
   
 
