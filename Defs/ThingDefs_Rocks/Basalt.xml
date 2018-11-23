@@ -324,6 +324,7 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>LavaRock</li>
@@ -367,7 +368,7 @@
     <statBases>
       <MaxHitPoints>1700</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-2</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -382,48 +383,7 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
-    <!--How far away it can spawn from an existing location-->
-    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>1</spawnRadius>
-    <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0</perMapProbability>
-    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0</maxClusterProbability>
-    <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
-    <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>1</initialSizeMin>
-    <initialSizeMax>1</initialSizeMax>
-    <!-- How much initial sizes of individuals randomly vary -->
-    <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-    <allowedTerrains>
-		</allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Basalt</li>
-    </neededNearbyTerrains>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.7</min>
-      <max>1.8</max>
-    </visualSizeRange>
-    <visualClustering>1.0</visualClustering>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.2</visualSpread>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.2</visualSizeVariation>
-    <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>1</maxMinedYeild>
+
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -440,11 +400,7 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-    <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
-      <li>LavaRock</li>
-    </ThingsToReplace>
-    
+
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>

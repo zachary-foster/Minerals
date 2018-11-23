@@ -885,7 +885,7 @@ namespace Minerals
             category = originalDef;
             output.size = size;
             map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Buildings);
-            Log.Message("Spawned " + defName + " at " + dest);
+            //Log.Message("Spawned " + defName + " at " + dest);
             return output;
         }
             
@@ -957,6 +957,10 @@ namespace Minerals
                 factor = factor * MineralsMain.Settings.rocksAbundanceSetting;
             }
             if (tags.Contains("wall") && MineralsMain.Settings.replaceWallsSetting == false)
+            {
+                factor = 0f;
+            }
+            if (tags.Contains("fictional") && MineralsMain.Settings.includeFictionalSetting == false)
             {
                 factor = 0f;
             }

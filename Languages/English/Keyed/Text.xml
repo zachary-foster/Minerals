@@ -9,4 +9,5 @@
 	<mineralSpawningSetting>Mineral Spawning Rate</mineralSpawningSetting>
 	<replaceWallsSetting>Replace Rock Walls</replaceWallsSetting>
 	<replaceChunksSetting>Replace Chunks</replaceChunksSetting>
+	<includeFictionalSetting>Include Fictional Minerals</includeFictionalSetting>
 </LanguageData>

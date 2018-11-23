@@ -259,7 +259,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
-      <smoothedThing>SmoothedGranite</smoothedThing>
+      <smoothedThing>SmoothedHewnGranite</smoothedThing>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -326,6 +326,7 @@
         <DropProbability>10</DropProbability>
       </li>
     </randomlyDropResources>
+
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Granite</li>
@@ -340,7 +341,72 @@
     
   </ThingDef>
  
-  
+
+  <ThingDef Name="SmoothedHewnGranite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>SmoothedHewnGranite</defName>
+    <label>Smoothed granite wall</label>
+    <description>A smoothed wall of solid granite. Its almost pretty.</description>
+    <graphicData>
+			<texPath>Things/Rock/SmoothedRockWall</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+        <li>Rock</li>
+        <li>MapEdge</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+      <color>(105,95,97)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkGranite</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
+      <mineableYield>1</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>10</DropProbability>
+      </li>
+    </randomlyDropResources>
+
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>hewn</li>
+    </tags>
+    
+  </ThingDef>
+
   
   <ThingDef Name="BoulderGranite" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>BoulderGranite</defName>
