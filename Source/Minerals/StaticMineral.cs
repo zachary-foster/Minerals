@@ -944,6 +944,10 @@ namespace Minerals
         public virtual float abundanceSettingFactor()
         {
             float factor = 1f;
+            if (tags == null || tags.Count <= 0)
+            {
+                return factor;
+            }
             if (tags.Contains("crystal"))
             {
                 factor = factor * MineralsMain.Settings.crystalAbundanceSetting;
@@ -970,6 +974,10 @@ namespace Minerals
         public virtual float diversitySettingFactor()
         {
             float factor = 1f;
+            if (tags == null || tags.Count <= 0)
+            {
+                return factor;
+            }
             if (tags.Contains("crystal"))
             {
                 factor = factor * MineralsMain.Settings.crystalDiversitySetting;

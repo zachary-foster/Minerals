@@ -207,6 +207,7 @@
         <DropProbability>0.3</DropProbability>
       </li>
     </randomlyDropResources>
+    
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>LavaRock</li>
@@ -612,23 +613,9 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
 			<li>LavaRock_Rough</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
-			<li>MarshyTerrain</li>
-			<li>MossyTerrain</li>
-			<li>Marsh</li>
-			<li>Mud</li>
-      <li>SavannaSoil</li>
       <li>WaterShallow</li>
       <li>WaterMovingShallow</li>
 			<li>WaterOceanShallow</li>
-      <li>WaterDeep</li>
-      <li>WaterMovingDeep</li>
-			<li>WaterOceanDeep</li>
 			<li>Ice</li>
 			<li>SaltField</li>
 		</allowedTerrains>
@@ -742,7 +729,7 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.0025</maxClusterProbability>
+    <maxClusterProbability>0.002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>10</minClusterSize>
     <maxClusterSize>200</maxClusterSize>

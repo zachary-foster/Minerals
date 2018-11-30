@@ -123,6 +123,11 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>0</perMapProbability>
+    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0</minClusterProbability>
+    <maxClusterProbability>0</maxClusterProbability>
     
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>

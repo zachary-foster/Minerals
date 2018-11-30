@@ -110,6 +110,7 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Sandstone</li>
@@ -238,6 +239,7 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Sandstone</li>
