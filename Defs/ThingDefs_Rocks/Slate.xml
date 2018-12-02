@@ -91,7 +91,8 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
@@ -209,7 +210,8 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
@@ -343,7 +345,8 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
@@ -424,7 +427,8 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
@@ -543,7 +547,8 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
@@ -689,7 +694,8 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>10</DropProbability>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>

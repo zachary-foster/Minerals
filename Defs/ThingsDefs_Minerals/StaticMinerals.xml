@@ -181,6 +181,9 @@
     <associatedOres>
       <li>GoldPyriteCrystal</li>
       <li>SilverPyriteCrystal</li>
+      <li>MineableGold</li>
+      <li>WeatheredOreGold</li>
+      <li>SolidOreGold</li>
     </associatedOres>
     <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- how far away it can be from needed nearby terrains-->
