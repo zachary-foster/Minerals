@@ -14,7 +14,6 @@
     </graphicData>
     <drawerType>MapMeshOnly</drawerType>
     <altitudeLayer>SmallWire</altitudeLayer>
-    <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.1</fillPercent>
     <coversFloor>false</coversFloor>
     <hideAtSnowDepth>0.7</hideAtSnowDepth>
@@ -23,7 +22,6 @@
       <Flammability>0</Flammability>
       <Beauty>3</Beauty>
     </statBases>
-    <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>80</pathCost>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
@@ -35,10 +33,10 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0.01</minClusterProbability>
-    <maxClusterProbability>0.03</maxClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>20</minClusterSize>
-    <maxClusterSize>80</maxClusterSize>
+    <minClusterSize>10</minClusterSize>
+    <maxClusterSize>50</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.4</initialSizeMin>
     <initialSizeMax>0.9</initialSizeMax>
@@ -84,7 +82,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>20</maxMeshCount>
+    <maxMeshCount>15</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>
@@ -195,7 +193,6 @@
     </graphicData>
     <drawerType>MapMeshOnly</drawerType>
     <altitudeLayer>SmallWire</altitudeLayer>
-    <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.1</fillPercent>
     <coversFloor>false</coversFloor>
     <statBases>
@@ -203,7 +200,6 @@
       <Flammability>0</Flammability>
       <Beauty>3</Beauty>
     </statBases>
-    <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <pathCost>80</pathCost>
     <hideAtSnowDepth>0.7</hideAtSnowDepth>
@@ -216,10 +212,10 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.03</maxClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
-    <maxClusterSize>50</maxClusterSize>
+    <maxClusterSize>30</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.4</initialSizeMin>
     <initialSizeMax>0.9</initialSizeMax>
@@ -250,7 +246,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>25</maxMeshCount>
+    <maxMeshCount>20</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.15</min>

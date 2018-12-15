@@ -20,16 +20,23 @@ namespace Minerals
         {
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.Minerals");
 
-            MethodInfo targetmethod = AccessTools.Method(typeof(GenStep_RockChunks),"Generate");
-
-            // find the static method to call before (i.e. Prefix) the targetmethod
+            // Spawn rocks on map generation
+            MethodInfo targetmethod = AccessTools.Method(typeof(GenStep_RockChunks), "Generate");
             HarmonyMethod postfixmethod = new HarmonyMethod(typeof(HarmonyPatches).GetMethod("initNewMap"));
-
             harmony.Patch(targetmethod, null, postfixmethod) ;
+
+//            // modify NPS frost
+//            MethodInfo frostMethod = AccessTools.Method(Type.GetType("NPS.FrostGrid"), "CheckVisualOrPathCostChange");
+//            HarmonyMethod newFrostMethod = new HarmonyMethod(typeof(HarmonyPatches).GetMethod("myCheckVisualOrPathCostChange"));
+//            harmony.Patch(frostMethod, null, null, newFrostMethod) ;
+
         }
 
         public static void initNewMap(GenStep_RockChunks __instance, Map map) {
             mapBuilder.initAll(map);
         }
+
+//        public static void myCheckVisualOrPathCostChange(MapComponent __instance, IntVec3 c, float oldDepth, float newDepth) {
+//        }
     }
 }

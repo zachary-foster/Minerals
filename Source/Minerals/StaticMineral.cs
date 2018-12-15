@@ -24,6 +24,13 @@ namespace Minerals
 
         // The current size of the mineral
         protected float mySize = 1f;
+
+        // Cache for mineral texture locations
+        protected Vector3[] textureLocations;
+
+        // Cache for mineral texture sizes
+        protected float[] textureSizes;
+
         public float size
         {
             get
@@ -250,9 +257,9 @@ namespace Minerals
             return attributes.submergedSize + (1 - attributes.submergedSize) * propDry;
         }
 
-        public virtual float printSize()
+        public virtual float printSizeFactor()
         {
-            float effectiveSize = size;
+            float effectiveSize = 1f;
             if (attributes.submergedSize < 1)
             {
                 effectiveSize = effectiveSize * submersibleFactor();
@@ -261,14 +268,100 @@ namespace Minerals
             return effectiveSize;
         }
 
+        public virtual float printSize()
+        {
+            return printSizeFactor() * size;
+        }
+
+        public virtual void initializeTextureLocations()
+        {
+
+            Rand.PushState();
+            Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
+
+            // initalize the array if it has not already been initalized
+            if (textureLocations == null)
+            {
+                textureLocations = new Vector3[attributes.maxMeshCount];
+            }
+
+            // Calculate the location of each texture
+            Vector3 trueCenter = this.TrueCenter();
+            for (int i = 0; i < textureLocations.Length; i++)
+            {
+                Vector3 pos = trueCenter;
+                pos.y = attributes.Altitude;
+                pos.x += randPos(attributes.visualClustering, attributes.visualSpread);
+                pos.z += randPos(attributes.visualClustering, attributes.visualSpread);
+                textureLocations[i] = pos;
+            }
+
+            Rand.PopState();
+        }
+
+        public virtual Vector3 getTextureLocation(int index)
+        {
+            // initalize the array if it has not already been initalized
+            if (textureLocations == null)
+            {
+                initializeTextureLocations();
+            }
+
+            // Return per-calculated location
+            return(textureLocations[index]);
+        }
+
+        public virtual void initializeTextureSizes() {
+        
+            Rand.PushState();
+            Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
+
+            // initalize the array if it has not already been initalized
+            if (textureSizes == null)
+            {
+                textureSizes = new float[attributes.maxMeshCount];
+            }
+
+            // Calculate the size of each texture
+            for (int i = 0; i < textureLocations.Length; i++)
+            {
+                // Get location of texture
+                Vector3 pos = getTextureLocation(i);
+
+                // Adjust size for distance from center to other crystals
+                float thisSize = GetSizeBasedOnNearest(pos, size);
+
+                // Add random variation
+                thisSize = thisSize + (thisSize * Rand.Range(- attributes.visualSizeVariation, attributes.visualSizeVariation));
+
+                textureSizes[i] = thisSize;
+            }
+
+            Rand.PopState();
+
+        }
+
+        public virtual float getTextureSize(int index)
+        {
+            // initalize the array if it has not already been initalized
+            if (textureSizes == null)
+            {
+                initializeTextureSizes();
+            }
+
+            // Return per-calculated location
+            return(textureSizes[index]);
+        }
+
         public override void Print(SectionLayer layer)
         {
-			Rand.PushState();
-			Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
-            // get print size
-            float effectiveSize = printSize();
+            Rand.PushState();
+            Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
 
-            if (effectiveSize <= 0)
+            // get print size
+            float sizeFactor = printSizeFactor();
+
+            if (sizeFactor <= 0)
             {
                 Rand.PopState();
                 return;
@@ -277,25 +370,18 @@ namespace Minerals
             if (this.attributes.graphicData.graphicClass.Name != "Graphic_Random" || this.attributes.graphicData.linkType == LinkDrawerType.CornerFiller) {
 				base.Print(layer);
 			} else {
-                int numToPrint = Mathf.CeilToInt(effectiveSize * (float)attributes.maxMeshCount);
+                int numToPrint = Mathf.CeilToInt(printSize() * (float)attributes.maxMeshCount);
 				if (numToPrint < 1)
 				{
 					numToPrint = 1;
 				}
-				Vector3 trueCenter = this.TrueCenter();
 				for (int i = 0; i < numToPrint; i++)
 				{
-					// Calculate location
-					Vector3 center = trueCenter;
-					center.y = attributes.Altitude;
-					center.x += randPos(attributes.visualClustering, attributes.visualSpread);
-					center.z += randPos(attributes.visualClustering, attributes.visualSpread);
+					// Get location
+                    Vector3 center = getTextureLocation(i);
 
-					// Adjust size for distance from center to other crystals
-                    float thisSize = GetSizeBasedOnNearest(center, effectiveSize);
-
-					// Add random variation
-					thisSize = thisSize + (thisSize * Rand.Range(- attributes.visualSizeVariation, attributes.visualSizeVariation));
+					// Get size
+                    float thisSize = getTextureSize(i) * sizeFactor;
 					if (thisSize <= 0)
 					{
 						continue;
@@ -304,22 +390,11 @@ namespace Minerals
 					// Print image
 					Material matSingle = Graphic.MatSingle;
 					Vector2 sizeVec = new Vector2(thisSize, thisSize);
-					Material mat = matSingle;
-					Printer_Plane.PrintPlane(layer, center, sizeVec, mat, 0, Rand.Bool);
+                    Printer_Plane.PrintPlane(layer, center, sizeVec, matSingle, 0, Rand.Bool);
 				}
-				//            if (this.attributes.graphicData.shadowData != null)
-				//            {
-				//                Vector3 center2 = a + this.attributes.graphicData.shadowData.offset * num2;
-				//                if (flag)
-				//                {
-				//                    center2.z = this.Position.ToVector3Shifted().z + this.attributes.graphicData.shadowData.offset.z;
-				//                }
-				//                center2.y -= 0.046875f;
-				//                Vector3 volume = this.attributes.graphicData.shadowData.volume * num2;
-				//                Printer_Shadow.PrintShadow(layer, center2, volume, Rot4.North);
-				//            }
 			}
-			Rand.PopState();
+
+            Rand.PopState();
 
         }
 
@@ -366,13 +441,7 @@ namespace Minerals
                 }
 
                 // Pick a random path 
-                //Rand.PushState();
-                //Rand.Seed = Position.GetHashCode();
                 Graphic printedTexture = textures.RandomElement();
-                //Rand.PopState();
-
-                // get graphic
-                //Graphic printedTexture = GraphicDatabase.Get<Graphic_Single>(printedTexturePath, ShaderDatabase.ShaderFromType(attributes.graphicData.shaderType));
 
                 // conver to corner filler if needed
                 printedTexture = GraphicDatabase.Get<Graphic_Single>(printedTexture.path, printedTexture.Shader, printedTexture.drawSize, DrawColor, DrawColorTwo, printedTexture.data);
@@ -386,8 +455,7 @@ namespace Minerals
 
                 }
 
-                //return printedTexture.GetColoredVersion(printedTexture.Shader, DrawColor, DrawColorTwo);
-            }
+             }
         }
 
         public virtual float RandomColorProb(Color colorUsed) {
@@ -1051,7 +1119,7 @@ namespace Minerals
             {
                 output = false;
             }
-            if (tags.Contains("boulder") && MineralsMain.Settings.replaceChunksSetting == false)
+            if (tags.Contains("chunk_replacer") && MineralsMain.Settings.replaceChunksSetting == false)
             {
                 output = false;
             }

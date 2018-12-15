@@ -8,7 +8,6 @@
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
-    <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
@@ -18,6 +17,7 @@
     <holdsRoof>true</holdsRoof>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>true</blockLight>
+    <blockWind>true</blockWind>
     <mineable>true</mineable>
     <hideAtSnowDepth>2</hideAtSnowDepth>
     <statBases>
@@ -52,7 +52,6 @@
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
-    <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
@@ -62,6 +61,7 @@
     <holdsRoof>true</holdsRoof>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>true</blockLight>
+    <blockWind>true</blockWind>
     <mineable>true</mineable>
     <hideAtSnowDepth>2</hideAtSnowDepth>
     <statBases>
@@ -95,7 +95,6 @@
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
-    <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
@@ -105,6 +104,7 @@
     <holdsRoof>true</holdsRoof>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>true</blockLight>
+    <blockWind>true</blockWind>
     <mineable>true</mineable>
     <hideAtSnowDepth>2</hideAtSnowDepth>
     <statBases>
@@ -175,6 +175,53 @@
     <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
+  </ThingDef>
+  
+
+  <ThingDef Name="PassableRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    
+    <altitudeLayer>SmallWire</altitudeLayer>
+    <neverMultiSelect>true</neverMultiSelect>
+    
+  </ThingDef>
+  
+
+  <ThingDef Name="SmallRockBase" ParentName="PassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    
+    <fillPercent>0.2</fillPercent>
+    <hideAtSnowDepth>.7</hideAtSnowDepth>
+    <blockWind>false</blockWind>
+
+    <!-- If smaller than 1, it looks smaller in water -->
+    <submergedSize>0</submergedSize>
+    <submergedRadius>2</submergedRadius>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>small_rock</li>
+    </tags>
+    
+  </ThingDef>
+  
+  
+  <ThingDef Name="BoulderRockBase" ParentName="PassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    
+    <fillPercent>0.6</fillPercent>
+    <hideAtSnowDepth>2</hideAtSnowDepth>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+
+    <!-- If smaller than 1, it looks smaller in water -->
+    <submergedSize>0.5</submergedSize>
+    <submergedRadius>4</submergedRadius>
+    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>boulder</li>
+    </tags>
+    
   </ThingDef>
   
   

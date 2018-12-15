@@ -45,12 +45,6 @@
     <initialSizeMax>1</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <!--
 		<allowedTerrains>
@@ -81,8 +75,6 @@
     <visualSpread>0.5</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
-    <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>1</maxMinedYeild>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -154,12 +146,6 @@
     <initialSizeMax>1</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <!--
 		<allowedTerrains>
@@ -190,8 +176,6 @@
     <visualSpread>0.2</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
-    <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>1</maxMinedYeild>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -279,12 +263,6 @@
     <initialSizeMax>1</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <!--
 		<allowedTerrains>
@@ -315,8 +293,6 @@
     <visualSpread>0.2</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.2</visualSizeVariation>
-    <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>1</maxMinedYeild>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -412,7 +388,7 @@
   </ThingDef>
 
   
-  <ThingDef Name="BoulderGranite" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
+  <ThingDef Name="BoulderGranite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>BoulderGranite</defName>
     <label>Granite Boulder</label>
     <description>Granite boulder. These can be climbed over with some difficulty and provide good cover.</description>
@@ -422,19 +398,12 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
     </graphicData>
-    <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.6</fillPercent>
-    <hideAtSnowDepth>2</hideAtSnowDepth>
-    <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>1300</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
-    <selectable>true</selectable>
-    <neverMultiSelect>true</neverMultiSelect>
     <pathCost>100</pathCost>
-    <passability>PassThroughOnly</passability>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
@@ -447,16 +416,14 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
-    <filthLeaving>Filth_RubbleRock</filthLeaving>
-    <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.005</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
+    <minClusterProbability>0.004</minClusterProbability>
+    <maxClusterProbability>0.008</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>3</maxClusterSize>
@@ -465,12 +432,6 @@
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.5</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
 			<li>Granite_Rough</li>
@@ -525,8 +486,6 @@
     <visualSpread>0.7</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.1</visualSizeVariation>
-    <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>1</maxMinedYeild>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -539,27 +498,21 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-    
-    <!-- If smaller than 1, it looks smaller in water -->
-    <submergedSize>0.5</submergedSize>
-    <submergedRadius>4</submergedRadius>
-    
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>ChunkGranite</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
-      <li>wall</li>
       <li>boulder</li>
+      <li>chunk_replacer</li>
     </tags>
-    
+
   </ThingDef>
   
 
-  <ThingDef Name="PassableGranite" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
+  <ThingDef Name="PassableGranite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>PassableGranite</defName>
     <label>Granite rocks</label>
     <description>Granite rocks that are easily walked over and provide little cover.</description>
@@ -569,18 +522,12 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
     </graphicData>
-    <altitudeLayer>SmallWire</altitudeLayer>
-    <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.3</fillPercent>
-    <hideAtSnowDepth>.9</hideAtSnowDepth>
-    <coversFloor>false</coversFloor>
     <statBases>
       <MaxHitPoints>900</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
-    <selectable>true</selectable>
-    <neverMultiSelect>true</neverMultiSelect>
     <pathCost>20</pathCost>
     <building>
       <isInert>true</isInert>
@@ -594,8 +541,6 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
-    <filthLeaving>Filth_RubbleRock</filthLeaving>
-    <mineable>true</mineable>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
@@ -603,7 +548,7 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0.01</minClusterProbability>
-    <maxClusterProbability>0.03</maxClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>4</maxClusterSize>
@@ -612,12 +557,6 @@
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
 			<li>Granite_Rough</li>
@@ -658,7 +597,7 @@
       <li>WeatheredGranite</li>
       <li>Granite</li>
     </associatedOres>
-    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -675,8 +614,6 @@
     <visualSpread>1.2</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.3</visualSizeVariation>
-    <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>1</maxMinedYeild>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -689,18 +626,7 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-    
-    <!-- If smaller than 1, it looks smaller in water -->
-    <submergedSize>0</submergedSize>
-    <submergedRadius>4</submergedRadius>
-    
-    <!-- Tags which determine how some options behave  -->
-    <tags>
-      <li>rock</li>
-      <li>wall</li>
-      <li>small_rock</li>
-    </tags>
-    
+
   </ThingDef>
 
 

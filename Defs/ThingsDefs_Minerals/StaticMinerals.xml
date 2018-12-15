@@ -91,7 +91,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>22</maxMeshCount>
+    <maxMeshCount>15</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>
@@ -195,11 +195,11 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>45</maxMeshCount>
+    <maxMeshCount>25</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.05</min>
-      <max>0.5</max>
+      <min>0.1</min>
+      <max>0.6</max>
     </visualSizeRange>
     <visualClustering>0.3</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -368,7 +368,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>30</maxMeshCount>
+    <maxMeshCount>25</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.05</min>
@@ -491,7 +491,7 @@
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.003</maxClusterProbability>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>35</maxMeshCount>
+    <maxMeshCount>25</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.1</min>
@@ -557,7 +557,7 @@
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.003</maxClusterProbability>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>10</maxMeshCount>
+    <maxMeshCount>7</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.1</min>
@@ -659,7 +659,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>40</maxMeshCount>
+    <maxMeshCount>30</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>
@@ -867,7 +867,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>15</maxMeshCount>
+    <maxMeshCount>12</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.1</min>
@@ -990,7 +990,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>15</maxMeshCount>
+    <maxMeshCount>12</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.1</min>
@@ -1122,7 +1122,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>12</maxMeshCount>
+    <maxMeshCount>10</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.1</min>
@@ -1231,7 +1231,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>40</maxMeshCount>
+    <maxMeshCount>30</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.3</min>
@@ -1309,7 +1309,7 @@
     </associatedOres>
     <nearAssociatedOreBonus>50</nearAssociatedOreBonus>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>40</maxMeshCount>
+    <maxMeshCount>30</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>
