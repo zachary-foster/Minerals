@@ -409,8 +409,8 @@
 
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.9</min>
-      <max>2.1</max>
+      <min>2.0</min>
+      <max>2.2</max>
     </visualSizeRange>
 
     <randomlyDropResources>
@@ -448,6 +448,12 @@
     </statBases>
     <description>Deposits of Coal Ore. Coal is useful as a reaction agent in metal alloy production.</description>
 
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>2.0</min>
+      <max>2.2</max>
+    </visualSizeRange>
+    
     <randomlyDropResources>
       <li>
         <ResourceDefName>Coal</ResourceDefName>

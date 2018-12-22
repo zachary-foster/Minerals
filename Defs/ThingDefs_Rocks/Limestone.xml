@@ -603,11 +603,11 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>3</maxMeshCount>
+    <maxMeshCount>2</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.3</min>
-      <max>0.8</max>
+      <min>0.5</min>
+      <max>0.7</max>
     </visualSizeRange>
     <visualClustering>0.2</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->

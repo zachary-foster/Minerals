@@ -46,9 +46,7 @@ namespace Minerals
                 {
                     output = negativeFactors.Sum();
                 }
-
-                // if all positive, multiply them
-                if (positiveFactors.Count > 0)
+                else if (positiveFactors.Count > 0) // if all positive, multiply them
                 {
                     output = positiveFactors.Aggregate(1f, (acc, val) => acc * val);
                 }

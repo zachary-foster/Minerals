@@ -603,7 +603,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>3</maxMeshCount>
+    <maxMeshCount>2</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.5</min>

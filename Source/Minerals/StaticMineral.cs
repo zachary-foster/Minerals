@@ -227,7 +227,7 @@ namespace Minerals
 
             // Check if is on dry land
             TerrainDef myTerrain = Map.terrainGrid.TerrainAt(Position);
-            if (!(myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("water")))
+            if (!(myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("water") || myTerrain.defName.Contains("IceShallow")) || myTerrain.defName.Contains("MuddyIce"))
             {
                 return 1f;
             }
@@ -244,7 +244,8 @@ namespace Minerals
                     if (checkedPosition.InBounds(Map))
                     {
                         TerrainDef terrain = Map.terrainGrid.TerrainAt(checkedPosition);
-                        if (!(terrain.defName.Contains("Water") || terrain.defName.Contains("water")))
+                        if (!(terrain.defName.Contains("Water") || terrain.defName.Contains("water") || myTerrain.defName.Contains("IceShallow") || myTerrain.defName.Contains("MuddyIce")
+                        ))
                         {
                             dryCount = dryCount + 1;
                         }

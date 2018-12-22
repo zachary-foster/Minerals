@@ -191,6 +191,7 @@
     <fillPercent>0.2</fillPercent>
     <hideAtSnowDepth>.7</hideAtSnowDepth>
     <blockWind>false</blockWind>
+    <pathCost>20</pathCost>
 
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
@@ -211,6 +212,7 @@
     <hideAtSnowDepth>2</hideAtSnowDepth>
     <passability>PassThroughOnly</passability>
     <blockWind>true</blockWind>
+    <pathCost>100</pathCost>
 
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0.5</submergedSize>

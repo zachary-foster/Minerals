@@ -59,12 +59,6 @@
     <initialSizeMax>.95</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <!--
 		<allowedTerrains>
@@ -159,12 +153,6 @@
     <initialSizeMax>.7</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <!--
 		<allowedTerrains>
@@ -329,12 +317,6 @@
     <initialSizeMax>.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>0.4</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Granite_Rough</li>
@@ -627,12 +609,6 @@
     <initialSizeMax>.8</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.4</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Limestone_Rough</li>
@@ -842,12 +818,6 @@
     <initialSizeMax>.7</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.1</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Marble_Rough</li>
@@ -959,12 +929,6 @@
     <initialSizeMax>.8</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.1</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Granite_Rough</li>
@@ -1081,12 +1045,6 @@
     <initialSizeMax>.7</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.1</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Granite_Rough</li>
@@ -1112,6 +1070,9 @@
       <li>VolcanicFlow</li>
       <li>DesertSaltFields</li>
       <li>RedwoodForest</li>
+      <li>TemperateDesert</li>
+      <li>Permafrost</li>
+      <li>Steppes</li>
     </allowedBiomes>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
@@ -1192,12 +1153,6 @@
     <initialSizeMax>.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Limestone_Rough</li>

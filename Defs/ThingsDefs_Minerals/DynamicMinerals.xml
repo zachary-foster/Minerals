@@ -30,7 +30,7 @@
     <perMapProbability>0.7</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.0005</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>3</minClusterSize>
     <maxClusterSize>20</maxClusterSize>
@@ -53,9 +53,25 @@
       <li>ColdBogArchipelago</li>
       <li>BorealForest</li>
       <li>RedwoodForest</li>
+      <li>Permafrost</li>
     </allowedBiomes>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
+      <li>MarginalSoil</li>
+      <li>PoorSoil</li>
+      <li>RockySoil</li>
+      <li>QRY_ReclaimedSoil</li>
+      <li>QRY_QuarriedGround</li>
+      <li>Gravel</li>
+      <li>Sand</li>
+      <li>Mud</li>
+      <li>Marsh</li>
+      <li>WastelandAsphalt</li>
+      <li>SaltField</li>
+      <li>Salted_Earth</li>
+      <li>SandBeachWetSalt</li>
+      <li>MuddyIce</li>
+      <li>RiverDeposit</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -75,7 +91,7 @@
     </associatedOres>
     <nearAssociatedOreBonus>30</nearAssociatedOreBonus>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
@@ -99,7 +115,7 @@
     <!-- The number of days it takes to grow at max growth speed -->
     <growDays>15</growDays>
     <!-- Chance of spawning de novo each tick -->
-    <spawnProb>0.0002</spawnProb>
+    <spawnProb>0.00005</spawnProb>
     <!-- Growth rate modifiers -->
     <tempGrowthRateModifer>
       <active>true</active>
@@ -117,7 +133,7 @@
       <maxStable>99999</maxStable>
       <maxGrow>999</maxGrow>
       <idealGrow>1</idealGrow>
-      <minGrow>0.6</minGrow>
+      <minGrow>0.5</minGrow>
       <minStable>-99999</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
     </lightGrowthRateModifer>
@@ -127,7 +143,7 @@
       <maxStable>5</maxStable>
       <maxGrow>4</maxGrow>
       <idealGrow>1</idealGrow>
-      <minGrow>-3</minGrow>
+      <minGrow>0</minGrow>
       <minStable>-99999</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
     </distGrowthRateModifer>
@@ -137,9 +153,9 @@
       <maxStable>1.5</maxStable>
       <maxGrow>1</maxGrow>
       <idealGrow>0.5</idealGrow>
-      <minGrow>0.1</minGrow>
-      <minStable>0.05</minStable>
-      <belowMinDecayRate>1</belowMinDecayRate>
+      <minGrow>-0.05</minGrow>
+      <minStable>-0.1</minStable>
+      <belowMinDecayRate>0</belowMinDecayRate>
     </fertGrowthRateModifer>
     
     <!-- Other resources it might drop -->
@@ -218,6 +234,10 @@
       <li>VolcanicFlow</li>
       <li>DesertSaltFields</li>
       <li>RedwoodForest</li>
+      <li>Wasteland</li>
+      <li>TemperateDesert</li>
+      <li>Permafrost</li>
+      <li>Steppes</li>
     </allowedBiomes>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
@@ -350,24 +370,6 @@
     <minReproductionSize>0.7</minReproductionSize>
     <reproduceProp>0.01</reproduceProp>
     <deathProb>0.2</deathProb>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <allowedBiomes>
-      <li>AridShrubland</li>
-      <li>TemperateForest</li>
-      <li>ExtremeDesert</li>
-      <li>Desert</li>
-      <li>TropicalRainforest</li>
-      <li>BorealArchipelago</li>
-      <li>BorealForest</li>
-      <li>DesertArchipelago</li>
-      <li>TemperateArchipelago</li>
-      <li>TropicalArchipelago</li>
-      <li>VolcanicFlow</li>
-      <li>DesertSaltFields</li>
-      <li>Oasis</li>
-      <li>RedwoodForest</li>
-      <li>Savanna</li>
-    </allowedBiomes>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>WaterOceanDeep</li>
@@ -526,33 +528,6 @@
     <minReproductionSize>0.8</minReproductionSize>
     <reproduceProp>0.001</reproduceProp>
     <deathProb>0.5</deathProb>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <allowedBiomes>
-      <li>Tundra</li>
-      <li>ExtremeDesert</li>
-      <li>TropicalSwampArchipelago</li>
-      <li>BorealArchipelago</li>
-      <li>TundraArchipelago</li>
-      <li>ColdBogArchipelago</li>
-      <li>DesertArchipelago</li>
-      <li>VolcanicFlow</li>
-      <li>AridShrubland</li>
-      <li>TemperateForest</li>
-      <li>ExtremeDesert</li>
-      <li>Desert</li>
-      <li>TropicalRainforest</li>
-      <li>BorealArchipelago</li>
-      <li>BorealForest</li>
-      <li>DesertArchipelago</li>
-      <li>TemperateArchipelago</li>
-      <li>TropicalArchipelago</li>
-      <li>VolcanicFlow</li>
-      <li>DesertSaltFields</li>
-      <li>Oasis</li>
-      <li>RedwoodForest</li>
-      <li>IceSheet</li>
-      <li>Savanna</li>
-    </allowedBiomes>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>Lava</li>
