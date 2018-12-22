@@ -25,8 +25,6 @@ dig them up and use them to stop meat from spoiling.
 
 **Beauty:** 15
 
-**Yields:** 20 Coldstone
-
 ![](Textures/Things/Mineral/ColdstoneCrystal/ColdstoneCrystalA.png)
 ![](Textures/Things/Mineral/ColdstoneCrystal/ColdstoneCrystalB.png)
 ![](Textures/Things/Mineral/ColdstoneCrystal/ColdstoneCrystalC.png)
@@ -44,8 +42,6 @@ accessible deposits left in the more habitable parts of this rimworld.
 **defName:** GlowstoneCrystal
 
 **Beauty:** 20
-
-**Yields:** 20 Glowstone
 
 ![](Textures/Things/Mineral/GlowstoneCrystal/GlowstoneCrystalA.png)
 ![](Textures/Things/Mineral/GlowstoneCrystal/GlowstoneCrystalB.png)
@@ -65,15 +61,11 @@ Only persists in dry climates. Can be harvested to preserve food.
 
 **Beauty:** 2
 
-**Yields:** 20 Salt
-
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalA.png)
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalB.png)
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalC.png)
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalD.png)
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalE.png)
-
-![](readme_images/ZF_SaltCrystal.jpg)
 
 ### Sulfur Crystals
 
@@ -84,15 +76,11 @@ seems to be actively growing.
 
 **Beauty:** 1
 
-**Yields:** 10 Sulfur
-
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalA.png)
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalB.png)
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalC.png)
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalD.png)
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalE.png)
-
-![](readme_images/SulfurCrystal.jpg)
 
 Static minerals
 ---------------
@@ -110,10 +98,11 @@ useful. Yeilds rubble if mined.
 
 **Beauty:** 5
 
-**Yields:** 20 CrushedStone
-
+![](Textures/Things/Mineral/CalciteCrystal/CalciteCrystalA_m.png)
 ![](Textures/Things/Mineral/CalciteCrystal/CalciteCrystalA.png)
+![](Textures/Things/Mineral/CalciteCrystal/CalciteCrystalB_m.png)
 ![](Textures/Things/Mineral/CalciteCrystal/CalciteCrystalB.png)
+![](Textures/Things/Mineral/CalciteCrystal/CalciteCrystalC_m.png)
 ![](Textures/Things/Mineral/CalciteCrystal/CalciteCrystalC.png)
 
 ![](readme_images/CalciteCrystal.jpg)
@@ -128,10 +117,11 @@ a while a gem-quality peice might be found.
 
 **Beauty:** 10
 
-**Yields:** 15 GlassBatch
-
+![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalA_m.png)
 ![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalA.png)
+![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalB_m.png)
 ![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalB.png)
+![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalC_m.png)
 ![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalC.png)
 
 ![](readme_images/QuartzCrystal.jpg)
@@ -146,51 +136,14 @@ when mined. Sometimes a gem-quality peice might be found.
 
 **Beauty:** 15
 
-**Yields:** 15 GlassBatch
-
+![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalA_m.png)
 ![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalA.png)
+![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalB_m.png)
 ![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalB.png)
+![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalC_m.png)
 ![](Textures/Things/Mineral/QuartzCrystal/QuartzCrystalC.png)
 
 ![](readme_images/AmethystCrystal.jpg)
-
-### Obsidian
-
-A volcanic glass formed when lava cools quickly at the surface. Valued
-by the tribal inhabitants of this rimworld for making knifes, handaxes,
-and arrowheads.
-
-**defName:** Obsidian
-
-**Beauty:** 10
-
-**Yields:** 30 ObsidianShard
-
-![](Textures/Things/Mineral/Obsidian/ObsidianA.png)
-![](Textures/Things/Mineral/Obsidian/ObsidianB.png)
-![](Textures/Things/Mineral/Obsidian/ObsidianC.png)
-![](Textures/Things/Mineral/Obsidian/ObsidianD.png)
-
-![](readme_images/Obsidian.jpg)
-
-### Flint Nodule
-
-Formations of microcrystalline silicon dioxide found in sedimentary
-rocks. Valued by the tribal inhabitants of this rimworld for making
-knifes, handaxes, and arrowheads.
-
-**defName:** FlintNodule
-
-**Beauty:** 1
-
-**Yields:** 20 FlintShard
-
-![](Textures/Things/Mineral/FlintNodule/FlintNoduleA.png)
-![](Textures/Things/Mineral/FlintNodule/FlintNoduleB.png)
-![](Textures/Things/Mineral/FlintNodule/FlintNoduleC.png)
-![](Textures/Things/Mineral/FlintNodule/FlintNoduleD.png)
-
-![](readme_images/FlintNodule.jpg)
 
 ### Schorl Crystal
 
@@ -201,12 +154,20 @@ mineral.
 
 **Beauty:** 4
 
-**Yields:** 10 CrushedStone
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA_m.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB_m.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC_m.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD_m.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE_m.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF_m.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF.png)
 
-![](Textures/Things/Mineral/SchorlCrystal/SchorlCrystalB.png)
-![](Textures/Things/Mineral/SchorlCrystal/SchorlCrystalC.png)
-![](Textures/Things/Mineral/SchorlCrystal/SchorlCrystalD.png)
-![](Textures/Things/Mineral/SchorlCrystal/SchorlCrystalE.png)
+![](readme_images/SchorlCrystal.jpg)
 
 ### Dravite Crystal
 
@@ -217,14 +178,20 @@ variations. This tan variety sometimes yeilds gem-quality stones.
 
 **Beauty:** 10
 
-**Yields:** 10 CrushedStone
-
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF.png)
+
+![](readme_images/DraviteCrystal.jpg)
 
 ### Rubellite Crystal
 
@@ -235,13 +202,17 @@ variations. This red variety often yeilds high quality gemstones.
 
 **Beauty:** 20
 
-**Yields:** 10 CrushedStone
-
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF.png)
 
 ![](readme_images/RubelliteCrystal.jpg)
@@ -255,14 +226,20 @@ variations. This blue-green variety often yeilds high quality gemstones.
 
 **Beauty:** 20
 
-**Yields:** 10 CrushedStone
-
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE.png)
+![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF_m.png)
 ![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF.png)
+
+![](readme_images/IndicoliteCrystal.jpg)
 
 ### Magnetite Crystals
 
@@ -273,12 +250,15 @@ igenous rocks.
 
 **Beauty:** 3
 
-**Yields:** 20 Steel
-
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalB_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalB.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalC_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalC.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalD_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalD.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalE_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalE.png)
 
 ![](readme_images/MagnetiteCrystal.jpg)
@@ -293,13 +273,18 @@ variety known as lodestone.
 
 **Beauty:** 3
 
-**Yields:** 10 MagneticMaterial
-
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalB_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalB.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalC_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalC.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalD_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalD.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalE_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalE.png)
+
+![](readme_images/LodestoneCrystal.jpg)
 
 ### Cassiterite Crystals
 
@@ -310,12 +295,15 @@ stones.
 
 **Beauty:** 3
 
-**Yields:** 20 Tin
-
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalB_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalB.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalC_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalC.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalD_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalD.png)
+![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalE_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalE.png)
 
 ![](readme_images/CassiteriteCrystal.jpg)
@@ -330,8 +318,6 @@ patch is a deep red.
 
 **Beauty:** 15
 
-**Yields:** 5 CrushedStone
-
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalA.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalB.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalC.png)
@@ -340,6 +326,8 @@ patch is a deep red.
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalF.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalG.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalH.png)
+
+![](readme_images/RubyCrystal.jpg)
 
 ### Sapphires embedded in rock
 
@@ -351,8 +339,6 @@ a deep blue.
 
 **Beauty:** 15
 
-**Yields:** 5 CrushedStone
-
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalA.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalB.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalC.png)
@@ -361,6 +347,8 @@ a deep blue.
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalF.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalG.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalH.png)
+
+![](readme_images/SapphireCrystal.jpg)
 
 ### Emeralds embedded in rock
 
@@ -371,8 +359,6 @@ impurities of chromium.
 **defName:** EmeraldCrystal
 
 **Beauty:** 15
-
-**Yields:** 5 CrushedStone
 
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalA.png)
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalB.png)
@@ -390,14 +376,14 @@ mineral often used for gemstones. This variety is clear.
 
 **Beauty:** 15
 
-**Yields:** 5 CrushedStone
-
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalA.png)
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalB.png)
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalC.png)
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalD.png)
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalE.png)
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalF.png)
+
+![](readme_images/BerylCrystal.jpg)
 
 ### Diamonds embedded in rock
 
@@ -408,15 +394,11 @@ gemstone.
 
 **Beauty:** 20
 
-**Yields:** 5 CrushedStone
-
 ![](Textures/Things/Mineral/DiamondCrystal/DiamondCrystalA.png)
 ![](Textures/Things/Mineral/DiamondCrystal/DiamondCrystalB.png)
 ![](Textures/Things/Mineral/DiamondCrystal/DiamondCrystalC.png)
 ![](Textures/Things/Mineral/DiamondCrystal/DiamondCrystalD.png)
 ![](Textures/Things/Mineral/DiamondCrystal/DiamondCrystalE.png)
-
-![](readme_images/DiamondCrystal.jpg)
 
 ### Uraninite Deposit
 
@@ -427,12 +409,15 @@ silver.
 
 **Beauty:** 3
 
-**Yields:** 20 Uranium
-
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositA_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositA.png)
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositB_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositB.png)
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositC_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositC.png)
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositD_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositD.png)
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositE_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositE.png)
 
 ![](readme_images/UraniniteDeposit.jpg)
@@ -447,34 +432,117 @@ azurite, calcite, and limestone rock.
 
 **Beauty:** 15
 
-**Yields:** 10 Copper
-
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositA_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositA.png)
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositB_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositB.png)
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositC_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositC.png)
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositD_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositD.png)
+![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositE_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositE.png)
 
-Cutting gems
-------------
+![](readme_images/MalachiteDeposit.jpg)
 
-Some gem-quality crystals can be found when mining some minerals. These
-can be cut into gems to be used for some crafting recipes or sold to
-traders. Gems are particularly light and valuable, making them excellent
-for trading and attracting raiders.
+Rocks
+-----
 
-![](readme_images/CuttingGems.jpg)
+The minerals mod enhances the aesthetic and practical aspects of rocks,
+including walls and passable obstacles like boulders. Unlike the vanilla
+rock walls, these rocks might drop other resources like rubble, sand,
+gems, obsidian, and flint, depending on the type. Each type of rock
+(limestone, granite, etc) has distinct advantages and disadvantages.
+Below are how each type might affect gameplay, in order of hit points.
 
-Obsidian/Flint crafting
------------------------
+### Sandstone
 
-Flint and obsidian can be used to make "tribal" tools like knives and
-handaxes. They have decent armor penetration, but are very brittle, so
-tools will get destroyed often when used for self defense. Flint and
-obsidian arrows are better than standard stone arrows but not as good as
-metal arrows.
+Hit points / time to mine: **lowest** Chunk drop rate: **highest**
+Always drops: crushed rock, sand Often drops: flint (MineralsCraft mod)
+Rarely drops: Rough gems Landscape: few rocks and little cover Beauty:
+**highest**
 
-![](readme_images/NeolithicCrafting.jpg)
+Sandstone is a soft sedamentary rock, so is quite easy to work with and
+mine. Since sandstone erodes faster than other rocks, sandstone
+landscapes tend to be less rocky overall and provide less cover. Unlike
+other rock type, mining sandstone yeilds sand along with crushed rock.
+
+### Slate
+
+Hit points / time to mine: low Chunk drop rate: medium Always drops:
+crushed rock Often drops: slate blocks, flint (MineralsCraft mod) Rarely
+drops: Rough gems Landscape: not rocky and little cover Beauty: medium
+
+Slate is a fine-grained metamorphic rock formed from compacted volcanic
+ash or silt. It forms in regular layers that are rectangular enough to
+be used for buildings without stoneworking.
+
+### Limestone
+
+Hit points / time to mine: medium Chunk drop rate: high Always drops:
+crushed rock Often drops: flint (MineralsCraft mod) Rarely drops: Rough
+gems Landscape: somewhat rocky and some cover Beauty: low
+
+Limestone is a hard sedamentary rock. Its uniformaity and medium
+hardness makes limestone a good building material.
+
+### Marble
+
+Hit points / time to mine: high Chunk drop rate: medium Always drops:
+crushed rock Often drops: Rough gems Landscape: somewhat rocky and lots
+of cover Beauty: high
+
+Marble is a metamorphic rock of metled and recrystallized limestone. It
+is often used in decorative applications but is also quite hard.
+
+### Basalt
+
+Hit points / time to mine: high Chunk drop rate: low Always drops:
+crushed rock Often drops: obsidian (MineralsCraft mod) Rarely drops:
+Rough gems Landscape: very rocky and some cover Beauty: **lowest**
+
+Basalt is the most common igneous rock and is often associated with
+recent volcanic activlity. Recent lava flows can make basalt landscapes
+variable, very rocky, and difficult to build on.
+
+### Granite
+
+Hit points / time to mine: **highest** Chunk drop rate: **lowest**
+Always drops: crushed rock Often drops: Rough gems Landscape: somewhat
+rocky and lots of cover Beauty: medium
+
+Granite is an igenous rock which cooled slowly deep underground,
+allowing for large crystals to form. It is very strong, but difficult to
+quarry.
+
+### Rock types
+
+There are three sizes of rocks, which vary in how they restrict movement
+and provide cover.
+
+#### Weathered rock walls
+
+These replace the vanilla rock walls that are unroofed when the map
+spawns. They have lower hit points than rocks under a mountain.
+
+#### Solid rock walls
+
+These replace the vanilla rock walls that are roofed when the map
+spawns.
+
+#### Hewn rock walls
+
+These replace the vanilla rock walls that are on the inside of the
+mountain. They are only seen when mining.
+
+#### Boulders
+
+Large rocks that can be climbed over, but cannot be stood on. They
+provide very good cover.
+
+#### Rocks
+
+Low numerous rocks that slow movement a little.
 
 Installation
 ------------
@@ -640,6 +708,12 @@ non-commercial reuse. Here are the list of images used:
 -   <https://commons.wikimedia.org/wiki/File:Diamond-dimd5a.jpg>
 -   <https://vi.wikipedia.org/wiki/T%E1%BA%ADp_tin:Pitchblende_schlema-alberoda.JPG>
 -   <https://www.flickr.com/photos/jahansell/5379933134>
-- http://www.geograph.ie/photo/3466167 © Copyright Richard Webb and licensed for reuse under Creative Commons Licence.
-- https://www.flickr.com/photos/spelio/43795122372/in/photostream/
-- https://commons.wikimedia.org/wiki/File:Deritend_Car_Park.jpg
+-   <http://www.geograph.ie/photo/4763916> © Copyright Eric Jones and
+    licensed for reuse under this Creative Commons Licence.
+-   <https://www.flickr.com/photos/jsjgeology/29921127566>
+    CopyrightJames St. John
+-   <https://www.flickr.com/photos/brewbooks/757551002/in/photostream/>
+    Copyright brewbooks
+-   <https://www.flickr.com/photos/98425334@N00/130957324/>
+-   <https://commons.wikimedia.org/wiki/File:River_side_pebbles_and_rocks.jpg>
+    Shashank ghosh

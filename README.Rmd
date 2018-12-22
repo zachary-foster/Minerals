@@ -55,6 +55,9 @@ Sandstone is a soft sedamentary rock, so is quite easy to work with and mine.
 Since sandstone erodes faster than other rocks, sandstone landscapes tend to be less rocky overall and provide less cover.
 Unlike other rock type, mining sandstone yeilds sand along with crushed rock.
 
+```{r}
+# print_minerals("Defs/ThingDefs_Rocks/Sandstone.xml")
+```
 
 ### Slate
 
@@ -69,6 +72,9 @@ Beauty: medium
 Slate is a fine-grained metamorphic rock formed from compacted volcanic ash or silt.
 It forms in regular layers that are rectangular enough to be used for buildings without stoneworking.
 
+```{r}
+# print_minerals("Defs/ThingDefs_Rocks/Slate.xml")
+```
 
 ### Limestone
 
@@ -83,6 +89,9 @@ Beauty: low
 Limestone is a hard sedamentary rock.
 Its uniformaity and medium hardness makes limestone a good building material.
 
+```{r}
+# print_minerals("Defs/ThingDefs_Rocks/Limestone.xml")
+```
 
 ### Marble
 
@@ -96,6 +105,9 @@ Beauty: high
 Marble is a metamorphic rock of metled and recrystallized limestone.
 It is often used in decorative applications but is also quite hard.
 
+```{r}
+# print_minerals("Defs/ThingDefs_Rocks/Marble.xml")
+```
 
 ### Basalt
 
@@ -110,6 +122,9 @@ Beauty: **lowest**
 Basalt is the most common igneous rock and is often associated with recent volcanic activlity.
 Recent lava flows can make basalt landscapes variable, very rocky, and difficult to build on.
 
+```{r}
+# print_minerals("Defs/ThingDefs_Rocks/Basalt.xml")
+```
 
 ### Granite
 
@@ -123,6 +138,9 @@ Beauty: medium
 Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form.
 It is very strong, but difficult to quarry.
 
+```{r}
+# print_minerals("Defs/ThingDefs_Rocks/Granite.xml")
+```
 
 ### Rock types
 
