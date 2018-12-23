@@ -25,18 +25,11 @@ namespace Minerals
             HarmonyMethod postfixmethod = new HarmonyMethod(typeof(HarmonyPatches).GetMethod("initNewMap"));
             harmony.Patch(targetmethod, null, postfixmethod) ;
 
-//            // modify NPS frost
-//            MethodInfo frostMethod = AccessTools.Method(Type.GetType("NPS.FrostGrid"), "CheckVisualOrPathCostChange");
-//            HarmonyMethod newFrostMethod = new HarmonyMethod(typeof(HarmonyPatches).GetMethod("myCheckVisualOrPathCostChange"));
-//            harmony.Patch(frostMethod, null, null, newFrostMethod) ;
-
         }
 
         public static void initNewMap(GenStep_RockChunks __instance, Map map) {
             mapBuilder.initAll(map);
         }
 
-//        public static void myCheckVisualOrPathCostChange(MapComponent __instance, IntVec3 c, float oldDepth, float newDepth) {
-//        }
     }
 }

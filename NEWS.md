@@ -1,10 +1,10 @@
-## v1.0.0
+## v1.0.4
 
-* Major update that replaces rock walls and adds other rock-related content.
+* Major update that replaces rock walls, ores, chunks, and adds other rock-related content.
 * Compatible with Rimworld 1.0
 * Lots of minor and major adjustments
-* Some content has been removed in put into optional mods, such as the cut gems and weapons (MineralsCraft mod).
-* The mod now has a setting menu when the frequency of each type of mineral or rock and be changed
+* Some content has been removed in put into optional mods, such as the cut gems and weapons. See [MineralsCraft mod](https://github.com/zachary-foster/MineralsCraft_SK)).
+* The mod now has a setting menu when the frequency of each type of mineral or rock and be changed.
 
 ## v0.6.0
 

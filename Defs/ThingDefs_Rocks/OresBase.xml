@@ -92,8 +92,35 @@
       <li>solid</li>
       <li>wall</li>
     </tags>
-    
   </ThingDef>
+  
 
+  <ThingDef Name="HewnOre" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    <defName>HewnOre</defName>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>1</mineableDropChance>
+      <mineableYield>10</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>0</perMapProbability>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>true</coloredByTerrain>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>ore</li>
+      <li>hewn</li>
+      <li>wall</li>
+    </tags>
+  </ThingDef>
+  
 
 </Defs>

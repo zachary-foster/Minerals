@@ -67,6 +67,8 @@ Only persists in dry climates. Can be harvested to preserve food.
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalD.png)
 ![](Textures/Things/Mineral/SaltCrystal/SaltCrystalE.png)
 
+![](readme_images/ZF_SaltCrystal.jpg)
+
 ### Sulfur Crystals
 
 A deposit of elemental sulfur formed by volcanic gases. This deposit
@@ -457,10 +459,13 @@ Below are how each type might affect gameplay, in order of hit points.
 
 ### Sandstone
 
-Hit points / time to mine: **lowest** Chunk drop rate: **highest**
-Always drops: crushed rock, sand Often drops: flint (MineralsCraft mod)
-Rarely drops: Rough gems Landscape: few rocks and little cover Beauty:
-**highest**
+-   Hit points / time to mine: **lowest**
+-   Chunk drop rate: **highest**
+-   Always drops: crushed rock, sand
+-   Often drops: flint (MineralsCraft mod)
+-   Rarely drops: Rough gems
+-   Landscape: few rocks and little cover
+-   Beauty: **highest**
 
 Sandstone is a soft sedamentary rock, so is quite easy to work with and
 mine. Since sandstone erodes faster than other rocks, sandstone
@@ -469,9 +474,13 @@ other rock type, mining sandstone yeilds sand along with crushed rock.
 
 ### Slate
 
-Hit points / time to mine: low Chunk drop rate: medium Always drops:
-crushed rock Often drops: slate blocks, flint (MineralsCraft mod) Rarely
-drops: Rough gems Landscape: not rocky and little cover Beauty: medium
+-   Hit points / time to mine: low
+-   Chunk drop rate: medium
+-   Always drops: crushed rock
+-   Often drops: slate blocks, flint (MineralsCraft mod)
+-   Rarely drops: Rough gems
+-   Landscape: not rocky and little cover
+-   Beauty: medium
 
 Slate is a fine-grained metamorphic rock formed from compacted volcanic
 ash or silt. It forms in regular layers that are rectangular enough to
@@ -479,27 +488,38 @@ be used for buildings without stoneworking.
 
 ### Limestone
 
-Hit points / time to mine: medium Chunk drop rate: high Always drops:
-crushed rock Often drops: flint (MineralsCraft mod) Rarely drops: Rough
-gems Landscape: somewhat rocky and some cover Beauty: low
+-   Hit points / time to mine: medium
+-   Chunk drop rate: high
+-   Always drops: crushed rock
+-   Often drops: flint (MineralsCraft mod)
+-   Rarely drops: Rough gems
+-   Landscape: somewhat rocky and some cover
+-   Beauty: low
 
 Limestone is a hard sedamentary rock. Its uniformaity and medium
 hardness makes limestone a good building material.
 
 ### Marble
 
-Hit points / time to mine: high Chunk drop rate: medium Always drops:
-crushed rock Often drops: Rough gems Landscape: somewhat rocky and lots
-of cover Beauty: high
+-   Hit points / time to mine: high
+-   Chunk drop rate: medium
+-   Always drops: crushed rock
+-   Often drops: Rough gems
+-   Landscape: somewhat rocky and lots of cover
+-   Beauty: high
 
 Marble is a metamorphic rock of metled and recrystallized limestone. It
 is often used in decorative applications but is also quite hard.
 
 ### Basalt
 
-Hit points / time to mine: high Chunk drop rate: low Always drops:
-crushed rock Often drops: obsidian (MineralsCraft mod) Rarely drops:
-Rough gems Landscape: very rocky and some cover Beauty: **lowest**
+-   Hit points / time to mine: high
+-   Chunk drop rate: low
+-   Always drops: crushed rock
+-   Often drops: obsidian (MineralsCraft mod)
+-   Rarely drops: Rough gems
+-   Landscape: very rocky and some cover
+-   Beauty: **lowest**
 
 Basalt is the most common igneous rock and is often associated with
 recent volcanic activlity. Recent lava flows can make basalt landscapes
@@ -507,9 +527,12 @@ variable, very rocky, and difficult to build on.
 
 ### Granite
 
-Hit points / time to mine: **highest** Chunk drop rate: **lowest**
-Always drops: crushed rock Often drops: Rough gems Landscape: somewhat
-rocky and lots of cover Beauty: medium
+-   Hit points / time to mine: **highest**
+-   Chunk drop rate: **lowest**
+-   Always drops: crushed rock
+-   Often drops: Rough gems
+-   Landscape: somewhat rocky and lots of cover
+-   Beauty: medium
 
 Granite is an igenous rock which cooled slowly deep underground,
 allowing for large crystals to form. It is very strong, but difficult to

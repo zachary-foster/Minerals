@@ -80,7 +80,7 @@
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
     <visualSpread>0.8</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.2</visualSizeVariation>
+    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -482,7 +482,7 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0.02</minClusterProbability>
-    <maxClusterProbability>0.04</maxClusterProbability>
+    <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>1</maxClusterSize>
@@ -604,7 +604,7 @@
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0.03</minClusterProbability>
-    <maxClusterProbability>0.06</maxClusterProbability>
+    <maxClusterProbability>0.05</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>4</maxClusterSize>
@@ -673,7 +673,7 @@
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
+        <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>

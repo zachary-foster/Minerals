@@ -317,7 +317,6 @@
       <minStable>-99999</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
     </sizeGrowthRateModifer>
-    
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -356,7 +355,7 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.003</minClusterProbability>
+    <minClusterProbability>0.004</minClusterProbability>
     <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
@@ -467,7 +466,6 @@
       <minStable>-1.1</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
     </rainGrowthRateModifer>
-    
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -476,14 +474,11 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
     <submergedRadius>1</submergedRadius>
-    
     <!-- If true, the graphics are regenerated more often -->
     <fastGraphicRefresh>true</fastGraphicRefresh>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>crystal</li>
@@ -514,8 +509,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <minClusterProbability>0.005</minClusterProbability>
+    <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>10</maxClusterSize>
@@ -537,7 +532,6 @@
     </neededNearbyTerrains>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
-      <li>SaltField</li>
       <li>SandBeachWetSalt</li>
       <li>Sand</li>
       <li>Soil</li>
@@ -551,13 +545,16 @@
       <li>Slate_Rough</li>
       <li>LavaRock_Rough</li>
       <li>Gravel</li>
+      <li>WastelandAsphalt</li>
+      <li>SaltField</li>
+      <li>Salted_Earth</li>
 		</allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>SteamGeyser</li>
       <li>SteamVent</li>
     </associatedOres>
-    <nearAssociatedOreBonus>50</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>100</nearAssociatedOreBonus>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
@@ -607,7 +604,6 @@
       <minStable>-2</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
     </distGrowthRateModifer>
-    
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -616,12 +612,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>crystal</li>
     </tags>
-    
   </ThingDef>
   
   

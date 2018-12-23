@@ -91,14 +91,12 @@
     <ThingsToReplace>
       <li>Granite</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>weathered</li>
     </tags>
-    
   </ThingDef>
   
   
@@ -422,8 +420,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.004</minClusterProbability>
-    <maxClusterProbability>0.008</maxClusterProbability>
+    <minClusterProbability>0.003</minClusterProbability>
+    <maxClusterProbability>0.007</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>3</maxClusterSize>
@@ -462,7 +460,7 @@
       <li>Granite</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>15</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->

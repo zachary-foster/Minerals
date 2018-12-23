@@ -1060,7 +1060,7 @@ namespace Minerals
             // Check that it is a valid biome
             if (! CanSpawnInBiome(map))
             {
-                Log.Message("Minerals: " + defName + " cannot be added to this biome");
+                //Log.Message("Minerals: " + defName + " cannot be added to this biome");
                 return;
             }
 
@@ -1070,7 +1070,7 @@ namespace Minerals
             // Find spots to spawn it
             if (Rand.Range(0f, 1f) <= perMapProbability * diversitySettingFactor() && spawnProbability > 0)
             {
-                Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
+                //Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
                 IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
                 foreach (IntVec3 current in allCells)
                 {

@@ -213,6 +213,7 @@
     <passability>PassThroughOnly</passability>
     <blockWind>true</blockWind>
     <pathCost>100</pathCost>
+    <altitudeLayer>LowPlant</altitudeLayer>
 
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0.5</submergedSize>

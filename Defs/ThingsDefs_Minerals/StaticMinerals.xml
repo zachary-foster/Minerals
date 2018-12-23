@@ -50,7 +50,7 @@
     <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.005</maxClusterProbability>
+    <maxClusterProbability>0.004</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>30</maxClusterSize>
@@ -233,10 +233,10 @@
       <Beauty>15</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!-- For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <maxClusterProbability>0.0015</maxClusterProbability>
     <!-- Roof requirements -->
     <mustBeUnderRoof>true</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -305,7 +305,7 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.003</maxClusterProbability>
@@ -447,21 +447,20 @@
       <colorTwo>(71,6,14)</colorTwo>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
       <li>(228,156,160)</li>
       <li>(132,29,48)</li>
-      <li>(62,22,10)</li>
-      <li>(113,49,50)</li>
+      <li>(245,51,153)</li>
+      <li>(255,153,204)</li>
       <li>(198,118,127)</li>
       <li>(195,103,114)</li>
-      <li>(165,94,98)</li>
+      <li>(230,34,115)</li>
       <li>(212,141,145)</li>
       <li>(233,195,192)</li>
       <li>(212,172,172)</li>
+      <li>(204,102,153)</li>
     </randomColorsOne>
-    
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -514,7 +513,6 @@
       <colorTwo>(7,95,231)</colorTwo>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
       <li>(45,102,113)</li>
@@ -526,8 +524,9 @@
       <li>(47,145,158)</li>
       <li>(16,93,104)</li>
       <li>(37,169,119)</li>
+      <li>(51, 204, 204)</li>
+      <li>(133, 224, 224)</li>
     </randomColorsOne>
-    
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>

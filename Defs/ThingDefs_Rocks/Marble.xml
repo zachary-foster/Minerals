@@ -67,7 +67,7 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.6</min>
+      <min>1.7</min>
       <max>1.8</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>
@@ -461,7 +461,7 @@
       <li>SolidMarble</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>12</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>8</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
