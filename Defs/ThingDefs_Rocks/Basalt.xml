@@ -664,7 +664,7 @@
     <perMapProbability>0.7</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.001</maxClusterProbability>
+    <maxClusterProbability>0.0008</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>10</minClusterSize>
     <maxClusterSize>100</maxClusterSize>

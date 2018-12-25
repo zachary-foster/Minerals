@@ -1552,7 +1552,7 @@
     <label>Weathered Glowstone Deposit</label>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
+      <texPath>Things/Ore/QuartzOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
@@ -1587,7 +1587,7 @@
     <label>Solid Glowstone Deposit</label>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
+      <texPath>Things/Ore/QuartzOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
@@ -1672,11 +1672,11 @@
     <label>Weathered Coldstone Deposit</label>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
+      <texPath>Things/Ore/QuartzOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
-      <colorTwo>(220,225,255)</colorTwo>
+      <colorTwo>(190,210,250)</colorTwo>
     </graphicData>
     <statBases>
 		  <Beauty>2</Beauty>
@@ -1712,7 +1712,7 @@
     <label>Solid Coldstone Deposit</label>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
+      <texPath>Things/Ore/QuartzOre</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>

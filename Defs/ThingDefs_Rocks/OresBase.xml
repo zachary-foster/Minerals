@@ -22,12 +22,12 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.5</min>
-      <max>1.9</max>
+      <min>1.6</min>
+      <max>1.8</max>
     </visualSizeRange>
     <visualClustering>0.8</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.4</visualSpread>
+    <visualSpread>0.2</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.1</visualSizeVariation>
     <!-- The range of starting sizes of individuals in clusters -->
