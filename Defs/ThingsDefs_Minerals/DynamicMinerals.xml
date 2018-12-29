@@ -171,6 +171,8 @@
       <li>crystal</li>
       <li>fictional</li>
     </tags>
+    <!-- If graphic overlapping with nearby wall textures are rotated -->
+    <growsUpWalls>true</growsUpWalls>
   </ThingDef>
   
   
@@ -330,6 +332,8 @@
       <li>crystal</li>
       <li>fictional</li>
     </tags>
+    <!-- If graphic overlapping with nearby wall textures are rotated -->
+    <growsUpWalls>true</growsUpWalls>
   </ThingDef>
   
   
@@ -483,6 +487,8 @@
     <tags>
       <li>crystal</li>
     </tags>
+    <!-- If graphic overlapping with nearby wall textures are rotated -->
+    <growsUpWalls>true</growsUpWalls>
   </ThingDef>
   
   
@@ -616,6 +622,8 @@
     <tags>
       <li>crystal</li>
     </tags>
+    <!-- If graphic overlapping with nearby wall textures are rotated -->
+    <growsUpWalls>true</growsUpWalls>
   </ThingDef>
   
   

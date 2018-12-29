@@ -14,6 +14,10 @@ namespace Minerals
 
         public static void initAll(Map map)
         {
+            if (MineralsMain.Settings.removeStartingChunksSetting)
+            {
+                removeStartingChunks(map);
+            }
             initStaticMinerals(map);
             Log.Message("Minerals loaded");
         }
@@ -26,7 +30,18 @@ namespace Minerals
             }
         }
 
+        public static void removeStartingChunks(Map map)
+        {
+            string[] toRemove = {"ChunkSandstone", "ChunkGranite", "ChunkLimestone", "ChunkSlate", "ChunkMarble", "ChunkLava", "Filth_RubbleRock"};
+            List<Thing> thingsToCheck = map.listerThings.AllThings;
+            for (int i = thingsToCheck.Count - 1; i >= 0; i--)
+            {
+                if (toRemove.Any(thingsToCheck[i].def.defName.Equals))
+                {
+                    thingsToCheck[i].Destroy(DestroyMode.Vanish);
+                }
+            }
+        }
+
     }
-
-
 }

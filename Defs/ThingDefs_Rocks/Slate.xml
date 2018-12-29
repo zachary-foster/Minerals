@@ -67,7 +67,7 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.8</min>
+      <min>1.7</min>
       <max>1.8</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>
@@ -179,13 +179,13 @@
     <!-- The size range -->
     <visualSizeRange>
       <min>1.8</min>
-      <max>2.1</max>
+      <max>1.9</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
     <visualSpread>0.2</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.2</visualSizeVariation>
+    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>

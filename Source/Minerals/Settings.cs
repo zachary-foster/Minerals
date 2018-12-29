@@ -20,6 +20,7 @@ namespace Minerals
         public bool replaceWallsSetting = true;
         public bool replaceChunksSetting = true;
         public bool includeFictionalSetting = true;
+        public bool removeStartingChunksSetting = true;
 
         public override void ExposeData()
         {
@@ -34,6 +35,7 @@ namespace Minerals
             Scribe_Values.Look(ref replaceWallsSetting, "replaceWallsSetting", true);
             Scribe_Values.Look(ref replaceChunksSetting, "replaceChunksSetting", true);
             Scribe_Values.Look(ref includeFictionalSetting, "includeFictionalSetting", true);
+            Scribe_Values.Look(ref removeStartingChunksSetting, "removeStartingChunksSetting", true);
         }
 
 
@@ -85,6 +87,10 @@ namespace Minerals
             list.Gap(12f);
 
             list.CheckboxLabeled("replaceChunksSetting".Translate(), ref replaceChunksSetting);
+
+            list.Gap(12f);
+
+            list.CheckboxLabeled("removeStartingChunksSetting".Translate(), ref removeStartingChunksSetting);
 
             list.Gap(12f);
 

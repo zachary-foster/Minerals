@@ -74,7 +74,7 @@
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
     <visualSpread>0.5</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.2</visualSizeVariation>
+    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -179,7 +179,7 @@
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
     <visualSpread>0.2</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.2</visualSizeVariation>
+    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -441,6 +441,7 @@
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
+			<li>LavaRock_Rough</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
@@ -556,11 +557,11 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.01</minClusterProbability>
-    <maxClusterProbability>0.02</maxClusterProbability>
+    <minClusterProbability>0.015</minClusterProbability>
+    <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>4</maxClusterSize>
+    <maxClusterSize>5</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.5</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -569,6 +570,16 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
 			<li>LavaRock_Rough</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+			<li>MarshyTerrain</li>
+			<li>Marsh</li>
+			<li>Mud</li>
+      <li>SavannaSoil</li>
       <li>WaterShallow</li>
       <li>WaterMovingShallow</li>
 			<li>WaterOceanShallow</li>
@@ -581,6 +592,7 @@
       <li>WeatheredBasalt</li>
       <li>SolidBasalt</li>
       <li>BoulderBasalt</li>
+      <li>PassableBasalt</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
@@ -589,8 +601,9 @@
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>LavaRock_Rough</li>
+      <li>BoulderBasalt</li>
     </associatedOres>
-    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>

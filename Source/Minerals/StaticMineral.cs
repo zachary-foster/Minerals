@@ -291,9 +291,9 @@ namespace Minerals
             for (int i = 0; i < textureLocations.Length; i++)
             {
                 Vector3 pos = trueCenter;
-                pos.y = attributes.Altitude;
                 pos.x += randPos(attributes.visualClustering, attributes.visualSpread);
                 pos.z += randPos(attributes.visualClustering, attributes.visualSpread);
+                pos.y = attributes.Altitude;
                 textureLocations[i] = pos;
             }
 
@@ -311,6 +311,10 @@ namespace Minerals
             // Return per-calculated location
             return(textureLocations[index]);
         }
+
+        public virtual float customAltitude(int i) {
+            return attributes.Altitude + (1 - (getTextureLocation(i).z - (getTextureSize(i) / 2)) / Map.Size.z) * 0.01f;
+        } 
 
         public virtual void initializeTextureSizes() {
         
@@ -335,7 +339,14 @@ namespace Minerals
                 // Add random variation
                 thisSize = thisSize + (thisSize * Rand.Range(- attributes.visualSizeVariation, attributes.visualSizeVariation));
 
+                // Make large textures appear on top
+                if (attributes.largeTexturesOnTop)
+                {
+                    textureLocations[i].y = customAltitude(i) + 0.01f * thisSize;
+                }
+
                 textureSizes[i] = thisSize;
+
             }
 
             Rand.PopState();
@@ -352,6 +363,115 @@ namespace Minerals
 
             // Return per-calculated location
             return(textureSizes[index]);
+        }
+
+        // https://stackoverflow.com/questions/2742276/how-do-i-check-if-a-type-is-a-subtype-or-the-type-of-an-object/2742288
+        public static bool isSameOrSubclass(Type potentialBase, Type potentialDescendant)
+        {
+            return potentialDescendant.IsSubclassOf(potentialBase)
+                || potentialDescendant == potentialBase;
+        }
+
+        public static bool isMineral(Thing thing)
+        {
+            return isSameOrSubclass(typeof(StaticMineral), thing.GetType());
+        }
+
+        public static Thing isMineralWall(Map map, IntVec3 pos)
+        {
+            if (pos.InBounds(map))
+            {
+                List<Thing> list = pos.GetThingList(map);
+                foreach (Thing item in list)
+                {
+
+                    if (isMineral(item) && item.def.passability == Traversability.Impassable)
+                    {
+                        return item;
+                    }
+                }
+            }
+            return null;
+        }
+
+        public virtual float interactWithWalls(int i, ref Vector3 center, float size)
+        {
+            if (attributes.growsUpWalls)
+            {
+                Vector3 squareCenter = this.TrueCenter();
+                float leftOverlap = (squareCenter.x - 0.5f) - (center.x - size / 2);
+                if (leftOverlap > 0) // left
+                {
+                    IntVec3 leftSide = Position - new IntVec3(1, 0, 0);
+                    Thing leftWall = isMineralWall(Map, leftSide);
+                    if (leftWall != null)
+                    {
+                        // Put half of the textures on the front of the wall
+                        if (Rand.Bool)
+                        {
+                            center.y = leftWall.def.Altitude + 0.1f;
+                        }
+                        // make textures higher up the wall show on top
+                        center.y = center.y + Math.Min(leftOverlap / size, 1f) * 0.1f;
+
+                        // rotate based on proportion of texture overlapping
+                        return Math.Min(90f * (leftOverlap / size), 90f);
+                    }
+                }
+                float rightOverlap = (center.x + size / 2) - (squareCenter.x + 0.5f);
+                if (rightOverlap > 0)
+                {
+                    IntVec3 rightSide = Position + new IntVec3(1, 0, 0);
+                    Thing rightWall = isMineralWall(Map, rightSide);
+                    if (rightWall != null)
+                    {
+                        // Put half of the textures on the front of the wall
+                        if (Rand.Bool)
+                        {
+                            center.y = rightWall.def.Altitude + 0.1f;
+                        }
+                        // make textures higher up the wall show on top
+                        center.y = center.y + Math.Min(rightOverlap / size, 1f) * 0.1f;
+
+                        // rotate based on proportion of texture overlapping
+                        return -Math.Min(90f * (rightOverlap / size), 90f);
+                    }
+                }
+                float topOverlap = (center.z + size / 2) - (squareCenter.z + 0.5f);
+                if (topOverlap > 0)
+                {
+                    IntVec3 topSide = Position + new IntVec3(0, 0, 1);
+                    Thing topWall = isMineralWall(Map, topSide);
+                    if (topWall != null)
+                    {
+                        center.y = topWall.def.Altitude + 0.1f;
+                        return 180;
+                    }
+                }
+            }
+
+            return 0f;
+        }
+
+        public virtual void printSubTexture(SectionLayer layer, int i, float sizeFactor = 1f)
+        {
+            // Get location
+            Vector3 center = getTextureLocation(i);
+
+            // Get size
+            float thisSize = getTextureSize(i) * sizeFactor;
+            if (thisSize <= 0)
+            {
+                return;
+            }
+
+            // Get rotation
+            float thisRotation = interactWithWalls(i, ref center, thisSize);
+
+            // Print image
+            Material matSingle = Graphic.MatSingle;
+            Vector2 sizeVec = new Vector2(thisSize, thisSize);
+            Printer_Plane.PrintPlane(layer, center, sizeVec, matSingle, thisRotation, Rand.Bool, null, null, attributes.topVerticesAltitudeBias, 0f);
         }
 
         public override void Print(SectionLayer layer)
@@ -378,20 +498,7 @@ namespace Minerals
 				}
 				for (int i = 0; i < numToPrint; i++)
 				{
-					// Get location
-                    Vector3 center = getTextureLocation(i);
-
-					// Get size
-                    float thisSize = getTextureSize(i) * sizeFactor;
-					if (thisSize <= 0)
-					{
-						continue;
-					}
-
-					// Print image
-					Material matSingle = Graphic.MatSingle;
-					Vector2 sizeVec = new Vector2(thisSize, thisSize);
-                    Printer_Plane.PrintPlane(layer, center, sizeVec, matSingle, 0, Rand.Bool);
+                    printSubTexture(layer, i, sizeFactor);
 				}
 			}
 
@@ -601,6 +708,12 @@ namespace Minerals
         public float visualSpread = 1.2f;
         public float visualSizeVariation = 0.1f;
 
+        // If graphic overlapping with nearby wall textures are rotated
+        public bool growsUpWalls = false;
+
+        // If largest textures are printed on top, ro if vertical order matters
+        public bool largeTexturesOnTop = false;
+
         // The amount of resource returned if the mineral is its maximum size
         public int maxMinedYeild = 10;
 
@@ -628,6 +741,11 @@ namespace Minerals
 
         // Tags which determine how some options behave
         public List<string> tags;
+
+        // Has something to do with how textures on the same layer get stacked
+        public float topVerticesAltitudeBias = 0.01f;
+
+
 
         // ======= Spawning clusters ======= //
 

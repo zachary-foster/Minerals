@@ -69,7 +69,7 @@
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>1.6</min>
+      <min>1.7</min>
       <max>1.8</max>
     </visualSizeRange>
     <visualClustering>1.0</visualClustering>

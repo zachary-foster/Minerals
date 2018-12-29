@@ -74,7 +74,7 @@
     <!-- The size range -->
     <visualSizeRange>
       <min>1.6</min>
-      <max>1.9</max>
+      <max>1.8</max>
     </visualSizeRange>
     <visualClustering>0.8</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -202,7 +202,7 @@
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
     <visualSpread>0.2</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.2</visualSizeVariation>
+    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -442,14 +442,13 @@
       <li>wall</li>
       <li>hewn</li>
     </tags>
-    
   </ThingDef>
   
   
-  <ThingDef Name="PassableSandstone" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>PassableSandstone</defName>
-    <label>Sandstone rocks</label>
-    <description>Sandstone rocks, sculpted by weather and time into flowing shapes.</description>
+  <ThingDef Name="BoulderSandstone" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>BoulderSandstone</defName>
+    <label>Sandstone outcropping</label>
+    <description>A sandstone outcropping, sculpted by weather and time into flowing shapes.</description>
     <graphicData>
       <texPath>Things/Rock/PassableSandstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -458,7 +457,7 @@
     </graphicData>
     <fillPercent>0.3</fillPercent>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
+      <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>2</Beauty>
     </statBases>
@@ -469,7 +468,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSandstone</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -485,9 +484,9 @@
     <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>1</maxClusterSize>
+    <maxClusterSize>2</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.3</initialSizeMin>
+    <initialSizeMin>.5</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
@@ -503,15 +502,18 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
+			<li>Sandstone_Rough</li>
       <li>WeatheredSandstone</li>
+      <li>Sandstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>WeatheredSandstone</li>
+      <li>Sandstone</li>
     </associatedOres>
     <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -519,17 +521,17 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>true</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>3</maxMeshCount>
+    <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.8</min>
-      <max>1.6</max>
+      <min>0.9</min>
+      <max>1.2</max>
     </visualSizeRange>
-    <visualClustering>0.5</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>2.2</visualSpread>
+    <visualClustering>1.0</visualClustering>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.5</visualSizeVariation>
+    <visualSpread>1.0</visualSpread>
+    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>

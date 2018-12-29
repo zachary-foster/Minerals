@@ -2,7 +2,7 @@
 <Defs>
   
   
-  <ThingDef Name="WeatheredRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+  <ThingDef Name="ImpassableRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <drawerType>MapMeshOnly</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
@@ -12,7 +12,7 @@
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
     <neverMultiSelect>true</neverMultiSelect>
-    <rotatable>false</rotatable>
+    <rotatable>true</rotatable>
     <saveCompressible>true</saveCompressible>
     <holdsRoof>true</holdsRoof>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
@@ -20,6 +20,7 @@
     <blockWind>true</blockWind>
     <mineable>true</mineable>
     <hideAtSnowDepth>2</hideAtSnowDepth>
+    <topVerticesAltitudeBias>0.01</topVerticesAltitudeBias>
     <statBases>
       <Flammability>0</Flammability>
     </statBases>
@@ -36,7 +37,15 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
-    
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+    </tags>
+  </ThingDef>
+  
+  
+  <ThingDef Name="WeatheredRockBase" ParentName="ImpassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -45,42 +54,8 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_SolidRock" Abstract="True">
+  <ThingDef Name="SolidRockBase" ParentName="ImpassableRockBase" Class="Minerals.ThingDef_SolidRock" Abstract="True">
     <thingClass>Minerals.SolidRock</thingClass>
-    <drawerType>MapMeshOnly</drawerType>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <filthLeaving>Filth_RubbleRock</filthLeaving>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
-    <coversFloor>true</coversFloor>
-    <neverMultiSelect>true</neverMultiSelect>
-    <rotatable>false</rotatable>
-    <saveCompressible>true</saveCompressible>
-    <holdsRoof>true</holdsRoof>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <blockLight>true</blockLight>
-    <blockWind>true</blockWind>
-    <mineable>true</mineable>
-    <hideAtSnowDepth>2</hideAtSnowDepth>
-    <statBases>
-      <Flammability>0</Flammability>
-    </statBases>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.1</mineableDropChance>
-      <mineableYield>10</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
-    
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
@@ -89,40 +64,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="HewnRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
-    <drawerType>MapMeshOnly</drawerType>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <filthLeaving>Filth_RubbleRock</filthLeaving>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
-    <coversFloor>true</coversFloor>
-    <neverMultiSelect>true</neverMultiSelect>
-    <rotatable>false</rotatable>
-    <saveCompressible>true</saveCompressible>
-    <holdsRoof>true</holdsRoof>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <blockLight>true</blockLight>
-    <blockWind>true</blockWind>
-    <mineable>true</mineable>
-    <hideAtSnowDepth>2</hideAtSnowDepth>
-    <statBases>
-      <Flammability>0</Flammability>
-    </statBases>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.1</mineableDropChance>
-      <mineableYield>10</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
+  <ThingDef Name="HewnRockBase" ParentName="ImpassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
@@ -162,14 +104,12 @@
     <visualSizeVariation>0</visualSizeVariation>
     <!-- The amount of resource returned if the mineral is its maximum size -->
     <maxMinedYeild>1</maxMinedYeild>
-
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>hewn</li>
     </tags>
-    
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
@@ -179,52 +119,46 @@
   
 
   <ThingDef Name="PassableRockBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
-    
     <altitudeLayer>SmallWire</altitudeLayer>
     <neverMultiSelect>true</neverMultiSelect>
-    
   </ThingDef>
   
 
   <ThingDef Name="SmallRockBase" ParentName="PassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
-    
     <fillPercent>0.2</fillPercent>
     <hideAtSnowDepth>.7</hideAtSnowDepth>
     <blockWind>false</blockWind>
     <pathCost>20</pathCost>
-
+    <!-- Has something to do with how textures on the same layer get stacked -->
+    <topVerticesAltitudeBias>0</topVerticesAltitudeBias>
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
     <submergedRadius>2</submergedRadius>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>small_rock</li>
     </tags>
-    
   </ThingDef>
   
   
   <ThingDef Name="BoulderRockBase" ParentName="PassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
-    
     <fillPercent>0.6</fillPercent>
     <hideAtSnowDepth>2</hideAtSnowDepth>
     <passability>PassThroughOnly</passability>
     <blockWind>true</blockWind>
     <pathCost>100</pathCost>
     <altitudeLayer>LowPlant</altitudeLayer>
-
+    <!-- Has something to do with how textures on the same layer get stacked -->
+    <topVerticesAltitudeBias>0.01</topVerticesAltitudeBias>
     <!-- If smaller than 1, it looks smaller in water -->
-    <submergedSize>0.5</submergedSize>
-    <submergedRadius>4</submergedRadius>
-    
+    <submergedSize>0.7</submergedSize>
+    <submergedRadius>3</submergedRadius>
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>boulder</li>
     </tags>
-    
   </ThingDef>
   
   

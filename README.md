@@ -171,30 +171,6 @@ mineral.
 
 ![](readme_images/SchorlCrystal.jpg)
 
-### Dravite Crystal
-
-A type of tourmaline, a boron silicate mineral with many chemical
-variations. This tan variety sometimes yeilds gem-quality stones.
-
-**defName:** DraviteCrystal
-
-**Beauty:** 10
-
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA_m.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalA.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB_m.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalB.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC_m.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalC.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD_m.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalD.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE_m.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalE.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF_m.png)
-![](Textures/Things/Mineral/TourmalineCrystal/TourmalineCrystalF.png)
-
-![](readme_images/DraviteCrystal.jpg)
-
 ### Rubellite Crystal
 
 A type of tourmaline, a boron silicate mineral with many chemical
@@ -250,7 +226,7 @@ igenous rocks.
 
 **defName:** MagnetiteCrystal
 
-**Beauty:** 3
+**Beauty:** 20
 
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA.png)
@@ -273,7 +249,7 @@ variety known as lodestone.
 
 **defName:** LodestoneCrystal
 
-**Beauty:** 3
+**Beauty:** 15
 
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA.png)
@@ -295,7 +271,7 @@ stones.
 
 **defName:** CassiteriteCrystal
 
-**Beauty:** 3
+**Beauty:** NA
 
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA_m.png)
 ![](Textures/Things/Mineral/PyriteCrystal/PyriteCrystalA.png)
@@ -318,7 +294,7 @@ patch is a deep red.
 
 **defName:** RubyCrystal
 
-**Beauty:** 15
+**Beauty:** NA
 
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalA.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalB.png)
@@ -334,12 +310,12 @@ patch is a deep red.
 ### Sapphires embedded in rock
 
 Crystals of aluminium oxide embedded in rock. One of the hardest
-minerals and often cut into gems. Impurities of iron color this patch is
-a deep blue.
+minerals and often cut into gems. Impurities of iron color this patch a
+deep blue.
 
 **defName:** SapphireCrystal
 
-**Beauty:** 15
+**Beauty:** NA
 
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalA.png)
 ![](Textures/Things/Mineral/CorundumCrystal/CorundumCrystalB.png)
@@ -360,7 +336,7 @@ impurities of chromium.
 
 **defName:** EmeraldCrystal
 
-**Beauty:** 15
+**Beauty:** NA
 
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalA.png)
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalB.png)
@@ -369,23 +345,7 @@ impurities of chromium.
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalE.png)
 ![](Textures/Things/Mineral/BerylCrystal/BerylCrystalF.png)
 
-### Goshenite embedded in rock
-
-Crystals of beryl, a type of beryllium aluminium silicate, a rare
-mineral often used for gemstones. This variety is clear.
-
-**defName:** BerylCrystal
-
-**Beauty:** 15
-
-![](Textures/Things/Mineral/BerylCrystal/BerylCrystalA.png)
-![](Textures/Things/Mineral/BerylCrystal/BerylCrystalB.png)
-![](Textures/Things/Mineral/BerylCrystal/BerylCrystalC.png)
-![](Textures/Things/Mineral/BerylCrystal/BerylCrystalD.png)
-![](Textures/Things/Mineral/BerylCrystal/BerylCrystalE.png)
-![](Textures/Things/Mineral/BerylCrystal/BerylCrystalF.png)
-
-![](readme_images/BerylCrystal.jpg)
+![](readme_images/EmeraldCrystal.jpg)
 
 ### Diamonds embedded in rock
 
@@ -394,7 +354,7 @@ gemstone.
 
 **defName:** DiamondCrystal
 
-**Beauty:** 20
+**Beauty:** NA
 
 ![](Textures/Things/Mineral/DiamondCrystal/DiamondCrystalA.png)
 ![](Textures/Things/Mineral/DiamondCrystal/DiamondCrystalB.png)
@@ -409,7 +369,7 @@ silver.
 
 **defName:** UraniniteDeposit
 
-**Beauty:** 3
+**Beauty:** NA
 
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositA_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositA.png)
@@ -432,7 +392,7 @@ azurite, calcite, and limestone rock.
 
 **defName:** MalachiteDeposit
 
-**Beauty:** 15
+**Beauty:** NA
 
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositA_m.png)
 ![](Textures/Things/Mineral/UraniniteDeposit/UraniniteDepositA.png)
@@ -740,3 +700,15 @@ non-commercial reuse. Here are the list of images used:
 -   <https://www.flickr.com/photos/98425334@N00/130957324/>
 -   <https://commons.wikimedia.org/wiki/File:River_side_pebbles_and_rocks.jpg>
     Shashank ghosh
+-   <https://www.flickr.com/photos/jsjgeology/32770894262> James St.
+    John
+-   <https://commons.wikimedia.org/wiki/File:Dioptase-285219.jpg> Rob
+    Lavinsky
+-   <https://commons.wikimedia.org/wiki/File:Native_copper_in_calcite_crystal_(late_Mesoproterozoic_mineralization_age,_1.05-1.06_Ga;_Quincy_Mine,_Hancock,_Keweenaw_Peninsula,_Upper_Peninsula_of_Michigan,_USA)_5_(17300587602).jpg>
+    James St. John
+-   <https://commons.wikimedia.org/wiki/File:Calcite-20188.jpg>
+    Robert M. Lavinsky
+-   <https://www.flickr.com/photos/jsjgeology/43729746151> James St.
+    John
+-   <https://commons.wikimedia.org/wiki/File:Calcite-Chlorite-Group-67816.jpg>
+    Rob Lavinsky

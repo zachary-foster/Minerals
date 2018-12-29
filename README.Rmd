@@ -310,4 +310,11 @@ Here are the list of images used:
 * https://www.flickr.com/photos/brewbooks/757551002/in/photostream/ Copyright brewbooks
 * https://www.flickr.com/photos/98425334@N00/130957324/
 * https://commons.wikimedia.org/wiki/File:River_side_pebbles_and_rocks.jpg Shashank ghosh
+* https://www.flickr.com/photos/jsjgeology/32770894262 James St. John
+* https://commons.wikimedia.org/wiki/File:Dioptase-285219.jpg Rob Lavinsky
+* https://commons.wikimedia.org/wiki/File:Native_copper_in_calcite_crystal_(late_Mesoproterozoic_mineralization_age,_1.05-1.06_Ga;_Quincy_Mine,_Hancock,_Keweenaw_Peninsula,_Upper_Peninsula_of_Michigan,_USA)_5_(17300587602).jpg James St. John
+* https://commons.wikimedia.org/wiki/File:Calcite-20188.jpg Robert M. Lavinsky
+* https://www.flickr.com/photos/jsjgeology/43729746151 James St. John
+* https://commons.wikimedia.org/wiki/File:Calcite-Chlorite-Group-67816.jpg Rob Lavinsky
+
 
