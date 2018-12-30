@@ -21,6 +21,10 @@ namespace Minerals
         public bool replaceChunksSetting = true;
         public bool includeFictionalSetting = true;
         public bool removeStartingChunksSetting = true;
+        public bool underwaterMineralsSetting = true;
+        public bool mineralsGrowUpWallsSetting = true;
+        public bool snowyRockSetting = true;
+
 
         public override void ExposeData()
         {
@@ -36,6 +40,9 @@ namespace Minerals
             Scribe_Values.Look(ref replaceChunksSetting, "replaceChunksSetting", true);
             Scribe_Values.Look(ref includeFictionalSetting, "includeFictionalSetting", true);
             Scribe_Values.Look(ref removeStartingChunksSetting, "removeStartingChunksSetting", true);
+            Scribe_Values.Look(ref underwaterMineralsSetting, "underwaterMineralsSetting", true);
+            Scribe_Values.Look(ref mineralsGrowUpWallsSetting, "mineralsGrowUpWallsSetting", true);
+            Scribe_Values.Look(ref snowyRockSetting, "snowyRockSetting", true);
         }
 
 
@@ -95,6 +102,18 @@ namespace Minerals
             list.Gap(12f);
 
             list.CheckboxLabeled("includeFictionalSetting".Translate(), ref includeFictionalSetting);
+
+            list.Gap(12f);
+
+            list.CheckboxLabeled("underwaterMineralsSetting".Translate(), ref underwaterMineralsSetting);
+
+            list.Gap(12f);
+
+            list.CheckboxLabeled("mineralsGrowUpWallsSetting".Translate(), ref mineralsGrowUpWallsSetting);
+
+            list.Gap(12f);
+
+            list.CheckboxLabeled("snowyRockSetting".Translate(), ref snowyRockSetting);
 
             list.End();
         }

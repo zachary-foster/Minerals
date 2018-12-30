@@ -407,6 +407,7 @@
       <li>Marble_Rough</li>
       <li>WeatheredMarble</li>
       <li>SolidMarble</li>
+      <li>Marble</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
@@ -416,6 +417,7 @@
     <associatedOres>
       <li>Marble_Rough</li>
       <li>WeatheredMarble</li>
+      <li>Marble</li>
     </associatedOres>
     <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -533,6 +535,7 @@
 			<li>Marble_Rough</li>
       <li>WeatheredMarble</li>
       <li>SolidMarble</li>
+      <li>Marble</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>

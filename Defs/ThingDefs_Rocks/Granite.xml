@@ -427,6 +427,7 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
+      <li>Granite</li>
       <li>WeatheredGranite</li>
     </associatedOres>
     <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
@@ -546,6 +547,7 @@
 			<li>Granite_Rough</li>
       <li>WeatheredGranite</li>
       <li>SolidGranite</li>
+      <li>Granite</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>

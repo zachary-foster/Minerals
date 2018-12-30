@@ -6,6 +6,7 @@
     <label>Weathered Basalt</label>
     <description>A wall of weathered basalt, the most common igneous rock. It makes a good building material but is difficult to quarry.</description>
     <graphicData>
+      <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
@@ -439,6 +440,7 @@
 			<li>LavaRock_Rough</li>
       <li>WeatheredBasalt</li>
       <li>SolidBasalt</li>
+			<li>LavaRock</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>15</neededNearbyTerrainRadius>
@@ -686,6 +688,7 @@
       <li>LavaRock_RoughHewn</li>
       <li>WeatheredBasalt</li>
       <li>PassableBasalt</li>
+      <li>LavaRock</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>20</neededNearbyTerrainRadius>

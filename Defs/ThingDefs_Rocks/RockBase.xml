@@ -57,10 +57,10 @@
       <min>1.7</min>
       <max>1.9</max>
     </visualSizeRange>
-    <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.4</visualSpread>
+    <visualClustering>1.0</visualClustering>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSpread>0.5</visualSpread>
     <visualSizeVariation>0.08</visualSizeVariation>
   </ThingDef>
   
@@ -79,10 +79,10 @@
       <min>1.7</min>
       <max>1.9</max>
     </visualSizeRange>
-    <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.4</visualSpread>
+    <visualClustering>1.0</visualClustering>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSpread>0.5</visualSpread>
     <visualSizeVariation>0.08</visualSizeVariation>
   </ThingDef>
   
@@ -154,7 +154,7 @@
     <pathCost>20</pathCost>
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
-    <submergedRadius>2</submergedRadius>
+    <submergedRadius>1</submergedRadius>
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
@@ -171,8 +171,8 @@
     <pathCost>100</pathCost>
     <altitudeLayer>LowPlant</altitudeLayer>
     <!-- If smaller than 1, it looks smaller in water -->
-    <submergedSize>0.7</submergedSize>
-    <submergedRadius>3</submergedRadius>
+    <submergedSize>1</submergedSize>
+    <submergedRadius>1</submergedRadius>
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>

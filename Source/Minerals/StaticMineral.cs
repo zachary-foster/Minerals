@@ -219,6 +219,11 @@ namespace Minerals
 
         public virtual float submersibleFactor()
         {
+            // Check that underwater minerals are enabled
+            if (!MineralsMain.Settings.underwaterMineralsSetting)
+            {
+                return 1f;
+            }
             // Check that it is submersible
             if (attributes.submergedSize >= 1)
             {
@@ -227,7 +232,7 @@ namespace Minerals
 
             // Check if is on dry land
             TerrainDef myTerrain = Map.terrainGrid.TerrainAt(Position);
-            if (!(myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("water") || myTerrain.defName.Contains("IceShallow")) || myTerrain.defName.Contains("MuddyIce"))
+            if (!(myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("IceShallow") || myTerrain.defName.Contains("MuddyIce")))
             {
                 return 1f;
             }
@@ -244,8 +249,7 @@ namespace Minerals
                     if (checkedPosition.InBounds(Map))
                     {
                         TerrainDef terrain = Map.terrainGrid.TerrainAt(checkedPosition);
-                        if (!(terrain.defName.Contains("Water") || terrain.defName.Contains("water") || myTerrain.defName.Contains("IceShallow") || myTerrain.defName.Contains("MuddyIce")
-                        ))
+                        if (!(terrain.defName.Contains("Water") || myTerrain.defName.Contains("IceShallow") || myTerrain.defName.Contains("MuddyIce")))
                         {
                             dryCount = dryCount + 1;
                         }
@@ -261,11 +265,7 @@ namespace Minerals
         public virtual float printSizeFactor()
         {
             float effectiveSize = 1f;
-            if (attributes.submergedSize < 1)
-            {
-                effectiveSize = effectiveSize * submersibleFactor();
-            }
-
+            effectiveSize = effectiveSize * submersibleFactor();
             return effectiveSize;
         }
 
@@ -405,7 +405,7 @@ namespace Minerals
 
         public virtual float interactWithWalls(int i, ref Vector3 center, float size)
         {
-            if (attributes.growsUpWalls)
+            if (MineralsMain.Settings.mineralsGrowUpWallsSetting && attributes.growsUpWalls)
             {
                 Vector3 squareCenter = this.TrueCenter();
                 float leftOverlap = (squareCenter.x - 0.5f) - (center.x - size / 2);
@@ -537,30 +537,39 @@ namespace Minerals
             Scribe_Values.Look<float>(ref mySize, "mySize", 1);
         }
 
+        public virtual float snowLevel()
+        {
+            if (attributes.passability == Traversability.Impassable)
+            {
+                IntVec3 top = Position + new IntVec3(0, 0, 1);
+                IntVec3 bottom = Position + new IntVec3(0, 0, -1);
+                IntVec3 right = Position + new IntVec3(1, 0, 0);
+                IntVec3 left = Position + new IntVec3(-1, 0, 0);
+                return top.GetSnowDepth(Map) + bottom.GetSnowDepth(Map) + right.GetSnowDepth(Map) + left.GetSnowDepth(Map);
+            }
+            else
+            {
+                return Position.GetSnowDepth(Map);
+            }
+        }
+
 
         public override Graphic Graphic
         {
             get
             {
-                // Get paths to textures
-                string textureName = System.IO.Path.GetFileName(this.attributes.graphicData.texPath);
-                List<Graphic> textures = new List<Graphic> { };
-                List<string> versions = new List<string> { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
-                foreach (string letter in versions)
-                {
-                    string a_path = this.attributes.graphicData.texPath + "/" + textureName + letter;
-
-                    if (ContentFinder<Texture2D>.Get(a_path, false) != null)
-                    {
-                        Graphic graphic = GraphicDatabase.Get<Graphic_Single>(a_path, attributes.graphicData.shaderType.Shader);
-                        textures.Add(graphic);
-                    }
-                }
-
+      
                 // Pick a random path 
-                Graphic printedTexture = textures.RandomElement();
+                string printedTexturePath = attributes.getTexturePaths().RandomElement();
 
-                // conver to corner filler if needed
+                // Check if it should be snowy
+                if (attributes.hasSnowyTextures && snowLevel() > 0.5f)
+                {
+                    printedTexturePath = printedTexturePath + "_s";
+                }
+                Graphic printedTexture = GraphicDatabase.Get<Graphic_Single>(printedTexturePath, attributes.graphicData.shaderType.Shader);
+
+                // convert to corner filler if needed
                 printedTexture = GraphicDatabase.Get<Graphic_Single>(printedTexture.path, printedTexture.Shader, printedTexture.drawSize, DrawColor, DrawColorTwo, printedTexture.data);
                 if (attributes.graphicData.linkType == LinkDrawerType.CornerFiller)
                 {
@@ -754,6 +763,9 @@ namespace Minerals
         // Has something to do with how textures on the same layer get stacked
         public float topVerticesAltitudeBias = 0.01f;
 
+        public List<string> texturePaths;
+        public List<string> snowTexturePaths;
+        public bool hasSnowyTextures = false;
 
 
         // ======= Spawning clusters ======= //
@@ -1310,6 +1322,46 @@ namespace Minerals
             }
             map.regionAndRoomUpdater.Enabled = true;
 
+        }
+
+        public virtual List<string> getTexturePaths()
+        {
+            if (texturePaths == null)
+            {
+                initTexturePaths();
+            }
+            return texturePaths;
+        }
+
+        public virtual void initTexturePaths()
+        {
+            // Get paths to textures
+            string textureName = System.IO.Path.GetFileName(graphicData.texPath);
+            texturePaths = new List<string> { };
+            snowTexturePaths = new List<string> { };
+            List<string> versions = new List<string> { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
+            foreach (string letter in versions)
+            {
+                string a_path = graphicData.texPath + "/" + textureName + letter;
+                if (ContentFinder<Texture2D>.Get(a_path, false) != null)
+                {
+                    texturePaths.Add(a_path);
+                    string snow_path = a_path + "_s";
+                    if (ContentFinder<Texture2D>.Get(snow_path, false) != null)
+                    {
+                        hasSnowyTextures = true;
+                        snowTexturePaths.Add(snow_path);
+                    }
+                }
+            }
+
+            // Check that there are enough snowy textures
+            if (texturePaths.Count > 0 && snowTexturePaths.Count > 0 && texturePaths.Count != snowTexturePaths.Count)
+            {
+                Log.Warning("Minerals: Not an equal number of snowy and non-snowy textures for '" + graphicData.texPath + "'");
+                hasSnowyTextures = false;
+            }
+            
         }
 
     }

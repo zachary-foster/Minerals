@@ -91,10 +91,15 @@ namespace Minerals
 
         public override void TickLong()
         {
+            // Half the time, dont do anything
+            if (Rand.Bool)
+            {
+                return;
+            }
 
             // Try to grow
             float GrowthThisTick = GrowthPerTick;
-            size += GrowthThisTick * 2000; // 1 long tick = 2000
+            size += GrowthThisTick * 4000; // 1 long tick = 2000
 
             // Try to reproduce
             if (GrowthThisTick > 0 && size > attributes.minReproductionSize && Rand.Range(0f, 1f) < attributes.reproduceProp * GrowthRate * MineralsMain.Settings.mineralReproductionSetting)

@@ -555,6 +555,7 @@
       <li>WeatheredSlate</li>
       <li>SlateForest</li>
       <li>Slate_Rough</li>
+      <li>Slate</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
@@ -564,6 +565,7 @@
     <associatedOres>
       <li>WeatheredSlate</li>
       <li>SlateForest</li>
+      <li>Slate</li>
     </associatedOres>
     <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Roof requirements -->

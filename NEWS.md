@@ -1,4 +1,4 @@
-## v1.0.5
+## v1.0.6
 
 * Major update that replaces rock walls, ores, chunks, and adds other rock-related content. Replacement of rocks and chunks can be disabled in the mod's settings menu.
 * Compatible with Rimworld 1.0
@@ -9,6 +9,7 @@
 * Starting rock chunks are now removed at map generation. This can be changed in the settings.
 * Some minerals now appear to grow up adjacent walls.
 * Fixed various graphical bugs when textures overlaped.
+* Fixed most of lag assocaited with cold and NPS and improved preformance overall.
 
 ## v0.6.0
 
