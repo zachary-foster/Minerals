@@ -18,18 +18,6 @@
     </building>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0</perMapProbability>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.6</min>
-      <max>1.8</max>
-    </visualSizeRange>
-    <visualClustering>0.8</visualClustering>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.2</visualSpread>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.8</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -37,7 +25,6 @@
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>true</coloredByTerrain>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
@@ -45,7 +32,6 @@
       <li>weathered</li>
       <li>wall</li>
     </tags>
-    
   </ThingDef>
 
 
@@ -65,18 +51,6 @@
     </building>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0</perMapProbability>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.7</min>
-      <max>1.8</max>
-    </visualSizeRange>
-    <visualClustering>1.0</visualClustering>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.2</visualSpread>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.8</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -84,7 +58,6 @@
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>true</coloredByTerrain>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>

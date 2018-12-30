@@ -586,7 +586,7 @@
     <description>Deposits of Coal Ore. Coal is useful as a reaction agent in metal alloy production.</description>
     <!-- The size range -->
     <visualSizeRange>
-      <min>2.1</min>
+      <min>2.2</min>
       <max>2.2</max>
     </visualSizeRange>
     <randomlyDropResources>

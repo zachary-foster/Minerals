@@ -69,18 +69,6 @@
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.6</min>
-      <max>1.8</max>
-    </visualSizeRange>
-    <visualClustering>0.8</visualClustering>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.8</visualSpread>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -103,19 +91,16 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-    
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Sandstone</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>weathered</li>
     </tags>
-    
   </ThingDef>
   
   
@@ -191,18 +176,6 @@
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.7</min>
-      <max>1.8</max>
-    </visualSizeRange>
-    <visualClustering>1.0</visualClustering>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.2</visualSpread>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -225,19 +198,16 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-    
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Sandstone</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>solid</li>
     </tags>
-    
   </ThingDef>
 
   
@@ -484,10 +454,10 @@
     <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>2</maxClusterSize>
+    <maxClusterSize>3</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.5</initialSizeMin>
-    <initialSizeMax>.9</initialSizeMax>
+    <initialSizeMin>.6</initialSizeMin>
+    <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->

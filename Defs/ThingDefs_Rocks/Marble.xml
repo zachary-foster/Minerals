@@ -46,13 +46,6 @@
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
-		<allowedTerrains>
-			<li>Marble_Rough</li>
-			<li>WaterOceanShallow</li>
-			<li>WaterShallow</li>
-		</allowedTerrains>
-		-->
     <allowedTerrains>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
@@ -63,18 +56,6 @@
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.7</min>
-      <max>1.8</max>
-    </visualSizeRange>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualClustering>1.0</visualClustering>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSpread>0.5</visualSpread>
-    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -91,14 +72,12 @@
     <ThingsToReplace>
       <li>Marble</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>weathered</li>
     </tags>
-    
   </ThingDef>
   
   
@@ -147,13 +126,6 @@
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
-		<allowedTerrains>
-			<li>Marble_Rough</li>
-			<li>WaterOceanShallow</li>
-			<li>WaterShallow</li>
-		</allowedTerrains>
-		-->
     <allowedTerrains>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
@@ -164,18 +136,6 @@
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.7</min>
-      <max>1.8</max>
-    </visualSizeRange>
-    <visualClustering>1.0</visualClustering>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.2</visualSpread>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -192,14 +152,12 @@
     <ThingsToReplace>
       <li>Marble</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>solid</li>
     </tags>
-    
   </ThingDef>
   
 
@@ -264,13 +222,6 @@
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
-		<allowedTerrains>
-			<li>Marble_Rough</li>
-			<li>WaterOceanShallow</li>
-			<li>WaterShallow</li>
-		</allowedTerrains>
-		-->
     <allowedTerrains>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
@@ -305,19 +256,16 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Marble</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>hewn</li>
     </tags>
-    
   </ThingDef>
  
   

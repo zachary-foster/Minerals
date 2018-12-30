@@ -20,7 +20,6 @@
     <blockWind>true</blockWind>
     <mineable>true</mineable>
     <hideAtSnowDepth>2</hideAtSnowDepth>
-    <topVerticesAltitudeBias>0.01</topVerticesAltitudeBias>
     <statBases>
       <Flammability>0</Flammability>
     </statBases>
@@ -51,6 +50,18 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <mustBeNotUnderThickRoof>true</mustBeNotUnderThickRoof>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>1</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>1.7</min>
+      <max>1.9</max>
+    </visualSizeRange>
+    <visualClustering>1.0</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>0.4</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.08</visualSizeVariation>
   </ThingDef>
   
   
@@ -61,6 +72,18 @@
     <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>1</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>1.7</min>
+      <max>1.9</max>
+    </visualSizeRange>
+    <visualClustering>1.0</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>0.4</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.08</visualSizeVariation>
   </ThingDef>
   
   
@@ -129,8 +152,6 @@
     <hideAtSnowDepth>.7</hideAtSnowDepth>
     <blockWind>false</blockWind>
     <pathCost>20</pathCost>
-    <!-- Has something to do with how textures on the same layer get stacked -->
-    <topVerticesAltitudeBias>0</topVerticesAltitudeBias>
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
     <submergedRadius>2</submergedRadius>
@@ -149,8 +170,6 @@
     <blockWind>true</blockWind>
     <pathCost>100</pathCost>
     <altitudeLayer>LowPlant</altitudeLayer>
-    <!-- Has something to do with how textures on the same layer get stacked -->
-    <topVerticesAltitudeBias>0.01</topVerticesAltitudeBias>
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0.7</submergedSize>
     <submergedRadius>3</submergedRadius>

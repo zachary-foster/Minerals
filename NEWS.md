@@ -1,4 +1,4 @@
-## v1.0.4
+## v1.0.5
 
 * Major update that replaces rock walls, ores, chunks, and adds other rock-related content. Replacement of rocks and chunks can be disabled in the mod's settings menu.
 * Compatible with Rimworld 1.0
@@ -7,6 +7,8 @@
 * The mod now has a setting menu where the frequency of each type of mineral or rock and be changed.
 * Dravite and Goshenite moved from this mod to MineralsExtra. See [MineralsExtra mod](https://github.com/zachary-foster/MineralsExtra_SK)).
 * Starting rock chunks are now removed at map generation. This can be changed in the settings.
+* Some minerals now appear to grow up adjacent walls.
+* Fixed various graphical bugs when textures overlaped.
 
 ## v0.6.0
 

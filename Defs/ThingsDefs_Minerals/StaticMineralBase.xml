@@ -18,7 +18,7 @@
     <drawerType>MapMeshOnly</drawerType>
     <scatterableOnMapGen>false</scatterableOnMapGen>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
-    <topVerticesAltitudeBias>0.00</topVerticesAltitudeBias>
+    <topVerticesAltitudeBias>0.01</topVerticesAltitudeBias>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
@@ -94,8 +94,6 @@
   
   <ThingDef Name="QuartzBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <altitudeLayer>LowPlant</altitudeLayer>
-    <!-- Has something to do with how textures on the same layer get stacked -->
-    <topVerticesAltitudeBias>0</topVerticesAltitudeBias>
     <fillPercent>0.1</fillPercent>
     <pathCost>40</pathCost>
     <!--How far away it can spawn from an existing location-->
@@ -217,8 +215,6 @@
     <fillPercent>0.05</fillPercent>
     <pathCost>20</pathCost>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
-    <!-- Has something to do with how textures on the same layer get stacked -->
-    <topVerticesAltitudeBias>0</topVerticesAltitudeBias>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -260,8 +256,6 @@
   
   <ThingDef Name="EmbeddedMineralBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <altitudeLayer>Floor</altitudeLayer>
-    <!-- Has something to do with how textures on the same layer get stacked -->
-    <topVerticesAltitudeBias>0</topVerticesAltitudeBias>
     <fillPercent>0.01</fillPercent>
     <pathCost>1</pathCost>
     <!-- Tags which determine how some options behave  -->

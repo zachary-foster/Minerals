@@ -297,6 +297,9 @@ namespace Minerals
                 textureLocations[i] = pos;
             }
 
+            // The size effects the altitude, which is a location attribute, so:
+            initializeTextureSizes();
+
             Rand.PopState();
         }
 
@@ -313,7 +316,9 @@ namespace Minerals
         }
 
         public virtual float customAltitude(int i) {
-            return attributes.Altitude + (1 - (getTextureLocation(i).z - (getTextureSize(i) / 2)) / Map.Size.z) * 0.01f;
+//            float zProportionOfTextureBottom = 1f - (getTextureLocation(i).z - (getTextureSize(i) / 2f)) / Map.Size.z;
+//            float xPropDistToEven = Math.Abs(1f - ((getTextureLocation(i).x + 0.5f) % 2f));
+            return attributes.Altitude;// + zProportionOfTextureBottom * 0.01f + xPropDistToEven * 0.001f / Map.Size.z;
         } 
 
         public virtual void initializeTextureSizes() {
@@ -343,6 +348,10 @@ namespace Minerals
                 if (attributes.largeTexturesOnTop)
                 {
                     textureLocations[i].y = customAltitude(i) + 0.01f * thisSize;
+                }
+                else
+                {
+                    textureLocations[i].y = customAltitude(i);
                 }
 
                 textureSizes[i] = thisSize;
@@ -471,7 +480,7 @@ namespace Minerals
             // Print image
             Material matSingle = Graphic.MatSingle;
             Vector2 sizeVec = new Vector2(thisSize, thisSize);
-            Printer_Plane.PrintPlane(layer, center, sizeVec, matSingle, thisRotation, Rand.Bool, null, null, attributes.topVerticesAltitudeBias, 0f);
+            Printer_Plane.PrintPlane(layer, center, sizeVec, matSingle, thisRotation, Rand.Bool, null, null, attributes.topVerticesAltitudeBias * thisSize, 0f);
         }
 
         public override void Print(SectionLayer layer)
