@@ -42,7 +42,7 @@
       <li>wall</li>
     </tags>
     <!-- at what snow depth the snow texture is used, if it exists -->
-    <snowTextureThreshold>0.8</snowTextureThreshold>
+    <snowTextureThreshold>0.9</snowTextureThreshold>
   </ThingDef>
   
   
@@ -163,7 +163,7 @@
       <li>small_rock</li>
     </tags>
     <!-- at what snow depth the snow texture is used, if it exists -->
-    <snowTextureThreshold>0.6</snowTextureThreshold>
+    <snowTextureThreshold>0.7</snowTextureThreshold>
   </ThingDef>
   
   
@@ -183,7 +183,7 @@
       <li>boulder</li>
     </tags>
     <!-- at what snow depth the snow texture is used, if it exists -->
-    <snowTextureThreshold>0.7</snowTextureThreshold>
+    <snowTextureThreshold>0.8</snowTextureThreshold>
     <!-- If textures overlapping walls above them should be printed on top -->
     <printOverWalls>true</printOverWalls>
   </ThingDef>

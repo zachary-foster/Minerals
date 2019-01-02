@@ -50,7 +50,7 @@ namespace Minerals
         {
             const float bigGap = 12f;
             const float smallGap = 8f;
-            const float headerSize = 8f;
+            const float headerSize = 24f;
 
             var list = new Listing_Standard { ColumnWidth = inRect.width / 2 - 34f };
             list.Begin(inRect);
