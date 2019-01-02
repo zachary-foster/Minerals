@@ -48,70 +48,87 @@ namespace Minerals
 
         public void DoWindowContents(Rect inRect)
         {
+            const float bigGap = 12f;
+            const float smallGap = 8f;
+            const float headerSize = 8f;
 
-            var list = new Listing_Standard { ColumnWidth = inRect.width - 34f };
+            var list = new Listing_Standard { ColumnWidth = inRect.width / 2 - 34f };
             list.Begin(inRect);
 
-            list.Gap(12f);
+            list.Label("abundanceSettingsHeader".Translate(), headerSize);
+
+            list.Gap(smallGap);
 
             list.Label("crystalAbundanceSetting".Translate() + ": " + Math.Round(crystalAbundanceSetting * 100, 3) + "%", -1f);
             crystalAbundanceSetting = list.Slider(crystalAbundanceSetting, 0, maxSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.Label("crystalDiversitySetting".Translate() + ": " + Math.Round(crystalDiversitySetting * 100, 3) + "%", -1f);
             crystalDiversitySetting = list.Slider(crystalDiversitySetting, 0, maxSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.Label("boulderAbundanceSetting".Translate() + ": " + Math.Round(boulderAbundanceSetting * 100, 3) + "%", -1f);
             boulderAbundanceSetting = list.Slider(boulderAbundanceSetting, 0, maxSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.Label("rocksAbundanceSetting".Translate() + ": " + Math.Round(rocksAbundanceSetting * 100, 3) + "%", -1f);
             rocksAbundanceSetting = list.Slider(rocksAbundanceSetting, 0, maxSetting);
 
-            list.Gap(12f);
+            list.Gap(bigGap);
+
+            list.Label("dynamicMineralSettingsHeader".Translate(), headerSize);
+
+            list.Gap(smallGap);
 
             list.Label("mineralGrowthSetting".Translate() + ": " + Math.Round(mineralGrowthSetting * 100, 3) + "%", -1f);
             mineralGrowthSetting = list.Slider(mineralGrowthSetting, 0, maxSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.Label("mineralReproductionSetting".Translate() + ": " + Math.Round(mineralReproductionSetting * 100, 3) + "%", -1f);
             mineralReproductionSetting = list.Slider(mineralReproductionSetting, 0, maxSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.Label("mineralSpawningSetting".Translate() + ": " + Math.Round(mineralSpawningSetting * 100, 3) + "%", -1f);
             mineralSpawningSetting = list.Slider(mineralSpawningSetting, 0, maxSetting);
 
-            list.Gap(12f);
+            list.Gap(bigGap);
+
+            list.Label("gameplaySettingsHeader".Translate(), headerSize);
+
+            list.Gap(smallGap);
 
             list.CheckboxLabeled("replaceWallsSetting".Translate(), ref replaceWallsSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.CheckboxLabeled("replaceChunksSetting".Translate(), ref replaceChunksSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.CheckboxLabeled("removeStartingChunksSetting".Translate(), ref removeStartingChunksSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.CheckboxLabeled("includeFictionalSetting".Translate(), ref includeFictionalSetting);
 
-            list.Gap(12f);
+            list.Gap(bigGap);
+
+            list.Label("graphicalSettingsHeader".Translate(), headerSize);
+
+            list.Gap(smallGap);
 
             list.CheckboxLabeled("underwaterMineralsSetting".Translate(), ref underwaterMineralsSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.CheckboxLabeled("mineralsGrowUpWallsSetting".Translate(), ref mineralsGrowUpWallsSetting);
 
-            list.Gap(12f);
+            list.Gap(smallGap);
 
             list.CheckboxLabeled("snowyRockSetting".Translate(), ref snowyRockSetting);
 

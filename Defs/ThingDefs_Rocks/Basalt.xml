@@ -376,6 +376,7 @@
     <label>Basalt boulder</label>
     <description>Basalt boulder. These can be climbed over with some difficulty and provide good cover.</description>
     <graphicData>
+      <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
@@ -505,6 +506,7 @@
     <label>Basalt rocks</label>
     <description>Basalt rocks that are easily walked over and provide little cover.</description>
     <graphicData>
+      <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
@@ -624,6 +626,7 @@
     <label>Ancient lava flow</label>
     <description>A weathered lava flow. This was once a river of molted rock, but has since cooled and shattered. Very difficult to walk over but provides little cover in a gunfight.</description>
     <graphicData>
+      <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>

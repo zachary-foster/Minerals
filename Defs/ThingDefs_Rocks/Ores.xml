@@ -367,6 +367,7 @@
     <defName>WeatheredOreNitre</defName>
     <label>Weathered Nitre Ore Deposits</label>
     <graphicData>
+      <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/WeatheredSandstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
@@ -575,6 +576,7 @@
     <defName>WeatheredOreCoal</defName>
     <label>Weathered Coal Ore Deposits</label>
     <graphicData>
+      <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/WeatheredSlate</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
@@ -1806,6 +1808,7 @@
     <defName>WeatheredOreSalt</defName>
     <label>Weathered Salt Deposit</label>
     <graphicData>
+      <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/WeatheredSandstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>

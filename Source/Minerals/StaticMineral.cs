@@ -458,12 +458,35 @@ namespace Minerals
                     }
                 }
             }
+            if (attributes.printOverWalls)
+            {
+                Vector3 squareCenter = this.TrueCenter();
+                float topOverlap = (center.z + size / 2) - (squareCenter.z + 0.4f);
+                if (topOverlap > 0)
+                {
+                    IntVec3 topSide = Position + new IntVec3(0, 0, 1);
+                    Thing topWall = isMineralWall(Map, topSide);
+                    if (topWall != null)
+                    {
+                        center.y = topWall.def.Altitude + 0.001f;
+                        return 0f;
+                    }
+                }
+            }
 
             return 0f;
         }
 
+        public virtual bool hiddenInSnow(int i)
+        {
+            return snowLevel() > attributes.snowTextureThreshold + (attributes.hideAtSnowDepth - attributes.snowTextureThreshold) * getTextureSize(i) / attributes.visualSizeRange.max;
+        }
+
         public virtual void printSubTexture(SectionLayer layer, int i, float sizeFactor = 1f)
         {
+            Rand.PushState();
+            Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode() + i.GetHashCode();
+
             // Get location
             Vector3 center = getTextureLocation(i);
 
@@ -471,6 +494,14 @@ namespace Minerals
             float thisSize = getTextureSize(i) * sizeFactor;
             if (thisSize <= 0)
             {
+                Rand.PopState();
+                return;
+            }
+
+            // Check if snow is covering it
+            if (hiddenInSnow(i))
+            {
+                Rand.PopState();
                 return;
             }
 
@@ -481,24 +512,26 @@ namespace Minerals
             Material matSingle = Graphic.MatSingle;
             Vector2 sizeVec = new Vector2(thisSize, thisSize);
             Printer_Plane.PrintPlane(layer, center, sizeVec, matSingle, thisRotation, Rand.Bool, null, null, attributes.topVerticesAltitudeBias * thisSize, 0f);
+
+            Rand.PopState();
         }
 
         public override void Print(SectionLayer layer)
         {
-            Rand.PushState();
-            Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
 
             // get print size
             float sizeFactor = printSizeFactor();
 
             if (sizeFactor <= 0)
             {
-                Rand.PopState();
                 return;
             }
  
             if (this.attributes.graphicData.graphicClass.Name != "Graphic_Random" || this.attributes.graphicData.linkType == LinkDrawerType.CornerFiller) {
+                //Rand.PushState();
+                //Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
 				base.Print(layer);
+                //Rand.PopState();
 			} else {
                 int numToPrint = Mathf.CeilToInt(printSize() * (float)attributes.maxMeshCount);
 				if (numToPrint < 1)
@@ -510,8 +543,6 @@ namespace Minerals
                     printSubTexture(layer, i, sizeFactor);
 				}
 			}
-
-            Rand.PopState();
 
         }
 
@@ -541,11 +572,33 @@ namespace Minerals
         {
             if (attributes.passability == Traversability.Impassable)
             {
-                IntVec3 top = Position + new IntVec3(0, 0, 1);
-                IntVec3 bottom = Position + new IntVec3(0, 0, -1);
-                IntVec3 right = Position + new IntVec3(1, 0, 0);
-                IntVec3 left = Position + new IntVec3(-1, 0, 0);
-                return top.GetSnowDepth(Map) + bottom.GetSnowDepth(Map) + right.GetSnowDepth(Map) + left.GetSnowDepth(Map);
+                if (Position.Roofed(Map))
+                {
+                    return 0f;
+                }
+
+                float total = 0f;
+                int numChecked = 0;
+                for (int xOffset = -1; xOffset <= 1; xOffset++)
+                {
+                    for (int zOffset = -1; zOffset <= 1; zOffset++)
+                    {
+                        IntVec3 checkedPosition = Position + new IntVec3(xOffset, 0, zOffset);
+                        if (checkedPosition.InBounds(Map) && (! checkedPosition.Impassable(Map)))
+                        {
+                            total += checkedPosition.GetSnowDepth(Map);
+                            numChecked += 1;
+                        }
+                    }
+                }
+                if (numChecked == 0)
+                {
+                    return 0f;
+                }
+                else
+                {
+                    return total / numChecked;
+                }
             }
             else
             {
@@ -563,7 +616,7 @@ namespace Minerals
                 string printedTexturePath = attributes.getTexturePaths().RandomElement();
 
                 // Check if it should be snowy
-                if (attributes.hasSnowyTextures && snowLevel() > 0.5f)
+                if (attributes.hasSnowyTextures && snowLevel() > attributes.snowTextureThreshold)
                 {
                     printedTexturePath = printedTexturePath + "_s";
                 }
@@ -729,6 +782,9 @@ namespace Minerals
         // If graphic overlapping with nearby wall textures are rotated
         public bool growsUpWalls = false;
 
+        // If textures overlapping walls above them should be printed on top
+        public bool printOverWalls = false;
+
         // If largest textures are printed on top, ro if vertical order matters
         public bool largeTexturesOnTop = false;
 
@@ -766,6 +822,8 @@ namespace Minerals
         public List<string> texturePaths;
         public List<string> snowTexturePaths;
         public bool hasSnowyTextures = false;
+        // at what snow depth the snow texture is used, if it exists
+        public float snowTextureThreshold = 0.5f;
 
 
         // ======= Spawning clusters ======= //
