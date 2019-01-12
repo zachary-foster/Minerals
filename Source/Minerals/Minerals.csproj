@@ -40,6 +40,10 @@
       <HintPath>..\..\..\..\..\..\..\..\..\..\home\zachary\.steam\steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Core_SK">
+      <HintPath>..\..\..\..\Hardcore-SK\Mods\Core_SK\Assemblies\Core_SK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

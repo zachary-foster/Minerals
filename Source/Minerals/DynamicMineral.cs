@@ -175,6 +175,8 @@ namespace Minerals
         public distGrowthRateModifier distGrowthRateModifer;  // Distance to needed terrain effects on growth rate
         public sizeGrowthRateModifier sizeGrowthRateModifer;  // Current size effects on growth rate
         public bool fastGraphicRefresh = false; // If true, the graphics are regenerated more often
+        public int minSpawnClusterSize = 1; // The minimum number of crystals in clusters that are spawned during gameplay, not map creation
+        public int maxSpawnClusterSize = 1; // The maximum number of crystals in clusters that are spawned during gameplay, not map creation
 
 
         public List<growthRateModifier> allRateModifiers 
@@ -470,7 +472,8 @@ namespace Minerals
 
                     // Try to spawn at that location
                     //Log.Message("Trying to spawn " + mineralType.defName);
-                    mineralType.TrySpawnAt(aPos, map, 0.01f);
+                    //mineralType.TrySpawnAt(aPos, map, 0.01f);
+                    mineralType.SpawnCluster(map, aPos, Rand.Range(0.01f, 0.05f), Rand.Range(mineralType.minSpawnClusterSize, mineralType.maxSpawnClusterSize));
 
                 }
 

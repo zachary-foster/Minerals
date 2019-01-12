@@ -21,6 +21,7 @@ namespace Minerals
         // ======= Private Variables ======= //
         protected float yieldPct = 0;
         protected float sizeWhenLastPrinted = 0f;
+        protected int currentTextureIndex = 0;
 
         // The current size of the mineral
         protected float mySize = 1f;
@@ -30,6 +31,9 @@ namespace Minerals
 
         // Cache for mineral texture sizes
         protected float[] textureSizes;
+
+        // Cache for mineral texture indexes
+        protected int[] textureIndexes;
 
         public float size
         {
@@ -126,21 +130,24 @@ namespace Minerals
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
             // Drop resources
-            foreach (RandomResourceDrop toDrop in attributes.randomlyDropResources)
+            if (dinfo.Instigator != null && dinfo.Instigator is Pawn)
             {
-                float dropChance = size * toDrop.DropProbability * ((float) Math.Min(dinfo.Amount, HitPoints) / (float) MaxHitPoints);
-                if (Rand.Range(0f, 1f) < dropChance)
+                foreach (RandomResourceDrop toDrop in attributes.randomlyDropResources)
                 {
-                    ThingDef myThingDef = DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName, false);
-                    if (myThingDef != null)
+                    float dropChance = size * toDrop.DropProbability * ((float) Math.Min(dinfo.Amount, HitPoints) / (float) MaxHitPoints);
+                    if (Rand.Range(0f, 1f) < dropChance)
                     {
-                        Thing thing = ThingMaker.MakeThing(myThingDef, null);
-                        thing.stackCount = toDrop.CountPerDrop;
-                        GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
+                        ThingDef myThingDef = DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName, false);
+                        if (myThingDef != null)
+                        {
+                            Thing thing = ThingMaker.MakeThing(myThingDef, null);
+                            thing.stackCount = toDrop.CountPerDrop;
+                            GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
+                        }
+
                     }
 
                 }
-
             }
 
 
@@ -291,8 +298,9 @@ namespace Minerals
             for (int i = 0; i < textureLocations.Length; i++)
             {
                 Vector3 pos = trueCenter;
-                pos.x += randPos(attributes.visualClustering, attributes.visualSpread);
-                pos.z += randPos(attributes.visualClustering, attributes.visualSpread);
+                pos.x += randPos(attributes.visualClustering, attributes.visualSpread * MineralsMain.Settings.visualSpreadFactor);
+                pos.z += randPos(attributes.visualClustering, attributes.visualSpread * MineralsMain.Settings.visualSpreadFactor);
+                pos.z += attributes.verticalOffset;
                 pos.y = attributes.Altitude;
                 textureLocations[i] = pos;
             }
@@ -372,6 +380,44 @@ namespace Minerals
 
             // Return per-calculated location
             return(textureSizes[index]);
+        }
+
+        public virtual void initializeTextures() {
+
+            Rand.PushState();
+            Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
+
+            // initalize the array if it has not already been initalized
+            if (textureIndexes == null)
+            {
+                textureIndexes = new int[attributes.maxMeshCount];
+            }
+                
+            List<int> possibilities = Enumerable.Range(0, attributes.getTexturePaths().Count).OrderBy(order=>Rand.Range(0, 100)).ToList();
+            for (int i = 0; i < attributes.maxMeshCount; i++)
+            {
+                // get a new random set of textures if run out of options
+                if (possibilities.Count == 0)
+                {
+                    possibilities = Enumerable.Range(0, attributes.getTexturePaths().Count).OrderBy(order=>Rand.Range(0, 100)).ToList();
+                }
+                textureIndexes[i] = possibilities[0];
+                possibilities.RemoveAt(0);
+            }
+
+            Rand.PopState();
+
+        }
+
+        public virtual string getTexturePath()
+        {
+            // initalize the array if it has not already been initalized
+            if (textureIndexes == null)
+            {
+                initializeTextures();
+            }
+                
+            return(attributes.getTexturePaths()[textureIndexes[currentTextureIndex]]);
         }
 
         // https://stackoverflow.com/questions/2742276/how-do-i-check-if-a-type-is-a-subtype-or-the-type-of-an-object/2742288
@@ -516,6 +562,7 @@ namespace Minerals
             Rand.PopState();
         }
 
+
         public override void Print(SectionLayer layer)
         {
 
@@ -528,19 +575,22 @@ namespace Minerals
             }
  
             if (this.attributes.graphicData.graphicClass.Name != "Graphic_Random" || this.attributes.graphicData.linkType == LinkDrawerType.CornerFiller) {
-                //Rand.PushState();
-                //Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
+                Rand.PushState();
+                Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
+                currentTextureIndex = 0;
 				base.Print(layer);
-                //Rand.PopState();
+                Rand.PopState();
 			} else {
                 int numToPrint = Mathf.CeilToInt(printSize() * (float)attributes.maxMeshCount);
 				if (numToPrint < 1)
 				{
 					numToPrint = 1;
 				}
+                currentTextureIndex = 0;
 				for (int i = 0; i < numToPrint; i++)
 				{
                     printSubTexture(layer, i, sizeFactor);
+                    currentTextureIndex += 1;
 				}
 			}
 
@@ -613,7 +663,7 @@ namespace Minerals
             {
       
                 // Pick a random path 
-                string printedTexturePath = attributes.getTexturePaths().RandomElement();
+                string printedTexturePath = getTexturePath();
 
                 // Check if it should be snowy
                 if (attributes.hasSnowyTextures && snowLevel() > attributes.snowTextureThreshold)
@@ -800,6 +850,9 @@ namespace Minerals
         // Things this mineral replaces when a map is initialized
         public List<string> ThingsToReplace; 
 
+        // If it replaces everything
+        public bool replaceAll = true;
+
         // If the primary color is based on the stone below it
         public bool coloredByTerrain = false;
 
@@ -825,6 +878,9 @@ namespace Minerals
         // at what snow depth the snow texture is used, if it exists
         public float snowTextureThreshold = 0.5f;
 
+        // How much to change the vertical position of the texture. Positive is up
+        public float verticalOffset = 0f;
+
 
         // ======= Spawning clusters ======= //
 
@@ -840,17 +896,12 @@ namespace Minerals
         }
 
 
-        public virtual void SpawnCluster(Map map, IntVec3 position)
+        public virtual void SpawnCluster(Map map, IntVec3 position, float size, int clusterCount)
         {
-            // Make a cluster center
-            StaticMineral mineral = TrySpawnAt(position, map, Rand.Range(initialSizeMin, initialSizeMax));
+            StaticMineral mineral = TrySpawnAt(position, map, size);
             if (mineral != null)
-            {            
-                // Pick cluster size
-                int clusterSize = Rand.Range(minClusterSize, maxClusterSize);
-
-                // Grow cluster 
-                GrowCluster(map, mineral, clusterSize);
+            {             
+                GrowCluster(map, mineral, clusterCount);
 
             }
         }
@@ -938,7 +989,6 @@ namespace Minerals
 
         public virtual bool PlaceIsBlocked(Map map, IntVec3 position)
         {
-//            Log.Message("PlaceIsBlocked: base");
             foreach (Thing thing in map.thingGrid.ThingsListAt(position))
             {
                 if (thing == null || thing.def == null)
@@ -946,41 +996,30 @@ namespace Minerals
                     continue;
                 }
 
+                // Not blocked if a replacement is found
+                if (ThingsToReplace != null && ThingsToReplace.Count > 0 && ThingsToReplace.Any(thing.def.defName.Equals))
+                {
+                    return false;
+                }
+
+                // Blocked by pawns, items, and plants
                 if (! canSpawnOnThings) {
-                    // Blocked by pawns, items, and plants
                     if (thing.def.category == ThingCategory.Pawn ||
                         thing.def.category == ThingCategory.Item ||
-                        thing.def.category == ThingCategory.Plant)
+                        thing.def.category == ThingCategory.Plant ||
+                        thing.def.category == ThingCategory.Building
+                    )
                     {
                         return true;
                     }
                 }
 
-                // Blocked by buildings, except low minerals (NOT REALLY)
-                if (thing.def.category == ThingCategory.Building)
-                {
-                    if (thing is StaticMineral && thing.def.defName != defName)
-                    {
-                        //                        Log.Message("Trying to spawn on mineral " + thing.def.defName);
-                        return true;
-                    }
-                    else
-                    {
-                        return true;
-                    }
-                    //                    if (!(thing is StaticMineral && (thing.def.altitudeLayer == AltitudeLayer.Floor || thing.def.altitudeLayer == AltitudeLayer.FloorEmplacement || myDef.altitudeLayer == AltitudeLayer.Floor || myDef.altitudeLayer == AltitudeLayer.FloorEmplacement)))
-                    //                    {
-                    //                        return true;
-                    //                    }
-
-                }
-
-                // Blocked by impassible things, inlcuding assocaited minerals
+                // Blocked by impassible things
                 if (thing.def.passability == Traversability.Impassable)
                 {
                     return true;
                 }
-
+                    
             }
             return false;
         }
@@ -1145,7 +1184,6 @@ namespace Minerals
         {
             ThingCategory originalDef = category;
             category = ThingCategory.Attachment; // Hack to allow them to spawn on other minerals
-            //StaticMineral output = (StaticMineral)GenSpawn.Spawn(this, dest, map);
             StaticMineral output = (StaticMineral)ThingMaker.MakeThing(this);
             GenSpawn.Spawn(output, dest, map);
             category = originalDef;
@@ -1279,7 +1317,7 @@ namespace Minerals
                     // Randomly spawn some clusters
                     if (Rand.Range(0f, 1f) < spawnProbability && CanSpawnAt(map, current))
                     {
-                        SpawnCluster(map, current);
+                        SpawnCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax), Rand.Range(minClusterSize, maxClusterSize));
                     }
 
                     // Spawn near their assocaited ore
@@ -1291,12 +1329,12 @@ namespace Minerals
 
                             if (CanSpawnAt(map, current))
                             {
-                                SpawnCluster(map, current);
+                                SpawnCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax), Rand.Range(minClusterSize, maxClusterSize));
                             } else {
                                 IntVec3 dest;
                                 if (current.InBounds(map) && TryFindReproductionDestination(map, current, out dest))
                                 {
-                                    SpawnCluster(map, dest);
+                                    SpawnCluster(map, dest, Rand.Range(initialSizeMin, initialSizeMax), Rand.Range(minClusterSize, maxClusterSize));
                                 }
                             }
                         }

@@ -17,7 +17,6 @@
       <MaxHitPoints>2800</MaxHitPoints>
     </statBases>
     <description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Sulfur</ResourceDefName>
@@ -30,11 +29,9 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableSteel</li>
     </ThingsToReplace>
-    
   </ThingDef>
 
 
@@ -373,6 +370,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(200,200,200)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/WeatheredSandstone/WeatheredSandstoneA</uiIconPath>
     <statBases>
       <MaxHitPoints>1800</MaxHitPoints>
     </statBases>
@@ -404,6 +402,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(200,200,200)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
       <MaxHitPoints>2500</MaxHitPoints>
     </statBases>
@@ -450,6 +449,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(200,200,200)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
       <MaxHitPoints>4000</MaxHitPoints>
     </statBases>
@@ -582,6 +582,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(30,20,20)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/WeatheredSlate/WeatheredSlateA</uiIconPath>
     <statBases>
       <MaxHitPoints>1800</MaxHitPoints>
     </statBases>
@@ -620,6 +621,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(30,20,20)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
       <MaxHitPoints>2800</MaxHitPoints>
     </statBases>
@@ -675,6 +677,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(30,20,20)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
       <MaxHitPoints>3200</MaxHitPoints>
     </statBases>
@@ -1355,7 +1358,6 @@
       <MaxHitPoints>3500</MaxHitPoints>
     </statBases>
     <description>Pyrolusite is the ore of Maganese. Maganese is a metal with high magnetism.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Pyrolusite</ResourceDefName>
@@ -1363,11 +1365,9 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableManganese</li>
     </ThingsToReplace>
-    
   </ThingDef>
 
 
@@ -1386,7 +1386,6 @@
       <MaxHitPoints>5000</MaxHitPoints>
     </statBases>
     <description>Pyrolusite is the ore of Maganese. Maganese is a metal with high magnetism.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Pyrolusite</ResourceDefName>
@@ -1394,11 +1393,9 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableManganese</li>
     </ThingsToReplace>
-    
   </ThingDef>
 
 
@@ -1560,6 +1557,7 @@
       <color>(105,95,97)</color>
       <colorTwo>(255,255,255)</colorTwo>
     </graphicData>
+    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
     <statBases>
 		  <Beauty>20</Beauty>
       <MaxHitPoints>3000</MaxHitPoints>
@@ -1595,6 +1593,7 @@
       <color>(105,95,97)</color>
       <colorTwo>(255,255,255)</colorTwo>
     </graphicData>
+    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
     <statBases>
 	  	<Beauty>20</Beauty>
       <MaxHitPoints>4000</MaxHitPoints>
@@ -1680,6 +1679,7 @@
       <color>(105,95,97)</color>
       <colorTwo>(190,210,250)</colorTwo>
     </graphicData>
+    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
     <statBases>
 		  <Beauty>2</Beauty>
       <MaxHitPoints>3000</MaxHitPoints>
@@ -1720,6 +1720,7 @@
       <color>(105,95,97)</color>
       <colorTwo>(220,225,255)</colorTwo>
     </graphicData>
+    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
     <statBases>
 	  	<Beauty>2</Beauty>
       <MaxHitPoints>4000</MaxHitPoints>
@@ -1814,6 +1815,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(230,230,230)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/WeatheredSandstone/WeatheredSandstoneA</uiIconPath>
     <statBases>
 		  <Beauty>2</Beauty>
       <MaxHitPoints>800</MaxHitPoints>
@@ -1846,6 +1848,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(230,230,230)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
     </statBases>
@@ -1891,6 +1894,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(230,230,230)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
     </statBases>
@@ -1917,6 +1921,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
+    <uiIconPath>Things/Ore/CompactedTech/CompactedTechA</uiIconPath>
     <statBases>
 		  <Beauty>-4</Beauty>
       <MaxHitPoints>1800</MaxHitPoints>
@@ -1933,7 +1938,6 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
@@ -1953,11 +1957,9 @@
         <DropProbability>1</DropProbability>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableComponentsIndustrial</li>
     </ThingsToReplace>
-
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
@@ -1971,6 +1973,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
+    <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
     <statBases>
       <MaxHitPoints>2500</MaxHitPoints>
     </statBases>
@@ -1986,7 +1989,6 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
@@ -2027,11 +2029,9 @@
         <DropProbability>1</DropProbability>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableComponentsIndustrial</li>
     </ThingsToReplace>
-    
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>false</coloredByTerrain>
   </ThingDef>
@@ -2045,6 +2045,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
+    <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
     <statBases>
       <MaxHitPoints>3000</MaxHitPoints>
     </statBases>

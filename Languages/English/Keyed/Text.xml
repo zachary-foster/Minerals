@@ -18,4 +18,5 @@
 	<dynamicMineralSettingsHeader>Mineral Growth Settings</dynamicMineralSettingsHeader>
 	<gameplaySettingsHeader>Gameplay Settings</gameplaySettingsHeader>
 	<graphicalSettingsHeader>Graphical Settings</graphicalSettingsHeader>
+	<visualSpreadFactor>Visual spread</visualSpreadFactor>
 </LanguageData>

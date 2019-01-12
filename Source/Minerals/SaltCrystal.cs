@@ -20,7 +20,7 @@ namespace Minerals
         {
             get
             {
-                return base.GrowthRate * ThingDef_SaltCrystal.GrowthRateBonus(Position, Map);
+                return ThingDef_SaltCrystal.calcGrowthRate(base.GrowthRate, ThingDef_SaltCrystal.GrowthRateBonus(Position, Map));
             }
         }
 
@@ -53,23 +53,47 @@ namespace Minerals
 
         public static float GrowthRateBonus(IntVec3 aPosition, Map aMap)
         {
-            float bonus = 1f;
             TerrainDef terrain = aMap.terrainGrid.TerrainAt(aPosition);
-    
-            if (terrain.defName == "SandBeachWetSalt") // Grows faster on wet sand
+            if (IsInWater(aPosition, aMap)) // Grows faster on wet sand
             {
-                bonus = bonus * 3;
-            } else if (IsInWater(aPosition, aMap)) // melts in water
+                return -3f;
+            } else if (terrain.defName == "SandBeachWetSalt") // melts in water
             {
-                bonus = Math.Abs(bonus) * -3;
+                return 3f;
             }
-    
-            return bonus;
+            return 1f;
+        }
+
+        public static float calcGrowthRate(float baseRate, float modifier)
+        {
+            if (baseRate <= 0)
+            {
+                if (modifier < 0)
+                {
+                    return baseRate + modifier;
+
+                }
+                else
+                {
+                    return baseRate;
+                }
+            }
+            else // growing
+            {
+                if (modifier < 0)
+                {
+                    return modifier;
+                }
+                else
+                {
+                    return baseRate * modifier;
+                }
+            }
         }
     
         public override float GrowthRateAtPos(Map aMap, IntVec3 aPosition) 
         {
-            return base.GrowthRateAtPos(aMap, aPosition) * ThingDef_SaltCrystal.GrowthRateBonus(aPosition, aMap);
+            return calcGrowthRate(base.GrowthRateAtPos(aMap, aPosition), ThingDef_SaltCrystal.GrowthRateBonus(aPosition, aMap));
         }
     }
     

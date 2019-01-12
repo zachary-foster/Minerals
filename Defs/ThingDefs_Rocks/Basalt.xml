@@ -12,6 +12,7 @@
       <drawSize>(4,4)</drawSize>
       <color>(50,50,50)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -32,12 +33,12 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>1</spawnRadius>
+    <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>10</maxClusterSize>
@@ -61,7 +62,7 @@
       <li>LavaRock</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>5</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
@@ -105,6 +106,7 @@
       <drawSize>(4,4)</drawSize>
       <color>(50,50,50)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
       <Flammability>0</Flammability>
       <Beauty>-2</Beauty>
@@ -168,19 +170,16 @@
         <DropProbability>0.3</DropProbability>
       </li>
     </randomlyDropResources>
-    
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>LavaRock</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>solid</li>
     </tags>
-    
   </ThingDef>
   
 
@@ -209,6 +208,7 @@
 			</damageData>
       <color>(50,50,50)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
       <MaxHitPoints>1800</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -325,6 +325,7 @@
 			</damageData>
       <color>(50,50,50)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
       <MaxHitPoints>1700</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -382,6 +383,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(50,50,50)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/PassableBasalt/PassableBasaltA</uiIconPath>
     <fillPercent>0.4</fillPercent>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
@@ -477,7 +479,7 @@
       </li>
       <li>
         <ResourceDefName>ChunkLava</ResourceDefName>
-        <DropProbability>0.4</DropProbability>
+        <DropProbability>0.6</DropProbability>
       </li>
       <li>
         <ResourceDefName>ObsidianShard</ResourceDefName>
@@ -512,6 +514,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(50,50,50)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/PassableBasalt/PassableBasaltA</uiIconPath>
     <fillPercent>0.3</fillPercent>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
@@ -632,6 +635,7 @@
       <drawSize>(1.5,1.5)</drawSize>
       <color>(50,50,50)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/PassableBasalt/PassableBasaltA</uiIconPath>
     <fillPercent>0.2</fillPercent>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>

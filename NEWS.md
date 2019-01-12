@@ -1,3 +1,14 @@
+## v1.0.8
+
+* Added setting to change the visual spread of textures.
+* Fixes visual bug when hewn rock was mined.
+* Made rubble and other resources not spawn when a rock is damage by a non-pawn source, like meteorites. 
+* Vanilla meteorites are replaced by minerals from this mod.
+* Fixes flickering textures in the finder tool.
+* Dynamic minerals like salt can now spawn in groups instead of one at a time. 
+* Moved weathered and soild rock textures up to avoid gaps and reduce overlaps with nearby walls. 
+* Increased chunk drop rate for boulders.
+
 ## v1.0.7
 
 * Major update that replaces rock walls, ores, chunks, and adds other rock-related content. Replacement of rocks and chunks can be disabled in the mod's settings menu.

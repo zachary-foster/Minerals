@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+  <ThingDef Name="WeatheredAdamant" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>WeatheredAdamant</defName>
+    <label>Weathered Adamant</label>
+    <description>Large masses of eroded Adamant.</description>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Rock/WeatheredGranite</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <color>(100, 200, 100)</color>
+    </graphicData>
+    <uiIconPath>Things/Rock/WeatheredAdamant/WeatheredGraniteA</uiIconPath>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkGranite</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
+      <mineableYield>1</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+    <!--How far away it can spawn from an existing location-->
+    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+    <spawnRadius>1</spawnRadius>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>1</perMapProbability>
+    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
+    <!-- How  many squares each cluster will be -->
+    <minClusterSize>5</minClusterSize>
+    <maxClusterSize>50</maxClusterSize>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>1</initialSizeMin>
+    <initialSizeMax>1</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.3</initialSizeVariation>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+    <allowedTerrains>
+		</allowedTerrains>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>1.5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>3</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>WeatheredBasalt</li>
+      <li>WeatheredGranite</li>
+      <li>WeatheredLimestone</li>
+      <li>WeatheredMarble</li>
+      <li>WeatheredSandstone</li>
+      <li>WeatheredSlate</li>
+    </ThingsToReplace>
+    <!-- If it replaces everything -->
+    <replaceAll>false</replaceAll>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>weathered</li>
+      <li>fictional</li>
+    </tags>
+  </ThingDef>
+  
+  
+  <ThingDef Name="SolidAdamant" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
+    <defName>SolidAdamant</defName>
+    <label>Solid Adamant</label>
+    <description>A solid wall of Adamant.</description>
+    <graphicData>
+      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <color>(100, 200, 100)</color>
+    </graphicData>
+    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+    <statBases>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkGranite</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
+      <mineableYield>1</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+    <!--How far away it can spawn from an existing location-->
+    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+    <spawnRadius>1</spawnRadius>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>1</perMapProbability>
+    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
+    <!-- How  many squares each cluster will be -->
+    <minClusterSize>5</minClusterSize>
+    <maxClusterSize>50</maxClusterSize>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>1</initialSizeMin>
+    <initialSizeMax>1</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.3</initialSizeVariation>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+    <allowedTerrains>
+		</allowedTerrains>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>2</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>3</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>SolidBasalt</li>
+      <li>SolidGranite</li>
+      <li>SolidLimestone</li>
+      <li>SolidMarble</li>
+      <li>SolidSandstone</li>
+      <li>SolidSlate</li>
+    </ThingsToReplace>
+    <!-- If it replaces everything -->
+    <replaceAll>false</replaceAll>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>solid</li>
+      <li>fictional</li>
+    </tags>
+  </ThingDef>
+  
+
+  <ThingDef Name="HewnAdamant" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>HewnAdamant</defName>
+    <label>Hewn Adamant</label>
+    <description>Hewn wall of solid Adamant. Adamant is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
+    <graphicData>
+			<texPath>Things/Rock/HewnRockWall</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+        <li>Rock</li>
+        <li>MapEdge</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+      <color>(100, 200, 100)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkGranite</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
+      <mineableYield>1</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+    <!--How far away it can spawn from an existing location-->
+    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+    <spawnRadius>1</spawnRadius>
+    <!-- The probability that this mineral type will be spawned at all on a given map -->
+    <perMapProbability>1</perMapProbability>
+    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
+    <!-- How  many squares each cluster will be -->
+    <minClusterSize>5</minClusterSize>
+    <maxClusterSize>50</maxClusterSize>
+    <!-- The range of starting sizes of individuals in clusters -->
+    <initialSizeMin>1</initialSizeMin>
+    <initialSizeMax>1</initialSizeMax>
+    <!-- How much initial sizes of individuals randomly vary -->
+    <initialSizeVariation>.3</initialSizeVariation>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+    <allowedTerrains>
+		</allowedTerrains>
+    <!-- The maximum number of images that will be printed per square -->
+    <maxMeshCount>1</maxMeshCount>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>1.7</min>
+      <max>1.8</max>
+    </visualSizeRange>
+    <visualClustering>1.0</visualClustering>
+    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+    <visualSpread>0.2</visualSpread>
+    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSizeVariation>0.2</visualSizeVariation>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>2</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>3</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>HewnBasalt</li>
+      <li>HewnGranite</li>
+      <li>HewnLimestone</li>
+      <li>HewnMarble</li>
+      <li>HewnSandstone</li>
+      <li>HewnSlate</li>
+    </ThingsToReplace>
+    <!-- If it replaces everything -->
+    <replaceAll>false</replaceAll>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>hewn</li>
+      <li>fictional</li>
+    </tags>
+  </ThingDef>
+
+
+</Defs>

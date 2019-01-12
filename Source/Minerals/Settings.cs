@@ -24,6 +24,7 @@ namespace Minerals
         public bool underwaterMineralsSetting = true;
         public bool mineralsGrowUpWallsSetting = true;
         public bool snowyRockSetting = true;
+        public float visualSpreadFactor = 1f;
 
 
         public override void ExposeData()
@@ -43,6 +44,7 @@ namespace Minerals
             Scribe_Values.Look(ref underwaterMineralsSetting, "underwaterMineralsSetting", true);
             Scribe_Values.Look(ref mineralsGrowUpWallsSetting, "mineralsGrowUpWallsSetting", true);
             Scribe_Values.Look(ref snowyRockSetting, "snowyRockSetting", true);
+            Scribe_Values.Look(ref visualSpreadFactor, "visualSpreadFactor", 1f);
         }
 
 
@@ -131,6 +133,11 @@ namespace Minerals
             list.Gap(smallGap);
 
             list.CheckboxLabeled("snowyRockSetting".Translate(), ref snowyRockSetting);
+
+            list.Gap(smallGap);
+
+            list.Label("visualSpreadFactor".Translate() + ": " + Math.Round(visualSpreadFactor * 100, 3) + "%", -1f);
+            visualSpreadFactor = list.Slider(visualSpreadFactor, 0, 3);
 
             list.End();
         }

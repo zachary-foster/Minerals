@@ -11,6 +11,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    <uiIconPath>Things/Mineral/CalciteCrystal/CalciteCrystalA</uiIconPath>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
       <li>(211,213,212)</li>
@@ -345,6 +346,7 @@
       <color>(100,100,100)</color>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    <uiIconPath>Things/Mineral/PyriteCrystal/PyriteCrystalA</uiIconPath>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.25</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
@@ -430,6 +432,7 @@
       <color>(92,68,53)</color>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    <uiIconPath>Things/Mineral/PyriteCrystal/PyriteCrystalA</uiIconPath>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.25</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
@@ -569,6 +572,7 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
+    <uiIconPath>Things/Mineral/DiamondCrystal/DiamondCrystalA</uiIconPath>
     <altitudeLayer>Floor</altitudeLayer>
     <fillPercent>0.01</fillPercent>
     <statBases>
@@ -663,6 +667,7 @@
       <color>(127,120,102)</color>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    <uiIconPath>Things/Mineral/UraniniteDeposit/UraniniteDepositA</uiIconPath>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>1</glowRadius>
@@ -731,6 +736,7 @@
       <color>(86,177,129)</color>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    <uiIconPath>Things/Mineral/UraniniteDeposit/UraniniteDepositA</uiIconPath>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>

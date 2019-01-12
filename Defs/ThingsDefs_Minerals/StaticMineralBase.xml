@@ -93,6 +93,7 @@
   </ThingDef>
   
   <ThingDef Name="QuartzBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    <uiIconPath>Things/Mineral/QuartzCrystal/QuartzCrystalA</uiIconPath>
     <altitudeLayer>LowPlant</altitudeLayer>
     <fillPercent>0.1</fillPercent>
     <pathCost>40</pathCost>
@@ -145,6 +146,7 @@
   </ThingDef>
   
   <ThingDef Name="TourmalineBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    <uiIconPath>Things/Mineral/TourmalineCrystal/TourmalineCrystalA</uiIconPath>
     <altitudeLayer>LowPlant</altitudeLayer>
     <fillPercent>0.1</fillPercent>
     <pathCost>40</pathCost>
@@ -266,6 +268,7 @@
   </ThingDef>
   
   <ThingDef Name="CorundumBase" ParentName="EmbeddedMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    <uiIconPath>Things/Mineral/CorundumCrystal/CorundumCrystalA</uiIconPath>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -315,6 +318,7 @@
   </ThingDef>
   
   <ThingDef Name="BerylBase" ParentName="EmbeddedMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    <uiIconPath>Things/Mineral/BerylCrystal/BerylCrystalA</uiIconPath>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
       <Flammability>0</Flammability>

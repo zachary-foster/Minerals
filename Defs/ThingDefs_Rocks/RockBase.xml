@@ -64,6 +64,8 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSpread>0.5</visualSpread>
     <visualSizeVariation>0.08</visualSizeVariation>
+    <!-- How much to change the vertical position of the texture. Positive is up -->
+    <verticalOffset>0.2</verticalOffset>
   </ThingDef>
   
   
@@ -86,10 +88,13 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSpread>0.5</visualSpread>
     <visualSizeVariation>0.08</visualSizeVariation>
+    <!-- How much to change the vertical position of the texture. Positive is up -->
+    <verticalOffset>0.2</verticalOffset>
   </ThingDef>
   
   
   <ThingDef Name="HewnRockBase" ParentName="ImpassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
