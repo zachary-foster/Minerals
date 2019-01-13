@@ -816,9 +816,9 @@ namespace Minerals
         // If true, only grows under roofs
         public bool mustBeUnderRoof = true;
         public bool mustBeUnderThickRoof = false;
-//        public bool mustBeUnderNaturalRoof = true;
         public bool mustBeUnroofed = false;
         public bool mustBeNotUnderThickRoof = false;
+        public bool mustBeNearPassable = false; 
 
         // The maximum number of images that will be printed per square
         public int maxMeshCount = 1;
@@ -852,6 +852,9 @@ namespace Minerals
 
         // If it replaces everything
         public bool replaceAll = true;
+
+        // If it must replace something in order to spawned
+        public bool mustReplace = false;
 
         // If the primary color is based on the stone below it
         public bool coloredByTerrain = false;
@@ -970,6 +973,12 @@ namespace Minerals
             }
 //            Log.Message("CanSpawnAt: roof is ok " + position);
 
+            // Check for things it must replace
+            if (mustReplace && ThingToReplaceAtPos(map, position) == null)
+            {
+                return false;
+            }
+
             // Look for stuff in the way
             if (PlaceIsBlocked(map, position))
             {
@@ -989,17 +998,15 @@ namespace Minerals
 
         public virtual bool PlaceIsBlocked(Map map, IntVec3 position)
         {
+            if (ThingToReplaceAtPos(map, position) != null)
+            {
+                return false;
+            }
             foreach (Thing thing in map.thingGrid.ThingsListAt(position))
             {
                 if (thing == null || thing.def == null)
                 {
                     continue;
-                }
-
-                // Not blocked if a replacement is found
-                if (ThingsToReplace != null && ThingsToReplace.Count > 0 && ThingsToReplace.Any(thing.def.defName.Equals))
-                {
-                    return false;
                 }
 
                 // Blocked by pawns, items, and plants
@@ -1182,11 +1189,11 @@ namespace Minerals
 
         public virtual StaticMineral SpawnAt(Map map, IntVec3 dest, float size)
         {
-            ThingCategory originalDef = category;
-            category = ThingCategory.Attachment; // Hack to allow them to spawn on other minerals
+            //ThingCategory originalDef = category;
+            //category = ThingCategory.Attachment; // Hack to allow them to spawn on other minerals
             StaticMineral output = (StaticMineral)ThingMaker.MakeThing(this);
-            GenSpawn.Spawn(output, dest, map);
-            category = originalDef;
+            GenSpawn.Spawn(output, dest, map, WipeMode.Vanish);
+            //category = originalDef;
             output.size = size;
             map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Buildings);
             //Log.Message("Spawned " + defName + " at " + dest);
@@ -1209,24 +1216,30 @@ namespace Minerals
             Predicate<IntVec3> validator = c => CanSpawnAt(map, c);
             return CellFinder.TryFindRandomCellNear(position, map, Mathf.CeilToInt(spawnRadius), validator, out foundCell);
         }
-
-
-
+            
 
         public virtual bool isRoofConditionOk(Map map, IntVec3 position)
         {
-            if (mustBeUnderRoof && (! position.Roofed(map)))
+            if (mustBeUnderThickRoof && (map.roofGrid.RoofAt(position) == null || (! map.roofGrid.RoofAt(position).isThickRoof)))
             {
                 return false;
             }
-            if (mustBeUnderThickRoof && position.GetRoof(map).isThickRoof)
+
+            if (mustBeNotUnderThickRoof && (map.roofGrid.RoofAt(position) != null && map.roofGrid.RoofAt(position).isThickRoof))
             {
                 return false;
             }
-            if (mustBeUnroofed && position.Roofed(map))
+
+            if (mustBeUnderRoof && (! map.roofGrid.Roofed(position)))
             {
                 return false;
             }
+
+            if (mustBeUnroofed && map.roofGrid.Roofed(position))
+            {
+                return false;
+            }
+
             return true;
         }
 
@@ -1351,6 +1364,10 @@ namespace Minerals
         public virtual bool allowReplaceSetting()
         {
             bool output = true;
+            if (replaceAll == false)
+            {
+                output = false;
+            }
             if (tags.Contains("wall") && MineralsMain.Settings.replaceWallsSetting == false)
             {
                 output = false;
@@ -1382,29 +1399,9 @@ namespace Minerals
                 }
 
                 // roof filters
-                if (map.roofGrid.RoofAt(current) != null)
+                if (! isRoofConditionOk(map, current))
                 {
-
-                    if (mustBeUnderThickRoof && (! map.roofGrid.RoofAt(current).isThickRoof))
-                    {
-                        continue;
-                    }
-
-                    if (mustBeNotUnderThickRoof && map.roofGrid.RoofAt(current).isThickRoof)
-                    {
-                        continue;
-                    }
-
-                    if (mustBeUnderRoof && (! map.roofGrid.Roofed(current)))
-                    {
-                        continue;
-                    }
-
-                    if (mustBeUnroofed && map.roofGrid.Roofed(current))
-                    {
-                        continue;
-                    }
-
+                    continue;
                 }
                     
                 Thing ToReplace = ThingToReplaceAtPos(map, current);

@@ -2037,7 +2037,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_StaticMineral">
+  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
     <defName>HewnOreTech</defName>
     <label>Hewn compacted machinery</label>
     <graphicData>

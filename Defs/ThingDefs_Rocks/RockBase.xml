@@ -50,8 +50,8 @@
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
-    <mustBeNotUnderThickRoof>true</mustBeNotUnderThickRoof>
+    <mustBeUnroofed>true</mustBeUnroofed>
+    <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->
@@ -72,10 +72,10 @@
   <ThingDef Name="SolidRockBase" ParentName="ImpassableRockBase" Class="Minerals.ThingDef_SolidRock" Abstract="True">
     <thingClass>Minerals.SolidRock</thingClass>
     <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
-    <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
+    <mustBeUnderRoof>true</mustBeUnderRoof>
+    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
-    <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
+    <mustBeNotUnderThickRoof>true</mustBeNotUnderThickRoof>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>1</maxMeshCount>
     <!-- The size range -->

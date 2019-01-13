@@ -34,47 +34,12 @@ namespace Minerals
 	/// <permission>No restrictions</permission>
 	public class ThingDef_SolidRock : ThingDef_StaticMineral
 	{
-        public override void ReplaceThings(Map map, float scaling = 1)
+
+        public override bool isRoofConditionOk(Map map, IntVec3 position)
         {
-
-            if (ThingsToReplace == null || ThingsToReplace.Count == 0 || allowReplaceSetting() == false)
-            {
-                return;
-            }
-
-            // Find spots to spawn it
-            map.regionAndRoomUpdater.Enabled = false;
-            IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
-            foreach (IntVec3 current in allCells)
-            {
-                if (!current.InBounds(map))
-                {
-                    continue;
-                }
-
-                // dont spawn expect under mountains 
-                if (map.roofGrid.RoofAt(current) == null || map.roofGrid.RoofAt(current).isThickRoof == false)
-                {
-                    continue;
-                }
-
-                // Only spawn if near passable area
-                if (!IsNearPassable(map, current, 1))
-                {
-                    continue;
-                }
-
-                // Replace rock under mountains
-                Thing ToReplace = ThingToReplaceAtPos(map, current);
-                if (ToReplace != null)
-                {
-                    ToReplace.Destroy();
-                    StaticMineral spawned = SpawnAt(map, current, Rand.Range(initialSizeMin, initialSizeMax));
-                    map.edificeGrid.Register(spawned);
-                }
-            }
-            map.regionAndRoomUpdater.Enabled = true;
+            return base.isRoofConditionOk(map, position) || (map.roofGrid.Roofed(position) && IsNearPassable(map, position));
         }
+
 
         public bool IsNearPassable(Map map, IntVec3 position, int radius = 1)
         {

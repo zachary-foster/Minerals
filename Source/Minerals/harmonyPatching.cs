@@ -53,7 +53,7 @@ namespace Minerals
                         // check if any of the minerals replace this one 
                         foreach (ThingDef_StaticMineral mineralType in DefDatabase<ThingDef_StaticMineral>.AllDefs)
                         {
-                            if (mineralType.ThingsToReplace == null || mineralType.ThingsToReplace.Count == 0 || mineralType.replaceAll == false)
+                            if (mineralType.ThingsToReplace == null || mineralType.ThingsToReplace.Count == 0)
                             {
                                 continue;
                             }

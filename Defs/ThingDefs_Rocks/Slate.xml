@@ -24,7 +24,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.2</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -77,7 +77,7 @@
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
         <DropProbability>0.5</DropProbability>
-        <CountPerDrop>6</CountPerDrop>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -116,7 +116,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.4</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -169,7 +169,7 @@
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
         <DropProbability>0.5</DropProbability>
-        <CountPerDrop>6</CountPerDrop>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -222,7 +222,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.4</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -288,7 +288,7 @@
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
         <DropProbability>0.5</DropProbability>
-        <CountPerDrop>6</CountPerDrop>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
