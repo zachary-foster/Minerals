@@ -10,6 +10,9 @@
       <texPath>Things/Mineral/CalciteCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/CalciteCrystal/CalciteCrystalA</uiIconPath>
     <!-- If defined, randomly pick colors from this set -->
@@ -112,6 +115,9 @@
       <drawSize>(1,1)</drawSize>
       <color>(220,220,220)</color>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -149,6 +155,9 @@
       <color>(220,220,220)</color>
       <colorTwo>(120, 90, 160)</colorTwo>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -186,6 +195,9 @@
       <color>(100,100,100)</color>
       <colorTwo>(120,120,120)</colorTwo>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
@@ -237,6 +249,9 @@
       <color>(228,156,160)</color>
       <colorTwo>(71,6,14)</colorTwo>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
@@ -287,6 +302,9 @@
       <color>(45,102,113)</color>
       <colorTwo>(7,95,231)</colorTwo>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
@@ -345,6 +363,9 @@
       <drawSize>(1,1)</drawSize>
       <color>(100,100,100)</color>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/PyriteCrystal/PyriteCrystalA</uiIconPath>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
@@ -431,6 +452,9 @@
       <drawSize>(1,1)</drawSize>
       <color>(92,68,53)</color>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/PyriteCrystal/PyriteCrystalA</uiIconPath>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
@@ -497,6 +521,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(202,119,140)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.2</perMapProbability>
@@ -522,6 +549,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(131,156,199)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.2</perMapProbability>
@@ -547,6 +577,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(84,169,137)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.2</perMapProbability>
@@ -571,6 +604,9 @@
       <texPath>Things/Mineral/DiamondCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1,1)</drawSize>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/DiamondCrystal/DiamondCrystalA</uiIconPath>
     <altitudeLayer>Floor</altitudeLayer>
@@ -666,6 +702,9 @@
       <drawSize>(1,1)</drawSize>
       <color>(127,120,102)</color>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/UraniniteDeposit/UraniniteDepositA</uiIconPath>
     <comps>
@@ -735,6 +774,9 @@
       <drawSize>(1,1)</drawSize>
       <color>(86,177,129)</color>
       <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/UraniniteDeposit/UraniniteDepositA</uiIconPath>
     <statBases>

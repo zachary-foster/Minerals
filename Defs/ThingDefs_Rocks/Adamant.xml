@@ -11,6 +11,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(49, 66, 60)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
     <statBases>
@@ -203,6 +206,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
       <color>(49, 66, 60)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>

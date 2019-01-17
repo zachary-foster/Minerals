@@ -66,7 +66,7 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>3</DropProbability>
+        <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -147,7 +147,7 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>3</DropProbability>
+        <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -256,7 +256,7 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>3</DropProbability>
+        <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -325,7 +325,7 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>3</DropProbability>
+        <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -448,7 +448,7 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
+        <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -478,6 +478,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(132,135,132)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
     <fillPercent>0.3</fillPercent>
@@ -578,7 +581,7 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
+        <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>

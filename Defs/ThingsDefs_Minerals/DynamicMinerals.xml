@@ -20,6 +20,9 @@
     <graphicData>
       <texPath>Things/Mineral/ColdstoneCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/ColdstoneCrystal/ColdstoneCrystalA</uiIconPath>
     <fillPercent>0.2</fillPercent>
@@ -199,6 +202,9 @@
     <graphicData>
       <texPath>Things/Mineral/GlowstoneCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/GlowstoneCrystal/GlowstoneCrystalA</uiIconPath>
     <fillPercent>0.3</fillPercent>
@@ -360,6 +366,9 @@
     <graphicData>
       <texPath>Things/Mineral/SaltCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/SaltCrystal/SaltCrystalA</uiIconPath>
     <fillPercent>0.01</fillPercent>
@@ -520,6 +529,9 @@
       <texPath>Things/Mineral/SaltCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <color>(228,169,35)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/SaltCrystal/SaltCrystalA</uiIconPath>
     <fillPercent>0.01</fillPercent>

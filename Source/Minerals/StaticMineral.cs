@@ -1189,6 +1189,13 @@ namespace Minerals
 
         public virtual StaticMineral SpawnAt(Map map, IntVec3 dest, float size)
         {
+            // Remove things to replace
+            Thing thingToRemove = ThingToReplaceAtPos(map, dest);
+            if (thingToRemove != null)
+            {
+                thingToRemove.Destroy(DestroyMode.Vanish);
+            }
+
             //ThingCategory originalDef = category;
             //category = ThingCategory.Attachment; // Hack to allow them to spawn on other minerals
             StaticMineral output = (StaticMineral)ThingMaker.MakeThing(this);
@@ -1213,7 +1220,7 @@ namespace Minerals
                 return false;
             }
 //            Log.Message("TryFindReproductionDestination: " + position + " " + map + "  " + Mathf.CeilToInt(this.spawnRadius));
-            Predicate<IntVec3> validator = c => CanSpawnAt(map, c);
+            Predicate<IntVec3> validator = c => c.DistanceTo(position) <= spawnRadius && CanSpawnAt(map, c);
             return CellFinder.TryFindRandomCellNear(position, map, Mathf.CeilToInt(spawnRadius), validator, out foundCell);
         }
             

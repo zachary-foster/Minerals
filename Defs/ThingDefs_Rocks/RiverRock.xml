@@ -11,6 +11,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(50,50,50)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/RiverRock/RiverRockA</uiIconPath>
     <drawerType>MapMeshOnly</drawerType>
@@ -192,6 +195,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(50,50,50)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/RiverRock/RiverRockA</uiIconPath>
     <drawerType>MapMeshOnly</drawerType>
@@ -343,7 +349,5 @@
       <li>small_rock</li>
     </tags>
   </ThingDef>
-
-  
 
 </Defs>

@@ -555,6 +555,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(126,104,94)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/PassableSandstone/PassableSandstoneA</uiIconPath>
     <fillPercent>0.3</fillPercent>
@@ -668,6 +671,9 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(126,104,94)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/PassableBasalt/PassableBasaltA</uiIconPath>
     <fillPercent>0.1</fillPercent>

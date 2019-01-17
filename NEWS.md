@@ -7,7 +7,11 @@
 * Fixes flickering textures in the finder tool.
 * Dynamic minerals like salt can now spawn in groups instead of one at a time. 
 * Moved weathered and soild rock textures up to avoid gaps and reduce overlaps with nearby walls. 
-* Increased chunk drop rate for boulders.
+* Increased chunk drop rate for boulders. 
+* Removed damage graphics from small minerals/rocks.
+* Fixed a few minor texture issues.
+* Reduced slate block drop rate for walls by 60%.
+* Reduced rubble drop rate by ~50% for all rocks. 
 
 ## v1.0.7
 
