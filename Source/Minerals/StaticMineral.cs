@@ -123,45 +123,43 @@ namespace Minerals
 
         public virtual void incPctYeild(float amount, Pawn miner)
         {
+            // Increase yeild for when it is destroyed
             yieldPct += (float)Mathf.Min(amount, HitPoints) / (float)MaxHitPoints * miner.GetStatValue(StatDefOf.MiningYield, true);
+
+            // Drop resources
+            foreach (RandomResourceDrop toDrop in attributes.randomlyDropResources)
+            {
+                float dropChance = size * toDrop.DropProbability * ((float) Math.Min(amount, HitPoints) / (float) MaxHitPoints) * miner.GetStatValue(StatDefOf.MiningYield, true) * MineralsMain.Settings.resourceDropFreqSetting;
+                if (Rand.Range(0f, 1f) < dropChance)
+                {
+                    ThingDef myThingDef = DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName, false);
+                    if (myThingDef != null)
+                    {
+                        int dropNum = (int) Math.Round(toDrop.CountPerDrop * MineralsMain.Settings.resourceDropAmountSetting);
+                        if (dropNum >= 1)
+                        {
+                            Thing thing = ThingMaker.MakeThing(myThingDef, null);
+                            thing.stackCount = dropNum;
+                            GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
+                        }
+                   }
+
+                }
+
+            }
+
         }
 
 
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
-            // Drop resources
-            if (dinfo.Instigator != null && dinfo.Instigator is Pawn)
-            {
-                foreach (RandomResourceDrop toDrop in attributes.randomlyDropResources)
-                {
-                    float dropChance = size * toDrop.DropProbability * ((float) Math.Min(dinfo.Amount, HitPoints) / (float) MaxHitPoints);
-                    if (Rand.Range(0f, 1f) < dropChance)
-                    {
-                        ThingDef myThingDef = DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName, false);
-                        if (myThingDef != null)
-                        {
-                            Thing thing = ThingMaker.MakeThing(myThingDef, null);
-                            thing.stackCount = toDrop.CountPerDrop;
-                            GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
-                        }
 
-                    }
-
-                }
-            }
-
-
-            // 
             if (def.building.mineableThing != null && def.building.mineableYieldWasteable && dinfo.Def == DamageDefOf.Mining && dinfo.Instigator != null && dinfo.Instigator is Pawn)
             {
                 incPctYeild(dinfo.Amount, (Pawn)dinfo.Instigator);
             }
-//            if (size < yieldPct)
-//            {
-//                dinfo.SetAmount(0);
-//            }
-            base.PreApplyDamage(ref dinfo, out absorbed);
 
+            base.PreApplyDamage(ref dinfo, out absorbed);
 
         }
 

@@ -25,6 +25,8 @@ namespace Minerals
         public bool mineralsGrowUpWallsSetting = true;
         public bool snowyRockSetting = true;
         public float visualSpreadFactor = 1f;
+        public float resourceDropFreqSetting = 1f;
+        public float resourceDropAmountSetting = 1f;
 
 
         public override void ExposeData()
@@ -45,6 +47,8 @@ namespace Minerals
             Scribe_Values.Look(ref mineralsGrowUpWallsSetting, "mineralsGrowUpWallsSetting", true);
             Scribe_Values.Look(ref snowyRockSetting, "snowyRockSetting", true);
             Scribe_Values.Look(ref visualSpreadFactor, "visualSpreadFactor", 1f);
+            Scribe_Values.Look(ref resourceDropFreqSetting, "resourceDropFreqSetting", 1f);
+            Scribe_Values.Look(ref resourceDropAmountSetting, "resourceDropAmountSetting", 1f);
         }
 
 
@@ -52,7 +56,7 @@ namespace Minerals
         {
             const float bigGap = 12f;
             const float smallGap = 8f;
-            const float headerSize = 24f;
+            const float headerSize = 32f;
 
             var list = new Listing_Standard { ColumnWidth = inRect.width / 2 - 34f };
             list.Begin(inRect);
@@ -117,6 +121,16 @@ namespace Minerals
             list.Gap(smallGap);
 
             list.CheckboxLabeled("includeFictionalSetting".Translate(), ref includeFictionalSetting);
+
+            list.Gap(smallGap);
+
+            list.Label("resourceDropFreqSetting".Translate() + ": " + Math.Round(resourceDropFreqSetting * 100, 3) + "%", -1f);
+            resourceDropFreqSetting = list.Slider(resourceDropFreqSetting, 0, maxSetting);
+
+            list.Gap(smallGap);
+
+            list.Label("resourceDropAmountSetting".Translate() + ": " + Math.Round(resourceDropAmountSetting * 100, 3) + "%", -1f);
+            resourceDropAmountSetting = list.Slider(resourceDropAmountSetting, 0, maxSetting);
 
             list.Gap(bigGap);
 

@@ -66,12 +66,12 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>0.5</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
+        <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
@@ -158,12 +158,12 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>0.5</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
+        <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
@@ -277,12 +277,12 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>0.5</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
+        <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
@@ -356,12 +356,12 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>0.5</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
+        <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
@@ -468,12 +468,12 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>0.5</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
+        <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
@@ -604,12 +604,12 @@
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>0.5</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
+        <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>

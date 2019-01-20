@@ -1,6 +1,6 @@
 ## v1.0.8
 
-* Added setting to change the visual spread of textures.
+* Added mod config setting to change the visual spread of textures.
 * Fixes visual bug when hewn rock was mined.
 * Made rubble and other resources not spawn when a rock is damage by a non-pawn source, like meteorites. 
 * Vanilla meteorites are replaced by minerals from this mod.
@@ -10,8 +10,11 @@
 * Increased chunk drop rate for boulders. 
 * Removed damage graphics from small minerals/rocks.
 * Fixed a few minor texture issues.
-* Reduced slate block drop rate for walls by 60%.
+* Reduced slate block drop rate for walls by 70%.
 * Reduced rubble drop rate by ~50% for all rocks. 
+* Mining output now depends on miner skill.
+* Added Russian translations by skyarkangle.
+* Added mod config settings to change resource drop rate and drop amount.
 
 ## v1.0.7
 
@@ -24,7 +27,7 @@
 * Starting rock chunks are now removed at map generation. This can be changed in the settings.
 * Some minerals now appear to grow up adjacent walls.
 * Fixed various graphical bugs when textures overlaped.
-* Fixed most of lag assocaited with cold and NPS and improved preformance overall.
+* Fixed most of lag assocaited with cold and NPS and improved performance overall.
 * Snow appears on rocks.
 
 ## v0.6.0
