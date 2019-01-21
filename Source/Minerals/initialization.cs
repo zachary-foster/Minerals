@@ -24,9 +24,45 @@ namespace Minerals
 
         public static void initStaticMinerals(Map map)
         {
+            List<string> spawned =  new List<string>();
+
+            // Spawn static minerals
             foreach (ThingDef_StaticMineral mineralType in DefDatabase<ThingDef_StaticMineral>.AllDefs)
             {
-                mineralType.InitNewMap(map);
+                if (mineralType.GetType() == typeof(ThingDef_StaticMineral) && (! spawned.Contains(mineralType.defName)))
+                {
+                    mineralType.InitNewMap(map);
+                    spawned.Add(mineralType.defName);
+                }
+            }
+
+            // spawn dynamic minerals
+            foreach (ThingDef_StaticMineral mineralType in DefDatabase<ThingDef_StaticMineral>.AllDefs)
+            {
+                if (mineralType.GetType() == typeof(ThingDef_DynamicMineral) && (! spawned.Contains(mineralType.defName)))
+                {
+                    mineralType.InitNewMap(map);
+                    spawned.Add(mineralType.defName);
+                }
+            }
+
+            // spawn large minerals
+            foreach (ThingDef_StaticMineral mineralType in DefDatabase<ThingDef_StaticMineral>.AllDefs)
+            {
+                if (mineralType.GetType() == typeof(ThingDef_BigMineral) && (! spawned.Contains(mineralType.defName)))
+                {
+                    mineralType.InitNewMap(map);
+                    spawned.Add(mineralType.defName);
+                }
+            }
+
+            // spawn everything else
+            foreach (ThingDef_StaticMineral mineralType in DefDatabase<ThingDef_StaticMineral>.AllDefs)
+            {
+                if (! spawned.Contains(mineralType.defName))
+                {
+                    mineralType.InitNewMap(map);
+                }
             }
         }
 

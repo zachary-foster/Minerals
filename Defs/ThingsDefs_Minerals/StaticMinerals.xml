@@ -87,8 +87,6 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSpread>2.0</visualSpread>
     <visualSizeVariation>0.2</visualSizeVariation>
-    <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>20</maxMinedYeild>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>

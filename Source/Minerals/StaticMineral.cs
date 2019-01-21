@@ -618,6 +618,10 @@ namespace Minerals
 
         public virtual float snowLevel()
         {
+            if (Map == null)
+            {
+                return 0f;
+            }
             if (attributes.passability == Traversability.Impassable)
             {
                 if (Position.Roofed(Map))
@@ -835,9 +839,6 @@ namespace Minerals
 
         // If largest textures are printed on top, ro if vertical order matters
         public bool largeTexturesOnTop = false;
-
-        // The amount of resource returned if the mineral is its maximum size
-        public int maxMinedYeild = 10;
 
         // Other resources it might drop
         public List<RandomResourceDrop> randomlyDropResources;

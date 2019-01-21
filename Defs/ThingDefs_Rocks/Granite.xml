@@ -153,16 +153,15 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
+      <li>HewnGranite</li>
       <li>Granite</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>solid</li>
     </tags>
-    
   </ThingDef>
   
 

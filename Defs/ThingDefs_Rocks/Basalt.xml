@@ -85,14 +85,12 @@
     <ThingsToReplace>
       <li>LavaRock</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>weathered</li>
     </tags>
-    
   </ThingDef>
   
   
@@ -173,6 +171,7 @@
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>LavaRock</li>
+      <li>HewnBasalt</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -284,19 +283,16 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>LavaRock</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>hewn</li>
     </tags>
-    
   </ThingDef>
  
 
@@ -344,7 +340,6 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
-
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -361,14 +356,6 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-
-    <!-- Tags which determine how some options behave  -->
-    <tags>
-      <li>rock</li>
-      <li>wall</li>
-      <li>hewn</li>
-    </tags>
-    
   </ThingDef>
   
   

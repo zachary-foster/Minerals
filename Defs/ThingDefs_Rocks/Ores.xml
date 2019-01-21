@@ -50,7 +50,6 @@
       <MaxHitPoints>2800</MaxHitPoints>
     </statBases>
     <description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Sulfur</ResourceDefName>
@@ -63,11 +62,10 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableSteel</li>
+      <li>HewnOreSteel</li>
     </ThingsToReplace>
-    
   </ThingDef>
 
 
@@ -171,7 +169,6 @@
       <MaxHitPoints>4000</MaxHitPoints>
     </statBases>
     <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Gold</ResourceDefName>
@@ -184,11 +181,10 @@
         <CountPerDrop>50</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableSilver</li>
+      <li>HewnOreSilver</li>
     </ThingsToReplace>
-    
   </ThingDef>
 
   <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
@@ -307,6 +303,7 @@
 
     <ThingsToReplace>
       <li>MineableGold</li>
+      <li>HewnOreGold</li>
     </ThingsToReplace>
     
   </ThingDef>
@@ -407,7 +404,6 @@
       <MaxHitPoints>2500</MaxHitPoints>
     </statBases>
     <description>Deposits of Nitre. Major uses of potassium nitrate are in fertilizers, tree stump removal, rocket propellants and fireworks. It is one of the major components of gunpowder.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Nitre</ResourceDefName>
@@ -417,6 +413,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableNitre</li>
+      <li>HewnOreNitre</li>
     </ThingsToReplace>
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>false</coloredByTerrain>
@@ -514,7 +511,6 @@
       <MaxHitPoints>7000</MaxHitPoints>
     </statBases>
     <description>Deposits of Anglesite. Anglesite is the ore form of Lead. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and has a relatively low melting point.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Anglesite</ResourceDefName>
@@ -522,11 +518,10 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableLead</li>
+      <li>HewnOreLead</li>
     </ThingsToReplace>
-    
   </ThingDef>
   
   <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
@@ -645,6 +640,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableCoal</li>
+      <li>HewnOreCoal</li>
     </ThingsToReplace>
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>false</coloredByTerrain>
@@ -747,7 +743,6 @@
       <MaxHitPoints>12000</MaxHitPoints>
     </statBases>
     <description>Lateritic nickel ore deposits are surficial, weathered rinds formed on ultramafic rocks. Nickel Ore contains Nickel and small amounts of Cobalt.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Nickel</ResourceDefName>
@@ -755,11 +750,10 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineablePlasteel</li>
+      <li>HewnOreNickel</li>
     </ThingsToReplace>
-    
   </ThingDef>
 
 
@@ -853,7 +847,6 @@
       <MaxHitPoints>1500</MaxHitPoints>
     </statBases>
     <description>Lateritic Tin ore deposits are surficial, weathered rinds formed on ultramafic rocks. Tin Ore contains Tin and small amounts of Cobalt.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Tin</ResourceDefName>
@@ -861,11 +854,10 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableTin</li>
+      <li>HewnOreTin</li>
     </ThingsToReplace>
-    
   </ThingDef>
   
 
@@ -968,6 +960,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableCopper</li>
+      <li>HewnOreCopper</li>
     </ThingsToReplace>
   </ThingDef>
 
@@ -1062,7 +1055,6 @@
       <MaxHitPoints>6000</MaxHitPoints>
     </statBases>
     <description>Lateritic Aluminium ore deposits are surficial, weathered rinds formed on ultramafic rocks. Aluminium Ore contains Aluminium and small amounts of Cobalt.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Aluminium</ResourceDefName>
@@ -1070,11 +1062,10 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableAluminium</li>
+      <li>HewnOreAluminium</li>
     </ThingsToReplace>
-    
   </ThingDef>
   
 
@@ -1185,6 +1176,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableJade</li>
+      <li>HewnOreJade</li>
     </ThingsToReplace>
   </ThingDef>
 
@@ -1283,7 +1275,6 @@
       <MaxHitPoints>15000</MaxHitPoints>
     </statBases>
     <description>Ilmenite is the ore of Titanium. Titanium is a very durable metal and is often used in alloys to produce metals much stronger than steel.</description>
-
     <randomlyDropResources>
       <li>
         <ResourceDefName>Ilmenite</ResourceDefName>
@@ -1291,11 +1282,10 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <ThingsToReplace>
       <li>MineableTitanium</li>
+      <li>HewnOreTitanium</li>
     </ThingsToReplace>
-    
   </ThingDef>
 
 
@@ -1395,6 +1385,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableManganese</li>
+      <li>HewnOreManganese</li>
     </ThingsToReplace>
   </ThingDef>
 
@@ -1498,6 +1489,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableTungsten</li>
+      <li>HewnOreTungsten</li>
     </ThingsToReplace>
   </ThingDef>
   
@@ -1608,6 +1600,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableGlowstone</li>
+      <li>HewnOreGlowstone</li>
     </ThingsToReplace>
     <comps>
 		  <li Class="CompProperties_Glower">
@@ -1735,6 +1728,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableColdstone</li>
+      <li>HewnOreColdstone</li>
     </ThingsToReplace>
     <comps>
     	<li Class="SK.CompProperties_ColdPusher">
@@ -1862,6 +1856,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableSalt</li>
+      <li>HewnOreSalt</li>
     </ThingsToReplace>
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>false</coloredByTerrain>
@@ -2031,6 +2026,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableComponentsIndustrial</li>
+      <li>HewnOreTech</li>
     </ThingsToReplace>
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>false</coloredByTerrain>
@@ -2179,6 +2175,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MinableAmber</li>
+      <li>HewnOreAmber</li>
     </ThingsToReplace>
   </ThingDef>
   
@@ -2283,6 +2280,7 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableUranium</li>
+      <li>HewnOreUranium</li>
     </ThingsToReplace>
   </ThingDef>
 

@@ -132,8 +132,6 @@
     <visualSpread>0</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0</visualSizeVariation>
-    <!-- The amount of resource returned if the mineral is its maximum size -->
-    <maxMinedYeild>1</maxMinedYeild>
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
