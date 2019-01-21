@@ -10,11 +10,11 @@
       <texPath>Things/Rock/WeatheredLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(158,153,135)</color>
+      <color>(229, 216, 185)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1200</MaxHitPoints>
+      <MaxHitPoints>1100</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -24,7 +24,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkLimestone</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.5</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -60,10 +60,7 @@
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-      </li>
+    
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
@@ -96,11 +93,11 @@
       <texPath>Things/Rock/WeatheredLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(158,153,135)</color>
+      <color>(229, 216, 185)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
+      <MaxHitPoints>1250</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-1</Beauty>
     </statBases>
@@ -110,7 +107,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkLimestone</mineableThing>
-      <mineableDropChance>0.4</mineableDropChance>
+      <mineableDropChance>0.6</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -146,10 +143,7 @@
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-      </li>
+ 
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
@@ -182,7 +176,7 @@
     <label>Hewn Limestone</label>
     <description>A wall of hewn limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material and is easily quarried.</description>
     <graphicData>
-			<texPath>Things/Rock/HewnRockWall</texPath>
+			<texPath>Things/Rock/HewnRockWall/rocky</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -200,13 +194,13 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(158,153,135)</color>
+      <color>(229, 216, 185)</color>
     </graphicData>
-    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+    <uiIconPath>Things/Rock/HewnRockWall/rocky/rockyA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
+      <MaxHitPoints>1250</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>-3</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -214,7 +208,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkLimestone</mineableThing>
-      <mineableDropChance>0.4</mineableDropChance>
+      <mineableDropChance>0.6</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -263,10 +257,7 @@
     <visualSizeVariation>0.2</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-      </li>
+
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
@@ -314,11 +305,11 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(158,153,135)</color>
+      <color>(229, 216, 185)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1400</MaxHitPoints>
+      <MaxHitPoints>1250</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -328,7 +319,7 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkLimestone</mineableThing>
-      <mineableDropChance>0.4</mineableDropChance>
+      <mineableDropChance>0.6</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -338,10 +329,7 @@
 
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-      </li>
+   
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
@@ -374,7 +362,7 @@
       <texPath>Things/Rock/BoulderGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(158,153,135)</color>
+      <color>(229, 216, 185)</color>
     </graphicData>
     <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
     <fillPercent>0.6</fillPercent>
@@ -503,7 +491,7 @@
       <texPath>Things/Rock/PassableLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(158,153,135)</color>
+      <color>(229, 216, 185)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>

@@ -10,7 +10,7 @@
       <texPath>Things/Rock/WeatheredGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(105,95,97)</color>
+      <color>(114,101,106)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
     <statBases>
@@ -64,9 +64,14 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.1</DropProbability>
       </li>
+        <li>
+        <ResourceDefName>Sand</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>8</CountPerDrop>
+      </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
+        <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -91,7 +96,7 @@
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(105,95,97)</color>
+      <color>(114,101,106)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
@@ -145,9 +150,14 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.1</DropProbability>
       </li>
+       <li>
+        <ResourceDefName>Sand</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>8</CountPerDrop>
+      </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
+        <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -170,7 +180,7 @@
     <label>Hewn Granite</label>
     <description>Hewn wall of solid granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
     <graphicData>
-			<texPath>Things/Rock/HewnRockWall</texPath>
+			<texPath>Things/Rock/HewnRockWall/granite</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -188,12 +198,14 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(105,95,97)</color>
+      <color>(114,101,106)</color>
     </graphicData>
+      
+  <uiIconPath>Things/Rock/HewnRockWall/granite/graniteA</uiIconPath>
     <statBases>
-      <MaxHitPoints>2200</MaxHitPoints>
+      <MaxHitPoints>2000</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>-2</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -261,9 +273,14 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.05</DropProbability>
       </li>
+       <li>
+        <ResourceDefName>Sand</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>8</CountPerDrop>
+      </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
+        <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -286,7 +303,7 @@
   <ThingDef Name="SmoothedHewnGranite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>SmoothedHewnGranite</defName>
     <label>Smoothed granite wall</label>
-    <description>A smoothed wall of solid granite. Its almost pretty.</description>
+    <description>A smoothed wall of solid granite. Its not too interesting.</description>
     <graphicData>
 			<texPath>Things/Rock/SmoothedRockWall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -306,13 +323,13 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(105,95,97)</color>
+      <color>(114,101,106)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>2100</MaxHitPoints>
+      <MaxHitPoints>2000</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -333,9 +350,14 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.05</DropProbability>
       </li>
+       <li>
+        <ResourceDefName>Sand</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>8</CountPerDrop>
+      </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
+        <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -357,7 +379,7 @@
       <texPath>Things/Rock/BoulderGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
+      <color>(114,101,106)</color>
     </graphicData>
     <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
     <statBases>
@@ -455,6 +477,11 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.05</DropProbability>
       </li>
+       <li>
+        <ResourceDefName>Sand</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>8</CountPerDrop>
+      </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
@@ -484,7 +511,7 @@
       <texPath>Things/Rock/PassableLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
+      <color>(114,101,106)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
@@ -588,6 +615,11 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.05</DropProbability>
+      </li>
+       <li>
+        <ResourceDefName>Sand</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>8</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>

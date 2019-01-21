@@ -10,13 +10,13 @@
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(50,50,50)</color>
+      <color>(117,117,117)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-2</Beauty>
+      <Beauty>-1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -102,13 +102,13 @@
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(50,50,50)</color>
+      <color>(117,117,117)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
       <Flammability>0</Flammability>
       <Beauty>-2</Beauty>
-      <MaxHitPoints>1700</MaxHitPoints>
+      <MaxHitPoints>1750</MaxHitPoints>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -187,7 +187,7 @@
     <label>Hewn Basalt</label>
     <description>A hewn wall of basalt, composed of deep layers of ancient lava flows.  It makes a good building material but is difficult to quarry.</description>
     <graphicData>
-			<texPath>Things/Rock/HewnRockWall</texPath>
+			<texPath>Things/Rock/HewnRockWall/rocky</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -205,13 +205,13 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(50,50,50)</color>
+      <color>(117,117,117)</color>
     </graphicData>
-    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+    <uiIconPath>Things/Rock/HewnRockWall/rocky/rockyA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1800</MaxHitPoints>
+      <MaxHitPoints>1750</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-2</Beauty>
+      <Beauty>-3</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -299,7 +299,7 @@
   <ThingDef Name="SmoothedHewnBasalt" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>SmoothedHewnBasalt</defName>
     <label>Smooth Basalt</label>
-    <description>A smooth wall of basalt, composed of deep layers of ancient lava flows.  Its a bit dull.</description>
+    <description>A smooth wall of basalt, composed of deep layers of ancient lava flows.  Its extremly dull.</description>
     <graphicData>
 			<texPath>Things/Rock/SmoothedRockWall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -319,13 +319,13 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(50,50,50)</color>
+      <color>(117,117,117)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1700</MaxHitPoints>
+      <MaxHitPoints>1750</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>-1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -368,14 +368,14 @@
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(50,50,50)</color>
+      <color>(117,117,117)</color>
     </graphicData>
     <uiIconPath>Things/Rock/PassableBasalt/PassableBasaltA</uiIconPath>
     <fillPercent>0.4</fillPercent>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>1600</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>-2</Beauty>
     </statBases>
     <pathCost>100</pathCost>
     <building>
@@ -499,7 +499,7 @@
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(50,50,50)</color>
+      <color>(117,117,117)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
@@ -509,7 +509,7 @@
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>-3</Beauty>
     </statBases>
     <pathCost>40</pathCost>
     <building>
@@ -623,7 +623,7 @@
       <texPath>Things/Rock/PassableBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(50,50,50)</color>
+      <color>(117,117,117)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
@@ -633,7 +633,7 @@
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>-4</Beauty>
     </statBases>
     <pathCost>50</pathCost>
     <building>

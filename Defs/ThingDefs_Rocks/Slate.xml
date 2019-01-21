@@ -10,11 +10,11 @@
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(70,70,70)</color>
+      <color>(51.51.51)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1200</MaxHitPoints>
+      <MaxHitPoints>800</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>3</Beauty>
     </statBases>
@@ -25,7 +25,7 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSlate</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
-      <mineableYield>1</mineableYield>
+      <mineableYield>2</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -60,10 +60,7 @@
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-      </li>
+      
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>0.5</DropProbability>
@@ -102,13 +99,13 @@
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(70,70,70)</color>
+      <color>(51.51.51)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1400</MaxHitPoints>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -152,10 +149,7 @@
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-      </li>
+    
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>0.5</DropProbability>
@@ -191,7 +185,7 @@
     <label>Hewn Slate</label>
     <description>A hewn wall of slate, a fine-grained metamorphic rock formed from compacted volcanic ash or silt. Some of these naturally rectangular stones can be used for building without stonecutting.</description>
     <graphicData>
-			<texPath>Things/Rock/HewnRockWall</texPath>
+			<texPath>Things/Rock/HewnRockWall/bandered</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -209,11 +203,11 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(70,70,70)</color>
+      <color>(51.51.51)</color>
     </graphicData>
-    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+    <uiIconPath>Things/Rock/HewnRockWall/bandered/banderedA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1400</MaxHitPoints>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-1</Beauty>
     </statBases>
@@ -272,10 +266,7 @@
     <visualSizeVariation>0.2</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
+     
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>0.5</DropProbability>
@@ -308,7 +299,7 @@
   <ThingDef Name="SmoothedHewnSlate" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>SmoothedHewnSlate</defName>
     <label>Smoothed slate wall</label>
-    <description>A smoothed wall of slate. Its a bit dull.</description>
+    <description>A smoothed wall of slate. Its structure is nice to look at.</description>
     <graphicData>
 			<texPath>Things/Rock/SmoothedRockWall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -328,13 +319,13 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(70,70,70)</color>
+      <color>(51.51.51)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1300</MaxHitPoints>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>3</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -351,10 +342,7 @@
     </building>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
+   
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>0.5</DropProbability>
@@ -389,13 +377,13 @@
       <texPath>Things/Rock/WeatheredSlate</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(70,70,70)</color>
+      <color>(51.51.51)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredSlate/WeatheredSlateA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>600</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>10</Beauty>
+      <Beauty>20</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -463,10 +451,7 @@
     <visualSizeVariation>0.2</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-      </li>
+  
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>0.5</DropProbability>
@@ -504,7 +489,7 @@
       <texPath>Things/Rock/PassableSlate</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(70,70,70)</color>
+      <color>(51.51.51)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>

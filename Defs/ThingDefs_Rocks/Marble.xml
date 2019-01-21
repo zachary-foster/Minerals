@@ -10,13 +10,13 @@
       <texPath>Things/Rock/WeatheredGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(132,135,132)</color>
+      <color>(244,244,244)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1400</MaxHitPoints>
+      <MaxHitPoints>1100</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>3</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -91,11 +91,11 @@
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(132,135,132)</color>
+      <color>(244,244,244)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1600</MaxHitPoints>
+      <MaxHitPoints>1250</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>1</Beauty>
     </statBases>
@@ -170,7 +170,7 @@
     <label>Hewn Marble</label>
     <description>A wall of hewn marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it a popular building material.</description>
     <graphicData>
-			<texPath>Things/Rock/HewnRockWall</texPath>
+			<texPath>Things/Rock/HewnRockWall/marbled</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -188,9 +188,9 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(132,135,132)</color>
+      <color>(244,244,244)</color>
     </graphicData>
-    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+    <uiIconPath>Things/Rock/HewnRockWall/marbled/marbledA</uiIconPath>
     <statBases>
       <MaxHitPoints>1700</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -297,13 +297,13 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(132,135,132)</color>
+      <color>(244,244,244)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1600</MaxHitPoints>
+      <MaxHitPoints>1250</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>2</Beauty>
+      <Beauty>3</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
@@ -348,14 +348,14 @@
       <texPath>Things/Rock/BoulderGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(132,135,132)</color>
+      <color>(244,244,244)</color>
     </graphicData>
     <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
     <fillPercent>0.6</fillPercent>
     <statBases>
       <MaxHitPoints>900</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>2</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <pathCost>100</pathCost>
     <building>
@@ -478,7 +478,7 @@
       <texPath>Things/Rock/PassableLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(132,135,132)</color>
+      <color>(244,244,244)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
