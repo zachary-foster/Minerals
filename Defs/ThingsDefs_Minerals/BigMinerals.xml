@@ -66,7 +66,7 @@
     <thingClass>Minerals.BigMineralTrophy</thingClass>
     <category>Building</category>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>LowPlant</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <selectable>true</selectable>
     <fillPercent>0.50</fillPercent>
@@ -110,7 +110,7 @@
       </li>
     </comps>
     <description>An huge deposit of glowstone. Glowstone grows in wet hot places deep underground, but rarely active on the surface. Thought to be related in some way to the living deposits of coldstone in colder climates. They are prized by the native population for light sources, so there are few accessible deposits left in the more habitable parts of this rimworld. Judging by its size, this cluster must be thousands of years old. It seems to be radiating a small amount of heat and is much brighter than most other glowstone. </description>
-    <altitudeLayer>LowPlant</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -240,7 +240,7 @@
         <enabled>false</enabled>
       </damageData>
       <color>(230,230,230)</color>
-      <colorTwo>(200,200,255)</colorTwo>
+      <colorTwo>(220,220,255)</colorTwo>
     </graphicData>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>10</maxMeshCount>
@@ -300,7 +300,7 @@
       </damageData>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(230,230,230)</color>
-      <colorTwo>(200,200,255)</colorTwo>
+      <colorTwo>(220,220,255)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>

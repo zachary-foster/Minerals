@@ -318,5 +318,6 @@ Here are the list of images used:
 * https://commons.wikimedia.org/wiki/File:Calcite-Chlorite-Group-67816.jpg Rob Lavinsky
 * https://torange.biz/smoky-quartz-44694
 * https://www.flickr.com/photos/jsjgeology/42778129494
+* https://commons.wikimedia.org/wiki/File:Hoodoos_at_Bryce_Canyon.jpg
 
 
