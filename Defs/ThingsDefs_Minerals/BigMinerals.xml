@@ -79,7 +79,7 @@
     <fillPercent>0.50</fillPercent>
     <pathCost>100</pathCost>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <soundImpactDefault>MeleeHit_Stone</soundImpactDefault>
     <rotatable>false</rotatable>
     <tradeTags>
        <li>MineralTrophy</li>
@@ -279,7 +279,7 @@
     <!-- The radius that will be searched to replace things -->
     <replaceRadius>1</replaceRadius>
     <!-- The minmum propotion of things in radius to replace for a replacement to happen -->
-    <repalceThreshold>0.4</repalceThreshold>
+    <repalceThreshold>0.45</repalceThreshold>
   </ThingDef>
 
 
@@ -366,7 +366,7 @@
     <!-- The radius that will be searched to replace things -->
     <replaceRadius>1</replaceRadius>
     <!-- The minmum propotion of things in radius to replace for a replacement to happen -->
-    <repalceThreshold>0.5</repalceThreshold>
+    <repalceThreshold>0.45</repalceThreshold>
   </ThingDef>
 
 

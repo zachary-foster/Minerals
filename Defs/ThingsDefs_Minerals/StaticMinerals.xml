@@ -67,10 +67,16 @@
       <li>Limestone</li>
     </associatedOres>
     <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+    <allowedTerrains>
+      <li>Granite_Rough</li>
+      <li>Marble_Rough</li>
+      <li>Limestone_Rough</li>
+      <li>Sandstone_Rough</li>
+      <li>Slate_Rough</li>
+      <li>LavaRock_Rough</li>
+      <li>Claystone_Rough</li>
+    </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>true</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -360,8 +366,8 @@
     <maxMeshCount>10</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.3</min>
-      <max>0.7</max>
+      <min>0.2</min>
+      <max>0.6</max>
     </visualSizeRange>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
     <visualClustering>1.0</visualClustering>
@@ -403,23 +409,14 @@
     <allowedTerrains>
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
+      <li>Claystone_Rough</li>
       <li>Slate_Rough</li>
     </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Limestone_Rough</li>
-      <li>Sandstone_Rough</li>
-      <li>Slate_Rough</li>
-    </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MineableSteel</li>
     </associatedOres>
     <nearAssociatedOreBonus>50</nearAssociatedOreBonus>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -498,15 +495,8 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
+      <li>Claystone_Rough</li>
     </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Granite_Rough</li>
-      <li>Marble_Rough</li>
-      <li>Limestone_Rough</li>
-      <li>Sandstone_Rough</li>
-      <li>Slate_Rough</li>
-    </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MineableTin</li>
@@ -664,11 +654,6 @@
       <li>Granite_Rough</li>
       <li>LavaRock_Rough</li>
     </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Granite_Rough</li>
-      <li>LavaRock_Rough</li>
-    </neededNearbyTerrains>
     <!-- The biomes this can appear in. The default is all ones known to mod-->
     <allowedBiomes>
       <li>IceSheet</li>
@@ -688,10 +673,6 @@
       <li>Permafrost</li>
       <li>Steppes</li>
     </allowedBiomes>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -755,26 +736,14 @@
       <li>Marble_Rough</li>
       <li>Granite_Rough</li>
       <li>LavaRock_Rough</li>
+      <li>Claystone_Rough</li>
     </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Limestone_Rough</li>
-      <li>Sandstone_Rough</li>
-      <li>Slate_Rough</li>
-      <li>Marble_Rough</li>
-      <li>Granite_Rough</li>
-      <li>LavaRock_Rough</li>
-    </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MineableUranium</li>
       <li>MineableSilver</li>
     </associatedOres>
     <nearAssociatedOreBonus>50</nearAssociatedOreBonus>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>

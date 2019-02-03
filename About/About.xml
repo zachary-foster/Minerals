@@ -6,7 +6,7 @@
 	<supportedVersions><li>1.0</li></supportedVersions>
   <description>
 
-For RimWorld Hardcore SK 
+For RimWorld Hardcore SK v1
 
 mod version 1.1.0
 
@@ -14,7 +14,12 @@ mod version 1.1.0
 
 This mod adds various mineral-related content.
 
-See: https://github.com/zachary-foster/Minerals for detailed documentation.
+See: https://github.com/zachary-foster/Minerals_SK for detailed documentation.
+
+Also check out the following extension mods:
+
+* MineralsCraft_SK: https://github.com/zachary-foster/MineralsCraft_SK
+* MineralsExtra_SK: https://github.com/zachary-foster/MineralsExtra_SK
 
   </description>
 </ModMetaData>

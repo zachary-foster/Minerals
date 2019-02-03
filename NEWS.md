@@ -12,6 +12,8 @@
 
 ### Gameplay changes
 
+* Added new rock type: Claystone. Yeilds clay chunks or soft clay when mined.
+* Added giant versions of quartz, glowstone, and coldstone that can drop something special when mined.
 * Increased chunk drop rate for boulders. 
 * Reduced slate block drop rate for walls by 70%.
 * Reduced rubble drop rate by ~50% for all rocks. 
@@ -19,6 +21,7 @@
 
 ### Visual changes 
 
+* New textures for quartz, glowstone, and coldstone.
 * Added mod config setting to change the visual spread of textures.
 * Moved weathered and soild rock textures up to avoid gaps and reduce overlaps with nearby walls. 
 * Removed damage graphics from small minerals/rocks.

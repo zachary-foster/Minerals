@@ -68,7 +68,7 @@ namespace Minerals
 
         public static void removeStartingChunks(Map map)
         {
-            string[] toRemove = {"ChunkSandstone", "ChunkGranite", "ChunkLimestone", "ChunkSlate", "ChunkMarble", "ChunkLava", "Filth_RubbleRock"};
+            string[] toRemove = {"ChunkSandstone", "ChunkGranite", "ChunkLimestone", "ChunkSlate", "ChunkMarble", "ChunkLava", "ChunkClaystone", "Filth_RubbleRock"};
             List<Thing> thingsToCheck = map.listerThings.AllThings;
             for (int i = thingsToCheck.Count - 1; i >= 0; i--)
             {

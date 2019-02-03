@@ -88,6 +88,7 @@
       <li>SandBeachWetSalt</li>
       <li>MuddyIce</li>
       <li>RiverDeposit</li>
+      <li>Claystone_Rough</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -270,6 +271,7 @@
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
       <li>LavaRock_Rough</li>
+      <li>Claystone_Rough</li>
       <li>Gravel</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
@@ -421,6 +423,7 @@
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
       <li>LavaRock_Rough</li>
+      <li>Claystone_Rough</li>
       <li>Gravel</li>
     </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
@@ -449,9 +452,9 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.1</visualSizeVariation>
     <!-- The number of days it takes to grow at max growth speed -->
-    <growDays>10</growDays>
+    <growDays>8</growDays>
     <!-- Chance of spawning de novo each check -->
-    <spawnProb>0.03</spawnProb>
+    <spawnProb>0.04</spawnProb>
     <!-- Can spawn on items, pawns, and plants-->
     <canSpawnOnThings>true</canSpawnOnThings>
     <!-- Growth rate modifiers -->
@@ -500,7 +503,7 @@
       <li>
         <ResourceDefName>Salt</ResourceDefName>
         <DropProbability>5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- If smaller than 1, it looks smaller in water -->
@@ -579,6 +582,7 @@
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
       <li>LavaRock_Rough</li>
+      <li>Claystone_Rough</li>
       <li>Gravel</li>
       <li>WastelandAsphalt</li>
       <li>SaltField</li>
