@@ -1,20 +1,34 @@
-## v1.0.8
+## v1.1.0
 
-* Added mod config setting to change the visual spread of textures.
+### Bug fixes
+
 * Fixes visual bug when hewn rock was mined.
-* Made rubble and other resources not spawn when a rock is damage by a non-pawn source, like meteorites. 
 * Vanilla meteorites are replaced by minerals from this mod.
 * Fixes flickering textures in the finder tool.
-* Dynamic minerals like salt can now spawn in groups instead of one at a time. 
-* Moved weathered and soild rock textures up to avoid gaps and reduce overlaps with nearby walls. 
-* Increased chunk drop rate for boulders. 
-* Removed damage graphics from small minerals/rocks.
 * Fixed a few minor texture issues.
+* Fixed bug where mobile mineral sonar does not find ores from Minerals mod.
+* Made rubble and other resources not spawn when a rock is damage by a non-pawn source, like meteorites.
+* Solid rock is always thin roof or cave wall and weathered rock is always unroofed.
+
+### Gameplay changes
+
+* Increased chunk drop rate for boulders. 
 * Reduced slate block drop rate for walls by 70%.
 * Reduced rubble drop rate by ~50% for all rocks. 
 * Mining output now depends on miner skill.
+
+### Visual changes 
+
+* Added mod config setting to change the visual spread of textures.
+* Moved weathered and soild rock textures up to avoid gaps and reduce overlaps with nearby walls. 
+* Removed damage graphics from small minerals/rocks.
+
+### Other
+
 * Added Russian translations by skyarkangle.
 * Added mod config settings to change resource drop rate and drop amount.
+* Dynamic minerals like salt can now spawn in groups instead of one at a time. 
+
 
 ## v1.0.7
 

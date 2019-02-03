@@ -44,9 +44,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>false</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.5</mineableDropChance>
-      <mineableYield>10</mineableYield>
+      <mineableThing>ChunkClaystone</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -145,9 +145,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.5</mineableDropChance>
-      <mineableYield>10</mineableYield>
+      <mineableThing>ChunkClaystone</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -262,9 +262,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.5</mineableDropChance>
-      <mineableYield>10</mineableYield>
+      <mineableThing>ChunkClaystone</mineableThing>
+      <mineableDropChance>0.4</mineableDropChance>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -373,9 +373,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.5</mineableDropChance>
-      <mineableYield>10</mineableYield>
+      <mineableThing>ChunkClaystone</mineableThing>
+      <mineableDropChance>0.4</mineableDropChance>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -443,9 +443,9 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.5</mineableDropChance>
-      <mineableYield>10</mineableYield>
+      <mineableThing>ChunkClaystone</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -508,9 +508,9 @@
       <max>1.2</max>
     </visualSizeRange>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualClustering>0.5</visualClustering>
+    <visualClustering>0.4</visualClustering>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSpread>1.0</visualSpread>
+    <visualSpread>1.2</visualSpread>
     <visualSizeVariation>0.25</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
@@ -645,5 +645,19 @@
     </randomlyDropResources>
   </ThingDef>
   
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>ChunkClaystone</defName>
+    <label>claystone chunk</label>
+    <graphicData>
+      <color>(208, 168, 127)</color>
+    </graphicData>
+    <statBases>
+      <Mass>20</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <ClayBrick>25</ClayBrick>
+    </butcherProducts>
+  </ThingDef>
 
 </Defs>

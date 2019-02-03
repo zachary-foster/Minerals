@@ -7,7 +7,7 @@
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>2</glowRadius>
-        <glowColor>(0,96,255,0)</glowColor>
+        <glowColor>(50,100,255,0)</glowColor>
       </li>
     </comps>
     <description>An active deposit of coldstone. Grows slowly on cold bright days, but evaporates in the heat. Only found in permanently frozen terrain. Some glitterworld exobiologists belive these to be a kind of living crytsal since they seem capable of reproduction and they stress the need to safeguard these rare organisms. People on this rimworld however, tend to dig them up and use them to stop meat from spoiling.</description>
@@ -18,13 +18,21 @@
       <Beauty>15</Beauty>
     </statBases>
     <graphicData>
-      <texPath>Things/Mineral/ColdstoneCrystal</texPath>
+      <texPath>Things/Mineral/QuartzCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(125,160,255)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Mineral/ColdstoneCrystal/ColdstoneCrystalA</uiIconPath>
+    <randomColorsOne>
+      <li>(240,240,255)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(130,190,255)</li>
+    </randomColorsTwo>
+    <uiIconPath>Things/Mineral/QuartzCrystal/QuartzCrystalA</uiIconPath>
     <fillPercent>0.2</fillPercent>
     <hideAtSnowDepth>2</hideAtSnowDepth>
     <!--How far away it can spawn from an existing location-->
@@ -111,7 +119,7 @@
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>
-      <max>0.8</max>
+      <max>0.6</max>
     </visualSizeRange>
     <visualClustering>0.6</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
@@ -288,11 +296,11 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>12</maxMeshCount>
+    <maxMeshCount>20</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.3</min>
-      <max>1.2</max>
+      <min>0.2</min>
+      <max>0.7</max>
     </visualSizeRange>
     <visualClustering>0.5</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->

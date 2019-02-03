@@ -926,8 +926,10 @@ namespace Minerals
 
         public virtual Thing ThingToReplaceAtPos(Map map, IntVec3 position)
         {
+            //if (defName == "BigColdstoneCrystal") Log.Message("ThingToReplaceAtPos: checking for " + defName +  " at " + position, true);
             if (ThingsToReplace == null || ThingsToReplace.Count == 0)
             {
+                //if (defName == "BigColdstoneCrystal") Log.Message("ThingToReplaceAtPos: no replacement defined", true);
                 return(null);
             }
             foreach (Thing thing in map.thingGrid.ThingsListAt(position))
@@ -936,7 +938,7 @@ namespace Minerals
                 {
                     continue;
                 }
-
+                //if (defName == "BigColdstoneCrystal") Log.Message("ThingToReplaceAtPos: found " + thing.def.defName + " at " + position, true);
                 if (ThingsToReplace.Any(thing.def.defName.Equals))
                 {
                     return(thing);
@@ -950,47 +952,49 @@ namespace Minerals
 
         public virtual bool CanSpawnAt(Map map, IntVec3 position)
         {
-//            Log.Message("CanSpawnAt: " + position + " " + map);
+            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: checking for " + defName + " at " + position, true);
+
             // Check that location is in the map
             if (! position.InBounds(map))
             {
                 return false;
             }
+            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: is in bounds" + position + " " + map, true);
 
-//            Log.Message("CanSpawnAt: location is in the map " + position);
             // Check that the terrain is ok
             if (! IsTerrainOkAt(map, position))
             {
                 return false;
             }
-//            Log.Message("CanSpawnAt: terrain is ok " + position);
+            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: terrain is ok " + position, true);
 
             // Check that it is under a roof if it needs to be
             if (! isRoofConditionOk(map, position))
             {
                 return false;
             }
-//            Log.Message("CanSpawnAt: roof is ok " + position);
+            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: roof is ok " + position, true);
 
             // Check for things it must replace
             if (mustReplace && ThingToReplaceAtPos(map, position) == null)
             {
                 return false;
             }
+            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: replacement is ok " + position, true);
 
             // Look for stuff in the way
             if (PlaceIsBlocked(map, position))
             {
                 return false;
             }
-//            Log.Message("CanSpawnAt: not plocked " + position);
+            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: not blocked " + position, true);
 
             // Check that it is near any needed terrains
             if (! isNearNeededTerrain(map, position))
             {
                 return false;
             }
-//            Log.Message("CanSpawnAt: can spawn " + position);
+            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: can spawn " + position, true);
 
             return true;
         }
@@ -1080,13 +1084,16 @@ namespace Minerals
         {
             if (! position.InBounds(map))
             {
+                //if (defName == "BigColdstoneCrystal") Log.Message("IsTerrainOkAt: out of bounds", true);
                 return false;
             }
             if (allowedTerrains == null || allowedTerrains.Count == 0)
             {
+                //if (defName == "BigColdstoneCrystal") Log.Message("IsTerrainOkAt: no terrain needed", true);
                 return true;
             }
             TerrainDef terrain = map.terrainGrid.TerrainAt(position);
+            //if (defName == "BigColdstoneCrystal") Log.Message("IsTerrainOkAt: found terrain " + terrain.defName + ". checking if it is one of: " + String.Join(", ", allowedTerrains.ToArray()), true);
             return allowedTerrains.Any(terrain.defName.Equals);
         }
 
@@ -1260,6 +1267,7 @@ namespace Minerals
 
         public virtual void InitNewMap(Map map, float scaling = 1)
         {
+            //Log.Message("Initializing mineral: " + this.defName);
             ReplaceThings(map, scaling);
             InitialSpawn(map, scaling);
         }
@@ -1438,7 +1446,7 @@ namespace Minerals
             string textureName = System.IO.Path.GetFileName(graphicData.texPath);
             texturePaths = new List<string> { };
             snowTexturePaths = new List<string> { };
-            List<string> versions = new List<string> { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
+            List<string> versions = new List<string> { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L" };
             foreach (string letter in versions)
             {
                 string a_path = graphicData.texPath + "/" + textureName + letter;

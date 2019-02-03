@@ -39,6 +39,7 @@ namespace Minerals
                     Thing miniThing = thing.MakeMinified();
                     GenPlace.TryPlaceThing(miniThing, Position, Map, ThingPlaceMode.Near, null);
                     Messages.Message("Rare mineral trophy extracted!".CapitalizeFirst(), MessageTypeDefOf.NeutralEvent, true);
+                    yieldPct = 0.1f;
                 }
             }
             else
@@ -77,13 +78,15 @@ namespace Minerals
 
         public override Thing ThingToReplaceAtPos(Map map, IntVec3 position)
         {
+            // if (defName == "BigColdstoneCrystal") Log.Message("ThingToReplaceAtPos (bg): checking for " + defName +  " at " + position);
             Thing toReplace = base.ThingToReplaceAtPos(map, position);
             if (toReplace == null)
             {
                 return(null);
             }
+            // if (defName == "BigColdstoneCrystal") Log.Message("ThingToReplaceAtPos (bg): found thing to replace at " + position, true);
             int spotsChecked = 0;
-            int replaceCount = 0;
+            float replaceCount = 0;
             for (int xOffset = -replaceRadius; xOffset <= replaceRadius; xOffset++)
             {
                 for (int zOffset = -replaceRadius; zOffset <= replaceRadius; zOffset++)
@@ -101,7 +104,14 @@ namespace Minerals
 
                             if (ThingsToReplace.Any(thing.def.defName.Equals))
                             {
-                                replaceCount += 1;
+                                if (StaticMineral.isMineral(thing))
+                                {
+                                    replaceCount += ((StaticMineral) thing).size;
+                                }
+                                else
+                                {
+                                    replaceCount += 1;
+                                }
                             }
                         }
                     }
@@ -109,10 +119,12 @@ namespace Minerals
             }
             if (((float)replaceCount) / ((float)spotsChecked) > repalceThreshold)
             {
+                //Log.Message(this.defName + " can replace at " + position, true);
                 return(toReplace);
             }
             else
             {
+                //Log.Message(this.defName + " can not replace at " + position + " with density " + ((float)replaceCount) / ((float)spotsChecked), true);
                 return(null);
             }
 
