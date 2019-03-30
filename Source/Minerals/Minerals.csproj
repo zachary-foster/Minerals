@@ -57,6 +57,7 @@
     <Compile Include="RiverRock.cs" />
     <Compile Include="SolidRock.cs" />
     <Compile Include="BigMineral.cs" />
+    <Compile Include="Events.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

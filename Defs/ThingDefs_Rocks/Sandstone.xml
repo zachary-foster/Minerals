@@ -74,10 +74,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>Sand</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -91,6 +87,16 @@
         <ResourceDefName>FlintShard</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Amber</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -118,6 +124,7 @@
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -182,10 +189,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>Sand</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -199,6 +202,16 @@
         <ResourceDefName>FlintShard</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Amber</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -310,10 +323,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>Sand</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -327,6 +336,16 @@
         <ResourceDefName>FlintShard</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Amber</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -393,10 +412,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>Sand</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -410,6 +425,16 @@
         <ResourceDefName>FlintShard</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Amber</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
 
@@ -514,10 +539,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>Sand</ResourceDefName>
         <DropProbability>0.5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -531,6 +552,16 @@
         <ResourceDefName>FlintShard</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Amber</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -641,10 +672,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>Sand</ResourceDefName>
         <DropProbability>0.5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -658,6 +685,16 @@
         <ResourceDefName>FlintShard</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Amber</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -759,10 +796,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>Sand</ResourceDefName>
         <DropProbability>0.5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -776,6 +809,16 @@
         <ResourceDefName>FlintShard</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Amber</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>

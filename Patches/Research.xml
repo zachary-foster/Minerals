@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName = "PrimitiveResearchBench"]</xpath>
+	  <value>
+      <comps>
+        <li Class="CompProperties_AffectedByFacilities">
+          <linkableFacilities>
+            <li>MediumFossilTrophy</li>
+            <li>LargeFossilTrophy</li>
+            <li>BigGlowstoneCrystalTrophy</li>
+            <li>BigColdstoneCrystalTrophy</li>
+            <li>BigQuartzCrystalTrophy</li>
+            <li>BigAmethystCrystalTrophy</li>
+            <li>BigCitrineCrystalTrophy</li>
+            <li>BigPrasioliteCrystalTrophy</li>
+          </linkableFacilities>
+        </li>
+      </comps>
+	  </value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName = "SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+	  <value>
+      <li>MediumFossilTrophy</li>
+      <li>LargeFossilTrophy</li>
+      <li>BigGlowstoneCrystalTrophy</li>
+      <li>BigColdstoneCrystalTrophy</li>
+      <li>BigQuartzCrystalTrophy</li>
+      <li>BigAmethystCrystalTrophy</li>
+      <li>BigCitrineCrystalTrophy</li>
+      <li>BigPrasioliteCrystalTrophy</li>
+	  </value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName = "HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+	  <value>
+      <li>BigGlowstoneCrystalTrophy</li>
+      <li>BigColdstoneCrystalTrophy</li>
+	  </value>
+	</Operation>
+	
+	
+</Patch>

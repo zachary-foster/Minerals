@@ -74,7 +74,7 @@ namespace Minerals
         // The minmum propotion of things in radius to replace for a replacement to happen 
         public float repalceThreshold = 0.3f;
         // How likly an extraction is to be successful 
-        public float extractionDifficulty = 0.8f;
+        public float extractionDifficulty = 0.9f;
 
         public override Thing ThingToReplaceAtPos(Map map, IntVec3 position)
         {
@@ -153,9 +153,9 @@ namespace Minerals
 
             // Get location
             Vector3 center = this.TrueCenter();
-            if (def.graphicData.drawSize.y > 1)
+            if (def.graphicData.drawSize.y > def.size.z)
             {
-                center.z += (def.graphicData.drawSize.y - 1) / 2;
+                center.z += (def.graphicData.drawSize.y - def.size.z) / 2;
             }
 
             // Print image

@@ -898,7 +898,7 @@ namespace Minerals
         }
 
 
-        public virtual void SpawnCluster(Map map, IntVec3 position, float size, int clusterCount)
+        public virtual StaticMineral SpawnCluster(Map map, IntVec3 position, float size, int clusterCount)
         {
             StaticMineral mineral = TrySpawnAt(position, map, size);
             if (mineral != null)
@@ -906,6 +906,7 @@ namespace Minerals
                 GrowCluster(map, mineral, clusterCount);
 
             }
+            return mineral;
         }
 
 

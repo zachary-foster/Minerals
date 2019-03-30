@@ -3,7 +3,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-	  <xpath>*/ThingDef[defName = "MobileMineralSonar"]/scannedThingDefs</xpath>
+	  <xpath>Defs/ThingDef[defName = "MobileMineralSonar"]/scannedThingDefs</xpath>
 	  <value>
       <li>WeatheredOreSteel</li>
       <li>SolidOreSteel</li>

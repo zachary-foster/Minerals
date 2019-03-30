@@ -598,6 +598,11 @@
         <DropProbability>0.2</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <ThingsToReplace>
       <li>MineableCoal</li>
@@ -636,6 +641,11 @@
         <ResourceDefName>Sulfur</ResourceDefName>
         <DropProbability>0.2</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <ThingsToReplace>
@@ -687,6 +697,11 @@
         <ResourceDefName>Sulfur</ResourceDefName>
         <DropProbability>0.2</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <ThingsToReplace>
@@ -1810,6 +1825,18 @@
       <color>(230,230,230)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredSandstone/WeatheredSandstoneA</uiIconPath>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
+      <mineableYield>10</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
     <statBases>
 		  <Beauty>2</Beauty>
       <MaxHitPoints>800</MaxHitPoints>
@@ -1846,6 +1873,18 @@
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
     </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
+      <mineableYield>10</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
     <description>Salt compacted over time.</description>
     <randomlyDropResources>
       <li>
@@ -1893,6 +1932,18 @@
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
     </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CrushedStone</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
+      <mineableYield>10</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
     <randomlyDropResources>
       <li>
         <ResourceDefName>Salt</ResourceDefName>
@@ -1937,7 +1988,7 @@
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
         <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Mechanism</ResourceDefName>
@@ -1988,12 +2039,12 @@
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
         <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Plasteel</ResourceDefName>
         <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>RobotParts</ResourceDefName>
@@ -2061,12 +2112,12 @@
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
         <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Plasteel</ResourceDefName>
         <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>RobotParts</ResourceDefName>
@@ -2140,6 +2191,11 @@
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>4</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SmallFossil</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <ThingsToReplace>
