@@ -616,7 +616,7 @@
     <defName>SolidOreCoal</defName>
     <label>Solid Coal Ore Deposits</label>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <texPath>Things/Rock/WeatheredSlate</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
       <color>(30,20,20)</color>
@@ -628,7 +628,7 @@
     <description>Deposits of Coal Ore. Coal is useful as a reaction agent in metal alloy production.</description>
     <!-- The size range -->
     <visualSizeRange>
-      <min>2.0</min>
+      <min>2.2</min>
       <max>2.2</max>
     </visualSizeRange>
     <randomlyDropResources>

@@ -453,10 +453,10 @@
       <min>0.2</min>
       <max>0.4</max>
     </visualSizeRange>
-    <visualClustering>0.3</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>1.5</visualSpread>
+    <visualClustering>0.3</visualClustering>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSpread>1.5</visualSpread>
     <visualSizeVariation>0.1</visualSizeVariation>
     <!-- The number of days it takes to grow at max growth speed -->
     <growDays>8</growDays>
