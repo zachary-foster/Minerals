@@ -15,7 +15,7 @@ namespace Minerals
     /// <permission>No restrictions</permission>
     public class BigMineral : StaticMineral
     {
-
+        
         public float propExtracted = 0f;
 
         public new ThingDef_BigMineral attributes
