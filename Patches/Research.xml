@@ -14,8 +14,6 @@
             <li>BigColdstoneCrystalTrophy</li>
             <li>BigQuartzCrystalTrophy</li>
             <li>BigAmethystCrystalTrophy</li>
-            <li>BigCitrineCrystalTrophy</li>
-            <li>BigPrasioliteCrystalTrophy</li>
           </linkableFacilities>
         </li>
       </comps>
@@ -32,8 +30,6 @@
       <li>BigColdstoneCrystalTrophy</li>
       <li>BigQuartzCrystalTrophy</li>
       <li>BigAmethystCrystalTrophy</li>
-      <li>BigCitrineCrystalTrophy</li>
-      <li>BigPrasioliteCrystalTrophy</li>
 	  </value>
 	</Operation>
 	

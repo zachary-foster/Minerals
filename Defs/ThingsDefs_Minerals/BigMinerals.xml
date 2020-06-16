@@ -197,7 +197,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
+      <WorkToBuild>600</WorkToBuild>
       <Mass>20</Mass>
       <Beauty>100</Beauty>
       <MarketValue>5000</MarketValue>
@@ -327,7 +327,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
+      <WorkToBuild>600</WorkToBuild>
       <Mass>30</Mass>
       <Beauty>50</Beauty>
       <MarketValue>3000</MarketValue>
@@ -439,7 +439,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
+      <WorkToBuild>600</WorkToBuild>
       <Mass>30</Mass>
       <Beauty>40</Beauty>
       <MarketValue>1000</MarketValue>
@@ -516,7 +516,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
+      <WorkToBuild>600</WorkToBuild>
       <Mass>30</Mass>
       <Beauty>80</Beauty>
       <MarketValue>2000</MarketValue>

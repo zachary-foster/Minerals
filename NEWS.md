@@ -1,7 +1,3 @@
-## v1.3.0
-
-* Increased the default spawn rate for all small rocks and boulders by 20-40%
-
 ## v1.2.0
 
 * Added small fossils in sedimentary rocks. They can be used for decorative flooring if MineralsCraft mod is used or sold.

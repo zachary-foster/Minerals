@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
 	<crystalAbundanceSetting>Изобилие кристаллов</crystalAbundanceSetting>
 	<crystalDiversitySetting>Многообразие кристаллов</crystalDiversitySetting>
 	<boulderAbundanceSetting>Изобилие валунов</boulderAbundanceSetting>
@@ -19,5 +18,8 @@
 	<dynamicMineralSettingsHeader>Mineral Growth Settings</dynamicMineralSettingsHeader>
 	<gameplaySettingsHeader>Настройки игрового процесса</gameplaySettingsHeader>
 	<graphicalSettingsHeader>Графические настройки</graphicalSettingsHeader>
-	
+	<visualSpreadFactor>Фактор визуального разброса ресурсов</visualSpreadFactor>
+	<resourceDropFreqSetting>Частота с которой выпадают ресурсы</resourceDropFreqSetting>
+	<resourceDropAmountSetting>Количество добываемых ресурсов</resourceDropAmountSetting>
+
 </LanguageData>

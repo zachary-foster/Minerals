@@ -216,7 +216,7 @@
     <uiIconPath>Things/Fossil/MediumFossilTrophy/MediumFossilTrophyA</uiIconPath>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
+      <WorkToBuild>600</WorkToBuild>
       <Mass>20</Mass>
       <Beauty>50</Beauty>
       <MarketValue>1000</MarketValue>
@@ -367,7 +367,7 @@
     <uiIconPath>Things/Fossil/LargeFossilTrophy/LargeFossilTrophyA</uiIconPath>
     <statBases>
       <MaxHitPoints>2000</MaxHitPoints>
-      <WorkToBuild>10000</WorkToBuild>
+      <WorkToBuild>6000</WorkToBuild>
       <Mass>100</Mass>
       <Beauty>150</Beauty>
       <MarketValue>3000</MarketValue>

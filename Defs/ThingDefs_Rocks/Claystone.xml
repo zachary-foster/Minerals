@@ -705,18 +705,20 @@
     </randomlyDropResources>
   </ThingDef>
   
-  <ThingDef ParentName="ChunkRockBase">
+  <ThingDef ParentName="SK_ChunkRockBase">
     <defName>ChunkClaystone</defName>
     <label>claystone chunk</label>
     <graphicData>
-      <color>(208, 168, 127)</color>
+      <color>(228, 188, 147)</color>
+      <texPath>Things/Item/Chunk/Stone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <statBases>
-      <Mass>20</Mass>
+      <Mass>8</Mass>
     </statBases>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
-      <ClayBrick>25</ClayBrick>
+      <ClayBrick>30</ClayBrick>  
     </butcherProducts>
   </ThingDef>
 
