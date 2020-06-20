@@ -111,6 +111,8 @@
     <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
+			<li>AB_Mudstone_Rough</li>
+			<li>ZF_Mudstone_Rough</li>
       <li>Granite_Rough</li>
       <li>Marble_Rough</li>
       <li>Limestone_Rough</li>
@@ -233,6 +235,8 @@
     <initialSizeVariation>.4</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
+			<li>AB_Mudstone_Rough</li>
+			<li>ZF_Mudstone_Rough</li>
       <li>Granite_Rough</li>
       <li>Marble_Rough</li>
       <li>Limestone_Rough</li>

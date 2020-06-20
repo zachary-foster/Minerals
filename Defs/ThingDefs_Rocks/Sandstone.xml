@@ -50,6 +50,9 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
+			<li>AB_CrackedMud</li>
+			<li>AB_RichCrackedMud</li>
+			<li>AB_FineSand</li>
 			<li>Sandstone_Rough</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
@@ -159,6 +162,9 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
+			<li>AB_CrackedMud</li>
+			<li>AB_RichCrackedMud</li>
+			<li>AB_FineSand</li>
 			<li>Sandstone_Rough</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
@@ -496,6 +502,8 @@
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
+			<li>AB_CrackedMud</li>
+			<li>AB_FineSand</li>
 			<li>Sandstone_Rough</li>
 			<li>RockySoil</li>
 			<li>Sand</li>
@@ -628,6 +636,8 @@
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
+			<li>AB_CrackedMud</li>
+			<li>AB_FineSand</li>
 			<li>Sandstone_Rough</li>
 			<li>RockySoil</li>
 			<li>Sand</li>
@@ -751,6 +761,8 @@
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
+			<li>AB_CrackedMud</li>
+			<li>AB_FineSand</li>
 			<li>Sandstone_Rough</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
