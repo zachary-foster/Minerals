@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="WeatheredGranite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredGranite</defName>
-    <label>Weathered Granite</label>
-    <description>Large masses of eroded granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
+  <ThingDef Name="ZF_WeatheredRoseQuartz" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_WeatheredRoseQuartz</defName>
+    <label>Weathered Rose Quartz</label>
+    <description>Hard, pinkish looking mineral deposit.</description>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/WeatheredGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(105,95,97)</color>
+      <color>(120,50,50)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1900</MaxHitPoints>
+      <MaxHitPoints>1400</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>3</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableThing>GU_ChunkRoseQuartz</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -52,17 +52,17 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Granite_Rough</li>
+      <li>GU_RoseQuartz_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.08</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -72,7 +72,7 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>Granite</li>
+      <li>GU_RoseQuartz</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -83,29 +83,29 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidGranite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidGranite</defName>
-    <label>Solid Granite</label>
-    <description>A solid wall of granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
+  <ThingDef Name="ZF_SolidRoseQuartz" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
+    <defName>ZF_SolidRoseQuartz</defName>
+    <label>Solid Rose Quartz</label>
+    <description>Hard, pinkish looking mineral deposit.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(105,95,97)</color>
+      <color>(120,50,50)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
-      <MaxHitPoints>2100</MaxHitPoints>
+      <MaxHitPoints>1600</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableThing>GU_ChunkRoseQuartz</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -133,17 +133,17 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Granite_Rough</li>
+      <li>GU_RoseQuartz_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect> 
+    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.08</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -153,8 +153,8 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>HewnGranite</li>
-      <li>Granite</li>
+      <li>GU_RoseQuartz</li>
+      <li>ZF_HewnRoseQuartz</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -165,10 +165,10 @@
   </ThingDef>
   
 
-  <ThingDef Name="HewnGranite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnGranite</defName>
-    <label>Hewn Granite</label>
-    <description>Hewn wall of solid granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
+  <ThingDef Name="ZF_HewnRoseQuartz" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_HewnRoseQuartz</defName>
+    <label>Hewn Rose Quartz</label>
+    <description>Hard, pinkish looking mineral deposit.</description>
     <graphicData>
 			<texPath>Things/Rock/HewnRockWall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -188,26 +188,27 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(105,95,97)</color>
+      <color>(120,50,50)</color>
     </graphicData>
+    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>2300</MaxHitPoints>
+      <MaxHitPoints>1700</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableThing>GU_ChunkRoseQuartz</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
-      <smoothedThing>SmoothedHewnGranite</smoothedThing>
+      <smoothedThing>ZF_SmoothedHewnRoseQuartz</smoothedThing>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -226,18 +227,11 @@
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
-		<allowedTerrains>
-			<li>Granite_Rough</li>
-			<li>WaterOceanShallow</li>
-			<li>WaterShallow</li>
-		</allowedTerrains>
-		-->
     <allowedTerrains>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Granite</li>
+      <li>RoseQuartz</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -259,7 +253,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.08</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -267,26 +261,23 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
-
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>Granite</li>
+      <li>GU_RoseQuartz</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>hewn</li>
     </tags>
-    
   </ThingDef>
  
-
-  <ThingDef Name="SmoothedHewnGranite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>SmoothedHewnGranite</defName>
-    <label>Smoothed granite wall</label>
-    <description>A smoothed wall of solid granite. Its almost pretty.</description>
+  
+  <ThingDef Name="ZF_SmoothedHewnRoseQuartz" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_SmoothedHewnRoseQuartz</defName>
+    <label>Smoothed Rose Quartz Wall</label>
+    <description>Hard, pinkish looking mineral deposit.</description>
     <graphicData>
 			<texPath>Things/Rock/SmoothedRockWall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -306,21 +297,21 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(105,95,97)</color>
+      <color>(120,50,50)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>2200</MaxHitPoints>
+      <MaxHitPoints>1600</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableThing>GU_ChunkRoseQuartz</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -331,7 +322,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.08</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -348,22 +339,23 @@
   </ThingDef>
 
   
-  <ThingDef Name="BoulderGranite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>BoulderGranite</defName>
-    <label>Granite Boulder</label>
-    <description>Granite boulder. These can be climbed over with some difficulty and provide good cover.</description>
+  <ThingDef Name="ZF_BoulderRoseQuartz" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_BoulderRoseQuartz</defName>
+    <label>Rose Quartz Boulder</label>
+    <description>Hard, pinkish looking mineral deposit.</description>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/BoulderGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
+      <color>(120,50,50)</color>
     </graphicData>
     <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+    <fillPercent>0.6</fillPercent>
     <statBases>
-      <MaxHitPoints>1400</MaxHitPoints>
+      <MaxHitPoints>900</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <pathCost>100</pathCost>
     <building>
@@ -371,7 +363,7 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkGranite</mineableThing>
+      <mineableThing>GU_ChunkRoseQuartz</mineableThing>
       <mineableDropChance>0.6</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
@@ -384,19 +376,28 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.004</minClusterProbability>
-    <maxClusterProbability>0.008</maxClusterProbability>
+    <minClusterProbability>0.005</minClusterProbability>
+    <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>3</maxClusterSize>
+    <maxClusterSize>2</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.8</initialSizeMin>
-    <initialSizeMax>1.0</initialSizeMax>
+    <initialSizeMin>.7</initialSizeMin>
+    <initialSizeMax>.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
-    <initialSizeVariation>.5</initialSizeVariation>
+    <initialSizeVariation>.2</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>Granite_Rough</li>
+			<li>AB_CrackedMud</li>
+			<li>AB_RichCrackedMud</li>
+			<li>AB_FineSand</li>
+			<li>GU_RoseQuartz_Rough</li>
+			<li>GU_AlienSandFine</li>
+			<li>GU_AlienSand</li>
+			<li>GU_RichAlienSand</li>
+			<li>GU_MossyRed</li>
+			<li>GU_RedWaterShallow</li>
+			<li>GU_RedWaterDeep</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
@@ -414,23 +415,23 @@
       <li>WaterMovingShallow</li>
 			<li>WaterShallow</li>
 			<li>Ice</li>
-			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Granite_Rough</li>
-      <li>WeatheredGranite</li>
-      <li>SolidGranite</li>
-      <li>Granite</li>
+      <li>GU_RoseQuartz_Rough</li>
+      <li>ZF_WeatheredRoseQuartz</li>
+      <li>ZF_SolidRoseQuartz</li>
+      <li>RoseQuartz</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>12</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>Granite</li>
-      <li>WeatheredGranite</li>
+      <li>GU_RoseQuartz_Rough</li>
+      <li>ZF_WeatheredRoseQuartz</li>
+      <li>RoseQuartz</li>
     </associatedOres>
     <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -444,47 +445,49 @@
       <min>1.1</min>
       <max>1.3</max>
     </visualSizeRange>
-    <visualClustering>0.2</visualClustering>
+    <visualClustering>1.0</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.7</visualSpread>
+    <visualSpread>0.8</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.08</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
+        <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>ChunkGranite</li>
-      <li>GraniteBoulder</li>
+      <li>GU_ChunkRoseQuartz</li>
     </ThingsToReplace>
+
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>boulder</li>
       <li>chunk_replacer</li>
     </tags>
+
   </ThingDef>
   
 
-  <ThingDef Name="PassableGranite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>PassableGranite</defName>
-    <label>Granite rocks</label>
-    <description>Granite rocks that are easily walked over and provide little cover.</description>
+  <ThingDef Name="ZF_PassableRoseQuartz" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_PassableRoseQuartz</defName>
+    <label>Rose Quartz Rocks</label>
+    <description>Hard, pinkish looking mineral deposit.</description>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/PassableLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
+      <color>(120,50,50)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
@@ -492,7 +495,7 @@
     <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
     <fillPercent>0.3</fillPercent>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>600</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -502,8 +505,8 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableThing>GU_ChunkRoseQuartz</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
@@ -521,13 +524,21 @@
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>4</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>0.7</initialSizeMin>
+    <initialSizeMin>0.5</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>Granite_Rough</li>
+			<li>AB_CrackedMud</li>
+			<li>AB_FineSand</li>
+			<li>GU_RoseQuartz_Rough</li>
+			<li>GU_AlienSandFine</li>
+			<li>GU_AlienSand</li>
+			<li>GU_RichAlienSand</li>
+			<li>GU_MossyRed</li>
+			<li>GU_RedWaterShallow</li>
+			<li>GU_RedWaterDeep</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
@@ -542,19 +553,16 @@
       <li>WaterShallow</li>
       <li>WaterMovingShallow</li>
 			<li>WaterOceanShallow</li>
-      <li>WaterDeep</li>
-      <li>WaterMovingDeep</li>
-			<li>WaterOceanDeep</li>
 			<li>Ice</li>
 			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>BoulderGranite</li>
-			<li>Granite_Rough</li>
-      <li>WeatheredGranite</li>
-      <li>SolidGranite</li>
-      <li>Granite</li>
+      <li>ZF_BoulderRoseQuartz</li>
+			<li>GU_RoseQuartz_Rough</li>
+      <li>ZF_WeatheredRoseQuartz</li>
+      <li>ZF_SolidRoseQuartz</li>
+      <li>RoseQuartz</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
@@ -562,11 +570,11 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>BoulderGranite</li>
-      <li>WeatheredGranite</li>
-      <li>Granite</li>
+      <li>ZF_BoulderRoseQuartz</li>
+      <li>ZF_WeatheredRoseQuartz</li>
+      <li>RoseQuartz</li>
     </associatedOres>
-    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -578,16 +586,16 @@
       <min>0.5</min>
       <max>0.7</max>
     </visualSizeRange>
-    <visualClustering>0.3</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>1.2</visualSpread>
+    <visualClustering>0.3</visualClustering>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+    <visualSpread>1.2</visualSpread>
     <visualSizeVariation>0.3</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.08</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -597,6 +605,6 @@
     </randomlyDropResources>
 
   </ThingDef>
-
-
+  
+  
 </Defs>
