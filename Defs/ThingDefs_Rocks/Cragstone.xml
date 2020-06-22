@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="WeatheredMarble" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredMarble</defName>
-    <label>Weathered Marble</label>
-    <description>An impassable mass of weathered marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it an attractive building material.</description>
+  <ThingDef Name="ZF_WeatheredCragstone" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_WeatheredCragstone</defName>
+    <label>Weathered Cragstone</label>
+    <description>An impassable mass of weathered Cragstone, a dark-hued, homogeneous metamorphic rock. These rocks seem to be attracting the darkness surrounding them.</description>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Rock/WeatheredGranite</texPath>
+      <texPath>Things/Building/AB_Cragstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(132,135,132)</color>
+      <color>(36,35,40)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
+      <MaxHitPoints>2300</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>3</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkMarble</mineableThing>
+      <mineableThing>AB_ChunkCragstone</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
@@ -52,7 +51,7 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Marble_Rough</li>
+      <li>AB_Cragstone_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
@@ -61,10 +60,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
@@ -72,39 +67,41 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>Marble</li>
+      <li>AB_Cragstone</li>
+      <li>AB_ChunkCragstone</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>weathered</li>
+      <li>chunk_replacer</li>
     </tags>
   </ThingDef>
   
   
-  <ThingDef Name="SolidMarble" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidMarble</defName>
-    <label>Solid Marble</label>
-    <description>A soild wall of marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it an attractive building material.</description>
+  <ThingDef Name="ZF_SolidCragstone" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
+    <defName>ZF_SolidCragstone</defName>
+    <label>Solid Cragstone</label>
+    <description>A soild wall of Cragstone, a dark-hued, homogeneous metamorphic rock. These rocks seem to be attracting the darkness surrounding them.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <texPath>Things/Building/AB_Cragstone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <color>(132,135,132)</color>
+      <color>(36,35,40)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1700</MaxHitPoints>
+      <MaxHitPoints>2500</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkMarble</mineableThing>
+      <mineableThing>AB_ChunkCragstone</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
@@ -133,7 +130,7 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Marble_Rough</li>
+      <li>AB_Cragstone_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -142,10 +139,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
@@ -153,8 +146,8 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>Marble</li>
-      <li>HewnMarble</li>
+      <li>AB_Cragstone</li>
+      <li>ZF_HewnCragstone</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -165,10 +158,10 @@
   </ThingDef>
   
 
-  <ThingDef Name="HewnMarble" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnMarble</defName>
-    <label>Hewn Marble</label>
-    <description>A wall of hewn marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it a popular building material.</description>
+  <ThingDef Name="ZF_HewnCragstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_HewnCragstone</defName>
+    <label>Hewn Cragstone</label>
+    <description>A wall of hewn Cragstone, a dark-hued, homogeneous metamorphic rock. These rocks seem to be attracting the darkness surrounding them.</description>
     <graphicData>
 			<texPath>Things/Rock/HewnRockWall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -188,11 +181,11 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(132,135,132)</color>
+      <color>(36,35,40)</color>
     </graphicData>
     <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1800</MaxHitPoints>
+      <MaxHitPoints>2800</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -201,14 +194,14 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkMarble</mineableThing>
+      <mineableThing>AB_ChunkCragstone</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
-      <smoothedThing>SmoothedHewnMarble</smoothedThing>
+      <smoothedThing>ZF_SmoothedHewnCragstone</smoothedThing>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -231,7 +224,7 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Marble</li>
+      <li>Cragstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -252,10 +245,6 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-      </li>
-      <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
@@ -263,7 +252,7 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>Marble</li>
+      <li>AB_Cragstone</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -274,10 +263,10 @@
   </ThingDef>
  
   
-  <ThingDef Name="SmoothedHewnMarble" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>SmoothedHewnMarble</defName>
-    <label>Smoothed marble wall</label>
-    <description>A wall of smoothed marble. Its nice to look at.</description>
+  <ThingDef Name="ZF_SmoothedHewnCragstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_SmoothedHewnCragstone</defName>
+    <label>Smoothed Cragstone wall</label>
+    <description>A wall of smoothed Cragstone.</description>
     <graphicData>
 			<texPath>Things/Rock/SmoothedRockWall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -297,20 +286,20 @@
 				<edgeLeft>Damage/Edge</edgeLeft>
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
-      <color>(132,135,132)</color>
+      <color>(36,35,40)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1700</MaxHitPoints>
+      <MaxHitPoints>2600</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>2</Beauty>
+      <Beauty>1</Beauty>
     </statBases>
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkMarble</mineableThing>
+      <mineableThing>AB_ChunkCragstone</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
@@ -320,10 +309,6 @@
     </building>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-      </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
@@ -339,149 +324,17 @@
   </ThingDef>
 
   
-  <ThingDef Name="BoulderMarble" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>BoulderMarble</defName>
-    <label>Marble Boulder</label>
-    <description>Marble boulder. These can be climbed over with some difficulty and provide good cover.</description>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Rock/BoulderGranite</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(132,135,132)</color>
-    </graphicData>
-    <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
-    <fillPercent>0.6</fillPercent>
-    <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <Flammability>0</Flammability>
-      <Beauty>2</Beauty>
-    </statBases>
-    <pathCost>100</pathCost>
-    <building>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkMarble</mineableThing>
-      <mineableDropChance>0.6</mineableDropChance>
-      <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-    </building>
-    <!--How far away it can spawn from an existing location-->
-    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>1</spawnRadius>
-    <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>1</perMapProbability>
-    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.005</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
-    <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>2</maxClusterSize>
-    <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.7</initialSizeMin>
-    <initialSizeMax>.9</initialSizeMax>
-    <!-- How much initial sizes of individuals randomly vary -->
-    <initialSizeVariation>.2</initialSizeVariation>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
-			<li>AB_CrackedMud</li>
-			<li>AB_RichCrackedMud</li>
-			<li>AB_FineSand</li>
-			<li>Marble_Rough</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>SoilRich</li>
-			<li>MarshyTerrain</li>
-			<li>MossyTerrain</li>
-			<li>Marsh</li>
-			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
-			<li>Mud</li>
-      <li>SavannaSoil</li>
-      <li>MarginalSoil</li>
-			<li>WaterOceanShallow</li>
-      <li>WaterMovingShallow</li>
-			<li>WaterShallow</li>
-			<li>Ice</li>
-		</allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Marble_Rough</li>
-      <li>WeatheredMarble</li>
-      <li>SolidMarble</li>
-      <li>Marble</li>
-    </neededNearbyTerrains>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>Marble_Rough</li>
-      <li>WeatheredMarble</li>
-      <li>Marble</li>
-    </associatedOres>
-    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
-    <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
-    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
-    <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>1</maxMeshCount>
-    <!-- The size range -->
-    <visualSizeRange>
-      <min>1.1</min>
-      <max>1.3</max>
-    </visualSizeRange>
-    <visualClustering>1.0</visualClustering>
-    <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>0.8</visualSpread>
-    <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
-    <visualSizeVariation>0.1</visualSizeVariation>
-    <!-- Other resources it might drop -->
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    
-    <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
-      <li>ChunkMarble</li>
-    </ThingsToReplace>
 
-    <!-- Tags which determine how some options behave  -->
-    <tags>
-      <li>rock</li>
-      <li>boulder</li>
-      <li>chunk_replacer</li>
-    </tags>
-
-  </ThingDef>
-  
-
-  <ThingDef Name="PassableMarble" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>PassableMarble</defName>
-    <label>Marble rocks</label>
-    <description>Marble rocks that are easily walked over and provide little cover.</description>
+  <ThingDef Name="ZF_PassableCragstone" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_PassableCragstone</defName>
+    <label>Cragstone rocks</label>
+    <description>Cragstone rocks that are easily walked over and provide little cover.</description>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/PassableLimestone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
-      <color>(132,135,132)</color>
+      <color>(36,35,40)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
@@ -489,7 +342,7 @@
     <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
     <fillPercent>0.3</fillPercent>
     <statBases>
-      <MaxHitPoints>700</MaxHitPoints>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -499,7 +352,7 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkMarble</mineableThing>
+      <mineableThing>AB_ChunkCragstone</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
@@ -526,7 +379,11 @@
 		<allowedTerrains>
 			<li>AB_CrackedMud</li>
 			<li>AB_FineSand</li>
-			<li>Marble_Rough</li>
+			<li>AB_Cragstone_Rough</li>
+			<li>AB_FineForsakenSand</li>
+			<li>AB_ForsakenSand</li>
+			<li>AB_ForsakenRock</li>
+			<li>AB_DarkMud</li>
 			<li>RockySoil</li>
 			<li>Gravel</li>
 			<li>Sand</li>
@@ -547,10 +404,10 @@
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>BoulderMarble</li>
-			<li>Marble_Rough</li>
-      <li>WeatheredMarble</li>
-      <li>SolidMarble</li>
-      <li>Marble</li>
+			<li>AB_Cragstone_Rough</li>
+      <li>ZF_WeatheredCragstone</li>
+      <li>ZF_SolidCragstone</li>
+      <li>Cragstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
@@ -558,9 +415,8 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>BoulderMarble</li>
-      <li>WeatheredMarble</li>
-      <li>Marble</li>
+      <li>ZF_WeatheredCragstone</li>
+      <li>Cragstone</li>
     </associatedOres>
     <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -581,10 +437,6 @@
     <visualSizeVariation>0.3</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-      </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
