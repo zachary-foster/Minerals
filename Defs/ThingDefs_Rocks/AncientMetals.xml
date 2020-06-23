@@ -26,9 +26,22 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
       <drawSize>(4,4)</drawSize>
-      <color>(80,80,80)</color>
-      <colorTwo>(140,90,70)</colorTwo>
     </graphicData>
+    <randomColorsOne>
+      <li>(80,80,80)</li>
+      <li>(82,82,82)</li>
+      <li>(84,84,84)</li>
+      <li>(86,86,86)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(140,90,70)</li>
+      <li>(145,95,75)</li>
+      <li>(145,90,75)</li>
+      <li>(150,95,80)</li>
+      <li>(150,100,90)</li>
+      <li>(150,105,95)</li>
+      <li>(150,115,105)</li>
+    </randomColorsTwo>
     <uiIconPath>Things/Ore/HewnOre/HewnOreA</uiIconPath>
     <statBases>
       <MaxHitPoints>2000</MaxHitPoints>
@@ -131,6 +144,20 @@
       <color>(80,80,80)</color>
       <colorTwo>(150,130,120)</colorTwo>
     </graphicData>
+    <randomColorsOne>
+      <li>(80,80,80)</li>
+      <li>(82,82,82)</li>
+      <li>(84,84,84)</li>
+      <li>(86,86,86)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(150,130,120)</li>
+      <li>(155,135,125)</li>
+      <li>(150,135,125)</li>
+      <li>(160,140,130)</li>
+      <li>(150,135,125)</li>
+      <li>(150,140,130)</li>
+    </randomColorsTwo>
     <uiIconPath>Things/Ore/HewnOre/HewnOreA</uiIconPath>
     <statBases>
       <MaxHitPoints>2300</MaxHitPoints>
