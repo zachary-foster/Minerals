@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System;
 using System.Reflection;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace Minerals
         // this static constructor runs to create a HarmonyInstance and install a patch.
         static HarmonyPatches()
         {
-            HarmonyInstance harmony = HarmonyInstance.Create("rimworld.Minerals");
+            Harmony harmony = new Harmony("com.zakhary.Minerals");
 
             // Spawn rocks on map generation
             MethodInfo targetmethod = AccessTools.Method(typeof(GenStep_RockChunks), "Generate");

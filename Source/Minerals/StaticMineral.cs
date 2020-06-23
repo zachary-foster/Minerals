@@ -237,6 +237,7 @@ namespace Minerals
 
             // Check if is on dry land
             TerrainDef myTerrain = Map.terrainGrid.TerrainAt(Position);
+
             if (!(myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("IceShallow") || myTerrain.defName.Contains("MuddyIce")))
             {
                 return 1f;
