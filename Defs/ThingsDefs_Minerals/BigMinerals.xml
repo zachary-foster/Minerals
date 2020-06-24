@@ -22,15 +22,6 @@
     <initialSizeMax>1</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>0.1</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <allowedBiomes>
-    </allowedBiomes>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-    <allowedTerrains>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-    </neededNearbyTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>

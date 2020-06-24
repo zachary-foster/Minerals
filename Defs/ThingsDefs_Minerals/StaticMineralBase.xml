@@ -40,6 +40,13 @@
     </allowedBiomes>
     <!-- The terrains this can appear on. The default is any terrain -->
     <allowedTerrains>
+      <li>Granite_Rough</li>
+      <li>Marble_Rough</li>
+      <li>Limestone_Rough</li>
+      <li>Sandstone_Rough</li>
+      <li>Slate_Rough</li>
+      <li>LavaRock_Rough</li>
+      <li>Claystone_Rough</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on. If empty, it does not need to be near any -->
     <neededNearbyTerrains>
@@ -109,18 +116,6 @@
       <li>SolidOreGold</li>
     </associatedOres>
     <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-    <allowedTerrains>
-			<li>AB_Mudstone_Rough</li>
-			<li>ZF_Mudstone_Rough</li>
-      <li>Granite_Rough</li>
-      <li>Marble_Rough</li>
-      <li>Limestone_Rough</li>
-      <li>Sandstone_Rough</li>
-      <li>Slate_Rough</li>
-      <li>LavaRock_Rough</li>
-      <li>Claystone_Rough</li>
-    </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>true</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -166,11 +161,6 @@
       <li>Granite_Rough</li>
       <li>Marble_Rough</li>
     </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Granite_Rough</li>
-      <li>Marble_Rough</li>
-    </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>QuartzCrystal</li>
@@ -235,14 +225,9 @@
     <initialSizeVariation>.4</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
-			<li>AB_Mudstone_Rough</li>
-			<li>ZF_Mudstone_Rough</li>
-      <li>Granite_Rough</li>
-      <li>Marble_Rough</li>
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>LavaRock_Rough</li>
       <li>Claystone_Rough</li>
     </allowedTerrains>
     <!-- Roof requirements -->
