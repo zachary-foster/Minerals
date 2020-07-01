@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  
   <ThingDef Name="Claystone" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>Claystone</defName>
     <label>Claystone</label>

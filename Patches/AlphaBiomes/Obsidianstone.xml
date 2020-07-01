@@ -22,8 +22,8 @@
           <uiIconPath>Things/Building/AB_Cragstone/AB_CragstoneA</uiIconPath>
           <!-- The size range -->
           <visualSizeRange>
-            <min>2</min>
-            <max>2.2</max>
+            <min>2.5</min>
+            <max>2.8</max>
           </visualSizeRange>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
@@ -118,6 +118,10 @@
             <color>(30,30,30)</color>
           </graphicData>
           <uiIconPath>Things/Building/AB_Cragstone/AB_CragstoneA</uiIconPath>
+          <visualSizeRange>
+            <min>2.6</min>
+            <max>2.7</max>
+          </visualSizeRange>
           <statBases>
             <Flammability>0</Flammability>
             <Beauty>1</Beauty>

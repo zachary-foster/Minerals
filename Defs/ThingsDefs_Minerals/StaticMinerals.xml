@@ -50,7 +50,7 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.4</perMapProbability>
+    <perMapProbability>0.5</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.004</maxClusterProbability>
@@ -493,7 +493,7 @@
     <allowedTerrains>
       <li>Granite_Rough</li>
       <li>Marble_Rough</li>
-      <li>LavaRock_Rough</li>
+      <li>ZF_BasaltBase_Rough</li>
     </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
@@ -655,7 +655,7 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Granite_Rough</li>
-      <li>LavaRock_Rough</li>
+      <li>ZF_BasaltBase_Rough</li>
     </allowedTerrains>
     <!-- The biomes this can appear in. The default is all ones known to mod-->
     <allowedBiomes>

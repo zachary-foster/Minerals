@@ -279,7 +279,7 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>LavaRock_Rough</li>
+      <li>ZF_BasaltBase_Rough</li>
       <li>Claystone_Rough</li>
       <li>Gravel</li>
     </allowedTerrains>
@@ -428,7 +428,7 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>LavaRock_Rough</li>
+      <li>ZF_BasaltBase_Rough</li>
       <li>Claystone_Rough</li>
       <li>Gravel</li>
     </allowedTerrains>
@@ -575,7 +575,7 @@
       <li>SteamVent</li>
     </neededNearbyTerrains>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!-- <allowedTerrains>
+    <allowedTerrains>
       <li>SandBeachWetSalt</li>
       <li>Sand</li>
       <li>Soil</li>
@@ -587,13 +587,13 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>LavaRock_Rough</li>
+      <li>ZF_BasaltBase_Rough</li>
       <li>Claystone_Rough</li>
       <li>Gravel</li>
       <li>WastelandAsphalt</li>
       <li>SaltField</li>
       <li>Salted_Earth</li>
-		</allowedTerrains> -->
+		</allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>SteamGeyser</li>

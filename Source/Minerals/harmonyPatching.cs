@@ -8,9 +8,35 @@ using System.Text;
 using UnityEngine;   // Always needed
 using RimWorld;      // RimWorld specific functions 
 using Verse;         // RimWorld universal objects 
+using RimWorld.Planet;
 
 namespace Minerals
 {
+
+
+
+    /* Replace slate with basalt in the Alpha biomes Pyroclastic Conflagration biome*/
+    [HarmonyPatch(typeof(World))]
+    [HarmonyPatch("NaturalRockTypesIn")]
+    public static class Minerals_World_NaturalRockTypesIn_Patch
+    {
+
+        [HarmonyPostfix]
+        public static void MakeRocksAccordingToBiome(int tile, ref World __instance, ref IEnumerable<ThingDef> __result)
+        {
+            if (__instance.grid.tiles[tile].biome.defName == "AB_PyroclasticConflagration")
+            {
+                List<ThingDef> replacedList = new List<ThingDef>();
+                ThingDef item = DefDatabase<ThingDef>.GetNamed("AB_Obsidianstone");
+                replacedList.Add(item);
+                replacedList.Add(DefDatabase<ThingDef>.GetNamed("ZF_BasaltBase"));
+
+                __result = replacedList;
+            }
+        }
+    }
+
+
 
     [StaticConstructorOnStartup]
     static class HarmonyPatches

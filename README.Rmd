@@ -50,7 +50,7 @@ Below are how each type might affect gameplay, in order of hit points.
 * Chunk drop rate: very high
 * Always drops: crushed rock
 * Often drops: soft clay, flint (MineralsCraft mod)
-* Landscape: few rocks and some cover
+* Landscape: complex with some cover
 * Beauty: high
 
 Claystone is a soft sedimentary rock, so is quite easy to work with and mine.
@@ -122,10 +122,10 @@ It is often used in decorative applications but is also quite hard.
 # print_minerals("Defs/ThingDefs_Rocks/Marble.xml")
 ```
 
-### Basalt (Nature Pretty Sweet mod required)
+### Basalt
 
 * Hit points / time to mine: high
-* Chunk drop rate: low
+* Chunk drop rate: medium
 * Always drops: crushed rock
 * Often drops: obsidian (MineralsCraft mod)
 * Rarely drops: Rough gems
@@ -157,38 +157,42 @@ It is very strong, but difficult to quarry.
 
 ### Rock types
 
-There are three sizes of rocks, which vary in how they restrict movement and provide cover.
-
-
-#### Weathered rock walls
-
-These replace the vanilla rock walls that are unroofed when the map spawns.
-They have lower hit points than rocks under a mountain.
-
-
-#### Solid rock walls
-
-These replace the vanilla rock walls that are roofed when the map spawns.
+There are five general sizes of rocks, which vary in how they restrict movement, provide cover, and yeild resources.
+Below each type is described, going from largest to smallest
 
 
 #### Hewn rock walls
 
-These replace the vanilla rock walls that are on the inside of the mountain.
-They are only seen when mining.
+These replace the vanilla rock walls that are under thick natural roofs and not adjacent to passable terrain.
+They are typically only seen when mining.
+These yeild the most resources in general and have the most hit points.
+
+#### Solid rock walls
+
+These replace the vanilla rock walls that are under thin natural roofs or under thick mountain roofs when adjacent to passable terrain.
+These yeild slightly less resources than hewn rock walls and have slightly fewer hitpoints.  
+
+#### Weathered rock walls
+
+These replace the vanilla rock walls that are unroofed when the map spawns.
+They yeild less resources than hewn or solid rock walls and have fewer hitpoints.  
 
 #### Boulders
 
 Large rocks that can be climbed over, but cannot be stood on.
-They provide very good cover.
+They provide very good cover in gunfights.
+They are the most likly to yeild chunks when mined, but as much of other resources compared to the three types of rock walls.
 
-#### Rocks 
+#### Small Rocks 
 
-Low numerous rocks that slow movement a little.
+Small numerous rocks that slow movement and provide little cover.
+They yeild the least resources.
 
 
 ## Ores
 
-All the ores in Hardcore SK have been replaced with rocks with similar properties in this mod.
+All the ores have been replaced with rocks with similar properties.
+Some of the ores will yeild other resources in addition to the ore type.
 
 ## Installation
 
@@ -233,6 +237,26 @@ To add a mineral:
 * If you want to have you changes added to this mod for others to use, consider [forking](https://help.github.com/articles/fork-a-repo/) this repository and submitting a [pull request](https://help.github.com/articles/about-pull-requests/). I welcome contributions!
 
 
+## Compatibility with other mods
+
+### Fully compatible
+
+Mods designed to work with Minerals
+
+* Alpha Biomes
+* Natures Pretty Sweet
+
+### Soft incompatiblity
+
+Mods that work, but dont use the type of rocks that Minerals use and might not have balanced gameplay.
+
+* Any mod that adds rock types
+
+### Hard incompatiblity
+
+Mods that cause errors when used when Minerals
+
+
 ## Ideas for future work
 
 ### Events
@@ -260,11 +284,6 @@ A trader of visitor offers to let you know about a hidden treasure hoard in the 
 The treasure is in a room of a sealed off base.
 There might be insects or mechs in the base and raids might occur when on the map.
 In one of the rooms is lots of gems, silver, gold, jade, and jeweled weapons/apparel.
-
-#### Hidden minerals found
-
-One of you colonists notice some minerals on your map.
-Only applies to minerals embedded in rock that might be overlooked, like gemstones and flint.
 
 #### Strange green crystals
 

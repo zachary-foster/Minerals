@@ -13,17 +13,13 @@
 			<displayName>Hardcore SK</displayName>
 			<downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
 		</li>
-		<li>
-			<packageId>skyarkhangel.NPS</packageId>
-			<displayName>Nature's Pretty Sweet</displayName>
-			<downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
-		</li>
 	</modDependencies>
 	<loadBefore>
 	</loadBefore>
 	<loadAfter>
 		<li>skyarkhangel.HSK</li>
 		<li>skyarkhangel.NPS</li>
+		<li>sarg.alphabiomes</li>
 	</loadAfter>
 	<incompatibleWith>
 	</incompatibleWith>
