@@ -46,17 +46,8 @@
     <initialSizeMax>0.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <!--
-		<allowedBiomes>
-			<li>add_biomes_here</li>
-		</allowedBiomes>
-		-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>AB_CrackedMud</li>
-			<li>AB_RichCrackedMud</li>
-			<li>AB_FineSand</li>
 			<li>Granite_Rough</li>
 			<li>Limestone_Rough</li>
 			<li>Marble_Rough</li>

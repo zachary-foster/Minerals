@@ -421,7 +421,6 @@
       <li>SandBeachWetSalt</li>
       <li>Sand</li>
       <li>Soil</li>
-      <li>SoilRich</li>
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
       <li>Granite_Rough</li>
@@ -576,7 +575,7 @@
       <li>SteamVent</li>
     </neededNearbyTerrains>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <allowedTerrains>
+    <!-- <allowedTerrains>
       <li>SandBeachWetSalt</li>
       <li>Sand</li>
       <li>Soil</li>
@@ -594,7 +593,7 @@
       <li>WastelandAsphalt</li>
       <li>SaltField</li>
       <li>Salted_Earth</li>
-		</allowedTerrains>
+		</allowedTerrains> -->
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>SteamGeyser</li>

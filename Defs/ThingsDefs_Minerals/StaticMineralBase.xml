@@ -40,13 +40,6 @@
     </allowedBiomes>
     <!-- The terrains this can appear on. The default is any terrain -->
     <allowedTerrains>
-      <li>Granite_Rough</li>
-      <li>Marble_Rough</li>
-      <li>Limestone_Rough</li>
-      <li>Sandstone_Rough</li>
-      <li>Slate_Rough</li>
-      <li>LavaRock_Rough</li>
-      <li>Claystone_Rough</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on. If empty, it does not need to be near any -->
     <neededNearbyTerrains>
@@ -115,6 +108,12 @@
       <li>WeatheredOreGold</li>
       <li>SolidOreGold</li>
     </associatedOres>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+    <allowedTerrains>
+      <li>Marble_Rough</li>
+      <li>LavaRock_Rough</li>
+      <li>Granite_Rough</li>
+    </allowedTerrains>
     <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>true</mustBeUnderRoof>

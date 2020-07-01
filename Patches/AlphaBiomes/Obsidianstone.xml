@@ -20,6 +20,11 @@
             <color>(30,30,30)</color>
           </graphicData>
           <uiIconPath>Things/Building/AB_Cragstone/AB_CragstoneA</uiIconPath>
+          <!-- The size range -->
+          <visualSizeRange>
+            <min>2</min>
+            <max>2.2</max>
+          </visualSizeRange>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>

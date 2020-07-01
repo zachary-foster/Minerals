@@ -54,9 +54,6 @@
           <initialSizeMax>1</initialSizeMax>
           <!-- How much initial sizes of individuals randomly vary -->
           <initialSizeVariation>.3</initialSizeVariation>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-      		</allowedTerrains>
           <!-- The terrains this must be near to, but not necessarily on -->
           <neededNearbyTerrains>
             <li>AB_Cragstone_Rough</li>
@@ -133,9 +130,6 @@
           <initialSizeMax>1</initialSizeMax>
           <!-- How much initial sizes of individuals randomly vary -->
           <initialSizeVariation>.3</initialSizeVariation>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-      		</allowedTerrains>
           <!-- The terrains this must be near to, but not necessarily on -->
           <neededNearbyTerrains>
             <li>AB_Cragstone_Rough</li>
@@ -227,9 +221,6 @@
           <initialSizeMax>1</initialSizeMax>
           <!-- How much initial sizes of individuals randomly vary -->
           <initialSizeVariation>.3</initialSizeVariation>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-      		</allowedTerrains>
           <!-- The terrains this must be near to, but not necessarily on -->
           <neededNearbyTerrains>
             <li>Cragstone</li>
@@ -384,7 +375,7 @@
           <!-- How much initial sizes of individuals randomly vary -->
           <initialSizeVariation>.2</initialSizeVariation>
           <!-- The terrains this can appear on. The default is rocky terrains-->
-      		<allowedTerrains>
+      		<!-- <allowedTerrains>
       			<li>AB_CrackedMud</li>
       			<li>AB_FineSand</li>
       			<li>AB_Cragstone_Rough</li>
@@ -408,10 +399,9 @@
       			<li>WaterOceanShallow</li>
       			<li>Ice</li>
       			<li>SaltField</li>
-      		</allowedTerrains>
+      		</allowedTerrains> -->
           <!-- The terrains this must be near to, but not necessarily on -->
           <neededNearbyTerrains>
-            <li>BoulderMarble</li>
       			<li>AB_Cragstone_Rough</li>
             <li>ZF_WeatheredCragstone</li>
             <li>ZF_SolidCragstone</li>

@@ -1889,16 +1889,21 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>Mechanism</ResourceDefName>
+        <ResourceDefName>Plasteel</ResourceDefName>
         <DropProbability>0.5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ElectronicComponents</ResourceDefName>
+        <ResourceDefName>Mechanism</ResourceDefName>
         <DropProbability>0.3</DropProbability>
       </li>
       <li>
+        <ResourceDefName>ElectronicComponents</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+      </li>
+      <li>
         <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>0.8</DropProbability>
       </li>
     </randomlyDropResources>
     <ThingsToReplace>
@@ -1945,12 +1950,16 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>RobotParts</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <ResourceDefName>ComponentIndustrial</ResourceDefName>
+        <DropProbability>1</DropProbability>
       </li>
       <li>
         <ResourceDefName>Mechanism</ResourceDefName>
         <DropProbability>0.5</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>ComponentSpacer</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
       </li>
       <li>
         <ResourceDefName>AdvMechanism</ResourceDefName>
@@ -1966,11 +1975,7 @@
       </li>
       <li>
         <ResourceDefName>Microchips</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>0.03</DropProbability>
       </li>
     </randomlyDropResources>
     <ThingsToReplace>
@@ -2014,36 +2019,36 @@
       </li>
       <li>
         <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>1.5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>RobotParts</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <ResourceDefName>ComponentIndustrial</ResourceDefName>
+        <DropProbability>1.5</DropProbability>
       </li>
       <li>
         <ResourceDefName>Mechanism</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
+        <DropProbability>0.6</DropProbability>
+      </li>
+      <li>
+        <ResourceDefName>ComponentSpacer</ResourceDefName>
+        <DropProbability>0.08</DropProbability>
       </li>
       <li>
         <ResourceDefName>AdvMechanism</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
+        <DropProbability>0.05</DropProbability>
       </li>
       <li>
         <ResourceDefName>Electronics</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
+        <DropProbability>0.2</DropProbability>
       </li>
       <li>
         <ResourceDefName>ElectronicComponents</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
+        <DropProbability>0.5</DropProbability>
       </li>
       <li>
         <ResourceDefName>Microchips</ResourceDefName>
         <DropProbability>0.05</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>1</DropProbability>
       </li>
     </randomlyDropResources>
     <ThingsToReplace>

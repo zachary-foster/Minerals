@@ -5,7 +5,7 @@
   <ThingDef ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>CalciteCrystal</defName>
     <label>Calcite Crystal</label>
-    <description>Crystals of calcium carbonate. A common mineral found underground, particulary in limestone caves. Interesting, but not otherwise very useful. Yeilds rubble if mined.</description>
+    <description>Crystals of calcium carbonate. A common mineral found underground, particulary in limestone caves. Interesting, but only rarely yeilds gemstone quality specimens.</description>
     <graphicData>
       <texPath>Things/Mineral/CalciteCrystal</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -62,6 +62,14 @@
     <initialSizeMax>.95</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+    <allowedTerrains>
+      <li>Limestone_Rough</li>
+      <li>Marble_Rough</li>
+      <li>Sandstone_Rough</li>
+      <li>Slate_Rough</li>
+      <li>Claystone_Rough</li>
+    </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>Limestone</li>
@@ -485,10 +493,6 @@
     <allowedTerrains>
       <li>Granite_Rough</li>
       <li>Marble_Rough</li>
-      <li>Limestone_Rough</li>
-      <li>Sandstone_Rough</li>
-      <li>Slate_Rough</li>
-      <li>Claystone_Rough</li>
       <li>LavaRock_Rough</li>
     </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->

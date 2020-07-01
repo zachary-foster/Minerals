@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -68,7 +68,7 @@ namespace Minerals
 
         public static void removeStartingChunks(Map map)
         {
-            string[] toRemove = {"ChunkSandstone", "ChunkGranite", "ChunkLimestone", "ChunkSlate", "ChunkMarble", "ChunkLava", "ChunkClaystone", "Filth_RubbleRock"};
+            string[] toRemove = {"ChunkSandstone", "ChunkGranite", "ChunkLimestone", "ChunkSlate", "ChunkMarble", "ChunkLava", "ChunkClaystone", "Filth_RubbleRock", "AB_ChunkCragstone", "AB_ChunkMudstone", "AB_ChunkObsidian", "GU_ChunkRoseQuartz", "AB_ChunkSlimeStone"};
             List<Thing> thingsToCheck = map.listerThings.AllThings;
             for (int i = thingsToCheck.Count - 1; i >= 0; i--)
             {

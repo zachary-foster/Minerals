@@ -1095,7 +1095,7 @@ namespace Minerals
                 return true;
             }
             TerrainDef terrain = map.terrainGrid.TerrainAt(position);
-            //if (defName == "BigColdstoneCrystal") Log.Message("IsTerrainOkAt: found terrain " + terrain.defName + ". checking if it is one of: " + String.Join(", ", allowedTerrains.ToArray()), true);
+            // if (defName == "SmallFossils") Log.Message("IsTerrainOkAt: found terrain " + terrain.defName + ". checking if it is one of: " + String.Join(", ", allowedTerrains.ToArray()), true);
             return allowedTerrains.Any(terrain.defName.Equals);
         }
 

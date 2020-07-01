@@ -111,11 +111,6 @@
     <initialSizeMax>1</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-		<allowedBiomes>
-		</allowedBiomes>
-    <allowedTerrains>
-		</allowedTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
