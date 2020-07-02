@@ -74,8 +74,8 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>CrushedStone</mineableThing>
-      <mineableDropChance>0.5</mineableDropChance>
+      <mineableThing>RoughGem</mineableThing>
+      <mineableDropChance>0.001</mineableDropChance>
       <mineableYield>5</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>

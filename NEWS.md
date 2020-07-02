@@ -1,6 +1,7 @@
 ## v1.3.0
 
-* Updated to Rimworld 1.1
+* **Now works with Vanilla Rimworld** as well as Hardcore SK
+* **Updated to Rimworld 1.1**
 * Nature's pretty sweet is now optional
 * Basalt is implemented independently of Nature's pretty sweet
 * Added compatibility with the Alpha Biomes mod

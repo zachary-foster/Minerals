@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="ZF_BasaltBase" ParentName="SK_UglyRockBase">
+  <ThingDef Name="ZF_BasaltBase" ParentName="ZF_UglyRockBase">
     <defName>ZF_BasaltBase</defName>
     <label>Basalt Deposit</label>
     <description>Basalt is a very hard igneous rock.</description>

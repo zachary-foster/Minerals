@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-## Minerals_SK: A rimworld mod for the [Hardcore SK project](https://github.com/skyarkhangel/Hardcore-SK)
+## Minerals: A rimworld mod
 
 ![](About/Preview.jpg)
 
@@ -243,6 +243,7 @@ To add a mineral:
 
 Mods designed to work with Minerals
 
+* The [Hardcore SK project](https://github.com/skyarkhangel/Hardcore-SK)
 * Alpha Biomes
 * Natures Pretty Sweet
 
@@ -250,12 +251,13 @@ Mods designed to work with Minerals
 
 Mods that work, but dont use the type of rocks that Minerals use and might not have balanced gameplay.
 
-* Any mod that adds rock types
+* Most mods that add rock types
 
 ### Hard incompatiblity
 
 Mods that cause errors when used when Minerals
 
+*None known, please report any you find*
 
 ## Ideas for future work
 
@@ -265,7 +267,7 @@ Mods that cause errors when used when Minerals
 
 A visitor or trader gives you the map position to a tile with a high concentration of some mineral.
 This would highlight an area with a naturally high level of that mineral and the conditions it occurs in.
-When visiting the spot on the map, the natural abundance of that mineral is doubled.
+When visiting the spot on the map, the natural abundance of that mineral is tripled.
 
 #### Valuable Minerals nearby
 
@@ -285,19 +287,6 @@ The treasure is in a room of a sealed off base.
 There might be insects or mechs in the base and raids might occur when on the map.
 In one of the rooms is lots of gems, silver, gold, jade, and jeweled weapons/apparel.
 
-#### Strange green crystals
-
-"A cluster of strange green crystals have been left behind by a meteor.
-They are glowing and seem to be growing."
-
-A type of proto-mechinoid terraforming event that evolves over time.
-
-1. A single cluster of crystals are left by a meteor.
-1. These grow slowly in light, but grow faster when parasitizing anything biological nearby. They begin to reproduce once big enough.
-1. Once full sized, they spawn other types, some natural metal ores and some more exotic. These turn the ground they grow on to wasteland once full size.
-1. Once full size crystals are spawned a fixed distance from the meteor, a type is spawned that is impassible and creates a wall and encloses an area, while other crystals continue to spread outwards.
-1. Once metal ores are full size, a new type is spawned that explode into "micromech swarms". Another type produces defensive "seekers", which patrol the area and fly into any intruders with a small explosion.
-1. micromech swarms begin to harvest the ores and build full size mechs which attack the colony once mature.
 
 ## Image sources used
 
