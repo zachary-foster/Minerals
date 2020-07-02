@@ -49,6 +49,7 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
+      <li>Marble_Rough</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -130,6 +131,7 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
+      <li>Marble_Rough</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -228,6 +230,7 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
+      <li>Marble_Rough</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -386,30 +389,6 @@
     <initialSizeMax>.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
-			<li>AB_CrackedMud</li>
-			<li>AB_RichCrackedMud</li>
-			<li>AB_FineSand</li>
-			<li>Marble_Rough</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>SoilRich</li>
-			<li>MarshyTerrain</li>
-			<li>MossyTerrain</li>
-			<li>Marsh</li>
-			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
-			<li>Mud</li>
-      <li>SavannaSoil</li>
-      <li>MarginalSoil</li>
-			<li>WaterOceanShallow</li>
-      <li>WaterMovingShallow</li>
-			<li>WaterShallow</li>
-			<li>Ice</li>
-		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>Marble_Rough</li>
@@ -522,28 +501,6 @@
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
-			<li>AB_CrackedMud</li>
-			<li>AB_FineSand</li>
-			<li>Marble_Rough</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
-			<li>MarshyTerrain</li>
-			<li>MossyTerrain</li>
-			<li>Marsh</li>
-			<li>Mud</li>
-      <li>SavannaSoil</li>
-      <li>WaterShallow</li>
-      <li>WaterMovingShallow</li>
-			<li>WaterOceanShallow</li>
-			<li>Ice</li>
-			<li>SaltField</li>
-		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>BoulderMarble</li>

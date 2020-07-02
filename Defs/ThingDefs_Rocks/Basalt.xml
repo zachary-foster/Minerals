@@ -65,14 +65,8 @@
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-    <!--
-		<allowedTerrains>
-			<li>Basalt_Rough</li>
-			<li>WaterOceanShallow</li>
-			<li>WaterShallow</li>
-		</allowedTerrains>
-		-->
     <allowedTerrains>
+      <li>ZF_BasaltBase_Rough</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -157,6 +151,10 @@
     <initialSizeMax>1</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+    <allowedTerrains>
+      <li>ZF_BasaltBase_Rough</li>
+		</allowedTerrains>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
@@ -251,9 +249,9 @@
     <initialSizeMax>1</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
+      <li>ZF_BasaltBase_Rough</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -416,28 +414,6 @@
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
-			<li>AB_CrackedMud</li>
-			<li>AB_RichCrackedMud</li>
-			<li>AB_FineSand</li>
-			<li>ZF_BasaltBase_Rough</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
-			<li>MarshyTerrain</li>
-			<li>Marsh</li>
-			<li>Mud</li>
-      <li>SavannaSoil</li>
-      <li>WaterShallow</li>
-      <li>WaterMovingShallow</li>
-			<li>WaterOceanShallow</li>
-			<li>Ice</li>
-			<li>SaltField</li>
-		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
 			<li>ZF_BasaltBase_Rough</li>
@@ -550,28 +526,6 @@
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
-			<li>AB_CrackedMud</li>
-			<li>AB_RichCrackedMud</li>
-			<li>AB_FineSand</li>
-			<li>ZF_BasaltBase_Rough</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
-			<li>MarshyTerrain</li>
-			<li>Marsh</li>
-			<li>Mud</li>
-      <li>SavannaSoil</li>
-      <li>WaterShallow</li>
-      <li>WaterMovingShallow</li>
-			<li>WaterOceanShallow</li>
-			<li>Ice</li>
-			<li>SaltField</li>
-		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
 			<li>ZF_BasaltBase_Rough</li>
@@ -677,26 +631,6 @@
     <initialSizeMax>0.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.1</initialSizeVariation>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
-			<li>AB_CrackedMud</li>
-			<li>AB_RichCrackedMud</li>
-			<li>AB_FineSand</li>
-			<li>ZF_BasaltBase_Rough</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>MarshyTerrain</li>
-			<li>MossyTerrain</li>
-			<li>Marsh</li>
-			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
-			<li>Mud</li>
-      <li>SavannaSoil</li>
-      <li>MarginalSoil</li>
-			<li>SaltField</li>
-		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>ZF_BasaltBase_Rough</li>
