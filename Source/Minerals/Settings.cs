@@ -27,6 +27,7 @@ namespace Minerals
         public float visualSpreadFactor = 1f;
         public float resourceDropFreqSetting = 1f;
         public float resourceDropAmountSetting = 1f;
+        public IntRange terrainCountRangeSetting = new IntRange(1, 4);
 
 
         public override void ExposeData()
@@ -49,6 +50,7 @@ namespace Minerals
             Scribe_Values.Look(ref visualSpreadFactor, "visualSpreadFactor", 1f);
             Scribe_Values.Look(ref resourceDropFreqSetting, "resourceDropFreqSetting", 1f);
             Scribe_Values.Look(ref resourceDropAmountSetting, "resourceDropAmountSetting", 1f);
+            Scribe_Values.Look<IntRange>(ref terrainCountRangeSetting, "terrainCountRangeSetting", new IntRange(1, 4), true);
         }
 
 
@@ -56,7 +58,7 @@ namespace Minerals
         {
             const float bigGap = 12f;
             const float smallGap = 8f;
-            const float headerSize = 32f;
+            const float headerSize = 38f;
 
             var list = new Listing_Standard { ColumnWidth = inRect.width / 2 - 34f };
             list.Begin(inRect);
@@ -131,6 +133,11 @@ namespace Minerals
 
             list.Label("resourceDropAmountSetting".Translate() + ": " + Math.Round(resourceDropAmountSetting * 100, 3) + "%", -1f);
             resourceDropAmountSetting = list.Slider(resourceDropAmountSetting, 0, maxSetting);
+
+            list.Gap(smallGap);
+
+            list.Label("terrainCountRangeSetting".Translate(), -1f);
+            list.IntRange(ref terrainCountRangeSetting, 1, 10);
 
             list.Gap(bigGap);
 

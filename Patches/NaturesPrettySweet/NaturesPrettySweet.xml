@@ -3,15 +3,7 @@
   
   <!-- Replace stone walls -->
   
-  <!-- <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Nature's Pretty Sweet</li>
-    </mods>
-    <match Class="PatchOperationRemove">
-      <xpath>Defs/ThingDef[defName = "LavaRock"]</xpath>
-    </match>
-  </Operation> -->
-
+  <!--
   <Operation Class="PatchOperationFindMod">
     <mods>
       <li>Nature's Pretty Sweet</li>
@@ -21,6 +13,33 @@
     </match>
   </Operation>
   
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Nature's Pretty Sweet</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName = "LavaRock"]/building</xpath>
+      <value>
+        <isResourceRock>true</isResourceRock>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Nature's Pretty Sweet</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <TerrainDef ParentName="ZF_BasaltBase_Rough">
+          <defName>LavaRock_RoughHewn</defName>
+          <label>Rough basalt</label>
+        </TerrainDef>
+      </value>
+    </match>
+  </Operation>
+  -->
 
   <!-- Replace chunks -->
 
@@ -174,7 +193,7 @@
   -->
   
   <Operation Class="PatchOperationSequence">
-    <success>Always</success>
+    <success>Normal</success>
     <operations>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName = "Stone-RockyDirt"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
@@ -192,6 +211,17 @@
     </operations>
   </Operation>
   
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Nature's Pretty Sweet</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ActiveTerrain.SpecialTerrain[defName = "Lava"]/modExtensions/li[@Class="NPS.TerrainWeatherReactions"]/freezeTerrain</xpath>
+      <value>
+        <freezeTerrain>ZF_BasaltBase_Rough</freezeTerrain>
+      </value>
+    </match>
+  </Operation>
 
 
 </Patch>

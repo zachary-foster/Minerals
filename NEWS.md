@@ -5,6 +5,7 @@
 * Basalt is implemented independently of Nature's pretty sweet
 * Added compatibility with the Alpha Biomes mod
 * Fixed bug with which terrains were allowed for many rocks and minerals
+* Added setting to choose the number of rock types per map and changed the default from 2-3 to 1-4. 
 
 
 ## v1.2.0
