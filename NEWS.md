@@ -1,3 +1,12 @@
+## v1.3.0
+
+* Updated to Rimworld 1.1
+* Nature's pretty sweet is now optional
+* Basalt is implemented independently of Nature's pretty sweet
+* Added compatibility with the Alpha Biomes mod
+* Fixed bug with which terrains were allowed for many rocks and minerals
+
+
 ## v1.2.0
 
 * Added small fossils in sedimentary rocks. They can be used for decorative flooring if MineralsCraft mod is used or sold.
