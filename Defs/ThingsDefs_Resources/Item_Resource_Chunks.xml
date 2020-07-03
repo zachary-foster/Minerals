@@ -22,7 +22,7 @@
     </statBases>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts Inherit="False">
-      <ClayBrick>30</ClayBrick>  
+      <ZF_BlocksClay>30</ZF_BlocksClay>  
     </butcherProducts>
   </ThingDef>
 
@@ -66,6 +66,34 @@
         <WorkToBuild>5.5</WorkToBuild>
         <WorkToMake>4.5</WorkToMake>
         <Mass>1.25</Mass>
+      </statFactors>
+    </stuffProps>
+ </ThingDef>
+
+  <ThingDef ParentName="ZF_StoneBlocksBase">
+    <defName>ZF_BlocksClay</defName>
+    <label>clay blocks</label>
+    <description>Blocks of clay. Clay is a fine-grained sedimentary rock. It is abundant and easy to build with, but it quite soft compared to stone.</description>
+    <graphicData>
+      <color>(228, 188, 147)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.8</MarketValue>
+      <Mass>1.0</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(228, 188, 147)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>clay</stuffAdjective>
+      <statFactors>
+        <Beauty>1.2</Beauty>  
+        <MarketValue>0.3</MarketValue>
+        <MaxHitPoints>0.8</MaxHitPoints>
+        <WorkToBuild>2</WorkToBuild>
+        <WorkToMake>2</WorkToMake>
+        <Mass>1.0</Mass>
       </statFactors>
     </stuffProps>
  </ThingDef>

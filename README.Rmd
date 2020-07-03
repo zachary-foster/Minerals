@@ -239,17 +239,32 @@ To add a mineral:
 
 ## Compatibility with other mods
 
-### Fully compatible
+### Designed compatiblility
 
-Mods designed to work with Minerals
+Mods Minerals was desgined to work with
 
 * The [Hardcore SK project](https://github.com/skyarkhangel/Hardcore-SK)
 * Alpha Biomes
 * Natures Pretty Sweet
 
+
+### Verified compatible 
+
+Mods that have been verified by the author to be compatible
+
+* Biomes! Core
+* Biomes! Islands
+* Biomes! Islands Extra Islands
+
+### Probably compatible
+
+Mods that are probably compatible but have not been checked
+
+* Any mod that adds new biomes that use the Vanilla rocks
+
 ### Soft incompatiblity
 
-Mods that work, but dont use the type of rocks that Minerals use and might not have balanced gameplay.
+Mods that technically work, but dont use the type of rocks that Minerals use
 
 * Most mods that add rock types
 

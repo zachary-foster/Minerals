@@ -20,6 +20,10 @@
             <color>(36,35,40)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <visualSizeRange>
+            <min>2.5</min>
+            <max>2.8</max>
+          </visualSizeRange>
           <statBases>
             <MaxHitPoints>2300</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -96,6 +100,10 @@
             <color>(36,35,40)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <visualSizeRange>
+            <min>2.6</min>
+            <max>2.7</max>
+          </visualSizeRange>
           <statBases>
             <MaxHitPoints>2500</MaxHitPoints>
             <Flammability>0</Flammability>

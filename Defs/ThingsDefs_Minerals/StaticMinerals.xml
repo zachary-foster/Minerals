@@ -151,11 +151,6 @@
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.5</DropProbability>
       </li>
-      <li>
-        <ResourceDefName>GlassBatch</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
     </randomlyDropResources>
   </ThingDef>
 
@@ -204,11 +199,6 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>1.0</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>GlassBatch</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>

@@ -8,11 +8,6 @@
 	</supportedVersions>
 	<packageId>ZacharyFoster.Minerals</packageId>
 	<modDependencies>
-		<li>
-			<packageId>skyarkhangel.HSK</packageId>
-			<displayName>Hardcore SK</displayName>
-			<downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
-		</li>
 	</modDependencies>
 	<loadBefore>
 	</loadBefore>

@@ -137,6 +137,14 @@
     </tags>
     <!-- If graphic overlapping with nearby wall textures are rotated -->
     <growsUpWalls>true</growsUpWalls>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>GlassBatch</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
+    </randomlyDropResources>
   </ThingDef>
   
   <ThingDef Name="TourmalineBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">

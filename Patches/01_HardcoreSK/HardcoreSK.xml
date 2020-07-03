@@ -117,4 +117,16 @@
     </match>
   </Operation>
 
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Core SK</li>
+    </mods>
+    <match Class="PatchOperationSetName">
+      <success>Always</success> <!-- MANDATORY due to vanilla bug -->
+      <xpath>Defs/ThingDef[defName="ChunkClaystone"]/butcherProducts/ZF_BlocksClay</xpath>
+      <name>ClayBrick</name>
+    </match>
+  </Operation>
+
+
 </Patch>

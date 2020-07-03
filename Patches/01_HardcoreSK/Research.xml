@@ -7,20 +7,18 @@
       <li>Core SK</li>
     </mods>
     <match Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName = "PrimitiveResearchBench"]</xpath>
+	    <xpath>Defs/ThingDef[defName = "PrimitiveResearchBench"]/comps</xpath>
 	    <value>
-        <comps>
-          <li Class="CompProperties_AffectedByFacilities">
-            <linkableFacilities>
-              <li>MediumFossilTrophy</li>
-              <li>LargeFossilTrophy</li>
-              <li>BigGlowstoneCrystalTrophy</li>
-              <li>BigColdstoneCrystalTrophy</li>
-              <li>BigQuartzCrystalTrophy</li>
-              <li>BigAmethystCrystalTrophy</li>
-            </linkableFacilities>
-          </li>
-        </comps>
+        <li Class="CompProperties_AffectedByFacilities">
+          <linkableFacilities>
+            <li>MediumFossilTrophy</li>
+            <li>LargeFossilTrophy</li>
+            <li>BigGlowstoneCrystalTrophy</li>
+            <li>BigColdstoneCrystalTrophy</li>
+            <li>BigQuartzCrystalTrophy</li>
+            <li>BigAmethystCrystalTrophy</li>
+          </linkableFacilities>
+        </li>
 	    </value>
     </match>
   </Operation>
