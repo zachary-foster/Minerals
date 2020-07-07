@@ -51,6 +51,30 @@
           </value>
         </li>
 
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="BoulderBasalt"]/neededNearbyTerrains</xpath>
+          <value>
+         		<li>LavaRock_RoughHewn</li>
+         		<li>LavaRock_Rough</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="PassableBasalt"]/neededNearbyTerrains</xpath>
+          <value>
+         		<li>LavaRock_RoughHewn</li>
+         		<li>LavaRock_Rough</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="LavaFlowBasalt"]/neededNearbyTerrains</xpath>
+          <value>
+         		<li>LavaRock_RoughHewn</li>
+         		<li>LavaRock_Rough</li>
+          </value>
+        </li>
+
       </operations>
     </match>
         

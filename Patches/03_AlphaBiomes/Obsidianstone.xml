@@ -204,7 +204,7 @@
           </tags>
         </ThingDef>
         
-      
+        
         <ThingDef Name="ZF_HewnObsidianstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnObsidianstone</defName>
           <label>Hewn Obsidian</label>

@@ -6,7 +6,7 @@
 	<supportedVersions>
 		<li>1.1</li>
 	</supportedVersions>
-	<packageId>ZacharyFoster.Minerals</packageId>
+	<packageId>zacharyfoster.minerals</packageId>
 	<modDependencies>
 	</modDependencies>
 	<loadBefore>
