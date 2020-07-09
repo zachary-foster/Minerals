@@ -1882,12 +1882,12 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>2</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
+        <DropProbability>1</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
@@ -1938,12 +1938,12 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>2</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>2</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
@@ -2011,12 +2011,12 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>2</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>1.5</DropProbability>
+        <DropProbability>3</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>

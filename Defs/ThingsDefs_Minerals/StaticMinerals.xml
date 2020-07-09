@@ -665,6 +665,7 @@
       <li>TemperateDesert</li>
       <li>Permafrost</li>
       <li>Steppes</li>
+			<li>Wasteland</li>
     </allowedBiomes>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
