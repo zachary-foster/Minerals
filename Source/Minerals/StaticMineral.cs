@@ -1222,16 +1222,40 @@ namespace Minerals
 
         public virtual bool TryFindReproductionDestination(Map map,  IntVec3 position, out IntVec3 foundCell)
         {
-            if (( ! position.InBounds(map) ) || position.DistanceToEdge(map) <= Mathf.CeilToInt(spawnRadius))
+            if ((!position.InBounds(map)) || position.DistanceToEdge(map) <= Mathf.CeilToInt(spawnRadius))
             {
                 foundCell = position;
                 return false;
             }
-//            Log.Message("TryFindReproductionDestination: " + position + " " + map + "  " + Mathf.CeilToInt(this.spawnRadius));
-            Predicate<IntVec3> validator = c => c.DistanceTo(position) <= spawnRadius && CanSpawnAt(map, c);
-            return CellFinder.TryFindRandomCellNear(position, map, Mathf.CeilToInt(spawnRadius), validator, out foundCell);
+            Predicate<IntVec3> validator = isValidSite(map, position);
+            try
+            {
+                return CellFinder.TryFindRandomCellNear(position, map, Mathf.CeilToInt(spawnRadius), validator, out foundCell);
+            }
+            catch
+            {
+                Log.Warning("Minerals: TryFindReproductionDestination: exception caught tying to spawn near" + position);
+                foundCell = position;
+                return false;
+            }
+
+            Predicate<IntVec3> isValidSite(Map myMap, IntVec3 myPosition)
+            {
+                return c => c.DistanceTo(myPosition) <= spawnRadius && CanSpawnAt(myMap, c);
+            }
+
+            Predicate<IntVec3> isValidSiteDebug(Map myMap, IntVec3 myPosition)
+            {
+                return c =>
+                {
+                    Log.Message("TryFindReproductionDestination: isValidSiteDebug: c: " + c);
+                    Log.Message("TryFindReproductionDestination: isValidSiteDebug: c.DistanceTo(myPosition): " + c.DistanceTo(myPosition));
+                    Log.Message("TryFindReproductionDestination: isValidSiteDebug: CanSpawnAt(myMap, c): " + CanSpawnAt(myMap, c));
+                    return c.DistanceTo(myPosition) <= spawnRadius && CanSpawnAt(myMap, c);
+                };
+            }
         }
-            
+
 
         public virtual bool isRoofConditionOk(Map map, IntVec3 position)
         {

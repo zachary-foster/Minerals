@@ -90,7 +90,7 @@ namespace Minerals
             mapBuilder.initAll(map);
         }
 
-        /*
+        
         [HarmonyPatch(typeof(SK.SkyfallerUtil))]
         [HarmonyPatch("SpawnSkyfaller")]
         [HarmonyPatch(new Type[] {typeof(ThingDef), typeof(IEnumerable<Thing>), typeof(IntVec3), typeof(Map) })]
@@ -125,7 +125,7 @@ namespace Minerals
                 }
                 things = replacementList;
             }
-        } */
+        } 
 
     }
 }

@@ -48,6 +48,10 @@ namespace Minerals
 
         protected bool CanSpawnAt(IntVec3 c, Map map)
         {
+            //Log.Message("NoticeMineral: CanSpawnAt: c: " + c);
+            //Log.Message("NoticeMineral: CanSpawnAt: map: " + map);
+            //Log.Message("NoticeMineral: CanSpawnAt: c.Fogged(map): " + c.Fogged(map));
+            //Log.Message("NoticeMineral: CanSpawnAt:  c.GetSnowDepth(map): " + c.GetSnowDepth(map));
             if (c.Fogged(map) || c.GetSnowDepth(map) > 0)
             {
                 return false;
@@ -71,10 +75,11 @@ namespace Minerals
             {
                 return false;
             }
+            // Log.Message("NoticeMineral: CanSpawnAt: pawn: " + finder);
 
             foreach (ThingDef_StaticMineral mineralType in DefDatabase<ThingDef_StaticMineral>.AllDefs.InRandomOrder())
             {
-                if (mineralType.tags.Contains("NoticeMineral_Event") && mineralType.CanSpawnAt(map, c))
+                if (!mineralType.tags.NullOrEmpty() && mineralType.tags.Contains("NoticeMineral_Event") && mineralType.CanSpawnAt(map, c))
                 {
                     typeToSpawn = mineralType;
                     return true;
