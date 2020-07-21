@@ -1,3 +1,8 @@
+## Current
+
+* Fixed mineral low spawn rate bug
+
+
 ## v1.3.0
 
 * **Now works with Vanilla Rimworld** as well as Hardcore SK

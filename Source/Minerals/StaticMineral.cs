@@ -229,6 +229,7 @@ namespace Minerals
             {
                 return 1f;
             }
+
             // Check that it is submersible
             if (attributes.submergedSize >= 1)
             {
@@ -237,7 +238,10 @@ namespace Minerals
 
             // Check if is on dry land
             TerrainDef myTerrain = Map.terrainGrid.TerrainAt(Position);
-
+            if (myTerrain == null)
+            {
+                return 1f;
+            }
             if (!(myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("IceShallow") || myTerrain.defName.Contains("MuddyIce")))
             {
                 return 1f;
@@ -255,7 +259,7 @@ namespace Minerals
                     if (checkedPosition.InBounds(Map))
                     {
                         TerrainDef terrain = Map.terrainGrid.TerrainAt(checkedPosition);
-                        if (!(terrain.defName.Contains("Water") || myTerrain.defName.Contains("IceShallow") || myTerrain.defName.Contains("MuddyIce")))
+                        if (terrain != null && !(terrain.defName.Contains("Water") || myTerrain.defName.Contains("IceShallow") || myTerrain.defName.Contains("MuddyIce")))
                         {
                             dryCount = dryCount + 1;
                         }
@@ -263,8 +267,12 @@ namespace Minerals
                 }
             }
 
-            // calculate 
-            float propDry = dryCount / spotsChecked;
+            // calculate
+            float propDry = 0f;
+            if (spotsChecked > 0)
+            {
+                propDry = dryCount / spotsChecked;
+            }
             return attributes.submergedSize + (1 - attributes.submergedSize) * propDry;
         }
 

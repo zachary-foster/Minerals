@@ -411,10 +411,10 @@ namespace Minerals
         // The main function controlling what is done each time the map is looked at
         public void Look()
         {
-//            var watch = System.Diagnostics.Stopwatch.StartNew();
+            var watch = System.Diagnostics.Stopwatch.StartNew();
             SpawnDynamicMinerals();
-//            watch.Stop();
-//            Log.Message("SpawnDynamicMinerals() took: " + watch.ElapsedMilliseconds);
+            watch.Stop();
+            Log.Message("SpawnDynamicMinerals() took: " + watch.ElapsedMilliseconds);
         }
 
 
@@ -422,7 +422,7 @@ namespace Minerals
         {
             foreach (ThingDef_DynamicMineral mineralType in DefDatabase<ThingDef_DynamicMineral>.AllDefs)
             {
-                //var watch = System.Diagnostics.Stopwatch.StartNew();
+                var watch = System.Diagnostics.Stopwatch.StartNew();
                              
                 // Check that the map type is ok
                 if (! mineralType.CanSpawnInBiome(map))
@@ -433,16 +433,19 @@ namespace Minerals
                 // Get number of positions to check
                 float numToCheck = map.Area * mineralType.spawnProb * MineralsMain.Settings.mineralSpawningSetting;
 
-                if (numToCheck < 1 & Rand.Range(0f, 1f) > numToCheck)
+                if (numToCheck < 1)
                 {
-                    continue;
+                    if (Rand.Range(0f, 1f) < numToCheck)
+                    {
+                        numToCheck = 1;
+                    } else
+                    {
+                        numToCheck = 0;
+                    }
                 }
-                else
-                {
-                    numToCheck = 1;
-                }
+                
 
-                //Log.Message("Trying to spawn " + mineralType.defName + " with prob of " + mineralType.spawnProb + " and " + numToCheck + " blocks");
+                Log.Message("Trying to spawn " + mineralType.defName + " with prob of " + mineralType.spawnProb + " and " + numToCheck + " blocks");
 
 
                 // Try to spawn in a subset of positions
@@ -471,14 +474,14 @@ namespace Minerals
 
 
                     // Try to spawn at that location
-                    //Log.Message("Trying to spawn " + mineralType.defName);
+                    Log.Message("Trying to spawn " + mineralType.defName);
                     //mineralType.TrySpawnAt(aPos, map, 0.01f);
                     mineralType.SpawnCluster(map, aPos, Rand.Range(0.01f, 0.05f), Rand.Range(mineralType.minSpawnClusterSize, mineralType.maxSpawnClusterSize));
 
                 }
 
-                //watch.Stop();
-                //Log.Message("Spawning " + mineralType.defName + " took: " + watch.ElapsedMilliseconds);
+                watch.Stop();
+                Log.Message("Spawning " + mineralType.defName + " took: " + watch.ElapsedMilliseconds);
 
             }
         }

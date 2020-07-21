@@ -73,7 +73,7 @@ namespace Minerals
         // this static constructor runs to create a HarmonyInstance and install a patch.
         static HarmonyPatches()
         {
-            Harmony harmony = new Harmony("com.zakhary.Minerals");
+            Harmony harmony = new Harmony("com.zacharyfoster.minerals");
 
             // Spawn rocks on map generation
             MethodInfo targetmethod = AccessTools.Method(typeof(GenStep_RockChunks), "Generate");
