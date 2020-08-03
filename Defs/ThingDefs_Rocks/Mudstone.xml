@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
-  <ThingDef Name="ZF_ClaystoneBase" ParentName="ZF_UglyRockBase">
-    <defName>ZF_ClaystoneBase</defName>
-    <label>Claystone</label>
-    <description>Claystone, a sedimentary rock made of cemented silica and feldspar grains.</description>
+  
+  
+  <ThingDef Name="ZF_MudstoneBase" ParentName="ZF_UglyRockBase">
+    <defName>ZF_MudstoneBase</defName>
+    <label>Mudstone</label>
+    <description>An impassable mass of fine-grained sedimentary rock formed from hardened mud.</description>
     <graphicData>
-      <color>(228,188,147)</color>
+      <color>(68,54,47)</color>
     </graphicData>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
+      <MaxHitPoints>600</MaxHitPoints>
     </statBases>
     <building>
-      <mineableThing>ChunkClaystone</mineableThing>
+      <mineableThing>AB_ChunkMudstone</mineableThing>
       <mineableDropChance>0.4</mineableDropChance>
     </building>
   </ThingDef>
 
-  
-  <ThingDef Name="WeatheredClaystone" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredClaystone</defName>
-    <label>Weathered Claystone</label>
-    <description>An impassable mass of compacted sand, sculpted by weather and time into flowing shapes.</description>
+
+  <ThingDef Name="ZF_WeatheredMudstone" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_WeatheredMudstone</defName>
+    <label>Weathered Mudstone</label>
+    <description>An impassable mass of fine-grained sedimentary rock formed from hardened mud.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredClaystone</texPath>
-      <color>(228,188,147)</color>
+      <color>(68,54,47)</color>
     </graphicData>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
-      <li>(228,188,147)</li>
-      <li>(222,188,147)</li>
-      <li>(228,184,147)</li>
-      <li>(228,188,141)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
     </randomColorsOne>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsTwo>
-      <li>(237,227,215)</li>
-      <li>(227,205,184)</li>
-      <li>(207,192,185)</li>
+      <li>(100,80,75)</li>
+      <li>(100,80,75)</li>
+      <li>(100,80,75)</li>
     </randomColorsTwo>
     <!-- If true, then the probability of each color is randomly chosen for each map, so each map has distinctive colors.   -->
     <seedRandomColorByMap>true</seedRandomColorByMap>
@@ -48,13 +49,13 @@
     </visualSizeRange>
     <uiIconPath>Things/Rock/WeatheredClaystone/WeatheredClaystoneA</uiIconPath>
     <statBases>
-      <MaxHitPoints>600</MaxHitPoints>
+      <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>6</Beauty>
+      <Beauty>4</Beauty>
     </statBases>
     <building>
-      <mineableThing>ChunkClaystone</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableThing>AB_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.1</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -74,12 +75,28 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>ZF_ClaystoneBase_Rough</li>
+			<li>ZF_MudstoneBase_Rough</li>
+			<li>AB_Mudstone_Rough</li>
+			<li>AB_CrackedMud</li>
+			<li>AB_RichCrackedMud</li>
+			<li>AB_FineSand</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>SoilRich</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+      <li>SavannaSoil</li>
+      <li>MarginalSoil</li>
+			<li>Ice</li>
+			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-			<li>ZF_ClaystoneBase_Rough</li>
-      <li>WeatheredClaystone</li>
+			<li>ZF_MudstoneBase_Rough</li>
+			<li>AB_Mudstone_Rough</li>
+      <li>Mudstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
@@ -88,29 +105,30 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>SoftClay</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.1</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Dirt</ResourceDefName>
+        <DropProbability>0.4</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SoftClay</ResourceDefName>
+        <DropProbability>0.2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>ZF_ClaystoneBase</li>
+      <li>AB_Mudstone</li>
+      <li>ZF_MudstoneBase</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -121,30 +139,30 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidClaystone" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidClaystone</defName>
-    <label>Solid Claystone</label>
-    <description>A solid wall of Claystone, a sedimentary rock made of cemented silica and feldspar grains.</description>
+  <ThingDef Name="ZF_SolidMudstone" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
+    <defName>ZF_SolidMudstone</defName>
+    <label>Solid Mudstone</label>
+    <description>A solid wall of Mudstone, a fine-grained sedimentary rock formed from hardened mud.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredLimestone</texPath>
-      <color>(228, 188, 147)</color>
+      <color>(68,54,47)</color>
     </graphicData>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
-      <li>(218,178,137)</li>
-      <li>(212,178,137)</li>
-      <li>(218,174,137)</li>
-      <li>(218,178,131)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
     </randomColorsOne>
     <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
+      <MaxHitPoints>700</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
     <building>
-      <mineableThing>ChunkClaystone</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableThing>AB_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -164,11 +182,33 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>ZF_ClaystoneBase_Rough</li>
+			<li>ZF_MudstoneBase_Rough</li>
+			<li>AB_Mudstone_Rough</li>
+			<li>AB_CrackedMud</li>
+			<li>AB_RichCrackedMud</li>
+			<li>AB_FineSand</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>SoilRich</li>
+			<li>MarshyTerrain</li>
+			<li>Marsh</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+			<li>Mud</li>
+      <li>SavannaSoil</li>
+      <li>MarginalSoil</li>
+			<li>WaterOceanShallow</li>
+      <li>WaterMovingShallow</li>
+			<li>WaterShallow</li>
+			<li>Ice</li>
+			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>ZF_ClaystoneBase_Rough</li>
+			<li>AB_Mudstone_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -177,31 +217,31 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>SoftClay</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.1</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Dirt</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SoftClay</ResourceDefName>
+        <DropProbability>0.2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>WeatheredClaystone</li>
-      <li>HewnClaystone</li>
-      <li>ZF_ClaystoneBase</li>
+      <li>ZF_HewnMudstone</li>
+      <li>AB_Mudstone</li>
+      <li>ZF_MudstoneBase</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -212,24 +252,24 @@
   </ThingDef>
 
   
-  <ThingDef Name="HewnClaystone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnClaystone</defName>
-    <label>Hewn Claystone</label>
-    <description>A hewn wall of Claystone, a sedimentary rock made of cemented silica and feldspar grains.</description>
+  <ThingDef Name="ZF_HewnMudstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_HewnMudstone</defName>
+    <label>Hewn Mudstone</label>
+    <description>A hewn wall of Mudstone, a fine-grained sedimentary rock formed from hardened mud.</description>
     <graphicData>
 			<texPath>Things/Rock/HewnRockWall</texPath>
-      <color>(228, 188, 147)</color>
+      <color>(68,54,47)</color>
     </graphicData>
     <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>900</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
-      <mineableThing>ChunkClaystone</mineableThing>
-      <mineableDropChance>0.4</mineableDropChance>
-      <smoothedThing>SmoothedHewnClaystone</smoothedThing>
+      <mineableThing>AB_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
+      <smoothedThing>ZF_SmoothedHewnMudstone</smoothedThing>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -248,12 +288,11 @@
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains>
-			<li>ZF_ClaystoneBase_Rough</li>
+    <allowedTerrains>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>ZF_ClaystoneBase_Rough</li>
+      <li>Mudstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -274,30 +313,30 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>SoftClay</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.1</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Dirt</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SoftClay</ResourceDefName>
+        <DropProbability>0.25</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>WeatheredClaystone</li>
-      <li>ZF_ClaystoneBase</li>
+      <li>AB_Mudstone</li>
+      <li>ZF_MudstoneBase</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -308,36 +347,26 @@
   </ThingDef>
   
   
-  <ThingDef Name="SmoothedHewnClaystone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>SmoothedHewnClaystone</defName>
-    <label>Smoothed Claystone wall</label>
-    <description>A smoothed wall of Claystone. The layers of different colors make it quite interesting.</description>
+  <ThingDef Name="ZF_SmoothedHewnMudstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_SmoothedHewnMudstone</defName>
+    <label>Smoothed Mudstone wall</label>
+    <description>A smoothed wall of Mudstone, a fine-grained sedimentary rock formed from hardened mud.</description>
     <graphicData>
 			<texPath>Things/Rock/SmoothedRockWall</texPath>
-      <color>(228, 188, 147)</color>
+      <color>(68,54,47)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
-      <MaxHitPoints>900</MaxHitPoints>
+      <MaxHitPoints>800</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>3</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <building>
-      <mineableThing>ChunkClaystone</mineableThing>
-      <mineableDropChance>0.4</mineableDropChance>
+      <mineableThing>AB_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
     </building>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
-      <li>
-        <ResourceDefName>SoftClay</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
@@ -345,8 +374,18 @@
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.1</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Dirt</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SoftClay</ResourceDefName>
+        <DropProbability>0.2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -358,41 +397,41 @@
   </ThingDef>
   
   
-  <ThingDef Name="BoulderClaystone" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>BoulderClaystone</defName>
-    <label>Claystone outcropping</label>
-    <description>A Claystone outcropping, sculpted by weather and time into flowing shapes.</description>
+  <ThingDef Name="ZF_BoulderMudstone" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_BoulderMudstone</defName>
+    <label>Mudstone outcropping</label>
+    <description>A Mudstone outcropping, sculpted by weather and time into flowing shapes.</description>
     <graphicData>
       <texPath>Things/Rock/PassableClaystone</texPath>
-      <color>(228, 188, 147)</color>
+      <color>(68,54,47)</color>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
-      <li>(228,188,147)</li>
-      <li>(222,188,147)</li>
-      <li>(228,184,147)</li>
-      <li>(228,188,141)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
     </randomColorsOne>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsTwo>
-      <li>(237,227,215)</li>
-      <li>(227,205,184)</li>
-      <li>(207,192,185)</li>
+      <li>(100,80,75)</li>
+      <li>(100,80,75)</li>
+      <li>(100,80,75)</li>
     </randomColorsTwo>
     <!-- How much to change the vertical position of the texture. Positive is up -->
     <verticalOffset>0.1</verticalOffset>
     <uiIconPath>Things/Rock/PassableClaystone/PassableClaystoneA</uiIconPath>
     <fillPercent>0.5</fillPercent>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
+      <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>4</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <pathCost>100</pathCost>
     <building>
-      <mineableThing>ChunkClaystone</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableThing>AB_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -410,12 +449,28 @@
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+			<li>AB_Mudstone_Rough</li>
+			<li>ZF_MudstoneBase_Rough</li>
+			<li>AB_CrackedMud</li>
+			<li>AB_RichCrackedMud</li>
+			<li>AB_FineSand</li>
+			<li>RockySoil</li>
+			<li>Sand</li>
+			<li>PoorSoil</li>
+      <li>SavannaSoil</li>
+      <li>MarginalSoil</li>
+			<li>SaltField</li>
+		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-			<li>ZF_ClaystoneBase_Rough</li>
-      <li>WeatheredClaystone</li>
-      <li>BoulderClaystone</li>
-      <li>SolidClaystone</li>
+			<li>AB_Mudstone_Rough</li>
+			<li>ZF_MudstoneBase_Rough</li>
+      <li>ZF_WeatheredMudstone</li>
+      <li>ZF_WeatheredMudstone</li>
+      <li>ZF_BoulderMudstone</li>
+      <li>ZF_SolidMudstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>1.5</neededNearbyTerrainRadius>
@@ -423,8 +478,9 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>WeatheredClaystone</li>
-      <li>SolidClaystone</li>
+      <li>Mudstone</li>
+      <li>ZF_WeatheredMudstone</li>
+      <li>ZF_SolidMudstone</li>
     </associatedOres>
     <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -446,18 +502,8 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>SoftClay</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.03</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
@@ -465,10 +511,20 @@
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>Dirt</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SoftClay</ResourceDefName>
+        <DropProbability>0.2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>ChunkClaystone</li>
+      <li>AB_ChunkMudstone</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -479,35 +535,34 @@
   </ThingDef>
   
   
-  <ThingDef Name="PassableClaystone" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
-    <defName>PassableClaystone</defName>
-    <label>Claystone debris</label>
-    <description>Claystone debris</description>
+  <ThingDef Name="ZF_PassableMudstone" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
+    <defName>ZF_PassableMudstone</defName>
+    <label>Mudstone debris</label>
+    <description>Mudstone debris</description>
     <graphicData>
       <texPath>Things/Rock/SandPile</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <color>(208, 168, 127)</color>
+      <color>(68,54,47)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
     </graphicData>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
-      <li>(208,168,117)</li>
-      <li>(202,168,117)</li>
-      <li>(208,164,117)</li>
-      <li>(208,168,111)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
+      <li>(68,54,47)</li>
     </randomColorsOne>
     <uiIconPath>Things/Rock/SandPile/SandPileA</uiIconPath>
     <fillPercent>0.3</fillPercent>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
+      <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <building>
-      <mineableThing>ChunkClaystone</mineableThing>
-      <mineableDropChance>0.1</mineableDropChance>
+      <mineableThing>AB_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.05</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -515,8 +570,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.35</minClusterProbability>
-    <maxClusterProbability>0.55</maxClusterProbability>
+    <minClusterProbability>0.4</minClusterProbability>
+    <maxClusterProbability>0.6</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>1</maxClusterSize>
@@ -525,11 +580,16 @@
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.1</initialSizeVariation>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+			<li>ZF_MudstoneBase_Rough</li>
+			<li>AB_Mudstone_Rough</li>
+		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>WeatheredClaystone</li>
-      <li>SolidClaystone</li>
-			<li>ZF_ClaystoneBase</li>
+      <li>ZF_WeatheredMudstone</li>
+      <li>ZF_SolidMudstone</li>
+			<li>ZF_WeatheredMudstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>1.1</neededNearbyTerrainRadius>
@@ -537,8 +597,8 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>WeatheredClaystone</li>
-			<li>ZF_ClaystoneBase</li>
+      <li>ZF_WeatheredMudstone</li>
+			<li>ZF_WeatheredMudstone</li>
     </associatedOres>
     <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -560,24 +620,24 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>SoftClay</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.03</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Dirt</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>SoftClay</ResourceDefName>
+        <DropProbability>0.2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>

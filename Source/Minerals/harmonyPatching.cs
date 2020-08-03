@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using System;
 using System.Reflection;
 using System.Collections.Generic;
@@ -45,7 +45,7 @@ namespace Minerals
                                        where d.category == ThingCategory.Building && d.building.isNaturalRock && !d.building.isResourceRock &&
                                        !d.IsSmoothed && d.defName != "GU_RoseQuartz" && d.defName != "AB_SlimeStone" &&
                                        d.defName != "GU_AncientMetals" && d.defName != "AB_Cragstone" && d.defName != "AB_Obsidianstone" &&
-                                       d.defName != "BiomesIslands_CoralRock" && d.defName != "LavaRock"
+                                       d.defName != "BiomesIslands_CoralRock" && d.defName != "LavaRock" && d.defName != "AB_Mudstone"
                                        select d).ToList<ThingDef>();
                 int num = Rand.RangeInclusive(MineralsMain.Settings.terrainCountRangeSetting.min, MineralsMain.Settings.terrainCountRangeSetting.max);
                 if (num > list.Count)
