@@ -76,7 +76,7 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>RoughGem</mineableThing>
       <mineableDropChance>0.001</mineableDropChance>
-      <mineableYield>5</mineableYield>
+      <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>

@@ -204,6 +204,9 @@
     </graphicData>
     <altitudeLayer>SmallWire</altitudeLayer>
     <neverMultiSelect>true</neverMultiSelect>
+    <building>
+      <mineableYield>1</mineableYield>
+    </building>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
       <li>Limestone_Rough</li>

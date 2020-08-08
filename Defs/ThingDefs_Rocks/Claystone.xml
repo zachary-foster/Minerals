@@ -485,7 +485,6 @@
     <description>Claystone debris</description>
     <graphicData>
       <texPath>Things/Rock/SandPile</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
       <color>(208, 168, 127)</color>
       <damageData>
         <enabled>false</enabled>

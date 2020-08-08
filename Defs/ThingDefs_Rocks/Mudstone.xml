@@ -13,7 +13,7 @@
       <MaxHitPoints>600</MaxHitPoints>
     </statBases>
     <building>
-      <mineableThing>AB_ChunkMudstone</mineableThing>
+      <mineableThing>ZF_ChunkMudstone</mineableThing>
       <mineableDropChance>0.4</mineableDropChance>
     </building>
   </ThingDef>
@@ -30,15 +30,15 @@
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
       <li>(68,54,47)</li>
-      <li>(68,54,47)</li>
-      <li>(68,54,47)</li>
-      <li>(68,54,47)</li>
+      <li>(70,52,49)</li>
+      <li>(66,52,47)</li>
+      <li>(65,53,45)</li>
     </randomColorsOne>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsTwo>
       <li>(100,80,75)</li>
-      <li>(100,80,75)</li>
-      <li>(100,80,75)</li>
+      <li>(110,85,79)</li>
+      <li>(105,83,77)</li>
     </randomColorsTwo>
     <!-- If true, then the probability of each color is randomly chosen for each map, so each map has distinctive colors.   -->
     <seedRandomColorByMap>true</seedRandomColorByMap>
@@ -54,8 +54,8 @@
       <Beauty>4</Beauty>
     </statBases>
     <building>
-      <mineableThing>AB_ChunkMudstone</mineableThing>
-      <mineableDropChance>0.1</mineableDropChance>
+      <mineableThing>ZF_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.2</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -95,8 +95,6 @@
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
 			<li>ZF_MudstoneBase_Rough</li>
-			<li>AB_Mudstone_Rough</li>
-      <li>Mudstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
@@ -127,7 +125,6 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>AB_Mudstone</li>
       <li>ZF_MudstoneBase</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
@@ -150,9 +147,9 @@
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
       <li>(68,54,47)</li>
-      <li>(68,54,47)</li>
-      <li>(68,54,47)</li>
-      <li>(68,54,47)</li>
+      <li>(70,52,49)</li>
+      <li>(66,52,47)</li>
+      <li>(65,53,45)</li>
     </randomColorsOne>
     <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
     <statBases>
@@ -161,8 +158,8 @@
       <Beauty>0</Beauty>
     </statBases>
     <building>
-      <mineableThing>AB_ChunkMudstone</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableThing>ZF_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -183,31 +180,9 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
 			<li>ZF_MudstoneBase_Rough</li>
-			<li>AB_Mudstone_Rough</li>
-			<li>AB_CrackedMud</li>
-			<li>AB_RichCrackedMud</li>
-			<li>AB_FineSand</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>SoilRich</li>
-			<li>MarshyTerrain</li>
-			<li>Marsh</li>
-			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
-			<li>Mud</li>
-      <li>SavannaSoil</li>
-      <li>MarginalSoil</li>
-			<li>WaterOceanShallow</li>
-      <li>WaterMovingShallow</li>
-			<li>WaterShallow</li>
-			<li>Ice</li>
-			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-			<li>AB_Mudstone_Rough</li>
       <li>ZF_MudstoneBase_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
@@ -239,8 +214,8 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
+      <li>ZF_WeatheredMudstone</li>
       <li>ZF_HewnMudstone</li>
-      <li>AB_Mudstone</li>
       <li>ZF_MudstoneBase</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
@@ -267,8 +242,8 @@
       <Beauty>0</Beauty>
     </statBases>
     <building>
-      <mineableThing>AB_ChunkMudstone</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableThing>ZF_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.4</mineableDropChance>
       <smoothedThing>ZF_SmoothedHewnMudstone</smoothedThing>
     </building>
     <!--How far away it can spawn from an existing location-->
@@ -289,10 +264,11 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
+			<li>ZF_MudstoneBase_Rough</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Mudstone</li>
+			<li>ZF_MudstoneBase_Rough</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
@@ -335,7 +311,7 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>AB_Mudstone</li>
+      <li>ZF_WeatheredMudstone</li>
       <li>ZF_MudstoneBase</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
@@ -362,8 +338,8 @@
       <Beauty>2</Beauty>
     </statBases>
     <building>
-      <mineableThing>AB_ChunkMudstone</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableThing>ZF_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.4</mineableDropChance>
     </building>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
@@ -409,15 +385,15 @@
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
       <li>(68,54,47)</li>
-      <li>(68,54,47)</li>
-      <li>(68,54,47)</li>
-      <li>(68,54,47)</li>
+      <li>(70,52,49)</li>
+      <li>(66,52,47)</li>
+      <li>(65,53,45)</li>
     </randomColorsOne>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsTwo>
       <li>(100,80,75)</li>
-      <li>(100,80,75)</li>
-      <li>(100,80,75)</li>
+      <li>(110,85,79)</li>
+      <li>(105,83,77)</li>
     </randomColorsTwo>
     <!-- How much to change the vertical position of the texture. Positive is up -->
     <verticalOffset>0.1</verticalOffset>
@@ -430,7 +406,7 @@
     </statBases>
     <pathCost>100</pathCost>
     <building>
-      <mineableThing>AB_ChunkMudstone</mineableThing>
+      <mineableThing>ZF_ChunkMudstone</mineableThing>
       <mineableDropChance>0.2</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
@@ -465,7 +441,6 @@
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-			<li>AB_Mudstone_Rough</li>
 			<li>ZF_MudstoneBase_Rough</li>
       <li>ZF_WeatheredMudstone</li>
       <li>ZF_WeatheredMudstone</li>
@@ -478,7 +453,6 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>Mudstone</li>
       <li>ZF_WeatheredMudstone</li>
       <li>ZF_SolidMudstone</li>
     </associatedOres>
@@ -524,7 +498,7 @@
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>AB_ChunkMudstone</li>
+      <li>ZF_ChunkMudstone</li>
     </ThingsToReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
@@ -561,7 +535,7 @@
       <Beauty>0</Beauty>
     </statBases>
     <building>
-      <mineableThing>AB_ChunkMudstone</mineableThing>
+      <mineableThing>ZF_ChunkMudstone</mineableThing>
       <mineableDropChance>0.05</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->

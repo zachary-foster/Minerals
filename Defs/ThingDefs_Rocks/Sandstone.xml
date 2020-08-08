@@ -51,7 +51,7 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sand</ResourceDefName>
+        <ResourceDefName>SandResource</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
@@ -138,7 +138,7 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sand</ResourceDefName>
+        <ResourceDefName>SandResource</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
@@ -240,7 +240,7 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sand</ResourceDefName>
+        <ResourceDefName>SandResource</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
@@ -299,7 +299,7 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sand</ResourceDefName>
+        <ResourceDefName>SandResource</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
@@ -404,7 +404,7 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sand</ResourceDefName>
+        <ResourceDefName>SandResource</ResourceDefName>
         <DropProbability>0.5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
@@ -516,7 +516,7 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sand</ResourceDefName>
+        <ResourceDefName>SandResource</ResourceDefName>
         <DropProbability>0.5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
@@ -617,7 +617,7 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sand</ResourceDefName>
+        <ResourceDefName>SandResource</ResourceDefName>
         <DropProbability>0.5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
