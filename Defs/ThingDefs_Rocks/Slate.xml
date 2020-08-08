@@ -17,7 +17,7 @@
     </statBases>
     <building>
       <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.2</mineableDropChance>
+      <mineableDropChance>0.15</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -66,7 +66,7 @@
       </li>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
+        <DropProbability>0.4</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -100,7 +100,7 @@
     </statBases>
     <building>
       <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.25</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -149,7 +149,7 @@
       </li>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
+        <DropProbability>0.4</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -245,7 +245,7 @@
       </li>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
+        <DropProbability>0.4</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -278,7 +278,7 @@
     </statBases>
     <building>
       <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.4</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
     </building>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
@@ -299,7 +299,7 @@
       </li>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
+        <DropProbability>0.4</DropProbability>
         <CountPerDrop>6</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -328,7 +328,7 @@
     </statBases>
     <building>
       <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.3</mineableDropChance>
+      <mineableDropChance>0.25</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -391,7 +391,7 @@
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
         <DropProbability>0.5</DropProbability>
-        <CountPerDrop>6</CountPerDrop>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -427,7 +427,7 @@
     <pathCost>20</pathCost>
     <building>
       <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.1</mineableDropChance>
+      <mineableDropChance>0.05</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -483,7 +483,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
+        <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
