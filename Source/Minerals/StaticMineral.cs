@@ -892,6 +892,9 @@ namespace Minerals
         // How much to change the vertical position of the texture. Positive is up
         public float verticalOffset = 0f;
 
+        // What stage of map generation the thing is spawned during (chunks or plants)
+        public string newMapGenStep = "chunks";
+
 
         // ======= Spawning clusters ======= //
 

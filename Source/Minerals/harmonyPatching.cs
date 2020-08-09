@@ -77,8 +77,13 @@ namespace Minerals
 
             // Spawn rocks on map generation
             MethodInfo targetmethod = AccessTools.Method(typeof(GenStep_RockChunks), "Generate");
-            HarmonyMethod postfixmethod = new HarmonyMethod(typeof(HarmonyPatches).GetMethod("initNewMap"));
+            HarmonyMethod postfixmethod = new HarmonyMethod(typeof(HarmonyPatches).GetMethod("initNewMapRocks"));
             harmony.Patch(targetmethod, null, postfixmethod);
+
+            // Spawn ice after plants
+            MethodInfo icetargetmethod = AccessTools.Method(typeof(GenStep_Plants), "Generate");
+            HarmonyMethod icepostfixmethod = new HarmonyMethod(typeof(HarmonyPatches).GetMethod("initNewMapIce"));
+            harmony.Patch(icetargetmethod, null, icepostfixmethod);
 
 
             harmony.PatchAll();
@@ -86,11 +91,16 @@ namespace Minerals
 
         }
 
-        public static void initNewMap(GenStep_RockChunks __instance, Map map) {
-            mapBuilder.initAll(map);
+        public static void initNewMapRocks(GenStep_RockChunks __instance, Map map)
+        {
+            mapBuilder.initRocks(map);
         }
 
-        
+        public static void initNewMapIce(GenStep_RockChunks __instance, Map map)
+        {
+            mapBuilder.initIce(map);
+        }
+
         [HarmonyPatch(typeof(SK.SkyfallerUtil))]
         [HarmonyPatch("SpawnSkyfaller")]
         [HarmonyPatch(new Type[] {typeof(ThingDef), typeof(IEnumerable<Thing>), typeof(IntVec3), typeof(Map) })]

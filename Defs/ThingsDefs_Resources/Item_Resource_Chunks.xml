@@ -11,6 +11,12 @@
       <li>SoftStoneChunks</li>
     </thingCategories>
   </ThingDef>
+  
+  <ThingDef Name="ZF_HardStoneChunksBase" ParentName="ZF_ChunkRockBase"  Abstract="True">
+    <thingCategories Inherit="False">
+      <li>HardStoneChunks</li>
+    </thingCategories>
+  </ThingDef>
 
   <ThingDef Name="ZF_StoneBlocksBase" ParentName="StoneBlocksBase"  Abstract="True">
   </ThingDef>
@@ -175,9 +181,12 @@
         <li>SoftStoneChunks</li>
       </categories>
     </fixedIngredientFilter>
+    <workAmount>1000</workAmount>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.3</workSkillLearnFactor>
   </RecipeDef>
+
+
 
 
 </Defs>
