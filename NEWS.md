@@ -1,3 +1,9 @@
+
+## Current
+
+* Reduced fossil abundance from mudstone and claystone
+
+
 ## v1.3.1
 
 * Fixed mineral low spawn rate bug

@@ -462,7 +462,7 @@
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -575,7 +575,7 @@
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
