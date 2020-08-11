@@ -54,6 +54,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="events\NoticeMinerals.cs" />
+    <Compile Include="events\RichOreDeposit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="harmonyPatching.cs" />
     <Compile Include="initialization.cs" />
@@ -65,7 +67,7 @@
     <Compile Include="RiverRock.cs" />
     <Compile Include="SolidRock.cs" />
     <Compile Include="BigMineral.cs" />
-    <Compile Include="Events.cs" />
+    <Compile Include="events\BlueSnow.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />

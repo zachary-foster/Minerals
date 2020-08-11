@@ -2,6 +2,22 @@
 <Defs>
   
   <IncidentDef>
+    <defName>ZF_Quest_RichOreDeposit</defName>
+    <label>rich ore deposit</label>
+    <category>GiveQuest</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>Minerals.IncidentWorker_RichOreDeposit</workerClass>
+    <baseChance>1</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Rich ore deposit</letterLabel>
+    <letterText>We have received a message from {0}, {1} of {2}.\n\nThey have heard rumors of an unusally rich deposit of {3} nearby. However others have probably heard the rumors too, so it probably will not last more than a year or two. </letterText>
+    <letterDef>PositiveEvent</letterDef>
+  </IncidentDef>
+
+  
+  <IncidentDef>
     <defName>NoticeMineral</defName>
     <label>find minerals</label>
     <category>Misc</category>
@@ -9,8 +25,8 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>Minerals.IncidentWorker_NoticeMineral</workerClass>
-    <baseChance>2</baseChance>
-    <minRefireDays>10</minRefireDays>
+    <baseChance>3</baseChance>
+    <minRefireDays>20</minRefireDays>
     <letterLabel>Noticed minerals</letterLabel>
     <letterText>Your miner {0} noticed a patch of {1} nearby.</letterText>
     <letterDef>PositiveEvent</letterDef>
@@ -29,7 +45,7 @@
     <letterLabel>Blue snow</letterLabel>
     <letterText>A massive stormfront is approching. It has a strange blue hue. Unless the temperature increases, such storms can last for many days.</letterText>
     <letterDef>NeutralEvent</letterDef>
-    <baseChance>2</baseChance>
+    <baseChance>5</baseChance>
     <minRefireDays>90</minRefireDays>
     <durationDays>
       <min>3</min>
