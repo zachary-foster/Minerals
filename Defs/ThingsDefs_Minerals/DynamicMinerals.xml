@@ -59,18 +59,6 @@
     <minSpawnClusterSize>1</minSpawnClusterSize>
     <!-- The maximum number of crystals in clusters that are spawned during gameplay, not map creation -->
     <maxSpawnClusterSize>5</maxSpawnClusterSize>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <allowedBiomes>
-      <li>IceSheet</li>
-      <li>Tundra</li>
-      <li>SeaIce</li>
-      <li>BorealArchipelago</li>
-      <li>TundraArchipelago</li>
-      <li>ColdBogArchipelago</li>
-      <li>BorealForest</li>
-      <li>RedwoodForest</li>
-      <li>Permafrost</li>
-    </allowedBiomes>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>MarginalSoil</li>
@@ -251,27 +239,7 @@
     <!-- The number of days it takes to grow at max growth speed -->
     <growDays>30</growDays>
     <!-- Chance of spawning de novo each tick -->
-    <spawnProb>0.000005</spawnProb>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <allowedBiomes>
-      <li>IceSheet</li>
-      <li>Tundra</li>
-      <li>Desert</li>
-      <li>ExtremeDesert</li>
-      <li>BorealForest</li>
-      <li>TropicalSwampArchipelago</li>
-      <li>BorealArchipelago</li>
-      <li>TundraArchipelago</li>
-      <li>ColdBogArchipelago</li>
-      <li>DesertArchipelago</li>
-      <li>VolcanicFlow</li>
-      <li>DesertSaltFields</li>
-      <li>RedwoodForest</li>
-      <li>Wasteland</li>
-      <li>TemperateDesert</li>
-      <li>Permafrost</li>
-      <li>Steppes</li>
-    </allowedBiomes>
+    <spawnProb>0.00001</spawnProb>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Granite_Rough</li>
