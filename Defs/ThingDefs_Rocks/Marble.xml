@@ -51,7 +51,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.04</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -122,7 +122,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.04</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -207,7 +207,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.04</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -250,7 +250,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.04</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -341,7 +341,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.03</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
@@ -443,7 +443,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
+        <DropProbability>0.02</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>

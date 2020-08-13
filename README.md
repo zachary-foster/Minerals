@@ -655,32 +655,42 @@ Ideas for future work
 
 ### Events
 
-#### Minerals nearby
+#### Rich mineral deposit
 
-A visitor or trader gives you the map position to a tile with a high
-concentration of some mineral. This would highlight an area with a
-naturally high level of that mineral and the conditions it occurs in.
-When visiting the spot on the map, the natural abundance of that mineral
-is doubled.
+An ally gives you the location of a location with a high concentration of some mineral.
+This is an area with a naturally high level of that mineral.
+The natural abundance of that mineral is increased for the quest map.
+Some amount of the minerals are mined over time at a rate depending on the distance from other settlements and the average temperature.
+There is a chance that raids will occur based on how valuable the minerals are and the elapsed time since the quest was given. 
+There is a chance that a temporary base is already there, with tents, pack animals, and some mined minerals.
 
-#### Valuable Minerals nearby
+#### Fossil beds
 
-Same as "Minerals nearby", but only happens with valuable minerals.
-There is a chance that a raid will occur while you are there
+An ally gives you the location of a location with a high concentration of fossils.
+This is an area with a naturally high level of fossils.
+The natural abundance of fossils is increased for the quest map.
+Some amount of the fossils are mined over time at a rate depending on the distance from other settlements and the average temperature.
+There is a chance that a temporary base is already there, with tents, pack animals, and some mined fossils.
 
-#### Enemy mining camp
+#### Rich ore deposit
 
-Same as "Valuable Minerals nearby", except there is a temporary base
-already there. There would be tents and pack animals and some minerals
-already mined. A raid of the same faction might occur while there.
+An ally gives you the location of a location with a high concentration of some rock ore.
+Some amount of the ore is mined over time at a rate depending on the distance from other settlements and the average temperature.
+There is a chance that raids will occur based on how valuable the ore is and the elapsed time since the quest was given. 
+There is a chance that a temporary base is already there, with tents, pack animals, and some mined ore.
 
-#### Ancient treasure hoard
+#### Visiting scientists (requires hospitality mod)
 
-A trader of visitor offers to let you know about a hidden treasure hoard
-in the mountains for a price. The treasure is in a room of a sealed off
-base. There might be insects or mechs in the base and raids might occur
-when on the map. In one of the rooms is lots of gems, silver, gold,
-jade, and jeweled weapons/apparel.
+A group of travelling scientists comes to visit your base to study your mineral and fossil collection.
+They offer to give insights into your research in extange for your hospitality.
+When they leave, they might offer to buy some of your specimens.
+
+#### Cavern expedition
+
+A group of scientists contact you to help them explore a massive cavern system rumored with remarkable mineral deposits.
+They want you to provide protection from any dangerous creatures or raiders while they study the cave.
+After they finish their study they will leave, you are free to mine the cave, since word of the cave has spread and it will likely be plundered anyway.
+However, you must preserve the mineral deposits until they complete their survey.
 
 #### Hidden minerals found
 
