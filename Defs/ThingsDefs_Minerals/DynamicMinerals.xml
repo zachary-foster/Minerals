@@ -249,6 +249,7 @@
       <li>Slate_Rough</li>
       <li>ZF_BasaltBase_Rough</li>
       <li>Claystone_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
       <li>Gravel</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
