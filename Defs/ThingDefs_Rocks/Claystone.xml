@@ -483,9 +483,11 @@
     <defName>PassableClaystone</defName>
     <label>Claystone debris</label>
     <description>Claystone debris</description>
-    <graphicData>
+    <graphicData Inherit="False">
       <texPath>Things/Rock/SandPile</texPath>
       <color>(208, 168, 127)</color>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
       <damageData>
         <enabled>false</enabled>
       </damageData>
