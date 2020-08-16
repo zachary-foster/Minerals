@@ -974,6 +974,13 @@ namespace Minerals
             }
             //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: is in bounds" + position + " " + map, true);
 
+            // Check that it is under a roof if it needs to be
+            if (!isRoofConditionOk(map, position))
+            {
+                return false;
+            }
+            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: roof is ok " + position, true);
+
             // Check that the terrain is ok
             if (! IsTerrainOkAt(map, position))
             {
@@ -981,12 +988,12 @@ namespace Minerals
             }
             //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: terrain is ok " + position, true);
 
-            // Check that it is under a roof if it needs to be
-            if (! isRoofConditionOk(map, position))
+            // Look for stuff in the way
+            if (PlaceIsBlocked(map, position))
             {
                 return false;
             }
-            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: roof is ok " + position, true);
+            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: not blocked " + position, true);
 
             // Check for things it must replace
             if (mustReplace && ThingToReplaceAtPos(map, position) == null)
@@ -994,13 +1001,6 @@ namespace Minerals
                 return false;
             }
             //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: replacement is ok " + position, true);
-
-            // Look for stuff in the way
-            if (PlaceIsBlocked(map, position))
-            {
-                return false;
-            }
-            //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: not blocked " + position, true);
 
             // Check that it is near any needed terrains
             if (! isNearNeededTerrain(map, position))

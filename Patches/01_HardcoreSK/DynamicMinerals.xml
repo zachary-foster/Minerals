@@ -106,12 +106,11 @@
           <!-- The number of days it takes to grow at max growth speed -->
           <growDays>8</growDays>
           <!-- Chance of spawning de novo each check -->
-          <spawnProb>0.0001</spawnProb>
+          <spawnProb>0.00005</spawnProb>
           <!-- Can spawn on items, pawns, and plants-->
           <canSpawnOnThings>true</canSpawnOnThings>
           <!-- Growth rate modifiers -->
           <tempGrowthRateModifer>
-            <active>true</active>
             <aboveMaxDecayRate>1</aboveMaxDecayRate>
             <maxStable>800</maxStable>
             <maxGrow>100</maxGrow>
@@ -121,7 +120,6 @@
             <belowMinDecayRate>0</belowMinDecayRate>
           </tempGrowthRateModifer>
           <distGrowthRateModifer>
-            <active>true</active>
             <aboveMaxDecayRate>0</aboveMaxDecayRate>
             <maxStable>9999</maxStable>
             <maxGrow>3</maxGrow>
@@ -131,7 +129,6 @@
             <belowMinDecayRate>0</belowMinDecayRate>
           </distGrowthRateModifer>
           <lightGrowthRateModifer>
-            <active>true</active>
             <aboveMaxDecayRate>0</aboveMaxDecayRate>
             <maxStable>99999</maxStable>
             <maxGrow>999</maxGrow>
@@ -141,7 +138,6 @@
             <belowMinDecayRate>0</belowMinDecayRate>
           </lightGrowthRateModifer>
           <rainGrowthRateModifer>
-            <active>true</active>
             <aboveMaxDecayRate>4</aboveMaxDecayRate>
             <maxStable>0.1</maxStable>
             <maxGrow>0.01</maxGrow>
@@ -149,6 +145,7 @@
             <minGrow>-1</minGrow>
             <minStable>-1.1</minStable>
             <belowMinDecayRate>0</belowMinDecayRate>
+            <wholeMapEffect>true</wholeMapEffect>
           </rainGrowthRateModifer>
           <!-- Other resources it might drop -->
           <randomlyDropResources>
@@ -271,12 +268,11 @@
           <!-- The number of days it takes to grow at max growth speed -->
           <growDays>25</growDays>
           <!-- Chance of spawning de novo each check -->
-          <spawnProb>0.0001</spawnProb>
+          <spawnProb>0.00002</spawnProb>
           <!-- Can spawn on items, pawns, and plants-->
           <canSpawnOnThings>true</canSpawnOnThings>
           <!-- Growth rate modifiers -->
           <tempGrowthRateModifer>
-            <active>true</active>
             <aboveMaxDecayRate>5</aboveMaxDecayRate>
             <maxStable>110</maxStable>
             <maxGrow>100</maxGrow>
@@ -286,7 +282,6 @@
             <belowMinDecayRate>0</belowMinDecayRate>
           </tempGrowthRateModifer>
           <distGrowthRateModifer>
-            <active>true</active>
             <aboveMaxDecayRate>0</aboveMaxDecayRate>
             <maxStable>10</maxStable>
             <maxGrow>4</maxGrow>

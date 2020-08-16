@@ -37,7 +37,7 @@ namespace Minerals
     public class ThingDef_RiverRock : ThingDef_DynamicMineral
     {
     
-        public override float GrowthRateAtPos(Map aMap, IntVec3 aPosition) 
+        public override float GrowthRateAtPos(Map aMap, IntVec3 aPosition, bool includePerMapEffects = true) 
         {
             TerrainDef myTerrain = aMap.terrainGrid.TerrainAt(aPosition);
             if (myTerrain.defName.Contains("Water") || myTerrain.defName.Contains("water"))

@@ -91,7 +91,7 @@ namespace Minerals
             }
         }
     
-        public override float GrowthRateAtPos(Map aMap, IntVec3 aPosition) 
+        public override float GrowthRateAtPos(Map aMap, IntVec3 aPosition, bool includePerMapEffects = true) 
         {
             return calcGrowthRate(base.GrowthRateAtPos(aMap, aPosition), ThingDef_SaltCrystal.GrowthRateBonus(aPosition, aMap));
         }

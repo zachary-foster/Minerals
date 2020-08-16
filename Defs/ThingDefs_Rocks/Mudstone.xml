@@ -520,6 +520,7 @@
         <enabled>false</enabled>
       </damageData>
     </graphicData>
+    <hideAtSnowDepth>0.7</hideAtSnowDepth>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
       <li>(68,54,47)</li>
