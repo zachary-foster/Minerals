@@ -177,8 +177,6 @@
     <growDays>30</growDays>
     <!-- Chance of spawning de novo each check -->
     <spawnProb>0.00002</spawnProb>
-    <!-- Can spawn on items, pawns, and plants-->
-    <canSpawnOnThings>false</canSpawnOnThings>
     <!-- If true, the graphics are regenerated more often -->
     <fastGraphicRefresh>true</fastGraphicRefresh>
     <!-- Tags which determine how some options behave  -->
@@ -362,8 +360,6 @@
     <growDays>30</growDays>
     <!-- Chance of spawning de novo each check -->
     <spawnProb>0.00002</spawnProb>
-    <!-- Can spawn on items, pawns, and plants-->
-    <canSpawnOnThings>false</canSpawnOnThings>
     <!-- If true, the graphics are regenerated more often -->
     <fastGraphicRefresh>true</fastGraphicRefresh>
     <!-- Tags which determine how some options behave  -->

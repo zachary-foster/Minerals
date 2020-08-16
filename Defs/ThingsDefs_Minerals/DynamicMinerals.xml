@@ -207,12 +207,12 @@
       </damageData>
     </graphicData>
     <uiIconPath>Things/Mineral/GlowstoneCrystal/GlowstoneCrystalA</uiIconPath>
-    <fillPercent>0.3</fillPercent>
+    <fillPercent>0.2</fillPercent>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>3</spawnRadius>
+    <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.5</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.02</maxClusterProbability>
@@ -231,11 +231,11 @@
     <!-- The minimum number of crystals in clusters that are spawned during gameplay, not map creation -->
     <minSpawnClusterSize>1</minSpawnClusterSize>
     <!-- The maximum number of crystals in clusters that are spawned during gameplay, not map creation -->
-    <maxSpawnClusterSize>4</maxSpawnClusterSize>
+    <maxSpawnClusterSize>3</maxSpawnClusterSize>
     <!-- The number of days it takes to grow at max growth speed -->
     <growDays>60</growDays>
     <!-- Chance of spawning de novo each tick -->
-    <spawnProb>0.00002</spawnProb>
+    <spawnProb>0.00001</spawnProb>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Granite_Rough</li>
@@ -275,12 +275,12 @@
     <maxMeshCount>16</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.2</min>
-      <max>0.8</max>
+      <min>0.25</min>
+      <max>0.9</max>
     </visualSizeRange>
     <visualClustering>0.5</visualClustering>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
-    <visualSpread>2.0</visualSpread>
+    <visualSpread>1.9</visualSpread>
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.3</visualSizeVariation>
     <!-- Growth rate modifiers -->
@@ -288,16 +288,16 @@
       <aboveMaxDecayRate>1</aboveMaxDecayRate>
       <maxStable>500</maxStable>
       <maxGrow>150</maxGrow>
-      <idealGrow>80</idealGrow>
+      <idealGrow>90</idealGrow>
       <minGrow>30</minGrow>
       <minStable>-100</minStable>
       <belowMinDecayRate>1</belowMinDecayRate>
     </tempGrowthRateModifer>
     <distGrowthRateModifer>
-      <aboveMaxDecayRate>1</aboveMaxDecayRate>
+      <aboveMaxDecayRate>0.5</aboveMaxDecayRate>
       <maxStable>4</maxStable>
       <maxGrow>3</maxGrow>
-      <idealGrow>0</idealGrow>
+      <idealGrow>1</idealGrow>
       <minGrow>-1</minGrow>
       <minStable>-99999</minStable>
       <belowMinDecayRate>0</belowMinDecayRate>
