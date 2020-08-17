@@ -127,7 +127,7 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.4</visualSizeVariation>
     <!-- The number of days it takes to grow at max growth speed -->
-    <growDays>15</growDays>
+    <growDays>20</growDays>
     <!-- Chance of spawning de novo each tick -->
     <spawnProb>0.000005</spawnProb>
     <!-- Growth rate modifiers -->
@@ -218,10 +218,10 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.5</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.05</maxClusterProbability>
+    <maxClusterProbability>0.1</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>10</maxClusterSize>
@@ -358,8 +358,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.004</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
     <maxClusterSize>20</maxClusterSize>
@@ -427,7 +427,7 @@
     <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
     <visualSizeVariation>0.1</visualSizeVariation>
     <!-- The number of days it takes to grow at max growth speed -->
-    <growDays>8</growDays>
+    <growDays>10</growDays>
     <!-- Chance of spawning de novo each check -->
     <spawnProb>0.00005</spawnProb>
     <!-- Growth rate modifiers -->
@@ -521,8 +521,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.005</minClusterProbability>
-    <maxClusterProbability>0.01</maxClusterProbability>
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>10</maxClusterSize>

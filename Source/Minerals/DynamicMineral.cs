@@ -17,7 +17,7 @@ namespace Minerals
     public class DynamicMineral : StaticMineral
     {
         // Controls how often occasional checks are done, like distance to nearby things
-        private int tickCounter = 0;
+        private int tickCounter = Rand.Range(0, 1000);
 
         public new ThingDef_DynamicMineral attributes
         {
@@ -240,7 +240,7 @@ namespace Minerals
 
         public override void InitNewMap(Map map, float scaling = 1)
         {
-            scaling = scaling * GrowthRateMapMean(map);
+            scaling = scaling * GrowthRateMapRecent(map);
             base.InitNewMap(map, scaling);
         }
 
@@ -288,6 +288,14 @@ namespace Minerals
         {
             return allRateModifiers.Select(mod => mod.growthRateFactorMapMean(aMap)).ToList();
         }
+        public virtual List<float> allGrowthRateFactorsMapRecent(Map aMap)
+        {
+            foreach (growthRateModifier mod in allRateModifiers)
+            {
+                Log.Message("GrowthRateMapRecent: " + mod.GetType().Name + ": " + mod.growthRateFactorMapRecent(this, aMap));
+            }
+            return allRateModifiers.Select(mod => mod.growthRateFactorMapRecent(this, aMap)).ToList();
+        }
 
         //Growth rate for a given position at the current time
         public virtual float GrowthRateAtPos(Map aMap, IntVec3 aPosition, bool includePerMapEffects = true)
@@ -305,6 +313,11 @@ namespace Minerals
         public virtual float GrowthRateMapMean(Map aMap)
         {
             return combineGrowthRateFactors(allGrowthRateFactorsAtMapMean(aMap));
+        }
+
+        public virtual float GrowthRateMapRecent(Map aMap)
+        {
+            return combineGrowthRateFactors(allGrowthRateFactorsMapRecent(aMap));
         }
 
     }
@@ -380,6 +393,25 @@ namespace Minerals
         {
             return growthRateFactor(valueAtMapMean(aMap));
         }
+        public virtual float growthRateFactorMapSeason(Map aMap)
+        {
+            return growthRateFactor(valueAtMapSeasonal(aMap));
+        }
+        public virtual float growthRateFactorMapRecent(ThingDef_DynamicMineral myDef, Map aMap)
+        {
+            float mapMean = growthRateFactorMapMean(aMap);
+            float mapSeason = growthRateFactorMapSeason(aMap);
+            float meanWeight = (myDef.growDays * 2f) / 60f;
+            if (meanWeight > 1f)
+            {
+                meanWeight = 1f;
+            }
+            if (meanWeight < 0f)
+            {
+                meanWeight = 0f;
+            }
+            return mapMean * meanWeight + mapSeason * (1 - meanWeight);
+        }
 
     }
 
@@ -389,38 +421,30 @@ namespace Minerals
         {
             return aMineral.Position.GetTemperature(aMineral.Map);
         }
-
         public override float valueAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
         {
             return aPosition.GetTemperature(aMap);
         }
-
         public override float valueAtMap(Map aMap)
         {
             return aMap.mapTemperature.OutdoorTemp;
         }
-
         public override float valueAtTile(World world, int worldTile)
         {
             return world.tileTemperatures.GetOutdoorTemp(worldTile);
         }
-
         public override float valueAtMapMean(Map aMap)
         {
             return aMap.TileInfo.temperature;
         }
-
         public override float valueAtMapSeasonal(Map aMap)
         {
             return aMap.mapTemperature.SeasonalTemp;
         }
-
         public override float growthRateFactorMapMean(Map aMap)
         {
             return (growthRateFactor(valueAtMapMean(aMap) + 15f) + growthRateFactor(valueAtMapMean(aMap)) + growthRateFactor(valueAtMapMean(aMap) - 15f)) / 3f;
         }
-
-
     }
 
     public class rainGrowthRateModifier : growthRateModifier
@@ -457,9 +481,15 @@ namespace Minerals
         }
         public override float valueAtMapSeasonal(Map aMap)
         {
-            return rainfallToRain(aMap.TileInfo.rainfall);
+            Log.Message("valueAtMapSeasonal: valueAtMapMean(aMap): " + valueAtMapMean(aMap));
+            Log.Message("valueAtMapSeasonal: growthRateFactor(valueAtMapMean(aMap) * 0.5f): " + growthRateFactor(valueAtMapMean(aMap) * 0.5f));
+            Log.Message("valueAtMapSeasonal: growthRateFactor(valueAtMapMean(aMap) * 1.5f): " + growthRateFactor(valueAtMapMean(aMap) * 1.5f));
+            return (growthRateFactor(valueAtMapMean(aMap) * 0.5f) + growthRateFactor(valueAtMapMean(aMap) * 1.5f)) / 2f;
         }
-
+        public override float growthRateFactorMapMean(Map aMap)
+        {
+            return (growthRateFactor(valueAtMapMean(aMap) * 0.5f) + growthRateFactor(valueAtMapMean(aMap) * 1.5f)) / 2f;
+        }
 
     }
 
@@ -530,8 +560,11 @@ namespace Minerals
         {
             return 1f;
         }
-
         public override float growthRateFactorMapMean(Map aMap)
+        {
+            return 1f;
+        }
+        public override float growthRateFactorMapSeason(Map aMap)
         {
             return 1f;
         }
@@ -568,6 +601,10 @@ namespace Minerals
         {
             return 1f;
         }
+        public override float growthRateFactorMapSeason(Map aMap)
+        {
+            return 1f;
+        }
     }
 
 
@@ -597,9 +634,13 @@ namespace Minerals
         }
         public override float valueAtMapSeasonal(Map aMap)
         {
-            return 0.5f;
+            return 1f;
         }
         public override float growthRateFactorMapMean(Map aMap)
+        {
+            return 1f;
+        }
+        public override float growthRateFactorMapSeason(Map aMap)
         {
             return 1f;
         }
@@ -635,8 +676,6 @@ namespace Minerals
             SpawnDynamicMinerals();
             watch.Stop();
             Log.Message("========== SpawnDynamicMinerals() took: " + watch.ElapsedMilliseconds);
-            Log.Message("map.TileInfo.temperature" + map.TileInfo.temperature);
-            Log.Message("map.mapTemperature.SeasonalTemp" + map.mapTemperature.SeasonalTemp);
         }
 
 
@@ -658,7 +697,7 @@ namespace Minerals
                 // Get number of positions to check
                 float perMapGrowthFactor = mineralType.GrowthRateAtMap(map);
                 Log.Message("   perMapGrowthFactor: " + perMapGrowthFactor);
-                Log.Message("   spawnProb: " + mineralType.spawnProb);
+                //Log.Message("   spawnProb: " + mineralType.spawnProb);
                 float numToCheck = map.Area * mineralType.spawnProb * perMapGrowthFactor * MineralsMain.Settings.mineralSpawningSetting;
                 if (numToCheck <= 0)
                 {
@@ -686,7 +725,7 @@ namespace Minerals
                 // Round to integer
                 numToCheck = (float) Math.Round(numToCheck);
 
-                Log.Message("   numToCheck: " + numToCheck);
+                //Log.Message("   numToCheck: " + numToCheck);
 
                 // Try to spawn in a subset of positions
                 for (int i = 0; i < numToCheck; i++)
