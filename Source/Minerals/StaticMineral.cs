@@ -58,7 +58,7 @@ namespace Minerals
 
 
         protected float? myDistFromNeededTerrain = null;
-        public float distFromNeededTerrain
+        public virtual float distFromNeededTerrain
         {
             get
             {
@@ -1304,7 +1304,7 @@ namespace Minerals
 
         public virtual void InitNewMap(Map map, float scaling = 1)
         {
-            //Log.Message("Initializing mineral: " + this.defName);
+            Log.Message("Minerals: Initializing mineral '" + this.defName + "' with scaling of " + scaling);
             ReplaceThings(map, scaling);
             InitialSpawn(map, scaling);
         }
@@ -1369,7 +1369,7 @@ namespace Minerals
             // Find spots to spawn it
             if (Rand.Range(0f, 1f) <= perMapProbability * diversitySettingFactor() && spawnProbability > 0)
             {
-                //Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
+                Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
                 IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
                 foreach (IntVec3 current in allCells)
                 {
@@ -1407,7 +1407,7 @@ namespace Minerals
             }
             else
             {
-                //                Log.Message("Minerals: " + this.defName + " will not be spawned in this map.");
+                //Log.Message("Minerals: " + this.defName + " will not be spawned in this map.");
             }
 
         }

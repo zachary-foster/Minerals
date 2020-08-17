@@ -3,11 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-using UnityEngine;   // Always needed
 using RimWorld;      // RimWorld specific functions 
+using RimWorld.Planet;
 using Verse;         // RimWorld universal objects 
-using Verse.Sound;
 
 namespace Minerals
 {
@@ -18,6 +16,8 @@ namespace Minerals
     /// <permission>No restrictions</permission>
     public class DynamicMineral : StaticMineral
     {
+        // Controls how often occasional checks are done, like distance to nearby things
+        private int tickCounter = 0;
 
         public new ThingDef_DynamicMineral attributes
         {
@@ -28,6 +28,24 @@ namespace Minerals
         }
 
 
+        public override float distFromNeededTerrain
+        {
+            get
+            {
+                int ticksPerUpdate = 20;
+                if (myDistFromNeededTerrain == null || tickCounter % ticksPerUpdate == 0) // not yet set
+                {
+                    myDistFromNeededTerrain = attributes.posDistFromNeededTerrain(Map, Position);
+                }
+
+                return (float)myDistFromNeededTerrain;
+            }
+
+            set
+            {
+                myDistFromNeededTerrain = value;
+            }
+        }
 
 
 
@@ -83,7 +101,7 @@ namespace Minerals
                 }
                 foreach (growthRateModifier mod in attributes.allRateModifiers)
                 {
-                    stringBuilder.AppendLine(mod.GetType().Name + ": " + attributes.growthRateFactor(mod, getModValue(mod)));
+                    stringBuilder.AppendLine(mod.GetType().Name + ": " + mod.growthRateFactorAtPos(this));
                 }
             }
             return stringBuilder.ToString().TrimEndNewlines();
@@ -110,11 +128,14 @@ namespace Minerals
 
             // Refresh appearance if apparent size has changed
             float apparentSize = printSize();
-            if (attributes.fastGraphicRefresh && Math.Abs(sizeWhenLastPrinted - apparentSize) > 0.1f)
+            if (attributes.fastGraphicRefresh && Math.Abs(sizeWhenLastPrinted - apparentSize) > 0.2f)
             {
                 sizeWhenLastPrinted = apparentSize;
                 base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things);
             }
+
+            // Count ticks for occasional updates, like dist to nearby terrain 
+            tickCounter += 1;
 
             // Try to die
             if (size <= 0 && Rand.Range(0f, 1f) < attributes.deathProb)
@@ -122,28 +143,13 @@ namespace Minerals
                 Destroy(DestroyMode.Vanish);
             }
 
-
         }
             
-
-        public virtual float getModValue(growthRateModifier mod) 
-        {
-            // If growth rate factor is not needed, do not calculate
-            if (mod == null)
-            {
-                return 0f;
-            }
-            else
-            {
-                return mod.valueAtPos(this);
-            }
-        }
-
         public List<float> allGrowthRateFactors 
         {
             get
             {
-                return attributes.allRateModifiers.Select(mod => attributes.growthRateFactor(mod, getModValue(mod))).ToList();
+                return attributes.allRateModifiers.Select(mod => mod.growthRateFactorAtPos(this)).ToList();
             }
         }
 
@@ -231,107 +237,74 @@ namespace Minerals
             }
         }
 
-        // ======= Growth rate factors ======= //
 
-        public virtual float growthRateFactor(growthRateModifier mod, float myValue)
+        public override void InitNewMap(Map map, float scaling = 1)
         {
-            // Growth rate factor not defined
-            if (mod == null)
+            scaling = scaling * GrowthRateMapMean(map);
+            base.InitNewMap(map, scaling);
+        }
+
+
+        // ======= Growth rate factors ======= //
+        public virtual float combineGrowthRateFactors(List<float> rateFactors)
+        {
+            List<float> positiveFactors = rateFactors.FindAll(fac => fac >= 0);
+            List<float> negativeFactors = rateFactors.FindAll(fac => fac < 0);
+
+            // if any factors are negative, add them together and ignore positive factors
+            if (negativeFactors.Count > 0)
             {
-                return 1f;
+                return negativeFactors.Sum();
             }
 
-            // decays if too high or low
-            float stableRangeSize = mod.maxStable - mod.minStable;
-            if (myValue > mod.maxStable) 
+            // if all positive, multiply them
+            if (positiveFactors.Count > 0)
             {
-                return - mod.aboveMaxDecayRate * (myValue - mod.maxStable) / stableRangeSize;
-            } 
-            if (myValue < mod.minStable) 
-            {
-                return - mod.belowMinDecayRate * (mod.minStable - myValue) / stableRangeSize;
+                return positiveFactors.Aggregate(1f, (acc, val) => acc * val);
             }
 
-            // does not grow if too high or low
-            if (myValue < mod.minGrow || myValue > mod.maxGrow) 
-            {
-                return 0f;
-            } 
-
-            // slowed growth if too high or low
-            if (myValue < mod.idealGrow)
-            {
-                return 1f - ((mod.idealGrow - myValue) / (mod.idealGrow - mod.minGrow));
-            }
-            else 
-            {
-                return 1f - ((myValue - mod.idealGrow) / (mod.maxGrow - mod.idealGrow));
-            }
+            // If there are no growth rate factors, grow at full speed
+            return 1f;
         }
 
         public virtual List<float> allGrowthRateFactorsAtPos(IntVec3 aPosition, Map aMap, bool includePerMapEffects = true)
         {
             if (includePerMapEffects)
             {
-                return allRateModifiers.Select(mod => growthRateFactor(mod, mod.valueAtPos(this, aPosition, aMap))).ToList();
+                return allRateModifiers.Select(mod => mod.growthRateFactorAtPos(this, aPosition, aMap)).ToList();
             }
             else
             {
-                return posRateModifiers.Select(mod => growthRateFactor(mod, mod.valueAtPos(this, aPosition, aMap))).ToList();
+                return posRateModifiers.Select(mod => mod.growthRateFactorAtPos(this, aPosition, aMap)).ToList();
             }
         }
 
         public virtual List<float> allGrowthRateFactorsAtMap(Map aMap)
         {
-            return mapRateModifiers.Select(mod => growthRateFactor(mod, mod.valueAtMap(aMap))).ToList();
+            return mapRateModifiers.Select(mod => mod.growthRateFactorAtMap(aMap)).ToList();
         }
 
+        public virtual List<float> allGrowthRateFactorsAtMapMean(Map aMap)
+        {
+            return allRateModifiers.Select(mod => mod.growthRateFactorMapMean(aMap)).ToList();
+        }
+
+        //Growth rate for a given position at the current time
         public virtual float GrowthRateAtPos(Map aMap, IntVec3 aPosition, bool includePerMapEffects = true)
         {
-            // Get growth rate factors
-            List<float> rateFactors = allGrowthRateFactorsAtPos(aPosition, aMap, includePerMapEffects);
-            List<float> positiveFactors = rateFactors.FindAll(fac => fac >= 0);
-            List<float> negativeFactors = rateFactors.FindAll(fac => fac < 0);
-
-            // if any factors are negative, add them together and ignore positive factors
-            if (negativeFactors.Count > 0)
-            {
-                return negativeFactors.Sum();
-            }
-
-            // if all positive, multiply them
-            if (positiveFactors.Count > 0)
-            {
-                return positiveFactors.Aggregate(1f, (acc, val) => acc * val);
-            }
-
-            // If there are no growth rate factors, grow at full speed
-            return 1f;
-
+            return combineGrowthRateFactors(allGrowthRateFactorsAtPos(aPosition, aMap, includePerMapEffects));
         }
 
+        //Growth rate for the map at the current  time
         public virtual float GrowthRateAtMap(Map aMap)
         {
-            // Get growth rate factors
-            List<float> rateFactors = allGrowthRateFactorsAtMap(aMap);
-            List<float> positiveFactors = rateFactors.FindAll(fac => fac >= 0);
-            List<float> negativeFactors = rateFactors.FindAll(fac => fac < 0);
+            return combineGrowthRateFactors(allGrowthRateFactorsAtMap(aMap));
+        }
 
-            // if any factors are negative, add them together and ignore positive factors
-            if (negativeFactors.Count > 0)
-            {
-                return negativeFactors.Sum();
-            }
-
-            // if all positive, multiply them
-            if (positiveFactors.Count > 0)
-            {
-                return positiveFactors.Aggregate(1f, (acc, val) => acc * val);
-            }
-
-            // If there are no growth rate factors, grow at full speed
-            return 1f;
-
+        //Growth rate for the map on average
+        public virtual float GrowthRateMapMean(Map aMap)
+        {
+            return combineGrowthRateFactors(allGrowthRateFactorsAtMapMean(aMap));
         }
 
     }
@@ -340,10 +313,11 @@ namespace Minerals
     public abstract class growthRateModifier
     {
         public float aboveMaxDecayRate;  // How quickly it decays when above maxStableFert
-        public float maxStable; // Will decay above this fertility level
-        public float maxGrow; // Will not grow above this fertility level
-        public float idealGrow; // Grows fastest at this fertility level
-        public float minGrow; // Will not grow below this fertility level
+        public float maxStable; // Will decay above this level
+        public float maxGrow; // Will not grow above this level
+        public float maxIdeal; // Grows fastest at this level
+        public float minIdeal; // Grows fastest at this level
+        public float minGrow; // Will not grow below this level
         public float minStable; // Will decay below this fertility level
         public float belowMinDecayRate;  // How quickly it decays when below minStableFert
         public bool wholeMapEffect = false; // If a whole-map attribute can be used instead of a per-position attribute (faster)
@@ -351,6 +325,62 @@ namespace Minerals
         public abstract float valueAtPos(DynamicMineral aMineral);
         public abstract float valueAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap);
         public abstract float valueAtMap(Map aMap);
+        public abstract float valueAtMapSeasonal(Map aMap);
+        public abstract float valueAtMapMean(Map aMap);
+        public abstract float valueAtTile(World world, int worldTile);
+
+        public virtual float growthRateFactor(float myValue)
+        {
+            // decays if too high or low
+            float stableRangeSize = maxStable - minStable;
+            if (myValue > maxStable)
+            {
+                return -aboveMaxDecayRate * (myValue - maxStable) / stableRangeSize;
+            }
+            if (myValue < minStable)
+            {
+                return -belowMinDecayRate * (minStable - myValue) / stableRangeSize;
+            }
+
+            // does not grow if too high or low
+            if (myValue < minGrow || myValue > maxGrow)
+            {
+                return 0f;
+            }
+
+            // slowed growth if too high or low
+            if (myValue < minIdeal)
+            {
+                return 1f - ((minIdeal - myValue) / (minIdeal - minGrow));
+            }
+            if (myValue > maxIdeal)
+            {
+                return 1f - ((myValue - maxIdeal) / (maxGrow - maxIdeal));
+            }
+
+            return 1f;
+        }
+
+        public virtual float growthRateFactorAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
+        {
+            return growthRateFactor(valueAtPos(myDef, aPosition, aMap));
+        }
+
+        public virtual float growthRateFactorAtPos(DynamicMineral aMineral)
+        {
+            return growthRateFactor(valueAtPos(aMineral));
+        }
+
+        public virtual float growthRateFactorAtMap(Map aMap)
+        {
+            return growthRateFactor(valueAtMap(aMap));
+        }
+
+        public virtual float growthRateFactorMapMean(Map aMap)
+        {
+            return growthRateFactor(valueAtMapMean(aMap));
+        }
+
     }
 
     public class tempGrowthRateModifier : growthRateModifier
@@ -370,15 +400,45 @@ namespace Minerals
             return aMap.mapTemperature.OutdoorTemp;
         }
 
+        public override float valueAtTile(World world, int worldTile)
+        {
+            return world.tileTemperatures.GetOutdoorTemp(worldTile);
+        }
+
+        public override float valueAtMapMean(Map aMap)
+        {
+            return aMap.TileInfo.temperature;
+        }
+
+        public override float valueAtMapSeasonal(Map aMap)
+        {
+            return aMap.mapTemperature.SeasonalTemp;
+        }
+
+        public override float growthRateFactorMapMean(Map aMap)
+        {
+            return (growthRateFactor(valueAtMapMean(aMap) + 15f) + growthRateFactor(valueAtMapMean(aMap)) + growthRateFactor(valueAtMapMean(aMap) - 15f)) / 3f;
+        }
+
+
     }
 
     public class rainGrowthRateModifier : growthRateModifier
     {
+        private float rainfallToRain(float rainfall)
+        {
+            float rainProxy = rainfall / 3000f;
+            if (rainProxy > 2f)
+            {
+                rainProxy = 2f;
+            }
+            return rainProxy;
+        }
+
         public override float valueAtPos(DynamicMineral aMineral)
         {
             return aMineral.Map.weatherManager.curWeather.rainRate;
         }
-
         public override float valueAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
         {
             return aMap.weatherManager.curWeather.rainRate;
@@ -387,15 +447,40 @@ namespace Minerals
         {
             return aMap.weatherManager.curWeather.rainRate;
         }
+        public override float valueAtTile(World world, int worldTile)
+        {
+            return rainfallToRain(world.grid.tiles[worldTile].rainfall);
+        }
+        public override float valueAtMapMean(Map aMap)
+        {
+            return rainfallToRain(aMap.TileInfo.rainfall);
+        }
+        public override float valueAtMapSeasonal(Map aMap)
+        {
+            return rainfallToRain(aMap.TileInfo.rainfall);
+        }
+
+
     }
 
     public class lightGrowthRateModifier : growthRateModifier
     {
+        public float lightByBiome(BiomeDef biome)
+        {
+            if (biome.defName == "AB_RockyCrags")
+            {
+                return 0f;
+            }
+            else
+            {
+                return 1f;
+            }
+
+        }
         public override float valueAtPos(DynamicMineral aMineral)
         {
             return aMineral.Map.glowGrid.GameGlowAt(aMineral.Position);
         }
-
         public override float valueAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
         {
             return aMap.glowGrid.GameGlowAt(aPosition);
@@ -403,6 +488,18 @@ namespace Minerals
         public override float valueAtMap(Map aMap)
         {
             throw new InvalidOperationException("lightGrowthRateModifier cannot be used with 'wholeMapEffect'");
+        }
+        public override float valueAtTile(World world, int worldTile)
+        {
+            return lightByBiome(world.grid.tiles[worldTile].biome);
+        }
+        public override float valueAtMapMean(Map aMap)
+        {
+            return lightByBiome(aMap.Biome);
+        }
+        public override float valueAtMapSeasonal(Map aMap)
+        {
+            return lightByBiome(aMap.Biome);
         }
     }
 
@@ -413,15 +510,30 @@ namespace Minerals
         {
             return aMineral.Map.fertilityGrid.FertilityAt(aMineral.Position);
         }
-
         public override float valueAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
         {
             return aMap.fertilityGrid.FertilityAt(aPosition);
         }
-    
         public override float valueAtMap(Map aMap)
         {
             throw new InvalidOperationException("fertGrowthRateModifier cannot be used with 'wholeMapEffect'");
+        }
+        public override float valueAtTile(World world, int worldTile)
+        {
+            return 1f;
+        }
+        public override float valueAtMapMean(Map aMap)
+        {
+            return 1f;
+        }
+        public override float valueAtMapSeasonal(Map aMap)
+        {
+            return 1f;
+        }
+
+        public override float growthRateFactorMapMean(Map aMap)
+        {
+            return 1f;
         }
     }
 
@@ -439,6 +551,22 @@ namespace Minerals
         public override float valueAtMap(Map aMap)
         {
             throw new InvalidOperationException("distGrowthRateModifier cannot be used with 'wholeMapEffect'");
+        }
+        public override float valueAtTile(World world, int worldTile)
+        {
+            return 1f;
+        }
+        public override float valueAtMapMean(Map aMap)
+        {
+            return 1f;
+        }
+        public override float valueAtMapSeasonal(Map aMap)
+        {
+            return 1f;
+        }
+        public override float growthRateFactorMapMean(Map aMap)
+        {
+            return 1f;
         }
     }
 
@@ -458,6 +586,22 @@ namespace Minerals
         public override float valueAtMap(Map aMap)
         {
             throw new InvalidOperationException("sizeGrowthRateModifier cannot be used with 'wholeMapEffect'");
+        }
+        public override float valueAtTile(World world, int worldTile)
+        {
+            return 0.5f;
+        }
+        public override float valueAtMapMean(Map aMap)
+        {
+            return 0.5f;
+        }
+        public override float valueAtMapSeasonal(Map aMap)
+        {
+            return 0.5f;
+        }
+        public override float growthRateFactorMapMean(Map aMap)
+        {
+            return 1f;
         }
     }
 
@@ -491,6 +635,8 @@ namespace Minerals
             SpawnDynamicMinerals();
             watch.Stop();
             Log.Message("========== SpawnDynamicMinerals() took: " + watch.ElapsedMilliseconds);
+            Log.Message("map.TileInfo.temperature" + map.TileInfo.temperature);
+            Log.Message("map.mapTemperature.SeasonalTemp" + map.mapTemperature.SeasonalTemp);
         }
 
 
