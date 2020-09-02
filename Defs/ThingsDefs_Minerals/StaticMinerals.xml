@@ -53,7 +53,7 @@
     <perMapProbability>0.5</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.004</maxClusterProbability>
+    <maxClusterProbability>0.006</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>30</maxClusterSize>
@@ -146,12 +146,12 @@
     <perMapProbability>0.7</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.005</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
+        <DropProbability>1</DropProbability>
       </li>
     </randomlyDropResources>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
@@ -197,12 +197,12 @@
     <perMapProbability>0.3</perMapProbability>
     <!-- For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.0015</maxClusterProbability>
+    <maxClusterProbability>0.004</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1.0</DropProbability>
+        <DropProbability>2.0</DropProbability>
       </li>
     </randomlyDropResources>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
@@ -249,7 +249,7 @@
     <perMapProbability>0.5</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <maxClusterProbability>0.005</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -409,7 +409,7 @@
     <perMapProbability>0.25</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.005</maxClusterProbability>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MineableSteel</li>
@@ -491,7 +491,7 @@
     <perMapProbability>0.25</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <maxClusterProbability>0.004</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>7</maxClusterSize>
@@ -556,7 +556,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>7.0</DropProbability>
+        <DropProbability>8.0</DropProbability>
       </li>
       <li>
         <ResourceDefName>RoughUltrahardGem</ResourceDefName>
@@ -590,7 +590,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>7.0</DropProbability>
+        <DropProbability>8.0</DropProbability>
       </li>
       <li>
         <ResourceDefName>RoughUltrahardGem</ResourceDefName>
@@ -619,12 +619,12 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>5.0</DropProbability>
+        <DropProbability>6.0</DropProbability>
       </li>
     </randomlyDropResources>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
@@ -748,7 +748,7 @@
     <perMapProbability>0.25</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>7</maxClusterSize>
@@ -804,7 +804,7 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.001</maxClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>3</maxClusterSize>
@@ -822,7 +822,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1.5</DropProbability>
+        <DropProbability>2</DropProbability>
       </li>
       <li>
         <ResourceDefName>Copper</ResourceDefName>

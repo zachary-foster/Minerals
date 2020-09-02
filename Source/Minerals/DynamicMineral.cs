@@ -320,6 +320,12 @@ namespace Minerals
             return combineGrowthRateFactors(allGrowthRateFactorsMapRecent(aMap));
         }
 
+        public override float tileHabitabilitySpawnFactor(int tile)
+        {
+            return 1f;
+        }
+
+
     }
 
 

@@ -1377,6 +1377,42 @@ namespace Minerals
             // Apply distance to settlements factor
             output *= settlementDistProbFactor(tile);
 
+            // Apply habitability factor if it is a valuable mineral
+            if (otherSettlementMiningRadius > 3f)
+            {
+                output *= tileHabitabilitySpawnFactor(tile);
+            }
+
+            return output;
+        }
+
+
+        // How spawning is effected by the habitability of the world location
+        public virtual float tileHabitabilitySpawnFactor(int tile)
+        {
+            float output = 0.5f;
+
+            // Value determined by mean world tile temperature
+            float temp = Find.World.grid.tiles[tile].temperature;
+            float diffFromIdeal = Math.Abs(temp - 15f);
+            if (diffFromIdeal > 10f)
+            {
+                output += (diffFromIdeal - 10f) / 20f;
+            }
+
+            // Apply biome effects
+            if (Find.World.grid.tiles[tile].biome.isExtremeBiome)
+            {
+                output += 0.5f;
+            }
+
+            // Never more than triple spawn rate
+            if (output > 3)
+            {
+                output = 3f;
+            }
+
+            Log.Message("Minerals: tileHabitabilitySpawnFactor: " + defName + ": " + output);
             return output;
         }
 
@@ -1398,7 +1434,8 @@ namespace Minerals
                 }
 
             }
-            //Log.Message("Minerals: settlementDistProbFactor: " + defName + ": " + output);
+
+            Log.Message("Minerals: settlementDistProbFactor: " + defName + ": " + output);
             return output;
         }
 
@@ -1420,7 +1457,7 @@ namespace Minerals
             // Find spots to spawn it
             if (Rand.Range(0f, 1f) <= perMapProbability * diversitySettingFactor() && spawnProbability > 0)
             {
-                //Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
+                Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
                 IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
                 foreach (IntVec3 current in allCells)
                 {
