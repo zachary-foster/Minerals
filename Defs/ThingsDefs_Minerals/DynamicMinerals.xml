@@ -186,6 +186,8 @@
     </tags>
     <!-- If graphic overlapping with nearby wall textures are rotated -->
     <growsUpWalls>true</growsUpWalls>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>12</otherSettlementMiningRadius>
   </ThingDef>
   
   
@@ -329,6 +331,8 @@
     </tags>
     <!-- If graphic overlapping with nearby wall textures are rotated -->
     <growsUpWalls>true</growsUpWalls>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>8</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -491,6 +495,8 @@
     </tags>
     <!-- If graphic overlapping with nearby wall textures are rotated -->
     <growsUpWalls>true</growsUpWalls>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>0</otherSettlementMiningRadius>
   </ThingDef>
   
   
@@ -629,6 +635,8 @@
     </tags>
     <!-- If graphic overlapping with nearby wall textures are rotated -->
     <growsUpWalls>true</growsUpWalls>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>3</otherSettlementMiningRadius>
   </ThingDef>
 
 

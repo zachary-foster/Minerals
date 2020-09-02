@@ -87,6 +87,8 @@
     <!-- Tags which determine how some options behave  -->
     <tags>
     </tags>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>0</otherSettlementMiningRadius>
   </ThingDef>
   
   <ThingDef Name="QuartzBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">

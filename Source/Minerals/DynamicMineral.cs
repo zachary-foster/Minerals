@@ -290,10 +290,10 @@ namespace Minerals
         }
         public virtual List<float> allGrowthRateFactorsMapRecent(Map aMap)
         {
-            foreach (growthRateModifier mod in allRateModifiers)
-            {
-                Log.Message("GrowthRateMapRecent: " + mod.GetType().Name + ": " + mod.growthRateFactorMapRecent(this, aMap));
-            }
+            //foreach (growthRateModifier mod in allRateModifiers)
+            //{
+            //    Log.Message("GrowthRateMapRecent: " + mod.GetType().Name + ": " + mod.growthRateFactorMapRecent(this, aMap));
+            //}
             return allRateModifiers.Select(mod => mod.growthRateFactorMapRecent(this, aMap)).ToList();
         }
 
@@ -481,9 +481,9 @@ namespace Minerals
         }
         public override float valueAtMapSeasonal(Map aMap)
         {
-            Log.Message("valueAtMapSeasonal: valueAtMapMean(aMap): " + valueAtMapMean(aMap));
-            Log.Message("valueAtMapSeasonal: growthRateFactor(valueAtMapMean(aMap) * 0.5f): " + growthRateFactor(valueAtMapMean(aMap) * 0.5f));
-            Log.Message("valueAtMapSeasonal: growthRateFactor(valueAtMapMean(aMap) * 1.5f): " + growthRateFactor(valueAtMapMean(aMap) * 1.5f));
+            //Log.Message("valueAtMapSeasonal: valueAtMapMean(aMap): " + valueAtMapMean(aMap));
+            //Log.Message("valueAtMapSeasonal: growthRateFactor(valueAtMapMean(aMap) * 0.5f): " + growthRateFactor(valueAtMapMean(aMap) * 0.5f));
+            //Log.Message("valueAtMapSeasonal: growthRateFactor(valueAtMapMean(aMap) * 1.5f): " + growthRateFactor(valueAtMapMean(aMap) * 1.5f));
             return (growthRateFactor(valueAtMapMean(aMap) * 0.5f) + growthRateFactor(valueAtMapMean(aMap) * 1.5f)) / 2f;
         }
         public override float growthRateFactorMapMean(Map aMap)
@@ -672,10 +672,10 @@ namespace Minerals
         // The main function controlling what is done each time the map is looked at
         public void Look()
         {
-            var watch = System.Diagnostics.Stopwatch.StartNew();
+            //var watch = System.Diagnostics.Stopwatch.StartNew();
             SpawnDynamicMinerals();
-            watch.Stop();
-            Log.Message("========== SpawnDynamicMinerals() took: " + watch.ElapsedMilliseconds);
+            //watch.Stop();
+            //Log.Message("========== SpawnDynamicMinerals() took: " + watch.ElapsedMilliseconds);
         }
 
 
@@ -684,7 +684,7 @@ namespace Minerals
             foreach (ThingDef_DynamicMineral mineralType in DefDatabase<ThingDef_DynamicMineral>.AllDefs)
             {
                 //var watch = System.Diagnostics.Stopwatch.StartNew();
-                Log.Message("Trying to spawn " + mineralType.defName);
+                //Log.Message("Trying to spawn " + mineralType.defName);
 
 
                 // Check that the map type is ok
@@ -696,7 +696,7 @@ namespace Minerals
 
                 // Get number of positions to check
                 float perMapGrowthFactor = mineralType.GrowthRateAtMap(map);
-                Log.Message("   perMapGrowthFactor: " + perMapGrowthFactor);
+                //Log.Message("   perMapGrowthFactor: " + perMapGrowthFactor);
                 //Log.Message("   spawnProb: " + mineralType.spawnProb);
                 float numToCheck = map.Area * mineralType.spawnProb * perMapGrowthFactor * MineralsMain.Settings.mineralSpawningSetting;
                 if (numToCheck <= 0)

@@ -72,6 +72,8 @@
     <replaceRadius>1</replaceRadius>
     <!-- The minmum propotion of things in radius to replace for a replacement to happen -->
     <repalceThreshold>0.4</repalceThreshold>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>20</otherSettlementMiningRadius>
   </ThingDef>
       
       
@@ -200,6 +202,8 @@
     <replaceRadius>1</replaceRadius>
     <!-- The minmum propotion of things in radius to replace for a replacement to happen -->
     <repalceThreshold>0.6</repalceThreshold>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>15</otherSettlementMiningRadius>
   </ThingDef>
       
       
@@ -330,6 +334,8 @@
     <ThingsToReplace>
       <li>QuartzCrystal</li>
     </ThingsToReplace>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>10</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -407,6 +413,8 @@
     <ThingsToReplace>
       <li>AmethystCrystal</li>
     </ThingsToReplace>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>15</otherSettlementMiningRadius>
   </ThingDef>
 
 

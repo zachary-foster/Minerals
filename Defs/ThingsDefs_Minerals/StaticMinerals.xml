@@ -104,6 +104,8 @@
     </tags>
     <!-- If graphic overlapping with nearby wall textures are rotated -->
     <growsUpWalls>true</growsUpWalls>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>0</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -152,6 +154,8 @@
         <DropProbability>0.5</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>0</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -201,6 +205,8 @@
         <DropProbability>1.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>8</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -260,6 +266,8 @@
       <li>crystal</li>
       <li>NoticeMineral_Event</li>
     </tags>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>0</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -301,18 +309,20 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <maxClusterProbability>0.004</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>4.0</DropProbability>
+        <DropProbability>5.0</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>5.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>11</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -354,7 +364,7 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <maxClusterProbability>0.004</maxClusterProbability>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>10</maxMeshCount>
     <!-- The size range -->
@@ -368,13 +378,15 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>6.0</DropProbability>
+        <DropProbability>7.0</DropProbability>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>5.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>14</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -420,6 +432,8 @@
       <li>crystal</li>
       <li>NoticeMineral_Event</li>
     </tags>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>3</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -453,6 +467,8 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>7</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -513,6 +529,8 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>3</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -533,7 +551,7 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.001</maxClusterProbability>
+    <maxClusterProbability>0.002</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -545,6 +563,8 @@
         <DropProbability>2.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>13</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -565,7 +585,7 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.001</maxClusterProbability>
+    <maxClusterProbability>0.002</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -577,6 +597,8 @@
         <DropProbability>2.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>13</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -597,7 +619,7 @@
     <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.001</maxClusterProbability>
+    <maxClusterProbability>0.002</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -605,6 +627,8 @@
         <DropProbability>5.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>9</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -694,6 +718,8 @@
         <DropProbability>10.0</DropProbability>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>18</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -749,6 +775,8 @@
       <li>crystal</li>
       <li>NoticeMineral_Event</li>
     </tags>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>8</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -802,6 +830,8 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+    <otherSettlementMiningRadius>3</otherSettlementMiningRadius>
   </ThingDef>
 
 

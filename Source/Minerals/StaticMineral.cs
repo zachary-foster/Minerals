@@ -7,6 +7,7 @@ using System.Text;
 using UnityEngine;   // Always needed
 using RimWorld;      // RimWorld specific functions 
 using Verse;         // RimWorld universal objects 
+using RimWorld.Planet;
 
 namespace Minerals
 {
@@ -895,6 +896,9 @@ namespace Minerals
         // What stage of map generation the thing is spawned during (chunks or plants)
         public string newMapGenStep = "chunks";
 
+        // Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity
+        public float otherSettlementMiningRadius = 0f;
+
 
         // ======= Spawning clusters ======= //
 
@@ -1304,7 +1308,7 @@ namespace Minerals
 
         public virtual void InitNewMap(Map map, float scaling = 1)
         {
-            Log.Message("Minerals: Initializing mineral '" + this.defName + "' with scaling of " + scaling);
+            //Log.Message("Minerals: Initializing mineral '" + this.defName + "' with scaling of " + scaling);
             ReplaceThings(map, scaling);
             InitialSpawn(map, scaling);
         }
@@ -1353,6 +1357,53 @@ namespace Minerals
             return factor;
         }
 
+        // The probablility of spawning at each point when a map is created
+        public virtual float mapSpawnProbFactor(Map map)
+        {
+            return tileSpawnProbFactor(map.Tile);
+        }
+
+        // The probablility of spawning at each point when a map is created
+        public virtual float tileSpawnProbFactor(int tile)
+        {
+            float output = 1f;
+
+            // Base value determined by world tile location
+            Rand.PushState();
+            Rand.Seed = tile.GetHashCode();
+            output = output * Rand.Range(minClusterProbability, maxClusterProbability);
+            Rand.PopState();
+
+            // Apply distance to settlements factor
+            output *= settlementDistProbFactor(tile);
+
+            return output;
+        }
+
+        // How much the probablility of spawning reduces based on distance to nearest settlement 
+        public virtual float settlementDistProbFactor(int tile)
+        {
+            float output = 1f;
+            if (otherSettlementMiningRadius > 0)
+            {
+                foreach (Settlement s in Find.WorldObjects.Settlements)
+                {
+                    float travelDist = Find.World.grid.TraversalDistanceBetween(tile, s.Tile, false, (int) otherSettlementMiningRadius * 2);
+                    if ((! s.Faction.IsPlayer) && travelDist < otherSettlementMiningRadius)
+                    {
+                        //Log.Message("Minerals: settlementDistProbFactor: " + defName + ": travelDist / otherSettlementMiningRadius:" + travelDist / otherSettlementMiningRadius);
+                        //Log.Message("Minerals: settlementDistProbFactor: " + defName + ": travelDist:" + travelDist);
+                        output *= travelDist / otherSettlementMiningRadius;
+                    }
+                }
+
+            }
+            //Log.Message("Minerals: settlementDistProbFactor: " + defName + ": " + output);
+            return output;
+        }
+
+
+
         public virtual void InitialSpawn(Map map, float scaling = 1)
         {
 
@@ -1364,12 +1415,12 @@ namespace Minerals
             }
 
             // Select probability of spawing for this map
-            float spawnProbability = Rand.Range(minClusterProbability, maxClusterProbability) * scaling * abundanceSettingFactor();
+            float spawnProbability = mapSpawnProbFactor(map) * scaling * abundanceSettingFactor();
 
             // Find spots to spawn it
             if (Rand.Range(0f, 1f) <= perMapProbability * diversitySettingFactor() && spawnProbability > 0)
             {
-                Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
+                //Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
                 IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
                 foreach (IntVec3 current in allCells)
                 {
