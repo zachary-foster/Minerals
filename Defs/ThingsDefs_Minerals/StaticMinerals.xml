@@ -50,13 +50,13 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.5</perMapProbability>
+    <perMapProbability>0.6</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.006</maxClusterProbability>
+    <maxClusterProbability>0.007</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>30</maxClusterSize>
+    <maxClusterSize>40</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.3</initialSizeMin>
     <initialSizeMax>.95</initialSizeMax>
@@ -68,23 +68,24 @@
       <li>Marble_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>Claystone_Rough</li>
+      <li>ZF_ClaystoneBase_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
     </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>Limestone</li>
     </associatedOres>
-    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>true</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>20</maxMeshCount>
+    <maxMeshCount>15</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.2</min>
-      <max>0.5</max>
+      <min>0.3</min>
+      <max>0.6</max>
     </visualSizeRange>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
     <visualClustering>0.5</visualClustering>
@@ -146,7 +147,7 @@
     <perMapProbability>0.7</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.005</maxClusterProbability>
+    <maxClusterProbability>0.006</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -306,7 +307,7 @@
       <Beauty>20</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.004</maxClusterProbability>
@@ -361,7 +362,7 @@
       <Beauty>20</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.004</maxClusterProbability>
@@ -370,7 +371,7 @@
     <!-- The size range -->
     <visualSizeRange>
       <min>0.2</min>
-      <max>0.6</max>
+      <max>0.7</max>
     </visualSizeRange>
     <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
     <visualClustering>1.0</visualClustering>
@@ -406,7 +407,7 @@
     </graphicData>
     <uiIconPath>Things/Mineral/PyriteCrystal/PyriteCrystalA</uiIconPath>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.25</perMapProbability>
+    <perMapProbability>0.5</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.005</maxClusterProbability>
@@ -419,7 +420,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
+        <DropProbability>0.5</DropProbability>
       </li>
       <li>
         <ResourceDefName>Steel</ResourceDefName>
@@ -459,7 +460,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
+        <DropProbability>0.3</DropProbability>
       </li>
       <li>
         <ResourceDefName>MagneticMaterial</ResourceDefName>
@@ -488,13 +489,13 @@
     </graphicData>
     <uiIconPath>Things/Mineral/PyriteCrystal/PyriteCrystalA</uiIconPath>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.25</perMapProbability>
+    <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.004</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>7</maxClusterSize>
+    <maxClusterSize>20</maxClusterSize>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Granite_Rough</li>
@@ -548,7 +549,7 @@
       </damageData>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.002</maxClusterProbability>
@@ -582,7 +583,7 @@
       </damageData>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.002</maxClusterProbability>
@@ -616,7 +617,7 @@
       </damageData>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.003</maxClusterProbability>
@@ -657,10 +658,10 @@
     <perMapProbability>0.1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.001</maxClusterProbability>
+    <maxClusterProbability>0.002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <maxClusterSize>15</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.2</initialSizeMin>
     <initialSizeMax>.7</initialSizeMax>
@@ -671,26 +672,6 @@
       <li>Granite_Rough</li>
       <li>ZF_BasaltBase_Rough</li>
     </allowedTerrains>
-    <!-- The biomes this can appear in. The default is all ones known to mod-->
-    <allowedBiomes>
-      <li>IceSheet</li>
-      <li>Tundra</li>
-      <li>Desert</li>
-      <li>ExtremeDesert</li>
-      <li>BorealForest</li>
-      <li>TropicalSwampArchipelago</li>
-      <li>BorealArchipelago</li>
-      <li>TundraArchipelago</li>
-      <li>ColdBogArchipelago</li>
-      <li>DesertArchipelago</li>
-      <li>VolcanicFlow</li>
-      <li>DesertSaltFields</li>
-      <li>RedwoodForest</li>
-      <li>TemperateDesert</li>
-      <li>Permafrost</li>
-      <li>Steppes</li>
-			<li>Wasteland</li>
-    </allowedBiomes>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -745,7 +726,7 @@
       </li>
     </comps>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.25</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.003</maxClusterProbability>
@@ -801,7 +782,7 @@
       <Beauty>15</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.003</maxClusterProbability>

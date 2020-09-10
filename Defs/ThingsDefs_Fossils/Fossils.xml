@@ -52,7 +52,8 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>Claystone_Rough</li>
+      <li>ZF_ClaystoneBase_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
     </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
@@ -149,7 +150,8 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>Claystone_Rough</li>
+      <li>ZF_ClaystoneBase_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
     </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
@@ -302,7 +304,8 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>Claystone_Rough</li>
+      <li>ZF_ClaystoneBase_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
     </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>

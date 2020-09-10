@@ -181,7 +181,7 @@
         <li>SoftStoneChunks</li>
       </categories>
     </fixedIngredientFilter>
-    <workAmount>1000</workAmount>
+    <workAmount>700</workAmount>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.3</workSkillLearnFactor>
   </RecipeDef>

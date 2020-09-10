@@ -59,15 +59,15 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>2</spawnRadius>
+    <spawnRadius>1.5</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.04</minClusterProbability>
-    <maxClusterProbability>0.08</maxClusterProbability>
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>20</maxClusterSize>
+    <maxClusterSize>150</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>1</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -95,9 +95,10 @@
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
 			<li>ZF_MudstoneBase_Rough</li>
+			<li>ZF_WeatheredMudstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>5</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
@@ -411,15 +412,15 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>2</spawnRadius>
+    <spawnRadius>1.5</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
-    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.035</minClusterProbability>
-    <maxClusterProbability>0.035</maxClusterProbability>
+    <!--For a given map, the minimum/maxwimum probablility a cluster will spawn for every possible location -->
+    <minClusterProbability>0.01</minClusterProbability>
+    <maxClusterProbability>0.02</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>3</maxClusterSize>
+    <maxClusterSize>10</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.8</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -427,22 +428,26 @@
     <initialSizeVariation>.2</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>AB_Mudstone_Rough</li>
 			<li>ZF_MudstoneBase_Rough</li>
+			<li>AB_Mudstone_Rough</li>
 			<li>AB_CrackedMud</li>
 			<li>AB_RichCrackedMud</li>
 			<li>AB_FineSand</li>
 			<li>RockySoil</li>
+			<li>Gravel</li>
 			<li>Sand</li>
+			<li>Soil</li>
+			<li>SoilRich</li>
 			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
       <li>SavannaSoil</li>
       <li>MarginalSoil</li>
+			<li>Ice</li>
 			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
 			<li>ZF_MudstoneBase_Rough</li>
-      <li>ZF_WeatheredMudstone</li>
       <li>ZF_WeatheredMudstone</li>
       <li>ZF_BoulderMudstone</li>
       <li>ZF_SolidMudstone</li>
@@ -453,6 +458,7 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
+      <li>ZF_BoulderMudstone</li>
       <li>ZF_WeatheredMudstone</li>
       <li>ZF_SolidMudstone</li>
     </associatedOres>
@@ -545,8 +551,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.4</minClusterProbability>
-    <maxClusterProbability>0.6</maxClusterProbability>
+    <minClusterProbability>0.7</minClusterProbability>
+    <maxClusterProbability>1</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>1</maxClusterSize>
@@ -559,12 +565,26 @@
 		<allowedTerrains>
 			<li>ZF_MudstoneBase_Rough</li>
 			<li>AB_Mudstone_Rough</li>
+			<li>AB_CrackedMud</li>
+			<li>AB_RichCrackedMud</li>
+			<li>AB_FineSand</li>
+			<li>RockySoil</li>
+			<li>Gravel</li>
+			<li>Sand</li>
+			<li>Soil</li>
+			<li>SoilRich</li>
+			<li>PoorSoil</li>
+			<li>MarginalSoil</li>
+      <li>SavannaSoil</li>
+      <li>MarginalSoil</li>
+			<li>Ice</li>
+			<li>SaltField</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>ZF_WeatheredMudstone</li>
       <li>ZF_SolidMudstone</li>
-			<li>ZF_WeatheredMudstone</li>
+			<li>ZF_HewnMudstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>1.1</neededNearbyTerrainRadius>
@@ -573,9 +593,8 @@
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>ZF_WeatheredMudstone</li>
-			<li>ZF_WeatheredMudstone</li>
     </associatedOres>
-    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>

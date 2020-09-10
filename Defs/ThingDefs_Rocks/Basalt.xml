@@ -38,7 +38,7 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>2</spawnRadius>
+    <spawnRadius>1.5</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
@@ -76,9 +76,9 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
         <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -146,9 +146,9 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
         <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -236,9 +236,9 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
         <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -284,9 +284,9 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
         <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -318,13 +318,13 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.002</minClusterProbability>
-    <maxClusterProbability>0.004</maxClusterProbability>
+    <minClusterProbability>0.004</minClusterProbability>
+    <maxClusterProbability>0.008</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>4</maxClusterSize>
+    <maxClusterSize>6</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>0.7</initialSizeMin>
+    <initialSizeMin>0.6</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
@@ -333,17 +333,18 @@
 			<li>ZF_BasaltBase_Rough</li>
       <li>WeatheredBasalt</li>
       <li>SolidBasalt</li>
+      <li>BoulderBasalt</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>15</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>ZF_BasaltBase_Rough</li>
       <li>WeatheredBasalt</li>
+      <li>SolidBasalt</li>
     </associatedOres>
-    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>4</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -372,7 +373,7 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
         <DropProbability>0.1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
@@ -415,15 +416,15 @@
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>1</spawnRadius>
+    <spawnRadius>1.5</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.025</minClusterProbability>
-    <maxClusterProbability>0.04</maxClusterProbability>
+    <minClusterProbability>0.03</minClusterProbability>
+    <maxClusterProbability>0.05</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>5</maxClusterSize>
+    <maxClusterSize>10</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.5</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -445,6 +446,8 @@
     <associatedOres>
       <li>ZF_BasaltBase_Rough</li>
       <li>BoulderBasalt</li>
+      <li>WeatheredBasalt</li>
+      <li>SolidBasalt</li>
     </associatedOres>
     <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -475,9 +478,9 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
         <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>
@@ -514,10 +517,10 @@
     <perMapProbability>0.7</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.001</maxClusterProbability>
+    <maxClusterProbability>0.002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>10</minClusterSize>
-    <maxClusterSize>200</maxClusterSize>
+    <maxClusterSize>300</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.4</initialSizeMin>
     <initialSizeMax>0.9</initialSizeMax>
@@ -525,21 +528,23 @@
     <initialSizeVariation>.1</initialSizeVariation>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>ZF_BasaltBase_Rough</li>
+			<li>ZF_BasaltBase_Rough</li>
       <li>WeatheredBasalt</li>
+      <li>SolidBasalt</li>
+      <li>BoulderBasalt</li>
       <li>PassableBasalt</li>
-      <li>ZF_BasaltBase</li>
+      <li>LavaFlowBasalt</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>20</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>WeatheredBasalt</li>
-      <li>ZF_BasaltBase_Rough</li>
+      <li>SolidBasalt</li>
     </associatedOres>
-    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -548,7 +553,7 @@
     <maxMeshCount>20</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
-      <min>0.4</min>
+      <min>0.35</min>
       <max>0.6</max>
     </visualSizeRange>
     <visualClustering>0.5</visualClustering>
@@ -568,9 +573,9 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
         <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
   </ThingDef>

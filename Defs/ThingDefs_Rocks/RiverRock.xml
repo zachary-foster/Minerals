@@ -103,14 +103,9 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Gold</ResourceDefName>
@@ -281,14 +276,9 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>ObsidianShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Gold</ResourceDefName>

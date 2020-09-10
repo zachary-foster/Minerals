@@ -899,6 +899,9 @@ namespace Minerals
         // Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity
         public float otherSettlementMiningRadius = 0f;
 
+        // If the mean size of minerals spawned at map generation is scaled by the relative abundance in that map
+        public bool sizeScaledByAbundance = false;
+
 
         // ======= Spawning clusters ======= //
 
@@ -1412,7 +1415,7 @@ namespace Minerals
                 output = 3f;
             }
 
-            Log.Message("Minerals: tileHabitabilitySpawnFactor: " + defName + ": " + output);
+            //Log.Message("Minerals: tileHabitabilitySpawnFactor: " + defName + ": " + output);
             return output;
         }
 
@@ -1435,13 +1438,13 @@ namespace Minerals
 
             }
 
-            Log.Message("Minerals: settlementDistProbFactor: " + defName + ": " + output);
+            //Log.Message("Minerals: settlementDistProbFactor: " + defName + ": " + output);
             return output;
         }
 
 
 
-        public virtual void InitialSpawn(Map map, float scaling = 1)
+        public virtual void InitialSpawn(Map map, float abundScaling = 1f, float sizeScaling = 1f)
         {
 
             // Check that it is a valid biome
@@ -1452,12 +1455,26 @@ namespace Minerals
             }
 
             // Select probability of spawing for this map
-            float spawnProbability = mapSpawnProbFactor(map) * scaling * abundanceSettingFactor();
+            float spawnProbability = mapSpawnProbFactor(map) * abundScaling * abundanceSettingFactor();
+
+            // Inferr size scaling factor based on abundance
+            if (sizeScaledByAbundance)
+            {
+                sizeScaling *= spawnProbability / maxClusterProbability;
+            }
+            if (sizeScaling < 0.2f)
+            {
+                sizeScaling = 0.2f;
+            }
+            if (sizeScaling > 1.2f)
+            {
+                sizeScaling = 1.2f;
+            }
 
             // Find spots to spawn it
             if (Rand.Range(0f, 1f) <= perMapProbability * diversitySettingFactor() && spawnProbability > 0)
             {
-                Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
+                //Log.Message("Minerals: " + defName + " will be spawned at a probability of " + spawnProbability);
                 IEnumerable<IntVec3> allCells = map.AllCells.InRandomOrder(null);
                 foreach (IntVec3 current in allCells)
                 {
@@ -1469,7 +1486,7 @@ namespace Minerals
                     // Randomly spawn some clusters
                     if (Rand.Range(0f, 1f) < spawnProbability && CanSpawnAt(map, current))
                     {
-                        SpawnCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax), Rand.Range(minClusterSize, maxClusterSize));
+                        SpawnCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax) * sizeScaling, Rand.Range(minClusterSize, maxClusterSize));
                     }
 
                     // Spawn near their assocaited ore
@@ -1481,12 +1498,12 @@ namespace Minerals
 
                             if (CanSpawnAt(map, current))
                             {
-                                SpawnCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax), Rand.Range(minClusterSize, maxClusterSize));
+                                SpawnCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax) * sizeScaling, Rand.Range(minClusterSize, maxClusterSize));
                             } else {
                                 IntVec3 dest;
                                 if (current.InBounds(map) && TryFindReproductionDestination(map, current, out dest))
                                 {
-                                    SpawnCluster(map, dest, Rand.Range(initialSizeMin, initialSizeMax), Rand.Range(minClusterSize, maxClusterSize));
+                                    SpawnCluster(map, dest, Rand.Range(initialSizeMin, initialSizeMax) * sizeScaling, Rand.Range(minClusterSize, maxClusterSize));
                                 }
                             }
                         }

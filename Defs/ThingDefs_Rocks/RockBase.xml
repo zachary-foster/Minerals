@@ -34,7 +34,7 @@
       <mineableThing>RoughGem</mineableThing>
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <mineableNonMinedEfficiency>0.3</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -212,9 +212,10 @@
       <li>Limestone_Rough</li>
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
-      <li>Claystone_Rough</li>
       <li>Marble_Rough</li>
       <li>ZF_BasaltBase_Rough</li>
+      <li>ZF_ClaystoneBase_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
       <li>Granite_Rough</li>
   		<li>IceShallow</li>
   		<li>Soil</li>

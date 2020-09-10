@@ -6,22 +6,27 @@
     <label>Weathered Slate</label>
     <description>A weathered wall of slate, a fine-grained metamorphic rock formed from compacted volcanic ash or silt. Some of these naturally rectangular stones can be used for building without stonecutting.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <texPath>Things/Rock/WeatheredSlate</texPath>
       <color>(70,70,70)</color>
     </graphicData>
-    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>2.2</min>
+      <max>2.4</max>
+    </visualSizeRange>
+    <uiIconPath>Things/Rock/WeatheredSlate/WeatheredSlateA</uiIconPath>
     <statBases>
       <MaxHitPoints>1200</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>3</Beauty>
     </statBases>
     <building>
-      <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.15</mineableDropChance>
+      <mineableThing>PassableSlate</mineableThing>
+      <mineableDropChance>1</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>2</spawnRadius>
+    <spawnRadius>1</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
@@ -66,8 +71,13 @@
       </li>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.4</DropProbability>
+        <DropProbability>0.3</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ChunkSlate</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -89,18 +99,23 @@
     <label>Solid Slate</label>
     <description>A solid wall of slate, a fine-grained metamorphic rock formed from compacted volcanic ash or silt. Some of these naturally rectangular stones can be used for building without stonecutting.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
-      <color>(70,70,70)</color>
+      <texPath>Things/Rock/WeatheredSlate</texPath>
+      <color>(65,65,65)</color>
     </graphicData>
-    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+    <!-- The size range -->
+    <visualSizeRange>
+      <min>2.3</min>
+      <max>2.5</max>
+    </visualSizeRange>
+    <uiIconPath>Things/Rock/WeatheredSlate/WeatheredSlateA</uiIconPath>
     <statBases>
       <MaxHitPoints>1400</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-1</Beauty>
     </statBases>
     <building>
-      <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.25</mineableDropChance>
+      <mineableThing>PassableSlate</mineableThing>
+      <mineableDropChance>0.5</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -150,7 +165,12 @@
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
         <DropProbability>0.4</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>6</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ChunkSlate</ResourceDefName>
+        <DropProbability>0.2</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -246,7 +266,7 @@
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
         <DropProbability>0.4</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>6</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -327,8 +347,8 @@
       <Beauty>10</Beauty>
     </statBases>
     <building>
-      <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.25</mineableDropChance>
+      <mineableThing>PassableSlate</mineableThing>
+      <mineableDropChance>1</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -340,7 +360,7 @@
     <maxClusterProbability>0.0002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>50</minClusterSize>
-    <maxClusterSize>100</maxClusterSize>
+    <maxClusterSize>200</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.8</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -427,7 +447,7 @@
     <pathCost>20</pathCost>
     <building>
       <mineableThing>ChunkSlate</mineableThing>
-      <mineableDropChance>0.05</mineableDropChance>
+      <mineableDropChance>0.03</mineableDropChance>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -435,8 +455,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.03</minClusterProbability>
-    <maxClusterProbability>0.04</maxClusterProbability>
+    <minClusterProbability>0.1</minClusterProbability>
+    <maxClusterProbability>0.2</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>1</maxClusterSize>
@@ -450,25 +470,27 @@
       <li>WeatheredSlate</li>
       <li>SlateForest</li>
       <li>Slate_Rough</li>
-      <li>Slate</li>
+      <li>SolidSlate</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains Inherit="false">
+		</allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>WeatheredSlate</li>
       <li>SlateForest</li>
-      <li>Slate</li>
     </associatedOres>
-    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>10</maxMeshCount>
+    <maxMeshCount>12</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.3</min>
@@ -484,7 +506,7 @@
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
         <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>6</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>

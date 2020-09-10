@@ -42,10 +42,10 @@
     <perMapProbability>0.5</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <maxClusterProbability>0.005</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>3</minClusterSize>
-    <maxClusterSize>20</maxClusterSize>
+    <maxClusterSize>25</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.3</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>
@@ -77,7 +77,9 @@
       <li>SandBeachWetSalt</li>
       <li>MuddyIce</li>
       <li>RiverDeposit</li>
-      <li>Claystone_Rough</li>
+      <li>ZF_ClaystoneBase_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
+      <li>ColdSpringsWater</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -223,10 +225,10 @@
     <perMapProbability>0.5</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.1</maxClusterProbability>
+    <maxClusterProbability>0.2</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <maxClusterSize>15</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.1</initialSizeMin>
     <initialSizeMax>.95</initialSizeMax>
@@ -255,6 +257,7 @@
       <li>ZF_ClaystoneBase_Rough</li>
       <li>ZF_MudstoneBase_Rough</li>
       <li>Gravel</li>
+      <li>HotSpringsWater</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -362,11 +365,11 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.01</minClusterProbability>
+    <minClusterProbability>0.02</minClusterProbability>
     <maxClusterProbability>0.03</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>5</minClusterSize>
-    <maxClusterSize>20</maxClusterSize>
+    <maxClusterSize>30</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.3</initialSizeMin>
     <initialSizeMax>.6</initialSizeMax>
@@ -385,6 +388,7 @@
       <li>WaterOceanDeep</li>
       <li>WaterOceanShallow</li>
       <li>SaltField</li>
+      <li>HotSpringsWater</li>
     </neededNearbyTerrains>
     <!-- The terrains this can appear on.-->
     <allowedTerrains>
@@ -400,16 +404,15 @@
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
       <li>ZF_BasaltBase_Rough</li>
-      <li>Claystone_Rough</li>
+      <li>ZF_ClaystoneBase_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
       <li>Gravel</li>
-   		<li>LavaRock_RoughHewn</li>
-   		<li>LavaRock_Rough</li>
     </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MineableSalt</li>
     </associatedOres>
-    <nearAssociatedOreBonus>20</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
@@ -480,7 +483,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>Salt</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>6</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -562,7 +565,8 @@
       <li>Sandstone_Rough</li>
       <li>Slate_Rough</li>
       <li>ZF_BasaltBase_Rough</li>
-      <li>Claystone_Rough</li>
+      <li>ZF_ClaystoneBase_Rough</li>
+      <li>ZF_MudstoneBase_Rough</li>
       <li>Gravel</li>
       <li>WastelandAsphalt</li>
       <li>SaltField</li>

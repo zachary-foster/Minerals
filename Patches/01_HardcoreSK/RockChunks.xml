@@ -9,8 +9,8 @@
       <xpath>Defs/ThingDef[defName="ZF_ChunkMudstone"]/butcherProducts</xpath>
       <value>
         <butcherProducts Inherit="False">
-          <Dirt>30</Dirt>  
-          <SoftClay>10</SoftClay>  
+          <Dirt>25</Dirt>  
+          <SoftClay>12</SoftClay>  
           <SandResource>10</SandResource>  
         </butcherProducts>
       </value>
