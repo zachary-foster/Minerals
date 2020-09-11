@@ -77,7 +77,7 @@
       <mineableThing>RoughGem</mineableThing>
       <mineableDropChance>0.001</mineableDropChance>
       <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -103,9 +103,9 @@
     <spawnRadius>2</spawnRadius>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>20</maxClusterSize>
+    <maxClusterSize>30</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>.5</initialSizeMin>
+    <initialSizeMin>.4</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
@@ -150,7 +150,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>GlassBatch</ResourceDefName>
-        <DropProbability>4</DropProbability>
+        <DropProbability>3</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -233,7 +233,7 @@
     <spawnRadius>1</spawnRadius>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>25</maxClusterSize>
+    <maxClusterSize>30</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.3</initialSizeMin>
     <initialSizeMax>.8</initialSizeMax>

@@ -12,7 +12,6 @@
       <mineableThing>RoughGem</mineableThing>
       <mineableDropChance>1.0</mineableDropChance>
       <mineableYield>20</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -136,7 +135,6 @@
       <mineableThing>RoughGem</mineableThing>
       <mineableDropChance>1.0</mineableDropChance>
       <mineableYield>10</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -262,7 +260,6 @@
       <mineableThing>RoughGem</mineableThing>
       <mineableDropChance>1.0</mineableDropChance>
       <mineableYield>5</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>

@@ -42,7 +42,6 @@
       <Beauty>5</Beauty>
     </statBases>
     <selectable>true</selectable>
-    <neverMultiSelect>true</neverMultiSelect>
     <pathCost>40</pathCost>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
     <mineable>true</mineable>
@@ -144,10 +143,10 @@
       <Beauty>10</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.7</perMapProbability>
+    <perMapProbability>0.6</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.006</maxClusterProbability>
+    <maxClusterProbability>0.007</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -203,7 +202,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>2.0</DropProbability>
+        <DropProbability>3.0</DropProbability>
       </li>
     </randomlyDropResources>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
@@ -247,7 +246,7 @@
       <Beauty>4</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.5</perMapProbability>
+    <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.005</maxClusterProbability>
@@ -307,7 +306,7 @@
       <Beauty>20</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.004</maxClusterProbability>
@@ -362,7 +361,7 @@
       <Beauty>20</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.004</maxClusterProbability>
@@ -407,10 +406,10 @@
     </graphicData>
     <uiIconPath>Things/Mineral/PyriteCrystal/PyriteCrystalA</uiIconPath>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.5</perMapProbability>
+    <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.005</maxClusterProbability>
+    <maxClusterProbability>0.006</maxClusterProbability>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MineableSteel</li>
@@ -424,7 +423,7 @@
       </li>
       <li>
         <ResourceDefName>Steel</ResourceDefName>
-        <DropProbability>5</DropProbability>
+        <DropProbability>6</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -443,13 +442,13 @@
     <label>Lodestone</label>
     <description>Formations of iron(II,III) oxide, a common iron ore in sedimentary rocks. This particular one seems to be the rare magnetized variety known as lodestone.</description>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>5</maxClusterSize>
+    <maxClusterSize>10</maxClusterSize>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MagnetiteCrystal</li>
@@ -489,7 +488,7 @@
     </graphicData>
     <uiIconPath>Things/Mineral/PyriteCrystal/PyriteCrystalA</uiIconPath>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.4</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.004</maxClusterProbability>
@@ -732,7 +731,7 @@
     <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>7</maxClusterSize>
+    <maxClusterSize>10</maxClusterSize>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MineableUranium</li>
@@ -782,13 +781,13 @@
       <Beauty>15</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.4</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>3</maxClusterSize>
+    <minClusterSize>2</minClusterSize>
+    <maxClusterSize>10</maxClusterSize>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MineableSilver</li>
@@ -807,7 +806,7 @@
       </li>
       <li>
         <ResourceDefName>Copper</ResourceDefName>
-        <DropProbability>6</DropProbability>
+        <DropProbability>5</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>

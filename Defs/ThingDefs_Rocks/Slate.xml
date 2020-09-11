@@ -71,8 +71,8 @@
       </li>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <DropProbability>0.2</DropProbability>
+        <CountPerDrop>6</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>ChunkSlate</ResourceDefName>
@@ -164,7 +164,7 @@
       </li>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.4</DropProbability>
+        <DropProbability>0.3</DropProbability>
         <CountPerDrop>6</CountPerDrop>
       </li>
       <li>
@@ -265,7 +265,7 @@
       </li>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.4</DropProbability>
+        <DropProbability>0.3</DropProbability>
         <CountPerDrop>6</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -411,7 +411,7 @@
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
         <DropProbability>0.5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>6</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -477,7 +477,7 @@
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- The terrains this can appear on. The default is rocky terrains-->
-		<allowedTerrains Inherit="false">
+		<allowedTerrains Inherit="False">
 		</allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>

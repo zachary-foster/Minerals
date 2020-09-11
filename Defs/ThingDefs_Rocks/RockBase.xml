@@ -14,7 +14,6 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
-    <neverMultiSelect>true</neverMultiSelect>
     <rotatable>true</rotatable>
     <saveCompressible>true</saveCompressible>
     <holdsRoof>true</holdsRoof>
@@ -203,7 +202,6 @@
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
     <altitudeLayer>SmallWire</altitudeLayer>
-    <neverMultiSelect>true</neverMultiSelect>
     <building>
       <mineableYield>1</mineableYield>
     </building>

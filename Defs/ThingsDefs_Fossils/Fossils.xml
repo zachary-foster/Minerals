@@ -27,7 +27,7 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>SmallFossil</mineableThing>
       <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
@@ -125,7 +125,7 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>SmallFossil</mineableThing>
       <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
@@ -279,7 +279,7 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>SmallFossil</mineableThing>
       <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+      <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
     </building>
