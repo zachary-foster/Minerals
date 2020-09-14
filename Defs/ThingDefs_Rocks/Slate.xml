@@ -440,7 +440,7 @@
     <uiIconPath>Things/Rock/PassableSlate/PassableSlateA</uiIconPath>
     <fillPercent>0.1</fillPercent>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
+      <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -505,7 +505,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>1.2</DropProbability>
         <CountPerDrop>6</CountPerDrop>
       </li>
       <li>
