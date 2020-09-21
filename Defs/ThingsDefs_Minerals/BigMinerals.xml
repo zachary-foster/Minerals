@@ -72,7 +72,7 @@
     <!-- The minmum propotion of things in radius to replace for a replacement to happen -->
     <repalceThreshold>0.4</repalceThreshold>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
-    <otherSettlementMiningRadius>20</otherSettlementMiningRadius>
+    <otherSettlementMiningRadius>25</otherSettlementMiningRadius>
   </ThingDef>
       
       
@@ -201,7 +201,7 @@
     <!-- The minmum propotion of things in radius to replace for a replacement to happen -->
     <repalceThreshold>0.6</repalceThreshold>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
-    <otherSettlementMiningRadius>15</otherSettlementMiningRadius>
+    <otherSettlementMiningRadius>20</otherSettlementMiningRadius>
   </ThingDef>
       
       

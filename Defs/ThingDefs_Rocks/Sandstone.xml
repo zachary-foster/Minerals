@@ -56,14 +56,14 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
@@ -143,14 +143,14 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
@@ -245,14 +245,14 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
@@ -304,14 +304,14 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
@@ -409,14 +409,14 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
@@ -521,14 +521,9 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
@@ -622,14 +617,9 @@
         <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>FlintShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>

@@ -457,10 +457,10 @@ namespace Minerals
     {
         private float rainfallToRain(float rainfall)
         {
-            float rainProxy = rainfall / 3000f;
-            if (rainProxy > 2f)
+            float rainProxy = rainfall / 1500f;
+            if (rainProxy > 3f)
             {
-                rainProxy = 2f;
+                rainProxy = 3f;
             }
             return rainProxy;
         }
@@ -494,7 +494,7 @@ namespace Minerals
         }
         public override float growthRateFactorMapMean(Map aMap)
         {
-            return (growthRateFactor(valueAtMapMean(aMap) * 0.5f) + growthRateFactor(valueAtMapMean(aMap) * 1.5f)) / 2f;
+            return (growthRateFactor(valueAtMapMean(aMap) * 0.5f) + growthRateFactor(valueAtMapMean(aMap) * 1.5f) + growthRateFactor(valueAtMapMean(aMap))) / 3f;
         }
 
     }

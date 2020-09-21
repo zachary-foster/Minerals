@@ -33,7 +33,7 @@
       <mineableThing>RoughGem</mineableThing>
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
-      <mineableNonMinedEfficiency>0.3</mineableNonMinedEfficiency>
+      <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>

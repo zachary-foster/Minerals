@@ -104,6 +104,16 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -192,6 +202,16 @@
     <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
+      <li>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.06</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.04</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
@@ -290,6 +310,16 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.08</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -344,6 +374,16 @@
     </building>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
+      <li>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.08</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
@@ -482,6 +522,16 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>10</CountPerDrop>
@@ -551,8 +601,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.7</minClusterProbability>
-    <maxClusterProbability>1</maxClusterProbability>
+    <minClusterProbability>0.6</minClusterProbability>
+    <maxClusterProbability>0.8</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>1</maxClusterSize>
@@ -613,6 +663,11 @@
     <visualSizeVariation>0.1</visualSizeVariation>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
+      <li>
+        <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.03</DropProbability>

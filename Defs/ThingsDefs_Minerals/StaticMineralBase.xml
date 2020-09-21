@@ -100,10 +100,10 @@
     <pathCost>40</pathCost>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>2</spawnRadius>
+    <spawnRadius>5</spawnRadius>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>30</maxClusterSize>
+    <minClusterSize>5</minClusterSize>
+    <maxClusterSize>50</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.4</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -116,14 +116,27 @@
       <li>MineableGold</li>
       <li>WeatheredOreGold</li>
       <li>SolidOreGold</li>
+			<li>QuartzCrystal</li>
+			<li>AmethystCrystal</li>
     </associatedOres>
+    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- The terrains this can appear on. The default is rocky terrains-->
     <allowedTerrains>
       <li>Marble_Rough</li>
       <li>ZF_BasaltBase_Rough</li>
       <li>Granite_Rough</li>
     </allowedTerrains>
-    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <neededNearbyTerrains>
+			<li>SolidGranite</li>
+			<li>SolidMarble</li>
+			<li>SolidBasalt</li>
+			<li>HewnGranite</li>
+			<li>HewnMarble</li>
+			<li>HewnBasalt</li>
+    </neededNearbyTerrains>
+    <!-- how far away it can be from needed nearby terrains-->
+    <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
     <!-- Roof requirements -->
     <mustBeUnderRoof>true</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -232,7 +245,7 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
+    <minClusterSize>3</minClusterSize>
     <maxClusterSize>30</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.3</initialSizeMin>
@@ -290,10 +303,10 @@
     </statBases>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>5</spawnRadius>
+    <spawnRadius>8</spawnRadius>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <minClusterSize>2</minClusterSize>
+    <maxClusterSize>20</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.6</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>
@@ -340,10 +353,10 @@
     </statBases>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>5</spawnRadius>
+    <spawnRadius>8</spawnRadius>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <minClusterSize>3</minClusterSize>
+    <maxClusterSize>30</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.6</initialSizeMin>
     <initialSizeMax>.9</initialSizeMax>

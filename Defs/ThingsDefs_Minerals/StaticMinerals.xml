@@ -146,7 +146,7 @@
     <perMapProbability>0.6</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.007</maxClusterProbability>
+    <maxClusterProbability>0.008</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -197,7 +197,7 @@
     <perMapProbability>0.3</perMapProbability>
     <!-- For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.004</maxClusterProbability>
+    <maxClusterProbability>0.005</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -652,15 +652,15 @@
     </statBases>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>7</spawnRadius>
+    <spawnRadius>6</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>15</maxClusterSize>
+    <minClusterSize>2</minClusterSize>
+    <maxClusterSize>25</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.2</initialSizeMin>
     <initialSizeMax>.7</initialSizeMax>
