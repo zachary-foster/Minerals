@@ -58,6 +58,11 @@
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>Jade</ResourceDefName>
+        <DropProbability>0.015</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -84,7 +89,7 @@
     <statBases>
       <MaxHitPoints>1700</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <building>
       <mineableThing>ChunkMarble</mineableThing>
@@ -129,6 +134,16 @@
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
+        <DropProbability>0.015</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Jade</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -156,7 +171,7 @@
     <statBases>
       <MaxHitPoints>1800</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>1</Beauty>
     </statBases>
     <building>
       <mineableThing>ChunkMarble</mineableThing>
@@ -214,6 +229,16 @@
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Jade</ResourceDefName>
+        <DropProbability>0.025</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -240,7 +265,7 @@
     <statBases>
       <MaxHitPoints>1700</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>2</Beauty>
+      <Beauty>3</Beauty>
     </statBases>
     <building>
       <mineableThing>ChunkMarble</mineableThing>
@@ -256,6 +281,16 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Jade</ResourceDefName>
+        <DropProbability>0.025</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -348,6 +383,11 @@
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>Jade</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
+      </li>
     </randomlyDropResources>
     
     <!-- Things this mineral replaces when a map is initialized -->
@@ -381,7 +421,7 @@
     <statBases>
       <MaxHitPoints>700</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
+      <Beauty>1</Beauty>
     </statBases>
     <pathCost>20</pathCost>
     <building>
@@ -449,6 +489,11 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Jade</ResourceDefName>
+        <DropProbability>0.005</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
       </li>
     </randomlyDropResources>
 

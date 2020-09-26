@@ -85,6 +85,11 @@
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -158,6 +163,11 @@
       <li>
         <ResourceDefName>ZF_ChunkObsidian</ResourceDefName>
         <DropProbability>0.04</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -255,6 +265,11 @@
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -306,6 +321,11 @@
       <li>
         <ResourceDefName>ZF_ChunkObsidian</ResourceDefName>
         <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
@@ -400,6 +420,11 @@
       <li>
         <ResourceDefName>ZF_ChunkObsidian</ResourceDefName>
         <DropProbability>0.1</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>

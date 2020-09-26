@@ -151,6 +151,11 @@
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -249,6 +254,11 @@
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
+        <DropProbability>0.015</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -301,6 +311,11 @@
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
+        <DropProbability>0.015</DropProbability>
         <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>

@@ -58,6 +58,11 @@
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -128,6 +133,11 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+        <DropProbability>0.015</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -213,6 +223,11 @@
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -255,6 +270,11 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->

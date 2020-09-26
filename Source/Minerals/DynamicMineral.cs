@@ -759,7 +759,7 @@ namespace Minerals
                     // Try to spawn at that location
                     //Log.Message("Trying to spawn " + mineralType.defName);
                     //mineralType.TrySpawnAt(aPos, map, 0.01f);
-                    mineralType.SpawnCluster(map, aPos, Rand.Range(0.01f, 0.05f), Rand.Range(mineralType.minSpawnClusterSize, mineralType.maxSpawnClusterSize));
+                    mineralType.TrySpawnCluster(map, aPos, Rand.Range(0.01f, 0.05f), Rand.Range(mineralType.minSpawnClusterSize, mineralType.maxSpawnClusterSize));
 
                 }
 

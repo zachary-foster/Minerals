@@ -917,11 +917,22 @@ namespace Minerals
         }
 
 
-        public virtual StaticMineral SpawnCluster(Map map, IntVec3 position, float size, int clusterCount)
+        public virtual StaticMineral TrySpawnCluster(Map map, IntVec3 position, float size, int clusterCount)
         {
             StaticMineral mineral = TrySpawnAt(position, map, size);
             if (mineral != null)
-            {             
+            {
+                GrowCluster(map, mineral, clusterCount);
+
+            }
+            return mineral;
+        }
+
+        public virtual StaticMineral SpawnCluster(Map map, IntVec3 position, float size, int clusterCount)
+        {
+            StaticMineral mineral = SpawnAt(map, position, size);
+            if (mineral != null)
+            {
                 GrowCluster(map, mineral, clusterCount);
 
             }
@@ -970,7 +981,7 @@ namespace Minerals
         // ======= Spawning conditions ======= //
 
 
-        public virtual bool CanSpawnAt(Map map, IntVec3 position)
+        public virtual bool CanSpawnAt(Map map, IntVec3 position, bool initialSpawn = false)
         {
             //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: checking for " + defName + " at " + position, true);
 
@@ -996,7 +1007,7 @@ namespace Minerals
             //if (defName == "BigColdstoneCrystal") Log.Message("CanSpawnAt: terrain is ok " + position, true);
 
             // Look for stuff in the way
-            if (PlaceIsBlocked(map, position))
+            if (PlaceIsBlocked(map, position, initialSpawn))
             {
                 return false;
             }
@@ -1019,7 +1030,7 @@ namespace Minerals
             return true;
         }
 
-        public virtual bool PlaceIsBlocked(Map map, IntVec3 position)
+        public virtual bool PlaceIsBlocked(Map map, IntVec3 position, bool initialSpawn)
         {
             if (ThingToReplaceAtPos(map, position) != null)
             {
@@ -1484,7 +1495,7 @@ namespace Minerals
                     }
 
                     // Randomly spawn some clusters
-                    if (Rand.Range(0f, 1f) < spawnProbability && CanSpawnAt(map, current))
+                    if (Rand.Range(0f, 1f) < spawnProbability && CanSpawnAt(map, current, true))
                     {
                         SpawnCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax) * sizeScaling, Rand.Range(minClusterSize, maxClusterSize));
                     }
@@ -1496,14 +1507,14 @@ namespace Minerals
                         if (Rand.Range(0f, 1f) < spawnProbability * nearAssociatedOreBonus)
                         {
 
-                            if (CanSpawnAt(map, current))
+                            if (CanSpawnAt(map, current, true))
                             {
                                 SpawnCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax) * sizeScaling, Rand.Range(minClusterSize, maxClusterSize));
                             } else {
                                 IntVec3 dest;
                                 if (current.InBounds(map) && TryFindReproductionDestination(map, current, out dest))
                                 {
-                                    SpawnCluster(map, dest, Rand.Range(initialSizeMin, initialSizeMax) * sizeScaling, Rand.Range(minClusterSize, maxClusterSize));
+                                    TrySpawnCluster(map, dest, Rand.Range(initialSizeMin, initialSizeMax) * sizeScaling, Rand.Range(minClusterSize, maxClusterSize));
                                 }
                             }
                         }

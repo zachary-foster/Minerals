@@ -98,7 +98,7 @@ namespace Minerals
             {
                 return false;
             }
-            Thing thing = typeToSpawn.SpawnCluster(map, rootPos, Rand.Range(typeToSpawn.initialSizeMin, typeToSpawn.initialSizeMax), Rand.Range(typeToSpawn.minClusterSize, typeToSpawn.maxClusterSize));
+            Thing thing = typeToSpawn.TrySpawnCluster(map, rootPos, Rand.Range(typeToSpawn.initialSizeMin, typeToSpawn.initialSizeMax), Rand.Range(typeToSpawn.minClusterSize, typeToSpawn.maxClusterSize));
             if (thing == null)
             {
                 return false;

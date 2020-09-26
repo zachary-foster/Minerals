@@ -162,6 +162,11 @@
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
+        <DropProbability>0.005</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -264,6 +269,11 @@
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
+      <li>
+        <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -322,6 +332,11 @@
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -474,7 +489,7 @@
     <maxClusterProbability>0.04</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>5</maxClusterSize>
+    <maxClusterSize>3</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>.6</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>

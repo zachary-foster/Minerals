@@ -114,14 +114,14 @@
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.07</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Peat</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
@@ -213,14 +213,14 @@
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.07</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Peat</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
@@ -320,14 +320,14 @@
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.07</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Peat</ResourceDefName>
+        <DropProbability>0.15</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
@@ -385,14 +385,14 @@
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.07</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Peat</ResourceDefName>
+        <DropProbability>0.15</DropProbability>
+        <CountPerDrop>15</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
@@ -532,11 +532,6 @@
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.04</DropProbability>
         <CountPerDrop>1</CountPerDrop>
@@ -667,11 +662,6 @@
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
