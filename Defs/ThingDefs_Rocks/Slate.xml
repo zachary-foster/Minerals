@@ -18,7 +18,7 @@
     <statBases>
       <MaxHitPoints>1200</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>3</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <building>
       <mineableThing>PassableSlate</mineableThing>
@@ -116,7 +116,7 @@
     <statBases>
       <MaxHitPoints>1400</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>-1</Beauty>
+      <Beauty>1</Beauty>
     </statBases>
     <building>
       <mineableThing>PassableSlate</mineableThing>

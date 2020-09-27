@@ -116,8 +116,6 @@
       <li>MineableGold</li>
       <li>WeatheredOreGold</li>
       <li>SolidOreGold</li>
-			<li>QuartzCrystal</li>
-			<li>AmethystCrystal</li>
     </associatedOres>
     <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- The terrains this can appear on. The default is rocky terrains-->
@@ -136,7 +134,7 @@
 			<li>HewnBasalt</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>1.5</neededNearbyTerrainRadius>
     <!-- Roof requirements -->
     <mustBeUnderRoof>true</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>

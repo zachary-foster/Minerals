@@ -608,14 +608,11 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            if (DebugSettings.godMode)
+            stringBuilder.AppendLine("Size: " + size.ToStringPercent());
+            float propSubmerged = 1 - submersibleFactor();
+            if (propSubmerged > 0)
             {
-                stringBuilder.AppendLine("Size: " + size.ToStringPercent());
-                float propSubmerged = 1 - submersibleFactor();
-                if (propSubmerged > 0)
-                {
-                    stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
-                }
+                stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
             }
             return stringBuilder.ToString().TrimEndNewlines();
         }
@@ -1453,6 +1450,10 @@ namespace Minerals
             return output;
         }
 
+        public virtual void SpawnInitialCluster(Map map, IntVec3 position, float size, int count)
+        {
+            SpawnCluster(map, position, size, count);
+        }
 
 
         public virtual void InitialSpawn(Map map, float abundScaling = 1f, float sizeScaling = 1f)
@@ -1497,7 +1498,7 @@ namespace Minerals
                     // Randomly spawn some clusters
                     if (Rand.Range(0f, 1f) < spawnProbability && CanSpawnAt(map, current, true))
                     {
-                        SpawnCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax) * sizeScaling, Rand.Range(minClusterSize, maxClusterSize));
+                        SpawnInitialCluster(map, current, Rand.Range(initialSizeMin, initialSizeMax) * sizeScaling, Rand.Range(minClusterSize, maxClusterSize));
                     }
 
                     // Spawn near their assocaited ore

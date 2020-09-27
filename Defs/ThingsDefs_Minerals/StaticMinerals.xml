@@ -39,7 +39,7 @@
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>5</Beauty>
+      <Beauty>8</Beauty>
     </statBases>
     <selectable>true</selectable>
     <pathCost>40</pathCost>
@@ -51,8 +51,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.6</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.007</maxClusterProbability>
+    <minClusterProbability>0.002</minClusterProbability>
+    <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>40</maxClusterSize>
@@ -140,13 +140,13 @@
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>10</Beauty>
+      <Beauty>12</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.6</perMapProbability>
+    <perMapProbability>0.7</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.008</maxClusterProbability>
+    <minClusterProbability>0.003</minClusterProbability>
+    <maxClusterProbability>0.01</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -191,13 +191,13 @@
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>15</Beauty>
+      <Beauty>18</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.25</perMapProbability>
     <!-- For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.005</maxClusterProbability>
+    <minClusterProbability>0.002</minClusterProbability>
+    <maxClusterProbability>0.006</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -243,13 +243,13 @@
     <statBases>
       <MaxHitPoints>700</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>4</Beauty>
+      <Beauty>5</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.4</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.005</maxClusterProbability>
+    <minClusterProbability>0.002</minClusterProbability>
+    <maxClusterProbability>0.006</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -306,9 +306,9 @@
       <Beauty>20</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.15</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
     <maxClusterProbability>0.004</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
@@ -361,9 +361,9 @@
       <Beauty>20</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.2</perMapProbability>
+    <perMapProbability>0.1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
     <maxClusterProbability>0.004</maxClusterProbability>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>10</maxMeshCount>
@@ -408,7 +408,7 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
+    <minClusterProbability>0.002</minClusterProbability>
     <maxClusterProbability>0.006</maxClusterProbability>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
@@ -444,8 +444,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>10</maxClusterSize>
@@ -488,10 +488,10 @@
     </graphicData>
     <uiIconPath>Things/Mineral/PyriteCrystal/PyriteCrystalA</uiIconPath>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.25</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.004</maxClusterProbability>
+    <minClusterProbability>0.002</minClusterProbability>
+    <maxClusterProbability>0.008</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>20</maxClusterSize>
@@ -548,10 +548,10 @@
       </damageData>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -582,10 +582,10 @@
       </damageData>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -616,9 +616,9 @@
       </damageData>
     </graphicData>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
     <maxClusterProbability>0.003</maxClusterProbability>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
@@ -656,8 +656,8 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0.1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.002</maxClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
+    <maxClusterProbability>0.003</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>2</minClusterSize>
     <maxClusterSize>25</maxClusterSize>
@@ -725,10 +725,10 @@
       </li>
     </comps>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.25</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
+    <maxClusterProbability>0.004</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>10</maxClusterSize>
@@ -781,10 +781,10 @@
       <Beauty>15</Beauty>
     </statBases>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.3</perMapProbability>
+    <perMapProbability>0.2</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0.003</maxClusterProbability>
+    <minClusterProbability>0.001</minClusterProbability>
+    <maxClusterProbability>0.004</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>2</minClusterSize>
     <maxClusterSize>10</maxClusterSize>

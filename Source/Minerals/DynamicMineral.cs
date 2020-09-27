@@ -90,15 +90,15 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine("Size: " + size.ToStringPercent());
+            stringBuilder.AppendLine("Growth rate: " + GrowthRate.ToStringPercent());
+            float propSubmerged = 1 - submersibleFactor();
+            if (propSubmerged > 0)
+            {
+                stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
+            }
             if (DebugSettings.godMode)
             {
-                stringBuilder.AppendLine("Size: " + size.ToStringPercent());
-                stringBuilder.AppendLine("Growth rate: " + GrowthRate.ToStringPercent());
-                float propSubmerged = 1 - submersibleFactor();
-                if (propSubmerged > 0)
-                {
-                    stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
-                }
                 foreach (growthRateModifier mod in attributes.allRateModifiers)
                 {
                     stringBuilder.AppendLine(mod.GetType().Name + ": " + mod.growthRateFactorAtPos(this));
@@ -325,6 +325,10 @@ namespace Minerals
             return 1f;
         }
 
+        public override void SpawnInitialCluster(Map map, IntVec3 position, float size, int count)
+        {
+            base.SpawnInitialCluster(map, position, size, count);
+        }
 
     }
 
@@ -457,7 +461,7 @@ namespace Minerals
     {
         private float rainfallToRain(float rainfall)
         {
-            float rainProxy = rainfall / 1500f;
+            float rainProxy = rainfall / 1000f;
             if (rainProxy > 3f)
             {
                 rainProxy = 3f;

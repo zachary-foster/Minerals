@@ -17,4 +17,12 @@
     <iconPath>UI/Icons/ThingCategories/StoneChunks</iconPath>
   </ThingCategoryDef>
 
+  <ThingCategoryDef>
+    <defName>UltraHardStoneChunks</defName>
+    <label>Ultra Hard Stone Chunks</label>
+    <parent>Chunks</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/StoneChunks</iconPath>
+  </ThingCategoryDef>
+
 </Defs>
