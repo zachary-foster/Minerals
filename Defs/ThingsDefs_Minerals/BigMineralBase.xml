@@ -57,6 +57,8 @@
     <!-- If it must replace something in order to spawned -->
     <mustReplace>true</mustReplace>
     <hideAtSnowDepth>2</hideAtSnowDepth>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.3</mineSpeedFactor>
   </ThingDef>
   
   <ThingDef Name="BigMineralTrophyBase" ParentName="BuildingBase" Class="Minerals.ThingDef_BigMineralTrophy" Abstract="True">

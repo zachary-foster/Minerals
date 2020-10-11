@@ -75,8 +75,8 @@
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
       <mineableThing>RoughGem</mineableThing>
-      <mineableDropChance>0.001</mineableDropChance>
-      <mineableYield>1</mineableYield>
+      <mineableDropChance>0</mineableDropChance>
+      <mineableYield>0</mineableYield>
       <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
@@ -91,6 +91,8 @@
     <otherSettlementMiningRadius>0</otherSettlementMiningRadius>
     <!--  If the mean size of minerals spawned at map generation is scaled by the relative abundance in that map -->
     <sizeScaledByAbundance>false</sizeScaledByAbundance>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1</mineSpeedFactor>
   </ThingDef>
   
   <ThingDef Name="QuartzBase" ParentName="StaticMineralBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">

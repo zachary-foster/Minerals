@@ -39,7 +39,7 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.5</perMapProbability>
+    <perMapProbability>0.4</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.005</maxClusterProbability>
@@ -176,9 +176,9 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>3</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
+        <ResourceDefName>Coldstone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -222,7 +222,7 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0.5</perMapProbability>
+    <perMapProbability>0.3</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.2</maxClusterProbability>
@@ -322,9 +322,9 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>8</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
+        <ResourceDefName>Glowstone</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -335,7 +335,7 @@
     <!-- If graphic overlapping with nearby wall textures are rotated -->
     <growsUpWalls>true</growsUpWalls>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
-    <otherSettlementMiningRadius>8</otherSettlementMiningRadius>
+    <otherSettlementMiningRadius>12</otherSettlementMiningRadius>
   </ThingDef>
 
 
@@ -499,7 +499,7 @@
     <!-- If graphic overlapping with nearby wall textures are rotated -->
     <growsUpWalls>true</growsUpWalls>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
-    <otherSettlementMiningRadius>0</otherSettlementMiningRadius>
+    <otherSettlementMiningRadius>3</otherSettlementMiningRadius>
   </ThingDef>
   
   

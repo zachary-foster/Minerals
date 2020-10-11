@@ -53,6 +53,7 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
@@ -68,6 +69,7 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>10</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -80,6 +82,8 @@
       <li>wall</li>
       <li>weathered</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.0</mineSpeedFactor>
   </ThingDef>
 
   
@@ -135,6 +139,7 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
@@ -150,11 +155,13 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>10</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
         <DropProbability>0.01</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -162,14 +169,14 @@
       <li>Limestone</li>
       <li>HewnLimestone</li>
     </ThingsToReplace>
-    
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
       <li>solid</li>
     </tags>
-    
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.0</mineSpeedFactor>
   </ThingDef>
   
 
@@ -238,6 +245,7 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
@@ -253,11 +261,13 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>10</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
         <DropProbability>0.015</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -270,6 +280,8 @@
       <li>wall</li>
       <li>hewn</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.9</mineSpeedFactor>
   </ThingDef>
 
 
@@ -297,6 +309,7 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
@@ -312,11 +325,13 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>10</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
         <DropProbability>0.015</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -325,6 +340,8 @@
       <li>wall</li>
       <li>hewn</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.9</mineSpeedFactor>
   </ThingDef>
 
 
@@ -405,6 +422,7 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
@@ -420,6 +438,7 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>10</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -433,6 +452,8 @@
       <li>boulder</li>
       <li>chunk_replacer</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.0</mineSpeedFactor>
   </ThingDef>
 
 
@@ -515,6 +536,7 @@
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
@@ -525,9 +547,11 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>10</MinMiningSkill>
       </li>
     </randomlyDropResources>
-    
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.5</mineSpeedFactor>
   </ThingDef>
   
 

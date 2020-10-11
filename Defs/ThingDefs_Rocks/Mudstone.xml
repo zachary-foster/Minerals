@@ -117,21 +117,25 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.07</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>6</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Peat</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>15</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
         <DropProbability>0.5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -144,6 +148,8 @@
       <li>wall</li>
       <li>weathered</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.2</mineSpeedFactor>
   </ThingDef>
   
   
@@ -216,21 +222,25 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.07</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>6</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Peat</ResourceDefName>
         <DropProbability>0.1</DropProbability>
         <CountPerDrop>15</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
         <DropProbability>0.6</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -245,6 +255,8 @@
       <li>wall</li>
       <li>solid</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.2</mineSpeedFactor>
   </ThingDef>
 
   
@@ -323,21 +335,25 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.07</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>6</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Peat</ResourceDefName>
         <DropProbability>0.15</DropProbability>
         <CountPerDrop>15</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
         <DropProbability>0.7</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.25</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -351,6 +367,8 @@
       <li>wall</li>
       <li>hewn</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.1</mineSpeedFactor>
   </ThingDef>
   
   
@@ -388,21 +406,25 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.07</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>6</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Peat</ResourceDefName>
         <DropProbability>0.15</DropProbability>
         <CountPerDrop>15</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
         <DropProbability>0.7</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -411,6 +433,8 @@
       <li>wall</li>
       <li>hewn</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.1</mineSpeedFactor>
   </ThingDef>
   
   
@@ -535,16 +559,19 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.04</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>6</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
         <DropProbability>0.5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -557,6 +584,8 @@
       <li>boulder</li>
       <li>chunk_replacer</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.2</mineSpeedFactor>
   </ThingDef>
   
   
@@ -582,7 +611,7 @@
     <uiIconPath>Things/Rock/SandPile/SandPileA</uiIconPath>
     <fillPercent>0.3</fillPercent>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
+      <MaxHitPoints>600</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -667,18 +696,23 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.04</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>6</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Dirt</ResourceDefName>
         <DropProbability>0.7</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.5</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
     </randomlyDropResources>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.6</mineSpeedFactor>
   </ThingDef>
 
 </Defs>

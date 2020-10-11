@@ -52,11 +52,13 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.04</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>Jade</ResourceDefName>
@@ -74,6 +76,8 @@
       <li>wall</li>
       <li>weathered</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.9</mineSpeedFactor>
   </ThingDef>
   
   
@@ -128,16 +132,19 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.04</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
         <DropProbability>0.015</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Jade</ResourceDefName>
@@ -156,6 +163,8 @@
       <li>wall</li>
       <li>solid</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.9</mineSpeedFactor>
   </ThingDef>
   
 
@@ -223,16 +232,19 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.04</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Jade</ResourceDefName>
@@ -250,6 +262,8 @@
       <li>wall</li>
       <li>hewn</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.8</mineSpeedFactor>
   </ThingDef>
  
   
@@ -276,16 +290,19 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.04</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>2</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
         <DropProbability>0.02</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Jade</ResourceDefName>
@@ -299,6 +316,8 @@
       <li>wall</li>
       <li>hewn</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.8</mineSpeedFactor>
   </ThingDef>
 
   
@@ -377,11 +396,13 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.03</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>Jade</ResourceDefName>
@@ -401,7 +422,8 @@
       <li>boulder</li>
       <li>chunk_replacer</li>
     </tags>
-
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.9</mineSpeedFactor>
   </ThingDef>
   
 
@@ -419,7 +441,7 @@
     <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
     <fillPercent>0.3</fillPercent>
     <statBases>
-      <MaxHitPoints>700</MaxHitPoints>
+      <MaxHitPoints>800</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>1</Beauty>
     </statBases>
@@ -484,11 +506,13 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>0.02</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>CrushedStone</ResourceDefName>
         <DropProbability>1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
       </li>
       <li>
         <ResourceDefName>Jade</ResourceDefName>
@@ -496,7 +520,8 @@
         <CountPerDrop>15</CountPerDrop>
       </li>
     </randomlyDropResources>
-
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.5</mineSpeedFactor>
   </ThingDef>
   
   

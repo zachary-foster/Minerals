@@ -15,7 +15,7 @@
     <altitudeLayer>Floor</altitudeLayer>
     <fillPercent>0.01</fillPercent>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>10</Beauty>
     </statBases>
@@ -77,6 +77,7 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>1.0</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- If the primary color is based on the stone below it -->
@@ -89,6 +90,8 @@
     <hideAtSnowDepth>0.4</hideAtSnowDepth>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
     <otherSettlementMiningRadius>3</otherSettlementMiningRadius>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.2</mineSpeedFactor>
   </ThingDef>
 
 
@@ -113,7 +116,7 @@
     <fillPercent>0.01</fillPercent>
     <passability>Standable</passability>
     <statBases>
-      <MaxHitPoints>2000</MaxHitPoints>
+      <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>20</Beauty>
     </statBases>
@@ -173,8 +176,9 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>2.0</DropProbability>
+        <DropProbability>3.0</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- If the primary color is based on the stone below it -->
@@ -201,6 +205,8 @@
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
     <otherSettlementMiningRadius>5</otherSettlementMiningRadius>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.1</mineSpeedFactor>
   </ThingDef>
 
 
@@ -266,7 +272,7 @@
     <fillPercent>0.01</fillPercent>
     <passability>Standable</passability>
     <statBases>
-      <MaxHitPoints>4000</MaxHitPoints>
+      <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>50</Beauty>
     </statBases>
@@ -327,8 +333,9 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>4.0</DropProbability>
+        <DropProbability>5.0</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- If the primary color is based on the stone below it -->
@@ -355,6 +362,8 @@
     <hideAtSnowDepth>0.7</hideAtSnowDepth>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
     <otherSettlementMiningRadius>10</otherSettlementMiningRadius>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.05</mineSpeedFactor>
   </ThingDef>
   
 

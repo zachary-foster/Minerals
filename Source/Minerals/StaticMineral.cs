@@ -125,43 +125,79 @@ namespace Minerals
         public virtual void incPctYeild(float amount, Pawn miner)
         {
             // Increase yeild for when it is destroyed
-            yieldPct += (float)Mathf.Min(amount, HitPoints) / (float)MaxHitPoints * miner.GetStatValue(StatDefOf.MiningYield, true);
+            float minerYield = miner.GetStatValue(StatDefOf.MiningYield, true);
+            int minerSkill = miner.skills.GetSkill(SkillDefOf.Mining).Level;
+            float proportionDamaged = (float) Mathf.Min(amount, HitPoints) / (float) MaxHitPoints;
+            float proportionMined = proportionDamaged * minerYield;
+            yieldPct += proportionMined;
+            //yieldPct = 0f;
 
             // Drop resources
             foreach (RandomResourceDrop toDrop in attributes.randomlyDropResources)
             {
-                float dropChance = size * toDrop.DropProbability * ((float) Math.Min(amount, HitPoints) / (float) MaxHitPoints) * miner.GetStatValue(StatDefOf.MiningYield, true) * MineralsMain.Settings.resourceDropFreqSetting;
-                if (Rand.Range(0f, 1f) < dropChance)
+                // Check that resource is available
+                ThingDef myThingDef = DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName, false);
+                if (myThingDef == null)
                 {
-                    ThingDef myThingDef = DefDatabase<ThingDef>.GetNamed(toDrop.ResourceDefName, false);
-                    if (myThingDef != null)
-                    {
-                        int dropNum = (int) Math.Round(toDrop.CountPerDrop * MineralsMain.Settings.resourceDropAmountSetting);
-                        if (dropNum >= 1)
-                        {
-                            Thing thing = ThingMaker.MakeThing(myThingDef, null);
-                            thing.stackCount = dropNum;
-                            GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
-                        }
-                   }
-
+                    continue;
                 }
 
-            }
+                // Check that minimum skill is enough
+                if (minerSkill < toDrop.MinMiningSkill)
+                {
+                    continue;
+                }
 
+                // Find drop chance for this resource
+                float dropChance = size * toDrop.DropProbability * MineralsMain.Settings.resourceDropFreqSetting;
+                if (toDrop.ScaleYieldBySkill)
+                {
+                    if (toDrop.WasteProduct)
+                    {
+                        dropChance *= proportionDamaged / minerYield;
+                    } else
+                    {
+                        dropChance *= proportionMined;
+                    }
+                } else
+                {
+                    dropChance *= proportionDamaged;
+                }
+                if (dropChance < 1)
+                {
+                    if (Rand.Range(0f, 1f) > dropChance)
+                    {
+                        continue;
+                    } else
+                    {
+                        dropChance = 1f;
+                    }
+                }
+
+                // Drop resource
+                int dropNum = (int)Math.Round(toDrop.CountPerDrop * MineralsMain.Settings.resourceDropAmountSetting * dropChance);
+                if (dropNum >= 1)
+                {
+                    Thing thing = ThingMaker.MakeThing(myThingDef, null);
+                    thing.stackCount = dropNum;
+                    GenPlace.TryPlaceThing(thing, Position, Map, ThingPlaceMode.Near, null);
+                }
+            }
         }
 
+        public virtual float miningSpeedFactor()
+        {
+           return attributes.mineSpeedFactor * MineralsMain.Settings.miningEffortSetting / size;
+        }
 
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
-
             if (def.building.mineableThing != null && def.building.mineableYieldWasteable && dinfo.Def == DamageDefOf.Mining && dinfo.Instigator != null && dinfo.Instigator is Pawn)
             {
+                dinfo.SetAmount(dinfo.Amount * miningSpeedFactor());
                 incPctYeild(dinfo.Amount, (Pawn)dinfo.Instigator);
             }
-
             base.PreApplyDamage(ref dinfo, out absorbed);
-
         }
 
             
@@ -605,15 +641,65 @@ namespace Minerals
         }
 
 
+        public virtual string ResourceDropList()
+        {
+            List<DropInfo> parts = new List<DropInfo> { };
+
+            // Add thing dropped on destruction first
+            if (attributes.building.mineableDropChance > 0 && attributes.building.mineableYield > 0 && attributes.building.mineableThing != null)
+            {
+                DropInfo lastDrop = new DropInfo();
+                lastDrop.amount = attributes.building.mineableDropChance * attributes.building.mineableYield;
+                lastDrop.output = lastDrop.amount.ToString() + " " + attributes.building.mineableThing.label;
+                parts.Add(lastDrop);
+            }
+
+            // Add each extra resource that can be dropped
+            foreach (RandomResourceDrop resource in attributes.randomlyDropResources)
+            {
+                // Check that resource is available
+                ThingDef myThingDef = DefDatabase<ThingDef>.GetNamed(resource.ResourceDefName, false);
+                if (myThingDef == null)
+                {
+                    continue;
+                }
+
+                float meanDrop = resource.CountPerDrop * resource.DropProbability * size * MineralsMain.Settings.resourceDropAmountSetting * MineralsMain.Settings.resourceDropFreqSetting;
+                if (meanDrop < 0.01f) 
+                {
+                    continue;
+                }
+                else if (meanDrop >= 1)
+                {
+                    meanDrop = (float)Math.Floor(meanDrop);
+                } else
+                {
+                    meanDrop = (float)Math.Round(meanDrop, 2);
+                }
+                DropInfo thisDrop = new DropInfo();
+                thisDrop.amount = meanDrop;
+                thisDrop.output = meanDrop.ToString() + " " + myThingDef.label;
+                parts.Add(thisDrop);
+            }
+
+            // Sort by resource abundance
+            parts.SortByDescending(x => x.amount);
+
+            return string.Join(", ", parts.Select(x => x.output).ToList());
+        }
+
+
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("Size: " + size.ToStringPercent());
+            stringBuilder.AppendLine("Mining speed: " + miningSpeedFactor().ToStringPercent());
             float propSubmerged = 1 - submersibleFactor();
             if (propSubmerged > 0)
             {
                 stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
             }
+            stringBuilder.AppendLine("Resources: " + ResourceDropList());
             return stringBuilder.ToString().TrimEndNewlines();
         }
 
@@ -771,6 +857,9 @@ namespace Minerals
         public string ResourceDefName;
         public float DropProbability;
         public int CountPerDrop = 1;
+        public int MinMiningSkill = 0;
+        public bool ScaleYieldBySkill = true;
+        public bool WasteProduct = false;
     }
 
 
@@ -898,6 +987,9 @@ namespace Minerals
 
         // If the mean size of minerals spawned at map generation is scaled by the relative abundance in that map
         public bool sizeScaledByAbundance = false;
+
+        // How easy it is to mine
+        public float mineSpeedFactor = 1f;
 
 
         // ======= Spawning clusters ======= //
@@ -1625,6 +1717,12 @@ namespace Minerals
             
         }
 
+    }
+
+    public class DropInfo
+    {
+        public float amount { get; set; }
+        public string output { get; set; }
     }
         
 }

@@ -27,6 +27,7 @@ namespace Minerals
         public float visualSpreadFactor = 1f;
         public float resourceDropFreqSetting = 1f;
         public float resourceDropAmountSetting = 1f;
+        public float miningEffortSetting = 1f;
         public IntRange terrainCountRangeSetting = new IntRange(1, 4);
 
 
@@ -50,6 +51,7 @@ namespace Minerals
             Scribe_Values.Look(ref visualSpreadFactor, "visualSpreadFactor", 1f);
             Scribe_Values.Look(ref resourceDropFreqSetting, "resourceDropFreqSetting", 1f);
             Scribe_Values.Look(ref resourceDropAmountSetting, "resourceDropAmountSetting", 1f);
+            Scribe_Values.Look(ref miningEffortSetting, "miningEffortSetting", 1f);
             Scribe_Values.Look<IntRange>(ref terrainCountRangeSetting, "terrainCountRangeSetting", new IntRange(1, 4), true);
         }
 
@@ -133,6 +135,11 @@ namespace Minerals
 
             list.Label("resourceDropAmountSetting".Translate() + ": " + Math.Round(resourceDropAmountSetting * 100, 3) + "%", -1f);
             resourceDropAmountSetting = list.Slider(resourceDropAmountSetting, 0, maxSetting);
+
+            list.Gap(smallGap);
+
+            list.Label("miningEffortSetting".Translate() + ": " + Math.Round(miningEffortSetting * 100, 3) + "%", -1f);
+            miningEffortSetting = list.Slider(miningEffortSetting, 0.1f, maxSetting);
 
             list.Gap(smallGap);
 

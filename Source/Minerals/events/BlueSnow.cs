@@ -83,7 +83,7 @@ namespace Minerals
                         aMap.weatherManager.curWeatherAge = 4000 - previousWeatherAge;
                     }
                 }
-                if (aMap.mapTemperature.OutdoorTemp > 5f || aMap.mapTemperature.OutdoorTemp < -40)
+                if (aMap.mapTemperature.OutdoorTemp > 5f || aMap.mapTemperature.OutdoorTemp < -50f)
                 {
                     this.End();
                 }

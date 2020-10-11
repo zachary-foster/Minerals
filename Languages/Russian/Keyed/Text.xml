@@ -21,5 +21,6 @@
 	<visualSpreadFactor>Фактор визуального разброса ресурсов</visualSpreadFactor>
 	<resourceDropFreqSetting>Частота с которой выпадают ресурсы</resourceDropFreqSetting>
 	<resourceDropAmountSetting>Количество добываемых ресурсов</resourceDropAmountSetting>
+	<miningEffortSetting>Скорость добычи</miningEffortSetting>
 	<terrainCountRangeSetting>Количество типов камней на каждой карте</terrainCountRangeSetting>
 </LanguageData>

@@ -35,6 +35,6 @@
       <deconstructible>false</deconstructible>
     </building>
     <!-- If true, the graphics are regenerated more often -->
-    <fastGraphicRefresh>true</fastGraphicRefresh>
+    <fastGraphicRefresh>false</fastGraphicRefresh>
   </ThingDef>
 </Defs>

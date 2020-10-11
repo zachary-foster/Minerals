@@ -69,11 +69,13 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -86,6 +88,8 @@
       <li>wall</li>
       <li>weathered</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.1</mineSpeedFactor>
   </ThingDef>
   
   
@@ -156,16 +160,19 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
         <DropProbability>0.005</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -180,6 +187,8 @@
       <li>wall</li>
       <li>solid</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.1</mineSpeedFactor>
   </ThingDef>
 
   
@@ -263,16 +272,19 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
         <DropProbability>0.01</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -285,6 +297,8 @@
       <li>wall</li>
       <li>hewn</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.0</mineSpeedFactor>
   </ThingDef>
   
   
@@ -327,16 +341,19 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>ZF_ChunkAlabaster</ResourceDefName>
         <DropProbability>0.01</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -345,6 +362,8 @@
       <li>wall</li>
       <li>hewn</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.0</mineSpeedFactor>
   </ThingDef>
   
   
@@ -437,11 +456,13 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -454,6 +475,8 @@
       <li>boulder</li>
       <li>chunk_replacer</li>
     </tags>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.1</mineSpeedFactor>
   </ThingDef>
   
   
@@ -544,13 +567,17 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
     </randomlyDropResources>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.1</mineSpeedFactor>
   </ThingDef>
   
   
@@ -568,7 +595,7 @@
     <uiIconPath>Things/Rock/PassableBasalt/PassableBasaltA</uiIconPath>
     <fillPercent>0.1</fillPercent>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
+      <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-1</Beauty>
     </statBases>
@@ -640,13 +667,17 @@
         <ResourceDefName>SmallFossil</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
+        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>Amber</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <MinMiningSkill>3</MinMiningSkill>
       </li>
     </randomlyDropResources>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1.5</mineSpeedFactor>
   </ThingDef>
   
 </Defs>

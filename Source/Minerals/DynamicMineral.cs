@@ -90,13 +90,8 @@ namespace Minerals
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Size: " + size.ToStringPercent());
+            stringBuilder.AppendLine(base.GetInspectString());
             stringBuilder.AppendLine("Growth rate: " + GrowthRate.ToStringPercent());
-            float propSubmerged = 1 - submersibleFactor();
-            if (propSubmerged > 0)
-            {
-                stringBuilder.AppendLine("Submerged: " + propSubmerged.ToStringPercent());
-            }
             if (DebugSettings.godMode)
             {
                 foreach (growthRateModifier mod in attributes.allRateModifiers)
@@ -128,10 +123,12 @@ namespace Minerals
 
             // Refresh appearance if apparent size has changed
             float apparentSize = printSize();
-            if (attributes.fastGraphicRefresh && Math.Abs(sizeWhenLastPrinted - apparentSize) > 0.2f)
+            float sizeDiff = Math.Abs(sizeWhenLastPrinted - apparentSize);
+            if (sizeDiff > 0.1f || (sizeDiff > 0.02f && attributes.fastGraphicRefresh))
             {
                 sizeWhenLastPrinted = apparentSize;
                 base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things);
+                initializeTextureLocations();
             }
 
             // Count ticks for occasional updates, like dist to nearby terrain 
