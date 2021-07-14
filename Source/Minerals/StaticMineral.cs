@@ -594,11 +594,10 @@ namespace Minerals
 				{
 					numToPrint = 1;
 				}
-                currentTextureIndex = 0;
 				for (int i = 0; i < numToPrint; i++)
 				{
                     printSubTexture(layer, i, sizeFactor);
-                    currentTextureIndex += 1;
+                    currentTextureIndex = i;
 				}
 			}
 
