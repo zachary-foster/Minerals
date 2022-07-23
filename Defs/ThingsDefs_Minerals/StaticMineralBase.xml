@@ -81,6 +81,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
+      <destroyShakeAmount>0</destroyShakeAmount>
     </building>
     <!-- What stage of map generation the thing is spawned during (chunks or plants) -->
     <newMapGenStep>chunks</newMapGenStep>

@@ -75,7 +75,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>1.0</DropProbability>
+        <DropProbability>2.0</DropProbability>
         <CountPerDrop>1</CountPerDrop>
         <MinMiningSkill>5</MinMiningSkill>
       </li>
@@ -176,7 +176,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>3.0</DropProbability>
+        <DropProbability>4.0</DropProbability>
         <CountPerDrop>1</CountPerDrop>
         <MinMiningSkill>5</MinMiningSkill>
       </li>
@@ -333,7 +333,7 @@
     <randomlyDropResources>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>5.0</DropProbability>
+        <DropProbability>6.0</DropProbability>
         <CountPerDrop>1</CountPerDrop>
         <MinMiningSkill>5</MinMiningSkill>
       </li>

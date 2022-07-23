@@ -617,13 +617,14 @@ namespace Minerals
             {
                 return;
             }
- 
+
+            Rand.PushState();
+            //Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode() + thingIDNumber.GetHashCode();
+            Rand.Seed = attributes.defName.GetHashCode() + thingIDNumber.GetHashCode();
+
             if (this.attributes.graphicData.graphicClass.Name != "Graphic_Random" || this.attributes.graphicData.linkType == LinkDrawerType.CornerFiller) {
-                Rand.PushState();
-                Rand.Seed = Position.GetHashCode() + attributes.defName.GetHashCode();
                 currentTextureIndex = 0;
-				base.Print(layer);
-                Rand.PopState();
+                base.Print(layer);
 			} else {
                 int numToPrint = Mathf.CeilToInt(printSize() * (float)attributes.maxMeshCount);
 				if (numToPrint < 1)
@@ -637,6 +638,8 @@ namespace Minerals
                     currentTextureIndex += 1;
 				}
 			}
+
+            Rand.PopState();
 
         }
 

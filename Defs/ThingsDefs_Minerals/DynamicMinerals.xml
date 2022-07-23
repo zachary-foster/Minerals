@@ -92,7 +92,9 @@
       <li>DeepIce</li>
       <li>IceDeep</li>
       <li>MuddyIce</li>
-      <li>SnowDrift</li>
+      <li>ZF_SnowDrift</li>
+      <li>ZF_SmoothSnowDrift</li>
+      <li>IceStalagmite</li>
       <li>WaterOceanShallow</li>
       <li>WaterOceanDeep</li>
       <li>WaterMovingShallow</li>
@@ -134,7 +136,7 @@
     <spawnProb>0.000005</spawnProb>
     <!-- Growth rate modifiers -->
     <tempGrowthRateModifer>
-      <aboveMaxDecayRate>5</aboveMaxDecayRate>
+      <aboveMaxDecayRate>10</aboveMaxDecayRate>
       <maxStable>1</maxStable>
       <maxGrow>-1</maxGrow>
       <maxIdeal>-20</maxIdeal>

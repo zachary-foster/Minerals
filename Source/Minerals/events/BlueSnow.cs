@@ -38,14 +38,13 @@ namespace Minerals
 
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
-            Map map = (Map)parms.target;
-            Find.LetterStack.ReceiveLetter(this.def.letterLabel, def.letterText, LetterDefOf.NeutralEvent);
-            //parms.customLetterDef = LetterDefOf.NeutralEvent;
-            //parms.customLetterLabel = this.def.letterLabel;
-            //parms.customLetterText = def.letterText;
-            map.gameConditionManager.RegisterCondition(GameConditionMaker.MakeCondition(DefDatabase<GameConditionDef>.GetNamed("BlueSnowCondition")));
-            //return base.TryExecuteWorker(parms);
-            return true;
+            //Map map = (Map)parms.target;
+            //Find.LetterStack.ReceiveLetter(this.def.letterLabel, def.letterText, LetterDefOf.NeutralEvent);
+            parms.customLetterDef = LetterDefOf.NeutralEvent;
+            parms.customLetterLabel = def.letterLabel;
+            parms.customLetterText = def.letterText;
+            //map.gameConditionManager.RegisterCondition(GameConditionMaker.MakeCondition(DefDatabase<GameConditionDef>.GetNamed("BlueSnowCondition")));
+            return base.TryExecuteWorker(parms); // for some reason, this causes an error even though it works
         }
 
 

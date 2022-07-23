@@ -47,7 +47,7 @@
     <letterText>A massive stormfront is approching. It has a strange blue hue. Unless the temperature increases, such storms can last for many days.</letterText>
     <letterDef>NeutralEvent</letterDef>
     <baseChance>6</baseChance>
-    <minRefireDays>90</minRefireDays>
+    <minRefireDays>120</minRefireDays>
     <durationDays>
       <min>3</min>
       <max>10</max>
