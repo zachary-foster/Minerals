@@ -12,16 +12,16 @@
         <ThingDef Name="ZF_WeatheredDacite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredDacite</defName>
           <label>Weathered Dacite</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
+            <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(177,178,172)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>860</MaxHitPoints>
+            <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkDacite</mineableThing>
@@ -58,12 +58,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -84,16 +91,16 @@
         <ThingDef Name="ZF_SolidDacite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidDacite</defName>
           <label>Solid Dacite</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(177,178,172)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>960</MaxHitPoints>
+            <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkDacite</mineableThing>
@@ -130,12 +137,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -157,14 +171,14 @@
         <ThingDef Name="ZF_HewnDacite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnDacite</defName>
           <label>Hewn Dacite</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(177,178,172)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1100</MaxHitPoints>
+            <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
@@ -216,12 +230,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -242,14 +263,14 @@
         <ThingDef Name="ZF_SmoothedHewnDacite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnDacite</defName>
           <label>Smoothed Dacite</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1100</MaxHitPoints>
+            <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>2</Beauty>
           </statBases>
@@ -261,12 +282,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -283,7 +311,7 @@
         <ThingDef Name="ZF_BoulderDacite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderDacite</defName>
           <label>Dacite Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(177,178,172)</color>
@@ -291,9 +319,9 @@
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>750</MaxHitPoints>
+            <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
@@ -384,12 +412,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -410,7 +445,7 @@
         <ThingDef Name="ZF_PassableDacite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableDacite</defName>
           <label>Dacite Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(177,178,172)</color>
@@ -421,7 +456,7 @@
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>360</MaxHitPoints>
+            <MaxHitPoints>900</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
@@ -513,12 +548,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.01</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.005</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

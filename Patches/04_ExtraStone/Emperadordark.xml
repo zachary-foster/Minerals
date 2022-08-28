@@ -12,14 +12,14 @@
         <ThingDef Name="ZF_WeatheredEmperadordark" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredEmperadordark</defName>
           <label>Weathered Emperador dark</label>
-          <description>Weathered brown marble.</description>
+          <description>A brown form of marble.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(72,46,38)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
-            <MaxHitPoints>900</MaxHitPoints>
+            <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>3</Beauty>
           </statBases>
@@ -58,12 +58,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -84,16 +91,16 @@
         <ThingDef Name="ZF_SolidEmperadordark" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidEmperadordark</defName>
           <label>Solid Emperador dark</label>
-          <description>Solid brown marble.</description>
+          <description>A brown form of marble.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(72,46,38)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1000</MaxHitPoints>
+            <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkEmperadordark</mineableThing>
@@ -130,12 +137,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -157,16 +171,16 @@
         <ThingDef Name="ZF_HewnEmperadordark" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnEmperadordark</defName>
           <label>Hewn Emperador dark</label>
-          <description>Hewn brown marble.</description>
+          <description>A brown form of marble.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(72,46,38)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1200</MaxHitPoints>
+            <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkEmperadordark</mineableThing>
@@ -216,12 +230,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -242,16 +263,16 @@
         <ThingDef Name="ZF_SmoothedHewnEmperadordark" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnEmperadordark</defName>
           <label>Smoothed Emperador dark</label>
-          <description>Brown marble that has been polished flat.</description>
+          <description>A brown form of marble.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1200</MaxHitPoints>
+            <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>3</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkEmperadordark</mineableThing>
@@ -261,12 +282,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -283,7 +311,7 @@
         <ThingDef Name="ZF_BoulderEmperadordark" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderEmperadordark</defName>
           <label>Emperador dark Boulder</label>
-          <description>A brown marble Boulder.</description>
+          <description>A brown form of marble.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(72,46,38)</color>
@@ -291,7 +319,7 @@
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>700</MaxHitPoints>
+            <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>2</Beauty>
           </statBases>
@@ -384,12 +412,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -410,7 +445,7 @@
         <ThingDef Name="ZF_PassableEmperadordark" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableEmperadordark</defName>
           <label>Emperador dark Rocks</label>
-          <description>Brown marble rocks.</description>
+          <description>A brown form of marble.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(72,46,38)</color>
@@ -421,9 +456,9 @@
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>350</MaxHitPoints>
+            <MaxHitPoints>800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <pathCost>20</pathCost>
           <building>
@@ -513,12 +548,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.02</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

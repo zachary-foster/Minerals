@@ -11,17 +11,17 @@
   
         <ThingDef Name="ZF_WeatheredGreenSchist" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredGreenSchist</defName>
-          <label>Weathered GreenSchist</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <label>Weathered Green Schist</label>
+          <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(82,98,71)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1160</MaxHitPoints>
+            <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkGreenSchist</mineableThing>
@@ -58,7 +58,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -84,16 +84,16 @@
         <ThingDef Name="ZF_SolidGreenSchist" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidGreenSchist</defName>
           <label>Solid GreenSchist</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(82,98,71)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1260</MaxHitPoints>
+            <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkGreenSchist</mineableThing>
@@ -130,7 +130,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -157,16 +157,16 @@
         <ThingDef Name="ZF_HewnGreenSchist" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnGreenSchist</defName>
           <label>Hewn GreenSchist</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(82,98,71)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1400</MaxHitPoints>
+            <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkGreenSchist</mineableThing>
@@ -216,7 +216,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -242,16 +242,16 @@
         <ThingDef Name="ZF_SmoothedHewnGreenSchist" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnGreenSchist</defName>
           <label>Smoothed GreenSchist</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1400</MaxHitPoints>
+            <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>3</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkGreenSchist</mineableThing>
@@ -261,7 +261,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -283,7 +283,7 @@
         <ThingDef Name="ZF_BoulderGreenSchist" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderGreenSchist</defName>
           <label>GreenSchist Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(82,98,71)</color>
@@ -291,7 +291,7 @@
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>850</MaxHitPoints>
+            <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>2</Beauty>
           </statBases>
@@ -384,7 +384,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -410,7 +410,7 @@
         <ThingDef Name="ZF_PassableGreenSchist" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableGreenSchist</defName>
           <label>GreenSchist Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(82,98,71)</color>
@@ -421,9 +421,9 @@
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>350</MaxHitPoints>
+            <MaxHitPoints>800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <pathCost>20</pathCost>
           <building>
@@ -513,7 +513,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.02</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>

@@ -12,7 +12,7 @@
         <ThingDef Name="ZF_WeatheredMonzonite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredMonzonite</defName>
           <label>Weathered Monzonite</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A coarse-grained igneous rock that formed from slowly cooling magma deep under the planet's surface.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(193,184,186)</color>
@@ -21,7 +21,7 @@
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkMonzonite</mineableThing>
@@ -58,12 +58,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.02</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -84,7 +91,7 @@
         <ThingDef Name="ZF_SolidMonzonite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidMonzonite</defName>
           <label>Solid Monzonite</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A coarse-grained igneous rock that formed from slowly cooling magma deep under the planet's surface.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(193,184,186)</color>
@@ -93,7 +100,7 @@
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkMonzonite</mineableThing>
@@ -130,12 +137,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.02</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -157,7 +171,7 @@
         <ThingDef Name="ZF_HewnMonzonite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnMonzonite</defName>
           <label>Hewn Monzonite</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A coarse-grained igneous rock that formed from slowly cooling magma deep under the planet's surface.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(193,184,186)</color>
@@ -216,12 +230,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.02</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -242,7 +263,7 @@
         <ThingDef Name="ZF_SmoothedHewnMonzonite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnMonzonite</defName>
           <label>Smoothed Monzonite</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>A coarse-grained igneous rock that formed from slowly cooling magma deep under the planet's surface.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
@@ -283,7 +304,7 @@
         <ThingDef Name="ZF_BoulderMonzonite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderMonzonite</defName>
           <label>Monzonite Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>A coarse-grained igneous rock that formed from slowly cooling magma deep under the planet's surface.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(193,184,186)</color>
@@ -293,7 +314,7 @@
           <statBases>
             <MaxHitPoints>950</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
@@ -384,12 +405,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.02</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -410,7 +438,7 @@
         <ThingDef Name="ZF_PassableMonzonite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableMonzonite</defName>
           <label>Monzonite Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>A coarse-grained igneous rock that formed from slowly cooling magma deep under the planet's surface.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(193,184,186)</color>
@@ -513,12 +541,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.01</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

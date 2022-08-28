@@ -12,20 +12,20 @@
         <ThingDef Name="ZF_WeatheredMigmatite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredMigmatite</defName>
           <label>Weathered Migmatite</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A layered metamorphic rock produced by eons of rock folding deep in the earth.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(136,146,155)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1400</MaxHitPoints>
+            <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkMigmatite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.25</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -58,12 +58,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -91,13 +99,13 @@
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
+            <MaxHitPoints>1900</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkMigmatite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.25</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -130,12 +138,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -164,13 +180,13 @@
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1600</MaxHitPoints>
+            <MaxHitPoints>2000</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkMigmatite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.25</mineableDropChance>
             <smoothedThing>ZF_SmoothedHewnMigmatite</smoothedThing>
           </building>
           <!--How far away it can spawn from an existing location-->
@@ -216,12 +232,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -249,24 +273,32 @@
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1600</MaxHitPoints>
+            <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkMigmatite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.25</mineableDropChance>
           </building>
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -291,14 +323,14 @@
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>750</MaxHitPoints>
+            <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
             <mineableThing>ChunkMigmatite</mineableThing>
-            <mineableDropChance>0.6</mineableDropChance>
+            <mineableDropChance>0.5</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -384,12 +416,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -421,14 +461,14 @@
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>450</MaxHitPoints>
+            <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
           <pathCost>20</pathCost>
           <building>
             <mineableThing>ChunkMigmatite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.25</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -513,12 +553,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

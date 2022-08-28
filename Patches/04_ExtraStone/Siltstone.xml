@@ -12,16 +12,16 @@
         <ThingDef Name="ZF_WeatheredSiltstone" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredSiltstone</defName>
           <label>Weathered Siltstone</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
+            <texPath>Things/Rock/WeatheredSandstone</texPath>
             <color>(167,146,117)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredSandstone/WeatheredSandstoneA</uiIconPath>
           <statBases>
-            <MaxHitPoints>860</MaxHitPoints>
+            <MaxHitPoints>600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSiltstone</mineableThing>
@@ -57,13 +57,32 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
             <li>
-              <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.07</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
+            </li>
+            <li>
+              <ResourceDefName>Dirt</ResourceDefName>
+              <DropProbability>0.5</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
+            </li>
+            <li>
+              <ResourceDefName>SoftClay</ResourceDefName>
+              <DropProbability>0.2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -77,23 +96,23 @@
             <li>weathered</li>
           </tags>
           <!-- How easy it is to mine -->
-          <mineSpeedFactor>0.8</mineSpeedFactor>
+          <mineSpeedFactor>1.3</mineSpeedFactor>
         </ThingDef>
         
         
         <ThingDef Name="ZF_SolidSiltstone" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidSiltstone</defName>
           <label>Solid Siltstone</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(167,146,117)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>960</MaxHitPoints>
+            <MaxHitPoints>700</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSiltstone</mineableThing>
@@ -129,13 +148,32 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
             <li>
-              <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.07</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
+            </li>
+            <li>
+              <ResourceDefName>Dirt</ResourceDefName>
+              <DropProbability>0.5</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
+            </li>
+            <li>
+              <ResourceDefName>SoftClay</ResourceDefName>
+              <DropProbability>0.2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -150,23 +188,23 @@
             <li>solid</li>
           </tags>
           <!-- How easy it is to mine -->
-          <mineSpeedFactor>0.8</mineSpeedFactor>
+          <mineSpeedFactor>1.2</mineSpeedFactor>
         </ThingDef>
         
       
         <ThingDef Name="ZF_HewnSiltstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnSiltstone</defName>
           <label>Hewn Siltstone</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(167,146,117)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1100</MaxHitPoints>
+            <MaxHitPoints>800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>-1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSiltstone</mineableThing>
@@ -215,13 +253,32 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
             <li>
-              <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.07</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
+            </li>
+            <li>
+              <ResourceDefName>Dirt</ResourceDefName>
+              <DropProbability>0.5</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
+            </li>
+            <li>
+              <ResourceDefName>SoftClay</ResourceDefName>
+              <DropProbability>0.2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -235,23 +292,23 @@
             <li>hewn</li>
           </tags>
           <!-- How easy it is to mine -->
-          <mineSpeedFactor>0.7</mineSpeedFactor>
+          <mineSpeedFactor>1.2</mineSpeedFactor>
         </ThingDef>
        
         
         <ThingDef Name="ZF_SmoothedHewnSiltstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnSiltstone</defName>
           <label>Smoothed Siltstone</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1100</MaxHitPoints>
+            <MaxHitPoints>600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSiltstone</mineableThing>
@@ -260,13 +317,32 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
             <li>
-              <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.07</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
+            </li>
+            <li>
+              <ResourceDefName>Dirt</ResourceDefName>
+              <DropProbability>0.5</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
+            </li>
+            <li>
+              <ResourceDefName>SoftClay</ResourceDefName>
+              <DropProbability>0.2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -276,24 +352,24 @@
             <li>hewn</li>
           </tags>
           <!-- How easy it is to mine -->
-          <mineSpeedFactor>0.7</mineSpeedFactor>
+          <mineSpeedFactor>1.2</mineSpeedFactor>
         </ThingDef>
       
         
         <ThingDef Name="ZF_BoulderSiltstone" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderSiltstone</defName>
           <label>Siltstone Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
           <graphicData>
-            <texPath>Things/Rock/BoulderGranite</texPath>
+            <texPath>Things/Rock/PassableSandstone</texPath>
             <color>(167,146,117)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableSandstone/PassableSandstoneA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>600</MaxHitPoints>
+            <MaxHitPoints>300</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
@@ -383,13 +459,32 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
             <li>
-              <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.07</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
+            </li>
+            <li>
+              <ResourceDefName>Dirt</ResourceDefName>
+              <DropProbability>0.5</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
+            </li>
+            <li>
+              <ResourceDefName>SoftClay</ResourceDefName>
+              <DropProbability>0.2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -403,25 +498,25 @@
             <li>chunk_replacer</li>
           </tags>
           <!-- How easy it is to mine -->
-          <mineSpeedFactor>0.8</mineSpeedFactor>
+          <mineSpeedFactor>1.3</mineSpeedFactor>
         </ThingDef>
         
       
         <ThingDef Name="ZF_PassableSiltstone" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableSiltstone</defName>
           <label>Siltstone Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableSandstone</texPath>
             <color>(167,146,117)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableSandstone/PassableSandstoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>350</MaxHitPoints>
+            <MaxHitPoints>200</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
@@ -512,17 +607,36 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
             <li>
-              <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.07</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
+            </li>
+            <li>
+              <ResourceDefName>Dirt</ResourceDefName>
+              <DropProbability>0.5</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
+            </li>
+            <li>
+              <ResourceDefName>SoftClay</ResourceDefName>
+              <DropProbability>0.2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->
-          <mineSpeedFactor>1.2</mineSpeedFactor>
+          <mineSpeedFactor>1.4</mineSpeedFactor>
         </ThingDef>
   
   

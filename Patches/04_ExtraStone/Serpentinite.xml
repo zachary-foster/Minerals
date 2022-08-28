@@ -12,20 +12,20 @@
         <ThingDef Name="ZF_WeatheredSerpentinite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredSerpentinite</defName>
           <label>Weathered Serpentinite</label>
-          <description>A Weathered rock composed of one or more serpentine group minerals.</description>
+          <description>A metamorphic rock that formed where tectonic plates collided under the ocean. Hydrated magnesium minerals give the rock a greasy green luster similar to reptile skin.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
+            <texPath>Things/Rock/WeatheredLimestone</texPath>
             <color>(60,96,58)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1400</MaxHitPoints>
+            <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>3</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSerpentinite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.2</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -58,12 +58,13 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -84,20 +85,20 @@
         <ThingDef Name="ZF_SolidSerpentinite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidSerpentinite</defName>
           <label>Solid Serpentinite</label>
-          <description>A Solid rock composed of one or more serpentine group minerals.</description>
+          <description>A metamorphic rock that formed where tectonic plates collided under the ocean. Hydrated magnesium minerals give the rock a greasy green luster similar to reptile skin.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(60,96,58)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
+            <MaxHitPoints>1400</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSerpentinite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.2</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -130,12 +131,13 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -157,20 +159,20 @@
         <ThingDef Name="ZF_HewnSerpentinite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnSerpentinite</defName>
           <label>Hewn Serpentinite</label>
-          <description>A Hewn rock composed of one or more serpentine group minerals.</description>
+          <description>A metamorphic rock that formed where tectonic plates collided under the ocean. Hydrated magnesium minerals give the rock a greasy green luster similar to reptile skin.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(60,96,58)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1600</MaxHitPoints>
+            <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSerpentinite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.25</mineableDropChance>
             <smoothedThing>ZF_SmoothedHewnSerpentinite</smoothedThing>
           </building>
           <!--How far away it can spawn from an existing location-->
@@ -216,12 +218,13 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -242,31 +245,32 @@
         <ThingDef Name="ZF_SmoothedHewnSerpentinite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnSerpentinite</defName>
           <label>Smoothed Serpentinite</label>
-          <description>A rock composed of serpentine minerals that has been polished flat.</description>
+          <description>A metamorphic rock that formed where tectonic plates collided under the ocean. Hydrated magnesium minerals give the rock a greasy green luster similar to reptile skin.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1600</MaxHitPoints>
+            <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>4</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSerpentinite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.25</mineableDropChance>
           </building>
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -283,7 +287,7 @@
         <ThingDef Name="ZF_BoulderSerpentinite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderSerpentinite</defName>
           <label>Serpentinite Boulder</label>
-          <description>A serpentine Boulder composed of one or more serpentine group minerals.</description>
+          <description>A metamorphic rock that formed where tectonic plates collided under the ocean. Hydrated magnesium minerals give the rock a greasy green luster similar to reptile skin.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(60,96,58)</color>
@@ -291,14 +295,14 @@
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>700</MaxHitPoints>
+            <MaxHitPoints>600</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>2</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
             <mineableThing>ChunkSerpentinite</mineableThing>
-            <mineableDropChance>0.6</mineableDropChance>
+            <mineableDropChance>0.5</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -384,12 +388,13 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -410,7 +415,7 @@
         <ThingDef Name="ZF_PassableSerpentinite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableSerpentinite</defName>
           <label>Serpentinite Rocks</label>
-          <description>Rocks composed of one or more serpentine group minerals.</description>
+          <description>A metamorphic rock that formed where tectonic plates collided under the ocean. Hydrated magnesium minerals give the rock a greasy green luster similar to reptile skin.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(60,96,58)</color>
@@ -421,14 +426,14 @@
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>500</MaxHitPoints>
+            <MaxHitPoints>300</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <pathCost>20</pathCost>
           <building>
             <mineableThing>ChunkSerpentinite</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.1</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -513,12 +518,13 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

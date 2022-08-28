@@ -12,7 +12,7 @@
         <ThingDef Name="ZF_WeatheredCharnockite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredCharnockite</defName>
           <label>Weathered Charnockite</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A metamorphic rock derived from granite subjected to high temperatures and pressured deep within the planet.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(141,120,79)</color>
@@ -58,7 +58,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -84,7 +84,7 @@
         <ThingDef Name="ZF_SolidCharnockite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidCharnockite</defName>
           <label>Solid Charnockite</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A metamorphic rock derived from granite subjected to high temperatures and pressured deep within the planet.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(141,120,79)</color>
@@ -130,7 +130,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -157,7 +157,7 @@
         <ThingDef Name="ZF_HewnCharnockite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnCharnockite</defName>
           <label>Hewn Charnockite</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A metamorphic rock derived from granite subjected to high temperatures and pressured deep within the planet.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(141,120,79)</color>
@@ -216,7 +216,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -242,7 +242,7 @@
         <ThingDef Name="ZF_SmoothedHewnCharnockite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnCharnockite</defName>
           <label>Smoothed Charnockite</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>A metamorphic rock derived from granite subjected to high temperatures and pressured deep within the planet.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
@@ -261,7 +261,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -283,7 +283,7 @@
         <ThingDef Name="ZF_BoulderCharnockite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderCharnockite</defName>
           <label>Charnockite Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>A metamorphic rock derived from granite subjected to high temperatures and pressured deep within the planet.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(141,120,79)</color>
@@ -384,7 +384,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -410,7 +410,7 @@
         <ThingDef Name="ZF_PassableCharnockite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableCharnockite</defName>
           <label>Charnockite Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>A metamorphic rock derived from granite subjected to high temperatures and pressured deep within the planet.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(141,120,79)</color>
@@ -513,7 +513,7 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>

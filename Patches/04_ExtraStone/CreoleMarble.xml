@@ -11,7 +11,7 @@
   
         <ThingDef Name="ZF_WeatheredCreoleMarble" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredCreoleMarble</defName>
-          <label>Weathered Creole Marble</label>
+          <label>A variety of marble with blue and grey streaks. Very beautiful.</label>
           <description>A Weathered blueish marble.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredGranite</texPath>
@@ -19,7 +19,7 @@
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
-            <MaxHitPoints>900</MaxHitPoints>
+            <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>3</Beauty>
           </statBases>
@@ -58,12 +58,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -84,16 +91,16 @@
         <ThingDef Name="ZF_SolidCreoleMarble" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidCreoleMarble</defName>
           <label>Solid Creole Marble</label>
-          <description>A Solid blueish marble.</description>
+          <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(174,211,210)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1000</MaxHitPoints>
+            <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkCreoleMarble</mineableThing>
@@ -130,12 +137,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -157,16 +171,16 @@
         <ThingDef Name="ZF_HewnCreoleMarble" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnCreoleMarble</defName>
           <label>Hewn Creole Marble</label>
-          <description>A Hewn blueish marble.</description>
+          <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(174,211,210)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1200</MaxHitPoints>
+            <MaxHitPoints>1400</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkCreoleMarble</mineableThing>
@@ -216,12 +230,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -242,16 +263,16 @@
         <ThingDef Name="ZF_SmoothedHewnCreoleMarble" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnCreoleMarble</defName>
           <label>Smoothed Creole Marble</label>
-          <description>A blueish marble that has been polished flat.</description>
+          <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1200</MaxHitPoints>
+            <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>4</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkCreoleMarble</mineableThing>
@@ -261,12 +282,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -283,7 +311,7 @@
         <ThingDef Name="ZF_BoulderCreoleMarble" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderCreoleMarble</defName>
           <label>Creole Marble Boulder</label>
-          <description>A blueish marble Boulder.</description>
+          <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(174,211,210)</color>
@@ -291,7 +319,7 @@
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>700</MaxHitPoints>
+            <MaxHitPoints>900</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>2</Beauty>
           </statBases>
@@ -384,12 +412,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -410,7 +445,7 @@
         <ThingDef Name="ZF_PassableCreoleMarble" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableCreoleMarble</defName>
           <label>Creole Marble Rocks</label>
-          <description>Blueish marble rocks.</description>
+          <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(174,211,210)</color>
@@ -421,9 +456,9 @@
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>300</MaxHitPoints>
+            <MaxHitPoints>600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <pathCost>20</pathCost>
           <building>
@@ -513,12 +548,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>3</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>Jade</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>15</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

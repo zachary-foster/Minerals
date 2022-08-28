@@ -21,7 +21,7 @@
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>-1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkAnorthosite</mineableThing>
@@ -58,7 +58,17 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+            </li>
+            <li>
+              <ResourceDefName>Ilmenite</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>30</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>Aluminium</ResourceDefName>
+              <DropProbability>0.04</DropProbability>
+              <CountPerDrop>50</CountPerDrop>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -93,7 +103,7 @@
           <statBases>
             <MaxHitPoints>1650</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>-1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkAnorthosite</mineableThing>
@@ -130,7 +140,17 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+            </li>
+            <li>
+              <ResourceDefName>Ilmenite</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>30</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>Aluminium</ResourceDefName>
+              <DropProbability>0.04</DropProbability>
+              <CountPerDrop>50</CountPerDrop>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -166,7 +186,7 @@
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>-1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkAnorthosite</mineableThing>
@@ -216,7 +236,17 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+            </li>
+            <li>
+              <ResourceDefName>Ilmenite</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>30</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>Aluminium</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>50</CountPerDrop>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -251,7 +281,7 @@
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkAnorthosite</mineableThing>
@@ -261,7 +291,17 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+            </li>
+            <li>
+              <ResourceDefName>Ilmenite</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>30</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>Aluminium</ResourceDefName>
+              <DropProbability>0.04</DropProbability>
+              <CountPerDrop>50</CountPerDrop>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -293,7 +333,7 @@
           <statBases>
             <MaxHitPoints>1200</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>0</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
@@ -384,7 +424,17 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+            </li>
+            <li>
+              <ResourceDefName>Ilmenite</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>30</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>Aluminium</ResourceDefName>
+              <DropProbability>0.04</DropProbability>
+              <CountPerDrop>50</CountPerDrop>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -513,7 +563,17 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.02</DropProbability>
+            </li>
+            <li>
+              <ResourceDefName>Ilmenite</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>20</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>Aluminium</ResourceDefName>
+              <DropProbability>0.04</DropProbability>
+              <CountPerDrop>30</CountPerDrop>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>

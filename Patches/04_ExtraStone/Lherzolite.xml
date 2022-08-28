@@ -12,16 +12,16 @@
         <ThingDef Name="ZF_WeatheredLherzolite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredLherzolite</defName>
           <label>Weathered Lherzolite</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
+            <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(150,176,81)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1800</MaxHitPoints>
+            <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkLherzolite</mineableThing>
@@ -58,12 +58,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.05</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -84,16 +91,16 @@
         <ThingDef Name="ZF_SolidLherzolite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidLherzolite</defName>
           <label>Solid Lherzolite</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(150,176,81)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1900</MaxHitPoints>
+            <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkLherzolite</mineableThing>
@@ -130,12 +137,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.05</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -157,16 +171,16 @@
         <ThingDef Name="ZF_HewnLherzolite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnLherzolite</defName>
           <label>Hewn Lherzolite</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(150,176,81)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>2000</MaxHitPoints>
+            <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkLherzolite</mineableThing>
@@ -216,12 +230,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.05</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -242,16 +263,16 @@
         <ThingDef Name="ZF_SmoothedHewnLherzolite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnLherzolite</defName>
           <label>Smoothed Lherzolite</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>An igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>2000</MaxHitPoints>
+            <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>3</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkLherzolite</mineableThing>
@@ -261,12 +282,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.05</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -283,7 +311,7 @@
         <ThingDef Name="ZF_BoulderLherzolite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderLherzolite</defName>
           <label>Lherzolite Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>An igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(150,176,81)</color>
@@ -384,12 +412,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.05</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.015</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -410,7 +445,7 @@
         <ThingDef Name="ZF_PassableLherzolite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableLherzolite</defName>
           <label>Lherzolite Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>An igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(150,176,81)</color>
@@ -421,7 +456,7 @@
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>650</MaxHitPoints>
+            <MaxHitPoints>700</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
@@ -513,12 +548,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

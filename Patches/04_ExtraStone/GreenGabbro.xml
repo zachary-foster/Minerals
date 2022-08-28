@@ -12,16 +12,16 @@
         <ThingDef Name="ZF_WeatheredGreenGabbro" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredGreenGabbro</defName>
           <label>Weathered GreenGabbro</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An intrusive igneous rock with a composition similar to basalt.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
+            <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(82,85,66)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkGreenGabbro</mineableThing>
@@ -58,12 +58,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -84,7 +91,7 @@
         <ThingDef Name="ZF_SolidGreenGabbro" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidGreenGabbro</defName>
           <label>Solid GreenGabbro</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An intrusive igneous rock with a composition similar to basalt.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(82,85,66)</color>
@@ -130,12 +137,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -157,7 +171,7 @@
         <ThingDef Name="ZF_HewnGreenGabbro" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnGreenGabbro</defName>
           <label>Hewn GreenGabbro</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An intrusive igneous rock with a composition similar to basalt.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(82,85,66)</color>
@@ -216,12 +230,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -242,14 +263,14 @@
         <ThingDef Name="ZF_SmoothedHewnGreenGabbro" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnGreenGabbro</defName>
           <label>Smoothed GreenGabbro</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>An intrusive igneous rock with a composition similar to basalt.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1800</MaxHitPoints>
+            <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>2</Beauty>
           </statBases>
@@ -261,12 +282,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -283,7 +311,7 @@
         <ThingDef Name="ZF_BoulderGreenGabbro" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderGreenGabbro</defName>
           <label>GreenGabbro Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>An intrusive igneous rock with a composition similar to basalt.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(82,85,66)</color>
@@ -293,7 +321,7 @@
           <statBases>
             <MaxHitPoints>900</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
@@ -384,12 +412,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.04</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -410,7 +445,7 @@
         <ThingDef Name="ZF_PassableGreenGabbro" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableGreenGabbro</defName>
           <label>GreenGabbro Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>An intrusive igneous rock with a composition similar to basalt.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(82,85,66)</color>
@@ -513,12 +548,19 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.02</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>0.5</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
+              <DropProbability>0.005</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

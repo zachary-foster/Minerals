@@ -12,14 +12,14 @@
         <ThingDef Name="ZF_WeatheredChalk" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredChalk</defName>
           <label>Weathered Chalk</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A fine-grained soft rock formed from the calcite shells of long dead plankton.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
-            <color>(220,220,220)</color>
+            <texPath>Things/Rock/WeatheredSandstone</texPath>
+            <color>(230,230,230)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredSandstone/WeatheredSandstoneA</uiIconPath>
           <statBases>
-            <MaxHitPoints>300</MaxHitPoints>
+            <MaxHitPoints>600</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>3</Beauty>
           </statBases>
@@ -57,8 +57,20 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -84,16 +96,16 @@
         <ThingDef Name="ZF_SolidChalk" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidChalk</defName>
           <label>Solid Chalk</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A fine-grained soft rock formed from the calcite shells of long dead plankton.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
-            <color>(220,220,220)</color>
+            <texPath>Things/Rock/WeatheredLimestone</texPath>
+            <color>(230,230,230)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
           <statBases>
-            <MaxHitPoints>700</MaxHitPoints>
+            <MaxHitPoints>800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkChalk</mineableThing>
@@ -129,8 +141,20 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -157,16 +181,16 @@
         <ThingDef Name="ZF_HewnChalk" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnChalk</defName>
           <label>Hewn Chalk</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A fine-grained soft rock formed from the calcite shells of long dead plankton.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
-            <color>(220,220,220)</color>
+            <color>(230,230,230)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>800</MaxHitPoints>
+            <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkChalk</mineableThing>
@@ -215,8 +239,20 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -242,16 +278,16 @@
         <ThingDef Name="ZF_SmoothedHewnChalk" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnChalk</defName>
           <label>Smoothed Chalk</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>A fine-grained soft rock formed from the calcite shells of long dead plankton.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>800</MaxHitPoints>
+            <MaxHitPoints>900</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>3</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkChalk</mineableThing>
@@ -260,8 +296,20 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -283,17 +331,17 @@
         <ThingDef Name="ZF_BoulderChalk" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderChalk</defName>
           <label>Chalk Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>A fine-grained soft rock formed from the calcite shells of long dead plankton.</description>
           <graphicData>
-            <texPath>Things/Rock/BoulderGranite</texPath>
-            <color>(220,220,220)</color>
+            <texPath>Things/Rock/PassableSandstone</texPath>
+            <color>(230,230,230)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableSandstone/PassableSandstoneA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>350</MaxHitPoints>
+            <MaxHitPoints>400</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>3</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
@@ -383,8 +431,20 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -410,20 +470,20 @@
         <ThingDef Name="ZF_PassableChalk" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableChalk</defName>
           <label>Chalk Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>A fine-grained soft rock formed from the calcite shells of long dead plankton.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
-            <color>(220,220,220)</color>
+            <texPath>Things/Rock/PassableSandstone</texPath>
+            <color>(230,230,230)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableSandstone/PassableSandstoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
+            <MaxHitPoints>300</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <pathCost>20</pathCost>
           <building>
@@ -512,8 +572,20 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
+              <DropProbability>0.02</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>

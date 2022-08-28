@@ -12,16 +12,16 @@
         <ThingDef Name="ZF_WeatheredSovite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredSovite</defName>
           <label>Weathered Sovite</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed mostly of large carbonate crystals. It is not as strong as other igenous rock but it is more attractive.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(187,181,135)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1000</MaxHitPoints>
+            <MaxHitPoints>1200</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSovite</mineableThing>
@@ -58,12 +58,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -84,14 +92,14 @@
         <ThingDef Name="ZF_SolidSovite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidSovite</defName>
           <label>Solid Sovite</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed mostly of large carbonate crystals. It is not as strong as other igenous rock but it is more attractive.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(187,181,135)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1100</MaxHitPoints>
+            <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>1</Beauty>
           </statBases>
@@ -130,12 +138,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -157,16 +173,16 @@
         <ThingDef Name="ZF_HewnSovite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnSovite</defName>
           <label>Hewn Sovite</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed mostly of large carbonate crystals. It is not as strong as other igenous rock but it is more attractive.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(187,181,135)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1200</MaxHitPoints>
+            <MaxHitPoints>1400</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSovite</mineableThing>
@@ -216,12 +232,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -242,7 +266,7 @@
         <ThingDef Name="ZF_SmoothedHewnSovite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnSovite</defName>
           <label>Smoothed Sovite</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>An igneous rock composed mostly of large carbonate crystals. It is not as strong as other igenous rock but it is more attractive.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
@@ -251,7 +275,7 @@
           <statBases>
             <MaxHitPoints>1200</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>3</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkSovite</mineableThing>
@@ -261,12 +285,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -283,7 +315,7 @@
         <ThingDef Name="ZF_BoulderSovite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderSovite</defName>
           <label>Sovite Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed mostly of large carbonate crystals. It is not as strong as other igenous rock but it is more attractive.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(187,181,135)</color>
@@ -291,9 +323,9 @@
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>500</MaxHitPoints>
+            <MaxHitPoints>700</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
@@ -384,12 +416,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -410,7 +450,7 @@
         <ThingDef Name="ZF_PassableSovite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableSovite</defName>
           <label>Sovite Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed mostly of large carbonate crystals. It is not as strong as other igenous rock but it is more attractive.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(187,181,135)</color>
@@ -421,7 +461,7 @@
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>250</MaxHitPoints>
+            <MaxHitPoints>500</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
@@ -513,12 +553,20 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+            <li>
+              <ResourceDefName>ZF_ChunkPegmatite</ResourceDefName>
+              <DropProbability>0.01</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

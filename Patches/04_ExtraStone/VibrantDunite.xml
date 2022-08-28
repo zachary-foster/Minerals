@@ -12,16 +12,16 @@
         <ThingDef Name="ZF_WeatheredVibrantDunite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredVibrantDunite</defName>
           <label>Weathered Vibrant Dunite</label>
-          <description>A Weathered plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed almost entirely of shimmering green crystals of olivine. This beautiful rock is common deep within the planet but is rarely found on the surface.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(153,176,110)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1300</MaxHitPoints>
+            <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>4</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkVibrantDunite</mineableThing>
@@ -58,7 +58,8 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.08</DropProbability>
+              <DropProbability>0.06</DropProbability>
+              <MinMiningSkill>5</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -84,16 +85,16 @@
         <ThingDef Name="ZF_SolidVibrantDunite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidVibrantDunite</defName>
           <label>Solid Vibrant Dunite</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed almost entirely of shimmering green crystals of olivine. This beautiful rock is common deep within the planet but is rarely found on the surface.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(153,176,110)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1400</MaxHitPoints>
+            <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>1</Beauty>
+            <Beauty>4</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkVibrantDunite</mineableThing>
@@ -131,6 +132,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.08</DropProbability>
+              <MinMiningSkill>5</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -157,16 +159,16 @@
         <ThingDef Name="ZF_HewnVibrantDunite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnVibrantDunite</defName>
           <label>Hewn Vibrant Dunite</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed almost entirely of shimmering green crystals of olivine. This beautiful rock is common deep within the planet but is rarely found on the surface.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(153,176,110)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
+            <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkVibrantDunite</mineableThing>
@@ -217,6 +219,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.08</DropProbability>
+              <MinMiningSkill>5</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -242,16 +245,16 @@
         <ThingDef Name="ZF_SmoothedHewnVibrantDunite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnVibrantDunite</defName>
           <label>Smoothed Vibrant Dunite</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>An igneous rock composed almost entirely of shimmering green crystals of olivine. This beautiful rock is common deep within the planet but is rarely found on the surface.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1100</MaxHitPoints>
+            <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>5</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkVibrantDunite</mineableThing>
@@ -262,6 +265,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.08</DropProbability>
+              <MinMiningSkill>5</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -283,7 +287,7 @@
         <ThingDef Name="ZF_BoulderVibrantDunite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderVibrantDunite</defName>
           <label>Vibrant Dunite Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed almost entirely of shimmering green crystals of olivine. This beautiful rock is common deep within the planet but is rarely found on the surface.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(153,176,110)</color>
@@ -291,9 +295,9 @@
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>750</MaxHitPoints>
+            <MaxHitPoints>900</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>3</Beauty>
           </statBases>
           <pathCost>100</pathCost>
           <building>
@@ -385,6 +389,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.08</DropProbability>
+              <MinMiningSkill>5</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -410,7 +415,7 @@
         <ThingDef Name="ZF_PassableVibrantDunite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableVibrantDunite</defName>
           <label>Vibrant Dunite Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>An igneous rock composed almost entirely of shimmering green crystals of olivine. This beautiful rock is common deep within the planet but is rarely found on the surface.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(153,176,110)</color>
@@ -421,9 +426,9 @@
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>360</MaxHitPoints>
+            <MaxHitPoints>600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <pathCost>20</pathCost>
           <building>
@@ -514,6 +519,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.08</DropProbability>
+              <MinMiningSkill>5</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
