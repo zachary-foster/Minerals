@@ -65,6 +65,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.02</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -144,6 +145,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.02</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -237,6 +239,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.02</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -289,6 +292,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.02</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -352,7 +356,7 @@
       		<allowedTerrains>
       			<li>AB_CrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Lignite_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -422,6 +426,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.01</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>

@@ -100,7 +100,7 @@
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <CountPerDrop>15</CountPerDrop>
         <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
@@ -189,7 +189,7 @@
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <CountPerDrop>15</CountPerDrop>
         <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
@@ -296,7 +296,7 @@
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <CountPerDrop>15</CountPerDrop>
         <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
@@ -361,7 +361,7 @@
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <CountPerDrop>15</CountPerDrop>
         <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
@@ -488,7 +488,7 @@
       <li>
         <ResourceDefName>SoftClay</ResourceDefName>
         <DropProbability>0.3</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <CountPerDrop>10</CountPerDrop>
         <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>

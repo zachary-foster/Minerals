@@ -17,9 +17,23 @@
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(159,191,214)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(159,191,214)</li>
+            <li>(165,191,214)</li>
+            <li>(159,184,214)</li>
+            <li>(159,191,200)</li>
+            <li>(159,200,214)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,200,200)</li>
+            <li>(210,210,210)</li>
+            <li>(215,215,215)</li>
+            <li>(190,190,190)</li>
+            <li>(195,195,195)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
+            <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>3</Beauty>
           </statBases>
@@ -59,11 +73,13 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -91,7 +107,7 @@
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1650</MaxHitPoints>
+            <MaxHitPoints>1900</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>2</Beauty>
           </statBases>
@@ -131,11 +147,13 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -164,7 +182,7 @@
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1800</MaxHitPoints>
+            <MaxHitPoints>2000</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>1</Beauty>
           </statBases>
@@ -217,11 +235,13 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -262,11 +282,13 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -321,7 +343,7 @@
       			<li>AB_CrackedMud</li>
       			<li>AB_RichCrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Blueschist_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -385,11 +407,13 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
+              <DropProbability>2</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -450,7 +474,7 @@
       		<allowedTerrains>
       			<li>AB_CrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Blueschist_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -514,11 +538,13 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.02</DropProbability>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
               <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

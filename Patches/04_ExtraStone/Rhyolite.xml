@@ -59,7 +59,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -76,7 +76,7 @@
               <ResourceDefName>ZF_ChunkObsidian</ResourceDefName>
               <DropProbability>0.08</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
@@ -149,7 +149,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -166,7 +166,7 @@
               <ResourceDefName>ZF_ChunkObsidian</ResourceDefName>
               <DropProbability>0.08</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
@@ -253,7 +253,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -270,7 +270,7 @@
               <ResourceDefName>ZF_ChunkObsidian</ResourceDefName>
               <DropProbability>0.08</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
@@ -316,7 +316,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -333,7 +333,7 @@
               <ResourceDefName>ZF_ChunkObsidian</ResourceDefName>
               <DropProbability>0.08</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
@@ -393,7 +393,7 @@
       			<li>AB_CrackedMud</li>
       			<li>AB_RichCrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Rhyolite_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -457,7 +457,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.03</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -474,7 +474,7 @@
               <ResourceDefName>ZF_ChunkObsidian</ResourceDefName>
               <DropProbability>0.08</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>
@@ -540,7 +540,7 @@
       		<allowedTerrains>
       			<li>AB_CrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Rhyolite_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -604,7 +604,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.02</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -621,7 +621,7 @@
               <ResourceDefName>ZF_ChunkObsidian</ResourceDefName>
               <DropProbability>0.05</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>8</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkPeridotite</ResourceDefName>

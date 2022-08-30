@@ -11,8 +11,8 @@
   
         <ThingDef Name="ZF_WeatheredCreoleMarble" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredCreoleMarble</defName>
-          <label>A variety of marble with blue and grey streaks. Very beautiful.</label>
-          <description>A Weathered blueish marble.</description>
+          <label>Weathered Creole Marble</label>
+          <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(174,211,210)</color>
@@ -21,7 +21,7 @@
           <statBases>
             <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>3</Beauty>
+            <Beauty>4</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkCreoleMarble</mineableThing>
@@ -59,7 +59,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>3</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -71,6 +71,7 @@
               <ResourceDefName>Jade</ResourceDefName>
               <DropProbability>0.01</DropProbability>
               <CountPerDrop>15</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -138,7 +139,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>3</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -150,6 +151,7 @@
               <ResourceDefName>Jade</ResourceDefName>
               <DropProbability>0.01</DropProbability>
               <CountPerDrop>15</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -231,7 +233,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>3</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -243,6 +245,7 @@
               <ResourceDefName>Jade</ResourceDefName>
               <DropProbability>0.01</DropProbability>
               <CountPerDrop>15</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -283,7 +286,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>3</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -295,6 +298,7 @@
               <ResourceDefName>Jade</ResourceDefName>
               <DropProbability>0.01</DropProbability>
               <CountPerDrop>15</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Tags which determine how some options behave  -->
@@ -349,7 +353,7 @@
       			<li>AB_CrackedMud</li>
       			<li>AB_RichCrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>CreoleMarble_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -413,7 +417,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>3</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -425,6 +429,7 @@
               <ResourceDefName>Jade</ResourceDefName>
               <DropProbability>0.01</DropProbability>
               <CountPerDrop>15</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- Things this mineral replaces when a map is initialized -->
@@ -485,7 +490,7 @@
       		<allowedTerrains>
       			<li>AB_CrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>CreoleMarble_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -548,12 +553,12 @@
           <randomlyDropResources>
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
-              <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>3</MinMiningSkill>
+              <DropProbability>0.02</DropProbability>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>2</DropProbability>
+              <DropProbability>1</DropProbability>
               <CountPerDrop>5</CountPerDrop>
               <WasteProduct>true</WasteProduct>
             </li>
@@ -561,6 +566,7 @@
               <ResourceDefName>Jade</ResourceDefName>
               <DropProbability>0.01</DropProbability>
               <CountPerDrop>15</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->

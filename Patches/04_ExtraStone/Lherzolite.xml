@@ -12,12 +12,18 @@
         <ThingDef Name="ZF_WeatheredLherzolite" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredLherzolite</defName>
           <label>Weathered Lherzolite</label>
-          <description>An igneous rock sparkling with green crystals of olivine.</description>
+          <description>An coarse-grained igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(150,176,81)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(150,176,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,90,90)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -91,12 +97,18 @@
         <ThingDef Name="ZF_SolidLherzolite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidLherzolite</defName>
           <label>Solid Lherzolite</label>
-          <description>An igneous rock sparkling with green crystals of olivine.</description>
+          <description>An coarse-grained igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(150,176,81)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(150,176,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,90,90)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -171,12 +183,18 @@
         <ThingDef Name="ZF_HewnLherzolite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnLherzolite</defName>
           <label>Hewn Lherzolite</label>
-          <description>An igneous rock sparkling with green crystals of olivine.</description>
+          <description>An coarse-grained igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnGranite</texPath>
             <color>(150,176,81)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(150,176,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,90,90)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -263,11 +281,17 @@
         <ThingDef Name="ZF_SmoothedHewnLherzolite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnLherzolite</defName>
           <label>Smoothed Lherzolite</label>
-          <description>An igneous rock sparkling with green crystals of olivine.</description>
+          <description>An coarse-grained igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(150,176,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,90,90)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
@@ -311,11 +335,17 @@
         <ThingDef Name="ZF_BoulderLherzolite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderLherzolite</defName>
           <label>Lherzolite Boulder</label>
-          <description>An igneous rock sparkling with green crystals of olivine.</description>
+          <description>An coarse-grained igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(150,176,81)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(150,176,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,90,90)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
@@ -349,7 +379,7 @@
       			<li>AB_CrackedMud</li>
       			<li>AB_RichCrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Lherzolite_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -445,15 +475,21 @@
         <ThingDef Name="ZF_PassableLherzolite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableLherzolite</defName>
           <label>Lherzolite Rocks</label>
-          <description>An igneous rock sparkling with green crystals of olivine.</description>
+          <description>An coarse-grained igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableGranite</texPath>
             <color>(150,176,81)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(150,176,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,90,90)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>700</MaxHitPoints>
@@ -485,7 +521,7 @@
       		<allowedTerrains>
       			<li>AB_CrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Lherzolite_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>

@@ -60,6 +60,7 @@
               <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
               <DropProbability>0.05</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
@@ -70,7 +71,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>Dirt</ResourceDefName>
@@ -151,6 +152,7 @@
               <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
               <DropProbability>0.05</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
@@ -161,7 +163,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>Dirt</ResourceDefName>
@@ -256,6 +258,7 @@
               <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
               <DropProbability>0.05</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
@@ -266,7 +269,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>Dirt</ResourceDefName>
@@ -320,6 +323,7 @@
               <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
               <DropProbability>0.05</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
@@ -330,7 +334,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>Dirt</ResourceDefName>
@@ -397,7 +401,7 @@
       			<li>AB_CrackedMud</li>
       			<li>AB_RichCrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Siltstone_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -462,6 +466,7 @@
               <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
               <DropProbability>0.05</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
@@ -472,7 +477,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>Dirt</ResourceDefName>
@@ -545,7 +550,7 @@
       		<allowedTerrains>
       			<li>AB_CrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Siltstone_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -610,6 +615,7 @@
               <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
               <DropProbability>0.05</DropProbability>
               <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
@@ -620,7 +626,7 @@
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>6</MinMiningSkill>
+              <MinMiningSkill>10</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>Dirt</ResourceDefName>

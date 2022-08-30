@@ -12,14 +12,31 @@
         <ThingDef Name="ZF_WeatheredGreenGabbro" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredGreenGabbro</defName>
           <label>Weathered GreenGabbro</label>
-          <description>An intrusive igneous rock with a composition similar to basalt.</description>
+          <description>A coarse-grained igneous rock with a composition similar to basalt.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(82,85,66)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
+            <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>1</Beauty>
           </statBases>
@@ -59,7 +76,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -91,14 +108,31 @@
         <ThingDef Name="ZF_SolidGreenGabbro" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidGreenGabbro</defName>
           <label>Solid GreenGabbro</label>
-          <description>An intrusive igneous rock with a composition similar to basalt.</description>
+          <description>A coarse-grained igneous rock with a composition similar to basalt.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(82,85,66)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1600</MaxHitPoints>
+            <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>1</Beauty>
           </statBases>
@@ -138,7 +172,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -171,12 +205,29 @@
         <ThingDef Name="ZF_HewnGreenGabbro" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnGreenGabbro</defName>
           <label>Hewn GreenGabbro</label>
-          <description>An intrusive igneous rock with a composition similar to basalt.</description>
+          <description>A coarse-grained igneous rock with a composition similar to basalt.</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnGranite</texPath>
             <color>(82,85,66)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -231,7 +282,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -263,14 +314,31 @@
         <ThingDef Name="ZF_SmoothedHewnGreenGabbro" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnGreenGabbro</defName>
           <label>Smoothed GreenGabbro</label>
-          <description>An intrusive igneous rock with a composition similar to basalt.</description>
+          <description>A coarse-grained igneous rock with a composition similar to basalt.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
-            <MaxHitPoints>1700</MaxHitPoints>
+            <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>2</Beauty>
           </statBases>
@@ -283,7 +351,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -311,11 +379,28 @@
         <ThingDef Name="ZF_BoulderGreenGabbro" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderGreenGabbro</defName>
           <label>GreenGabbro Boulder</label>
-          <description>An intrusive igneous rock with a composition similar to basalt.</description>
+          <description>A coarse-grained igneous rock with a composition similar to basalt.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(82,85,66)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
@@ -349,7 +434,7 @@
       			<li>AB_CrackedMud</li>
       			<li>AB_RichCrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>GreenGabbro_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -413,7 +498,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.04</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -445,18 +530,35 @@
         <ThingDef Name="ZF_PassableGreenGabbro" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableGreenGabbro</defName>
           <label>GreenGabbro Rocks</label>
-          <description>An intrusive igneous rock with a composition similar to basalt.</description>
+          <description>A coarse-grained igneous rock with a composition similar to basalt.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableGranite</texPath>
             <color>(82,85,66)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+            <li>(82,95,66)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+            <li>(50,55,50)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>450</MaxHitPoints>
+            <MaxHitPoints>500</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
@@ -485,7 +587,7 @@
       		<allowedTerrains>
       			<li>AB_CrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>GreenGabbro_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -549,7 +651,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.02</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>

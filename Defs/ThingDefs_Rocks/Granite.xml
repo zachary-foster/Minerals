@@ -9,6 +9,23 @@
       <texPath>Things/Rock/WeatheredGranite</texPath>
       <color>(105,95,97)</color>
     </graphicData>
+    <randomColorsOne>
+      <li>(105,95,97)</li>
+      <li>(103,95,97)</li>
+      <li>(105,98,97)</li>
+      <li>(106,95,99)</li>
+      <li>(105,95,97)</li>
+      <li>(108,98,100)</li>
+      <li>(102,92,95)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(205,200,198)</li>
+      <li>(205,200,195)</li>
+      <li>(205,200,190)</li>
+      <li>(182,180,178)</li>
+      <li>(182,180,175)</li>
+      <li>(182,180,170)</li>
+    </randomColorsTwo>
     <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
     <statBases>
       <MaxHitPoints>1900</MaxHitPoints>
@@ -87,10 +104,27 @@
     <label>Solid Granite</label>
     <description>A solid wall of granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
     <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <texPath>Things/Rock/SolidGranite</texPath>
       <color>(105,95,97)</color>
     </graphicData>
-    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+    <randomColorsOne>
+      <li>(105,95,97)</li>
+      <li>(103,95,97)</li>
+      <li>(105,98,97)</li>
+      <li>(106,95,99)</li>
+      <li>(105,95,97)</li>
+      <li>(108,98,100)</li>
+      <li>(102,92,95)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(203,200,200)</li>
+      <li>(203,200,195)</li>
+      <li>(210,210,210)</li>
+      <li>(208,205,205)</li>
+      <li>(205,205,205)</li>
+      <li>(195,195,195)</li>
+    </randomColorsTwo>
+    <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
     <statBases>
       <MaxHitPoints>2100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -169,9 +203,29 @@
     <label>Hewn Granite</label>
     <description>Hewn wall of solid granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
     <graphicData>
-			<texPath>Things/Rock/HewnRockWall</texPath>
+      <shaderType>CutoutComplex</shaderType>
+			<texPath>Things/Rock/HewnGranite</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
     </graphicData>
+    <randomColorsOne>
+      <li>(105,95,97)</li>
+      <li>(103,95,97)</li>
+      <li>(105,98,97)</li>
+      <li>(106,95,99)</li>
+      <li>(105,95,97)</li>
+      <li>(108,98,100)</li>
+      <li>(102,92,95)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(205,202,202)</li>
+      <li>(205,202,197)</li>
+      <li>(212,212,212)</li>
+      <li>(210,208,208)</li>
+      <li>(208,208,208)</li>
+      <li>(198,198,198)</li>
+    </randomColorsTwo>
     <statBases>
       <MaxHitPoints>2300</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -265,6 +319,18 @@
 			<texPath>Things/Rock/SmoothedRockWall</texPath>
       <color>(105,95,97)</color>
     </graphicData>
+    <randomColorsOne>
+      <li>(105,95,97)</li>
+      <li>(103,95,97)</li>
+      <li>(105,98,97)</li>
+      <li>(106,95,99)</li>
+      <li>(105,95,97)</li>
+      <li>(108,98,100)</li>
+      <li>(102,92,95)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(200,200,200)</li>
+    </randomColorsTwo>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
       <MaxHitPoints>2200</MaxHitPoints>
@@ -314,6 +380,23 @@
       <texPath>Things/Rock/BoulderGranite</texPath>
       <color>(105,95,97)</color>
     </graphicData>
+    <randomColorsOne>
+      <li>(105,95,97)</li>
+      <li>(103,95,97)</li>
+      <li>(105,98,97)</li>
+      <li>(106,95,99)</li>
+      <li>(105,95,97)</li>
+      <li>(108,98,100)</li>
+      <li>(102,92,95)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(205,200,198)</li>
+      <li>(205,200,195)</li>
+      <li>(205,200,190)</li>
+      <li>(182,180,178)</li>
+      <li>(182,180,175)</li>
+      <li>(182,180,170)</li>
+    </randomColorsTwo>
     <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
     <statBases>
       <MaxHitPoints>1400</MaxHitPoints>
@@ -409,13 +492,30 @@
     <label>Granite rocks</label>
     <description>Granite rocks that are easily walked over and provide little cover.</description>
     <graphicData>
-      <texPath>Things/Rock/PassableLimestone</texPath>
+      <texPath>Things/Rock/PassableGranite</texPath>
       <color>(105,95,97)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+    <randomColorsOne>
+      <li>(105,95,97)</li>
+      <li>(103,95,97)</li>
+      <li>(105,98,97)</li>
+      <li>(106,95,99)</li>
+      <li>(105,95,97)</li>
+      <li>(108,98,100)</li>
+      <li>(102,92,95)</li>
+    </randomColorsOne>
+    <randomColorsTwo>
+      <li>(205,200,198)</li>
+      <li>(205,200,195)</li>
+      <li>(205,200,190)</li>
+      <li>(182,180,178)</li>
+      <li>(182,180,175)</li>
+      <li>(182,180,170)</li>
+    </randomColorsTwo>
+    <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
     <fillPercent>0.3</fillPercent>
     <statBases>
       <MaxHitPoints>1100</MaxHitPoints>

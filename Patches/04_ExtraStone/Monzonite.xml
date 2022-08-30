@@ -59,7 +59,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.02</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -138,7 +138,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.02</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -231,7 +231,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.02</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -342,7 +342,7 @@
       			<li>AB_CrackedMud</li>
       			<li>AB_RichCrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Monzonite_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -406,7 +406,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.02</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>
@@ -478,7 +478,7 @@
       		<allowedTerrains>
       			<li>AB_CrackedMud</li>
       			<li>AB_FineSand</li>
-      			<li>GU_RoseQuartz_Rough</li>
+      			<li>Monzonite_Rough</li>
       			<li>GU_AlienSandFine</li>
       			<li>GU_AlienSand</li>
       			<li>GU_RichAlienSand</li>
@@ -542,7 +542,7 @@
             <li>
               <ResourceDefName>RoughGem</ResourceDefName>
               <DropProbability>0.01</DropProbability>
-              <MinMiningSkill>4</MinMiningSkill>
+              <MinMiningSkill>6</MinMiningSkill>
             </li>
             <li>
               <ResourceDefName>CrushedStone</ResourceDefName>

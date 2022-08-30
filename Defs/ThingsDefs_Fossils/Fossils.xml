@@ -54,6 +54,10 @@
       <li>Slate_Rough</li>
       <li>ZF_ClaystoneBase_Rough</li>
       <li>ZF_MudstoneBase_Rough</li>
+      <li>Chalk_Rough</li>
+      <li>Jaspillite_Rough</li>
+      <li>Lignite_Rough</li>
+      <li>Siltstone_Rough</li>
     </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
@@ -155,6 +159,10 @@
       <li>Slate_Rough</li>
       <li>ZF_ClaystoneBase_Rough</li>
       <li>ZF_MudstoneBase_Rough</li>
+      <li>Chalk_Rough</li>
+      <li>Jaspillite_Rough</li>
+      <li>Lignite_Rough</li>
+      <li>Siltstone_Rough</li>
     </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
@@ -312,6 +320,10 @@
       <li>Slate_Rough</li>
       <li>ZF_ClaystoneBase_Rough</li>
       <li>ZF_MudstoneBase_Rough</li>
+      <li>Chalk_Rough</li>
+      <li>Jaspillite_Rough</li>
+      <li>Lignite_Rough</li>
+      <li>Siltstone_Rough</li>
     </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>

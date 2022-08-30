@@ -69,10 +69,17 @@
       <li>Slate_Rough</li>
       <li>ZF_ClaystoneBase_Rough</li>
       <li>ZF_MudstoneBase_Rough</li>
+      <li>Chalk_Rough</li>
+      <li>Jaspillite_Rough</li>
+      <li>Lignite_Rough</li>
+      <li>Siltstone_Rough</li>
+      <li>Sovite_Rough</li>
     </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>Limestone</li>
+      <li>Chalk</li>
+      <li>Sovite</li>
     </associatedOres>
     <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -501,12 +508,6 @@
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
     <maxClusterSize>20</maxClusterSize>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-    <allowedTerrains>
-      <li>Granite_Rough</li>
-      <li>Marble_Rough</li>
-      <li>ZF_BasaltBase_Rough</li>
-    </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
       <li>MineableTin</li>
@@ -680,6 +681,13 @@
     <allowedTerrains>
       <li>Granite_Rough</li>
       <li>ZF_BasaltBase_Rough</li>
+      <li>Dacite_Rough</li>
+      <li>GreenGabbro_Rough</li>
+      <li>Lherzolite_Rough</li>
+      <li>Monzonite_Rough</li>
+      <li>Rhyolite_Rough</li>
+      <li>Scoria_Rough</li>
+      <li>VibrantDunite_Rough</li>
     </allowedTerrains>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
