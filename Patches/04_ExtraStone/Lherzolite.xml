@@ -18,10 +18,10 @@
             <color>(150,176,81)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(150,176,81)</li>
+            <li>(100,110,90)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(100,90,90)</li>
+            <li>(160,190,85)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
@@ -103,10 +103,10 @@
             <color>(150,176,81)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(150,176,81)</li>
+            <li>(100,110,90)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(100,90,90)</li>
+            <li>(160,190,85)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
@@ -189,10 +189,10 @@
             <color>(150,176,81)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(150,176,81)</li>
+            <li>(100,110,90)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(100,90,90)</li>
+            <li>(160,190,85)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
           <statBases>
@@ -287,10 +287,10 @@
             <color>(120,50,50)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(150,176,81)</li>
+            <li>(100,110,90)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(100,90,90)</li>
+            <li>(160,190,85)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
@@ -341,10 +341,10 @@
             <color>(150,176,81)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(150,176,81)</li>
+            <li>(100,110,90)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(100,90,90)</li>
+            <li>(160,190,85)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
@@ -484,10 +484,10 @@
             </damageData>
           </graphicData>
           <randomColorsOne>
-            <li>(150,176,81)</li>
+            <li>(100,110,90)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(100,90,90)</li>
+            <li>(160,190,85)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
           <fillPercent>0.3</fillPercent>

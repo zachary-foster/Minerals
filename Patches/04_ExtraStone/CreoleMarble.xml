@@ -14,10 +14,16 @@
           <label>Weathered Creole Marble</label>
           <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
+            <texPath>Things/Rock/WeatheredMarble</texPath>
             <color>(174,211,210)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(170,215,220)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(130,130,130)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/WeatheredMarble/WeatheredMarbleA</uiIconPath>
           <statBases>
             <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>

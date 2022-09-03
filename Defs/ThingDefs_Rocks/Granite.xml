@@ -203,7 +203,6 @@
     <label>Hewn Granite</label>
     <description>Hewn wall of solid granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
 			<texPath>Things/Rock/HewnGranite</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
@@ -316,7 +315,7 @@
     <label>Smoothed granite wall</label>
     <description>A smoothed wall of solid granite. Its almost pretty.</description>
     <graphicData>
-			<texPath>Things/Rock/SmoothedRockWall</texPath>
+			<texPath>Things/Rock/SmoothedGranite</texPath>
       <color>(105,95,97)</color>
     </graphicData>
     <randomColorsOne>

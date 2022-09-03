@@ -17,11 +17,17 @@
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(193,184,186)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(193,184,186)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,50,50)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>2</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkMonzonite</mineableThing>
@@ -93,14 +99,20 @@
           <label>Solid Monzonite</label>
           <description>A coarse-grained igneous rock that formed from slowly cooling magma deep under the planet's surface.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(193,184,186)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(193,184,186)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,50,50)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>0</Beauty>
+            <Beauty>1</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkMonzonite</mineableThing>
@@ -173,10 +185,16 @@
           <label>Hewn Monzonite</label>
           <description>A coarse-grained igneous rock that formed from slowly cooling magma deep under the planet's surface.</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnGranite</texPath>
             <color>(193,184,186)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(193,184,186)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,50,50)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -268,11 +286,17 @@
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(193,184,186)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,50,50)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>2</Beauty>
+            <Beauty>3</Beauty>
           </statBases>
           <building>
             <mineableThing>ChunkMonzonite</mineableThing>
@@ -309,6 +333,12 @@
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(193,184,186)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(193,184,186)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,50,50)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
@@ -440,13 +470,19 @@
           <label>Monzonite Rocks</label>
           <description>A coarse-grained igneous rock that formed from slowly cooling magma deep under the planet's surface.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableGranite</texPath>
             <color>(193,184,186)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(193,184,186)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(50,50,50)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>650</MaxHitPoints>

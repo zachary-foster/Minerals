@@ -130,6 +130,7 @@
   
   <ThingDef Name="HewnRockBase" ParentName="ImpassableRockBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
     <graphicData>
+      <shaderType>CutoutComplex</shaderType>
 			<graphicClass>Graphic_Random</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>

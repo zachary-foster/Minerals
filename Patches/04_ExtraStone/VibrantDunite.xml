@@ -87,10 +87,10 @@
           <label>Solid Vibrant Dunite</label>
           <description>An igneous rock composed almost entirely of shimmering green crystals of olivine. This beautiful rock is common deep within the planet but is rarely found on the surface.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(153,176,110)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -161,10 +161,10 @@
           <label>Hewn Vibrant Dunite</label>
           <description>An igneous rock composed almost entirely of shimmering green crystals of olivine. This beautiful rock is common deep within the planet but is rarely found on the surface.</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnGranite</texPath>
             <color>(153,176,110)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -417,13 +417,13 @@
           <label>Vibrant Dunite Rocks</label>
           <description>An igneous rock composed almost entirely of shimmering green crystals of olivine. This beautiful rock is common deep within the planet but is rarely found on the surface.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableGranite</texPath>
             <color>(153,176,110)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>600</MaxHitPoints>
