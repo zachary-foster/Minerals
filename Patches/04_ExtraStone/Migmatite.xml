@@ -18,6 +18,12 @@
             <color>(136,146,155)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(136,146,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(190,190,190)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -92,12 +98,18 @@
         <ThingDef Name="ZF_SolidMigmatite" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidMigmatite</defName>
           <label>Solid Migmatite</label>
-          <description>A Solid plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A layered metamorphic rock produced by eons of rock folding deep in the earth.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(136,146,155)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(136,146,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(190,190,190)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1900</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -173,12 +185,18 @@
         <ThingDef Name="ZF_HewnMigmatite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnMigmatite</defName>
           <label>Hewn Migmatite</label>
-          <description>A Hewn plutonic rock composed largely of calcic plagioclase.</description>
+          <description>A layered metamorphic rock produced by eons of rock folding deep in the earth.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(136,146,155)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(136,146,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(190,190,190)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>2000</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -266,11 +284,17 @@
         <ThingDef Name="ZF_SmoothedHewnMigmatite" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnMigmatite</defName>
           <label>Smoothed Migmatite</label>
-          <description>A plutonic rock that has been polished flat.</description>
+          <description>A layered metamorphic rock produced by eons of rock folding deep in the earth.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(136,146,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(190,190,190)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
@@ -315,12 +339,18 @@
         <ThingDef Name="ZF_BoulderMigmatite" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderMigmatite</defName>
           <label>Migmatite Boulder</label>
-          <description>A plutonic Boulder composed largely of calcic plagioclase.</description>
+          <description>A layered metamorphic rock produced by eons of rock folding deep in the earth.</description>
           <graphicData>
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(136,146,155)</color>
           </graphicData>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(136,146,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(190,190,190)</li>
+          </randomColorsTwo>
           <fillPercent>0.6</fillPercent>
           <statBases>
             <MaxHitPoints>1300</MaxHitPoints>
@@ -450,7 +480,7 @@
         <ThingDef Name="ZF_PassableMigmatite" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableMigmatite</defName>
           <label>Migmatite Rocks</label>
-          <description>Plutonic rocks composed largely of calcic plagioclase.</description>
+          <description>A layered metamorphic rock produced by eons of rock folding deep in the earth.</description>
           <graphicData>
             <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(136,146,155)</color>
@@ -459,6 +489,12 @@
             </damageData>
           </graphicData>
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(136,146,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(190,190,190)</li>
+          </randomColorsTwo>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>1000</MaxHitPoints>

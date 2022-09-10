@@ -17,6 +17,18 @@
             <texPath>Things/Rock/WeatheredGranite</texPath>
             <color>(158,139,132)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
@@ -103,6 +115,18 @@
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(158,139,132)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
@@ -190,6 +214,18 @@
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(158,139,132)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
           <statBases>
             <MaxHitPoints>1900</MaxHitPoints>
@@ -289,6 +325,18 @@
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
@@ -344,6 +392,18 @@
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(158,139,132)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
@@ -488,6 +548,18 @@
               <enabled>false</enabled>
             </damageData>
           </graphicData>
+          <randomColorsOne>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(158,139,132)</li>
+            <li>(154,139,132)</li>
+            <li>(158,135,132)</li>
+            <li>(158,139,129)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>

@@ -14,10 +14,22 @@
           <label>Weathered Dacite</label>
           <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(177,178,172)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(177,178,172)</li>
+            <li>(173,178,172)</li>
+            <li>(177,175,172)</li>
+            <li>(177,178,170)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,205,190)</li>
+            <li>(205,205,190)</li>
+            <li>(200,210,190)</li>
+            <li>(200,205,195)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -93,10 +105,22 @@
           <label>Solid Dacite</label>
           <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(177,178,172)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(177,178,172)</li>
+            <li>(173,178,172)</li>
+            <li>(177,175,172)</li>
+            <li>(177,178,170)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,205,190)</li>
+            <li>(205,205,190)</li>
+            <li>(200,210,190)</li>
+            <li>(200,205,195)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -173,10 +197,22 @@
           <label>Hewn Dacite</label>
           <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnGranite</texPath>
             <color>(177,178,172)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(177,178,172)</li>
+            <li>(173,178,172)</li>
+            <li>(177,175,172)</li>
+            <li>(177,178,170)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,205,190)</li>
+            <li>(205,205,190)</li>
+            <li>(200,210,190)</li>
+            <li>(200,205,195)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -265,10 +301,22 @@
           <label>Smoothed Dacite</label>
           <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
-      			<texPath>Things/Rock/SmoothedRockWall</texPath>
-            <color>(120,50,50)</color>
+      			<texPath>Things/Rock/SmoothedGranite</texPath>
+            <color>(177,178,172)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <uiIconPath>Things/Rock/SmoothedGranite/SmoothedGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(177,178,172)</li>
+            <li>(173,178,172)</li>
+            <li>(177,175,172)</li>
+            <li>(177,178,170)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,205,190)</li>
+            <li>(205,205,190)</li>
+            <li>(200,210,190)</li>
+            <li>(200,205,195)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -317,6 +365,18 @@
             <color>(177,178,172)</color>
           </graphicData>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(177,178,172)</li>
+            <li>(173,178,172)</li>
+            <li>(177,175,172)</li>
+            <li>(177,178,170)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,205,190)</li>
+            <li>(205,205,190)</li>
+            <li>(200,210,190)</li>
+            <li>(200,205,195)</li>
+          </randomColorsTwo>
           <fillPercent>0.6</fillPercent>
           <statBases>
             <MaxHitPoints>1000</MaxHitPoints>
@@ -447,13 +507,25 @@
           <label>Dacite Rocks</label>
           <description>A volcanic rock composed predominantly of plagioclase feldspar and quartz.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableGranite</texPath>
             <color>(177,178,172)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(177,178,172)</li>
+            <li>(173,178,172)</li>
+            <li>(177,175,172)</li>
+            <li>(177,178,170)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,205,190)</li>
+            <li>(205,205,190)</li>
+            <li>(200,210,190)</li>
+            <li>(200,205,195)</li>
+          </randomColorsTwo>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>900</MaxHitPoints>

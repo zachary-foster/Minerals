@@ -102,10 +102,24 @@
           <label>Solid Blueschist</label>
           <description>Solid coarse-grained metamorphic rock</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(159,191,214)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(159,191,214)</li>
+            <li>(165,191,214)</li>
+            <li>(159,184,214)</li>
+            <li>(159,191,200)</li>
+            <li>(159,200,214)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,200,200)</li>
+            <li>(210,210,210)</li>
+            <li>(215,215,215)</li>
+            <li>(190,190,190)</li>
+            <li>(195,195,195)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1900</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -177,10 +191,24 @@
           <label>Hewn Blueschist</label>
           <description>Hewn coarse-grained metamorphic rock</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnGranite</texPath>
             <color>(159,191,214)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(159,191,214)</li>
+            <li>(165,191,214)</li>
+            <li>(159,184,214)</li>
+            <li>(159,191,200)</li>
+            <li>(159,200,214)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,200,200)</li>
+            <li>(210,210,210)</li>
+            <li>(215,215,215)</li>
+            <li>(190,190,190)</li>
+            <li>(195,195,195)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>2000</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -264,10 +292,24 @@
           <label>Smoothed Blueschist</label>
           <description>coarse-grained metamorphic rock that has been polished flat.</description>
           <graphicData>
-      			<texPath>Things/Rock/SmoothedRockWall</texPath>
+      			<texPath>Things/Rock/SmoothedGranite</texPath>
             <color>(120,50,50)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(159,191,214)</li>
+            <li>(165,191,214)</li>
+            <li>(159,184,214)</li>
+            <li>(159,191,200)</li>
+            <li>(159,200,214)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,200,200)</li>
+            <li>(210,210,210)</li>
+            <li>(215,215,215)</li>
+            <li>(190,190,190)</li>
+            <li>(195,195,195)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SmoothedGranite/SmoothedGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -310,6 +352,20 @@
             <texPath>Things/Rock/BoulderGranite</texPath>
             <color>(159,191,214)</color>
           </graphicData>
+          <randomColorsOne>
+            <li>(159,191,214)</li>
+            <li>(165,191,214)</li>
+            <li>(159,184,214)</li>
+            <li>(159,191,200)</li>
+            <li>(159,200,214)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,200,200)</li>
+            <li>(210,210,210)</li>
+            <li>(215,215,215)</li>
+            <li>(190,190,190)</li>
+            <li>(195,195,195)</li>
+          </randomColorsTwo>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
@@ -436,13 +492,27 @@
           <label>Blueschist Rocks</label>
           <description>Coarse-grained metamorphic rocks</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableGranite</texPath>
             <color>(159,191,214)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(159,191,214)</li>
+            <li>(165,191,214)</li>
+            <li>(159,184,214)</li>
+            <li>(159,191,200)</li>
+            <li>(159,200,214)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(200,200,200)</li>
+            <li>(210,210,210)</li>
+            <li>(215,215,215)</li>
+            <li>(190,190,190)</li>
+            <li>(195,195,195)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>800</MaxHitPoints>

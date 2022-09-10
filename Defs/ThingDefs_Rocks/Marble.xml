@@ -462,7 +462,7 @@
     <label>Marble rocks</label>
     <description>Marble rocks that are easily walked over and provide little cover.</description>
     <graphicData>
-      <texPath>Things/Rock/PassableMable</texPath>
+      <texPath>Things/Rock/PassableMarble</texPath>
       <color>(132,135,132)</color>
       <damageData>
         <enabled>false</enabled>
@@ -474,7 +474,7 @@
     <randomColorsTwo>
       <li>(220,220,220)</li>
     </randomColorsTwo>
-    <uiIconPath>Things/Rock/PassableMable/PassableMableA</uiIconPath>
+    <uiIconPath>Things/Rock/PassableMarble/PassableMarbleA</uiIconPath>
     <fillPercent>0.3</fillPercent>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>

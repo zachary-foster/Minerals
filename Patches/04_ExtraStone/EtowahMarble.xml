@@ -14,10 +14,16 @@
           <label>Weathered Etowah Marble</label>
           <description>Weathered pink marble.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
+            <texPath>Things/Rock/WeatheredMarble</texPath>
             <color>(246,200,184)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(250,175,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(255,255,255)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/WeatheredMarble/WeatheredMarbleA</uiIconPath>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -93,10 +99,16 @@
           <label>Solid EtowahMarble</label>
           <description>Solid pink marble.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidMarble</texPath>
             <color>(246,200,184)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(250,175,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(255,255,255)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SolidMarble/SolidMarbleA</uiIconPath>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -173,10 +185,16 @@
           <label>Hewn EtowahMarble</label>
           <description>Hewn pink marble.</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnMarble</texPath>
             <color>(246,200,184)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(250,175,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(255,255,255)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/HewnMarble/HewnMarbleA</uiIconPath>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -265,10 +283,16 @@
           <label>Smoothed EtowahMarble</label>
           <description>Pink marble that has been polished flat.</description>
           <graphicData>
-      			<texPath>Things/Rock/SmoothedRockWall</texPath>
+      			<texPath>Things/Rock/SmoothedMarble</texPath>
             <color>(120,50,50)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(250,175,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(255,255,255)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SmoothedMarble/SmoothedMarbleA</uiIconPath>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -313,10 +337,16 @@
           <label>EtowahMarble Boulder</label>
           <description>A pink marble Boulder.</description>
           <graphicData>
-            <texPath>Things/Rock/BoulderGranite</texPath>
+            <texPath>Things/Rock/BoulderMarble</texPath>
             <color>(246,200,184)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(250,175,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(255,255,255)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/BoulderMarble/BoulderMarbleA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
             <MaxHitPoints>1000</MaxHitPoints>
@@ -447,13 +477,19 @@
           <label>EtowahMarble Rocks</label>
           <description>Pink marble rocks.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableMarble</texPath>
             <color>(246,200,184)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(250,175,155)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(255,255,255)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/PassableMarble/PassableMarbleA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>800</MaxHitPoints>

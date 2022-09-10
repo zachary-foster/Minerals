@@ -568,7 +568,7 @@
   
   <ThingDef Name="LavaFlowBasalt" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
     <defName>LavaFlowBasalt</defName>
-    <label>Ancient lava flow</label>
+    <label>Ancient basalt lava flow</label>
     <description>A weathered lava flow. This was once a river of molted rock, but has since cooled and shattered. Very difficult to walk over but provides little cover in a gunfight.</description>
     <graphicData>
       <texPath>Things/Rock/PassableBasalt</texPath>

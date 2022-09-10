@@ -18,6 +18,12 @@
             <color>(153,176,110)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(140,180,100)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(240,240,240)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -91,6 +97,12 @@
             <color>(153,176,110)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(140,180,100)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(240,240,240)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -165,6 +177,12 @@
             <color>(153,176,110)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(140,180,100)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(240,240,240)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -251,6 +269,12 @@
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(140,180,100)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(240,240,240)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -293,6 +317,12 @@
             <color>(153,176,110)</color>
           </graphicData>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(140,180,100)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(240,240,240)</li>
+          </randomColorsTwo>
           <fillPercent>0.6</fillPercent>
           <statBases>
             <MaxHitPoints>900</MaxHitPoints>
@@ -424,6 +454,12 @@
             </damageData>
           </graphicData>
           <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(140,180,100)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(240,240,240)</li>
+          </randomColorsTwo>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>600</MaxHitPoints>

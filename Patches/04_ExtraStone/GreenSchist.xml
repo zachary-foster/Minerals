@@ -18,6 +18,12 @@
             <color>(82,98,71)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,98,71)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(130,150,120)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -88,10 +94,16 @@
           <label>Solid GreenSchist</label>
           <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(82,98,71)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,98,71)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(130,150,120)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -163,10 +175,16 @@
           <label>Hewn GreenSchist</label>
           <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnGranite</texPath>
             <color>(82,98,71)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,98,71)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(130,150,120)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -250,10 +268,10 @@
           <label>Smoothed GreenSchist</label>
           <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
-      			<texPath>Things/Rock/SmoothedRockWall</texPath>
+      			<texPath>Things/Rock/SmoothedGranite</texPath>
             <color>(120,50,50)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <uiIconPath>Things/Rock/SmoothedGranite/SmoothedGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -297,6 +315,12 @@
             <color>(82,98,71)</color>
           </graphicData>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,98,71)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(130,150,120)</li>
+          </randomColorsTwo>
           <fillPercent>0.6</fillPercent>
           <statBases>
             <MaxHitPoints>1000</MaxHitPoints>
@@ -422,13 +446,19 @@
           <label>GreenSchist Rocks</label>
           <description>Metamorphic rock containing an abundance of green minerals.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableGranite</texPath>
             <color>(82,98,71)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,98,71)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(130,150,120)</li>
+          </randomColorsTwo>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>800</MaxHitPoints>

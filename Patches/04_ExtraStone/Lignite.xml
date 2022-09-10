@@ -18,6 +18,18 @@
             <color>(82,72,70)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredSlate/WeatheredSlateA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,72,70)</li>
+            <li>(85,72,70)</li>
+            <li>(82,75,70)</li>
+            <li>(82,72,73)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(82,72,70)</li>
+            <li>(80,72,70)</li>
+            <li>(82,70,70)</li>
+            <li>(82,72,68)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -98,6 +110,18 @@
             <color>(82,72,70)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredSlate/WeatheredSlateA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,72,70)</li>
+            <li>(85,72,70)</li>
+            <li>(82,75,70)</li>
+            <li>(82,72,73)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(82,72,70)</li>
+            <li>(80,72,70)</li>
+            <li>(82,70,70)</li>
+            <li>(82,72,68)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1100</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -179,6 +203,18 @@
             <color>(82,72,70)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,72,70)</li>
+            <li>(85,72,70)</li>
+            <li>(82,75,70)</li>
+            <li>(82,72,73)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(82,72,70)</li>
+            <li>(80,72,70)</li>
+            <li>(82,70,70)</li>
+            <li>(82,72,68)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1200</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -272,6 +308,18 @@
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,72,70)</li>
+            <li>(85,72,70)</li>
+            <li>(82,75,70)</li>
+            <li>(82,72,73)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(82,72,70)</li>
+            <li>(80,72,70)</li>
+            <li>(82,70,70)</li>
+            <li>(82,72,68)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -318,13 +366,25 @@
           <label>Lignite Rocks</label>
           <description>A low-grade form of coal with a high moisture content.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableBasalt</texPath>
+            <texPath>Things/Rock/PassableLimestone</texPath>
             <color>(82,72,70)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableBasalt/PassableBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(82,72,70)</li>
+            <li>(85,72,70)</li>
+            <li>(82,75,70)</li>
+            <li>(82,72,73)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(82,72,70)</li>
+            <li>(80,72,70)</li>
+            <li>(82,70,70)</li>
+            <li>(82,72,68)</li>
+          </randomColorsTwo>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>400</MaxHitPoints>

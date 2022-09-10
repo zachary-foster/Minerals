@@ -21,7 +21,7 @@
             <li>(193,184,186)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(50,50,50)</li>
+            <li>(70,70,70)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
           <statBases>
@@ -106,7 +106,7 @@
             <li>(193,184,186)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(50,50,50)</li>
+            <li>(70,70,70)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
@@ -192,7 +192,7 @@
             <li>(193,184,186)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(50,50,50)</li>
+            <li>(70,70,70)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
           <statBases>
@@ -290,7 +290,7 @@
             <li>(193,184,186)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(50,50,50)</li>
+            <li>(70,70,70)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
@@ -337,7 +337,7 @@
             <li>(193,184,186)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(50,50,50)</li>
+            <li>(70,70,70)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
@@ -480,7 +480,7 @@
             <li>(193,184,186)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(50,50,50)</li>
+            <li>(70,70,70)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
           <fillPercent>0.3</fillPercent>

@@ -18,6 +18,18 @@
             <color>(112,118,118)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(112,118,118)</li>
+            <li>(117,118,118)</li>
+            <li>(112,124,118)</li>
+            <li>(112,118,124)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(112,118,118)</li>
+            <li>(108,118,118)</li>
+            <li>(112,115,118)</li>
+            <li>(112,118,115)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -93,10 +105,22 @@
           <label>Dark Andesite</label>
           <description>A fine-grained igenous rock.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidGranite</texPath>
             <color>(112,118,118)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(112,118,118)</li>
+            <li>(117,118,118)</li>
+            <li>(112,124,118)</li>
+            <li>(112,118,124)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(112,118,118)</li>
+            <li>(108,118,118)</li>
+            <li>(112,115,118)</li>
+            <li>(112,118,115)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -173,10 +197,19 @@
           <label>Hewn Dark Andesite</label>
           <description>A fine-grained igenous rock.</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnGranite</texPath>
             <color>(112,118,118)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(112,118,118)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(112,118,118)</li>
+            <li>(108,118,118)</li>
+            <li>(112,115,118)</li>
+            <li>(112,118,115)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -265,10 +298,19 @@
           <label>smoothed dark andesite</label>
           <description>A fine-grained igenous rock.</description>
           <graphicData>
-      			<texPath>Things/Rock/SmoothedRockWall</texPath>
-            <color>(120,50,50)</color>
+      			<texPath>Things/Rock/SmoothedGranite</texPath>
+            <color>(112,118,118)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <uiIconPath>Things/Rock/SmoothedGranite/SmoothedGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(112,118,118)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(112,118,118)</li>
+            <li>(108,118,118)</li>
+            <li>(112,115,118)</li>
+            <li>(112,118,115)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -317,6 +359,18 @@
             <color>(112,118,118)</color>
           </graphicData>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(112,118,118)</li>
+            <li>(117,118,118)</li>
+            <li>(112,124,118)</li>
+            <li>(112,118,124)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(112,118,118)</li>
+            <li>(108,118,118)</li>
+            <li>(112,115,118)</li>
+            <li>(112,118,115)</li>
+          </randomColorsTwo>
           <fillPercent>0.6</fillPercent>
           <statBases>
             <MaxHitPoints>1000</MaxHitPoints>
@@ -447,13 +501,25 @@
           <label>Dark Andesite Rocks</label>
           <description>A fine-grained igenous rock.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableGranite</texPath>
             <color>(112,118,118)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(112,118,118)</li>
+            <li>(117,118,118)</li>
+            <li>(112,124,118)</li>
+            <li>(112,118,124)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(112,118,118)</li>
+            <li>(108,118,118)</li>
+            <li>(112,115,118)</li>
+            <li>(112,118,115)</li>
+          </randomColorsTwo>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>600</MaxHitPoints>

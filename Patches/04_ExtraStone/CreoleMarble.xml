@@ -18,10 +18,10 @@
             <color>(174,211,210)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(170,215,220)</li>
+            <li>(200,218,220)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(130,130,130)</li>
+            <li>(100,150,155)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/WeatheredMarble/WeatheredMarbleA</uiIconPath>
           <statBases>
@@ -100,10 +100,16 @@
           <label>Solid Creole Marble</label>
           <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidMarble</texPath>
             <color>(174,211,210)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(200,218,220)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,150,155)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SolidMarble/SolidMarbleA</uiIconPath>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -181,10 +187,16 @@
           <label>Hewn Creole Marble</label>
           <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
-      			<texPath>Things/Rock/HewnRockWall</texPath>
+      			<texPath>Things/Rock/HewnMarble</texPath>
             <color>(174,211,210)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(200,218,220)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,150,155)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/HewnMarble/HewnMarbleA</uiIconPath>
           <statBases>
             <MaxHitPoints>1400</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -274,10 +286,16 @@
           <label>Smoothed Creole Marble</label>
           <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
-      			<texPath>Things/Rock/SmoothedRockWall</texPath>
+      			<texPath>Things/Rock/SmoothedMarble</texPath>
             <color>(120,50,50)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(200,218,220)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,150,155)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SmoothedMarble/SmoothedMarbleA</uiIconPath>
           <statBases>
             <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -323,10 +341,16 @@
           <label>Creole Marble Boulder</label>
           <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
-            <texPath>Things/Rock/BoulderGranite</texPath>
+            <texPath>Things/Rock/BoulderMarble</texPath>
             <color>(174,211,210)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(200,218,220)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,150,155)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/BoulderMarble/BoulderMarbleA</uiIconPath>
           <fillPercent>0.6</fillPercent>
           <statBases>
             <MaxHitPoints>900</MaxHitPoints>
@@ -458,13 +482,19 @@
           <label>Creole Marble Rocks</label>
           <description>A variety of marble with blue and grey streaks. Very beautiful.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableMarble</texPath>
             <color>(174,211,210)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(200,218,220)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(100,150,155)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/PassableMarble/PassableMarbleA</uiIconPath>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>600</MaxHitPoints>

@@ -18,21 +18,16 @@
             <color>(82,85,66)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
+            <li>(82,85,66)</li>
+            <li>(84,85,66)</li>
+            <li>(82,87,66)</li>
+            <li>(82,85,68)</li>
           </randomColorsOne>
           <randomColorsTwo>
             <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
+            <li>(53,55,50)</li>
+            <li>(50,58,50)</li>
+            <li>(50,55,55)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
@@ -114,21 +109,16 @@
             <color>(82,85,66)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
+            <li>(82,85,66)</li>
+            <li>(84,85,66)</li>
+            <li>(82,87,66)</li>
+            <li>(82,85,68)</li>
           </randomColorsOne>
           <randomColorsTwo>
             <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
+            <li>(53,55,50)</li>
+            <li>(50,58,50)</li>
+            <li>(50,55,55)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/SolidGranite/SolidGraniteA</uiIconPath>
           <statBases>
@@ -211,21 +201,13 @@
             <color>(82,85,66)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
+            <li>(82,85,66)</li>
           </randomColorsOne>
           <randomColorsTwo>
             <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
+            <li>(53,55,50)</li>
+            <li>(50,58,50)</li>
+            <li>(50,55,55)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/HewnGranite/HewnGraniteA</uiIconPath>
           <statBases>
@@ -317,24 +299,16 @@
           <description>A coarse-grained igneous rock with a composition similar to basalt.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
-            <color>(120,50,50)</color>
+            <color>(82,85,66)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
+            <li>(82,85,66)</li>
           </randomColorsOne>
           <randomColorsTwo>
             <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
+            <li>(53,55,50)</li>
+            <li>(50,58,50)</li>
+            <li>(50,55,55)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
           <statBases>
@@ -385,21 +359,16 @@
             <color>(82,85,66)</color>
           </graphicData>
           <randomColorsOne>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
+            <li>(82,85,66)</li>
+            <li>(84,85,66)</li>
+            <li>(82,87,66)</li>
+            <li>(82,85,68)</li>
           </randomColorsOne>
           <randomColorsTwo>
             <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
+            <li>(53,55,50)</li>
+            <li>(50,58,50)</li>
+            <li>(50,55,55)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
           <fillPercent>0.6</fillPercent>
@@ -539,21 +508,16 @@
             </damageData>
           </graphicData>
           <randomColorsOne>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
-            <li>(82,95,66)</li>
+            <li>(82,85,66)</li>
+            <li>(84,85,66)</li>
+            <li>(82,87,66)</li>
+            <li>(82,85,68)</li>
           </randomColorsOne>
           <randomColorsTwo>
             <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
-            <li>(50,55,50)</li>
+            <li>(53,55,50)</li>
+            <li>(50,58,50)</li>
+            <li>(50,55,55)</li>
           </randomColorsTwo>
           <uiIconPath>Things/Rock/PassableGranite/PassableGraniteA</uiIconPath>
           <fillPercent>0.3</fillPercent>

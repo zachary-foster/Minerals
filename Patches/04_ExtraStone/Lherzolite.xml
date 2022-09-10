@@ -283,7 +283,7 @@
           <label>Smoothed Lherzolite</label>
           <description>An coarse-grained igneous rock sparkling with green crystals of olivine.</description>
           <graphicData>
-      			<texPath>Things/Rock/SmoothedRockWall</texPath>
+      			<texPath>Things/Rock/SmoothedGranite</texPath>
             <color>(120,50,50)</color>
           </graphicData>
           <randomColorsOne>
@@ -292,7 +292,7 @@
           <randomColorsTwo>
             <li>(160,190,85)</li>
           </randomColorsTwo>
-          <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <uiIconPath>Things/Rock/SmoothedGranite/SmoothedGraniteA</uiIconPath>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>

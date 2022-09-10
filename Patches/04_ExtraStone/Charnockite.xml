@@ -18,6 +18,18 @@
             <color>(141,120,79)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -92,6 +104,18 @@
             <color>(141,120,79)</color>
           </graphicData>
           <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <randomColorsOne>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1700</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -167,6 +191,18 @@
             <color>(141,120,79)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1800</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -254,6 +290,18 @@
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1600</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -297,6 +345,18 @@
             <color>(141,120,79)</color>
           </graphicData>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsTwo>
           <fillPercent>0.6</fillPercent>
           <statBases>
             <MaxHitPoints>900</MaxHitPoints>
@@ -429,6 +489,18 @@
             </damageData>
           </graphicData>
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(141,120,79)</li>
+            <li>(144,120,79)</li>
+            <li>(141,123,79)</li>
+            <li>(141,120,81)</li>
+          </randomColorsTwo>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>600</MaxHitPoints>

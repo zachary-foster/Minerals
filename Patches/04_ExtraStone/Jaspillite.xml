@@ -14,10 +14,16 @@
           <label>Weathered Jaspillite</label>
           <description>A variety of chert that contains significant quantites of iron.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
+            <texPath>Things/Rock/WeatheredLimestone</texPath>
             <color>(208,103,84)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(208,103,84)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(120,120,120)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1200</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -100,10 +106,16 @@
           <label>Solid Jaspillite</label>
           <description>A variety of chert that contains significant quantites of iron.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/WeatheredLimestone</texPath>
             <color>(208,103,84)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(208,103,84)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(120,120,120)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -191,6 +203,12 @@
             <color>(208,103,84)</color>
           </graphicData>
           <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(208,103,84)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(120,120,120)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1400</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -290,6 +308,12 @@
             <color>(120,50,50)</color>
           </graphicData>
           <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
+          <randomColorsOne>
+            <li>(208,103,84)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(120,120,120)</li>
+          </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -345,6 +369,12 @@
             <color>(208,103,84)</color>
           </graphicData>
           <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <randomColorsOne>
+            <li>(208,103,84)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(120,120,120)</li>
+          </randomColorsTwo>
           <fillPercent>0.6</fillPercent>
           <statBases>
             <MaxHitPoints>800</MaxHitPoints>
@@ -489,6 +519,12 @@
             </damageData>
           </graphicData>
           <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <randomColorsOne>
+            <li>(208,103,84)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(120,120,120)</li>
+          </randomColorsTwo>
           <fillPercent>0.3</fillPercent>
           <statBases>
             <MaxHitPoints>500</MaxHitPoints>
