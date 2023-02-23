@@ -12,7 +12,7 @@
         <ThingDef Name="ZF_WeatheredSiltstone" ParentName="WeatheredRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_WeatheredSiltstone</defName>
           <label>Weathered Siltstone</label>
-          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
+          <description>A sedimentary rock composed of highly compacted silt. It similar to mudstone, but hard enough to cut into blocks.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredSandstone</texPath>
             <color>(167,146,117)</color>
@@ -25,7 +25,7 @@
             <li>(130,130,130)</li>
           </randomColorsTwo>
           <statBases>
-            <MaxHitPoints>600</MaxHitPoints>
+            <MaxHitPoints>900</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>1</Beauty>
           </statBases>
@@ -69,11 +69,6 @@
               <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
-              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
-              <DropProbability>0.03</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
-            </li>
-            <li>
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
@@ -83,12 +78,6 @@
               <ResourceDefName>Dirt</ResourceDefName>
               <DropProbability>0.5</DropProbability>
               <CountPerDrop>15</CountPerDrop>
-              <ScaleYieldBySkill>false</ScaleYieldBySkill>
-            </li>
-            <li>
-              <ResourceDefName>SoftClay</ResourceDefName>
-              <DropProbability>0.2</DropProbability>
-              <CountPerDrop>5</CountPerDrop>
               <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
@@ -110,7 +99,7 @@
         <ThingDef Name="ZF_SolidSiltstone" ParentName="SolidRockBase" Class="Minerals.ThingDef_SolidRock">
           <defName>ZF_SolidSiltstone</defName>
           <label>Solid Siltstone</label>
-          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
+          <description>A sedimentary rock composed of highly compacted silt. It similar to mudstone, but hard enough to cut into blocks.</description>
           <graphicData>
             <texPath>Things/Rock/WeatheredBasalt</texPath>
             <color>(167,146,117)</color>
@@ -123,7 +112,7 @@
             <li>(130,130,130)</li>
           </randomColorsTwo>
           <statBases>
-            <MaxHitPoints>700</MaxHitPoints>
+            <MaxHitPoints>1100</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
@@ -167,11 +156,6 @@
               <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
-              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
-              <DropProbability>0.03</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
-            </li>
-            <li>
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
@@ -181,12 +165,6 @@
               <ResourceDefName>Dirt</ResourceDefName>
               <DropProbability>0.5</DropProbability>
               <CountPerDrop>15</CountPerDrop>
-              <ScaleYieldBySkill>false</ScaleYieldBySkill>
-            </li>
-            <li>
-              <ResourceDefName>SoftClay</ResourceDefName>
-              <DropProbability>0.2</DropProbability>
-              <CountPerDrop>5</CountPerDrop>
               <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
@@ -209,7 +187,7 @@
         <ThingDef Name="ZF_HewnSiltstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_HewnSiltstone</defName>
           <label>Hewn Siltstone</label>
-          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
+          <description>A sedimentary rock composed of highly compacted silt. It similar to mudstone, but hard enough to cut into blocks.</description>
           <graphicData>
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(167,146,117)</color>
@@ -222,7 +200,7 @@
             <li>(130,130,130)</li>
           </randomColorsTwo>
           <statBases>
-            <MaxHitPoints>800</MaxHitPoints>
+            <MaxHitPoints>1300</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>-1</Beauty>
           </statBases>
@@ -279,11 +257,6 @@
               <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
-              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
-              <DropProbability>0.03</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
-            </li>
-            <li>
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
@@ -293,12 +266,6 @@
               <ResourceDefName>Dirt</ResourceDefName>
               <DropProbability>0.5</DropProbability>
               <CountPerDrop>15</CountPerDrop>
-              <ScaleYieldBySkill>false</ScaleYieldBySkill>
-            </li>
-            <li>
-              <ResourceDefName>SoftClay</ResourceDefName>
-              <DropProbability>0.2</DropProbability>
-              <CountPerDrop>5</CountPerDrop>
               <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
@@ -320,7 +287,7 @@
         <ThingDef Name="ZF_SmoothedHewnSiltstone" ParentName="HewnRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_SmoothedHewnSiltstone</defName>
           <label>Smoothed Siltstone</label>
-          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
+          <description>A sedimentary rock composed of highly compacted silt. It similar to mudstone, but hard enough to cut into blocks.</description>
           <graphicData>
       			<texPath>Things/Rock/SmoothedRockWall</texPath>
             <color>(120,50,50)</color>
@@ -333,7 +300,7 @@
             <li>(130,130,130)</li>
           </randomColorsTwo>
           <statBases>
-            <MaxHitPoints>600</MaxHitPoints>
+            <MaxHitPoints>1200</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>1</Beauty>
           </statBases>
@@ -350,11 +317,6 @@
               <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
-              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
-              <DropProbability>0.03</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
-            </li>
-            <li>
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
@@ -364,12 +326,6 @@
               <ResourceDefName>Dirt</ResourceDefName>
               <DropProbability>0.5</DropProbability>
               <CountPerDrop>15</CountPerDrop>
-              <ScaleYieldBySkill>false</ScaleYieldBySkill>
-            </li>
-            <li>
-              <ResourceDefName>SoftClay</ResourceDefName>
-              <DropProbability>0.2</DropProbability>
-              <CountPerDrop>5</CountPerDrop>
               <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
@@ -387,7 +343,7 @@
         <ThingDef Name="ZF_BoulderSiltstone" ParentName="BoulderRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_BoulderSiltstone</defName>
           <label>Siltstone Boulder</label>
-          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
+          <description>A sedimentary rock composed of highly compacted silt. It similar to mudstone, but hard enough to cut into blocks.</description>
           <graphicData>
             <texPath>Things/Rock/PassableSandstone</texPath>
             <color>(167,146,117)</color>
@@ -401,7 +357,7 @@
           </randomColorsTwo>
           <fillPercent>0.6</fillPercent>
           <statBases>
-            <MaxHitPoints>300</MaxHitPoints>
+            <MaxHitPoints>600</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
@@ -477,7 +433,7 @@
           <!-- Roof requirements -->
           <mustBeUnderRoof>false</mustBeUnderRoof>
           <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-          <mustBeUnroofed>false</mustBeUnroofed>
+          <mustBeUnroofed>true</mustBeUnroofed>
           <!-- The maximum number of images that will be printed per square -->
           <maxMeshCount>1</maxMeshCount>
           <!-- The size range -->
@@ -499,11 +455,6 @@
               <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
-              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
-              <DropProbability>0.03</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
-            </li>
-            <li>
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
@@ -513,12 +464,6 @@
               <ResourceDefName>Dirt</ResourceDefName>
               <DropProbability>0.5</DropProbability>
               <CountPerDrop>15</CountPerDrop>
-              <ScaleYieldBySkill>false</ScaleYieldBySkill>
-            </li>
-            <li>
-              <ResourceDefName>SoftClay</ResourceDefName>
-              <DropProbability>0.2</DropProbability>
-              <CountPerDrop>5</CountPerDrop>
               <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
           </randomlyDropResources>
@@ -540,7 +485,7 @@
         <ThingDef Name="ZF_PassableSiltstone" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
           <defName>ZF_PassableSiltstone</defName>
           <label>Siltstone Rocks</label>
-          <description>A soft sedimentary rock composed of silt-sized particles. It is too soft to produce useful blocks for building.</description>
+          <description>A sedimentary rock composed of highly compacted silt. It similar to mudstone, but hard enough to cut into blocks.</description>
           <graphicData>
             <texPath>Things/Rock/PassableSandstone</texPath>
             <color>(167,146,117)</color>
@@ -557,7 +502,7 @@
           </randomColorsTwo>
           <fillPercent>0.3</fillPercent>
           <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
+            <MaxHitPoints>300</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
           </statBases>
@@ -632,7 +577,7 @@
           <!-- Roof requirements -->
           <mustBeUnderRoof>false</mustBeUnderRoof>
           <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
-          <mustBeUnroofed>false</mustBeUnroofed>
+          <mustBeUnroofed>true</mustBeUnroofed>
           <!-- The maximum number of images that will be printed per square -->
           <maxMeshCount>3</maxMeshCount>
           <!-- The size range -->
@@ -654,11 +599,6 @@
               <MinMiningSkill>4</MinMiningSkill>
             </li>
             <li>
-              <ResourceDefName>ZF_ChunkFlint</ResourceDefName>
-              <DropProbability>0.03</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
-            </li>
-            <li>
               <ResourceDefName>SmallFossil</ResourceDefName>
               <DropProbability>0.07</DropProbability>
               <CountPerDrop>1</CountPerDrop>
@@ -670,18 +610,115 @@
               <CountPerDrop>15</CountPerDrop>
               <ScaleYieldBySkill>false</ScaleYieldBySkill>
             </li>
-            <li>
-              <ResourceDefName>SoftClay</ResourceDefName>
-              <DropProbability>0.2</DropProbability>
-              <CountPerDrop>5</CountPerDrop>
-              <ScaleYieldBySkill>false</ScaleYieldBySkill>
-            </li>
           </randomlyDropResources>
           <!-- How easy it is to mine -->
           <mineSpeedFactor>1.4</mineSpeedFactor>
         </ThingDef>
   
-  
+        <ThingDef Name="SmallPassableSiltstone" ParentName="SmallRockBase" Class="Minerals.ThingDef_StaticMineral">
+          <defName>PassableSiltstone</defName>
+          <label>Siltstone debris</label>
+          <description>Siltstone debris</description>
+          <graphicData Inherit="False">
+            <texPath>Things/Rock/SandPile</texPath>
+            <color>(170,150,120)</color>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <damageData>
+              <enabled>false</enabled>
+            </damageData>
+          </graphicData>
+          <hideAtSnowDepth>0.7</hideAtSnowDepth>
+          <!-- If defined, randomly pick colors from this set -->
+          <randomColorsOne>
+            <li>(170,150,120)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(130,130,130)</li>
+          </randomColorsTwo>
+          <uiIconPath>Things/Rock/SandPile/SandPileA</uiIconPath>
+          <fillPercent>0.3</fillPercent>
+          <statBases>
+            <MaxHitPoints>900</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Beauty>1</Beauty>
+          </statBases>
+          <building>
+            <mineableThing>ChunkSiltstone</mineableThing>
+            <mineableDropChance>0.1</mineableDropChance>
+          </building>
+          <!--How far away it can spawn from an existing location-->
+          <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+          <spawnRadius>1</spawnRadius>
+          <!-- The probability that this mineral type will be spawned at all on a given map -->
+          <perMapProbability>1</perMapProbability>
+          <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+          <minClusterProbability>0.35</minClusterProbability>
+          <maxClusterProbability>0.55</maxClusterProbability>
+          <!-- How  many squares each cluster will be -->
+          <minClusterSize>1</minClusterSize>
+          <maxClusterSize>1</maxClusterSize>
+          <!-- The range of starting sizes of individuals in clusters -->
+          <initialSizeMin>.8</initialSizeMin>
+          <initialSizeMax>1.0</initialSizeMax>
+          <!-- How much initial sizes of individuals randomly vary -->
+          <initialSizeVariation>.1</initialSizeVariation>
+          <!-- The terrains this must be near to, but not necessarily on -->
+          <neededNearbyTerrains>
+            <li>WeatheredSiltstone</li>
+            <li>SolidSiltstone</li>
+      			<li>Siltstone</li>
+          </neededNearbyTerrains>
+          <!-- how far away it can be from needed nearby terrains-->
+          <neededNearbyTerrainRadius>1.1</neededNearbyTerrainRadius>
+          <!-- If true, growth rate and initial size depends on distance from needed terrains -->
+          <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+          <!-- Controls how extra clusters are added near assocaited ore-->
+          <associatedOres>
+            <li>WeatheredSiltstone</li>
+      			<li>Siltstone</li>
+          </associatedOres>
+          <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
+          <!-- Roof requirements -->
+          <mustBeUnderRoof>true</mustBeUnderRoof>
+          <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+          <mustBeUnroofed>false</mustBeUnroofed>
+          <!-- The maximum number of images that will be printed per square -->
+          <maxMeshCount>1</maxMeshCount>
+          <!-- The size range -->
+          <visualSizeRange>
+            <min>2.2</min>
+            <max>2.5</max>
+          </visualSizeRange>
+          <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+          <visualClustering>1.0</visualClustering>
+          <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+          <visualSpread>0.8</visualSpread>
+          <visualSizeVariation>0.1</visualSizeVariation>
+          <!-- Other resources it might drop -->
+          <randomlyDropResources>
+            <li>
+              <ResourceDefName>ZF_SharpStoneShard</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>Amber</ResourceDefName>
+              <DropProbability>0.05</DropProbability>
+              <CountPerDrop>10</CountPerDrop>
+              <MinMiningSkill>3</MinMiningSkill>
+            </li>
+            <li>
+              <ResourceDefName>SmallFossil</ResourceDefName>
+              <DropProbability>0.03</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>7</MinMiningSkill>
+            </li>
+          </randomlyDropResources>
+          <!-- How easy it is to mine -->
+          <mineSpeedFactor>1.6</mineSpeedFactor>
+        </ThingDef>
+
       </value>
     </match>
   </Operation>

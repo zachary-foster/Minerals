@@ -14,10 +14,10 @@
           <label>Weathered Migmatite</label>
           <description>A layered metamorphic rock produced by eons of rock folding deep in the earth.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredGranite</texPath>
+            <texPath>Things/Rock/WeatheredLimestone</texPath>
             <color>(136,146,155)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredGranite/WeatheredGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
           <randomColorsOne>
             <li>(136,146,155)</li>
           </randomColorsOne>
@@ -100,10 +100,10 @@
           <label>Solid Migmatite</label>
           <description>A layered metamorphic rock produced by eons of rock folding deep in the earth.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/SolidSandstone</texPath>
             <color>(136,146,155)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/SolidSandstone/SolidSandstoneA</uiIconPath>
           <randomColorsOne>
             <li>(136,146,155)</li>
           </randomColorsOne>

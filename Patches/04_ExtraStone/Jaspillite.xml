@@ -365,10 +365,10 @@
           <label>Jaspillite Boulder</label>
           <description>A variety of chert that contains significant quantites of iron.</description>
           <graphicData>
-            <texPath>Things/Rock/BoulderGranite</texPath>
+            <texPath>Things/Rock/PassableSandstone</texPath>
             <color>(208,103,84)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/BoulderGranite/BoulderGraniteA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableSandstone/PassableSandstoneA</uiIconPath>
           <randomColorsOne>
             <li>(208,103,84)</li>
           </randomColorsOne>
@@ -512,13 +512,13 @@
           <label>Jaspillite Rocks</label>
           <description>A variety of chert that contains significant quantites of iron.</description>
           <graphicData>
-            <texPath>Things/Rock/PassableLimestone</texPath>
+            <texPath>Things/Rock/PassableSandstone</texPath>
             <color>(208,103,84)</color>
             <damageData>
               <enabled>false</enabled>
             </damageData>
           </graphicData>
-          <uiIconPath>Things/Rock/PassableLimestone/PassableLimestoneA</uiIconPath>
+          <uiIconPath>Things/Rock/PassableSandstone/PassableSandstoneA</uiIconPath>
           <randomColorsOne>
             <li>(208,103,84)</li>
           </randomColorsOne>

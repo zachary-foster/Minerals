@@ -22,7 +22,7 @@
             <li>(230,230,230)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(185,155,110)</li>
+            <li>(210,180,150)</li>
           </randomColorsTwo>
           <statBases>
             <MaxHitPoints>600</MaxHitPoints>
@@ -202,12 +202,12 @@
       			<texPath>Things/Rock/HewnRockWall</texPath>
             <color>(230,230,230)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+          <uiIconPath>Things/Rock/HewnRockWall/HewnRockWall</uiIconPath>
           <randomColorsOne>
             <li>(230,230,230)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(230,230,230)</li>
+            <li>(230,220,215)</li>
           </randomColorsTwo>
           <statBases>
             <MaxHitPoints>1000</MaxHitPoints>
@@ -312,7 +312,7 @@
             <li>(230,230,230)</li>
           </randomColorsOne>
           <randomColorsTwo>
-            <li>(230,230,230)</li>
+            <li>(230,220,215)</li>
           </randomColorsTwo>
           <statBases>
             <MaxHitPoints>900</MaxHitPoints>
@@ -384,7 +384,7 @@
           <pathCost>100</pathCost>
           <building>
             <mineableThing>ChunkChalk</mineableThing>
-            <mineableDropChance>0.6</mineableDropChance>
+            <mineableDropChance>0.25</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
@@ -534,7 +534,7 @@
           <pathCost>20</pathCost>
           <building>
             <mineableThing>ChunkChalk</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
+            <mineableDropChance>0.2</mineableDropChance>
           </building>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->

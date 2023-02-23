@@ -94,10 +94,10 @@
           <label>Solid Serpentinite</label>
           <description>A metamorphic rock that formed where tectonic plates collided under the ocean. Hydrated magnesium minerals give the rock a greasy green luster similar to reptile skin.</description>
           <graphicData>
-            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <texPath>Things/Rock/WeatheredSandstone</texPath>
             <color>(60,96,58)</color>
           </graphicData>
-          <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+          <uiIconPath>Things/Rock/WeatheredSandstone/WeatheredSandstoneA</uiIconPath>
           <randomColorsOne>
             <li>(65,100,60)</li>
           </randomColorsOne>
