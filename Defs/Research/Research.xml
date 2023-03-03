@@ -41,7 +41,7 @@
   <ResearchProjectDef ParentName="ZF_NoResearchBase">
     <defName>ZF_HardStoneCuttingII</defName>
     <label>Ultra Hard Stone Cutting</label>
-    <description>Cut blocks from very hard stone like peridotite.</description>
+    <description>Cut blocks from very hard stone like dunite.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Main</tab>

@@ -276,7 +276,7 @@
       <li>ZF_PinkMarbleBase_Rough</li>
       <li>ZF_GabbroBase_Rough</li>
       <li>ZF_GneissBase_Rough</li>
-      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_DuniteBase_Rough</li>
       <li>ZF_RhyoliteBase_Rough</li>
       <li>ZF_ScoriaBase_Rough</li>
       <li>ZF_SerpentiniteBase_Rough</li>
@@ -441,7 +441,7 @@
       <li>ZF_PinkMarbleBase_Rough</li>
       <li>ZF_GabbroBase_Rough</li>
       <li>ZF_GneissBase_Rough</li>
-      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_DuniteBase_Rough</li>
       <li>ZF_RhyoliteBase_Rough</li>
       <li>ZF_ScoriaBase_Rough</li>
       <li>ZF_SerpentiniteBase_Rough</li>
@@ -623,7 +623,7 @@
       <li>ZF_PinkMarbleBase_Rough</li>
       <li>ZF_GabbroBase_Rough</li>
       <li>ZF_GneissBase_Rough</li>
-      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_DuniteBase_Rough</li>
       <li>ZF_RhyoliteBase_Rough</li>
       <li>ZF_ScoriaBase_Rough</li>
       <li>ZF_SerpentiniteBase_Rough</li>

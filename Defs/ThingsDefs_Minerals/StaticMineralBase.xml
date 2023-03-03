@@ -135,7 +135,7 @@
       <li>ZF_PinkMarbleBase_Rough</li>
       <li>ZF_GabbroBase_Rough</li>
       <li>ZF_GneissBase_Rough</li>
-      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_DuniteBase_Rough</li>
       <li>ZF_RhyoliteBase_Rough</li>
       <li>ZF_ScoriaBase_Rough</li>
       <li>ZF_SerpentiniteBase_Rough</li>
@@ -155,7 +155,7 @@
       <li>ZF_SolidPinkMarble</li>
       <li>ZF_SolidGabbro</li>
       <li>ZF_SolidGneiss</li>
-      <li>ZF_SolidPeridotite</li>
+      <li>ZF_SolidDunite</li>
       <li>ZF_SolidRhyolite</li>
       <li>ZF_SolidScoria</li>
       <li>ZF_SolidSerpentinite</li>
@@ -220,7 +220,7 @@
       <li>ZF_BrownMarbleBase_Rough</li>
       <li>ZF_PinkMarbleBase_Rough</li>
       <li>ZF_GneissBase_Rough</li>
-      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_DuniteBase_Rough</li>
       <li>ZF_SerpentiniteBase_Rough</li>
     </allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
@@ -360,7 +360,7 @@
       <li>ZF_PinkMarbleBase_Rough</li>
       <li>ZF_GabbroBase_Rough</li>
       <li>ZF_GneissBase_Rough</li>
-      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_DuniteBase_Rough</li>
       <li>ZF_RhyoliteBase_Rough</li>
       <li>ZF_SerpentiniteBase_Rough</li>
     </allowedTerrains>
@@ -376,7 +376,7 @@
       <li>ZF_PinkMarbleBase_Rough</li>
       <li>ZF_GabbroBase_Rough</li>
       <li>ZF_GneissBase_Rough</li>
-      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_DuniteBase_Rough</li>
       <li>ZF_RhyoliteBase_Rough</li>
       <li>ZF_SerpentiniteBase_Rough</li>
     </neededNearbyTerrains>
@@ -426,7 +426,7 @@
       <li>Limestone_Rough</li>
       <li>ZF_SchistBase_Rough</li>
       <li>ZF_GneissBase_Rough</li>
-      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_DuniteBase_Rough</li>
       <li>ZF_SerpentiniteBase_Rough</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
@@ -435,7 +435,7 @@
       <li>Limestone_Rough</li>
       <li>ZF_SchistBase_Rough</li>
       <li>ZF_GneissBase_Rough</li>
-      <li>ZF_PeridotiteBase_Rough</li>
+      <li>ZF_DuniteBase_Rough</li>
       <li>ZF_SerpentiniteBase_Rough</li>
     </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
