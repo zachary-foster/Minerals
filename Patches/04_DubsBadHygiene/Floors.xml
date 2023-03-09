@@ -44,7 +44,7 @@
         </TerrainDef>
 
         <TerrainDef ParentName="DBHMosaicBase">
-          <defName>ZF_BlocksDunite</defName>
+          <defName>ZF_DBHMosaicDunite</defName>
           <label>dunite flagstone</label>
           <color>(166,210,121)</color>
           <costList>
@@ -71,7 +71,7 @@
   	    <li>ZF_DBHMosaicBasalt</li>
   	    <li>ZF_DBHMosaicAlabaster</li>
   	    <li>ZF_DBHMosaicPegmatite</li>
-  	    <li>ZF_BlocksDunite</li>
+  	    <li>ZF_DBHMosaicDunite</li>
       </value>
     </match>
   </Operation>

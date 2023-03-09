@@ -95,7 +95,7 @@
     <defName>ZF_ChunkPegmatite</defName>
     <label>pegmatite chunk</label>
     <graphicData>
-      <color>(226, 174, 156)</color>
+      <color>(226,174,156)</color>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <statBases>

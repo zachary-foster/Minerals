@@ -15,6 +15,7 @@
           <li>HiTechResearchBench</li>
         </requiredResearchBuildings>
       </li>
+      <li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
     </modExtensions>
     <tags>
       <li>TribalOnlyStart</li>
@@ -29,26 +30,30 @@
   
   <ResearchProjectDef ParentName="ZF_NoResearchBase">
     <defName>ZF_HardStoneCuttingI</defName>
-    <label>Hard Stone Cutting</label>
+    <label>Hard Stone Cutting I</label>
     <description>Cut blocks from hard stone like pegmatite.</description>
     <baseCost>500</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>Main</tab>
-    <researchViewX>0.06</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <tab>Craft_SK</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>26.00</researchViewY>
+    <prerequisites>
+      <li>Craft_0</li>
+    </prerequisites>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="ZF_NoResearchBase">
     <defName>ZF_HardStoneCuttingII</defName>
-    <label>Ultra Hard Stone Cutting</label>
+    <label>Hard Stone Cutting II</label>
     <description>Cut blocks from very hard stone like dunite.</description>
     <baseCost>1000</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>Main</tab>
-    <researchViewX>0.06</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <techLevel>Medieval</techLevel>
+    <tab>Craft_SK</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>26.00</researchViewY>
     <prerequisites>
       <li>ZF_HardStoneCuttingI</li>
+      <li>Stonecutting</li>
     </prerequisites>
   </ResearchProjectDef>
 
