@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,7 +28,16 @@ namespace Minerals
 
         public override void incPctYeild(float amount, Pawn miner)
         {
-            propExtracted += (float)Mathf.Min(amount, HitPoints) / (float)MaxHitPoints * miner.GetStatValue(StatDefOf.MiningYield, true) + (miner.GetStatValue(StatDefOf.MiningYield, true) -  attributes.extractionDifficulty) * 0.2f + Rand.Range(-0.2f, 0.2f);
+            float minerYield = 1f;
+            if (miner.def.race.IsMechanoid)
+            {
+                minerYield = ((SkillNeed_Direct)DefDatabase<StatDef>.GetNamed("MiningYield").skillNeedFactors.Find(s => s.skill.defName == "Mining" && s is SkillNeed_Direct)).valuesPerLevel[miner.RaceProps.mechFixedSkillLevel];
+            }
+            else
+            {
+                minerYield = miner.GetStatValue(StatDefOf.MiningYield, true);
+            }
+            propExtracted += (float)Mathf.Min(amount, HitPoints) / (float)MaxHitPoints * minerYield + (minerYield -  attributes.extractionDifficulty) * 0.2f + Rand.Range(-0.2f, 0.2f);
             if (propExtracted >= 1f)
             {
                 propExtracted = 0f;

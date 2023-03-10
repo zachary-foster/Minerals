@@ -38,7 +38,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>26.00</researchViewY>
     <prerequisites>
-      <li>Craft_0</li>
+      <li>Stonecutting</li>
     </prerequisites>
   </ResearchProjectDef>
 
@@ -51,6 +51,15 @@
     <tab>Craft_SK</tab>
     <researchViewX>4.00</researchViewX>
     <researchViewY>26.00</researchViewY>
+    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <modExtensions Inherit="False">
+      <li Class="SK.AdvancedResearchExtension">
+        <requiredResearchBuildings>
+          <li>SimpleResearchBench</li>
+          <li>HiTechResearchBench</li>
+        </requiredResearchBuildings>
+      </li>
+    </modExtensions>
     <prerequisites>
       <li>ZF_HardStoneCuttingI</li>
       <li>Stonecutting</li>

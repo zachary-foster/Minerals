@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -125,8 +125,53 @@ namespace Minerals
         public virtual void incPctYeild(float amount, Pawn miner)
         {
             // Increase yeild for when it is destroyed
-            float minerYield = miner.GetStatValue(StatDefOf.MiningYield, true);
-            int minerSkill = miner.skills.GetSkill(SkillDefOf.Mining).Level;
+            float minerYield = 1f;
+            if (miner.def.race.IsMechanoid)
+            {
+                minerYield = ((SkillNeed_Direct)DefDatabase<StatDef>.GetNamed("MiningYield").skillNeedFactors.Find(s => s.skill.defName == "Mining" && s is SkillNeed_Direct)).valuesPerLevel[miner.RaceProps.mechFixedSkillLevel];
+            }
+            else if (miner.RaceProps.Animal)
+            {
+                float toolPower = 1;
+                foreach (var tool in miner.Tools)
+                {
+                    if (tool.power > toolPower)
+                        toolPower = Mathf.Clamp((tool.power / 10f),0.6f,1.4f);
+                }
+                if (toolPower > 1)
+                {
+                    toolPower = 1 - (toolPower - 1);
+                }
+                else if (toolPower < 1)
+                {
+                    toolPower = 1 + (1 - toolPower);
+                }
+                minerYield = toolPower;
+            }
+            else
+            {
+                minerYield = miner.GetStatValue(StatDefOf.MiningYield, true);
+            }
+            //Log.Message("minerYield is: " + minerYield);
+            int minerSkill = 10;
+            if (miner.def.race.IsMechanoid)
+            {
+                minerSkill = miner.RaceProps.mechFixedSkillLevel;
+            }
+            else if (miner.RaceProps.Animal)
+            {
+                float toolPower = 2;
+                foreach (var tool in miner.Tools)
+                {
+                    if (tool.power > toolPower)
+                        toolPower = Mathf.Clamp(tool.power, 2, 20);
+                }
+                minerSkill = Convert.ToInt32(toolPower);
+            }
+            else
+            {
+                minerSkill = miner.skills.GetSkill(SkillDefOf.Mining).Level;
+            }
             float proportionDamaged = (float) Mathf.Min(amount, HitPoints) / (float) MaxHitPoints;
             float proportionMined = proportionDamaged * minerYield;
             yieldPct += proportionMined;
@@ -143,7 +188,7 @@ namespace Minerals
                 }
 
                 // Check that minimum skill is enough
-                if (minerSkill < toDrop.MinMiningSkill)
+                if (minerSkill < toDrop.MinMiningSkill && !miner.def.race.IsMechanoid && !miner.RaceProps.Animal)
                 {
                     continue;
                 }
