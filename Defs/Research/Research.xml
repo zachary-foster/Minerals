@@ -35,8 +35,8 @@
     <baseCost>500</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Craft_SK</tab>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>26.00</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>25.00</researchViewY>
     <prerequisites>
       <li>Stonecutting</li>
     </prerequisites>
@@ -49,8 +49,8 @@
     <baseCost>1000</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Craft_SK</tab>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>26.00</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>25.00</researchViewY>
     <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
     <modExtensions Inherit="False">
       <li Class="SK.AdvancedResearchExtension">

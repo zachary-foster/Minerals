@@ -183,7 +183,7 @@
       <Mass>1.5</Mass>
     </statBases>
     <stuffProps>
-      <color>(226, 174, 156)</color>
+      <color>(226,174,156)</color>
       <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
@@ -220,14 +220,14 @@
     <label>dunite blocks</label>
     <description>Blocks of solid dunite. The rock is very hard and attractive, but difficult to work with. Dunite is a beautiful rock composed almost entierly composed of sparkling green crystals of olivine. It is formed deep in the planent and only rarely comes to the surface in small amounts with lava flows.</description>
     <graphicData>
-      <color>(166, 210, 121)</color>
+      <color>(166,210,121)</color>
     </graphicData>
     <statBases>
       <MarketValue>20</MarketValue>
       <Mass>1.6</Mass>
     </statBases>
     <stuffProps>
-      <color>(166, 210, 121)</color>
+      <color>(166,210,121)</color>
       <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
