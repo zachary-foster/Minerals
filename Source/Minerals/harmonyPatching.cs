@@ -24,7 +24,7 @@ namespace Minerals
         [HarmonyPostfix]
         public static void MakeRocksAccordingToBiome(int tile, ref World __instance, ref IEnumerable<ThingDef> __result)
         {
-            if (__instance.grid.tiles[tile].biome.defName == "AB_PyroclasticConflagration")
+            if (__instance.grid.Tiles.ToList()[tile].Biomes.Any(b => b.defName == "AB_PyroclasticConflagration"))
             {
                 List<ThingDef> replacedList = new List<ThingDef>();
                 ThingDef item = DefDatabase<ThingDef>.GetNamed("AB_Obsidianstone");
@@ -33,7 +33,7 @@ namespace Minerals
 
                 __result = replacedList;
             }
-            else if (__instance.grid.tiles[tile].biome.defName == "AB_OcularForest" || __instance.grid.tiles[tile].biome.defName == "AB_GallatrossGraveyard" || __instance.grid.tiles[tile].biome.defName == "AB_GelatinousSuperorganism" || __instance.grid.tiles[tile].biome.defName == "AB_MechanoidIntrusion" || __instance.grid.tiles[tile].biome.defName == "AB_RockyCrags") {
+            else if (__instance.grid.Tiles.ToList()[tile].Biomes.Any(b => b.defName == "AB_OcularForest") || __instance.grid.Tiles.ToList()[tile].Biomes.Any(b => b.defName == "AB_GallatrossGraveyard") || __instance.grid.Tiles.ToList()[tile].Biomes.Any(b => b.defName == "AB_GelatinousSuperorganism") || __instance.grid.Tiles.ToList()[tile].Biomes.Any(b => b.defName == "AB_MechanoidIntrusion") || __instance.grid.Tiles.ToList()[tile].Biomes.Any(b => b.defName == "AB_RockyCrags")) {
                 return;
             }
             else
@@ -100,42 +100,5 @@ namespace Minerals
         {
             mapBuilder.initIce(map);
         }
-
-        [HarmonyPatch(typeof(SK.SkyfallerUtil))]
-        [HarmonyPatch("SpawnSkyfaller")]
-        [HarmonyPatch(new Type[] {typeof(ThingDef), typeof(IEnumerable<Thing>), typeof(IntVec3), typeof(Map) })]
-        static class ImpactPatch
-        {
-            [HarmonyPrefix]
-            public static void Prefix(ref IEnumerable<Thing> things)
-            {
-                List<Thing> replacementList = new List<Thing>();
-                foreach (Thing item in things)
-                {
-                    Thing toReturn = item;
-                    if (item.def.mineable && (! StaticMineral.isMineral(item)))
-                    {
-                        // check if any of the minerals replace this one 
-                        foreach (ThingDef_StaticMineral mineralType in DefDatabase<ThingDef_StaticMineral>.AllDefs)
-                        {
-                            if (mineralType.ThingsToReplace == null || mineralType.ThingsToReplace.Count == 0)
-                            {
-                                continue;
-                            }
-
-                            if (mineralType.ThingsToReplace.Any(item.def.defName.Equals))
-                            {
-                                toReturn = (StaticMineral) ThingMaker.MakeThing(mineralType);
-                                break;
-                            }
-                        }
-
-                    }
-                    replacementList.Add(toReturn);
-                }
-                things = replacementList;
-            }
-        } 
-
     }
 }

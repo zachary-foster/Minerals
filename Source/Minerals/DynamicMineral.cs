@@ -127,7 +127,7 @@ namespace Minerals
             if (sizeDiff > 0.1f || (sizeDiff > 0.02f && attributes.fastGraphicRefresh))
             {
                 sizeWhenLastPrinted = apparentSize;
-                base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things);
+                base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlagDefOf.Things);
                 initializeTextureLocations();
             }
 
@@ -480,7 +480,7 @@ namespace Minerals
         }
         public override float valueAtTile(World world, int worldTile)
         {
-            return rainfallToRain(world.grid.tiles[worldTile].rainfall);
+            return rainfallToRain(world.grid.Tiles.ToList()[worldTile].rainfall);
         }
         public override float valueAtMapMean(Map aMap)
         {
@@ -502,9 +502,9 @@ namespace Minerals
 
     public class lightGrowthRateModifier : growthRateModifier
     {
-        public float lightByBiome(BiomeDef biome)
+        public float lightByBiome(List<BiomeDef> biomes)
         {
-            if (biome.defName == "AB_RockyCrags")
+            if (biomes.Any(b => b.defName == "AB_RockyCrags"))
             {
                 return 0f;
             }
@@ -516,11 +516,11 @@ namespace Minerals
         }
         public override float valueAtPos(DynamicMineral aMineral)
         {
-            return aMineral.Map.glowGrid.GameGlowAt(aMineral.Position);
+            return aMineral.Map.glowGrid.GroundGlowAt(aMineral.Position, false);
         }
         public override float valueAtPos(ThingDef_DynamicMineral myDef, IntVec3 aPosition, Map aMap)
         {
-            return aMap.glowGrid.GameGlowAt(aPosition);
+            return aMap.glowGrid.GroundGlowAt(aPosition, false);
         }
         public override float valueAtMap(Map aMap)
         {
@@ -528,15 +528,15 @@ namespace Minerals
         }
         public override float valueAtTile(World world, int worldTile)
         {
-            return lightByBiome(world.grid.tiles[worldTile].biome);
+            return lightByBiome(world.grid.Tiles.ToList()[worldTile].Biomes.ToList());
         }
         public override float valueAtMapMean(Map aMap)
         {
-            return lightByBiome(aMap.Biome);
+            return lightByBiome(aMap.Biomes.ToList());
         }
         public override float valueAtMapSeasonal(Map aMap)
         {
-            return lightByBiome(aMap.Biome);
+            return lightByBiome(aMap.Biomes.ToList());
         }
     }
 

@@ -614,7 +614,7 @@ namespace Minerals
 
         public virtual bool hiddenInSnow(int i)
         {
-            return snowLevel() > attributes.snowTextureThreshold + (attributes.hideAtSnowDepth - attributes.snowTextureThreshold) * getTextureSize(i) / attributes.visualSizeRange.max;
+            return snowLevel() > attributes.snowTextureThreshold + (1.0f - attributes.snowTextureThreshold) * getTextureSize(i) / attributes.visualSizeRange.max;
         }
 
         public virtual void printSubTexture(SectionLayer layer, int i, float sizeFactor = 1f)
@@ -1375,7 +1375,7 @@ namespace Minerals
             GenSpawn.Spawn(output, dest, map, WipeMode.Vanish);
             //category = originalDef;
             output.size = size;
-            map.mapDrawer.MapMeshDirty(dest, MapMeshFlag.Buildings);
+            map.mapDrawer.MapMeshDirty(dest, MapMeshFlagDefOf.Buildings);
             //Log.Message("Spawned " + defName + " at " + dest);
             return output;
         }
@@ -1409,16 +1409,6 @@ namespace Minerals
                 return c => c.DistanceTo(myPosition) <= spawnRadius && CanSpawnAt(myMap, c);
             }
 
-            Predicate<IntVec3> isValidSiteDebug(Map myMap, IntVec3 myPosition)
-            {
-                return c =>
-                {
-                    Log.Message("TryFindReproductionDestination: isValidSiteDebug: c: " + c);
-                    Log.Message("TryFindReproductionDestination: isValidSiteDebug: c.DistanceTo(myPosition): " + c.DistanceTo(myPosition));
-                    Log.Message("TryFindReproductionDestination: isValidSiteDebug: CanSpawnAt(myMap, c): " + CanSpawnAt(myMap, c));
-                    return c.DistanceTo(myPosition) <= spawnRadius && CanSpawnAt(myMap, c);
-                };
-            }
         }
 
 
@@ -1543,7 +1533,7 @@ namespace Minerals
             float output = 0.5f;
 
             // Value determined by mean world tile temperature
-            float temp = Find.World.grid.tiles[tile].temperature;
+            float temp = Find.World.grid.Tiles.ToList()[tile].temperature;
             float diffFromIdeal = Math.Abs(temp - 15f);
             if (diffFromIdeal > 10f)
             {
@@ -1551,7 +1541,7 @@ namespace Minerals
             }
 
             // Apply biome effects
-            if (Find.World.grid.tiles[tile].biome.isExtremeBiome)
+            if (Find.World.grid.Tiles.ToList()[tile].Biomes.Any(b => b.isExtremeBiome))
             {
                 output += 0.5f;
             }

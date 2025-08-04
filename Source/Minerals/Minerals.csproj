@@ -31,27 +31,27 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="0Harmony, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Hardcore-SK-Source\R1.1\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>lib\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>references\Assembly-CSharp.dll</HintPath>
+      <HintPath>lib\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Core_SK">
-      <HintPath>..\..\..\..\..\public\Hardcore-SK\Mods\Core_SK\Assemblies\Core_SK.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>lib\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>references\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>lib\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="events\NoticeMinerals.cs" />
-    <Compile Include="events\RichOreDeposit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="harmonyPatching.cs" />
     <Compile Include="initialization.cs" />
@@ -63,7 +63,6 @@
     <Compile Include="RiverRock.cs" />
     <Compile Include="SolidRock.cs" />
     <Compile Include="BigMineral.cs" />
-    <Compile Include="events\BlueSnow.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
